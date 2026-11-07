@@ -159,7 +159,7 @@ window.CDH_DATA = {
     "slug": "bài-05-tuyến-số-1--cho-con-học-tiền-tiểu-học-cả-năm-nhưng-vào-lớp-1-vẫn-khóc-vì-đọc-trơn-và-viết-xấu-vì-sao-học-trước-vẫn-đuối-và-bố-mẹ-gỡ-rối-thế-nào",
     "filename": "Bai_05_CoDiHoc_C01_Lop1_QuaTaiDanhVan_DocTron_VietXau_FullSolution.md",
     "title": "BÀI 05 (TUYẾN SỐ 1) — CHO CON HỌC TIỀN TIỂU HỌC CẢ NĂM NHƯNG VÀO LỚP 1 VẪN KHÓC VÌ ĐỌC TRƠN VÀ VIẾT XẤU: VÌ SAO HỌC TRƯỚC VẪN ĐUỐI VÀ BỐ MẸ GỠ RỐI THẾ NÀO?",
-    "level": "Tiền tiểu học & Lớp 1",
+    "level": "Tiền tiểu học và lớp 1",
     "category": "Đánh vần & Viết chữ",
     "readTime": 10,
     "quote": "Trăn trở chân thực từ cộng đồng phụ huynh có con trong độ tuổi đi học.",
@@ -240,7 +240,7 @@ window.CDH_DATA = {
     "slug": "bài-08-cuốn-chiếu-0310-ban-ngày-đi-làm-8-tiếng-kiệt-sức-tối-về-hóa-hổ-dữ-quát-con-bên-bàn-học--cách-tách-vai-người-mẹ-khỏi-vai-giáo-viên-trong-30-phút-mỗi-tối",
     "filename": "Bai_08_B01_P02_Thoat_Canh_Ho_Me_Quat_Thao_Moi_Toi_Kem_Con_Hoc.md",
     "title": "BÀI 08 (CUỐN CHIẾU 03/10): BAN NGÀY ĐI LÀM 8 TIẾNG KIỆT SỨC, TỐI VỀ HÓA \"HỔ DỮ\" QUÁT CON BÊN BÀN HỌC — CÁCH TÁCH VAI \"NGƯỜI MẸ\" KHỎI VAI \"GIÁO VIÊN\" TRONG 30 PHÚT MỖI TỐI",
-    "level": "Tiền tiểu học & Lớp 1",
+    "level": "Tiền tiểu học và lớp 1",
     "category": "Đồng hành tại nhà",
     "readTime": 11,
     "quote": "**Mã bài viết:** `NWE-ART-08`",
@@ -294,7 +294,7 @@ window.CDH_DATA = {
     "slug": "bài-10-cuốn-chiếu-0510-con-vào-lớp-6-lớp-chọn-học-ngày-học-đêm-không-hết-bài--nhận-diện-sớm-kiệt-sức-học-đường-đầu-cấp-2-và-cách-bố-mẹ-giúp-con-lấy-lại-nhịp-thở",
     "filename": "Bai_10_C02_P33_P34_Con_Lop_6_Lop_Chon_Hoc_Ngay_Dem_Chong_Kiet_Suc.md",
     "title": "BÀI 10 (CUỐN CHIẾU 05/10): CON VÀO LỚP 6 LỚP CHỌN HỌC NGÀY HỌC ĐÊM KHÔNG HẾT BÀI — NHẬN DIỆN SỚM \"KIỆT SỨC HỌC ĐƯỜNG\" ĐẦU CẤP 2 VÀ CÁCH BỐ MẸ GIÚP CON LẤY LẠI NHỊP THỞ",
-    "level": "Chuyển cấp Lớp 6",
+    "level": "Chuyển cấp lớp 6",
     "category": "Lớp chọn & Chuyển cấp",
     "readTime": 12,
     "quote": "**Mã bài viết:** `NWE-ART-10`",
@@ -402,7 +402,7 @@ window.CDH_DATA = {
     "slug": "bài-14-cuốn-chiếu-0910-thấy-bạn-cùng-lớp-học-thêm-kín-tuần-đứng-yên-thì-sợ-con-tụt-lại-chạy-theo-thì-xót-con--nguyên-lý-bát-phở-vừa-sức-giúp-bố-mẹ-thoát-bẫy-fomo-học-đường",
     "filename": "Bai_14_C02_P14_P22_Giang_Co_Giua_Thuong_Con_Qua_Tai_Va_So_Con_Thua_Kem.md",
     "title": "BÀI 14 (CUỐN CHIẾU 09/10): THẤY BẠN CÙNG LỚP HỌC THÊM KÍN TUẦN, ĐỨNG YÊN THÌ SỢ CON TỤT LẠI, CHẠY THEO THÌ XÓT CON — NGUYÊN LÝ \"BÁT PHỞ VỪA SỨC\" GIÚP BỐ MẸ THOÁT BẪY FOMO HỌC ĐƯỜNG",
-    "level": "Chuyển cấp Lớp 6",
+    "level": "Chuyển cấp lớp 6",
     "category": "Tâm lý cha mẹ",
     "readTime": 13,
     "quote": "**Mã bài viết:** `NWE-ART-14`",
@@ -478,7 +478,7 @@ window.CDH_DATA = {
     practicalGuides: [
   {
     "id": "g1-preschool",
-    "title": "Tiền Tiểu Học & Hành Trang Vào Lớp 1 (4-6 Tuổi)",
+    "title": "Tiền tiểu học và hành trang vào lớp 1 (4-6 tuổi)",
     "icon": "🎒",
     "desc": "Giải tỏa lo âu về học chữ trước, tập viết mỏi tay, làm quen môi trường học đường mới và nếp tự giác của trẻ.",
     "items": [
@@ -521,7 +521,7 @@ window.CDH_DATA = {
   },
   {
     "id": "g2-primary",
-    "title": "Tiểu Học (Lớp 1-5) & Sinh Hoạt Bán Trú",
+    "title": "Tiểu học (lớp 1-5) và sinh hoạt bán trú",
     "icon": "🍱",
     "desc": "Bữa ăn bán trú, giấc ngủ trưa, kiểm soát tập trung, học thêm, môn liên kết và cách kèm con không quát tháo.",
     "items": [
@@ -579,7 +579,7 @@ window.CDH_DATA = {
   },
   {
     "id": "g3-transition",
-    "title": "Chuyển Cấp Lớp 6 & Lựa Chọn Ngôi Trường Phù Hợp",
+    "title": "Chuyển cấp lớp 6 và lựa chọn ngôi trường phù hợp",
     "icon": "🏫",
     "desc": "Trường công hay tư, phân luồng lớp chọn, học phí ẩn, song bằng và các mô hình giáo dục quốc tế.",
     "items": [
@@ -632,7 +632,7 @@ window.CDH_DATA = {
   },
   {
     "id": "g4-wellbeing",
-    "title": "An Toàn Học Đường & Đồng Hành Tâm Lý Cùng Con",
+    "title": "An toàn học đường và đồng hành tâm lý cùng con",
     "icon": "🛡️",
     "desc": "Phòng chống bắt nạt, nhà vệ sinh trường học, giải tỏa áp lực thi cử và xây dựng kết nối hài hòa giữa gia đình và nhà trường.",
     "items": [
@@ -690,14 +690,14 @@ window.CDH_DATA = {
   },
   {
     "name": "Hội Phụ Huynh Ôn Thi Lớp 6 Chất Lượng Cao Cầu Giấy - Thanh Xuân",
-    "category": "Chuyển cấp Lớp 6",
+    "category": "Chuyển cấp lớp 6",
     "members": "142,000",
     "score": "9.4/10",
     "status": "Whitelist - Thông tin chuẩn"
   },
   {
     "name": "Chia sẻ kinh nghiệm thi Chuyên Amsterdam - Ngoại Ngữ - Cầu Giấy",
-    "category": "Chuyển cấp Lớp 6",
+    "category": "Chuyển cấp lớp 6",
     "members": "115,000",
     "score": "9.3/10",
     "status": "Whitelist - Đã kiểm tra"
@@ -771,7 +771,7 @@ window.CDH_DATA = {
 ],
     zaloQuestions: [
   {
-    "level": "Tiền tiểu học & Lớp 1",
+    "level": "Tiền tiểu học và lớp 1",
     "icon": "🎒",
     "questions": [
       "Con tôi 5 tuổi chưa học chữ trước, hè này vào lớp 1 cần chuẩn bị những gì?",
@@ -789,7 +789,7 @@ window.CDH_DATA = {
     ]
   },
   {
-    "level": "Chuyển cấp Lớp 6",
+    "level": "Chuyển cấp lớp 6",
     "icon": "🏫",
     "questions": [
       "Nên cho con thi vào trường chuyên lớp chọn hay học trường công đúng tuyến gần nhà?",
@@ -798,7 +798,7 @@ window.CDH_DATA = {
     ]
   },
   {
-    "level": "Song bằng & Quốc tế",
+    "level": "Song bằng và quốc tế",
     "icon": "🌏",
     "questions": [
       "Chương trình Homeschooling bằng Mỹ (Acellus / NAS) có được công nhận tại VN không?",
