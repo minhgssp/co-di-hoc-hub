@@ -20,17 +20,17 @@ window.CDH_DATA = {
             },
             {
                 icon: "🔍",
-                title: "Tổng hợp thông tin (để không bị sót)",
+                title: "Tổng hợp để không bị sót",
                 desc: "Gom đủ quy chế tuyển sinh, lịch thi, biểu phí và thông tư từ các cơ quan quản lý và trường học, không bỏ lỡ mốc quan trọng."
             },
             {
                 icon: "🛡️",
-                title: "Sàng lọc bớt (để không bị loạn đầu)",
+                title: "Sàng lọc để không bị loạn",
                 desc: "Bóc tách mồi câu seeding tiếp thị, bài đánh bóng tên tuổi hay review ảo, giữ lại sự thật khách quan đa chiều."
             },
             {
                 icon: "🧠",
-                title: "Ghi nhớ hộ (để khỏi đau đầu)",
+                title: "Ghi nhớ để khỏi đau đầu",
                 desc: "Lưu trữ sẵn sàng mọi biểu phí, quy định, lưu ý nộp hồ sơ để phụ huynh tra cứu và nhận nhắc nhở đúng lúc."
             }
         ],
