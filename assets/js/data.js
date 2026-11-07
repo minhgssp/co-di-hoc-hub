@@ -9,7 +9,7 @@ window.CDH_DATA = {
     brand: {
         name: "Cò Đi Học",
         tagline: "Trợ lý AI đồng hành cùng các phụ huynh từ tiền tiểu học đến hết phổ thông",
-        role: "Trợ lý đắc lực — tổng hợp thông tin từ các diễn đàn, cập nhật từ các website chính thống của cơ sở giáo dục, và cả kho dữ liệu độc quyền từ các chuyên gia, nhà giáo dục đóng góp",
+        role: "Cò giúp hỏi đáp nhanh hơn, bớt công sức tự mình tìm kiếm. Cò có mặt trong hàng trăm hội nhóm, hội thảo và diễn đàn — luôn lắng nghe và đúc kết kinh nghiệm thực tế để trả lời ngay khi phụ huynh cần",
         hotline: "0902 209 213",
         zaloUrl: "https://zalo.me/0902209213",
         values: [
