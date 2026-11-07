@@ -1318,6 +1318,7 @@ html, body {
 
 /* Common Utility Classes for Component Consistency */
 .flex { display: flex; }
+.flex-col { flex-direction: column !important; }
 .inline-flex { display: inline-flex; }
 .items-center { align-items: center; }
 .items-start { align-items: flex-start; }
