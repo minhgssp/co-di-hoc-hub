@@ -387,7 +387,7 @@ LỜI THOẠI: "Hãy bình tĩnh đối thoại văn minh cùng Ban đại diệ
     const chatModalPopup = document.getElementById('chatModalPopup');
     const closeChatPopupBtn = document.getElementById('closeChatPopupBtn');
     const popupCategoryTags = document.getElementById('popupCategoryTags');
-    const popupPromptList = document.getElementById('popupPromptList');
+    const popupQuestionList = document.getElementById('popupQuestionList') || document.getElementById('popupPromptList');
 
     if (floatingWidgetTrigger && chatModalPopup) {
         floatingWidgetTrigger.addEventListener('click', () => {
@@ -402,14 +402,14 @@ LỜI THOẠI: "Hãy bình tĩnh đối thoại văn minh cùng Ban đại diệ
     }
 
     function renderPopupPrompts(catIndex = 0) {
-        if (!popupPromptList) return;
-        popupPromptList.innerHTML = '';
-        const cat = data.zaloPrompts[catIndex];
+        if (!popupQuestionList) return;
+        popupQuestionList.innerHTML = '';
+        const qSource = data.zaloQuestions; const cat = qSource[catIndex];
         if (!cat) return;
 
-        cat.prompts.forEach(pText => {
+        (cat.questions || cat.prompts).forEach(pText => {
             const btn = document.createElement('button');
-            btn.className = 'prompt-item-btn';
+            btn.className = 'question-item-btn prompt-item-btn';
             btn.innerHTML = `💬 ${pText}`;
             btn.onclick = () => {
                 navigator.clipboard.writeText(pText).then(() => {
@@ -417,15 +417,15 @@ LỜI THOẠI: "Hãy bình tĩnh đối thoại văn minh cùng Ban đại diệ
                     window.open(`https://zalo.me/0902209213?text=${encoded}`, '_blank');
                 });
             };
-            popupPromptList.appendChild(btn);
+            popupQuestionList.appendChild(btn);
         });
     }
 
     if (popupCategoryTags) {
         popupCategoryTags.innerHTML = '';
-        data.zaloPrompts.forEach((cat, idx) => {
+        (data.zaloQuestions).forEach((cat, idx) => {
             const span = document.createElement('span');
-            span.className = `prompt-select-tag ${idx === 0 ? 'active' : ''}`;
+            span.className = `level-select-tag prompt-select-tag ${idx === 0 ? 'active' : ''}`;
             span.textContent = `${cat.icon} ${cat.level}`;
             span.onclick = () => {
                 popupCategoryTags.querySelectorAll('.prompt-select-tag').forEach(s => s.classList.remove('active'));

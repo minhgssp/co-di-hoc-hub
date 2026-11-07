@@ -1221,7 +1221,7 @@ html, body {
   flex: 1;
   background-color: #ffffff;
 }
-.prompt-select-tag {
+.level-select-tag, .prompt-select-tag {
   display: inline-block;
   font-size: 12px;
   font-weight: 700;
@@ -1235,15 +1235,15 @@ html, body {
   margin-bottom: 8px;
   transition: all 0.2s;
 }
-.prompt-select-tag:hover {
+.level-select-tag:hover, .prompt-select-tag:hover {
   background-color: #e2e8f0;
 }
-.prompt-select-tag.active {
+.level-select-tag.active, .prompt-select-tag.active {
   background-color: var(--cdh-orange);
   border-color: var(--cdh-orange);
   color: var(--cdh-navy-dark);
 }
-.prompt-item-btn {
+.question-item-btn, .prompt-item-btn {
   width: 100%;
   text-align: left;
   background-color: #f8fafc;
@@ -1258,7 +1258,7 @@ html, body {
   transition: all 0.2s;
   line-height: 1.4;
 }
-.prompt-item-btn:hover {
+.question-item-btn:hover, .prompt-item-btn:hover {
   background-color: var(--cdh-orange-light);
   border-color: var(--cdh-orange);
   color: var(--cdh-navy-dark);

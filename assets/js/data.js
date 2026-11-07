@@ -835,11 +835,11 @@ window.CDH_DATA = {
     "warning": "Tuyệt đối không hối thúc 'sao chậm thế!'. Ép tốc độ sẽ làm đứa trẻ Thổ bị khóa cứng tư duy."
   }
 ],
-    zaloPrompts: [
+    zaloQuestions: [
   {
     "level": "Tiền tiểu học & Lớp 1",
     "icon": "🎒",
-    "prompts": [
+    "questions": [
       "Con tôi 5 tuổi chưa học chữ trước, hè này vào lớp 1 cần chuẩn bị những gì?",
       "Bé nhà tôi viết chữ rất xấu và hay gồng cứng tay, Cò Đi Học có mẹo gì khắc phục?",
       "Làm sao để thoát cảnh tối nào bố mẹ cũng quát tháo khi kèm con làm bài tập?"
@@ -848,7 +848,7 @@ window.CDH_DATA = {
   {
     "level": "Tiểu học",
     "icon": "📚",
-    "prompts": [
+    "questions": [
       "Con tôi ngồi học hay mất tập trung, ngồi 10 phút lại đòi đi vệ sinh, xử lý thế nào?",
       "Trường con tổ chức môn học liên kết kỹ năng sống, tôi không muốn học có được không?",
       "Làm thế nào để giám sát chất lượng bữa ăn bán trú của con tại trường tiểu học?"
@@ -857,7 +857,7 @@ window.CDH_DATA = {
   {
     "level": "Chuyển cấp Lớp 6",
     "icon": "🏫",
-    "prompts": [
+    "questions": [
       "Nên cho con thi vào trường chuyên lớp chọn hay học trường công đúng tuyến gần nhà?",
       "Con đỗ lớp chọn nhưng học ngày đêm có dấu hiệu kiệt sức, tôi nên làm gì?",
       "Chi phí học trường tư thục chất lượng cao Hà Nội một năm thực tế là bao nhiêu?"
@@ -866,7 +866,7 @@ window.CDH_DATA = {
   {
     "level": "Song bằng & Quốc tế",
     "icon": "🌏",
-    "prompts": [
+    "questions": [
       "Chương trình Homeschooling bằng Mỹ (Acellus / NAS) có được công nhận tại VN không?",
       "Lộ trình học tiếng Anh ngữ âm cho bé 5 tuổi để tự tin vào trường song bằng?",
       "Làm sao để đọc vị khí chất học tập của con trước khi chọn trường phù hợp?"
