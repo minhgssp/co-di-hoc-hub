@@ -1,7 +1,9 @@
 /**
  * APP.JS — CÒ ĐI HỌC OFFICIAL HUB
  * Điều hướng mượt mà, phân loại bài viết, novel viewer, video player,
- * kho tài nguyên tương tác và widget Zalo bot 0902 209 213.
+ * cẩm nang gỡ rối học đường, 57 hội nhóm chất lượng, đối sánh chương trình
+ * và widget Zalo bot 0902 209 213.
+ * Hoàn toàn đứng về phía phụ huynh — 0% quảng cáo bán hàng, 0% seeding.
  */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -12,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // ==========================================
-    // 1. BLOG HUB RENDER & FILTER
+    // 1. BLOG HUB RENDER & FILTER (16 BÀI CHUYÊN SÂU)
     // ==========================================
     const blogGrid = document.getElementById('blogGrid');
     const blogFilterTabs = document.getElementById('blogFilterTabs');
@@ -212,66 +214,84 @@ LỜI THOẠI: "Hãy bình tĩnh đối thoại văn minh cùng Ban đại diệ
         });
     });
 
-    // Render Cây Nỗi Đau 6 Cụm A-F
-    const paintreeContainer = document.getElementById('paintreeContainer');
-    const paintreeSearch = document.getElementById('paintreeSearch');
+    // Render Cẩm Nang Gỡ Rối Học Đường (4 Nhóm Thiết Thực)
+    const guidesContainer = document.getElementById('guidesContainer');
+    const guideSearchInput = document.getElementById('guideSearchInput');
 
-    function renderPainTree(keyword = '') {
-        if (!paintreeContainer) return;
-        paintreeContainer.innerHTML = '';
+    function renderPracticalGuides(keyword = '') {
+        if (!guidesContainer) return;
+        guidesContainer.innerHTML = '';
 
         const kw = keyword.toLowerCase().trim();
+        const groups = data.practicalGuides || [];
 
-        data.paintree.forEach(cluster => {
-            const filteredProblems = cluster.problems.filter(p => 
-                !kw || p.title.toLowerCase().includes(kw) || p.quote.toLowerCase().includes(kw) || p.solution.toLowerCase().includes(kw)
+        groups.forEach(group => {
+            const filteredItems = group.items.filter(item => 
+                !kw || 
+                item.question.toLowerCase().includes(kw) || 
+                item.situation.toLowerCase().includes(kw) || 
+                item.advice.toLowerCase().includes(kw)
             );
 
-            if (filteredProblems.length === 0) return;
+            if (filteredItems.length === 0) return;
 
-            const col = document.createElement('div');
-            col.className = 'cluster-card';
+            const groupCard = document.createElement('div');
+            groupCard.className = 'guide-group-card';
 
-            let problemsHtml = '';
-            filteredProblems.forEach(p => {
-                problemsHtml += `
-                    <div class="problem-item">
-                        <div class="problem-summary" onclick="this.nextElementSibling.classList.toggle('hidden')">
-                            <span><strong>${p.code}:</strong> ${p.title}</span>
-                            <span class="text-xs text-amber-600 font-bold">Xem lời khuyên ▾</span>
+            let itemsHtml = '';
+            filteredItems.forEach((item, idx) => {
+                itemsHtml += `
+                    <div class="guide-accordion-item">
+                        <div class="guide-item-header" onclick="this.parentElement.classList.toggle('active')">
+                            <span class="guide-item-title">❓ ${item.question}</span>
+                            <span class="guide-item-toggle">▾</span>
                         </div>
-                        <div class="problem-body hidden">
-                            <div class="problem-quote">"${p.quote}"</div>
-                            <div class="text-slate-800"><strong class="text-emerald-700">💡 Giải pháp từ Cò Đi Học:</strong> ${p.solution}</div>
+                        <div class="guide-item-body">
+                            <div class="guide-item-situation">
+                                <strong>Băn khoăn của phụ huynh:</strong> "${item.situation}"
+                            </div>
+                            <div class="guide-item-advice">
+                                <strong>💡 Lời giải đáp & Hướng gỡ rối từ Cò Đi Học:</strong>
+                                <p class="mt-1">${item.advice}</p>
+                            </div>
                         </div>
                     </div>
                 `;
             });
 
-            col.innerHTML = `
-                <div class="cluster-header">
-                    <span class="cluster-icon">${cluster.icon}</span>
+            groupCard.innerHTML = `
+                <div class="guide-group-header">
+                    <span class="guide-group-icon">${group.icon}</span>
                     <div>
-                        <div class="text-xs font-bold text-amber-600">CỤM ${cluster.code}</div>
-                        <h4 class="cluster-title">${cluster.name}</h4>
+                        <h3 class="guide-group-title">${group.title}</h3>
+                        <p class="guide-group-desc">${group.desc}</p>
                     </div>
                 </div>
-                <p class="text-xs text-slate-500 mb-3">${cluster.desc}</p>
-                <div class="problem-list">${problemsHtml}</div>
+                <div class="guide-accordion-list">${itemsHtml}</div>
             `;
 
-            paintreeContainer.appendChild(col);
+            guidesContainer.appendChild(groupCard);
         });
+
+        if (guidesContainer.children.length === 0) {
+            guidesContainer.innerHTML = `
+                <div class="text-center py-12 text-slate-500">
+                    <div class="text-3xl mb-2">🔍</div>
+                    <p>Không tìm thấy chủ đề phù hợp với từ khóa "${keyword}".</p>
+                    <p class="text-xs text-slate-400 mt-1">Bạn có thể nhắn tin trực tiếp tới số Zalo <strong>0902 209 213</strong> để được hỗ trợ tức thì.</p>
+                </div>
+            `;
+        }
     }
 
-    if (paintreeSearch) {
-        paintreeSearch.addEventListener('input', (e) => {
-            renderPainTree(e.target.value);
+    if (guideSearchInput) {
+        guideSearchInput.addEventListener('input', (e) => {
+            renderPracticalGuides(e.target.value);
         });
     }
-    renderPainTree();
+    renderPracticalGuides();
 
-    // Render 57 Hội Nhóm
+    // Render 57 Hội Nhóm Chất Lượng Cao
     const communityTableBody = document.getElementById('communityTableBody');
     const communitySearch = document.getElementById('communitySearch');
 
@@ -280,7 +300,7 @@ LỜI THOẠI: "Hãy bình tĩnh đối thoại văn minh cùng Ban đại diệ
         communityTableBody.innerHTML = '';
         const kw = keyword.toLowerCase().trim();
 
-        const filtered = data.communities.filter(c => 
+        const filtered = (data.communities || []).filter(c => 
             !kw || c.name.toLowerCase().includes(kw) || c.category.toLowerCase().includes(kw)
         );
 
@@ -306,7 +326,7 @@ LỜI THOẠI: "Hãy bình tĩnh đối thoại văn minh cùng Ban đại diệ
     const curriculaContainer = document.getElementById('curriculaContainer');
     if (curriculaContainer) {
         curriculaContainer.innerHTML = '';
-        data.curricula.forEach(curr => {
+        (data.curricula || []).forEach(curr => {
             const card = document.createElement('div');
             card.className = 'curricula-card';
             card.innerHTML = `
@@ -337,49 +357,6 @@ LỜI THOẠI: "Hãy bình tĩnh đối thoại văn minh cùng Ban đại diệ
         });
     }
 
-    // Render Bát Tự 5Balance
-    const baziGrid = document.getElementById('baziGrid');
-    if (baziGrid) {
-        baziGrid.innerHTML = '';
-        data.bazi.forEach(bz => {
-            const bCard = document.createElement('div');
-            bCard.className = 'bazi-card';
-            bCard.style.borderLeft = `5px solid ${bz.color}`;
-            bCard.innerHTML = `
-                <div class="bazi-header">
-                    <span class="text-2xl">${bz.symbol}</span>
-                    <span>${bz.element}</span>
-                </div>
-                <div class="text-sm text-slate-700 mb-2"><strong>Đặc điểm nhận diện:</strong> ${bz.traits}</div>
-                <div class="text-sm text-slate-700 mb-2"><strong class="text-emerald-700">Phương pháp học tối ưu:</strong> ${bz.study_style}</div>
-                <div class="text-sm text-rose-700"><strong>Cảnh báo sai lầm:</strong> ${bz.warning}</div>
-            `;
-            baziGrid.appendChild(bCard);
-        });
-    }
-
-    // Trắc nghiệm Bát Tự 5Balance
-    const baziQuizSelect = document.getElementById('baziQuizSelect');
-    const baziQuizResult = document.getElementById('baziQuizResult');
-    if (baziQuizSelect && baziQuizResult) {
-        baziQuizSelect.addEventListener('change', (e) => {
-            const val = parseInt(e.target.value);
-            if (val >= 0 && val < data.bazi.length) {
-                const bz = data.bazi[val];
-                baziQuizResult.innerHTML = `
-                    <div class="p-4 bg-white rounded-lg border border-amber-300 shadow-sm mt-3">
-                        <h4 class="font-bold text-navy-dark text-base mb-1">${bz.symbol} Kết Quả: Bé Có Khí Chất Thiên Về ${bz.element}</h4>
-                        <p class="text-sm text-slate-700 mb-2">${bz.traits}</p>
-                        <p class="text-sm text-emerald-800 font-semibold mb-2">Lời khuyên sư phạm: ${bz.study_style}</p>
-                        <a href="https://zalo.me/0902209213?text=${encodeURIComponent('Chào Cò Đi Học, tôi muốn nhận bản phân tích Bát Tự chi tiết khí chất học tập cho con tôi.')}" target="_blank" class="inline-flex items-center gap-2 text-xs font-bold text-amber-600 hover:underline">Nhận bản giải mã khí chất 1-1 trên Zalo ➔</a>
-                    </div>
-                `;
-            } else {
-                baziQuizResult.innerHTML = '';
-            }
-        });
-    }
-
     // ==========================================
     // 5. ZALO WIDGET & FLOATING POPUP
     // ==========================================
@@ -387,7 +364,7 @@ LỜI THOẠI: "Hãy bình tĩnh đối thoại văn minh cùng Ban đại diệ
     const chatModalPopup = document.getElementById('chatModalPopup');
     const closeChatPopupBtn = document.getElementById('closeChatPopupBtn');
     const popupCategoryTags = document.getElementById('popupCategoryTags');
-    const popupQuestionList = document.getElementById('popupQuestionList') || document.getElementById('popupPromptList');
+    const popupQuestionList = document.getElementById('popupQuestionList');
 
     if (floatingWidgetTrigger && chatModalPopup) {
         floatingWidgetTrigger.addEventListener('click', () => {
@@ -404,12 +381,13 @@ LỜI THOẠI: "Hãy bình tĩnh đối thoại văn minh cùng Ban đại diệ
     function renderPopupPrompts(catIndex = 0) {
         if (!popupQuestionList) return;
         popupQuestionList.innerHTML = '';
-        const qSource = data.zaloQuestions; const cat = qSource[catIndex];
+        const qSource = data.zaloQuestions || [];
+        const cat = qSource[catIndex];
         if (!cat) return;
 
-        (cat.questions || cat.prompts).forEach(pText => {
+        (cat.questions || []).forEach(pText => {
             const btn = document.createElement('button');
-            btn.className = 'question-item-btn prompt-item-btn';
+            btn.className = 'question-item-btn';
             btn.innerHTML = `💬 ${pText}`;
             btn.onclick = () => {
                 navigator.clipboard.writeText(pText).then(() => {
@@ -421,14 +399,14 @@ LỜI THOẠI: "Hãy bình tĩnh đối thoại văn minh cùng Ban đại diệ
         });
     }
 
-    if (popupCategoryTags) {
+    if (popupCategoryTags && data.zaloQuestions) {
         popupCategoryTags.innerHTML = '';
-        (data.zaloQuestions).forEach((cat, idx) => {
+        data.zaloQuestions.forEach((cat, idx) => {
             const span = document.createElement('span');
-            span.className = `level-select-tag prompt-select-tag ${idx === 0 ? 'active' : ''}`;
+            span.className = `level-select-tag ${idx === 0 ? 'active' : ''}`;
             span.textContent = `${cat.icon} ${cat.level}`;
             span.onclick = () => {
-                popupCategoryTags.querySelectorAll('.prompt-select-tag').forEach(s => s.classList.remove('active'));
+                popupCategoryTags.querySelectorAll('.level-select-tag').forEach(s => s.classList.remove('active'));
                 span.classList.add('active');
                 renderPopupPrompts(idx);
             };

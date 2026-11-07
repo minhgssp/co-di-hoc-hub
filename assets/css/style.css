@@ -834,95 +834,178 @@ html, body {
   display: block;
 }
 
-/* Cây Nỗi Đau Search & Cards */
-.search-bar-wrap {
-  position: relative;
-  max-width: 500px;
-  margin: 0 auto 30px;
-}
-.search-input {
-  width: 100%;
-  padding: 14px 20px 14px 44px;
-  font-size: 15px;
-  border: 1px solid var(--border-color);
-  border-radius: 9999px;
-  outline: none;
-  box-shadow: var(--shadow-sm);
-  transition: all 0.2s;
-}
-.search-input:focus {
-  border-color: var(--cdh-orange);
-  box-shadow: 0 0 0 3px rgba(238, 160, 63, 0.2);
-}
-.search-icon {
-  position: absolute;
-  left: 16px;
-  top: 50%;
-  transform: translateY(-50%);
-  color: var(--text-muted);
-  font-size: 18px;
-}
 
-.paintree-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
-  gap: 24px;
+/* --- PHÂN KHU 3: CẨM NANG GỠ RỐI HỌC ĐƯỜNG --- */
+.guides-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
 }
-.cluster-card {
+.guide-group-card {
   background-color: var(--bg-card);
   border: 1px solid var(--border-color);
   border-radius: var(--radius-lg);
-  padding: 24px;
+  padding: 24px 28px;
   box-shadow: var(--shadow-sm);
 }
-.cluster-header {
+.guide-group-header {
   display: flex;
-  align-items: center;
-  gap: 12px;
-  margin-bottom: 16px;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 20px;
   border-bottom: 1px solid #f1f5f9;
-  padding-bottom: 12px;
+  padding-bottom: 16px;
 }
-.cluster-icon {
-  font-size: 28px;
+.guide-group-icon {
+  font-size: 32px;
+  line-height: 1;
+  background-color: var(--cdh-orange-light);
+  padding: 10px;
+  border-radius: var(--radius-md);
+  flex-shrink: 0;
 }
-.cluster-title {
-  font-size: 18px;
+.guide-group-title {
+  font-size: 19px;
   font-weight: 800;
   color: var(--cdh-navy-dark);
+  margin-bottom: 4px;
 }
-.problem-item {
-  border: 1px solid #f1f5f9;
+.guide-group-desc {
+  font-size: 13px;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+.guide-accordion-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.guide-accordion-item {
+  border: 1px solid #e2e8f0;
   border-radius: var(--radius-md);
-  margin-bottom: 12px;
   overflow: hidden;
+  transition: all 0.2s ease;
+  background-color: #ffffff;
 }
-.problem-summary {
-  padding: 12px 16px;
+.guide-accordion-item:hover {
+  border-color: var(--cdh-orange);
+}
+.guide-item-header {
+  padding: 14px 18px;
   font-size: 14px;
   font-weight: 700;
-  color: var(--cdh-navy);
-  background-color: #fafbfc;
+  color: var(--cdh-navy-dark);
+  background-color: #f8fafc;
   cursor: pointer;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  transition: background-color 0.2s;
 }
-.problem-body {
-  padding: 14px 16px;
-  font-size: 13px;
-  background-color: #ffffff;
-  border-top: 1px solid #f1f5f9;
+.guide-item-header:hover {
+  background-color: #f1f5f9;
+}
+.guide-accordion-item.active .guide-item-header {
+  background-color: #fff7ed;
+  color: #9a3412;
+}
+.guide-item-title {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+.guide-item-toggle {
+  font-size: 16px;
+  transition: transform 0.2s ease;
+  color: var(--text-muted);
+  font-weight: bold;
+}
+.guide-accordion-item.active .guide-item-toggle {
+  transform: rotate(180deg);
+  color: var(--cdh-orange);
+}
+.guide-item-body {
+  display: none;
+  padding: 16px 20px;
+  font-size: 14px;
   line-height: 1.6;
+  background-color: #ffffff;
+  border-top: 1px solid #fed7aa;
 }
-.problem-quote {
+.guide-accordion-item.active .guide-item-body {
+  display: block;
+}
+.guide-item-situation {
+  font-size: 13px;
   font-style: italic;
   color: #78350f;
-  background-color: var(--cdh-orange-light);
-  padding: 8px 12px;
+  background-color: #fffbeb;
+  border-left: 4px solid var(--cdh-orange);
+  padding: 10px 14px;
   border-radius: var(--radius-sm);
-  margin-bottom: 8px;
+  margin-bottom: 12px;
 }
+.guide-item-advice {
+  color: #1e293b;
+  font-size: 14px;
+  line-height: 1.6;
+}
+.guide-item-advice strong {
+  color: #065f46;
+  display: block;
+  margin-bottom: 4px;
+}
+
+/* 4 Trụ Cột Trợ Lý Trong Hero (SB7) */
+.hero-values-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+  margin-top: 24px;
+  margin-bottom: 28px;
+}
+@media (max-width: 640px) {
+  .hero-values-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.hero-value-card {
+  background-color: #ffffff;
+  border: 1px solid rgba(238, 160, 63, 0.35);
+  border-radius: var(--radius-md);
+  padding: 14px 16px;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  box-shadow: 0 4px 12px rgba(13, 29, 57, 0.05);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.hero-value-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(238, 160, 63, 0.15);
+  border-color: var(--cdh-orange);
+}
+.hero-value-icon {
+  font-size: 24px;
+  line-height: 1;
+  background-color: #fff7ed;
+  padding: 8px;
+  border-radius: var(--radius-sm);
+  flex-shrink: 0;
+}
+.hero-value-title {
+  font-size: 14px;
+  font-weight: 800;
+  color: var(--cdh-navy-dark);
+  margin-bottom: 2px;
+}
+.hero-value-desc {
+  font-size: 12px;
+  color: #475569;
+  line-height: 1.4;
+  margin: 0;
+}
+
 
 /* 57 Hội Nhóm Table */
 .community-table-wrap {
@@ -990,41 +1073,6 @@ html, body {
   color: var(--cdh-navy);
   display: block;
   margin-bottom: 2px;
-}
-
-/* Bát Tự 5Balance Section */
-.bazi-intro-box {
-  background: linear-gradient(135deg, #e9f5f3 0%, #FAF9F6 100%);
-  border-left: 6px solid var(--cdh-green);
-  border-radius: var(--radius-lg);
-  padding: 28px;
-  margin-bottom: 36px;
-}
-.bazi-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-  gap: 20px;
-}
-.bazi-card {
-  background-color: var(--bg-card);
-  border: 1px solid var(--border-color);
-  border-radius: var(--radius-lg);
-  padding: 20px;
-  box-shadow: var(--shadow-sm);
-  transition: transform 0.2s;
-}
-.bazi-card:hover {
-  transform: translateY(-3px);
-  box-shadow: var(--shadow-md);
-}
-.bazi-header {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  font-size: 16px;
-  font-weight: 800;
-  color: var(--cdh-navy-dark);
-  margin-bottom: 12px;
 }
 
 /* --- PHÂN KHU 4: ZALO HUB & WIDGET --- */
@@ -1114,7 +1162,8 @@ html, body {
   margin-bottom: 8px;
 }
 
-/* Floating Widget */
+
+/* Floating Widget & Enhanced Chat Modal Popup */
 .floating-widget-trigger {
   position: fixed;
   bottom: 24px;
@@ -1150,14 +1199,14 @@ html, body {
   position: fixed;
   bottom: 84px;
   right: 24px;
-  width: 360px;
+  width: 380px;
   max-width: calc(100vw - 32px);
-  max-height: min(520px, calc(100vh - 110px));
-  background-color: #ffffff;
+  max-height: min(540px, calc(100vh - 110px));
+  background-color: #ffffff !important;
   border-radius: var(--radius-lg);
-  box-shadow: 0 16px 45px rgba(13, 29, 57, 0.3);
-  border: 1px solid var(--border-color);
-  z-index: 1001;
+  box-shadow: 0 20px 60px rgba(13, 29, 57, 0.4) !important;
+  border: 2px solid #cbd5e1 !important;
+  z-index: 9999 !important;
   overflow: hidden;
   animation: popUp 0.25s ease-out;
   flex-direction: column;
@@ -1165,18 +1214,14 @@ html, body {
 .chat-modal-popup.active {
   display: flex;
 }
-@keyframes popUp {
-  from { opacity: 0; transform: translateY(15px); }
-  to { opacity: 1; transform: translateY(0); }
-}
 .chat-popup-header {
-  background: linear-gradient(135deg, var(--cdh-navy-dark), var(--cdh-navy));
-  color: #fff;
-  padding: 12px 16px;
+  background: #0D1D39 !important;
+  color: #ffffff !important;
+  padding: 14px 18px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 2px solid var(--cdh-orange);
+  border-bottom: 3px solid var(--cdh-orange) !important;
   flex-shrink: 0;
 }
 .chat-popup-logo {
@@ -1187,47 +1232,52 @@ html, body {
   max-width: 28px !important;
   max-height: 28px !important;
   border-radius: 50%;
-  background: #fff;
+  background: #ffffff;
   padding: 2px;
   object-fit: contain;
 }
 .chat-popup-title {
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 700;
-  color: #ffffff;
+  color: #ffffff !important;
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 10px;
 }
 .chat-popup-close-btn {
-  background: transparent;
-  border: none;
-  color: #ffffff;
-  font-size: 18px;
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: #ffffff !important;
+  font-size: 16px;
   font-weight: 700;
   cursor: pointer;
-  padding: 2px 6px;
-  border-radius: 4px;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
   line-height: 1;
   transition: all 0.2s;
 }
 .chat-popup-close-btn:hover {
-  background: rgba(255, 255, 255, 0.2);
-  color: var(--cdh-orange);
+  background: #ef4444;
+  border-color: #ef4444;
+  color: #ffffff;
 }
 .chat-popup-body {
-  padding: 16px;
+  padding: 16px 18px;
   overflow-y: auto;
   flex: 1;
-  background-color: #ffffff;
+  background-color: #ffffff !important;
 }
-.level-select-tag, .prompt-select-tag {
+.level-select-tag {
   display: inline-block;
   font-size: 12px;
   font-weight: 700;
-  padding: 5px 12px;
+  padding: 6px 12px;
   background-color: #f1f5f9;
-  border: 1px solid #e2e8f0;
+  border: 1px solid #cbd5e1;
   border-radius: 9999px;
   color: var(--cdh-navy);
   cursor: pointer;
@@ -1235,35 +1285,36 @@ html, body {
   margin-bottom: 8px;
   transition: all 0.2s;
 }
-.level-select-tag:hover, .prompt-select-tag:hover {
+.level-select-tag:hover {
   background-color: #e2e8f0;
 }
-.level-select-tag.active, .prompt-select-tag.active {
+.level-select-tag.active {
   background-color: var(--cdh-orange);
   border-color: var(--cdh-orange);
   color: var(--cdh-navy-dark);
 }
-.question-item-btn, .prompt-item-btn {
+.question-item-btn {
   width: 100%;
   text-align: left;
   background-color: #f8fafc;
   border: 1px solid #cbd5e1;
   border-radius: var(--radius-sm);
-  padding: 10px 12px;
+  padding: 10px 14px;
   font-size: 13px;
-  color: var(--cdh-navy-dark);
+  color: #1e293b;
   font-weight: 600;
   margin-bottom: 8px;
   cursor: pointer;
   transition: all 0.2s;
   line-height: 1.4;
 }
-.question-item-btn:hover, .prompt-item-btn:hover {
-  background-color: var(--cdh-orange-light);
+.question-item-btn:hover {
+  background-color: #fff7ed;
   border-color: var(--cdh-orange);
   color: var(--cdh-navy-dark);
   transform: translateX(2px);
 }
+
 
 /* Common Utility Classes for Component Consistency */
 .flex { display: flex; }
@@ -1652,4 +1703,18 @@ html, body {
   .guide-banner {
     padding: 30px 20px;
   }
+}
+
+
+/* Hero Action Button Contrast Enhancement */
+.hero-actions .btn-outline {
+  color: #ffffff !important;
+  border-color: rgba(255, 255, 255, 0.5) !important;
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  backdrop-filter: blur(4px);
+}
+.hero-actions .btn-outline:hover {
+  background-color: rgba(255, 255, 255, 0.25) !important;
+  border-color: #ffffff !important;
+  color: #ffffff !important;
 }
