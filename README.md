@@ -39,6 +39,7 @@ python preview_server.py
 
 ### Triển Khai Lên Vercel:
 Dự án được tối ưu hóa cho Vercel Static Deployment (Zero-Config).
+
 1. Kết nối repository GitHub này vào [Vercel](https://vercel.com).
 2. Framework Preset: **Other** / Static.
 3. Root Directory: `./`

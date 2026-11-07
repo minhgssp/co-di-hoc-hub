@@ -1315,3 +1315,218 @@ html, body {
     display: none;
   }
 }
+
+/* ==========================================================================
+   STORYBRAND SB7 ENHANCEMENTS
+   ========================================================================== */
+
+/* 3-Level Problem Section */
+.problem-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 24px;
+  margin-top: 36px;
+}
+.problem-card {
+  background-color: var(--bg-card);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-color);
+  padding: 30px;
+  box-shadow: var(--shadow-sm);
+  transition: all 0.25s ease;
+  display: flex;
+  flex-direction: column;
+}
+.problem-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+  border-color: rgba(238, 160, 63, 0.4);
+}
+.problem-card-badge {
+  font-size: 11px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 12px;
+}
+.problem-card-title {
+  font-size: 19px;
+  font-weight: 800;
+  color: var(--cdh-navy-dark);
+  margin-bottom: 12px;
+  line-height: 1.4;
+}
+.problem-card-desc {
+  font-size: 14px;
+  color: var(--text-muted);
+  line-height: 1.7;
+}
+
+/* The Guide Banner */
+.guide-banner {
+  background: linear-gradient(135deg, #0D1D39 0%, #1e3352 50%, #26405E 100%);
+  border-radius: var(--radius-lg);
+  color: var(--cdh-white);
+  padding: 48px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+  margin-top: 40px;
+}
+.guide-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+.guide-highlight {
+  color: var(--cdh-orange);
+  font-weight: 800;
+}
+.guide-quote-box {
+  background: rgba(255, 255, 255, 0.08);
+  border-left: 4px solid var(--cdh-orange);
+  padding: 20px 24px;
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+  font-style: italic;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #e2e8f0;
+  margin-top: 20px;
+}
+
+/* 3-Step Plan Section */
+.plan-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 28px;
+  margin-top: 40px;
+  position: relative;
+}
+.plan-card {
+  background-color: var(--bg-card);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-color);
+  padding: 32px 28px;
+  box-shadow: var(--shadow-sm);
+  position: relative;
+  transition: all 0.25s ease;
+  display: flex;
+  flex-direction: column;
+}
+.plan-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--cdh-orange);
+}
+.plan-step-num {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: var(--cdh-orange-light);
+  color: var(--cdh-orange);
+  font-weight: 800;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  border: 2px solid var(--cdh-orange);
+}
+.plan-card-title {
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--cdh-navy-dark);
+  margin-bottom: 12px;
+}
+.plan-card-desc {
+  font-size: 14px;
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin-bottom: 20px;
+  flex: 1;
+}
+.plan-card-link {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--cdh-orange);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: gap 0.2s;
+}
+.plan-card-link:hover {
+  gap: 10px;
+}
+
+/* The Stakes (Failure vs. Success) Section */
+.stakes-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  margin-top: 36px;
+}
+.stakes-card {
+  border-radius: var(--radius-lg);
+  padding: 36px;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+}
+.stakes-card-failure {
+  background-color: #FEF2F2;
+  border: 1px solid #FECACA;
+}
+.stakes-card-success {
+  background-color: #F0FDF4;
+  border: 1px solid #BBF7D0;
+}
+.stakes-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+.stakes-header h3 {
+  font-size: 20px;
+  font-weight: 800;
+}
+.stakes-card-failure .stakes-header h3 {
+  color: #991B1B;
+}
+.stakes-card-success .stakes-header h3 {
+  color: #166534;
+}
+.stakes-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  font-size: 14px;
+  line-height: 1.6;
+}
+.stakes-card-failure .stakes-list li {
+  color: #7F1D1D;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+.stakes-card-success .stakes-list li {
+  color: #14532D;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+@media (max-width: 992px) {
+  .guide-grid {
+    grid-template-columns: 1fr;
+  }
+  .stakes-grid {
+    grid-template-columns: 1fr;
+  }
+  .guide-banner {
+    padding: 30px 20px;
+  }
+}
