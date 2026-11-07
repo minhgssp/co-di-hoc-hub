@@ -17,44 +17,43 @@
 </head>
 <body>
 
-    <!-- Header & Navigation -->
+    <!-- Header & Navigation (1 Hàng Ngang Cố Định 72px) -->
     <header class="header" id="siteHeader">
-        <div class="container header-container">
+        <div class="container header-inner">
             <a href="#" class="logo-wrap" aria-label="Trang chủ Cò Đi Học">
                 <img src="assets/images/logo.svg" alt="Logo Cò Đi Học" class="logo-img">
                 <div class="logo-text">
-                    <span class="logo-text-main">CÒ ĐI HỌC</span>
-                    <div class="logo-text-sub">Trợ lý AI đồng hành cùng các phụ huynh từ tiền tiểu học đến hết phổ thông</div>
+                    <span class="logo-text-title">CÒ ĐI HỌC</span>
+                    <span class="logo-text-sub">Trợ lý phụ huynh 24/7</span>
                 </div>
             </a>
 
             <nav>
                 <ul class="nav-menu" id="navMenu">
                     <li><a href="#problem-section" class="nav-link">Tiếng lòng cha mẹ</a></li>
-                    <li><a href="#values-section" class="nav-link">4 việc Cò hỗ trợ</a></li>
+                    <li><a href="#values-section" class="nav-link">4 việc Cò giúp</a></li>
                     <li><a href="#resources-section" class="nav-link">Cẩm nang gỡ rối</a></li>
-                    <li><a href="#blog-section" class="nav-link">16 bài chuyên sâu</a></li>
                     <li><a href="#video-section" class="nav-link">Thư viện video</a></li>
-                    <li><a href="#community-section" class="nav-link">Chat 1-1 & nhóm Zalo</a></li>
+                    <li><a href="#community-section" class="nav-link">Cộng đồng Zalo</a></li>
                 </ul>
             </nav>
 
             <div class="header-actions">
-                <a href="https://zalo.me/0902209213?text=Toi%20muon%20chat%201-1%20voi%20Co%20di%20hoc" target="_blank" class="btn btn-primary">
-                    <span>Chat 1-1 với Cò đi học</span>
+                <a href="https://zalo.me/0902209213?text=Toi%20muon%20chat%201-1%20voi%20Co%20di%20hoc" target="_blank" class="btn btn-primary btn-sm">
+                    <span>👉 Chat 1-1 với Cò</span>
                 </a>
-                <a href="https://zalo.me/0902209213?text=Toi%20muon%20tham%20gia%20nhom%20Zalo" target="_blank" class="btn btn-outline header-community-btn">
-                    <span>Tham gia nhóm Zalo</span>
+                <a href="https://zalo.me/0902209213?text=Toi%20muon%20tham%20gia%20nhom%20Zalo" target="_blank" class="btn btn-outline btn-sm header-community-btn">
+                    <span>💬 Nhóm Zalo</span>
                 </a>
                 <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menu">☰</button>
             </div>
         </div>
     </header>
 
-    <!-- Phân khu Hero: Chuẩn StoryBrand SB7 (Khách hàng là trung tâm + Grunt Test 5 giây) -->
+    <!-- Phân khu Hero: Chuẩn StoryBrand SB7 (Cân Đối 6:6 Thoáng Mắt) -->
     <section class="hero" id="hero-section">
         <div class="container hero-grid">
-            <div>
+            <div class="hero-content">
                 <div class="hero-tag">
                     <span>🌱 Dành riêng cho cha mẹ có con từ 4 đến 18 tuổi</span>
                 </div>
@@ -66,41 +65,6 @@
                 <p class="hero-lead">
                     <strong>Cò Đi Học</strong> giúp phụ huynh hỏi đáp nhanh hơn, bớt công sức tự mình tìm kiếm. Cò có mặt trong hàng trăm hội nhóm, hội thảo và diễn đàn giáo dục — luôn lắng nghe và đúc kết kinh nghiệm thực tế để trả lời ngay khi bố mẹ cần.
                 </p>
-
-                <!-- 4 Việc cốt lõi Cò Đi Học làm giúp bố mẹ mỗi ngày (Viết hoa đúng ngữ pháp tiếng Việt) -->
-                <div class="hero-values-grid" id="values-section">
-                    <div class="hero-value-card">
-                        <span class="hero-value-icon">⏱️</span>
-                        <div>
-                            <div class="hero-value-title">Tiết kiệm thời gian</div>
-                            <p class="hero-value-desc">Không phải thức trắng đêm lội hàng chục hội nhóm. Mọi thông tin cốt lõi được chắt lọc gọn gàng trong 3 phút.</p>
-                        </div>
-                    </div>
-
-                    <div class="hero-value-card">
-                        <span class="hero-value-icon">🔍</span>
-                        <div>
-                            <div class="hero-value-title">Tổng hợp để không bị sót</div>
-                            <p class="hero-value-desc">Nắm trọn lịch tuyển sinh, biểu phí, quy chế thi và thông tư mới nhất từ Bộ, Sở và các trường.</p>
-                        </div>
-                    </div>
-
-                    <div class="hero-value-card">
-                        <span class="hero-value-icon">🛡️</span>
-                        <div>
-                            <div class="hero-value-title">Sàng lọc để không bị loạn</div>
-                            <p class="hero-value-desc">Gạn sạch chiêu trò quảng cáo, chim mồi hay review ảo, giữ lại sự thật khách quan đa chiều.</p>
-                        </div>
-                    </div>
-
-                    <div class="hero-value-card">
-                        <span class="hero-value-icon">🧠</span>
-                        <div>
-                            <div class="hero-value-title">Ghi nhớ để khỏi đau đầu</div>
-                            <p class="hero-value-desc">Lưu sẵn mọi hạn nộp hồ sơ, giấy tờ và biểu phí để nhắc bố mẹ đúng lúc, không lo quên việc.</p>
-                        </div>
-                    </div>
-                </div>
 
                 <!-- Call to Action kép: Chat 1-1 với Cò đi học & Tham gia nhóm Zalo -->
                 <div class="hero-actions">
@@ -115,6 +79,45 @@
 
             <div class="hero-avatar-wrap">
                 <img src="assets/images/host_v1_02_speaking_hands.png" alt="Linh vật Cò Đi Học hoạt hình" class="hero-stork-img">
+            </div>
+        </div>
+    </section>
+
+    <!-- Phân khu: 4 Việc Cốt Lõi Cò Đồng Hành (Value Strip Độc Lập) -->
+    <section class="section values-strip-section" id="values-section">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="badge badge-orange section-badge">4 việc Cò hỗ trợ</span>
+                <h2 class="section-title">Cò Đi Học giúp bố mẹ thảnh thơi hơn mỗi ngày</h2>
+                <p class="section-subtitle">
+                    Không còn phải tự mình bơi trong ma trận thông tin, Cò kề vai chia sẻ 4 gánh nặng lớn nhất:
+                </p>
+            </div>
+
+            <div class="values-strip-grid">
+                <div class="value-strip-card">
+                    <div class="value-strip-icon">⏱️</div>
+                    <h3 class="value-strip-title">Tiết kiệm thời gian</h3>
+                    <p class="value-strip-desc">Không phải thức trắng đêm lội hàng chục hội nhóm. Mọi thông tin cốt lõi được chắt lọc gọn gàng trong 3 phút.</p>
+                </div>
+
+                <div class="value-strip-card">
+                    <div class="value-strip-icon">🔍</div>
+                    <h3 class="value-strip-title">Tổng hợp để không bị sót</h3>
+                    <p class="value-strip-desc">Nắm trọn lịch tuyển sinh, biểu phí, quy chế thi và thông tư mới nhất từ Bộ, Sở và các trường.</p>
+                </div>
+
+                <div class="value-strip-card">
+                    <div class="value-strip-icon">🛡️</div>
+                    <h3 class="value-strip-title">Sàng lọc để không bị loạn</h3>
+                    <p class="value-strip-desc">Gạn sạch chiêu trò quảng cáo, chim mồi hay review ảo, giữ lại sự thật khách quan đa chiều.</p>
+                </div>
+
+                <div class="value-strip-card">
+                    <div class="value-strip-icon">🧠</div>
+                    <h3 class="value-strip-title">Ghi nhớ để khỏi đau đầu</h3>
+                    <p class="value-strip-desc">Lưu sẵn mọi hạn nộp hồ sơ, giấy tờ và biểu phí để nhắc bố mẹ đúng lúc, không lo quên việc.</p>
+                </div>
             </div>
         </div>
     </section>
