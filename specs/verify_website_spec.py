@@ -234,11 +234,16 @@ def check_gate_3_data_integrity() -> list[str]:
         r"Vòng duyệt",
         r"VOC Insight",
         r"VOC Pain Tree",
+        r"\bVOC\b",
+        r"\bP\d{2}\b",
         r"Node [A-Z]-\d+",
         r"Mẫu chuẩn \d+/\d+",
         r"BÀI \d+\s*\(",
         r"Chuyên gia Hoàng Mai Chi",
         r"Maichi Edu",
+        r"\bWhitelist\b",
+        r"BỐI CẢNH:",
+        r"LỜI THOẠI CÒ ĐI HỌC:",
     ]
     forbidden_brands = [
         "Vinschool", "Archimedes", "Ngôi Sao", "Nguyễn Siêu", "Đoàn Thị Điểm",
@@ -278,8 +283,16 @@ def check_gate_3_data_integrity() -> list[str]:
             errors.append(f"[Gate 3] {bid}: toc has fewer than 3 items ({len(toc)})")
         if re.search(r"\[\d+\]", html):
             errors.append(f"[Gate 3] {bid}: dangling numeric footnote citation [N] found in contentHtml")
-        if re.search(r"<ul[^>]*>\s*<li><strong[^>]*>[^<]+</strong>\s*</li>\s*</ul>", html, flags=re.IGNORECASE):
-            errors.append(f"[Gate 3] {bid}: single-item <ul><li><strong>...</strong></li></ul> pseudo-heading found")
+        if re.search(r"<ul[^>]*>\s*<li>(?:(?!</li>)[\s\S])*?</li>\s*</ul>", html, flags=re.IGNORECASE):
+            errors.append(f"[Gate 3] {bid}: single-item <ul><li>...</li></ul> pseudo-heading found")
+        if "`" in html:
+            errors.append(f"[Gate 3] {bid}: raw markdown backtick found in contentHtml")
+
+    # Check for foreign script token glitches (Cyrillic, Bengali, CJK, etc.) or en-dash
+    if "\u2013" in full_json_str:
+        errors.append("[Gate 3] En-dash (–) found in data.js; must use standard hyphen (-)")
+    if re.search(r"[\u0370-\u1DFF\u2E80-\u9FFF\uAC00-\uD7AF\uFFFD]", full_json_str):
+        errors.append("[Gate 3] Foreign script glitch character (Cyrillic/Bengali/CJK) found in data.js")
 
     return errors
 

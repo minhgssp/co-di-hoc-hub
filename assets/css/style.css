@@ -771,14 +771,10 @@ html, body {
   align-items: center;
 }
 .script-body {
-  padding: 18px;
-  font-size: 13px;
-  background-color: #ffffff;
-  border-top: 1px solid var(--border-color);
-  max-height: 240px;
-  overflow-y: auto;
-  line-height: 1.6;
-  word-break: break-word;
+  padding: 16px 20px;
+  font-size: 13.5px;
+  color: var(--text-main);
+  line-height: 1.65;
 }
 .script-body pre {
   white-space: pre-wrap;

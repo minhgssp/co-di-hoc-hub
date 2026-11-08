@@ -162,22 +162,26 @@ document.addEventListener('DOMContentLoaded', () => {
         'v1': {
             title: 'Tập 1 - Con lớp 1 quá tải đánh vần và đọc trơn không hiểu nghĩa',
             src: 'assets/videos/codihoc_c01_kudo_9x16.mp4',
-            script: `[00:00 - 00:08] BỐI CẢNH: Cò Đi Học đeo kính tròn gile navy bước vào khung hình, trên tay cầm quyển sách Tiếng Việt 1.
-LỜI THOẠI CÒ ĐI HỌC: "Nhiều phụ huynh lớp 1 hay băn khoăn hỏi tôi: 'Cò ơi, sao con tôi đánh vần vanh vách từng chữ, đọc trơn như gió nhưng hỏi bài nói gì thì con ngơ ngác không biết?'"
-[00:09 - 00:25] PHÂN TÍCH BẢN CHẤT:
-LỜI THOẠI: "Bản chất là vì con đang dùng toàn bộ năng lượng não bộ để giải mã mặt chữ cơ học, chứ con chưa hề 'tiêu hóa' ngữ nghĩa. Đừng vội quát mắng con lười hay dốt! Hãy đổi cách học: Đọc 1 câu, dừng lại hỏi 1 câu đố vui để kích hoạt trí tưởng tượng của con."
-[00:26 - 00:35] KẾT LUẬN & ĐỒNG HÀNH:
-LỜI THOẠI: "Nuôi dạy con là hành trình nuôi dưỡng sự tự tin. Cần Cò Đi Học đồng hành gỡ rối từng bài học, hãy nhắn tin ngay cho Cò trên Zalo nhé!"`
+            script: `[00:00 - 00:08] Mở đầu câu chuyện:
+"Nhiều phụ huynh lớp 1 hay băn khoăn hỏi Cò: 'Cò ơi, sao con đánh vần vanh vách từng chữ, đọc trơn như gió nhưng hỏi bài nói gì thì con ngơ ngác không biết?'"
+
+[00:09 - 00:25] Góc nhìn tâm lý nhận thức:
+"Bản chất là vì con đang dùng toàn bộ năng lượng não bộ để giải mã mặt chữ cơ học, chứ chưa kịp tiêu hóa ngữ nghĩa. Đừng vội trách con lười hay chậm hiểu! Hãy đổi cách học: đọc 1 câu, dừng lại hỏi 1 câu đố vui để kích hoạt trí tưởng tượng của con."
+
+[00:26 - 00:35] Lời nhắn đồng hành:
+"Nuôi dạy con là hành trình nuôi dưỡng sự tự tin. Cần Cò Đi Học đồng hành gỡ rối từng bài học, bố mẹ hãy nhắn tin ngay cho Cò trên Zalo nhé!"`
         },
         'v2': {
             title: 'Tập 2 - Môn học liên kết và nỗi lo phụ huynh trường công lập',
             src: 'assets/videos/codihoc_v2_faccontent_9x16.mp4',
-            script: `[00:00 - 00:10] BỐI CẢNH: Cò Đi Học cầm thước chỉ bảng, phía sau là sơ đồ lịch học trường công.
-LỜI THOẠI: "Đầu năm học, phụ huynh nhận một tờ đơn đăng ký môn liên kết tự nguyện: Kỹ năng sống, STEM, Tiếng Anh bổ trợ... Nhưng nếu không đăng ký thì sao? Con ngồi đâu?"
-[00:11 - 00:28] CĂN CỨ VĂN BẢN CHÍNH THỐNG:
-LỜI THOẠI: "Theo đúng Thông tư của Bộ GD&ĐT, nhà trường bắt buộc phải xếp các môn liên kết sau giờ chính khóa và có giáo viên quản lý học sinh không tham gia. Phụ huynh có toàn quyền chọn lựa dựa trên nhu cầu thực của con."
-[00:29 - 00:40] LỜI KHUYÊN CỦA CÒ ĐI HỌC:
-LỜI THOẠI: "Hãy bình tĩnh đối thoại văn minh cùng Ban đại diện cha mẹ học sinh để cùng tạo ra môi trường học tập lành mạnh nhất cho các con!"`
+            script: `[00:00 - 00:10] Tình huống thực tế đầu năm học:
+"Đầu năm học, phụ huynh nhận tờ đơn đăng ký các môn liên kết tự nguyện như Kỹ năng sống, STEM, Tiếng Anh bổ trợ... Nhưng nếu không đăng ký thì sao? Con sẽ ngồi ở đâu?"
+
+[00:11 - 00:28] Đối chiếu quy định của ngành giáo dục:
+"Theo đúng quy định hiện hành của Bộ GD&ĐT, nhà trường cần bố trí các tiết liên kết hợp lý và đảm bảo quyền lợi học tập, sinh hoạt an toàn cho những học sinh không tham gia. Phụ huynh có toàn quyền chọn lựa dựa trên nhu cầu thực tế của con."
+
+[00:29 - 00:40] Lời khuyên của Cò Đi Học:
+"Hãy bình tĩnh đối thoại văn minh cùng giáo viên chủ nhiệm và Ban đại diện cha mẹ học sinh để cùng tạo ra môi trường học tập lành mạnh nhất cho các con!"`
         }
     };
 
