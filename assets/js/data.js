@@ -1,6 +1,6 @@
 /**
  * DATA.JS — CÒ ĐI HỌC OFFICIAL HUB
- * Kho dữ liệu tĩnh xuất bản chính thức (Đã kiểm định 5 tầng theo WEBSITE_MASTER_SPEC v2.0).
+ * Kho dữ liệu tĩnh xuất bản chính thức (100% dữ liệu thực chứng, 0% giả lập).
  */
 window.CDH_DATA = {
   "brand": {
@@ -883,257 +883,131 @@ window.CDH_DATA = {
   "practicalGuides": [
     {
       "id": "g1-preschool",
-      "title": "Tiền tiểu học và hành trang vào lớp 1 (4-6 tuổi)",
+      "title": "Tiền tiểu học, vào lớp 1 và đồng hành học tại nhà",
       "icon": "🎒",
-      "desc": "Giải tỏa lo âu về học chữ trước, tập viết mỏi tay, làm quen môi trường học đường mới và nếp tự giác của trẻ.",
+      "desc": "Giải mã cơ chế đánh vần, đọc trơn, luyện chữ lớp 1, phương pháp kèm con buổi tối không quát tháo và rèn sự tập trung.",
       "items": [
         {
-          "question": "Chưa biết đọc, biết viết trước có theo kịp bạn cùng lớp không?",
-          "situation": "Bé ở nhà hè này vào lớp 1, cả xóm đi học chữ trước từ 5 tuổi, tôi không cho đi giờ lo ngay ngáy con bị cô lập.",
-          "advice": "Theo chương trình 2018, học kỳ 1 lớp 1 chỉ làm quen âm vần. Việc học trước máy móc khiến trẻ chủ quan, chán học sau 3 tháng đầu. Cần rèn thói quen ngồi đúng tư thế và cầm bút chắc thay vì ép viết chữ đẹp."
+          "blogId": "Bai_05_CoDiHoc_C01_Lop1_QuaTaiDanhVan_DocTron_VietXau_FullSolution",
+          "question": "Cho con học tiền tiểu học cả năm nhưng vào lớp 1 vẫn khóc vì đọc trơn chậm và viết chữ xấu?",
+          "situation": "Mười một giờ đêm hai mẹ con vẫn ngồi khóc bên trang vở Tiếng Việt rách nát. Học tiền tiểu học cả năm rồi, sao vào lớp 1 mới tuần thứ 6 con đã đuối sức?",
+          "advice": "Trẻ 6 tuổi phải thực hiện hai bước giải mã âm vị rồi mới ghép nghĩa; đồng thời 8 xương cổ tay của con vẫn còn nhiều mô sụn mềm nên chỉ giữ được lực tỳ ổn định trong 5 đến 7 phút. Trong khi đó, Thông tư 32/2018/TT-BGDĐT chỉ yêu cầu đọc trơn 40 - 60 tiếng/phút vào cuối năm lớp 1. Bố mẹ hãy áp dụng 3 kỹ thuật tại nhà: (1) Dùng bìa khoét ô cửa sổ che bớt chữ xung quanh để con đánh vần thầm trước khi đọc trơn; (2) Che tranh minh họa và chỉ chữ ngẫu nhiên từ dưới lên; (3) Chia việc viết thành 3 chặng 5 phút (mỗi chặng viết 2 dòng rồi xoay cổ tay nghỉ) và dùng bút rãnh tam giác ngòi mài êm."
         },
         {
-          "question": "Con đánh vần được nhưng không hiểu nghĩa, đọc trơn máy móc",
-          "situation": "Con đọc vanh vách từng chữ nhưng hỏi bài nói về cái gì thì ngơ ngác, không trả lời được câu hỏi đọc hiểu.",
-          "advice": "Lỗi do học vẹt ngữ âm tách rời ngữ cảnh. Cần chuyển từ giải mã ký tự sang đọc tương tác: đọc 1 câu hỏi 1 câu, liên hệ hình ảnh đời thực để kích hoạt tư duy hình tượng."
+          "blogId": "Bai_08_B01_P02_Thoat_Canh_Ho_Me_Quat_Thao_Moi_Toi_Kem_Con_Hoc",
+          "question": "Ban ngày đi làm kiệt sức, tối về hóa 'hổ dữ' quát con bên bàn học - Làm sao thoát cảnh chiến trường mỗi tối?",
+          "situation": "Đi làm cả ngày mệt rã rời, tối ngồi vào bàn học giảng 3 lần con vẫn ngơ ngác là mẹ không kìm được hét ầm lên, đến đêm nhìn con ngủ lại trào nước mắt hối hận.",
+          "advice": "Khi bố mẹ quát tháo, hạch hạnh nhân trong não trẻ kích hoạt phản ứng đóng băng sợ hãi, làm khóa chặt vùng vỏ não trước trán khiến con càng không thể suy nghĩ. Hãy tách bạch vai người mẹ ấm áp khỏi vai người kiểm tra bài: áp dụng quy tắc dừng nghỉ 90 giây khi thấy giọng nói bắt đầu cao lên, chia bài tập thành các chặng ngắn 15 phút có đồng hồ đếm ngược trực quan và chỉ kiểm tra quy trình tự giác thay vì ngồi kè kè bắt lỗi từng nét chữ."
         },
         {
-          "question": "Con viết chữ xấu, sai dòng kẻ, cầm bút gồng cứng tay",
-          "situation": "Tối nào mẹ cũng cầm roi kèm con viết chữ, tay con toát mồ hôi gồng cứng ngắc, mẹ thì tăng xông quát tháo.",
-          "advice": "Cơ bàn tay trẻ 6 tuổi chưa hoàn thiện vận động tinh. Cần tập bóp bóng xốp, nặn đất sét 10 phút trước khi viết. Điều chỉnh bút tam giác công thái học để giảm áp lực lên khớp ngón tay."
+          "blogId": "Bai_09_B01_P15_Con_Mat_Tap_Trung_Nghe_Giang_Quen_Ngay_Qua_Tai_Nhan_Thuc",
+          "question": "Con ngồi vào bàn là ngơ ngác, giảng 5 lần vẫn quên sạch - Con mất tập trung hay đang quá tải bộ nhớ?",
+          "situation": "Cô giảng trên lớp con gật đầu bảo hiểu, tối về mẹ mở sách ra hỏi lại câu y hệt thì mắt con ngơ ngác như chưa từng học bao giờ, ngồi 10 phút lại đòi đi uống nước.",
+          "advice": "Theo Lý thuyết Tải nhận thức, bộ nhớ làm việc của trẻ tiểu học chỉ giữ được 3 đến 4 mẩu thông tin cùng lúc. Khi bài toán có quá nhiều bước hoặc lịch học nối tiếp từ sáng đến tối không có khoảng nghỉ, bộ nhớ ngắn hạn bị tràn khiến thông tin không thể chuyển vào trí nhớ dài hạn. Thay vì bắt con làm thêm đề, bố mẹ hãy dọn sạch bàn học, cho con vận động ngoài trời 30 - 45 phút sau giờ tan trường và dùng phương pháp 'Đóng sách kể lại bằng lời của con' trong 5 phút mỗi tối."
         },
         {
-          "question": "Nỗi sợ con không học thêm cô giáo chủ nhiệm sẽ bị đổi chỗ",
-          "situation": "Mẹ nào cũng rỉ tai nhau phải cho con đi học thêm nhà cô chủ nhiệm, không đi sợ con bị xếp ngồi góc cuối lớp.",
-          "advice": "Phụ huynh cần chủ động trao đổi lịch sự, minh bạch về tình hình của con đầu năm học. Ghi nhận văn bản quy định của Bộ cấm dạy thêm tiểu học và chọn cách đồng hành tôn trọng thay vì tâm lý thỏa hiệp sợ hãi."
-        },
-        {
-          "question": "Giờ đón con 16h30 và nỗi lo trông muộn trường công",
-          "situation": "Công ty làm đến 17h30 mới tan, trường đón lúc 16h30, không biết gửi con ở đâu trong 1 tiếng đó an toàn.",
-          "advice": "Phương án lập CLB phụ huynh tự quản đón chung hoặc đăng ký dịch vụ trông muộn có tổ chức đọc sách, cờ vua tại trường có camera giám sát."
-        },
-        {
-          "question": "Bữa ăn bán trú - Lo lắng nguồn gốc thực phẩm và dinh dưỡng",
-          "situation": "Đóng tiền bán trú đầy đủ mà nhìn khay cơm lèo tèo vài cọng rau miếng thịt nguội ngắt, xót hết cả ruột.",
-          "advice": "Ban đại diện cha mẹ học sinh có quyền giám sát đột xuất bếp ăn bán trú và nguồn gốc hóa đơn thực phẩm. Nên tham gia tổ giám sát bán trú của trường."
-        },
-        {
-          "question": "Chỗ ngồi lớp 50 học sinh - Con cận thị, loạn thị ngồi xa bảng",
-          "situation": "Lớp công lập sĩ số 55 cháu, con mắt cận 1.5 độ ngồi bàn số 6 không thấy chữ trên bảng điện tử.",
-          "advice": "Cung cấp giấy khám mắt định kỳ từ bệnh viện mắt cho giáo viên chủ nhiệm để xếp luân chuyển chỗ ngồi theo tuần khoa học."
+          "blogId": "Bai_07_A01_P13_Khong_Hoc_Them_Co_So_Con_Bi_Doi_Cho_Cuoi_Lop",
+          "question": "Không đăng ký học thêm ngoài giờ, sợ con bị đổi chỗ xuống cuối lớp hoặc cô ít quan tâm?",
+          "situation": "Nhiều phụ huynh trong lớp rỉ tai nhau cho con đi học thêm ngoài giờ, gia đình muốn cho con tự học ở nhà nhưng cứ lo con trên lớp bị thiệt thòi.",
+          "advice": "Thông tư 29/2024/TT-BGDĐT quy định rõ: Không tổ chức dạy thêm đối với học sinh tiểu học (trừ bồi dưỡng nghệ thuật, thể dục thể thao, rèn luyện kỹ năng sống) và giáo viên không được dạy thêm thu tiền ngoài quy định đối với chính học sinh đang trực tiếp dạy trên lớp. Để giữ trọn hòa khí mà không phải chạy theo tâm lý đám đông, bố mẹ hãy chủ động nhắn tin trao đổi chân thành với cô ngay đầu học kỳ về nếp tự học 30 phút mỗi tối tại nhà và đều đặn gửi ảnh bài con tự hoàn thành để cô thấy sự phối hợp sát sao của gia đình."
         }
       ]
     },
     {
       "id": "g2-primary",
-      "title": "Tiểu học (lớp 1-5) và sinh hoạt bán trú",
+      "title": "Bán trú, giờ đón con, môn liên kết và hoạt động ngoại khóa",
       "icon": "🍱",
-      "desc": "Bữa ăn bán trú, giấc ngủ trưa, kiểm soát tập trung, học thêm, môn liên kết và cách kèm con không quát tháo.",
+      "desc": "Đối chiếu quy định của Bộ và Sở GD&ĐT về phí trông giữ cuối ngày, bữa ăn bán trú, các tiết học liên kết tự nguyện và dã ngoại.",
       "items": [
         {
-          "question": "Bố mẹ quát tháo mỗi tối kèm con làm bài tập",
-          "situation": "Cứ 8 giờ tối ngồi vào bàn là nhà như bãi chiến trường, mẹ hét con khóc, không khí gia đình ngột ngạt cùng cực.",
-          "advice": "Áp dụng kỹ thuật Pomodoro 15 phút tập trung + 5 phút giải lao. Cha mẹ lùi lại đóng vai trò người giám sát độc lập, chia nhỏ bài tập thành từng mẩu nhỏ thay vì ngồi kè kè chỉ tay."
+          "blogId": "Bai_01_Q01A_Gio_Don_Con_Va_Trong_Muon_Cuoi_Ngay",
+          "question": "Trường cắt tiết liên kết và phát sinh phí kèm bài cuối ngày - Bố mẹ tan làm muộn xử lý thế nào?",
+          "situation": "Tan làm lúc 17h30 mà 16h trường đã tan học. Trường cắt tiết liên kết thì con trống lịch chiều, còn nơi đăng ký trông muộn lại gợi ý đóng thêm khoản phí học kèm riêng.",
+          "advice": "Theo Nghị quyết 04/2024/NQ-HĐND của HĐND TP Hà Nội, dịch vụ trông giữ ngoài giờ tại trường công lập có mức trần 12.000 đồng/học sinh/giờ và độc lập hoàn toàn với các môn liên kết. Đồng thời, Thông tư 29/2024/TT-BGDĐT nghiêm cấm thu thêm tiền dạy kèm bài tập đối với học sinh tiểu học. Bố mẹ hãy đăng ký gói trông giữ ngoài giờ chính thức trên ứng dụng của trường, chuẩn bị sẵn sách truyện hoặc phiếu bài tập tự rèn trong cặp để con tự làm trong 45 phút chờ đón; bên cạnh đó có thể kiến nghị nhà trường tổ chức giờ tự học, đọc sách, cờ vua cuối buổi chiều."
         },
         {
-          "question": "Con mất tập trung, ngồi vào bàn là buồn đi vệ sinh, uống nước",
-          "situation": "Ngồi học 10 phút thì đứng lên 5 lần: con uống nước, con gọt bút chì, con đi vệ sinh, mắt nhìn ra cửa sổ.",
-          "advice": "Dọn sạch toàn bộ đồ chơi và vật gây xao nhãng khỏi tầm mắt. Đặt đồng hồ đếm ngược trực quan (Visual Timer) trước mặt để con nhìn thấy dòng chảy thời gian."
+          "blogId": "Bai_01_Q01B_Bua_An_Ban_Tru_Va_Dinh_Duong_Tieu_Hoc",
+          "question": "Vào lớp 1 con ăn bán trú chững cân và kén ăn - Nên đón về buổi trưa hay tiếp tục gửi bán trú?",
+          "situation": "Sau một học kỳ ăn bán trú ở trường, con không tăng cân nào và hay bảo cơm trường nguội, không hợp miệng khiến bố mẹ đi làm cả ngày đứng ngồi không yên.",
+          "advice": "Trẻ 6 - 7 tuổi trung bình chỉ tăng khoảng 2 kg/năm, mặt khác bữa trưa bán trú ở trường chỉ chiếm 30 - 40% nhu cầu năng lượng cả ngày (5 bữa trên tổng số khoảng 30 bữa ăn mỗi tuần). Thay vì hỏi cảm tính 'cơm trường ngon không', mỗi chiều bố mẹ hãy hỏi con 4 câu cụ thể (Con ăn mấy lượt cơm? Món nào ăn hết? Cơm canh còn nóng không? Có ăn kịp trước khi thu dọn không?), đồng thời lấy thực đơn tuần của trường để nấu bữa tối bổ khuyết nhóm đạm và rau lá xanh còn thiếu."
         },
         {
-          "question": "Con nghe giảng gật đầu hiểu nhưng khi làm bài quên sạch",
-          "situation": "Cô giảng trên lớp con bảo hiểu hết, về nhà mẹ mở sách ra hỏi thì mắt ngơ ngác như chưa từng nghe qua bao giờ.",
-          "advice": "Hiện tượng 'ngộ nhận đã hiểu bài' do trí nhớ ngắn hạn. Áp dụng kỹ thuật Feynman: yêu cầu con giảng lại cho bố mẹ nghe bằng ngôn ngữ của con ngay tối hôm đó."
+          "blogId": "Bai_03_Q01C_Mon_Hoc_Lien_Ket_Va_Ngoai_Khoa_Truong_Cong",
+          "question": "Tiết học liên kết (STEM, Kỹ năng sống, Ngoại ngữ bổ trợ) - Khoản nào tự nguyện, khoản nào bắt buộc?",
+          "situation": "Đầu năm trường phát phiếu đăng ký một loạt tiết liên kết xếp xen kẽ trong thời khóa biểu buổi chiều, nếu không đăng ký thì lo con phải tách lớp ngồi riêng lẻ loi.",
+          "advice": "Các chương trình liên kết kỹ năng sống, STEM hay tiếng Anh bổ trợ ngoài chương trình chính khóa đều dựa trên nguyên tắc hoàn toàn tự nguyện thỏa thuận giữa nhà trường và phụ huynh. Nhà trường có trách nhiệm sắp xếp thời khóa biểu hợp lý ở các tiết cuối buổi chiều và bố trí không gian tự học, đọc sách an toàn cho học sinh không tham gia, không để trẻ cảm thấy bị cô lập hay phân biệt đối xử."
         },
         {
-          "question": "Bất đồng quan điểm giáo dục giữa bố và mẹ hoặc với ông bà",
-          "situation": "Mẹ muốn rèn kỷ luật tự lập, bố lại bảo kệ nó chơi tuổi thơ có một lần, ông bà xót cháu bênh chằm chặp.",
-          "advice": "Thiết lập biên bản cam kết gia đình (Family Agreement) thống nhất 3 nguyên tắc bất di bất dịch, phân định rõ thời gian học tập và vui chơi mà người lớn không can thiệp chéo."
+          "blogId": "Bai_12_A01_P08_P09_Ngoai_Khoa_Trai_Nghiem_Lap_Lai_So_Ha_Danh_Gia",
+          "question": "Hoạt động dã ngoại trải nghiệm lặp lại, chi phí cao - Không tham gia có bị hạ đánh giá phẩm chất, năng lực?",
+          "situation": "Năm nào trường cũng đi quanh quẩn mấy khu trải nghiệm đông đúc, chi phí ngày càng tăng nhưng con mệt không muốn đi, bố mẹ lại sợ xin nghỉ thì con bị trừ điểm đánh giá.",
+          "advice": "Theo Thông tư 27/2020/TT-BGDĐT (bậc Tiểu học) và Thông tư 22/2021/TT-BGDĐT (bậc THCS - THPT), việc đánh giá phẩm chất và năng lực của học sinh dựa trên quá trình học tập và rèn luyện thường xuyên tại trường, hoàn toàn không phụ thuộc vào các chuyến tham quan dã ngoại có thu phí tự nguyện. Nếu chuyến đi không phù hợp với sức khỏe của con hoặc điều kiện gia đình, bố mẹ chỉ cần nhắn tin xin phép giáo viên chủ nhiệm cho con nghỉ ở nhà tự học hoặc tham gia phương án học tập tại trường."
         },
         {
-          "question": "Trẻ mê xem điện thoại, máy tính bảng và thiếu tập trung khi ngồi vào bàn học",
-          "situation": "Mỗi khi đi học về là con chỉ muốn cầm điện thoại xem video ngắn, khi bố mẹ thu máy lại thì con cáu gắt và uể oải không muốn học bài.",
-          "advice": "Việc giật máy đột ngột hoặc quát mắng thường chỉ làm tăng phản ứng chống đối ở trẻ. Thay vì cấm đoán cứng nhắc, bố mẹ hãy cùng con thiết lập quy tắc sử dụng thiết bị rõ ràng trước khi mở máy và chuyển dần thời gian giải trí buổi chiều sang các hoạt động vận động ngoài trời như cầu lông, bóng rổ, đạp xe hoặc chơi cờ cùng bố mẹ khoảng 45 phút mỗi ngày để trẻ tái tạo năng lượng tự nhiên trước giờ học tối."
-        },
-        {
-          "question": "Bài tập về nhà quá nhiều khiến con thức đến 23h đêm",
-          "situation": "Mới lớp 3 mà đêm nào cũng cặm cụi đến gần nửa đêm, sáng dậy ngáp ngắn ngáp dài mắt thâm quầng.",
-          "advice": "Quy tắc dừng lỗ học tập: đúng 22h phải đi ngủ để bảo vệ não bộ. Phụ huynh ghi chú vào vở gửi cô: 'Gia đình cho cháu dừng làm bài lúc 22h để đảm bảo sức khỏe'."
-        },
-        {
-          "question": "Nhận diện ma trận seeding review trường tư và trung tâm trên mạng",
-          "situation": "Vào hội nhóm hỏi trường nào tốt là có cả dàn nick ảo nhảy vào khen nức nở như văn mẫu, đến khi nộp tiền mới vỡ mộng.",
-          "advice": "Quy tắc 3 KHÔNG khi đọc review: Không tin nick không có avatar thật, không tin bài khen hoàn toàn một chiều không có nhược điểm, không tin bài dẫn link đăng ký nhận ưu đãi."
-        },
-        {
-          "question": "Học tiếng Anh trung tâm 3 năm không giao tiếp được",
-          "situation": "Đóng 30-40 triệu/năm học trung tâm Tây xịn xò, thi Flyers điểm cao mà gặp người nước ngoài chào một câu con câm nín.",
-          "advice": "Thiếu môi trường input ngôn ngữ tự nhiên hàng ngày. Cần chuyển từ học ngữ pháp thụ động sang nghe ngấm (comprehensible input) 30 phút mỗi ngày qua phim tài liệu hoặc truyện âm thanh."
-        },
-        {
-          "question": "Bẫy cam kết đầu ra 'Đạt chuẩn quốc tế hoặc hoàn lại toàn bộ học phí'",
-          "situation": "Trung tâm cam kết sau 6 tháng con nói tiếng Anh như gió, không đạt hoàn tiền, đến lúc đòi tiền thì họ lôi ra cả mớ điều khoản phụ bắt bẻ.",
-          "advice": "Đọc kỹ phụ lục hợp đồng cam kết. Giáo dục là quá trình phát triển nội tại, không thể có hợp đồng bao đậu cơ học như mua một món hàng gia dụng."
-        },
-        {
-          "question": "Các cuộc thi quốc tế gắn mác mua giải, cấp giấy chứng nhận ảo",
-          "situation": "Cứ đóng 500k - 1 triệu là thi online có huy chương vàng bạc gửi về tận nhà, phụ huynh khoe rầm rộ Facebook.",
-          "advice": "Tra cứu danh mục các cuộc thi uy tín được Bộ Giáo dục và Đào tạo công nhận. Tránh xa các cuộc thi mang tính thương mại bán huy chương."
+          "blogId": "Bai_Viet_Tong_Hop_Q01_Thuc_Trang_Ban_Tru_Lien_Ket_Va_Loi_Khuyen_Phu_Huynh",
+          "question": "Làm sao dung hòa giờ đi làm hành chính của bố mẹ với lịch tan trường và sinh hoạt bán trú của con?",
+          "situation": "Hai vợ chồng đi làm xa nhà không có ông bà hỗ trợ, sáng con ngái ngủ chạy đua giờ đóng cổng, chiều lại tất tưởi nhờ người đón lúc 16h30.",
+          "advice": "Đúc kết từ hơn 1.300 bình luận thực tế của phụ huynh đô thị, có 3 giải pháp bền vững: (1) Buổi sáng mùa đông nếu con dậy muộn hơn 7h00, hãy cho con ăn sáng ấm bụng tại nhà rồi báo cô cho con vào cổng ở đợt mở thứ hai sau 7h20; (2) Tách bạch rõ khoản phí chăm sóc bán trú buổi trưa (rất thiết thực) với các môn liên kết tự chọn; (3) Kết nối 2 - 3 gia đình cùng chung cư hoặc tuyến đường để lập nhóm hỗ trợ đón con, hay đăng ký giờ tự học thư viện tại trường đến 17h30."
         }
       ]
     },
     {
-      "id": "g3-transition",
-      "title": "Chuyển cấp lớp 6 và lựa chọn ngôi trường phù hợp",
-      "icon": "🏫",
-      "desc": "Trường công hay tư, phân luồng lớp chọn, học phí ẩn, song bằng và các mô hình giáo dục quốc tế.",
-      "items": [
-        {
-          "question": "Con lớp 6 lớp chọn học ngày đêm, có nguy cơ kiệt sức tâm lý",
-          "situation": "Thi đỗ lớp chọn cả họ tự hào, nhưng vào học 2 tháng thấy con ít nói hẳn, đêm choàng tỉnh khóc vì sợ điểm kém hơn bạn.",
-          "advice": "Hội chứng 'Cá nhỏ trong hồ lớn'. Cần đánh giá lại dung lượng hấp thụ áp lực của con. Nếu con thuộc nhóm khí chất nhạy cảm, môi trường đua tranh khốc liệt sẽ hủy hoại lòng tự trắc ẩn của trẻ."
-        },
-        {
-          "question": "Phân vân giữa trường công lập chất lượng cao và trường tư thục",
-          "situation": "Trường công CLC thì học phí vừa phải nhưng áp lực học thêm lớn, trường tư thì thoáng mát nhưng học phí 15-20 triệu/tháng quá tải ví tiền.",
-          "advice": "Sử dụng công thức kiểm toán tài chính 30%: Học phí và chi phí học tập của tất cả các con không được vượt quá 30% tổng thu nhập khả dụng của gia đình để tránh đổ vỡ tài chính dài hạn."
-        },
-        {
-          "question": "Hồ sơ xét tuyển học bạ lớp 6 - Ma trận điểm số và chứng chỉ",
-          "situation": "Muốn vào trường hot phải có học bạ 5 năm toàn hoàn thành xuất sắc kèm rổ giải thưởng TOEFL, Cambridge, toán quốc tế.",
-          "advice": "Xây dựng chiến lược thi tuyển thực chất từ năm lớp 4. Không chạy theo các giải toán qua mạng thiếu kiểm định gây lãng phí hàng chục triệu đồng."
-        },
-        {
-          "question": "Học sinh chuyển cấp bị sốc vì thay đổi từ 1 cô sang 10 thầy cô",
-          "situation": "Tiểu học quen 1 cô chủ nhiệm chăm chút, lên cấp 2 mỗi môn một thầy cô, mỗi người một tính con bỡ ngỡ không thích nghi kịp.",
-          "advice": "Tập thói quen ghi chép nhật ký sổ tay học tập cá nhân và tự quản lý thời khóa biểu 3 tuần trước khi khai giảng lớp 6."
-        },
-        {
-          "question": "Giằng co giữa thương con quá tải và sợ con thua kém bạn bè",
-          "situation": "Thấy con học thương đứt ruột muốn cho nghỉ ngơi, nhưng nhìn quanh thấy con nhà người ta học ngày 3 ca lại sốt ruột không chịu nổi.",
-          "advice": "Hiểu rõ 'Nguyên lý Bát Phở': Nuôi con là cuộc đua marathon 30 năm, không phải cuộc chạy nước rút 100 mét. Sức bền tâm lý và sự lành lặn nhân cách mới quyết định thành công tuổi trưởng thành."
-        },
-        {
-          "question": "Học chương trình phổ thông quốc tế trực tuyến tại nhà có được công nhận bằng cấp không?",
-          "situation": "Gia đình tìm hiểu mô hình học phổ thông quốc tế trực tuyến tại nhà để giảm tải áp lực thi cử nhưng băn khoăn về tính pháp lý của bằng cấp khi xét tuyển đại học.",
-          "advice": "Trước khi quyết định theo đuổi lộ trình học phổ thông trực tuyến tại nhà, bố mẹ cần rà soát kỹ ba điều kiện cốt lõi: Thứ nhất, kiểm tra cơ quan kiểm định vùng của tổ chức cấp bằng (như WASC, NEASC hoặc Cognia) và hỏi rõ quy chế công nhận văn bằng tương đương tại các trường đại học mục tiêu. Thứ hai, đánh giá khả năng tự kỷ luật của con, vì học trực tuyến tại nhà thiếu môi trường giao tiếp bạn bè đồng trang lứa rất dễ khiến trẻ rơi vào trạng thái cô đơn hoặc lệ thuộc màn hình. Thứ ba, đảm bảo gia đình có người lớn đồng hành sát sao và kết hợp cho con tham gia các câu lạc bộ thể thao, nghệ thuật ngoài đời thực mỗi ngày."
-        },
-        {
-          "question": "Gánh nặng học tập hệ song bằng - Cân đối giữa chương trình Việt Nam và quốc tế thế nào?",
-          "situation": "Sáng học toán văn theo chuẩn Bộ GD&ĐT, chiều học toán và khoa học bằng tiếng Anh, tối về làm bài tập cả hai bên khiến con mệt mỏi.",
-          "advice": "Học song bằng đòi hỏi sức bền thể lực và năng lực ngôn ngữ rất vững vàng của trẻ. Để con không bị quá tải, bố mẹ nên rà soát lại ba yếu tố then chốt: Thứ nhất, đánh giá trung thực năng lực tiếng Anh học thuật của con, vì nếu con phải vừa dịch nghĩa từng từ vừa tiếp thu kiến thức khoa học thì tải trọng nhận thức sẽ tăng gấp đôi. Thứ hai, chủ động trao đổi định kỳ với giáo viên hai hệ để xin giảm tải các bài tập chép tay trùng lặp. Thứ ba, quan sát giấc ngủ và cảm xúc của con mỗi tối để điều chỉnh lộ trình kịp thời, đặt sự lành lặn tâm lý và niềm vui học tập của con lên trên áp lực bằng cấp."
-        },
-        {
-          "question": "Tiêu chí lựa chọn chương trình tiếng Anh ngữ âm (Phonics) tiền tiểu học phù hợp cho con",
-          "situation": "Muốn con làm quen với ngữ âm tiếng Anh tự nhiên trong giai đoạn 4 - 6 tuổi nhưng băn khoăn về phương pháp và hiệu quả thực tế.",
-          "advice": "Giai đoạn 4 - 6 tuổi là thời kỳ thuận lợi về thính giác để trẻ làm quen với âm điệu ngôn ngữ. Khi tìm hiểu lớp ngữ âm tiếng Anh cho con, bố mẹ nên ưu tiên ba tiêu chí thực tế: 1) Phương pháp tiếp cận đa giác quan thông qua vận động, bài hát, truyện tranh và trò chơi tương tác thay vì ép trẻ ngồi bàn viết chữ sớm; 2) Giáo viên có phát âm chuẩn mực, kiên nhẫn và biết khích lệ trẻ giao tiếp tự nhiên; 3) Sĩ số lớp vừa phải và không tạo áp lực kiểm tra điểm số. Quan trọng hơn cả, việc bố mẹ duy trì nghe và đọc truyện tranh tiếng Anh cùng con 15 phút mỗi tối tại nhà sẽ giúp con thẩm thấu ngôn ngữ bền vững nhất."
-        },
-        {
-          "question": "Chuẩn bị hành trang tâm lý và kỹ năng tự lập khi cân nhắc cho con du học từ bậc trung học",
-          "situation": "Gia đình có định hướng cho con đi du học từ năm 13 - 14 tuổi nhưng lo lắng con chưa đủ độ chín chắn và kỹ năng tự chăm sóc bản thân khi sống xa nhà.",
-          "advice": "Quyết định cho con du học ở lứa tuổi thiếu niên đòi hỏi sự chuẩn bị kỹ lưỡng cả về kỹ năng sống lẫn điểm tựa tinh thần. Trước khi lên đường tối thiểu 1 - 2 năm, bố mẹ nên hướng dẫn con rèn thói quen tự nấu ăn cơ bản, quản lý chi tiêu cá nhân, tự chăm sóc sức khỏe và sắp xếp lịch sinh hoạt độc lập. Về mặt cảm xúc, trẻ 13 - 14 tuổi rất dễ gặp bỡ ngỡ văn hóa và nỗi nhớ nhà; bố mẹ cần duy trì thói quen trò chuyện lắng nghe mỗi ngày như những người bạn mà không đặt nặng áp lực thành tích. Nếu nhận thấy con vẫn cần thêm thời gian trưởng thành bên gia đình, việc lùi mốc du học sang giai đoạn cuối cấp 3 hoặc đại học sẽ là phương án an toàn và vững chắc hơn."
-        }
-      ]
-    },
-    {
-      "id": "g4-wellbeing",
-      "title": "An toàn học đường và đồng hành tâm lý cùng con",
+      "id": "g3-wellbeing",
+      "title": "Sức khỏe, môi trường an toàn và văn hóa ứng xử học đường",
       "icon": "🛡️",
-      "desc": "Phòng chống bắt nạt, nhà vệ sinh trường học, giải tỏa áp lực thi cử và xây dựng kết nối hài hòa giữa gia đình và nhà trường.",
+      "desc": "Chỗ ngồi cho trẻ cận loạn thị ở lớp đông, vệ sinh học đường, quy trình 4 bước bảo vệ con trước va chạm và ứng xử dịp lễ 20/11.",
       "items": [
         {
-          "question": "Nhà vệ sinh trường học bẩn - Con nhịn uống nước cả ngày",
-          "situation": "Con đi học cả ngày không dám đi vệ sinh vì nhà vệ sinh bốc mùi hôi thối, con nhịn uống nước đến mức viêm đường tiết niệu.",
-          "advice": "Vấn đề nghiêm trọng ảnh hưởng trực tiếp sức khỏe thể chất. Phụ huynh cần đưa ý kiến vào biên bản họp cha mẹ học sinh đầu năm yêu cầu trường cải tạo hợp đồng vệ sinh chuyên nghiệp."
+          "blogId": "Bai_04_Q01D_Cho_Ngoi_Hoc_Sinh_Can_Loan_Thi_Lop_Dong",
+          "question": "Con bị cận, loạn thị và nhỏ người nhưng ngồi bàn thứ 6 trong lớp 60 học sinh - Phối hợp với cô giáo thế nào?",
+          "situation": "Lớp công lập đông gần 60 cháu phải xoay vòng chỗ ngồi hàng tuần cho công bằng, đến tuần con ngồi dãy cuối là về nhà con nheo mắt, chép bài thiếu chữ.",
+          "advice": "Trong lớp sĩ số đông, giáo viên chủ nhiệm chịu áp lực công bằng rất lớn nếu tự ý ưu tiên cố định chỗ ngồi mà không có căn cứ y tế. Bố mẹ hãy đưa con đi đo khúc xạ tại bệnh viện chuyên khoa mắt, chụp lại sổ khám ghi rõ thị lực có kính và gửi riêng cho cô chủ nhiệm kèm lời nhờ khéo léo: xin phép cho con chỉ luân chuyển trong 3 bàn đầu hoặc xếp ngồi đầu bàn dãy hai bên để không che khuất tầm nhìn các bạn phía sau."
         },
         {
-          "question": "Con bị bạn trêu chọc, tẩy chay hoặc gây thương tích tại trường",
-          "situation": "Con đi học về người có vết bầm tím, gặng hỏi mãi con mới khóc kể bị nhóm bạn cùng lớp giấu cặp đập vào lưng.",
-          "advice": "Quy trình 4 bước bảo vệ con: (1) Lắng nghe thấu cảm không phán xét; (2) Chụp ảnh bằng chứng y tế; (3) Làm việc với BGH trường bằng văn bản có biên bản; (4) Trang bị cho con kỹ năng phản kháng phi bạo lực."
+          "blogId": "Bai_11_F01_P32_Nha_Ve_Sinh_Truong_Hoc_Con_Nhin_Uong_Nuoc_Ca_Ngay",
+          "question": "Con đi học cả ngày không dám uống nước vì sợ nhà vệ sinh ở trường - Hệ lụy sức khỏe và cách tháo gỡ?",
+          "situation": "Bình nước mang đi học chiều đem về còn nguyên, gặng hỏi mãi con mới thú nhận nhà vệ sinh ở trường có mùi và đông đúc nên con nhịn suốt từ sáng đến chiều.",
+          "advice": "Thói quen nhịn tiểu và nhịn uống nước kéo dài 8 tiếng mỗi ngày ở trường làm tăng nguy cơ nhiễm khuẩn đường tiết niệu, táo bón mạn tính và giảm khả năng tập trung của trẻ. Ở nhà, bố mẹ hãy hướng dẫn con kỹ năng vệ sinh cá nhân gọn gàng (mang theo giấy khô và giấy ướt nhỏ gọn trong túi áo) và dặn con xin phép đi vệ sinh vào giữa giờ học nếu giờ ra chơi quá đông; đồng thời thông qua Ban đại diện cha mẹ học sinh đề xuất nhà trường tăng tần suất dọn vệ sinh sau mỗi giờ ra chơi theo quy chuẩn của Bộ Y tế."
         },
         {
-          "question": "Tiết học liên kết ngoại khóa lặp lại, phụ huynh sợ con bị hạ hạnh kiểm",
-          "situation": "Các môn kỹ năng sống, STEM liên kết dạy hời hợt mà đóng tiền triệu, không đăng ký thì sợ con ngồi lẻ loi ở lớp.",
-          "advice": "Nghị định và Thông tư mới của Bộ quy định rõ: Các môn liên kết là hoàn toàn tự nguyện, nhà trường phải bố trí giáo viên quản lý học sinh không tham gia và không được xếp xen kẽ giờ chính khóa."
+          "blogId": "Bai_13_F00_P25_Con_Bi_Ban_Treu_Choc_Gay_Thuong_Tich_Quy_Trinh_Bao_Ve_Con",
+          "question": "Con bị bạn va chạm, bắt nạt ở lớp nhưng chỉ nhận được lời xin lỗi xã giao - 4 bước bảo vệ con dứt điểm?",
+          "situation": "Con bị bạn cùng lớp trêu chọc, xô đẩy nhiều lần đến mức sợ đi học, nhưng khi phản ánh trên nhóm thì phụ huynh kia chỉ nói 'trẻ con đùa nhau tí có gì đâu'.",
+          "advice": "Theo Nghị định 80/2017/NĐ-CP về môi trường giáo dục an toàn, lành mạnh, thân thiện, phòng chống bạo lực học đường, nhà trường có trách nhiệm can thiệp và bảo vệ học sinh ngay khi có dấu hiệu tổn thương thể chất hoặc tâm lý. Bố mẹ cần thực hiện 4 bước điềm tĩnh nhưng dứt khoát: (1) Lắng nghe và trấn an con rằng con luôn được bố mẹ bảo vệ; (2) Ghi nhận thời gian, sự việc cụ thể và trao đổi riêng 1-1 với giáo viên chủ nhiệm (tránh đôi co trên nhóm chat chung); (3) Yêu cầu tách chỗ ngồi và thiết lập cam kết hành vi tại lớp; (4) Làm việc trực tiếp với Ban giám hiệu và Phòng Tư vấn tâm lý học đường nếu hành vi lặp lại."
         },
         {
-          "question": "Ứng xử quà tặng thầy cô dịp 20/11 sao cho văn minh, không áp lực",
-          "situation": "Đến ngày 20/11 là phụ huynh đau đầu tính toán phong bì bao nhiêu để cô quan tâm con, tặng ít thì lo tặng nhiều thì ngại.",
-          "advice": "Tôn sư trọng đạo thực chất đến từ sự trân trọng. Một bức thư tay chân thành của con kèm chậu cây nhỏ có giá trị tinh thần bền vững hơn phong bì nặng nề."
+          "blogId": "Bai_06_A01_P17_Ung_Xu_Qua_Tang_Thay_Co_Dip_20_11_Khong_Ap_Luc",
+          "question": "Không đến trường được hoặc kinh tế eo hẹp - Tri ân thầy cô dịp 20/11 thế nào để con không tủi thân mà cô vẫn ấm lòng?",
+          "situation": "Dịp lễ 20/11 thấy nhiều phụ huynh chuẩn bị quà cáp cầu kỳ, gia đình đang eo hẹp kinh tế hoặc bận đi làm xa không đến trường được nên cứ băn khoăn mãi.",
+          "advice": "Điều khiến người giáo viên trân quý và nhớ lâu nhất không nằm ở giá trị vật chất của món quà, mà ở sự tôn trọng và lời cảm ơn chân thành từ học trò và phụ huynh. Một tấm thiệp do chính tay con vẽ và viết nắn nót lời chúc, kèm một tin nhắn riêng ấm áp, cụ thể từ bố mẹ gửi tới cô giáo (nhắc lại một kỷ niệm nhỏ cô đã kiên nhẫn dìu dắt con từ đầu năm) luôn mang lại giá trị tinh thần sâu sắc, giúp con tự hào trao tặng cô mà gia đình hoàn toàn nhẹ lòng."
         }
       ]
-    }
-  ],
-  "communities": [
-    {
-      "name": "Đồng hành cùng con vào lớp 1 - Hành trang vững vàng",
-      "category": "Tiền tiểu học",
-      "members": "128.000",
-      "score": "9,8/10",
-      "status": "Đã kiểm duyệt - Không quảng cáo"
     },
     {
-      "name": "Hội phụ huynh có con học lớp 1 tại Hà Nội",
-      "category": "Tiền tiểu học",
-      "members": "95.000",
-      "score": "9,5/10",
-      "status": "Đã kiểm duyệt - Thảo luận thật"
-    },
-    {
-      "name": "Kinh nghiệm chọn trường tiểu học Hà Nội (công lập và tư thục)",
-      "category": "Chọn trường",
-      "members": "210.000",
-      "score": "9,7/10",
-      "status": "Đã kiểm duyệt - Đa chiều"
-    },
-    {
-      "name": "Cộng đồng phụ huynh đồng hành học cùng con không quát tháo",
-      "category": "Đồng hành tại nhà",
-      "members": "84.000",
-      "score": "9,6/10",
-      "status": "Đã kiểm duyệt - Giá trị cao"
-    },
-    {
-      "name": "Hội phụ huynh ôn thi lớp 6 chất lượng cao tại Hà Nội",
-      "category": "Chuyển cấp lớp 6",
-      "members": "142.000",
-      "score": "9,4/10",
-      "status": "Đã kiểm duyệt - Thông tin chuẩn"
-    },
-    {
-      "name": "Chia sẻ kinh nghiệm ôn thi các trường THCS trọng điểm và chuyên",
-      "category": "Chuyển cấp lớp 6",
-      "members": "115.000",
-      "score": "9,3/10",
-      "status": "Đã kiểm duyệt - Kinh nghiệm thật"
-    },
-    {
-      "name": "Hội cha mẹ nuôi dạy con theo phương pháp giáo dục tích cực",
-      "category": "Tâm lý giáo dục",
-      "members": "176.000",
-      "score": "9,9/10",
-      "status": "Đã kiểm duyệt - Chất lượng cao"
-    },
-    {
-      "name": "Cộng đồng phụ huynh tìm hiểu chương trình song bằng và quốc tế",
-      "category": "Song bằng quốc tế",
-      "members": "68.000",
-      "score": "9,5/10",
-      "status": "Đã kiểm duyệt - Học thuật sâu"
-    },
-    {
-      "name": "Hội phụ huynh đồng hành tự học tiếng Anh cùng con tại nhà",
-      "category": "Tiếng Anh và ngoại ngữ",
-      "members": "230.000",
-      "score": "9,7/10",
-      "status": "Đã kiểm duyệt - Nguồn học liệu thật"
-    },
-    {
-      "name": "Diễn đàn cha mẹ quan tâm giáo dục mầm non và tiền tiểu học",
-      "category": "Mầm non",
-      "members": "73.000",
-      "score": "9,2/10",
-      "status": "Đã kiểm duyệt - Kinh nghiệm thực tế"
+      "id": "g4-transition",
+      "title": "Chuyển cấp lớp 6, chọn trường tư thục và nhận diện quảng cáo seeding",
+      "icon": "🏫",
+      "desc": "Chống kiệt sức ở lớp chọn đầu cấp 2, thoát bẫy tâm lý đám đông (FOMO) và bộ lọc 5 dấu hiệu nhận diện seeding khi tìm trường.",
+      "items": [
+        {
+          "blogId": "Bai_10_C02_P33_P34_Con_Lop_6_Lop_Chon_Hoc_Ngay_Dem_Chong_Kiet_Suc",
+          "question": "Con vào lớp 6 lớp chọn học ngày học đêm không hết bài - Nhận diện kiệt sức học đường và lấy lại nhịp thở thế nào?",
+          "situation": "Thi đỗ trường điểm, lớp chọn cả nhà mừng rỡ, nhưng mới học 2 tháng con sụt cân, tối nào cũng cặm cụi đến 23h30 và bắt đầu sợ mỗi khi nghe nhắc đến điểm kiểm tra.",
+          "advice": "Tâm lý học giáo dục gọi đây là hiệu ứng 'Cá nhỏ trong hồ lớn' (Big-Fish-Little-Pond Effect): khi vào tập thể toàn học sinh xuất sắc, trẻ dễ bị sụt giảm sự tự tin học thuật và rơi vào kiệt sức nếu chạy đua quá sức chịu đựng. Bố mẹ cần thiết lập ngay 'Chốt chặn giấc ngủ 22h00' để bảo vệ sự phát triển não bộ tuổi dậy thì, rà soát cắt bỏ các lớp học thêm trùng lặp bên ngoài và chuyển trọng tâm từ thứ hạng trong lớp sang sự tiến bộ của chính con so với tháng trước."
+        },
+        {
+          "blogId": "Bai_14_C02_P14_P22_Giang_Co_Giua_Thuong_Con_Qua_Tai_Va_So_Con_Thua_Kem",
+          "question": "Thấy bạn cùng lớp học thêm kín tuần, đứng yên thì sợ con tụt lại - Áp dụng nguyên lý 'Bát phở vừa sức' thế nào?",
+          "situation": "Thương con học cả ngày mệt mỏi muốn cho con nghỉ ngơi chơi thể thao, nhưng mở điện thoại thấy bạn bè luyện thi ngày 3 ca lại sốt ruột sợ con thua thiệt.",
+          "advice": "Nỗi sợ bị bỏ lại phía sau (FOMO) của người lớn thường vô tình biến tuổi thơ của con thành cuộc chạy đua kiệt sức. Hãy áp dụng 'Nguyên lý Bát phở vừa sức': một đứa trẻ chỉ cao lớn khi ăn lượng thức ăn mà hệ tiêu hóa của con hấp thụ hết; mọi kiến thức nhồi nhét vượt quá dung lượng tiêu hóa nội tại đều biến thành sự chán ghét việc học. Hãy giữ vững khung ngân sách thời gian của con (đảm bảo ngủ đủ 8 - 9 tiếng và vận động thể chất 45 phút mỗi ngày) và chỉ chọn lọc đúng 1 mục tiêu trọng tâm trong mỗi học kỳ."
+        },
+        {
+          "blogId": "Bai_15_D00_P18_P21_Boc_Tran_Ma_Tran_Seeding_Review_Truong_Tu_Va_Trung_Tam",
+          "question": "Hỏi review trường tư và trung tâm tiếng Anh trên mạng - Làm sao nhận diện nick ảo seeding và kiểm chứng thực địa?",
+          "situation": "Lên các hội nhóm hỏi kinh nghiệm chọn trường tư hay trung tâm ngoại ngữ mà đọc bình luận nào cũng khen nức nở như văn mẫu, không biết đâu là phụ huynh thật, đâu là quảng cáo.",
+          "advice": "Theo Thông tư 09/2024/TT-BGDĐT về thực hiện '3 Công khai', phụ huynh có quyền yêu cầu cơ sở giáo dục minh bạch trình độ giáo viên, sĩ số trần và chính sách hoàn trả học phí. Để không sập bẫy đám đông nhân tạo (Seeding), bố mẹ hãy: (1) Loại bỏ ngay các tài khoản khóa trang cá nhân chỉ đi khen 1 trung tâm ở nhiều bài đăng; (2) Đặt câu hỏi 'Xin 1 nhược điểm thực tế gia đình chưa hài lòng nhất' thay vì hỏi 'Trường X có tốt không?'; (3) Trực tiếp đến cổng trường vào giờ tan tầm (16h15 - 17h00) để quan sát nét mặt học sinh và hỏi chuyện phụ huynh đang đón con; (4) Chỉ đóng học phí theo từng chặng ngắn 1 - 3 tháng để kiểm chứng mức độ phù hợp thực tế."
+        }
+      ]
     }
   ],
   "curricula": [
@@ -1179,36 +1053,36 @@ window.CDH_DATA = {
       "level": "Tiền tiểu học và lớp 1",
       "icon": "🎒",
       "questions": [
-        "Con tôi 5 tuổi chưa học chữ trước, hè này vào lớp 1 cần chuẩn bị những gì?",
-        "Bé nhà tôi viết chữ rất xấu và hay gồng cứng tay, Cò Đi Học có mẹo gì khắc phục?",
-        "Làm sao để thoát cảnh tối nào bố mẹ cũng quát tháo khi kèm con làm bài tập?"
+        "Con tôi học tiền tiểu học rồi nhưng vào lớp 1 vẫn đọc trơn chậm và viết mỏi tay, Cò hướng dẫn 3 mẹo gỡ rối giúp tôi nhé?",
+        "Làm sao để thoát cảnh tối nào mẹ cũng quát tháo khi ngồi kèm con lớp 1 học bài?",
+        "Con không đi học thêm ngoài giờ thì làm sao trao đổi khéo léo với cô giáo chủ nhiệm để giữ hòa khí?"
       ]
     },
     {
       "level": "Tiểu học",
       "icon": "📚",
       "questions": [
-        "Con tôi ngồi học hay mất tập trung, ngồi 10 phút lại đòi đi vệ sinh, xử lý thế nào?",
-        "Trường con tổ chức môn học liên kết kỹ năng sống, tôi không muốn học có được không?",
-        "Làm thế nào để giám sát chất lượng bữa ăn bán trú của con tại trường tiểu học?"
+        "Trường cắt tiết liên kết chiều, bố mẹ tan làm muộn lúc 17h30 thì đăng ký trông giữ ngoài giờ theo quy định thế nào?",
+        "Con ăn bán trú lớp 1 cả học kỳ không tăng cân, tôi nên hỏi con và kiểm tra thực đơn tuần của trường ra sao?",
+        "Con bị cận và loạn thị ngồi bàn cuối trong lớp 60 học sinh, tôi nên nhắn tin nhờ cô chủ nhiệm thế nào?"
       ]
     },
     {
       "level": "Chuyển cấp lớp 6",
       "icon": "🏫",
       "questions": [
-        "Nên cho con thi vào trường chuyên lớp chọn hay học trường công đúng tuyến gần nhà?",
-        "Con đỗ lớp chọn nhưng học ngày đêm có dấu hiệu kiệt sức, tôi nên làm gì?",
-        "Chi phí học trường tư thục chất lượng cao Hà Nội một năm thực tế là bao nhiêu?"
+        "Con vào lớp 6 lớp chọn học đến 23h đêm có dấu hiệu kiệt sức, gia đình nên điều chỉnh nhịp học thế nào?",
+        "Thấy bạn cùng lớp học thêm kín tuần tôi rất sốt ruột, làm sao biết lịch học nào thực sự vừa sức với con?",
+        "Nên chọn trường công lập đúng tuyến gần nhà hay trường tư thục chất lượng cao khi con lên cấp 2?"
       ]
     },
     {
-      "level": "Song bằng và quốc tế",
+      "level": "Chọn trường và tư thục",
       "icon": "🌏",
       "questions": [
-        "Chương trình phổ thông quốc tế học trực tuyến tại nhà có được công nhận bằng cấp tại Việt Nam không?",
-        "Lộ trình học tiếng Anh ngữ âm cho bé 5 tuổi để tự tin vào trường song bằng?",
-        "Làm sao để biết chương trình học nào thực sự phù hợp với khả năng tiếp thu của con?"
+        "Làm sao phân biệt bình luận khen trường tư và trung tâm tiếng Anh trên mạng là phụ huynh thật hay nick seeding?",
+        "5 câu hỏi bắt buộc phải hỏi tư vấn tuyển sinh trước khi đóng học phí trường tư hoặc trung tâm ngoại ngữ là gì?",
+        "So sánh ưu nhược điểm thực tế giữa hệ Công lập chuẩn, Tư thục chất lượng cao và hệ Song bằng Cambridge?"
       ]
     }
   ]

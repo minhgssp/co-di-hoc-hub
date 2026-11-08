@@ -1,8 +1,8 @@
 /**
  * APP.JS — CÒ ĐI HỌC OFFICIAL HUB
- * Điều hướng mượt mà, phân loại bài viết, novel viewer, video player,
- * cẩm nang gỡ rối học đường, 57 hội nhóm chất lượng, đối sánh chương trình
- * và widget Zalo bot 0902 209 213.
+ * Điều hướng mượt mà, phân loại 16 bài viết chuyên sâu, trình đọc bài viết (Novel Viewer),
+ * trình phát 2 video hoạt hình thực tế, cẩm nang hỏi đáp 16 tình huống thực chứng,
+ * bảng đối sánh 4 lộ trình học tập và cổng kết nối Zalo 0902 209 213.
  * Hoàn toàn đứng về phía phụ huynh — 0% quảng cáo bán hàng, 0% seeding.
  */
 
@@ -89,7 +89,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const readerAskZaloBtn = document.getElementById('readerAskZaloBtn');
 
     function openReader(blog) {
-        if (!readerModal) return;
+        if (!readerModal || !blog) return;
 
         readerArticleTitle.textContent = blog.title;
         readerLevelBadge.textContent = blog.level;
@@ -122,6 +122,13 @@ document.addEventListener('DOMContentLoaded', () => {
         readerModal.scrollTop = 0;
     }
 
+    window.openReaderById = function(blogId) {
+        const targetBlog = (data.blogs || []).find(b => b.id === blogId);
+        if (targetBlog) {
+            openReader(targetBlog);
+        }
+    };
+
     function closeReader() {
         if (!readerModal) return;
         readerModal.classList.remove('active');
@@ -138,7 +145,6 @@ document.addEventListener('DOMContentLoaded', () => {
             if (e.target === readerModal) closeReader();
         });
 
-        // Reading progress calculation
         readerModal.addEventListener('scroll', () => {
             const scrollTop = readerModal.scrollTop;
             const scrollHeight = readerModal.scrollHeight - readerModal.clientHeight;
@@ -156,7 +162,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // ==========================================
-    // 3. VIDEO HUB PLAYER & PLAYLIST
+    // 3. VIDEO HUB PLAYER & PLAYLIST (2 VIDEO THẬT 100%)
     // ==========================================
     const mainVideoPlayer = document.getElementById('mainVideoPlayer');
     const videoTitleDisplay = document.getElementById('videoTitleDisplay');
@@ -165,28 +171,34 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const videoDataMap = {
         'v1': {
-            title: 'Tập 1 - Con lớp 1 quá tải đánh vần và đọc trơn không hiểu nghĩa',
+            title: 'Tập 1 - Lớp 1 quá tải (Thời lượng 1:20)',
             src: 'assets/videos/codihoc_c01_kudo_9x16.mp4',
-            script: `[00:00 - 00:08] Mở đầu câu chuyện:
-"Nhiều phụ huynh lớp 1 hay băn khoăn hỏi Cò: 'Cò ơi, sao con đánh vần vanh vách từng chữ, đọc trơn như gió nhưng hỏi bài nói gì thì con ngơ ngác không biết?'"
+            script: `[00:00 - 00:19] Cảnh 1 & 2 - Hai cú sốc đầu đời của học sinh lớp 1:
+"Đã tốn bao nhiêu tiền và công sức cho con đi học trước từ mẫu giáo, vậy mà vừa bước vào lớp một, tối nào hai mẹ con cũng đánh vật đến kiệt sức! Cò Đi Học đã rà soát 15 bài thảo luận với 107 bình luận thực tế từ 5 hội nhóm phụ huynh tiểu học. Nỗi bất lực lớn nhất tập trung vào hai cú sốc ngay học kỳ đầu tiên."
 
-[00:09 - 00:25] Góc nhìn tâm lý nhận thức:
-"Bản chất là vì con đang dùng toàn bộ năng lượng não bộ để giải mã mặt chữ cơ học, chứ chưa kịp tiêu hóa ngữ nghĩa. Đừng vội trách con lười hay chậm hiểu! Hãy đổi cách học: đọc 1 câu, dừng lại hỏi 1 câu đố vui để kích hoạt trí tưởng tượng của con."
+[00:20 - 00:39] Cảnh 3 & 4 - Cú sốc số 1 về đánh vần và đọc trơn:
+"Cú sốc số một là con chưa đánh vần vững đã phải đọc trơn cả bài thơ dài! Nhiều bé mới học nhận biết mặt chữ, vần 'ung' còn chưa học tới mà bài về nhà đã bắt đọc trơn cả câu. Đánh vần chữ sau thì quên mất chữ trước, hai mẹ con vừa khóc vừa đọc. Có mẹ nghẹn ngào kể chuyện con đọc trơn không kịp còn bị cô giáo gọi nhắc nhở!"
 
-[00:26 - 00:35] Lời nhắn đồng hành:
-"Nuôi dạy con là hành trình nuôi dưỡng sự tự tin. Cần Cò Đi Học đồng hành gỡ rối từng bài học, bố mẹ hãy nhắn tin ngay cho Cò trên Zalo nhé!"`
+[00:40 - 01:00] Cảnh 5 & 6 - Cú sốc số 2 về chữ viết và hạ cỡ chữ:
+"Cú sốc số hai là đã đầu tư cho con học tiền tiểu học nhiều tháng trời, nhưng vào lớp một chữ viết vẫn xấu và không căn nổi ô ly! Viết một trang vở mất cả tiếng đồng hồ, viết rồi tẩy rách giấy, đến lúc hạ cỡ chữ nhỏ lại càng áp lực."
+
+[01:01 - 01:20] Cảnh 7 & 8 - Cơ chế gốc rễ và 3 giải pháp đồng hành vừa sức:
+"Vì sao học trước vẫn đuối? Vì nhịp chương trình đang nhảy bậc nhanh hơn sự phát triển tự nhiên của trẻ 6 tuổi. Khi cơ tay con còn non và não bộ chưa quen ghép âm, việc nhồi nhét trước chỉ tạo cảm giác chủ quan giả tạo. Thay vì ngồi quát mắng con đến khuya, bố mẹ hãy chia nhỏ mỗi tối 10 phút ghép vần có nhịp nghỉ, chọn bút ngòi mài trơn không cắn giấy và nhắn Cò Đi Học để chọn đúng lộ trình vừa sức con nhé!"`
         },
         'v2': {
-            title: 'Tập 2 - Môn học liên kết và nỗi lo phụ huynh trường công lập',
+            title: 'Tập 2 - Giải mã bộ nhớ âm vị và sụn cổ tay trẻ 6 tuổi (Thời lượng 1:56)',
             src: 'assets/videos/codihoc_v2_faccontent_9x16.mp4',
-            script: `[00:00 - 00:10] Tình huống thực tế đầu năm học:
-"Đầu năm học, phụ huynh nhận tờ đơn đăng ký các môn liên kết tự nguyện như Kỹ năng sống, STEM, Tiếng Anh bổ trợ... Nhưng nếu không đăng ký thì sao? Con sẽ ngồi ở đâu?"
+            script: `[00:00 - 00:24] Cảnh 1 & 2 - Nghịch lý học tiền tiểu học vẫn trượt nhịp:
+"Mười một giờ đêm, hai mẹ con vẫn ngồi khóc bên trang vở Tiếng Việt rách nát. Học tiền tiểu học cả năm rồi, sao vào lớp một con vẫn đuối sức? Ở lớp tiền tiểu học, bé quen nhìn tranh đoán chữ và tô nét chấm sẵn. Vào lớp một, chương trình tăng vọt lên 12 tiết Tiếng Việt mỗi tuần. Chỉ sau 6 tuần đầu, con phải tự đọc trơn thơ dài và hạ cỡ chữ."
 
-[00:11 - 00:28] Đối chiếu quy định của ngành giáo dục:
-"Theo đúng quy định hiện hành của Bộ GD&ĐT, nhà trường cần bố trí các tiết liên kết hợp lý và đảm bảo quyền lợi học tập, sinh hoạt an toàn cho những học sinh không tham gia. Phụ huynh có toàn quyền chọn lựa dựa trên nhu cầu thực tế của con."
+[00:25 - 00:58] Cảnh 3 & 4 - Quá tải bộ nhớ âm vị và 8 xương cổ tay còn sụn mềm:
+"Não trẻ 6 tuổi phải làm hai bước là giải mã âm rồi mới ghép nghĩa. Khi chưa đánh vần tự động mà ép đọc trơn, bộ nhớ làm việc sẽ quá tải khiến con đọc xong chữ phía sau thì quên sạch chữ phía trước và nhầm vần ăn, ăng. Hơn nữa, 8 xương cổ tay của trẻ 6 tuổi thực chất vẫn còn nhiều mô sụn mềm, chỉ giữ được lực tỳ ổn định trong 5 đến 7 phút. Khi cầm bút ngòi sắc viết liền một giờ, tay con mỏi cứng làm chữ biến dạng."
 
-[00:29 - 00:40] Lời khuyên của Cò Đi Học:
-"Hãy bình tĩnh đối thoại văn minh cùng giáo viên chủ nhiệm và Ban đại diện cha mẹ học sinh để cùng tạo ra môi trường học tập lành mạnh nhất cho các con!"`
+[00:59 - 01:15] Cảnh 5 - Đối chiếu chuẩn cuối năm của Thông tư 32:
+"Qua 107 bình luận, nhiều mẹ kể con đọc chậm bị cô nhắc nhở, có bé ngồi cả tiếng đồng hồ vẫn không viết xong nổi một trang vở. Trong khi đó, Thông tư 32 của Bộ Giáo dục và Đào tạo chỉ yêu cầu đọc trơn vào cuối năm lớp một."
+
+[01:16 - 01:56] Cảnh 6, 7 & 8 - Ba kỹ thuật thực chiến cứu con khỏi sợ học:
+"Thứ nhất, mẹ dùng tấm bìa nhỏ che bớt các chữ xung quanh trong câu dài, cho con đánh vần thầm từng từ trong miệng rồi mới bật ra tiếng trơn. Thứ hai, lấy tay che bức tranh minh họa trong sách Tiếng Việt lại, chỉ ngẫu nhiên từ dưới lên trên để trị thói quen nhìn hình đoán chữ. Thứ ba, đừng ép con ngồi viết liền một mạch cả trang vở trong nước mắt mà hãy chia thành 3 chặng 5 phút, mỗi chặng viết 2 dòng rồi xoay cổ tay nghỉ, khen ngay một chữ đẹp nhất trong dòng và đổi sang bút rãnh cầm tam giác ngòi mài êm!"`
         }
     };
 
@@ -223,7 +235,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Render Cẩm Nang Gỡ Rối Học Đường (4 Nhóm Thiết Thực)
+    // Render Cẩm Nang Gỡ Rối Học Đường (Đúc kết từ 16 bài nghiên cứu thực tế)
     const guidesContainer = document.getElementById('guidesContainer');
     const guideSearchInput = document.getElementById('guideSearchInput');
 
@@ -235,10 +247,10 @@ document.addEventListener('DOMContentLoaded', () => {
         const groups = data.practicalGuides || [];
 
         groups.forEach(group => {
-            const filteredItems = group.items.filter(item => 
-                !kw || 
-                item.question.toLowerCase().includes(kw) || 
-                item.situation.toLowerCase().includes(kw) || 
+            const filteredItems = group.items.filter(item =>
+                !kw ||
+                item.question.toLowerCase().includes(kw) ||
+                item.situation.toLowerCase().includes(kw) ||
                 item.advice.toLowerCase().includes(kw)
             );
 
@@ -248,7 +260,15 @@ document.addEventListener('DOMContentLoaded', () => {
             groupCard.className = 'guide-group-card';
 
             let itemsHtml = '';
-            filteredItems.forEach((item, idx) => {
+            filteredItems.forEach((item) => {
+                const deepLinkBtn = item.blogId
+                    ? `<div class="mt-3 pt-2 border-t border-emerald-200/60">
+                           <button type="button" class="read-more-link text-xs font-bold" onclick="window.openReaderById('${item.blogId}')">
+                               📖 Đọc bài phân tích chuyên sâu đầy đủ ➔
+                           </button>
+                       </div>`
+                    : '';
+
                 itemsHtml += `
                     <div class="guide-accordion-item">
                         <div class="guide-item-header" onclick="this.parentElement.classList.toggle('active')">
@@ -257,11 +277,12 @@ document.addEventListener('DOMContentLoaded', () => {
                         </div>
                         <div class="guide-item-body">
                             <div class="guide-item-situation">
-                                <strong>Băn khoăn của phụ huynh:</strong> "${item.situation}"
+                                <strong>Tiếng lòng phụ huynh:</strong> "${item.situation}"
                             </div>
                             <div class="guide-item-advice">
-                                <strong>💡 Lời giải đáp và hướng gỡ rối từ Cò Đi Học:</strong>
+                                <strong>💡 Đúc kết pháp lý, khoa học và hướng gỡ rối từ Cò Đi Học:</strong>
                                 <p class="mt-1">${item.advice}</p>
+                                ${deepLinkBtn}
                             </div>
                         </div>
                     </div>
@@ -287,7 +308,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 <div class="text-center py-12 text-slate-500">
                     <div class="text-3xl mb-2">🔍</div>
                     <p>Không tìm thấy chủ đề phù hợp với từ khóa "${keyword}".</p>
-                    <p class="text-xs text-slate-400 mt-1">Bạn có thể nhắn tin trực tiếp tới số Zalo <strong>0902 209 213</strong> để được hỗ trợ tức thì.</p>
+                    <p class="text-xs text-slate-400 mt-1">Bố mẹ có thể nhắn tin trực tiếp tới số Zalo <strong>0902 209 213</strong> để được Cò Đi Học hỗ trợ tức thì.</p>
                 </div>
             `;
         }
@@ -300,38 +321,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     renderPracticalGuides();
 
-    // Render 57 Hội Nhóm Chất Lượng Cao
-    const communityTableBody = document.getElementById('communityTableBody');
-    const communitySearch = document.getElementById('communitySearch');
-
-    function renderCommunities(keyword = '') {
-        if (!communityTableBody) return;
-        communityTableBody.innerHTML = '';
-        const kw = keyword.toLowerCase().trim();
-
-        const filtered = (data.communities || []).filter(c => 
-            !kw || c.name.toLowerCase().includes(kw) || c.category.toLowerCase().includes(kw)
-        );
-
-        filtered.forEach(c => {
-            const tr = document.createElement('tr');
-            tr.innerHTML = `
-                <td class="font-bold text-navy-dark">${c.name}</td>
-                <td><span class="badge badge-navy">${c.category}</span></td>
-                <td>${c.members} thành viên</td>
-                <td><strong class="text-emerald-600 font-bold">${c.score}</strong></td>
-                <td><span class="badge badge-green">${c.status}</span></td>
-            `;
-            communityTableBody.appendChild(tr);
-        });
-    }
-
-    if (communitySearch) {
-        communitySearch.addEventListener('input', (e) => renderCommunities(e.target.value));
-    }
-    renderCommunities();
-
-    // Render Hồ Sơ Đối Sánh Chương Trình
+    // Render Hồ Sơ Đối Sánh 4 Lộ Trình Chương Trình
     const curriculaContainer = document.getElementById('curriculaContainer');
     if (curriculaContainer) {
         curriculaContainer.innerHTML = '';
@@ -354,11 +344,11 @@ document.addEventListener('DOMContentLoaded', () => {
                     ${curr.cons}
                 </div>
                 <div class="curricula-spec">
-                    <strong>Học phí tham chiếu:</strong>
+                    <strong>Chi phí tham khảo:</strong>
                     ${curr.cost}
                 </div>
                 <div class="curricula-spec mt-auto pt-3 border-t border-slate-100">
-                    <strong class="text-amber-700">Đặc biệt phù hợp với:</strong>
+                    <strong class="text-amber-700">Phù hợp với:</strong>
                     ${curr.suitable}
                 </div>
             `;

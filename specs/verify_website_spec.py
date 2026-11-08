@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 Executable Website Specification Verifier (5-Gate Harness)
-Spec Reference: specs/WEBSITE_MASTER_SPEC.md (SPEC-NWE-CODIHOC-WEB-v2.0)
+Spec Reference: specs/WEBSITE_MASTER_SPEC.md (SPEC-NWE-CODIHOC-WEB-v2.1)
 """
 import json
 import os
@@ -32,15 +32,12 @@ def check_gate_1_css_dom_parity() -> list[str]:
     """Gate 1: Verify 100% of CSS classes in HTML/JS/Data exist in style.css."""
     errors = []
     css_text = STYLE_CSS.read_text(encoding="utf-8")
-    # Remove CSS comments and rule bodies {...} so only selectors remain
     no_comments = re.sub(r"/\*[\s\S]*?\*/", "", css_text)
     selector_chunks = re.sub(r"\{[^{}]*\}", "\n", no_comments)
 
     defined_classes = set()
-    # Match escaped utility classes like .py-2\.5 or .md\:text-lg
-    for m in re.finditer(r"\.([a-zA-Z0-9_-]+(?:\\[.:][a-zA-Z0-9_-]+)+)", selector_chunks):
-        defined_classes.add(m.group(1).replace("\\.", ".").replace("\\:", ":"))
-    # Match standard and compound class selectors like .zalo-tier-card.featured
+    for m in re.finditer(r"\.([a-zA-Z0-9_-]+(?:\\[.:/][a-zA-Z0-9_-]+)+)", selector_chunks):
+        defined_classes.add(m.group(1).replace("\\.", ".").replace("\\:", ":").replace("\\/", "/"))
     for m in re.finditer(r"\.([a-zA-Z0-9_-]+)", selector_chunks):
         defined_classes.add(m.group(1))
 
@@ -50,7 +47,7 @@ def check_gate_1_css_dom_parity() -> list[str]:
         for match in re.finditer(r'class=["\']([^"\']+)["\']', text):
             raw = re.sub(r"\$\{[^}]+\}", "", match.group(1))
             for token in raw.split():
-                if re.match(r"^[a-zA-Z0-9_:-]+(?:\.[0-9]+)?$", token):
+                if re.match(r"^[a-zA-Z0-9_:/.]+$", token):
                     used_classes.add(token)
 
     orphan_classes = sorted(cls for cls in used_classes if cls not in defined_classes)
@@ -79,25 +76,26 @@ def check_gate_2_and_4_playwright_live_dom() -> list[str]:
 
         desktop_audit = page.evaluate("""() => {
             const errs = [];
-            // Horizontal overflow
             if (document.documentElement.scrollWidth > document.documentElement.clientWidth) {
                 errs.push(`Desktop horizontal overflow: scrollWidth=${document.documentElement.scrollWidth} > clientWidth=${document.documentElement.clientWidth}`);
             }
 
-            // Header height
             const header = document.getElementById('siteHeader');
             if (!header || header.getBoundingClientRect().height > 84) {
                 errs.push(`Header height invalid: ${header ? header.getBoundingClientRect().height : 'missing'}`);
             }
 
-            // Broken images
             document.querySelectorAll('img').forEach(img => {
                 if (!img.complete || img.naturalWidth === 0) {
                     errs.push(`Broken image: ${img.src}`);
                 }
             });
 
-            // Required grids must compute to display: grid
+            // Verify zero fabricated #pane-communities exists in DOM
+            if (document.getElementById('pane-communities') || document.getElementById('communityTableBody')) {
+                errs.push('Fabricated #pane-communities / #communityTableBody still present in DOM');
+            }
+
             const requiredGrids = [
                 '.hero-grid',
                 '.values-strip-grid',
@@ -121,7 +119,6 @@ def check_gate_2_and_4_playwright_live_dom() -> list[str]:
                 }
             }
 
-            // Verify #plan-section 3 step cards are horizontally aligned and styled
             const stepCards = Array.from(document.querySelectorAll('#plan-section .step-card'));
             if (stepCards.length !== 3) {
                 errs.push(`Expected 3 .step-card in #plan-section, found ${stepCards.length}`);
@@ -139,13 +136,16 @@ def check_gate_2_and_4_playwright_live_dom() -> list[str]:
                 });
             }
 
-            // Verify 16 blog cards rendered
             const blogCards = document.querySelectorAll('#blogGrid .blog-card');
             if (blogCards.length !== 16) {
                 errs.push(`Expected 16 .blog-card in #blogGrid, found ${blogCards.length}`);
             }
 
-            // Verify zero dead href="#" links outside .logo-wrap
+            const guideItems = document.querySelectorAll('#guidesContainer .guide-accordion-item');
+            if (guideItems.length !== 16) {
+                errs.push(`Expected 16 real-situation guide items in #guidesContainer, found ${guideItems.length}`);
+            }
+
             document.querySelectorAll('a[href="#"]').forEach(a => {
                 if (!a.classList.contains('logo-wrap')) {
                     errs.push(`Dead link href="#" found on element: ${a.innerText.trim()}`);
@@ -157,7 +157,6 @@ def check_gate_2_and_4_playwright_live_dom() -> list[str]:
         errors.extend(f"[Gate 2] {e}" for e in desktop_audit)
 
         # Gate 4: Interactive Runtime State checks
-        # 4a. Test Blog Filter Tabs exact counts (16 = 2 + 11 + 2 + 1)
         expected_filter_counts = [
             ("all", 16),
             ("tiền tiểu học", 2),
@@ -174,7 +173,6 @@ def check_gate_2_and_4_playwright_live_dom() -> list[str]:
         page.locator('#blogFilterTabs .tab-btn[data-filter="all"]').click()
         page.wait_for_timeout(50)
 
-        # 4b. Test opening Reader Modal by clicking blog card 0, 5, 15
         for idx in (0, 5, 15):
             page.locator("#blogGrid .blog-card").nth(idx).click()
             page.wait_for_timeout(120)
@@ -195,11 +193,11 @@ def check_gate_2_and_4_playwright_live_dom() -> list[str]:
             page.locator("#closeReaderBtn").click()
             page.wait_for_timeout(80)
 
-        # Test Guide Search Filtering
+        # Test Guide Search Filtering & Deep-Link to Reader Modal
         page.fill("#guideSearchInput", "bán trú")
         page.wait_for_timeout(150)
         search_count = page.locator("#guidesContainer .guide-accordion-item").count()
-        if search_count == 0 or search_count >= 30:
+        if search_count == 0 or search_count >= 16:
             errors.append(f"[Gate 4] Guide search filter failed for 'bán trú' (count={search_count})")
         page.fill("#guideSearchInput", "")
         page.wait_for_timeout(100)
@@ -225,9 +223,30 @@ def check_gate_2_and_4_playwright_live_dom() -> list[str]:
     return errors
 
 
-def check_gate_3_data_integrity() -> list[str]:
-    """Gate 3: Verify CDH_DATA schema, zero internal metadata leaks, and zero commercial brand names."""
+def check_gate_3_data_and_video_integrity() -> list[str]:
+    """Gate 3: Verify CDH_DATA schema, video ffprobe validity, zero internal metadata leaks, and zero commercial brand names."""
     errors = []
+
+    # 3a. Verify both MP4 videos with ffprobe
+    expected_videos = [
+        (ROOT_DIR / "assets" / "videos" / "codihoc_c01_kudo_9x16.mp4", 75.0, 85.0),
+        (ROOT_DIR / "assets" / "videos" / "codihoc_v2_faccontent_9x16.mp4", 110.0, 122.0),
+    ]
+    for vpath, min_dur, max_dur in expected_videos:
+        if not vpath.exists():
+            errors.append(f"[Gate 3] Missing video file: {vpath}")
+            continue
+        try:
+            out = subprocess.check_output(
+                ["ffprobe", "-v", "quiet", "-print_format", "json", "-show_format", str(vpath)]
+            )
+            dur = float(json.loads(out)["format"]["duration"])
+            if not (min_dur <= dur <= max_dur):
+                errors.append(f"[Gate 3] Video {vpath.name} duration {dur:.2f}s outside expected range [{min_dur}, {max_dur}]")
+        except Exception as e:
+            errors.append(f"[Gate 3] Corrupt or unreadable video {vpath.name}: {e}")
+
+    # 3b. Parse data.js
     cmd = [
         "node",
         "-e",
@@ -247,9 +266,25 @@ def check_gate_3_data_integrity() -> list[str]:
         return [f"[Gate 3] Failed to parse data.js: {res.stderr}"]
 
     data = json.loads(res.stdout)
+    if "communities" in data:
+        errors.append("[Gate 3] Fabricated 'communities' array still present in data.js")
+
     blogs = data.get("blogs", [])
     if len(blogs) != 16:
         errors.append(f"[Gate 3] Expected 16 blogs, found {len(blogs)}")
+    blog_ids = {b.get("id") for b in blogs}
+
+    # Verify practicalGuides map 1-to-1 to the 16 real blogs
+    guide_blog_ids = []
+    for g in data.get("practicalGuides", []):
+        for it in g.get("items", []):
+            bid = it.get("blogId")
+            if not bid or bid not in blog_ids:
+                errors.append(f"[Gate 3] Practical guide item '{it.get('question')}' missing valid blogId")
+            else:
+                guide_blog_ids.append(bid)
+    if len(guide_blog_ids) != 16 or set(guide_blog_ids) != blog_ids:
+        errors.append(f"[Gate 3] Practical guides must map 1-to-1 with all 16 real blogs (found {len(guide_blog_ids)})")
 
     forbidden_internal_patterns = [
         r"article_id:",
@@ -312,7 +347,6 @@ def check_gate_3_data_integrity() -> list[str]:
         if "`" in html:
             errors.append(f"[Gate 3] {bid}: raw markdown backtick found in contentHtml")
 
-    # Check for foreign script token glitches (Cyrillic, Bengali, CJK, etc.) or en-dash
     if "\u2013" in full_json_str:
         errors.append("[Gate 3] En-dash (–) found in data.js; must use standard hyphen (-)")
     if re.search(r"[\u0370-\u1DFF\u2E80-\u9FFF\uAC00-\uD7AF\uFFFD]", full_json_str):
@@ -360,7 +394,7 @@ def check_gate_5_audit_cli() -> list[str]:
 
 def main() -> int:
     print("=" * 72)
-    print("🛡️  VERIFYING CÒ ĐI HỌC HUB AGAINST WEBSITE_MASTER_SPEC v2.0 (5 GATES)")
+    print("🛡️  VERIFYING CÒ ĐI HỌC HUB AGAINST WEBSITE_MASTER_SPEC v2.1 (5 GATES)")
     print("=" * 72)
 
     all_errors = []
@@ -373,8 +407,8 @@ def main() -> int:
     print(f"Gate 2 & 4 (Playwright Geometry & UX):    {'✅ PASS (Desktop + Mobile + Modals)' if not g24 else f'❌ FAIL ({len(g24)})'}")
     all_errors.extend(g24)
 
-    g3 = check_gate_3_data_integrity()
-    print(f"Gate 3 (Data Schema & Content Integrity): {'✅ PASS (16 Blogs + 30 Guides Clean)' if not g3 else f'❌ FAIL ({len(g3)})'}")
+    g3 = check_gate_3_data_and_video_integrity()
+    print(f"Gate 3 (Real Data & Video Integrity):     {'✅ PASS (16 Blogs + 16 Guides + 2 Valid MP4s)' if not g3 else f'❌ FAIL ({len(g3)})'}")
     all_errors.extend(g3)
 
     g5 = check_gate_5_audit_cli()

@@ -68,19 +68,19 @@ Trang chủ `index.html` được tổ chức thành 10 phân khu tuần tự th
 
 ### 2.7. Thư viện Video Hoạt hình 2D (`#video-section`)
 - **Bố cục:** Lưới 2 cột `.video-showcase-grid` (`1.4fr 1fr` trên Desktop):
-  - Cột trái (`.video-player-stage`): Trình phát video HTML5 `#mainVideoPlayer`, thanh chọn 4 tập video và khung tóm tắt kịch bản `.video-script-card` có viền và nền định kiểu rõ ràng.
-  - Cột phải (`.video-playlist-col`): Danh sách 4 tập video `.video-item-card` có trạng thái `.active` khi chọn.
+  - Cột trái (`.main-player-wrap`): Trình phát video HTML5 `#mainVideoPlayer` phát trực tiếp 2 tệp video thực tế đã qua kiểm định `ffprobe` (`codihoc_c01_kudo_9x16.mp4` thời lượng `1:20` và `codihoc_v2_faccontent_9x16.mp4` thời lượng `1:56`).
+  - Cột phải (`.video-info-box`): Danh sách 2 tập video thực tế (`.video-item`) có trạng thái `.active` khi chọn và khung lời thoại kịch bản thực tế (`.video-script-card`) khớp 100% với lời thuyết minh trong video.
 
-### 2.8. Cẩm nang Gỡ rối Học đường & Hệ Chương trình (`#resources-section`)
-- **Thanh tìm kiếm & Bộ lọc:**
+### 2.8. Cẩm nang Gỡ rối Học đường & Đối sánh 4 Lộ trình Học tập (`#resources-section`)
+- **Thanh tìm kiếm & Bộ lọc 2 Tab Thực chứng:**
+  - Chỉ hiển thị đúng **2 Tab dữ liệu thật** (`💡 Hỏi đáp nhanh 16 tình huống thực tế` và `⚖️ Đối sánh 4 lộ trình học tập phổ thông`). Tuyệt đối không hiển thị bảng "10 cộng đồng phụ huynh tiêu biểu / 57 hội nhóm" giả lập từ danh sách thu thập dữ liệu nội bộ.
   - Ô tìm kiếm `.search-bar-wrap > input#guideSearchInput.search-input` có viền, biểu tượng kính lúp `.search-icon` căn giữa theo chiều dọc, tự động lọc câu hỏi theo từ khóa gõ vào.
-  - Thanh tab `.filter-tabs` cho phép lọc theo 3 nhóm tuổi và tab *Chọn trường & Hệ đào tạo*.
-- **Danh sách 30 Tình huống Gỡ rối (`#guideCategoriesContainer`):**
-  - Chia làm 3 nhóm tuổi (Tiền tiểu học & Lớp 1: 10 mục; Tiểu học: 10 mục; THCS & THPT: 10 mục).
-  - Cơ chế đóng/mở từng câu hỏi (`toggleGuideAccordion`): Mặc định chỉ mở câu đầu tiên của mỗi nhóm, bấm vào tiêu đề câu hỏi sẽ đóng/mở mượt mà.
-- **Khu vực 4 Hệ Chương trình Giáo dục (`#schoolDirectorySection`):**
-  - Gồm 4 thẻ phân tích phương pháp & lộ trình giáo dục khách quan (Chương trình Quốc tế & Tú tài IB, Chương trình Tích hợp & Song bằng Cambridge, Chương trình Chất lượng cao & Tăng cường tiếng Anh, Phương pháp Giáo dục Ngữ âm & Tư duy Sớm).
-  - **Ràng buộc phi thương mại:** Tuyệt đối không nêu tên riêng bất kỳ trường tư thục hay trung tâm ngoại ngữ thương mại nào.
+- **Danh sách 16 Tình huống Gỡ rối Thực tế (`#guidesContainer`):**
+  - Chia làm 4 nhóm chủ đề ánh xạ **1-đối-1** với **16 bài nghiên cứu chuyên sâu thật** trong `data.blogs`.
+  - Mỗi mục có trường `blogId` hợp lệ và nút **`📖 Đọc bài phân tích chuyên sâu đầy đủ ➔`** mở trực tiếp bài nghiên cứu tương ứng trong `#readerModal`.
+- **Khu vực Đối sánh 4 Lộ trình Học tập Phổ thông (`#curriculaContainer`):**
+  - Gồm 4 thẻ phân tích khách quan 4 lộ trình (Chương trình công lập chuẩn Bộ GD&ĐT 2018, Chương trình tư thục tự chủ và tăng cường, Chương trình song bằng quốc tế Cambridge/Oxford, Chương trình quốc tế toàn phần IB/AP).
+  - **Ràng buộc phi thương mại:** Không nêu tên riêng bất kỳ trường tư thục hay trung tâm ngoại ngữ thương mại nào.
 
 ### 2.9. Không gian Kết nối Zalo & Đối thoại (`#community-section`)
 - **Bố cục:** Lưới 2 cột `.zalo-hub-grid`:
