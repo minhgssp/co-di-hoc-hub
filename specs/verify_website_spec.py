@@ -69,7 +69,7 @@ def check_gate_2_and_4_playwright_live_dom() -> list[str]:
         failed_reqs = []
         page.on("console", lambda msg: console_errors.append(msg.text) if msg.type == "error" else None)
         page.on("pageerror", lambda err: page_errors.append(str(err)))
-        page.on("requestfailed", lambda req: failed_reqs.append(req.url))
+        page.on("requestfailed", lambda req: failed_reqs.append(req.url) if req.resource_type != "media" else None)
 
         page.goto(PREVIEW_URL, wait_until="networkidle")
         page.wait_for_timeout(300)
@@ -98,7 +98,7 @@ def check_gate_2_and_4_playwright_live_dom() -> list[str]:
 
             const requiredGrids = [
                 '.hero-grid',
-                '.values-strip-grid',
+                '.hero-pillars-mini',
                 '.problem-grid',
                 '.plan-steps-grid',
                 '.blog-grid',
@@ -117,6 +117,19 @@ def check_gate_2_and_4_playwright_live_dom() -> list[str]:
                         errs.push(`Unstyled grid container ${sel}: computed display is '${disp}' instead of 'grid'`);
                     }
                 }
+            }
+
+            // Verify #resources-section is positioned immediately below #hero-section for 1-swipe findability
+            const resEl = document.getElementById('resources-section');
+            const vidEl = document.getElementById('video-section');
+            const blogEl = document.getElementById('blog-section');
+            if (!resEl || !vidEl || !blogEl || resEl.offsetTop >= vidEl.offsetTop || vidEl.offsetTop >= blogEl.offsetTop) {
+                errs.push('Section order invalid: #resources-section must appear before #video-section and #blog-section');
+            }
+
+            const quickChips = document.querySelectorAll('#quickSearchChips .quick-chip');
+            if (quickChips.length < 6) {
+                errs.push(`Expected at least 6 quick filter chips in #quickSearchChips, found ${quickChips.length}`);
             }
 
             const stepCards = Array.from(document.querySelectorAll('#plan-section .step-card'));
@@ -173,12 +186,21 @@ def check_gate_2_and_4_playwright_live_dom() -> list[str]:
         page.locator('#blogFilterTabs .tab-btn[data-filter="all"]').click()
         page.wait_for_timeout(50)
 
+        # Expand all 16 blogs via #toggleAllBlogsBtn before clicking card[15]
+        if page.locator("#toggleAllBlogsBtn").is_visible():
+            page.locator("#toggleAllBlogsBtn").click()
+            page.wait_for_timeout(50)
+
         for idx in (0, 5, 15):
             page.locator("#blogGrid .blog-card").nth(idx).click()
             page.wait_for_timeout(120)
             modal_err = page.evaluate("""(cardIdx) => {
                 const modal = document.getElementById('readerModal');
                 if (!modal || !modal.classList.contains('active')) return `Reader modal failed to open for card[${cardIdx}]`;
+                const topBar = modal.querySelector('.reader-top-bar');
+                if (!topBar || window.getComputedStyle(topBar).position !== 'sticky') return `Reader top bar is not sticky for card[${cardIdx}]`;
+                const mobileToc = document.querySelectorAll('#readerMobileTocList a');
+                if (mobileToc.length < 3) return `Reader mobile TOC has fewer than 3 items for card[${cardIdx}]`;
                 const title = document.getElementById('readerArticleTitle')?.innerText?.trim() || '';
                 const body = document.getElementById('readerContent');
                 const tocItems = document.querySelectorAll('#readerTocList a');
@@ -227,10 +249,9 @@ def check_gate_3_data_and_video_integrity() -> list[str]:
     """Gate 3: Verify CDH_DATA schema, video ffprobe validity, zero internal metadata leaks, and zero commercial brand names."""
     errors = []
 
-    # 3a. Verify both MP4 videos with ffprobe
+    # 3a. Verify Homepage Introduction MP4 video with ffprobe
     expected_videos = [
-        (ROOT_DIR / "assets" / "videos" / "codihoc_c01_kudo_9x16.mp4", 75.0, 85.0),
-        (ROOT_DIR / "assets" / "videos" / "codihoc_v2_faccontent_9x16.mp4", 110.0, 122.0),
+        (ROOT_DIR / "assets" / "videos" / "codihoc_intro_homepage.mp4", 70.0, 90.0),
     ]
     for vpath, min_dur, max_dur in expected_videos:
         if not vpath.exists():

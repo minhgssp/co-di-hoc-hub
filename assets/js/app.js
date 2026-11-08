@@ -1,9 +1,10 @@
 /**
  * APP.JS — CÒ ĐI HỌC OFFICIAL HUB
- * Điều hướng mượt mà, phân loại 16 bài viết chuyên sâu, trình đọc bài viết (Novel Viewer),
- * trình phát 2 video hoạt hình thực tế, cẩm nang hỏi đáp 16 tình huống thực chứng,
+ * Điều hướng mượt mà, phân loại 16 bài viết chuyên sâu (hiển thị tiệm tiến 6 bài + mở rộng 16 bài),
+ * trình đọc bài viết (Novel Viewer kèm Mục lục Mobile & Thu gọn tài liệu tham khảo),
+ * trình phát Video giới thiệu Cò Đi Học đồng bộ 5 chương mục,
+ * cẩm nang hỏi đáp 16 tình huống thực chứng kèm Quick Filter Chips,
  * bảng đối sánh 4 lộ trình học tập và cổng kết nối Zalo 0902 209 213.
- * Hoàn toàn đứng về phía phụ huynh — 0% quảng cáo bán hàng, 0% seeding.
  */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -14,11 +15,22 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // ==========================================
-    // 1. BLOG HUB RENDER & FILTER (16 BÀI CHUYÊN SÂU)
+    // 1. BLOG HUB RENDER & FILTER (16 BÀI CHUYÊN SÂU - PROGRESSIVE DISCLOSURE)
     // ==========================================
     const blogGrid = document.getElementById('blogGrid');
     const blogFilterTabs = document.getElementById('blogFilterTabs');
+    const blogExpandWrap = document.getElementById('blogExpandWrap');
+    const toggleAllBlogsBtn = document.getElementById('toggleAllBlogsBtn');
     let currentBlogFilter = 'all';
+    let isBlogExpanded = false;
+
+    function getLevelIcon(levelStr = '') {
+        const lv = levelStr.toLowerCase();
+        if (lv.includes('tiền tiểu học')) return '🎒';
+        if (lv.includes('lớp 6')) return '🏫';
+        if (lv.includes('song bằng')) return '🌏';
+        return '📚';
+    }
 
     function renderBlogs(filter = 'all') {
         if (!blogGrid) return;
@@ -33,15 +45,18 @@ document.addEventListener('DOMContentLoaded', () => {
                 return lv.includes(fl);
             });
 
-        filteredBlogs.forEach(blog => {
+        filteredBlogs.forEach((blog, idx) => {
             const card = document.createElement('div');
-            card.className = 'blog-card';
+            const shouldCollapse = (filter === 'all' && !isBlogExpanded && idx >= 6);
+            card.className = `blog-card${shouldCollapse ? ' blog-card-collapsed' : ''}`;
             card.setAttribute('data-id', blog.id);
+
+            const icon = getLevelIcon(blog.level);
 
             card.innerHTML = `
                 <div class="blog-card-header">
-                    <span class="badge badge-orange">${blog.level}</span>
-                    <span class="badge badge-navy">⏱️ ${blog.readTime} phút đọc</span>
+                    <span class="badge badge-orange">${icon} ${blog.level}</span>
+                    <span class="badge badge-navy">⚡ Có hướng xử lý • ${blog.readTime} phút đọc</span>
                 </div>
                 <div class="blog-card-body">
                     <h3 class="blog-card-title">${blog.title}</h3>
@@ -59,14 +74,34 @@ document.addEventListener('DOMContentLoaded', () => {
             card.addEventListener('click', () => openReader(blog));
             blogGrid.appendChild(card);
         });
+
+        if (blogExpandWrap && toggleAllBlogsBtn) {
+            if (filter === 'all' && filteredBlogs.length > 6) {
+                blogExpandWrap.style.display = 'block';
+                const hiddenCount = filteredBlogs.length - 6;
+                toggleAllBlogsBtn.innerHTML = isBlogExpanded
+                    ? `<span>🔼 Thu gọn danh sách bài viết (Chỉ hiện 6 bài tiêu biểu)</span>`
+                    : `<span>📖 Xem đầy đủ cả ${filteredBlogs.length} bài nghiên cứu chuyên sâu (Còn ${hiddenCount} bài nữa ▾)</span>`;
+            } else {
+                blogExpandWrap.style.display = 'none';
+            }
+        }
+    }
+
+    if (toggleAllBlogsBtn) {
+        toggleAllBlogsBtn.addEventListener('click', () => {
+            isBlogExpanded = !isBlogExpanded;
+            renderBlogs(currentBlogFilter);
+        });
     }
 
     if (blogFilterTabs) {
         blogFilterTabs.addEventListener('click', (e) => {
-            if (e.target.classList.contains('tab-btn')) {
+            const btn = e.target.closest('.tab-btn');
+            if (btn) {
                 blogFilterTabs.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
-                e.target.classList.add('active');
-                currentBlogFilter = e.target.getAttribute('data-filter') || 'all';
+                btn.classList.add('active');
+                currentBlogFilter = btn.getAttribute('data-filter') || 'all';
                 renderBlogs(currentBlogFilter);
             }
         });
@@ -81,40 +116,91 @@ document.addEventListener('DOMContentLoaded', () => {
     const closeReaderBtn = document.getElementById('closeReaderBtn');
     const readerProgressBar = document.getElementById('readerProgressBar');
     const readerTocList = document.getElementById('readerTocList');
+    const readerMobileTocWrap = document.getElementById('readerMobileTocWrap');
+    const readerMobileTocList = document.getElementById('readerMobileTocList');
     const readerArticleTitle = document.getElementById('readerArticleTitle');
     const readerLevelBadge = document.getElementById('readerLevelBadge');
     const readerReadTime = document.getElementById('readerReadTime');
     const readerQuoteText = document.getElementById('readerQuoteText');
     const readerContent = document.getElementById('readerContent');
     const readerAskZaloBtn = document.getElementById('readerAskZaloBtn');
+    const readerBottomZaloBtn = document.getElementById('readerBottomZaloBtn');
+
+    function formatArticleHtmlWithCollapsibleSources(rawHtml) {
+        if (!rawHtml) return '';
+        const marker = "<h2 id='can-cu-phap-ly-va-tai-lieu-tham-khao'";
+        const idx = rawHtml.indexOf(marker);
+        if (idx === -1) return rawHtml;
+
+        const mainPart = rawHtml.slice(0, idx);
+        const tailPart = rawHtml.slice(idx);
+        return `${mainPart}
+            <details class="legal-sources-details mt-8">
+                <summary class="legal-sources-summary">
+                    <span>📚 Xem chi tiết văn bản pháp lý, tài liệu khoa học và bình luận khảo sát gốc</span>
+                    <span class="legal-sources-hint">Bấm để mở rộng ▾</span>
+                </summary>
+                <div class="legal-sources-body">
+                    ${tailPart}
+                </div>
+            </details>`;
+    }
 
     function openReader(blog) {
         if (!readerModal || !blog) return;
 
         readerArticleTitle.textContent = blog.title;
         readerLevelBadge.textContent = blog.level;
-        readerReadTime.textContent = `⏱️ ${blog.readTime} phút đọc (${blog.wordCount} chữ)`;
+        readerReadTime.textContent = `⚡ Có hướng xử lý áp dụng ngay • Toàn văn ${blog.readTime} phút tham khảo`;
         readerQuoteText.textContent = `"${blog.quote}"`;
-        readerContent.innerHTML = blog.contentHtml;
+        readerContent.innerHTML = formatArticleHtmlWithCollapsibleSources(blog.contentHtml);
 
-        // Render TOC
-        readerTocList.innerHTML = '';
+        // Render TOC for both Desktop Sidebar and Mobile Dropdown
+        if (readerTocList) readerTocList.innerHTML = '';
+        if (readerMobileTocList) readerMobileTocList.innerHTML = '';
+
         if (blog.toc && blog.toc.length > 0) {
+            if (readerMobileTocWrap) {
+                readerMobileTocWrap.style.display = '';
+                readerMobileTocWrap.removeAttribute('open');
+            }
             blog.toc.forEach(item => {
-                const li = document.createElement('li');
-                li.innerHTML = `<a href="#${item.anchor}" class="toc-link">${item.title}</a>`;
-                readerTocList.appendChild(li);
+                if (readerTocList) {
+                    const li = document.createElement('li');
+                    li.innerHTML = `<a href="#${item.anchor}" class="toc-link">${item.title}</a>`;
+                    readerTocList.appendChild(li);
+                }
+                if (readerMobileTocList) {
+                    const mLi = document.createElement('li');
+                    const mLink = document.createElement('a');
+                    mLink.href = `#${item.anchor}`;
+                    mLink.className = 'toc-link';
+                    mLink.textContent = item.title;
+                    mLink.addEventListener('click', () => {
+                        if (readerMobileTocWrap) readerMobileTocWrap.removeAttribute('open');
+                    });
+                    mLi.appendChild(mLink);
+                    readerMobileTocList.appendChild(mLi);
+                }
             });
         } else {
-            readerTocList.innerHTML = `<li class="text-xs text-slate-500 italic">Toàn văn bài viết liền mạch</li>`;
+            if (readerTocList) {
+                readerTocList.innerHTML = `<li class="text-xs text-slate-500 italic">Toàn văn bài viết liền mạch</li>`;
+            }
+            if (readerMobileTocWrap) {
+                readerMobileTocWrap.style.display = 'none';
+            }
         }
 
-        // Setup CTA
+        // Setup Zalo CTA with exact article title
+        const encodedMsg = encodeURIComponent(`Chào Cò Đi Học, tôi vừa đọc bài "${blog.title}" và muốn nhờ Cò tư vấn thêm cho trường hợp của con tôi.`);
+        const zaloUrl = `https://zalo.me/0902209213?text=${encodedMsg}`;
+
         if (readerAskZaloBtn) {
-            readerAskZaloBtn.onclick = () => {
-                const message = encodeURIComponent(`Chào Cò Đi Học, tôi vừa đọc bài "${blog.title}". Tôi muốn xin tư vấn sâu hơn về trường hợp của con tôi.`);
-                window.open(`https://zalo.me/0902209213?text=${message}`, '_blank');
-            };
+            readerAskZaloBtn.href = zaloUrl;
+        }
+        if (readerBottomZaloBtn) {
+            readerBottomZaloBtn.href = zaloUrl;
         }
 
         readerModal.classList.add('active');
@@ -162,63 +248,39 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // ==========================================
-    // 3. VIDEO HUB PLAYER & PLAYLIST (2 VIDEO THẬT 100%)
+    // 3. HOMEPAGE INTRO VIDEO & 5 CHAPTER SEEKER
     // ==========================================
     const mainVideoPlayer = document.getElementById('mainVideoPlayer');
-    const videoTitleDisplay = document.getElementById('videoTitleDisplay');
-    const videoScriptBody = document.getElementById('videoScriptBody');
-    const videoItems = document.querySelectorAll('.video-item');
+    const chapterItems = document.querySelectorAll('#introChapterList .video-item');
 
-    const videoDataMap = {
-        'v1': {
-            title: 'Tập 1 - Lớp 1 quá tải (Thời lượng 1:20)',
-            src: 'assets/videos/codihoc_c01_kudo_9x16.mp4',
-            script: `[00:00 - 00:19] Cảnh 1 & 2 - Hai cú sốc đầu đời của học sinh lớp 1:
-"Đã tốn bao nhiêu tiền và công sức cho con đi học trước từ mẫu giáo, vậy mà vừa bước vào lớp một, tối nào hai mẹ con cũng đánh vật đến kiệt sức! Cò Đi Học đã rà soát 15 bài thảo luận với 107 bình luận thực tế từ 5 hội nhóm phụ huynh tiểu học. Nỗi bất lực lớn nhất tập trung vào hai cú sốc ngay học kỳ đầu tiên."
-
-[00:20 - 00:39] Cảnh 3 & 4 - Cú sốc số 1 về đánh vần và đọc trơn:
-"Cú sốc số một là con chưa đánh vần vững đã phải đọc trơn cả bài thơ dài! Nhiều bé mới học nhận biết mặt chữ, vần 'ung' còn chưa học tới mà bài về nhà đã bắt đọc trơn cả câu. Đánh vần chữ sau thì quên mất chữ trước, hai mẹ con vừa khóc vừa đọc. Có mẹ nghẹn ngào kể chuyện con đọc trơn không kịp còn bị cô giáo gọi nhắc nhở!"
-
-[00:40 - 01:00] Cảnh 5 & 6 - Cú sốc số 2 về chữ viết và hạ cỡ chữ:
-"Cú sốc số hai là đã đầu tư cho con học tiền tiểu học nhiều tháng trời, nhưng vào lớp một chữ viết vẫn xấu và không căn nổi ô ly! Viết một trang vở mất cả tiếng đồng hồ, viết rồi tẩy rách giấy, đến lúc hạ cỡ chữ nhỏ lại càng áp lực."
-
-[01:01 - 01:20] Cảnh 7 & 8 - Cơ chế gốc rễ và 3 giải pháp đồng hành vừa sức:
-"Vì sao học trước vẫn đuối? Vì nhịp chương trình đang nhảy bậc nhanh hơn sự phát triển tự nhiên của trẻ 6 tuổi. Khi cơ tay con còn non và não bộ chưa quen ghép âm, việc nhồi nhét trước chỉ tạo cảm giác chủ quan giả tạo. Thay vì ngồi quát mắng con đến khuya, bố mẹ hãy chia nhỏ mỗi tối 10 phút ghép vần có nhịp nghỉ, chọn bút ngòi mài trơn không cắn giấy và nhắn Cò Đi Học để chọn đúng lộ trình vừa sức con nhé!"`
-        },
-        'v2': {
-            title: 'Tập 2 - Giải mã bộ nhớ âm vị và sụn cổ tay trẻ 6 tuổi (Thời lượng 1:56)',
-            src: 'assets/videos/codihoc_v2_faccontent_9x16.mp4',
-            script: `[00:00 - 00:24] Cảnh 1 & 2 - Nghịch lý học tiền tiểu học vẫn trượt nhịp:
-"Mười một giờ đêm, hai mẹ con vẫn ngồi khóc bên trang vở Tiếng Việt rách nát. Học tiền tiểu học cả năm rồi, sao vào lớp một con vẫn đuối sức? Ở lớp tiền tiểu học, bé quen nhìn tranh đoán chữ và tô nét chấm sẵn. Vào lớp một, chương trình tăng vọt lên 12 tiết Tiếng Việt mỗi tuần. Chỉ sau 6 tuần đầu, con phải tự đọc trơn thơ dài và hạ cỡ chữ."
-
-[00:25 - 00:58] Cảnh 3 & 4 - Quá tải bộ nhớ âm vị và 8 xương cổ tay còn sụn mềm:
-"Não trẻ 6 tuổi phải làm hai bước là giải mã âm rồi mới ghép nghĩa. Khi chưa đánh vần tự động mà ép đọc trơn, bộ nhớ làm việc sẽ quá tải khiến con đọc xong chữ phía sau thì quên sạch chữ phía trước và nhầm vần ăn, ăng. Hơn nữa, 8 xương cổ tay của trẻ 6 tuổi thực chất vẫn còn nhiều mô sụn mềm, chỉ giữ được lực tỳ ổn định trong 5 đến 7 phút. Khi cầm bút ngòi sắc viết liền một giờ, tay con mỏi cứng làm chữ biến dạng."
-
-[00:59 - 01:15] Cảnh 5 - Đối chiếu chuẩn cuối năm của Thông tư 32:
-"Qua 107 bình luận, nhiều mẹ kể con đọc chậm bị cô nhắc nhở, có bé ngồi cả tiếng đồng hồ vẫn không viết xong nổi một trang vở. Trong khi đó, Thông tư 32 của Bộ Giáo dục và Đào tạo chỉ yêu cầu đọc trơn vào cuối năm lớp một."
-
-[01:16 - 01:56] Cảnh 6, 7 & 8 - Ba kỹ thuật thực chiến cứu con khỏi sợ học:
-"Thứ nhất, mẹ dùng tấm bìa nhỏ che bớt các chữ xung quanh trong câu dài, cho con đánh vần thầm từng từ trong miệng rồi mới bật ra tiếng trơn. Thứ hai, lấy tay che bức tranh minh họa trong sách Tiếng Việt lại, chỉ ngẫu nhiên từ dưới lên trên để trị thói quen nhìn hình đoán chữ. Thứ ba, đừng ép con ngồi viết liền một mạch cả trang vở trong nước mắt mà hãy chia thành 3 chặng 5 phút, mỗi chặng viết 2 dòng rồi xoay cổ tay nghỉ, khen ngay một chữ đẹp nhất trong dòng và đổi sang bút rãnh cầm tam giác ngòi mài êm!"`
-        }
-    };
-
-    videoItems.forEach(item => {
-        item.addEventListener('click', () => {
-            videoItems.forEach(i => i.classList.remove('active'));
-            item.classList.add('active');
-            const vidKey = item.getAttribute('data-video') || 'v1';
-            const vInfo = videoDataMap[vidKey];
-            if (vInfo && mainVideoPlayer) {
-                mainVideoPlayer.src = vInfo.src;
-                mainVideoPlayer.play();
-                if (videoTitleDisplay) videoTitleDisplay.textContent = vInfo.title;
-                if (videoScriptBody) videoScriptBody.innerHTML = `<pre class="font-sans whitespace-pre-wrap text-slate-700">${vInfo.script}</pre>`;
-            }
+    if (mainVideoPlayer && chapterItems.length > 0) {
+        chapterItems.forEach(item => {
+            item.addEventListener('click', () => {
+                chapterItems.forEach(i => i.classList.remove('active'));
+                item.classList.add('active');
+                const seekSec = parseFloat(item.getAttribute('data-seek') || '0');
+                if (!isNaN(seekSec)) {
+                    mainVideoPlayer.currentTime = seekSec;
+                    mainVideoPlayer.play().catch(() => {});
+                }
+            });
         });
-    });
+
+        mainVideoPlayer.addEventListener('timeupdate', () => {
+            const ct = mainVideoPlayer.currentTime;
+            let activeItem = chapterItems[0];
+            chapterItems.forEach(item => {
+                const s = parseFloat(item.getAttribute('data-seek') || '0');
+                if (ct >= s - 0.2) {
+                    activeItem = item;
+                }
+            });
+            chapterItems.forEach(i => i.classList.toggle('active', i === activeItem));
+        });
+    }
 
     // ==========================================
-    // 4. KHO TÀI NGUYÊN TƯƠNG TÁC (RESOURCES HUB)
+    // 4. KHO TÀI NGUYÊN TƯƠNG TÁC (RESOURCES HUB & QUICK CHIPS)
     // ==========================================
     const resourceNavBtns = document.querySelectorAll('.resource-nav-btn');
     const resourcePanes = document.querySelectorAll('.resource-pane');
@@ -235,9 +297,32 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Render Cẩm Nang Gỡ Rối Học Đường (Đúc kết từ 16 bài nghiên cứu thực tế)
     const guidesContainer = document.getElementById('guidesContainer');
     const guideSearchInput = document.getElementById('guideSearchInput');
+    const quickSearchChips = document.getElementById('quickSearchChips');
+
+    function formatAdviceHtml(adviceText = '') {
+        if (!adviceText.includes('(1)')) {
+            return `<p class="mt-1">${adviceText}</p>`;
+        }
+        const firstIdx = adviceText.indexOf('(1)');
+        const intro = adviceText.slice(0, firstIdx).trim();
+        const rest = adviceText.slice(firstIdx).trim();
+        const parts = rest.split(/(?=\(\d+\)\s*)/).map(s => s.trim().replace(/;\s*$/, '')).filter(Boolean);
+
+        const stepsHtml = parts.map(part => {
+            const m = part.match(/^\((\d+)\)\s*(.*)$/);
+            if (m) {
+                return `<li class="guide-step-item"><span class="guide-step-badge">Bước ${m[1]}</span><span>${m[2]}</span></li>`;
+            }
+            return `<li class="guide-step-item"><span>${part}</span></li>`;
+        }).join('');
+
+        return `
+            ${intro ? `<p class="mt-1 mb-2">${intro}</p>` : ''}
+            <ul class="guide-steps-list">${stepsHtml}</ul>
+        `;
+    }
 
     function renderPracticalGuides(keyword = '') {
         if (!guidesContainer) return;
@@ -245,6 +330,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const kw = keyword.toLowerCase().trim();
         const groups = data.practicalGuides || [];
+        let globalMatchIndex = 0;
 
         groups.forEach(group => {
             const filteredItems = group.items.filter(item =>
@@ -261,16 +347,22 @@ document.addEventListener('DOMContentLoaded', () => {
 
             let itemsHtml = '';
             filteredItems.forEach((item) => {
+                const isExpanded = kw.length > 0 || globalMatchIndex === 0;
+                globalMatchIndex++;
+
                 const deepLinkBtn = item.blogId
-                    ? `<div class="mt-3 pt-2 border-t border-emerald-200/60">
+                    ? `<div class="mt-3 pt-2 border-t border-emerald-200/60 flex flex-wrap items-center justify-between gap-2">
                            <button type="button" class="read-more-link text-xs font-bold" onclick="window.openReaderById('${item.blogId}')">
-                               📖 Đọc bài phân tích chuyên sâu đầy đủ ➔
+                               📖 Đọc bài phân tích chuyên sâu và căn cứ pháp lý đầy đủ ➔
                            </button>
+                           <a href="https://zalo.me/0902209213?text=${encodeURIComponent('Chào Cò Đi Học, tôi muốn hỏi thêm về tình huống: ' + item.question)}" target="_blank" class="text-xs font-bold text-emerald-700 hover:underline">
+                               💬 Hỏi riêng Cò trên Zalo
+                           </a>
                        </div>`
                     : '';
 
                 itemsHtml += `
-                    <div class="guide-accordion-item">
+                    <div class="guide-accordion-item${isExpanded ? ' active' : ''}">
                         <div class="guide-item-header" onclick="this.parentElement.classList.toggle('active')">
                             <span class="guide-item-title">❓ ${item.question}</span>
                             <span class="guide-item-toggle">▾</span>
@@ -281,7 +373,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             </div>
                             <div class="guide-item-advice">
                                 <strong>💡 Đúc kết pháp lý, khoa học và hướng gỡ rối từ Cò Đi Học:</strong>
-                                <p class="mt-1">${item.advice}</p>
+                                ${formatAdviceHtml(item.advice)}
                                 ${deepLinkBtn}
                             </div>
                         </div>
@@ -307,8 +399,11 @@ document.addEventListener('DOMContentLoaded', () => {
             guidesContainer.innerHTML = `
                 <div class="text-center py-12 text-slate-500">
                     <div class="text-3xl mb-2">🔍</div>
-                    <p>Không tìm thấy chủ đề phù hợp với từ khóa "${keyword}".</p>
-                    <p class="text-xs text-slate-400 mt-1">Bố mẹ có thể nhắn tin trực tiếp tới số Zalo <strong>0902 209 213</strong> để được Cò Đi Học hỗ trợ tức thì.</p>
+                    <p>Chưa có mục trùng khớp với từ khóa "${keyword}".</p>
+                    <p class="text-xs text-slate-500 mt-2 mb-4">Bố mẹ có thể bấm nút bên dưới để nhắn câu hỏi trực tiếp tới Zalo <strong>0902 209 213</strong> của Cò Đi Học.</p>
+                    <a href="https://zalo.me/0902209213?text=${encodeURIComponent('Chào Cò Đi Học, tôi đang tìm hiểu về: ' + keyword)}" target="_blank" class="btn btn-primary btn-sm">
+                        <span>💬 Hỏi trực tiếp Cò Đi Học trên Zalo</span>
+                    </a>
                 </div>
             `;
         }
@@ -316,9 +411,30 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (guideSearchInput) {
         guideSearchInput.addEventListener('input', (e) => {
-            renderPracticalGuides(e.target.value);
+            const val = e.target.value;
+            if (quickSearchChips) {
+                quickSearchChips.querySelectorAll('.quick-chip').forEach(c => {
+                    c.classList.toggle('active', c.getAttribute('data-kw') === val);
+                });
+            }
+            renderPracticalGuides(val);
         });
     }
+
+    if (quickSearchChips) {
+        quickSearchChips.addEventListener('click', (e) => {
+            const chip = e.target.closest('.quick-chip');
+            if (!chip) return;
+            quickSearchChips.querySelectorAll('.quick-chip').forEach(c => c.classList.remove('active'));
+            chip.classList.add('active');
+            const kw = chip.getAttribute('data-kw') || '';
+            if (guideSearchInput) {
+                guideSearchInput.value = kw;
+            }
+            renderPracticalGuides(kw);
+        });
+    }
+
     renderPracticalGuides();
 
     // Render Hồ Sơ Đối Sánh 4 Lộ Trình Chương Trình
@@ -389,10 +505,11 @@ document.addEventListener('DOMContentLoaded', () => {
             btn.className = 'question-item-btn';
             btn.innerHTML = `💬 ${pText}`;
             btn.onclick = () => {
-                navigator.clipboard.writeText(pText).then(() => {
-                    const encoded = encodeURIComponent(pText);
-                    window.open(`https://zalo.me/0902209213?text=${encoded}`, '_blank');
-                });
+                const encoded = encodeURIComponent(pText);
+                if (navigator.clipboard && navigator.clipboard.writeText) {
+                    navigator.clipboard.writeText(pText).catch(() => {});
+                }
+                window.open(`https://zalo.me/0902209213?text=${encoded}`, '_blank');
             };
             popupQuestionList.appendChild(btn);
         });
@@ -419,8 +536,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const navMenu = document.getElementById('navMenu');
     if (mobileMenuBtn && navMenu) {
         mobileMenuBtn.addEventListener('click', () => {
-            navMenu.style.display = navMenu.style.display === 'flex' ? 'none' : 'flex';
-            if (navMenu.style.display === 'flex') {
+            const isOpen = navMenu.classList.toggle('mobile-open');
+            navMenu.style.display = isOpen ? 'flex' : '';
+            if (isOpen) {
                 navMenu.style.flexDirection = 'column';
                 navMenu.style.position = 'absolute';
                 navMenu.style.top = '72px';

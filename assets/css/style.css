@@ -2083,3 +2083,287 @@ html, body {
     font-size: 28px !important;
   }
 }
+
+
+/* ==========================================================================
+   UX & CRO OPTIMIZATION UPGRADES (FIRST-TIME PARENT SMOKE TEST FIXES)
+   ========================================================================== */
+
+/* 1. Integrated 4-Pillar Mini Grid Inside Hero */
+.hero-pillars-mini {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  margin-bottom: 24px;
+  text-align: left;
+}
+.hero-pillar-chip {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(238, 160, 63, 0.35);
+  border-radius: 12px;
+  padding: 12px 14px;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  backdrop-filter: blur(6px);
+  transition: all 0.2s ease;
+}
+.hero-pillar-chip:hover {
+  background: rgba(255, 255, 255, 0.14);
+  border-color: var(--cdh-orange);
+  transform: translateY(-2px);
+}
+.pillar-chip-icon {
+  font-size: 20px;
+  line-height: 1;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+.hero-pillar-chip strong {
+  display: block;
+  font-size: 13.5px;
+  font-weight: 800;
+  color: #fde047;
+  margin-bottom: 2px;
+}
+.hero-pillar-chip span {
+  display: block;
+  font-size: 12px;
+  color: #cbd5e1;
+  line-height: 1.4;
+}
+.hero-trust-note {
+  margin-top: 14px;
+  font-size: 12.5px;
+  color: #94a3b8;
+  line-height: 1.5;
+}
+@media (max-width: 640px) {
+  .hero-pillars-mini {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* 2. Quick Filter Chips in Resources Section */
+.quick-chips-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  max-width: 860px;
+  margin: -10px auto 28px;
+}
+.quick-chips-label {
+  font-size: 12.5px;
+  font-weight: 700;
+  color: var(--text-muted);
+  margin-right: 4px;
+}
+.quick-chip {
+  background-color: #ffffff;
+  border: 1px solid #cbd5e1;
+  color: var(--cdh-navy);
+  font-family: inherit;
+  font-size: 12.5px;
+  font-weight: 600;
+  padding: 6px 13px;
+  border-radius: 9999px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.quick-chip:hover {
+  border-color: var(--cdh-orange);
+  background-color: #fff7ed;
+  color: var(--cdh-navy-dark);
+}
+.quick-chip.active {
+  background-color: var(--cdh-navy);
+  border-color: var(--cdh-navy);
+  color: #ffffff;
+}
+
+/* 3. Structured Step List Inside Practical Guides */
+.guide-steps-list {
+  list-style: none;
+  margin: 10px 0 4px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.guide-step-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  background-color: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 10px 12px;
+  font-size: 13.5px;
+  line-height: 1.55;
+  color: #1e293b;
+}
+.guide-step-badge {
+  background-color: #065f46;
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: 800;
+  padding: 2px 8px;
+  border-radius: 9999px;
+  white-space: nowrap;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+/* 4. Homepage 16:9 Intro Video Showcase & Collapsible Script */
+.video-showcase-grid {
+  grid-template-columns: 1.25fr 0.95fr !important;
+  align-items: start !important;
+}
+@media (max-width: 992px) {
+  .video-showcase-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+.video-ratio-16-9 {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background-color: #0D1D39;
+}
+.video-ratio-16-9 .player-element {
+  object-fit: contain !important;
+  background-color: #0D1D39;
+}
+.video-player-caption {
+  padding: 12px 18px;
+  background-color: #0D1D39;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  color: #cbd5e1;
+  font-size: 12.5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+details.video-script-card summary {
+  list-style: none;
+}
+details.video-script-card summary::-webkit-details-marker {
+  display: none;
+}
+
+/* 5. Progressive Disclosure Blog Grid (6 Cards Initial + Expand All 16) */
+.blog-card-collapsed {
+  display: none !important;
+}
+.blog-card-summary {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.blog-expand-btn {
+  padding: 12px 28px !important;
+  font-size: 14.5px !important;
+  font-weight: 700 !important;
+  border-radius: 9999px !important;
+  border: 2px solid var(--cdh-navy) !important;
+  color: var(--cdh-navy-dark) !important;
+  background-color: #ffffff !important;
+  box-shadow: var(--shadow-sm);
+}
+.blog-expand-btn:hover {
+  background-color: var(--cdh-navy) !important;
+  color: #ffffff !important;
+}
+
+/* 6. Reader Modal Sticky Top Bar, Mobile TOC & Collapsible Legal Sources */
+.reader-top-bar {
+  position: sticky !important;
+  top: 0 !important;
+  z-index: 40 !important;
+  background-color: var(--bg-reader) !important;
+  padding: 12px 0 !important;
+  margin-bottom: 20px !important;
+  border-bottom: 1px solid #E5DCCE !important;
+}
+.close-reader-btn {
+  width: auto !important;
+  height: 36px !important;
+  padding: 0 14px !important;
+  border-radius: 9999px !important;
+  font-size: 13px !important;
+  font-weight: 700 !important;
+  background-color: #e2d9c8 !important;
+}
+.reader-mobile-toc {
+  display: none;
+  background-color: #F4EFE6;
+  border: 1px solid #E5DCCE;
+  border-radius: 12px;
+  padding: 12px 16px;
+  margin-bottom: 24px;
+}
+.reader-mobile-toc summary {
+  font-size: 13.5px;
+  font-weight: 800;
+  color: var(--cdh-navy-dark);
+  cursor: pointer;
+  list-style: none;
+}
+.reader-mobile-toc summary::-webkit-details-marker {
+  display: none;
+}
+.reader-mobile-toc .toc-list {
+  margin-top: 12px;
+  padding-top: 10px;
+  border-top: 1px solid #E5DCCE;
+}
+@media (max-width: 992px) {
+  .reader-mobile-toc {
+    display: block;
+  }
+}
+.legal-sources-details {
+  border: 1px solid #cbd5e1;
+  border-radius: 12px;
+  background-color: #f8fafc;
+  overflow: hidden;
+  margin-top: 32px;
+}
+.legal-sources-summary {
+  padding: 14px 18px;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--cdh-navy-dark);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  background-color: #f1f5f9;
+  list-style: none;
+}
+.legal-sources-summary::-webkit-details-marker {
+  display: none;
+}
+.legal-sources-hint {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--cdh-orange);
+  white-space: nowrap;
+}
+.legal-sources-body {
+  padding: 16px 20px;
+  border-top: 1px solid #e2e8f0;
+  background-color: #ffffff;
+}
+
+.hover\:underline:hover {
+  text-decoration: underline;
+}
+.border-emerald-200\/60 {
+  border-color: rgba(167, 243, 208, 0.6);
+}
