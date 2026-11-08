@@ -479,9 +479,18 @@ html, body {
 .read-more-link {
   font-weight: 700;
   color: var(--cdh-orange);
-  display: flex;
+  display: inline-flex;
   align-items: center;
-  gap: 4px;
+  gap: 6px;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  font-family: inherit;
+}
+.read-more-link:hover {
+  color: var(--cdh-orange-hover);
+  text-decoration: underline;
 }
 
 /* --- NOVEL VIEWER MODAL (Chuẩn /ak:markdown-novel-viewer) --- */
