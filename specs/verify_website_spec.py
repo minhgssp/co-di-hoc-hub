@@ -145,12 +145,36 @@ def check_gate_2_and_4_playwright_live_dom() -> list[str]:
                 errs.push(`Expected 16 .blog-card in #blogGrid, found ${blogCards.length}`);
             }
 
+            // Verify zero dead href="#" links outside .logo-wrap
+            document.querySelectorAll('a[href="#"]').forEach(a => {
+                if (!a.classList.contains('logo-wrap')) {
+                    errs.push(`Dead link href="#" found on element: ${a.innerText.trim()}`);
+                }
+            });
+
             return errs;
         }""")
         errors.extend(f"[Gate 2] {e}" for e in desktop_audit)
 
         # Gate 4: Interactive Runtime State checks
-        # Test opening Reader Modal by clicking blog card 0, 5, 15
+        # 4a. Test Blog Filter Tabs exact counts (16 = 2 + 11 + 2 + 1)
+        expected_filter_counts = [
+            ("all", 16),
+            ("tiền tiểu học", 2),
+            ("tiểu học", 11),
+            ("lớp 6", 2),
+            ("song bằng", 1),
+        ]
+        for flt, exp_cnt in expected_filter_counts:
+            page.locator(f'#blogFilterTabs .tab-btn[data-filter="{flt}"]').click()
+            page.wait_for_timeout(50)
+            actual_cnt = page.locator("#blogGrid .blog-card").count()
+            if actual_cnt != exp_cnt:
+                errors.append(f"[Gate 4] Blog filter '{flt}' rendered {actual_cnt} cards instead of {exp_cnt}")
+        page.locator('#blogFilterTabs .tab-btn[data-filter="all"]').click()
+        page.wait_for_timeout(50)
+
+        # 4b. Test opening Reader Modal by clicking blog card 0, 5, 15
         for idx in (0, 5, 15):
             page.locator("#blogGrid .blog-card").nth(idx).click()
             page.wait_for_timeout(120)

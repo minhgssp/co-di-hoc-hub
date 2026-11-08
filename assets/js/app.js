@@ -24,9 +24,14 @@ document.addEventListener('DOMContentLoaded', () => {
         if (!blogGrid) return;
         blogGrid.innerHTML = '';
 
-        const filteredBlogs = filter === 'all' 
-            ? data.blogs 
-            : data.blogs.filter(b => b.level.toLowerCase().includes(filter.toLowerCase()));
+        const filteredBlogs = filter === 'all'
+            ? data.blogs
+            : data.blogs.filter(b => {
+                const lv = b.level.toLowerCase();
+                const fl = filter.toLowerCase();
+                if (fl === 'tiểu học') return lv === 'tiểu học';
+                return lv.includes(fl);
+            });
 
         filteredBlogs.forEach(blog => {
             const card = document.createElement('div');
