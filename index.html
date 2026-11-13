@@ -10,29 +10,29 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600&display=swap" rel="stylesheet">
     
     <!-- CSS Core -->
-    <link rel="stylesheet" href="assets/css/style.css?v=20261113_v5">
+    <link rel="stylesheet" href="assets/css/style.css?v=20261113_v6">
 </head>
 <body>
 
-    <!-- Header & Navigation (1 Hàng Ngang Cố Định 72px) -->
+    <!-- Header & Navigation (1 Hàng Ngang Cố Định) -->
     <header class="header" id="siteHeader">
         <div class="container header-inner">
             <a href="#" class="logo-wrap" aria-label="Trang chủ Cò Đi Học">
-                <img src="assets/images/logo.svg" alt="Logo Cò Đi Học" class="logo-img">
+                <img src="assets/images/logo.svg" alt="Logo Cò Đi Học" width="44" height="44" class="logo-img">
                 <div class="logo-text">
                     <span class="logo-text-title">CÒ ĐI HỌC</span>
                     <span class="logo-text-sub">Trợ lý phụ huynh 24/7</span>
                 </div>
             </a>
 
-            <nav>
+            <nav aria-label="Điều hướng chính">
                 <ul class="nav-menu" id="navMenu">
                     <li><a href="#resources-section" class="nav-link">Tra cứu nhanh</a></li>
                     <li><a href="#video-section" class="nav-link">Giới thiệu Cò Đi Học</a></li>
-                    <li><a href="#blog-section" class="nav-link">Góc nhìn & Gỡ rối</a></li>
+                    <li><a href="#blog-section" class="nav-link">Góc nhìn &amp; Gỡ rối</a></li>
                     <li><a href="dien-dan.html" class="nav-link">Diễn đàn sạch</a></li>
                     <li><a href="#problem-section" class="nav-link">Vì sao chọn Cò</a></li>
                     <li><a href="#community-section" class="nav-link">Cộng đồng Zalo</a></li>
@@ -41,55 +41,68 @@
 
             <div class="header-actions">
                 <a href="https://zalo.me/0902209213?text=Ch%C3%A0o%20C%C3%B2%20%C4%90i%20H%E1%BB%8Dc%2C%20t%C3%B4i%20mu%E1%BB%91n%20nh%E1%BB%9D%20C%C3%B2%20t%C6%B0%20v%E1%BA%A5n%20v%E1%BB%81%20vi%E1%BB%87c%20h%E1%BB%8Dc%20c%E1%BB%A7a%20con" target="_blank" class="btn btn-primary btn-sm">
-                    <span>👉 Chat 1-1 với Cò</span>
+                    <svg class="ui-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                    <span>Chat 1-1 với Cò</span>
                 </a>
                 <a href="https://zalo.me/0902209213?text=Ch%C3%A0o%20C%C3%B2%20%C4%90i%20H%E1%BB%8Dc%2C%20t%C3%B4i%20mu%E1%BB%91n%20tham%20gia%20nh%C3%B3m%20Zalo%20ph%E1%BB%A5%20huynh" target="_blank" class="btn btn-outline btn-sm header-community-btn">
-                    <span>💬 Nhóm Zalo</span>
+                    <svg class="ui-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                    <span>Nhóm Zalo</span>
                 </a>
-                <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menu">☰</button>
+                <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Mở menu điều hướng">
+                    <svg class="ui-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+                </button>
             </div>
         </div>
     </header>
 
-    <!-- Phân khu Hero: Chuẩn StoryBrand SB7 (Cân Đối 6:6 Thoáng Mắt + 4 Giá Trị Cốt Lõi) -->
+    <!-- Phân khu Hero: Gọn mắt 2 CTA chính + 4 Giá Trị Cốt Lõi -->
     <section class="hero" id="hero-section">
         <div class="container hero-grid">
             <div class="hero-content">
                 <div class="hero-tag">
-                    <span>🌱 Trợ lý AI độc lập dành cho cha mẹ có con từ 4 đến 18 tuổi</span>
+                    <svg class="ui-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                    <span>Trợ lý AI độc lập cho cha mẹ có con 4 đến 18 tuổi</span>
                 </div>
                 <h1 class="hero-title">
                     Gỡ bỏ áp lực trường lớp, <span>để việc đồng hành cùng con không còn là cuộc chiến mỗi tối</span>
                 </h1>
                 <p class="hero-lead">
-                    <strong>Cò Đi Học</strong> giúp phụ huynh hỏi đáp nhanh hơn, bớt công sức mò mẫm tìm kiếm. Cò có mặt trong hàng trăm hội nhóm, hội thảo và diễn đàn giáo dục, luôn lắng nghe kinh nghiệm thực tế và đối chiếu văn bản chính thống để trả lời ngay khi bố mẹ cần.
+                    <strong>Cò Đi Học</strong> giúp phụ huynh hỏi đáp nhanh hơn, bớt công sức tự mò mẫm. Cò theo dõi 85 hội nhóm phụ huynh, tổng hợp hơn 1.800 cuộc thảo luận thực tế đã lọc sạch quảng cáo và đối chiếu văn bản chính thống để trả lời ngay khi bố mẹ cần.
                 </p>
 
-                <!-- 4 Giá Trị Cốt Lõi Tích Hợp Ngay Đầu Trang -->
+                <!-- 4 Giá Trị Cốt Lõi -->
                 <div class="hero-pillars-mini" id="values-section">
                     <div class="hero-pillar-chip">
-                        <span class="pillar-chip-icon">⏱️</span>
+                        <span class="pillar-chip-icon">
+                            <svg class="ui-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                        </span>
                         <div>
                             <strong>Tiết kiệm thời gian</strong>
                             <span>Hỏi đáp gọn trong 3 phút, khỏi thức đêm mò mẫm</span>
                         </div>
                     </div>
                     <div class="hero-pillar-chip">
-                        <span class="pillar-chip-icon">🔍</span>
+                        <span class="pillar-chip-icon">
+                            <svg class="ui-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                        </span>
                         <div>
                             <strong>Tổng hợp không bị sót</strong>
                             <span>Đầy đủ lịch tuyển sinh, học phí và thông tư Bộ, Sở</span>
                         </div>
                     </div>
                     <div class="hero-pillar-chip">
-                        <span class="pillar-chip-icon">🛡️</span>
+                        <span class="pillar-chip-icon">
+                            <svg class="ui-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                        </span>
                         <div>
                             <strong>Sàng lọc không bị loạn</strong>
                             <span>Lọc sạch chim mồi quảng cáo, giữ lại sự thật đa chiều</span>
                         </div>
                     </div>
                     <div class="hero-pillar-chip">
-                        <span class="pillar-chip-icon">🧠</span>
+                        <span class="pillar-chip-icon">
+                            <svg class="ui-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+                        </span>
                         <div>
                             <strong>Ghi nhớ khỏi đau đầu</strong>
                             <span>Lưu sẵn cột mốc tâm lý và lộ trình theo độ tuổi con</span>
@@ -97,70 +110,98 @@
                     </div>
                 </div>
 
-                <!-- Call to Action dẫn thẳng vào nhu cầu tra cứu hoặc hỏi 1-1 -->
+                <!-- 2 Call to Action chính rõ trọng tâm -->
                 <div class="hero-actions">
                     <a href="#resources-section" class="btn btn-primary hero-btn-main">
-                        <span>🔍 Tra cứu nhanh vấn đề của con</span>
+                        <svg class="ui-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                        <span>Tra cứu nhanh vấn đề của con</span>
                     </a>
-                    <a href="https://zalo.me/0902209213?text=Ch%C3%A0o%20C%C3%B2%20%C4%90i%20H%E1%BB%8Dc%2C%20t%C3%B4i%20mu%E1%BB%91n%20nh%E1%BB%9D%20C%C3%B2%20t%C6%B0%20v%E1%BA%A5n%20v%E1%BB%81%20vi%E1%BB%87c%20h%E1%BB%8Dc%20c%E1%BB%A7a%20con" target="_blank" class="btn btn-outline">
-                        <span>👉 Chat 1-1 với Cò trên Zalo</span>
-                    </a>
-                    <a href="#video-section" class="btn btn-outline">
-                        <span>▶ Xem video giới thiệu Cò (1 phút)</span>
+                    <a href="https://zalo.me/0902209213?text=Ch%C3%A0o%20C%C3%B2%20%C4%90i%20H%E1%BB%8Dc%2C%20t%C3%B4i%20mu%E1%BB%91n%20nh%E1%BB%9D%20C%C3%B2%20t%C6%B0%20v%E1%BA%A5n%20v%E1%BB%81%20vi%E1%BB%87c%20h%E1%BB%8Dc%20c%E1%BB%A7a%20con" target="_blank" class="btn btn-outline hero-btn-secondary">
+                        <svg class="ui-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                        <span>Chat 1-1 với Cò trên Zalo</span>
                     </a>
                 </div>
 
                 <div class="hero-trust-note">
-                    🔒 Hoàn toàn miễn phí cho phụ huynh • Không nhận quảng cáo trường hay trung tâm • Không gọi điện làm phiền
+                    <span class="trust-pill">
+                        <svg class="ui-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                        Miễn phí hoàn toàn cho phụ huynh
+                    </span>
+                    <span class="trust-pill">
+                        <svg class="ui-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                        Không nhận quảng cáo trường hay trung tâm
+                    </span>
+                    <span class="trust-pill">
+                        <svg class="ui-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                        Không gọi điện làm phiền
+                    </span>
                 </div>
             </div>
 
             <div class="hero-avatar-wrap">
-                <img src="assets/images/host_v1_02_speaking_hands.png" alt="Linh vật Cò Đi Học hoạt hình" class="hero-stork-img">
+                <img src="assets/images/host_v1_02_speaking_hands.png" alt="Linh vật Cò Đi Học hoạt hình" width="440" height="440" class="hero-stork-img">
+                <a href="#video-section" class="hero-video-pill">
+                    <svg class="ui-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                    <span>Xem video giới thiệu Cò (90 giây)</span>
+                </a>
             </div>
         </div>
     </section>
 
-    <!-- PHÂN KHU 1 (ĐƯA LÊN NGAY DƯỚI HERO): TRA CỨU NHANH TÌNH HUỐNG & ĐỐI SÁNH 4 LỘ TRÌNH -->
+    <!-- PHÂN KHU 1: TRA CỨU NHANH TÌNH HUỐNG & ĐỐI SÁNH 4 LỘ TRÌNH -->
     <section class="section section-alt" id="resources-section">
         <div class="container">
             <div class="section-header">
                 <span class="badge badge-orange section-badge">Tra cứu nhanh theo tình huống</span>
                 <h2 class="section-title">Cẩm nang xử lý tình huống trường lớp và so sánh lộ trình học</h2>
                 <p class="section-subtitle">
-                    Gõ từ khóa hoặc bấm chọn nhanh chủ đề bên dưới để xem ngay hướng xử lý thực tế đã được Cò Đi Học đối chiếu từ các văn bản của Bộ, Sở GD&ĐT và kinh nghiệm của hàng ngàn phụ huynh đi trước.
+                    Gõ từ khóa hoặc bấm chọn chủ đề bên dưới để xem ngay hướng xử lý thực tế đã được Cò Đi Học đối chiếu từ văn bản của Bộ, Sở GD&amp;ĐT và kinh nghiệm phụ huynh đi trước.
                 </p>
             </div>
 
             <!-- Resource Tabs: 2 Tab Giá Trị Thực Chứng -->
             <div class="resource-nav">
-                <button class="resource-nav-btn active" data-target="pane-guides">💡 Hỏi đáp nhanh 22 tình huống và chuyên đề thực tế</button>
-                <button class="resource-nav-btn" data-target="pane-curricula">⚖️ Đối sánh 4 lộ trình học tập phổ thông</button>
+                <button class="resource-nav-btn active" data-target="pane-guides">
+                    <svg class="ui-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+                    <span>Hỏi đáp nhanh 22 tình huống thực tế</span>
+                </button>
+                <button class="resource-nav-btn" data-target="pane-curricula">
+                    <svg class="ui-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="3" x2="12" y2="21"/><path d="M5 7h14"/><path d="M5 7l-2 7h4l-2-7z"/><path d="M19 7l-2 7h4l-2-7z"/></svg>
+                    <span>Đối sánh 4 lộ trình học tập phổ thông</span>
+                </button>
             </div>
 
-            <!-- Pane 1: Cẩm Nang Gỡ Rối Học Đường (Đúc kết từ 22 bài nghiên cứu thật) -->
+            <!-- Pane 1: Cẩm Nang Gỡ Rối Học Đường (Thu gọn tiệm tiến 2 nhóm đầu + Mở rộng 22 chủ đề) -->
             <div class="resource-pane active" id="pane-guides">
                 <div class="search-bar-wrap">
-                    <span class="search-icon">🔍</span>
-                    <input type="text" id="guideSearchInput" class="search-input" placeholder="Gõ vấn đề của con (ví dụ: Montessori, Steiner, khen con, màn hình, đọc trơn, bán trú, lớp 6)...">
+                    <span class="search-icon">
+                        <svg class="ui-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                    </span>
+                    <input type="text" id="guideSearchInput" class="search-input" aria-label="Tìm kiếm vấn đề của con" placeholder="Gõ vấn đề của con (ví dụ: Montessori, Steiner, khen con, màn hình, đọc trơn, bán trú, lớp 6)...">
                 </div>
 
                 <!-- Quick Filter Chips giúp phụ huynh chạm 1 lần mở ngay câu trả lời -->
                 <div class="quick-chips-wrap" id="quickSearchChips">
                     <span class="quick-chips-label">Chủ đề cha mẹ hỏi nhiều:</span>
-                    <button type="button" class="quick-chip active" data-kw="">✨ Tất cả 22 chủ đề</button>
-                    <button type="button" class="quick-chip" data-kw="montessori">🔬 Montessori và Steiner</button>
-                    <button type="button" class="quick-chip" data-kw="thông minh">🧠 Khen con và động lực</button>
-                    <button type="button" class="quick-chip" data-kw="màn hình">📱 Màn hình và đọc sâu</button>
-                    <button type="button" class="quick-chip" data-kw="đọc trơn">🎒 Đọc trơn và viết chữ lớp 1</button>
-                    <button type="button" class="quick-chip" data-kw="quát tháo">🔥 Kèm con không quát tháo</button>
-                    <button type="button" class="quick-chip" data-kw="bán trú">🍱 Bữa ăn bán trú</button>
-                    <button type="button" class="quick-chip" data-kw="lớp 6">🏫 Quá tải lớp 6</button>
-                    <button type="button" class="quick-chip" data-kw="seeding">🛡️ Nhận diện seeding</button>
+                    <button type="button" class="quick-chip active" data-kw="">Tất cả 22 chủ đề</button>
+                    <button type="button" class="quick-chip" data-kw="montessori">Montessori và Steiner</button>
+                    <button type="button" class="quick-chip" data-kw="thông minh">Khen con và động lực</button>
+                    <button type="button" class="quick-chip" data-kw="màn hình">Màn hình và đọc sâu</button>
+                    <button type="button" class="quick-chip" data-kw="đọc trơn">Đọc trơn và viết chữ lớp 1</button>
+                    <button type="button" class="quick-chip" data-kw="quát tháo">Kèm con không quát tháo</button>
+                    <button type="button" class="quick-chip" data-kw="bán trú">Bữa ăn bán trú</button>
+                    <button type="button" class="quick-chip" data-kw="lớp 6">Quá tải lớp 6</button>
+                    <button type="button" class="quick-chip" data-kw="seeding">Nhận diện seeding</button>
                 </div>
 
                 <div class="guides-grid" id="guidesContainer">
-                    <!-- Javascript will render 4 practical guide groups linked to the 16 real articles -->
+                    <!-- Javascript renders all 5 guide groups (22 items); groups 3-5 collapsed initially unless searching/expanded -->
+                </div>
+
+                <div class="guides-expand-wrap text-center mt-8" id="guidesExpandWrap">
+                    <button type="button" class="btn btn-outline guides-expand-btn" id="toggleAllGuidesBtn">
+                        <span>Xem thêm 3 nhóm chủ đề (trọn bộ 22 tình huống gỡ rối)</span>
+                    </button>
                 </div>
             </div>
 
@@ -173,11 +214,10 @@
         </div>
     </section>
 
-    <!-- PHÂN KHU 2: VIDEO GIỚI THIỆU CÒ ĐI HỌC (THUYẾT PHỤC PHỤ HUYNH MỚI) -->
+    <!-- PHÂN KHU 2: VIDEO GIỚI THIỆU CÒ ĐI HỌC (STANDALONE PLAYER) -->
     <section class="section" id="video-section">
         <div class="container">
             <div class="section-header">
-                <span class="badge badge-green section-badge">Câu chuyện Cò Đi Học</span>
                 <h2 class="section-title">Vì sao cha mẹ chọn Cò Đi Học làm người bạn đồng hành?</h2>
                 <p class="section-subtitle">
                     90 giây nhìn lại cách Cò Đi Học lắng nghe hội nhóm phụ huynh, đối chiếu quy định ngành giáo dục và tổng hợp góc nhìn chuyên gia cho từng gia đình.
@@ -185,17 +225,21 @@
             </div>
 
             <div class="video-showcase-grid">
-                <!-- Video Player Container (Khung 16:9 Chuẩn Widescreen Full HD Căn Giữa) -->
                 <div class="main-player-wrap">
                     <div class="video-ratio-16-9">
                         <video id="mainVideoPlayer" class="player-element" controls playsinline poster="assets/images/codihoc_intro_poster.png">
                             <source src="assets/videos/codihoc_intro_homepage.mp4" type="video/mp4">
-                            Trình duyệt của bạn không hỗ trợ thẻ video.
                         </video>
                     </div>
                     <div class="video-player-caption">
-                        <span>🎙️ Giọng đọc thuyết minh tiếng Việt • Phụ đề trực quan</span>
-                        <a href="https://zalo.me/0902209213?text=Ch%C3%A0o%20C%C3%B2%20%C4%90i%20H%E1%BB%8Dc%2C%20t%C3%B4i%20v%E1%BB%ABa%20xem%20video%20gi%E1%BB%9Bi%20thi%E1%BB%87u%20v%C3%A0%20mu%E1%BB%91n%20h%E1%BB%8Fi%20th%C3%AAm%20cho%20con" target="_blank" class="read-more-link text-xs">Hỏi Cò trên Zalo ➔</a>
+                        <span class="video-caption-label">
+                            <svg class="ui-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" y1="19" x2="12" y2="23"/><line x1="8" y1="23" x2="16" y2="23"/></svg>
+                            <span>Giọng đọc thuyết minh tiếng Việt - Phụ đề trực quan</span>
+                        </span>
+                        <a href="https://zalo.me/0902209213?text=Ch%C3%A0o%20C%C3%B2%20%C4%90i%20H%E1%BB%8Dc%2C%20t%C3%B4i%20v%E1%BB%ABa%20xem%20video%20gi%E1%BB%9Bi%20thi%E1%BB%87u%20v%C3%A0%20mu%E1%BB%91n%20h%E1%BB%8Fi%20th%C3%AAm%20cho%20con" target="_blank" class="read-more-link video-caption-link">
+                            <span>Hỏi Cò trên Zalo</span>
+                            <svg class="ui-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -206,7 +250,6 @@
     <section class="section section-alt" id="blog-section">
         <div class="container">
             <div class="section-header">
-                <span class="badge badge-orange section-badge">Góc nhìn đa chiều • Thực tế & Khoa học</span>
                 <h2 class="section-title">Gỡ rối chuyện trường lớp và đồng hành cùng con lớn khôn</h2>
                 <p class="section-subtitle">
                     Từ chuyện bữa ăn bán trú, giờ đón con tan tầm đến những nghiên cứu tâm lý trẻ em thế giới được đúc kết gần gũi để cha mẹ vững tâm áp dụng tại nhà.
@@ -215,12 +258,12 @@
 
             <!-- Bộ lọc cấp học -->
             <div class="filter-tabs" id="blogFilterTabs">
-                <button class="tab-btn active" data-filter="all">🌟 Tất cả chuyên đề (22)</button>
-                <button class="tab-btn" data-filter="nghiên cứu quốc tế">🔬 Nghiên cứu quốc tế (6)</button>
-                <button class="tab-btn" data-filter="tiền tiểu học">🎒 Tiền tiểu học và lớp 1 (2)</button>
-                <button class="tab-btn" data-filter="tiểu học">📚 Tiểu học (11)</button>
-                <button class="tab-btn" data-filter="lớp 6">🏫 Chuyển cấp lớp 6 (2)</button>
-                <button class="tab-btn" data-filter="song bằng">🌏 Tìm trường và tư thục (1)</button>
+                <button class="tab-btn active" data-filter="all">Tất cả chuyên đề (22)</button>
+                <button class="tab-btn" data-filter="nghiên cứu quốc tế">Nghiên cứu quốc tế (6)</button>
+                <button class="tab-btn" data-filter="tiền tiểu học">Tiền tiểu học và lớp 1 (2)</button>
+                <button class="tab-btn" data-filter="tiểu học">Tiểu học (11)</button>
+                <button class="tab-btn" data-filter="lớp 6">Chuyển cấp lớp 6 (2)</button>
+                <button class="tab-btn" data-filter="song bằng">Tìm trường và tư thục (1)</button>
             </div>
 
             <!-- Grid 22 Bài Viết -->
@@ -231,7 +274,7 @@
             <!-- Nút Mở Rộng Toàn Bộ 22 Bài Viết -->
             <div class="blog-expand-wrap text-center mt-8" id="blogExpandWrap">
                 <button type="button" class="btn btn-outline blog-expand-btn" id="toggleAllBlogsBtn">
-                    <span>📖 Xem thêm 16 bài viết khác ▾</span>
+                    <span>Xem thêm 16 bài viết khác</span>
                 </button>
             </div>
         </div>
@@ -244,14 +287,16 @@
             <!-- Sidebar Mục Lục (Desktop) -->
             <aside class="reader-sidebar">
                 <div class="reader-sidebar-title">
-                    <span>📑 Mục lục bài viết</span>
+                    <svg class="ui-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>
+                    <span>Mục lục bài viết</span>
                 </div>
                 <ul class="toc-list" id="readerTocList"></ul>
                 
                 <div class="mt-8 pt-6 border-t border-slate-200">
                     <div class="text-xs text-slate-500 mb-2">Cần tư vấn riêng về chủ đề này?</div>
                     <a href="https://zalo.me/0902209213" target="_blank" class="btn btn-zalo text-xs w-full" id="readerAskZaloBtn">
-                        <span>💬 Hỏi Cò trên Zalo</span>
+                        <svg class="ui-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                        <span>Hỏi Cò trên Zalo</span>
                     </a>
                 </div>
             </aside>
@@ -261,21 +306,25 @@
                 <!-- Thanh Top Bar Ghim Cố Định (Sticky) giúp Mobile đóng bài bất cứ lúc nào -->
                 <div class="reader-top-bar">
                     <span class="badge badge-navy" id="readerLevelBadge">Cấp học</span>
-                    <button class="close-reader-btn" id="closeReaderBtn" title="Đóng chế độ đọc (ESC)">✕ Đóng bài</button>
+                    <button class="close-reader-btn" id="closeReaderBtn" title="Đóng chế độ đọc (ESC)">
+                        <svg class="ui-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                        <span>Đóng bài</span>
+                    </button>
                 </div>
 
-                <h1 class="reader-article-title" id="readerArticleTitle">Tiêu đề bài viết</h1>
+                <h2 class="reader-article-title" id="readerArticleTitle">Tiêu đề bài viết</h2>
                 
                 <div class="reader-meta-bar">
-                    <span id="readerReadTime">⚡ Có hướng xử lý áp dụng ngay</span>
-                    <span>•</span>
+                    <span id="readerReadTime">Có hướng xử lý áp dụng ngay</span>
+                    <span>-</span>
                     <span>Nguồn: <strong>Tủ sách chẩn đoán Cò Đi Học</strong></span>
                 </div>
 
                 <!-- Parent Quote Box -->
                 <div class="reader-parent-quote">
                     <div class="reader-parent-quote-title">
-                        <span>🎙️ Tiếng lòng phụ huynh khảo sát thực tế</span>
+                        <svg class="ui-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                        <span>Tiếng lòng phụ huynh khảo sát thực tế</span>
                     </div>
                     <div class="reader-parent-quote-text" id="readerQuoteText">
                         "Nội dung tiếng lòng phụ huynh..."
@@ -284,7 +333,7 @@
 
                 <!-- Mục Lục Thu Gọn Dành Cho Điện Thoại (Mobile TOC) -->
                 <details class="reader-mobile-toc" id="readerMobileTocWrap">
-                    <summary>📑 Mục lục bài viết - Bấm để chuyển nhanh đến phần bố mẹ cần xem ▾</summary>
+                    <summary>Mục lục bài viết - Bấm để chuyển nhanh đến phần bố mẹ cần xem</summary>
                     <ul class="toc-list" id="readerMobileTocList"></ul>
                 </details>
 
@@ -298,7 +347,8 @@
                         Mỗi đứa trẻ có nhịp độ tiếp thu và hoàn cảnh gia đình riêng biệt. Hãy nhắn tin để trợ lý Cò Đi Học cùng bố mẹ tháo gỡ từng bước nhẹ nhàng và hoàn toàn miễn phí.
                     </p>
                     <a href="https://zalo.me/0902209213" target="_blank" class="btn btn-primary" id="readerBottomZaloBtn">
-                        <span>💬 Nhắn Zalo hỏi Cò về trường hợp của con tôi</span>
+                        <svg class="ui-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                        <span>Nhắn Zalo hỏi Cò về trường hợp của con tôi</span>
                     </a>
                 </div>
             </main>
@@ -309,7 +359,6 @@
     <section class="section" id="problem-section">
         <div class="container">
             <div class="section-header">
-                <span class="badge badge-orange section-badge">Thấu cảm & thực chứng</span>
                 <h2 class="section-title">Vì sao cha mẹ thời nay càng đọc nhiều lại càng hoang mang?</h2>
                 <p class="section-subtitle">
                     Đồng hành cùng con suốt từ tiền tiểu học đến hết phổ thông, hầu như gia đình nào cũng từng trải qua 3 áp lực vô hình này:
@@ -317,27 +366,24 @@
             </div>
 
             <div class="problem-grid">
-                <!-- Vấn đề bên ngoài -->
                 <div class="problem-card">
-                    <span class="badge badge-orange problem-card-badge">Chuyện trường lớp • Nỗi lo bị sót</span>
+                    <span class="badge badge-orange problem-card-badge">Chuyện trường lớp - Nỗi lo bị sót</span>
                     <h3 class="problem-card-title">Bơi giữa biển tin đồn và ma trận quảng cáo</h3>
                     <p class="problem-card-desc">
                         Quy chế tuyển sinh thay đổi liên tục, hỏi 10 hội nhóm thì nhận về 10 lời khuyên trái ngược. Bài khen bài chê lẫn lộn chim mồi tiếp thị khiến bố mẹ càng đọc càng rối trí, không biết đâu là sự thật.
                     </p>
                 </div>
 
-                <!-- Vấn đề bên trong -->
                 <div class="problem-card">
-                    <span class="badge badge-navy problem-card-badge">Chuyện mỗi tối • Bất an & tự trách</span>
+                    <span class="badge badge-navy problem-card-badge">Chuyện mỗi tối - Bất an và tự trách</span>
                     <h3 class="problem-card-title">Chiến trường bên bàn học và cảm giác bất lực</h3>
                     <p class="problem-card-desc">
                         Đi làm cả ngày mệt mỏi, tối về ngồi kèm con học lại quát tháo vì con chậm hiểu, gồng tay hay mất tập trung. Đến đêm nhìn con ngủ say lại xót xa, tự trách bản thân chưa đủ kiên nhẫn làm bạn cùng con.
                     </p>
                 </div>
 
-                <!-- Vấn đề triết học -->
                 <div class="problem-card">
-                    <span class="badge badge-green problem-card-badge">Chuyện tương lai • Đừng để con tổn thương</span>
+                    <span class="badge badge-green problem-card-badge">Chuyện tương lai - Đừng để con tổn thương</span>
                     <h3 class="problem-card-title">Tuổi thơ của con không đáng bị đánh đổi</h3>
                     <p class="problem-card-desc">
                         Con không sinh ra để gánh nỗi lo sợ hay kỳ vọng quá sức của người lớn. Mọi đứa trẻ đều có quyền được lớn lên lành lặn về tâm hồn, vui vẻ đến trường và tiến bộ theo nhịp độ tự nhiên của chính con.
@@ -349,12 +395,12 @@
             <div class="guide-banner mt-12">
                 <div class="guide-grid">
                     <div>
-                        <span class="badge badge-orange mb-3 inline-block">Người bạn đồng hành tin cậy</span>
+                        <span class="badge badge-orange guide-banner-badge mb-3 inline-block">Người bạn đồng hành tin cậy</span>
                         <h3 class="text-2xl font-extrabold text-white mb-3">
                             Cò Đi Học luôn lắng nghe bằng trái tim và soi sáng bằng sự thật
                         </h3>
                         <p class="text-slate-200 text-sm leading-relaxed mb-4">
-                            Giữa hàng ngàn luồng ý kiến và kinh nghiệm truyền miệng tam sao thất bản, cha mẹ rất dễ hoang mang. Cò Đi Học ra đời để giúp bạn gạn đục khơi trong, tiết kiệm thời gian và nhìn thấu bản chất vấn đề để đồng hành cùng con vững vàng.
+                            Giữa nhiều luồng ý kiến và kinh nghiệm truyền miệng tam sao thất bản, cha mẹ rất dễ hoang mang. Cò Đi Học ra đời để giúp bạn gạn đục khơi trong, tiết kiệm thời gian và nhìn thấu bản chất vấn đề để đồng hành cùng con vững vàng.
                         </p>
                         <div class="guide-quote-box">
                             "Không có ngôi trường hoàn hảo cho mọi đứa trẻ, chỉ có ngôi trường vừa vặn nhất với năng lực của con và hoàn cảnh thực tế của gia đình."
@@ -365,16 +411,22 @@
                         <h4 class="text-lg font-bold text-amber-300 mb-3">3 nguồn dữ liệu tạo nên sức mạnh của Cò Đi Học</h4>
                         <ul class="space-y-3 text-sm text-slate-200">
                             <li class="flex items-start gap-2">
-                                <span class="text-amber-400 font-bold">💬</span>
-                                <span><strong>Tổng hợp thông tin từ các diễn đàn:</strong> Lắng nghe tiếng lòng, trải nghiệm thực tế và phản ánh khách quan từ hàng trăm hội nhóm và diễn đàn phụ huynh chất lượng cao, loại bỏ hoàn toàn mồi câu seeding tiếp thị.</span>
+                                <span class="text-amber-400 font-bold">
+                                    <svg class="ui-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                                </span>
+                                <span><strong>Tổng hợp từ các diễn đàn thật:</strong> Lắng nghe tiếng lòng và phản ánh khách quan từ 85 hội nhóm phụ huynh, loại bỏ hoàn toàn mồi câu seeding tiếp thị.</span>
                             </li>
                             <li class="flex items-start gap-2">
-                                <span class="text-amber-400 font-bold">🏛️</span>
-                                <span><strong>Cập nhật từ website chính thống của cơ sở giáo dục:</strong> Liên tục rà soát dữ liệu tuyển sinh, chỉ tiêu, biểu phí và thông tư quy định chính thức từ Bộ, Sở GD&ĐT cùng các trường học.</span>
+                                <span class="text-amber-400 font-bold">
+                                    <svg class="ui-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21h18"/><path d="M5 21V7l8-4v18"/><path d="M19 21V11l-6-4"/><path d="M9 9v.01"/><path d="M9 12v.01"/><path d="M9 15v.01"/></svg>
+                                </span>
+                                <span><strong>Cập nhật từ website chính thống:</strong> Liên tục rà soát dữ liệu tuyển sinh, chỉ tiêu, biểu phí và thông tư chính thức từ Bộ, Sở GD&amp;ĐT cùng các trường học.</span>
                             </li>
                             <li class="flex items-start gap-2">
-                                <span class="text-amber-400 font-bold">🧠</span>
-                                <span><strong>Kho dữ liệu độc quyền từ chuyên gia, nhà giáo dục đóng góp:</strong> Được thẩm định và đúc kết bởi các nhà giáo dục tâm huyết, giàu kinh nghiệm sư phạm thực tế vì lợi ích của học sinh.</span>
+                                <span class="text-amber-400 font-bold">
+                                    <svg class="ui-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+                                </span>
+                                <span><strong>Kho hồ sơ từ chuyên gia giáo dục:</strong> Được thẩm định và đúc kết từ 22 hồ sơ nghiên cứu sư phạm thực tế vì lợi ích phát triển tự nhiên của học sinh.</span>
                             </li>
                         </ul>
                     </div>
@@ -384,8 +436,7 @@
             <!-- Lộ Trình 3 Bước Đồng Hành Cùng Bố Mẹ (StoryBrand SB7: The Plan) -->
             <div class="mt-12 pt-6" id="plan-section">
                 <div class="section-header" style="margin-bottom: 32px;">
-                    <span class="badge badge-navy section-badge">3 bước nhẹ nhàng cùng Cò</span>
-                    <h2 class="section-title">Gỡ bỏ áp lực học đường cho cả gia đình</h2>
+                    <h2 class="section-title">3 bước nhẹ nhàng gỡ bỏ áp lực học đường cùng Cò</h2>
                     <p class="section-subtitle">
                         Không còn phải thức đêm tự mò mẫm giữa ma trận tin đồn, bố mẹ có thể từng bước tháo gỡ mọi khúc mắc cùng Cò Đi Học:
                     </p>
@@ -398,7 +449,10 @@
                         <p class="step-desc">
                             Gõ từ khóa vào ô Cẩm nang tra cứu nhanh ở đầu trang hoặc nhắn tin qua Zalo về chuyện học chữ, ăn bán trú, chọn trường công hay tư, thi lớp 6 và cách kèm bài không quát tháo.
                         </p>
-                        <a href="#resources-section" class="plan-card-link mt-4">🔍 Mở ô tra cứu nhanh ➔</a>
+                        <a href="#resources-section" class="plan-card-link mt-4">
+                            <span>Mở ô tra cứu nhanh</span>
+                            <svg class="ui-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                        </a>
                     </div>
 
                     <div class="step-card">
@@ -407,7 +461,10 @@
                         <p class="step-desc">
                             Cò tổng hợp từ kinh nghiệm phụ huynh thực tế, đối chiếu sẵn quy định chính thức của ngành giáo dục và khoa học tâm lý lứa tuổi để gửi đến bố mẹ thông tin trung thực, gãy gọn.
                         </p>
-                        <a href="#blog-section" class="plan-card-link mt-4">📖 Xem góc nhìn & gỡ rối ➔</a>
+                        <a href="#blog-section" class="plan-card-link mt-4">
+                            <span>Xem góc nhìn &amp; gỡ rối</span>
+                            <svg class="ui-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                        </a>
                     </div>
 
                     <div class="step-card">
@@ -416,15 +473,104 @@
                         <p class="step-desc">
                             Khi đã nắm rõ bản chất, bố mẹ không còn bị áp lực đám đông cuốn đi, bình tĩnh chọn cho con môi trường học tập vừa sức và giữ trọn niềm vui gia đình mỗi tối.
                         </p>
-                        <a href="https://zalo.me/0902209213?text=Ch%C3%A0o%20C%C3%B2%20%C4%90i%20H%E1%BB%8Dc%2C%20t%C3%B4i%20mu%E1%BB%91n%20nh%E1%BB%9D%20C%C3%B2%20t%C6%B0%20v%E1%BA%A5n%20l%E1%BB%99%20tr%C3%ACnh%20v%E1%BB%ABa%20s%E1%BB%A9c%20cho%20con" target="_blank" class="plan-card-link mt-4">💬 Nhắn Zalo hỏi Cò ➔</a>
+                        <a href="https://zalo.me/0902209213?text=Ch%C3%A0o%20C%C3%B2%20%C4%90i%20H%E1%BB%8Dc%2C%20t%C3%B4i%20mu%E1%BB%91n%20nh%E1%BB%9D%20C%C3%B2%20t%C6%B0%20v%E1%BA%A5n%20l%E1%BB%99%20tr%C3%ACnh%20v%E1%BB%ABa%20s%E1%BB%A9c%20cho%20con" target="_blank" class="plan-card-link mt-4">
+                            <span>Nhắn Zalo hỏi Cò</span>
+                            <svg class="ui-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Phân khu 4: Chat 1-1 với Cò đi học và Tham gia nhóm Zalo -->
-    <section class="section section-alt" id="community-section">
+    <!-- Kết Quả Chuyển Hóa: Tương Lai Của Con (StoryBrand SB7: Stakes) -->
+    <section class="section section-alt" id="stakes-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Lựa chọn của cha mẹ quyết định tuổi thơ của con</h2>
+                <p class="section-subtitle">
+                    Hai ngã rẽ hoàn toàn khác biệt giữa việc tiếp tục lối mòn áp lực và việc đồng hành cùng con bằng sự thấu hiểu:
+                </p>
+            </div>
+
+            <div class="stakes-grid">
+                <!-- Cột Trái: Tránh thất bại -->
+                <div class="stakes-card stakes-card-failure">
+                    <div class="stakes-header">
+                        <span class="stakes-icon stakes-icon-warn">
+                            <svg class="ui-icon" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+                        </span>
+                        <h3>Nếu cứ đơn độc bơi giữa ma trận tin đồn</h3>
+                    </div>
+                    <ul class="stakes-list">
+                        <li>
+                            <span class="stakes-bullet stakes-bullet-x">
+                                <svg class="ui-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                            </span>
+                            <span>Tối nào góc học tập cũng căng thẳng, bố mẹ quát mắng còn con thì sợ hãi, khóc lóc và chán nản.</span>
+                        </li>
+                        <li>
+                            <span class="stakes-bullet stakes-bullet-x">
+                                <svg class="ui-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                            </span>
+                            <span>Con mất dần hứng thú học tập tự nhiên, khép kín lại hoặc bắt đầu có phản ứng chống đối tiêu cực.</span>
+                        </li>
+                        <li>
+                            <span class="stakes-bullet stakes-bullet-x">
+                                <svg class="ui-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                            </span>
+                            <span>Tốn kém tiền bạc và thời gian vào các lớp học thêm, trường lớp hào nhoáng nhưng không hề vừa sức với con.</span>
+                        </li>
+                        <li>
+                            <span class="stakes-bullet stakes-bullet-x">
+                                <svg class="ui-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                            </span>
+                            <span>Khoảng cách giữa bố mẹ và con cái ngày một xa cách, gia đình dần đánh mất những bữa tối ấm áp, rộn tiếng cười.</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Cột Phải: Đạt thành công -->
+                <div class="stakes-card stakes-card-success">
+                    <div class="stakes-header">
+                        <span class="stakes-icon stakes-icon-ok">
+                            <svg class="ui-icon" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                        </span>
+                        <h3>Khi có Cò Đi Học kề vai gạn lọc thông tin</h3>
+                    </div>
+                    <ul class="stakes-list">
+                        <li>
+                            <span class="stakes-bullet stakes-bullet-ok">
+                                <svg class="ui-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                            </span>
+                            <span>Bố mẹ nắm rõ sự thật khách quan, không còn bị cuốn theo nỗi sợ hãi hay những chiêu trò quảng cáo thổi phồng.</span>
+                        </li>
+                        <li>
+                            <span class="stakes-bullet stakes-bullet-ok">
+                                <svg class="ui-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                            </span>
+                            <span>Con vui vẻ thức dậy mỗi sáng, tự tin khám phá kiến thức theo đúng tốc độ tiếp nhận của riêng con.</span>
+                        </li>
+                        <li>
+                            <span class="stakes-bullet stakes-bullet-ok">
+                                <svg class="ui-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                            </span>
+                            <span>Chọn đúng ngôi trường vừa vặn nhất với năng lực của con và khả năng tài chính thực tế của gia đình.</span>
+                        </li>
+                        <li>
+                            <span class="stakes-bullet stakes-bullet-ok">
+                                <svg class="ui-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                            </span>
+                            <span>Bữa cơm tối gia đình nhẹ nhõm, bố mẹ thực sự trở thành người bạn lớn và điểm tựa bình yên nhất của con.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Phân khu cuối: Cổng Kết Nối Chính Thức - Chat 1-1 với Cò đi học và Tham gia nhóm Zalo -->
+    <section class="section" id="community-section">
         <div class="container">
             <div class="section-header">
                 <span class="badge badge-orange section-badge">Đồng hành cùng cộng đồng</span>
@@ -441,22 +587,36 @@
                     <div class="zalo-tier-card featured">
                         <span class="badge badge-orange tier-badge">Hỗ trợ riêng tư 1-1</span>
                         <h3 class="tier-title">Chat 1-1 với Cò đi học</h3>
-                        <div class="tier-price">Miễn phí <span class="text-sm font-normal text-slate-500">/ Dành cho cha mẹ</span></div>
+                        <div class="tier-price">Miễn phí <span class="text-sm font-normal text-slate-600">/ Dành cho cha mẹ</span></div>
                         <p class="tier-desc">
-                            Cò giúp hỏi đáp nhanh hơn, bớt công sức mò mẫm tìm kiếm. Cò có mặt ở trong hàng trăm hội nhóm, hội thảo, diễn đàn, lắng nghe và đúc kết các kinh nghiệm để trả lời ngay khi phụ huynh cần.
+                            Cò giúp hỏi đáp nhanh hơn, bớt công sức mò mẫm tìm kiếm. Cò có mặt ở trong 85 hội nhóm, hội thảo và diễn đàn phụ huynh, lắng nghe và đúc kết kinh nghiệm thật để trả lời ngay khi bố mẹ cần.
                         </p>
                         <ul class="tier-features">
-                            <li>✓ Hỏi đáp tức thì với trợ lý Cò Đi Học 24/7 qua Zalo</li>
-                            <li>✓ Tra cứu nhanh cẩm nang gỡ rối, 22 bài chuyên sâu và bảng đối sánh 4 lộ trình học tập</li>
-                            <li>✓ Nhận nhắc nhở lịch tuyển sinh, biểu phí và thông tư quan trọng</li>
-                            <li>✓ Hoàn toàn độc lập, khách quan đa chiều, không quảng cáo bán hàng</li>
+                            <li>
+                                <svg class="ui-icon tier-check-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                                <span>Hỏi đáp tức thì với trợ lý Cò Đi Học 24/7 qua Zalo</span>
+                            </li>
+                            <li>
+                                <svg class="ui-icon tier-check-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                                <span>Tra cứu nhanh cẩm nang gỡ rối, 22 bài chuyên sâu và 4 lộ trình học</span>
+                            </li>
+                            <li>
+                                <svg class="ui-icon tier-check-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                                <span>Nhận nhắc nhở lịch tuyển sinh, biểu phí và thông tư quan trọng</span>
+                            </li>
+                            <li>
+                                <svg class="ui-icon tier-check-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                                <span>Hoàn toàn độc lập, khách quan đa chiều, không quảng cáo bán hàng</span>
+                            </li>
                         </ul>
                         <div class="flex flex-col gap-2">
                             <a href="https://zalo.me/0902209213?text=Ch%C3%A0o%20C%C3%B2%20%C4%90i%20H%E1%BB%8Dc%2C%20t%C3%B4i%20mu%E1%BB%91n%20nh%E1%BB%9D%20C%C3%B2%20t%C6%B0%20v%E1%BA%A5n%201-1%20v%E1%BB%81%20vi%E1%BB%87c%20h%E1%BB%8Dc%20c%E1%BB%A7a%20con" target="_blank" class="btn btn-primary w-full">
-                                <span>👉 Chat 1-1 với Cò đi học ngay</span>
+                                <svg class="ui-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                                <span>Chat 1-1 với Cò đi học ngay</span>
                             </a>
-                            <button type="button" class="btn btn-outline w-full text-xs" onclick="document.getElementById('chatModalPopup')?.classList.add('active')">
-                                <span>💡 Xem trước 12 câu hỏi mẫu theo từng cấp học</span>
+                            <button type="button" class="btn btn-outline w-full tier-preview-btn" onclick="document.getElementById('chatModalPopup')?.classList.add('active')">
+                                <svg class="ui-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+                                <span>Xem trước 12 câu hỏi mẫu theo từng cấp học</span>
                             </button>
                         </div>
                     </div>
@@ -465,110 +625,44 @@
                     <div class="zalo-tier-card">
                         <span class="badge badge-green tier-badge">Cộng đồng cởi mở</span>
                         <h3 class="tier-title">Tham gia nhóm Zalo</h3>
-                        <div class="tier-price">Giao lưu <span class="text-sm font-normal text-slate-500">/ Không khí văn minh</span></div>
+                        <div class="tier-price tier-price-alt">Giao lưu <span class="text-sm font-normal text-slate-600">/ Không khí văn minh</span></div>
                         <p class="tier-desc">
                             Nơi các bố mẹ chia sẻ trải nghiệm thực tế về chọn trường, sinh hoạt bán trú, phương pháp kèm con và cùng nhau trao đổi kinh nghiệm học đường hoàn toàn không seeding.
                         </p>
                         <ul class="tier-features">
-                            <li>✓ Thảo luận thực tế cùng các phụ huynh có con cùng lứa tuổi</li>
-                            <li>✓ Hỏi kinh nghiệm chọn trường công lập, tư thục và song bằng</li>
-                            <li>✓ Tham gia các buổi giải đáp trực tiếp cùng các nhà giáo dục</li>
+                            <li>
+                                <svg class="ui-icon tier-check-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                                <span>Thảo luận thực tế cùng các phụ huynh có con cùng lứa tuổi</span>
+                            </li>
+                            <li>
+                                <svg class="ui-icon tier-check-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                                <span>Hỏi kinh nghiệm chọn trường công lập, tư thục và song bằng</span>
+                            </li>
+                            <li>
+                                <svg class="ui-icon tier-check-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                                <span>Tham gia các buổi giải đáp trực tiếp cùng các nhà giáo dục</span>
+                            </li>
                         </ul>
                         <a href="https://zalo.me/0902209213?text=Ch%C3%A0o%20C%C3%B2%20%C4%90i%20H%E1%BB%8Dc%2C%20t%C3%B4i%20mu%E1%BB%91n%20tham%20gia%20nh%C3%B3m%20Zalo%20c%E1%BB%99ng%20%C4%91%E1%BB%93ng%20ph%E1%BB%A5%20huynh" target="_blank" class="btn btn-outline w-full">
-                            <span>💬 Tham gia nhóm Zalo</span>
+                            <svg class="ui-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                            <span>Tham gia nhóm Zalo</span>
                         </a>
                     </div>
                 </div>
 
                 <!-- Hộp kết nối Zalo & Mã QR -->
                 <div class="zalo-connect-box">
-                    <img src="assets/images/zalo_qr_0902209213.png" alt="Mã QR Zalo Cò Đi Học 0902 209 213" class="zalo-qr-img">
+                    <img src="assets/images/zalo_qr_0902209213.png" alt="Mã QR Zalo Cò Đi Học 0902 209 213" width="180" height="180" class="zalo-qr-img">
                     <div class="text-sm text-slate-300 mb-2">Quét mã bằng camera điện thoại hoặc Zalo</div>
                     <div class="zalo-hotline-highlight">0902 209 213</div>
                     <p class="text-sm text-slate-300 mb-6">
                         Đường dây nóng kết nối trực tiếp với Cò đi học và cộng đồng phụ huynh.
                     </p>
                     <a href="https://zalo.me/0902209213?text=Ch%C3%A0o%20C%C3%B2%20%C4%90i%20H%E1%BB%8Dc%2C%20t%C3%B4i%20mu%E1%BB%91n%20nh%E1%BB%9D%20C%C3%B2%20t%C6%B0%20v%E1%BA%A5n%20v%E1%BB%81%20vi%E1%BB%87c%20h%E1%BB%8Dc%20c%E1%BB%A7a%20con" target="_blank" class="btn btn-zalo">
-                        <span>👉 Bấm để chat 1-1 với Cò đi học trên Zalo</span>
+                        <svg class="ui-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                        <span>Bấm để chat 1-1 với Cò đi học trên Zalo</span>
                     </a>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Kết Quả Chuyển Hóa: Tương Lai Của Con (StoryBrand SB7: Stakes) -->
-    <section class="section" id="stakes-section">
-        <div class="container">
-            <div class="section-header">
-                <span class="badge badge-navy section-badge">Tương lai của con trong tầm tay</span>
-                <h2 class="section-title">Lựa chọn của cha mẹ quyết định tuổi thơ của con</h2>
-                <p class="section-subtitle">
-                    Hai ngã rẽ hoàn toàn khác biệt giữa việc tiếp tục lối mòn áp lực và việc đồng hành cùng con bằng sự thấu hiểu:
-                </p>
-            </div>
-
-            <div class="stakes-grid">
-                <!-- Cột Trái: Tránh thất bại -->
-                <div class="stakes-card stakes-card-failure">
-                    <div class="stakes-header">
-                        <span class="text-3xl">⚠️</span>
-                        <h3>Nếu cứ đơn độc bơi giữa ma trận tin đồn</h3>
-                    </div>
-                    <ul class="stakes-list">
-                        <li>
-                            <span>❌</span>
-                            <span>Tối nào góc học tập cũng căng thẳng, bố mẹ quát mắng còn con thì sợ hãi, khóc lóc và chán nản.</span>
-                        </li>
-                        <li>
-                            <span>❌</span>
-                            <span>Con mất dần hứng thú học tập tự nhiên, khép kín lại hoặc bắt đầu có phản ứng chống đối tiêu cực.</span>
-                        </li>
-                        <li>
-                            <span>❌</span>
-                            <span>Tốn kém tiền bạc và thời gian vào các lớp học thêm, trường lớp hào nhoáng nhưng không hề vừa sức với con.</span>
-                        </li>
-                        <li>
-                            <span>❌</span>
-                            <span>Khoảng cách giữa bố mẹ và con cái ngày một xa cách, gia đình dần đánh mất những bữa tối ấm áp, rộn tiếng cười.</span>
-                        </li>
-                    </ul>
-                </div>
-
-                <!-- Cột Phải: Đạt thành công rực rỡ -->
-                <div class="stakes-card stakes-card-success">
-                    <div class="stakes-header">
-                        <span class="text-3xl">🌟</span>
-                        <h3>Khi có Cò Đi Học kề vai gạn lọc thông tin</h3>
-                    </div>
-                    <ul class="stakes-list">
-                        <li>
-                            <span>✓</span>
-                            <span>Bố mẹ nắm rõ sự thật khách quan, không còn bị cuốn theo nỗi sợ hãi hay những chiêu trò quảng cáo thổi phồng.</span>
-                        </li>
-                        <li>
-                            <span>✓</span>
-                            <span>Con vui vẻ thức dậy mỗi sáng, tự tin khám phá kiến thức theo đúng tốc độ tiếp nhận của riêng con.</span>
-                        </li>
-                        <li>
-                            <span>✓</span>
-                            <span>Chọn đúng ngôi trường vừa vặn nhất với năng lực của con và khả năng tài chính thực tế của gia đình.</span>
-                        </li>
-                        <li>
-                            <span>✓</span>
-                            <span>Bữa cơm tối gia đình nhẹ nhõm, bố mẹ thực sự trở thành người bạn lớn và điểm tựa bình yên nhất của con.</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- Direct Call to Action kép cuối trang -->
-            <div class="text-center mt-12 flex flex-wrap justify-center gap-4">
-                <a href="https://zalo.me/0902209213?text=Ch%C3%A0o%20C%C3%B2%20%C4%90i%20H%E1%BB%8Dc%2C%20t%C3%B4i%20mu%E1%BB%91n%20nh%E1%BB%9D%20C%C3%B2%20t%C6%B0%20v%E1%BA%A5n%20v%E1%BB%81%20vi%E1%BB%87c%20h%E1%BB%8Dc%20c%E1%BB%A7a%20con" target="_blank" class="btn btn-primary text-base py-4 px-8 inline-flex items-center gap-2">
-                    <span>👉 Chat 1-1 với Cò đi học</span>
-                </a>
-                <a href="https://zalo.me/0902209213?text=Ch%C3%A0o%20C%C3%B2%20%C4%90i%20H%E1%BB%8Dc%2C%20t%C3%B4i%20mu%E1%BB%91n%20tham%20gia%20nh%C3%B3m%20Zalo%20c%E1%BB%99ng%20%C4%91%E1%BB%93ng%20ph%E1%BB%A5%20huynh" target="_blank" class="btn btn-outline text-base py-4 px-8 inline-flex items-center gap-2">
-                    <span>💬 Tham gia nhóm Zalo</span>
-                </a>
             </div>
         </div>
     </section>
@@ -578,13 +672,13 @@
         <div class="container footer-grid">
             <div class="footer-brand">
                 <div class="flex items-center gap-3 mb-3">
-                    <img src="assets/images/logo.svg" alt="Logo Cò Đi Học" class="w-10 h-10 rounded-full">
+                    <img src="assets/images/logo.svg" alt="Logo Cò Đi Học" width="40" height="40" class="w-10 h-10 rounded-full">
                     <h3 class="m-0 text-white font-extrabold text-xl">CÒ ĐI HỌC</h3>
                 </div>
                 <p>
-                    <strong>Cò Đi Học</strong> - Trợ lý AI đồng hành cùng các phụ huynh từ tiền tiểu học đến hết phổ thông. Trợ lý đắc lực tổng hợp thông tin từ các diễn đàn, cập nhật từ các website chính thống của cơ sở giáo dục và cả kho dữ liệu độc quyền từ các chuyên gia, nhà giáo dục đóng góp.
+                    <strong>Cò Đi Học</strong> - Trợ lý AI đồng hành cùng các phụ huynh từ tiền tiểu học đến hết phổ thông. Trợ lý tổng hợp thông tin từ các diễn đàn, cập nhật website chính thống của cơ sở giáo dục và kho hồ sơ từ các chuyên gia, nhà giáo dục đóng góp.
                 </p>
-                <div class="text-xs text-slate-400 mt-3">
+                <div class="footer-hotline-line">
                     Đường dây nóng và Zalo: <strong class="text-amber-400 font-bold text-sm">0902 209 213</strong>
                 </div>
             </div>
@@ -617,7 +711,7 @@
 
     <!-- FLOATING WIDGET TRỢ LÝ CÒ ĐI HỌC GÓC MÀN HÌNH -->
     <div class="floating-widget-trigger" id="floatingWidgetTrigger">
-        <img src="assets/images/host_v1_02_speaking_hands.png" alt="Trợ lý Cò Đi Học" class="widget-stork-icon">
+        <img src="assets/images/host_v1_02_speaking_hands.png" alt="Trợ lý Cò Đi Học" width="36" height="36" class="widget-stork-icon">
         <span>Hỏi nhanh Cò Đi Học</span>
     </div>
 
@@ -625,32 +719,36 @@
     <div class="chat-modal-popup" id="chatModalPopup">
         <div class="chat-popup-header">
             <div class="chat-popup-title">
-                <img src="assets/images/logo.svg" alt="Cò Đi Học" class="chat-popup-logo">
+                <img src="assets/images/logo.svg" alt="Cò Đi Học" width="28" height="28" class="chat-popup-logo">
                 <span>Trợ lý Cò Đi Học (Zalo 0902 209 213)</span>
             </div>
-            <button id="closeChatPopupBtn" class="chat-popup-close-btn" aria-label="Đóng hộp chat">✕</button>
+            <button id="closeChatPopupBtn" class="chat-popup-close-btn" aria-label="Đóng hộp chat">
+                <svg class="ui-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+            </button>
         </div>
 
         <div class="chat-popup-body">
-            <div class="text-xs text-slate-600 font-semibold mb-2">Chọn cấp học của con để xem câu hỏi gợi ý:</div>
+            <div class="popup-section-label">Chọn cấp học của con để xem câu hỏi gợi ý:</div>
             <div id="popupCategoryTags" class="mb-3"></div>
             
-            <div class="text-xs font-bold text-slate-800 mb-2">Bấm chọn câu hỏi để sao chép và mở Zalo:</div>
+            <div class="popup-section-sub">Bấm chọn câu hỏi để sao chép và mở Zalo:</div>
             <div id="popupQuestionList"></div>
 
             <div class="mt-4 pt-3 border-t border-slate-200 flex flex-col gap-2">
-                <a href="https://zalo.me/0902209213?text=Ch%C3%A0o%20C%C3%B2%20%C4%90i%20H%E1%BB%8Dc%2C%20t%C3%B4i%20mu%E1%BB%91n%20nh%E1%BB%9D%20C%C3%B2%20t%C6%B0%20v%E1%BA%A5n%20v%E1%BB%81%20vi%E1%BB%87c%20h%E1%BB%8Dc%20c%E1%BB%A7a%20con" target="_blank" class="btn btn-primary text-xs py-2.5 px-3 w-full justify-center">
-                    <span>👉 Chat 1-1 với Cò đi học</span>
+                <a href="https://zalo.me/0902209213?text=Ch%C3%A0o%20C%C3%B2%20%C4%90i%20H%E1%BB%8Dc%2C%20t%C3%B4i%20mu%E1%BB%91n%20nh%E1%BB%9D%20C%C3%B2%20t%C6%B0%20v%E1%BA%A5n%20v%E1%BB%81%20vi%E1%BB%87c%20h%E1%BB%8Dc%20c%E1%BB%A7a%20con" target="_blank" class="btn btn-primary w-full justify-center">
+                    <svg class="ui-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                    <span>Chat 1-1 với Cò đi học</span>
                 </a>
-                <a href="https://zalo.me/0902209213?text=Ch%C3%A0o%20C%C3%B2%20%C4%90i%20H%E1%BB%8Dc%2C%20t%C3%B4i%20mu%E1%BB%91n%20tham%20gia%20nh%C3%B3m%20Zalo%20c%E1%BB%99ng%20%C4%91%E1%BB%93ng%20ph%E1%BB%A5%20huynh" target="_blank" class="btn btn-outline text-xs py-2 px-3 w-full justify-center text-slate-700">
-                    <span>💬 Tham gia nhóm Zalo</span>
+                <a href="https://zalo.me/0902209213?text=Ch%C3%A0o%20C%C3%B2%20%C4%90i%20H%E1%BB%8Dc%2C%20t%C3%B4i%20mu%E1%BB%91n%20tham%20gia%20nh%C3%B3m%20Zalo%20c%E1%BB%99ng%20%C4%91%E1%BB%93ng%20ph%E1%BB%A5%20huynh" target="_blank" class="btn btn-outline w-full justify-center text-slate-700">
+                    <svg class="ui-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                    <span>Tham gia nhóm Zalo</span>
                 </a>
             </div>
         </div>
     </div>
 
-    <!-- Scripts -->
-    <script src="assets/js/data.js?v=20261113_v5"></script>
-    <script src="assets/js/app.js?v=20261113_v5"></script>
+    <!-- JavaScript Core -->
+    <script src="assets/js/data.js?v=20261113_v6"></script>
+    <script src="assets/js/app.js?v=20261113_v6"></script>
 </body>
 </html>

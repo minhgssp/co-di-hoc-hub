@@ -1,9 +1,8 @@
 /**
- * APP.JS — CÒ ĐI HỌC OFFICIAL HUB
- * Điều hướng mượt mà, phân loại 16 bài viết chuyên sâu (hiển thị tiệm tiến 6 bài + mở rộng 16 bài),
+ * APP.JS - CÒ ĐI HỌC OFFICIAL HUB
+ * Điều hướng mượt mà, phân loại 22 bài viết chuyên sâu (hiển thị tiệm tiến 6 bài + mở rộng 22 bài),
  * trình đọc bài viết (Novel Viewer kèm Mục lục Mobile & Thu gọn tài liệu tham khảo),
- * trình phát Video giới thiệu Cò Đi Học đồng bộ 5 chương mục,
- * cẩm nang hỏi đáp 16 tình huống thực chứng kèm Quick Filter Chips,
+ * cẩm nang hỏi đáp 22 tình huống thực chứng (thu gọn tiệm tiến 2 nhóm đầu + tìm kiếm nhanh),
  * bảng đối sánh 4 lộ trình học tập và cổng kết nối Zalo 0902 209 213.
  */
 
@@ -13,6 +12,29 @@ document.addEventListener('DOMContentLoaded', () => {
         console.error('CDH_DATA not loaded!');
         return;
     }
+
+    const SVG_ICONS = {
+        book: '<svg class="ui-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>',
+        chat: '<svg class="ui-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>',
+        arrow: '<svg class="ui-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>',
+        chevron: '<svg class="ui-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>',
+        chevronUp: '<svg class="ui-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="18 15 12 9 6 15"/></svg>',
+        search: '<svg class="ui-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>',
+        help: '<svg class="ui-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>',
+        shield: '<svg class="ui-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>',
+        clock: '<svg class="ui-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>',
+        school: '<svg class="ui-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>',
+        compass: '<svg class="ui-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/></svg>',
+        bulb: '<svg class="ui-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18h6"/><path d="M10 22h4"/><path d="M15.09 14c.18-.98.65-1.74 1.41-2.5A4.65 4.65 0 0 0 18 8 6 6 0 0 0 6 8c0 1 .23 2.23 1.5 3.5A4.61 4.61 0 0 1 8.91 14"/></svg>'
+    };
+
+    const GROUP_SVG_MAP = {
+        'g1-preschool': SVG_ICONS.school,
+        'g2-primary': SVG_ICONS.clock,
+        'g3-health': SVG_ICONS.shield,
+        'g4-transition': SVG_ICONS.compass,
+        'g5-science': SVG_ICONS.bulb
+    };
 
     // ==========================================
     // 1. BLOG HUB RENDER & FILTER (THUMBNAIL + TIÊU ĐỀ TỐI ƯU - PROGRESSIVE DISCLOSURE)
@@ -45,7 +67,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             card.innerHTML = `
                 <div class="blog-card-thumb-wrap">
-                    <img src="${blog.thumbnail}" alt="${blog.title}" class="blog-card-thumb">
+                    <img src="${blog.thumbnail}" alt="${blog.title}" width="1280" height="720" class="blog-card-thumb">
                 </div>
                 <div class="blog-card-body">
                     <h3 class="blog-card-title">${blog.title}</h3>
@@ -61,8 +83,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 blogExpandWrap.style.display = 'block';
                 const hiddenCount = filteredBlogs.length - 6;
                 toggleAllBlogsBtn.innerHTML = isBlogExpanded
-                    ? `<span>🔼 Thu gọn bớt (chỉ hiện 6 bài tiêu biểu)</span>`
-                    : `<span>📖 Xem thêm ${hiddenCount} bài viết khác ▾</span>`;
+                    ? `${SVG_ICONS.chevronUp}<span>Thu gọn bớt (chỉ hiện 6 bài tiêu biểu)</span>`
+                    : `${SVG_ICONS.book}<span>Xem thêm ${hiddenCount} bài viết khác</span>${SVG_ICONS.chevron}`;
             } else {
                 blogExpandWrap.style.display = 'none';
             }
@@ -118,8 +140,8 @@ document.addEventListener('DOMContentLoaded', () => {
         return `${mainPart}
             <details class="legal-sources-details mt-8">
                 <summary class="legal-sources-summary">
-                    <span>📚 Xem chi tiết văn bản pháp lý, tài liệu khoa học và bình luận khảo sát gốc</span>
-                    <span class="legal-sources-hint">Bấm để mở rộng ▾</span>
+                    <span>Xem chi tiết văn bản pháp lý, tài liệu khoa học và bình luận khảo sát gốc</span>
+                    <span class="legal-sources-hint">Bấm để mở rộng</span>
                 </summary>
                 <div class="legal-sources-body">
                     ${tailPart}
@@ -132,7 +154,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         readerArticleTitle.textContent = blog.title;
         readerLevelBadge.textContent = blog.level;
-        readerReadTime.textContent = `⚡ Có hướng xử lý áp dụng ngay • Toàn văn ${blog.readTime} phút tham khảo`;
+        readerReadTime.textContent = `Có hướng xử lý áp dụng ngay - Toàn văn ${blog.readTime} phút tham khảo`;
         readerQuoteText.textContent = `"${blog.quote}"`;
         readerContent.innerHTML = formatArticleHtmlWithCollapsibleSources(blog.contentHtml);
 
@@ -229,12 +251,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // ==========================================
-    // 3. HOMEPAGE INTRO VIDEO (STANDALONE PLAYER)
-    // ==========================================
-    // Video player runs standalone without chapter sidebar per design update.
-
-    // ==========================================
-    // 4. KHO TÀI NGUYÊN TƯƠNG TÁC (RESOURCES HUB & QUICK CHIPS)
+    // 3. KHO TÀI NGUYÊN TƯƠNG TÁC (RESOURCES HUB & QUICK CHIPS)
     // ==========================================
     const resourceNavBtns = document.querySelectorAll('.resource-nav-btn');
     const resourcePanes = document.querySelectorAll('.resource-pane');
@@ -254,6 +271,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const guidesContainer = document.getElementById('guidesContainer');
     const guideSearchInput = document.getElementById('guideSearchInput');
     const quickSearchChips = document.getElementById('quickSearchChips');
+    const guidesExpandWrap = document.getElementById('guidesExpandWrap');
+    const toggleAllGuidesBtn = document.getElementById('toggleAllGuidesBtn');
+    let isGuidesExpanded = false;
 
     function formatAdviceHtml(adviceText = '') {
         if (!adviceText.includes('(1)')) {
@@ -286,7 +306,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const groups = data.practicalGuides || [];
         let globalMatchIndex = 0;
 
-        groups.forEach(group => {
+        groups.forEach((group, groupIdx) => {
             const filteredItems = group.items.filter(item =>
                 !kw ||
                 item.question.toLowerCase().includes(kw) ||
@@ -296,21 +316,25 @@ document.addEventListener('DOMContentLoaded', () => {
 
             if (filteredItems.length === 0) return;
 
+            const shouldCollapseGroup = (!kw && !isGuidesExpanded && groupIdx >= 2);
             const groupCard = document.createElement('div');
-            groupCard.className = 'guide-group-card';
+            groupCard.className = `guide-group-card${shouldCollapseGroup ? ' guide-group-collapsed' : ''}`;
 
             let itemsHtml = '';
             filteredItems.forEach((item) => {
-                const isExpanded = kw.length > 0 || globalMatchIndex === 0;
+                const isExpanded = (kw.length > 0 && globalMatchIndex === 0);
                 globalMatchIndex++;
 
                 const deepLinkBtn = item.blogId
                     ? `<div class="mt-3 pt-2 border-t border-emerald-200/60 flex flex-wrap items-center justify-between gap-2">
-                           <button type="button" class="read-more-link text-xs font-bold" onclick="window.openReaderById('${item.blogId}')">
-                               📖 Đọc bài phân tích chuyên sâu và căn cứ pháp lý đầy đủ ➔
+                           <button type="button" class="read-more-link" onclick="window.openReaderById('${item.blogId}')">
+                               ${SVG_ICONS.book}
+                               <span>Đọc bài phân tích chuyên sâu và căn cứ pháp lý đầy đủ</span>
+                               ${SVG_ICONS.arrow}
                            </button>
-                           <a href="https://zalo.me/0902209213?text=${encodeURIComponent('Chào Cò Đi Học, tôi muốn hỏi thêm về tình huống: ' + item.question)}" target="_blank" class="text-xs font-bold text-emerald-700 hover:underline">
-                               💬 Hỏi riêng Cò trên Zalo
+                           <a href="https://zalo.me/0902209213?text=${encodeURIComponent('Chào Cò Đi Học, tôi muốn hỏi thêm về tình huống: ' + item.question)}" target="_blank" class="guide-zalo-link">
+                               ${SVG_ICONS.chat}
+                               <span>Hỏi riêng Cò trên Zalo</span>
                            </a>
                        </div>`
                     : '';
@@ -318,15 +342,15 @@ document.addEventListener('DOMContentLoaded', () => {
                 itemsHtml += `
                     <div class="guide-accordion-item${isExpanded ? ' active' : ''}">
                         <div class="guide-item-header" onclick="this.parentElement.classList.toggle('active')">
-                            <span class="guide-item-title">❓ ${item.question}</span>
-                            <span class="guide-item-toggle">▾</span>
+                            <span class="guide-item-title">${SVG_ICONS.help}<span>${item.question}</span></span>
+                            <span class="guide-item-toggle">${SVG_ICONS.chevron}</span>
                         </div>
                         <div class="guide-item-body">
                             <div class="guide-item-situation">
                                 <strong>Tiếng lòng phụ huynh:</strong> "${item.situation}"
                             </div>
                             <div class="guide-item-advice">
-                                <strong>💡 Đúc kết pháp lý, khoa học và hướng gỡ rối từ Cò Đi Học:</strong>
+                                <strong>Đúc kết pháp lý, khoa học và hướng gỡ rối từ Cò Đi Học:</strong>
                                 ${formatAdviceHtml(item.advice)}
                                 ${deepLinkBtn}
                             </div>
@@ -335,9 +359,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 `;
             });
 
+            const groupSvg = GROUP_SVG_MAP[group.id] || SVG_ICONS.school;
             groupCard.innerHTML = `
                 <div class="guide-group-header">
-                    <span class="guide-group-icon">${group.icon}</span>
+                    <span class="guide-group-icon">${groupSvg}</span>
                     <div>
                         <h3 class="guide-group-title">${group.title}</h3>
                         <p class="guide-group-desc">${group.desc}</p>
@@ -352,15 +377,34 @@ document.addEventListener('DOMContentLoaded', () => {
         if (guidesContainer.children.length === 0) {
             guidesContainer.innerHTML = `
                 <div class="text-center py-12 text-slate-500">
-                    <div class="text-3xl mb-2">🔍</div>
+                    <div class="text-3xl mb-2" style="display:flex;justify-content:center;">${SVG_ICONS.search}</div>
                     <p>Chưa có mục trùng khớp với từ khóa "${keyword}".</p>
-                    <p class="text-xs text-slate-500 mt-2 mb-4">Bố mẹ có thể bấm nút bên dưới để nhắn câu hỏi trực tiếp tới Zalo <strong>0902 209 213</strong> của Cò Đi Học.</p>
+                    <p class="text-slate-500 mt-2 mb-4" style="font-size:14px;">Bố mẹ có thể bấm nút bên dưới để nhắn câu hỏi trực tiếp tới Zalo <strong>0902 209 213</strong> của Cò Đi Học.</p>
                     <a href="https://zalo.me/0902209213?text=${encodeURIComponent('Chào Cò Đi Học, tôi đang tìm hiểu về: ' + keyword)}" target="_blank" class="btn btn-primary btn-sm">
-                        <span>💬 Hỏi trực tiếp Cò Đi Học trên Zalo</span>
+                        ${SVG_ICONS.chat}
+                        <span>Hỏi trực tiếp Cò Đi Học trên Zalo</span>
                     </a>
                 </div>
             `;
         }
+
+        if (guidesExpandWrap && toggleAllGuidesBtn) {
+            if (!kw && groups.length > 2) {
+                guidesExpandWrap.style.display = 'block';
+                toggleAllGuidesBtn.innerHTML = isGuidesExpanded
+                    ? `${SVG_ICONS.chevronUp}<span>Thu gọn bớt (chỉ hiện 2 nhóm chủ đề đầu tiên)</span>`
+                    : `${SVG_ICONS.book}<span>Xem thêm 3 nhóm chủ đề (trọn bộ 22 tình huống gỡ rối)</span>${SVG_ICONS.chevron}`;
+            } else {
+                guidesExpandWrap.style.display = 'none';
+            }
+        }
+    }
+
+    if (toggleAllGuidesBtn) {
+        toggleAllGuidesBtn.addEventListener('click', () => {
+            isGuidesExpanded = !isGuidesExpanded;
+            renderPracticalGuides(guideSearchInput ? guideSearchInput.value : '');
+        });
     }
 
     if (guideSearchInput) {
@@ -400,7 +444,7 @@ document.addEventListener('DOMContentLoaded', () => {
             card.className = 'curricula-card';
             card.innerHTML = `
                 <div class="curricula-tag">${curr.tag}</div>
-                <h4 class="curricula-title">${curr.system}</h4>
+                <h3 class="curricula-title">${curr.system}</h3>
                 <div class="curricula-spec">
                     <strong>Trọng tâm giáo dục:</strong>
                     ${curr.focus}
@@ -427,7 +471,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // ==========================================
-    // 5. ZALO WIDGET & FLOATING POPUP
+    // 4. ZALO WIDGET & FLOATING POPUP
     // ==========================================
     const floatingWidgetTrigger = document.getElementById('floatingWidgetTrigger');
     const chatModalPopup = document.getElementById('chatModalPopup');
@@ -457,7 +501,7 @@ document.addEventListener('DOMContentLoaded', () => {
         (cat.questions || []).forEach(pText => {
             const btn = document.createElement('button');
             btn.className = 'question-item-btn';
-            btn.innerHTML = `💬 ${pText}`;
+            btn.innerHTML = `${SVG_ICONS.chat}<span>${pText}</span>`;
             btn.onclick = () => {
                 const encoded = encodeURIComponent(pText);
                 if (navigator.clipboard && navigator.clipboard.writeText) {
@@ -474,7 +518,7 @@ document.addEventListener('DOMContentLoaded', () => {
         data.zaloQuestions.forEach((cat, idx) => {
             const span = document.createElement('span');
             span.className = `level-select-tag ${idx === 0 ? 'active' : ''}`;
-            span.textContent = `${cat.icon} ${cat.level}`;
+            span.textContent = cat.level;
             span.onclick = () => {
                 popupCategoryTags.querySelectorAll('.level-select-tag').forEach(s => s.classList.remove('active'));
                 span.classList.add('active');
