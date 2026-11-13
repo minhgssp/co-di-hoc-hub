@@ -106,6 +106,14 @@
         </nav>
       </section>
 
+      <section class="sidebar-card" aria-labelledby="tagsHeading">
+        <h2 class="sidebar-heading" id="tagsHeading">
+          <span>Thẻ Chuyên Môn (#Tag)</span>
+          <span class="num" id="sidebarTagTotal">0</span>
+        </h2>
+        <div class="sidebar-tag-cloud" id="sidebarTagList" role="group" aria-label="Lọc theo thẻ chuyên môn"></div>
+      </section>
+
       <section class="sidebar-card" aria-labelledby="groupsHeading">
         <h2 class="sidebar-heading" id="groupsHeading">
           <span>Hội Nhóm Đã Quét</span>
@@ -160,6 +168,8 @@
           <button type="button" class="sort-pill" data-sort="recent">Mới quét gần đây</button>
           <button type="button" class="sort-pill" data-sort="with_comments">Chỉ bài có bình luận</button>
         </div>
+
+        <div class="quick-tags-bar" id="quickTagsBar" role="group" aria-label="Thẻ chủ đề phổ biến"></div>
 
         <div class="active-filters-row">
           <div class="active-chips" id="activeFilterChips">

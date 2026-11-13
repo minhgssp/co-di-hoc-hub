@@ -21,6 +21,7 @@
     data: null,
     topicId: "ALL",
     groupSlug: "ALL",
+    tagSlug: "ALL",
     sortBy: "hot",
     search: "",
     groupSearch: "",
@@ -36,6 +37,9 @@
     searchInput: document.getElementById("searchInput"),
     groupQuickSearch: document.getElementById("groupQuickSearch"),
     topicNavList: document.getElementById("topicNavList"),
+    sidebarTagTotal: document.getElementById("sidebarTagTotal"),
+    sidebarTagList: document.getElementById("sidebarTagList"),
+    quickTagsBar: document.getElementById("quickTagsBar"),
     groupNavList: document.getElementById("groupNavList"),
     postList: document.getElementById("postList"),
     loadMoreWrap: document.getElementById("loadMoreWrap"),
@@ -216,6 +220,12 @@
     const list = state.data.posts.filter(function (post) {
       if (state.topicId !== "ALL" && post.topic_id !== state.topicId) return false;
       if (state.groupSlug !== "ALL" && post.group_slug !== state.groupSlug) return false;
+      if (state.tagSlug !== "ALL") {
+        const hasTag = (post.tags || []).some(function (t) {
+          return t.slug === state.tagSlug;
+        });
+        if (!hasTag) return false;
+      }
       if (state.savedOnly && !state.savedSigs.has(post.post_sig)) return false;
       if (state.sortBy === "with_comments" && post.clean_comments_count === 0) return false;
       if (q) {
@@ -224,6 +234,9 @@
           post.group_name,
           post.author,
           post.topic_label,
+          (post.tags || []).map(function (t) {
+            return t.label;
+          }).join(" "),
           (post.clean_comments || []).map(function (c) {
             return c.author + " " + c.text;
           }).join(" "),
@@ -330,6 +343,66 @@
       .join("");
   }
 
+  function renderSidebarTags() {
+    if (!els.sidebarTagList) return;
+    const tags = state.data.popular_tags || [];
+    if (els.sidebarTagTotal) {
+      els.sidebarTagTotal.textContent = String(tags.length);
+    }
+    const allChip =
+      '<button type="button" class="tag-cloud-btn' +
+      (state.tagSlug === "ALL" ? " is-active" : "") +
+      '" data-tag-slug="ALL">Tất cả thẻ <span class="num">' +
+      (state.data.summary ? state.data.summary.clean_posts_count : 0) +
+      "</span></button>";
+
+    const tagButtons = tags
+      .map(function (t) {
+        const activeClass = state.tagSlug === t.slug ? " is-active" : "";
+        return (
+          '<button type="button" class="tag-cloud-btn' +
+          activeClass +
+          '" data-tag-slug="' +
+          escapeHtml(t.slug) +
+          '">' +
+          escapeHtml(t.label) +
+          ' <span class="num">' +
+          t.count +
+          "</span></button>"
+        );
+      })
+      .join("");
+    els.sidebarTagList.innerHTML = allChip + tagButtons;
+  }
+
+  function renderQuickTagsBar() {
+    if (!els.quickTagsBar) return;
+    const tags = (state.data.popular_tags || []).slice(0, 12);
+    if (tags.length === 0) {
+      els.quickTagsBar.hidden = true;
+      return;
+    }
+    els.quickTagsBar.hidden = false;
+    const prefix = '<span class="quick-tags-label">Thẻ nổi bật:</span>';
+    const pills = tags
+      .map(function (t) {
+        const activeClass = state.tagSlug === t.slug ? " is-active" : "";
+        return (
+          '<button type="button" class="quick-tag-pill' +
+          activeClass +
+          '" data-tag-slug="' +
+          escapeHtml(t.slug) +
+          '">' +
+          escapeHtml(t.label) +
+          ' <span class="num">' +
+          t.count +
+          "</span></button>"
+        );
+      })
+      .join("");
+    els.quickTagsBar.innerHTML = prefix + pills;
+  }
+
   function renderSidebarGroups() {
     const q = state.groupSearch.trim().toLowerCase();
     const groups = (state.data.groups || []).filter(function (g) {
@@ -423,6 +496,16 @@
           "</span>"
       );
     }
+    if (state.tagSlug !== "ALL") {
+      const tagObj = (state.data.popular_tags || []).find(function (t) {
+        return t.slug === state.tagSlug;
+      });
+      chips.push(
+        '<span class="filter-chip">Thẻ: ' +
+          escapeHtml(tagObj ? tagObj.label : "#" + state.tagSlug) +
+          "</span>"
+      );
+    }
     if (state.search.trim()) {
       chips.push('<span class="filter-chip">Từ khóa: "' + escapeHtml(state.search.trim()) + '"</span>');
     }
@@ -434,6 +517,7 @@
     const hasFilter =
       state.topicId !== "ALL" ||
       state.groupSlug !== "ALL" ||
+      state.tagSlug !== "ALL" ||
       Boolean(state.search.trim()) ||
       state.savedOnly;
     els.clearFiltersBtn.hidden = !hasFilter;
@@ -547,6 +631,20 @@
       escapeHtml(post.topic_label) +
       "</span>" +
       (post.is_anonymous ? '<span class="topic-tag">Đăng ẩn danh</span>' : "") +
+      (post.tags || [])
+        .map(function (t) {
+          const isAct = state.tagSlug === t.slug ? " is-active" : "";
+          return (
+            '<button type="button" class="post-tag-chip' +
+            isAct +
+            '" data-tag-slug="' +
+            escapeHtml(t.slug) +
+            '">' +
+            escapeHtml(t.label) +
+            "</button>"
+          );
+        })
+        .join("") +
       "</div>" +
       '<div class="post-body">' +
       highlightText(displayBody, q) +
@@ -667,14 +765,29 @@
       .join("");
   }
 
+  function selectTagFilter(slug) {
+    if (!slug || slug === "ALL" || state.tagSlug === slug) {
+      state.tagSlug = "ALL";
+    } else {
+      state.tagSlug = slug;
+    }
+    state.visibleCount = PAGE_SIZE;
+    renderSidebarTags();
+    renderQuickTagsBar();
+    renderFeed();
+  }
+
   function clearAllFilters() {
     state.topicId = "ALL";
     state.groupSlug = "ALL";
+    state.tagSlug = "ALL";
     state.search = "";
     state.savedOnly = false;
     state.visibleCount = PAGE_SIZE;
     els.searchInput.value = "";
     renderSidebarTopics();
+    renderSidebarTags();
+    renderQuickTagsBar();
     renderSidebarGroups();
     renderFeed();
   }
@@ -715,6 +828,23 @@
       closeMobileSidebar();
     });
 
+    if (els.sidebarTagList) {
+      els.sidebarTagList.addEventListener("click", function (ev) {
+        const btn = ev.target.closest("[data-tag-slug]");
+        if (!btn) return;
+        selectTagFilter(btn.getAttribute("data-tag-slug") || "ALL");
+        closeMobileSidebar();
+      });
+    }
+
+    if (els.quickTagsBar) {
+      els.quickTagsBar.addEventListener("click", function (ev) {
+        const btn = ev.target.closest("[data-tag-slug]");
+        if (!btn) return;
+        selectTagFilter(btn.getAttribute("data-tag-slug") || "ALL");
+      });
+    }
+
     document.querySelector(".sort-pills").addEventListener("click", function (ev) {
       const btn = ev.target.closest("[data-sort]");
       if (!btn) return;
@@ -732,16 +862,25 @@
       state.topicId = btn.getAttribute("data-insight-topic") || "ALL";
       state.search = btn.getAttribute("data-insight-query") || "";
       state.groupSlug = "ALL";
+      state.tagSlug = "ALL";
       state.savedOnly = false;
       state.visibleCount = PAGE_SIZE;
       els.searchInput.value = state.search;
       renderSidebarTopics();
+      renderSidebarTags();
+      renderQuickTagsBar();
       renderSidebarGroups();
       renderFeed();
       window.scrollTo({ top: 0, behavior: "smooth" });
     });
 
     els.postList.addEventListener("click", function (ev) {
+      const tagBtn = ev.target.closest("[data-tag-slug]");
+      if (tagBtn) {
+        selectTagFilter(tagBtn.getAttribute("data-tag-slug") || "ALL");
+        return;
+      }
+
       const expandPostBtn = ev.target.closest("[data-expand-post]");
       if (expandPostBtn) {
         const sig = expandPostBtn.getAttribute("data-expand-post");
@@ -896,6 +1035,8 @@
       state.data = await loadForumData();
       renderTelemetry();
       renderSidebarTopics();
+      renderSidebarTags();
+      renderQuickTagsBar();
       renderSidebarGroups();
       renderInsights();
       renderFeed();
