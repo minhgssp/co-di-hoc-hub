@@ -2,20 +2,10 @@
   "use strict";
 
   const PAGE_SIZE = 16;
-  const BODY_TRUNCATE_LIMIT = 360;
+  const BODY_TRUNCATE_LIMIT = 380;
   const INITIAL_VISIBLE_COMMENTS = 3;
   const SAVED_STORAGE_KEY = "cdh_clean_forum_saved_v1";
   const THEME_STORAGE_KEY = "cdh_clean_forum_theme_v1";
-
-  const SEEDING_INTENT_LABELS = {
-    SEEDING_CLONE_CAMPAIGN: "Nick clone / Rải văn mẫu",
-    COMMERCIAL_DIRECT_SALE: "Bán hàng / Rao vặt trực tiếp",
-    SEEDING_LEAD_MAGNET_ZALO_INBOX: "Mồi xin file / Kéo inbox Zalo",
-    CROSS_GROUP_ENGAGEMENT_BAIT: "Bài mồi rải chéo đa nhóm",
-    SEEDING_AFFILIATE_SHOPEE_TROJAN: "Affiliate Shopee núp bóng",
-    SEEDING_STORYTELLING_FUNNEL: "Kể chuyện cài phễu Workshop",
-    SEEDING_VIRAL_HOMEWORK_LOOP: "Bài tập ép Viral-Loop",
-  };
 
   const state = {
     data: null,
@@ -24,53 +14,28 @@
     tagSlug: "ALL",
     sortBy: "hot",
     search: "",
-    groupSearch: "",
     savedOnly: false,
     visibleCount: PAGE_SIZE,
     savedSigs: loadSavedSet(),
     expandedPosts: new Set(),
     expandedComments: new Set(),
-    lastFocusedTrigger: null,
   };
 
   const els = {
     searchInput: document.getElementById("searchInput"),
-    groupQuickSearch: document.getElementById("groupQuickSearch"),
     topicNavList: document.getElementById("topicNavList"),
     sidebarTagTotal: document.getElementById("sidebarTagTotal"),
     sidebarTagList: document.getElementById("sidebarTagList"),
     quickTagsBar: document.getElementById("quickTagsBar"),
-    groupNavList: document.getElementById("groupNavList"),
     postList: document.getElementById("postList"),
     loadMoreWrap: document.getElementById("loadMoreWrap"),
     loadMoreBtn: document.getElementById("loadMoreBtn"),
     activeFilterChips: document.getElementById("activeFilterChips"),
     clearFiltersBtn: document.getElementById("clearFiltersBtn"),
-    composerSubtitle: document.getElementById("composerSubtitle"),
-    topBlockedCount: document.getElementById("topBlockedCount"),
     savedCountBadge: document.getElementById("savedCountBadge"),
     savedFilterBtn: document.getElementById("savedFilterBtn"),
     themeToggleBtn: document.getElementById("themeToggleBtn"),
     sidebarTotalClean: document.getElementById("sidebarTotalClean"),
-    sidebarGroupTotal: document.getElementById("sidebarGroupTotal"),
-    mobileCleanStat: document.getElementById("mobileCleanStat"),
-    mobileBlockedStat: document.getElementById("mobileBlockedStat"),
-    cleanRatioBadge: document.getElementById("cleanRatioBadge"),
-    kpiCleanPosts: document.getElementById("kpiCleanPosts"),
-    kpiBlockedPosts: document.getElementById("kpiBlockedPosts"),
-    kpiCleanComments: document.getElementById("kpiCleanComments"),
-    kpiBlockedComments: document.getElementById("kpiBlockedComments"),
-    purityMeterFill: document.getElementById("purityMeterFill"),
-    seedingBreakdownList: document.getElementById("seedingBreakdownList"),
-    insightList: document.getElementById("insightList"),
-    seedingDrawer: document.getElementById("seedingDrawer"),
-    seedingDrawerBody: document.getElementById("seedingDrawerBody"),
-    seedingDialogSub: document.getElementById("seedingDialogSub"),
-    openSeedingDrawerBtn: document.getElementById("openSeedingDrawerBtn"),
-    railOpenSeedingBtn: document.getElementById("railOpenSeedingBtn"),
-    mobileOpenDrawerBtn: document.getElementById("mobileOpenDrawerBtn"),
-    inlineInspectSeedingBtn: document.getElementById("inlineInspectSeedingBtn"),
-    closeSeedingDrawerBtn: document.getElementById("closeSeedingDrawerBtn"),
     mobileFilterBtn: document.getElementById("mobileFilterBtn"),
     closeSidebarBtn: document.getElementById("closeSidebarBtn"),
     leftSidebar: document.getElementById("leftSidebar"),
@@ -178,6 +143,7 @@
   }
 
   function openMobileSidebar() {
+    if (!els.leftSidebar || !els.drawerBackdrop || !els.mobileFilterBtn) return;
     els.leftSidebar.classList.add("is-open");
     els.drawerBackdrop.classList.add("is-open");
     els.mobileFilterBtn.setAttribute("aria-expanded", "true");
@@ -186,32 +152,11 @@
   }
 
   function closeMobileSidebar() {
+    if (!els.leftSidebar || !els.drawerBackdrop || !els.mobileFilterBtn) return;
     els.leftSidebar.classList.remove("is-open");
     els.drawerBackdrop.classList.remove("is-open");
     els.mobileFilterBtn.setAttribute("aria-expanded", "false");
     document.body.style.overflow = "";
-  }
-
-  function openSeedingDrawer(triggerEl) {
-    state.lastFocusedTrigger = triggerEl || document.activeElement;
-    renderSeedingDrawer();
-    if (typeof els.seedingDrawer.showModal === "function") {
-      els.seedingDrawer.showModal();
-    } else {
-      els.seedingDrawer.setAttribute("open", "open");
-    }
-    if (els.closeSeedingDrawerBtn) els.closeSeedingDrawerBtn.focus();
-  }
-
-  function closeSeedingDrawer() {
-    if (typeof els.seedingDrawer.close === "function" && els.seedingDrawer.open) {
-      els.seedingDrawer.close();
-    } else {
-      els.seedingDrawer.removeAttribute("open");
-    }
-    if (state.lastFocusedTrigger && typeof state.lastFocusedTrigger.focus === "function") {
-      state.lastFocusedTrigger.focus();
-    }
   }
 
   function getFilteredPosts() {
@@ -272,55 +217,20 @@
   }
 
   function renderTelemetry() {
-    const s = state.data.summary;
-    els.topBlockedCount.textContent = String(s.blocked_seeding_posts_count);
-    els.savedCountBadge.textContent = String(state.savedSigs.size);
-    els.sidebarTotalClean.textContent = String(s.clean_posts_count);
-    els.sidebarGroupTotal.textContent = String(s.active_groups_with_clean_posts);
-    els.mobileCleanStat.textContent = String(s.clean_posts_count);
-    els.mobileBlockedStat.textContent = String(s.blocked_seeding_posts_count);
-
-    els.composerSubtitle.textContent =
-      "Đã làm sạch " +
-      s.clean_posts_count +
-      " bài thảo luận thật & " +
-      s.clean_comments_count +
-      " bình luận hữu ích từ " +
-      s.total_followed_groups +
-      " hội nhóm (loại bỏ " +
-      s.blocked_seeding_posts_count +
-      " bài Seeding và " +
-      s.blocked_comments_count +
-      " bình luận rác).";
-
-    els.cleanRatioBadge.textContent = s.clean_ratio_pct + "% sạch";
-    els.kpiCleanPosts.textContent = String(s.clean_posts_count);
-    els.kpiBlockedPosts.textContent = String(s.blocked_seeding_posts_count);
-    els.kpiCleanComments.textContent = String(s.clean_comments_count);
-    els.kpiBlockedComments.textContent = String(s.blocked_comments_count);
-    els.purityMeterFill.style.width = Math.max(5, Math.min(100, s.clean_ratio_pct)) + "%";
-
-    const breakdownEntries = Object.entries(state.data.seeding_breakdown || {}).sort(function (a, b) {
-      return b[1] - a[1];
-    });
-    els.seedingBreakdownList.innerHTML = breakdownEntries
-      .map(function (entry) {
-        const label = SEEDING_INTENT_LABELS[entry[0]] || entry[0];
-        return (
-          '<li class="breakdown-row"><span>' +
-          escapeHtml(label) +
-          '</span><strong class="num">' +
-          entry[1] +
-          "</strong></li>"
-        );
-      })
-      .join("");
+    const s = state.data.summary || {};
+    if (els.savedCountBadge) {
+      els.savedCountBadge.textContent = String(state.savedSigs.size);
+    }
+    if (els.sidebarTotalClean) {
+      els.sidebarTotalClean.textContent = String(s.clean_posts_count || 0);
+    }
   }
 
   function renderSidebarTopics() {
-    const s = state.data.summary;
+    if (!els.topicNavList) return;
+    const s = state.data.summary || {};
     const items = [
-      { id: "ALL", label: "Tất cả thảo luận sạch", count: s.clean_posts_count },
+      { id: "ALL", label: "Tất cả bài viết", count: s.clean_posts_count || 0 },
     ].concat(state.data.topics || []);
 
     els.topicNavList.innerHTML = items
@@ -377,7 +287,7 @@
 
   function renderQuickTagsBar() {
     if (!els.quickTagsBar) return;
-    const tags = (state.data.popular_tags || []).slice(0, 12);
+    const tags = (state.data.popular_tags || []).slice(0, 10);
     if (tags.length === 0) {
       els.quickTagsBar.hidden = true;
       return;
@@ -403,79 +313,12 @@
     els.quickTagsBar.innerHTML = prefix + pills;
   }
 
-  function renderSidebarGroups() {
-    const q = state.groupSearch.trim().toLowerCase();
-    const groups = (state.data.groups || []).filter(function (g) {
-      if (!q) return true;
-      return (
-        g.group_name.toLowerCase().includes(q) || g.group_slug.toLowerCase().includes(q)
-      );
-    });
-
-    const headerItem =
-      '<li><button type="button" class="nav-item-btn' +
-      (state.groupSlug === "ALL" ? " is-active" : "") +
-      '" data-group-slug="ALL">' +
-      '<span class="nav-item-label">Tất cả hội nhóm</span>' +
-      '<span class="badge-count num">' +
-      state.data.groups.length +
-      "</span></button></li>";
-
-    const groupItems = groups
-      .map(function (g) {
-        const activeClass = state.groupSlug === g.group_slug ? " is-active" : "";
-        return (
-          '<li><button type="button" class="nav-item-btn' +
-          activeClass +
-          '" data-group-slug="' +
-          escapeHtml(g.group_slug) +
-          '" title="' +
-          escapeHtml(g.group_name) +
-          '">' +
-          '<span class="nav-item-label">' +
-          escapeHtml(g.group_name) +
-          "</span>" +
-          '<span class="badge-count num">' +
-          g.clean_posts_count +
-          "</span></button></li>"
-        );
-      })
-      .join("");
-
-    els.groupNavList.innerHTML = headerItem + groupItems;
-  }
-
-  function renderInsights() {
-    const insights = state.data.featured_insights || [];
-    els.insightList.innerHTML = insights
-      .map(function (ins) {
-        return (
-          '<button type="button" class="insight-btn" data-insight-topic="' +
-          escapeHtml(ins.topic_id) +
-          '" data-insight-query="' +
-          escapeHtml(ins.query) +
-          '">' +
-          '<span class="insight-badge">' +
-          escapeHtml(ins.badge) +
-          "</span>" +
-          '<span class="insight-title">' +
-          escapeHtml(ins.title) +
-          "</span>" +
-          '<span class="insight-summary">' +
-          escapeHtml(ins.summary) +
-          "</span>" +
-          "</button>"
-        );
-      })
-      .join("");
-  }
-
   function renderFilterStatus(totalMatched) {
     const chips = [];
     chips.push(
-      '<span class="num">Hiển thị <strong>' +
+      '<span class="num"><strong>' +
         totalMatched +
-        "</strong> bài viết sạch</span>"
+        "</strong> bài viết</span>"
     );
 
     if (state.topicId !== "ALL") {
@@ -510,7 +353,7 @@
       chips.push('<span class="filter-chip">Từ khóa: "' + escapeHtml(state.search.trim()) + '"</span>');
     }
     if (state.savedOnly) {
-      chips.push('<span class="filter-chip">🔖 Đang xem bài đã lưu</span>');
+      chips.push('<span class="filter-chip">🔖 Bài đã lưu</span>');
     }
 
     els.activeFilterChips.innerHTML = chips.join("");
@@ -575,7 +418,7 @@
     const hiddenCommentsCount = Math.max(0, allComments.length - visibleComments.length);
 
     let commentsBlockHtml = "";
-    if (allComments.length > 0 || post.filtered_comments_count > 0) {
+    if (allComments.length > 0) {
       commentsBlockHtml =
         '<div class="comments-section">' +
         visibleComments
@@ -588,16 +431,9 @@
             escapeHtml(post.post_sig) +
             '">Xem thêm ' +
             hiddenCommentsCount +
-            " bình luận thật nữa</button>"
+            " bình luận nữa</button>"
           : "") +
-        '<div class="readonly-comment-footer">' +
-        "<span>🔒 Đã khóa bình luận để tránh spam</span>" +
-        (post.filtered_comments_count > 0
-          ? '<span class="spam-stripped-note num">Đã gạn bỏ ' +
-            post.filtered_comments_count +
-            ' bình luận rác / "." / xin file</span>'
-          : "") +
-        "</div></div>";
+        "</div>";
     }
 
     return (
@@ -613,7 +449,11 @@
       "</div>" +
       '<div class="post-meta-col">' +
       '<div class="post-group-line">' +
+      '<button type="button" class="post-group-btn" data-group-slug="' +
+      escapeHtml(post.group_slug) +
+      '" title="Lọc bài viết cùng hội nhóm">' +
       escapeHtml(post.group_name) +
+      "</button>" +
       "</div>" +
       '<div class="post-author-line">' +
       '<span class="post-author-name">' +
@@ -622,15 +462,11 @@
       '<span class="post-time">• ' +
       escapeHtml(post.posted_display) +
       "</span>" +
-      "</div></div></div>" +
-      '<div class="post-badges-col">' +
-      '<span class="organic-pill" title="Đã vượt qua bộ lọc 7 chiến thuật Seeding">✓ Organic</span>' +
-      "</div></div>" +
+      "</div></div></div></div>" +
       '<div class="topic-pill-row">' +
       '<span class="topic-tag">' +
       escapeHtml(post.topic_label) +
       "</span>" +
-      (post.is_anonymous ? '<span class="topic-tag">Đăng ẩn danh</span>' : "") +
       (post.tags || [])
         .map(function (t) {
           const isAct = state.tagSlug === t.slug ? " is-active" : "";
@@ -656,16 +492,6 @@
           (isBodyExpanded ? "Thu gọn" : "Xem toàn văn") +
           "</button>"
         : "") +
-      '<div class="post-stats-strip">' +
-      '<span class="num"><strong>' +
-      post.clean_comments_count +
-      "</strong> bình luận thật</span>" +
-      (post.filtered_comments_count > 0
-        ? '<span class="spam-stripped-note num">Đã lọc ' +
-          post.filtered_comments_count +
-          " bình luận rác</span>"
-        : '<span>Chỉ xem • Nguồn Facebook Group</span>') +
-      "</div>" +
       '<div class="post-actions-bar">' +
       '<div class="post-action-btns">' +
       '<button type="button" class="card-action-btn' +
@@ -684,7 +510,9 @@
           '" target="_blank" rel="noopener noreferrer">↗ Nguồn FB</a>'
         : "") +
       "</div>" +
-      '<span class="readonly-lock-tag">🔒 Chỉ xem</span>' +
+      '<span class="post-cmt-summary num">' +
+      post.clean_comments_count +
+      " bình luận</span>" +
       "</div>" +
       commentsBlockHtml +
       "</article>"
@@ -699,8 +527,8 @@
       els.postList.innerHTML =
         '<div class="empty-state">' +
         "<h3>Không tìm thấy thảo luận phù hợp</h3>" +
-        "<p>Thử bỏ bớt bộ lọc chủ đề, hội nhóm hoặc gõ từ khóa khác ngắn gọn hơn (ví dụ: lớp 1, trường, HSK, 20/11).</p>" +
-        '<button type="button" class="btn btn-primary" id="emptyResetBtn">Đặt lại tất cả bộ lọc</button>' +
+        "<p>Thử bỏ bớt bộ lọc chủ đề, thẻ hoặc gõ từ khóa khác ngắn gọn hơn (ví dụ: lớp 1, trường, HSK, 20/11).</p>" +
+        '<button type="button" class="btn btn-primary" id="emptyResetBtn">Đặt lại bộ lọc</button>' +
         "</div>";
       els.loadMoreWrap.hidden = true;
       const resetBtn = document.getElementById("emptyResetBtn");
@@ -720,51 +548,6 @@
     }
   }
 
-  function renderSeedingDrawer() {
-    if (!state.data) return;
-    const samples = state.data.blocked_samples || [];
-    const s = state.data.summary;
-    els.seedingDialogSub.textContent =
-      "Đã tự động chặn " +
-      s.blocked_seeding_posts_count +
-      " bài Seeding / Rao vặt (hiển thị " +
-      samples.length +
-      " mẫu tiêu biểu nhất)";
-
-    if (samples.length === 0) {
-      els.seedingDrawerBody.innerHTML = "<p>Chưa có mẫu Seeding nào bị chặn.</p>";
-      return;
-    }
-
-    els.seedingDrawerBody.innerHTML = samples
-      .map(function (item) {
-        const label = SEEDING_INTENT_LABELS[item.seeding_intent] || item.seeding_intent;
-        return (
-          '<div class="blocked-sample-card">' +
-          '<div class="blocked-sample-top">' +
-          '<span class="intent-pill">' +
-          escapeHtml(label) +
-          " • " +
-          item.seeding_score +
-          "/100</span>" +
-          '<span class="num">Rải ' +
-          item.cross_group_count +
-          " nhóm</span>" +
-          "</div>" +
-          "<div><strong>" +
-          escapeHtml(item.author) +
-          "</strong> &bull; <span>" +
-          escapeHtml(item.group_name) +
-          "</span></div>" +
-          '<p class="blocked-preview">' +
-          escapeHtml(item.text_preview) +
-          "...</p>" +
-          "</div>"
-        );
-      })
-      .join("");
-  }
-
   function selectTagFilter(slug) {
     if (!slug || slug === "ALL" || state.tagSlug === slug) {
       state.tagSlug = "ALL";
@@ -777,6 +560,16 @@
     renderFeed();
   }
 
+  function selectGroupFilter(slug) {
+    if (!slug || slug === "ALL" || state.groupSlug === slug) {
+      state.groupSlug = "ALL";
+    } else {
+      state.groupSlug = slug;
+    }
+    state.visibleCount = PAGE_SIZE;
+    renderFeed();
+  }
+
   function clearAllFilters() {
     state.topicId = "ALL";
     state.groupSlug = "ALL";
@@ -784,49 +577,37 @@
     state.search = "";
     state.savedOnly = false;
     state.visibleCount = PAGE_SIZE;
-    els.searchInput.value = "";
+    if (els.searchInput) els.searchInput.value = "";
     renderSidebarTopics();
     renderSidebarTags();
     renderQuickTagsBar();
-    renderSidebarGroups();
     renderFeed();
   }
 
   function bindEvents() {
     let searchTimer = null;
-    els.searchInput.addEventListener("input", function () {
-      if (searchTimer) clearTimeout(searchTimer);
-      searchTimer = setTimeout(function () {
-        state.search = els.searchInput.value;
+    if (els.searchInput) {
+      els.searchInput.addEventListener("input", function () {
+        if (searchTimer) clearTimeout(searchTimer);
+        searchTimer = setTimeout(function () {
+          state.search = els.searchInput.value;
+          state.visibleCount = PAGE_SIZE;
+          renderFeed();
+        }, 180);
+      });
+    }
+
+    if (els.topicNavList) {
+      els.topicNavList.addEventListener("click", function (ev) {
+        const btn = ev.target.closest("[data-topic-id]");
+        if (!btn) return;
+        state.topicId = btn.getAttribute("data-topic-id") || "ALL";
         state.visibleCount = PAGE_SIZE;
+        renderSidebarTopics();
         renderFeed();
-      }, 180);
-    });
-
-    els.groupQuickSearch.addEventListener("input", function () {
-      state.groupSearch = els.groupQuickSearch.value;
-      renderSidebarGroups();
-    });
-
-    els.topicNavList.addEventListener("click", function (ev) {
-      const btn = ev.target.closest("[data-topic-id]");
-      if (!btn) return;
-      state.topicId = btn.getAttribute("data-topic-id") || "ALL";
-      state.visibleCount = PAGE_SIZE;
-      renderSidebarTopics();
-      renderFeed();
-      closeMobileSidebar();
-    });
-
-    els.groupNavList.addEventListener("click", function (ev) {
-      const btn = ev.target.closest("[data-group-slug]");
-      if (!btn) return;
-      state.groupSlug = btn.getAttribute("data-group-slug") || "ALL";
-      state.visibleCount = PAGE_SIZE;
-      renderSidebarGroups();
-      renderFeed();
-      closeMobileSidebar();
-    });
+        closeMobileSidebar();
+      });
+    }
 
     if (els.sidebarTagList) {
       els.sidebarTagList.addEventListener("click", function (ev) {
@@ -845,36 +626,27 @@
       });
     }
 
-    document.querySelector(".sort-pills").addEventListener("click", function (ev) {
-      const btn = ev.target.closest("[data-sort]");
-      if (!btn) return;
-      state.sortBy = btn.getAttribute("data-sort") || "hot";
-      document.querySelectorAll(".sort-pill").forEach(function (p) {
-        p.classList.toggle("is-active", p === btn);
+    const sortPills = document.querySelector(".sort-pills");
+    if (sortPills) {
+      sortPills.addEventListener("click", function (ev) {
+        const btn = ev.target.closest("[data-sort]");
+        if (!btn) return;
+        state.sortBy = btn.getAttribute("data-sort") || "hot";
+        document.querySelectorAll(".sort-pill").forEach(function (p) {
+          p.classList.toggle("is-active", p === btn);
+        });
+        state.visibleCount = PAGE_SIZE;
+        renderFeed();
       });
-      state.visibleCount = PAGE_SIZE;
-      renderFeed();
-    });
-
-    els.insightList.addEventListener("click", function (ev) {
-      const btn = ev.target.closest("[data-insight-topic]");
-      if (!btn) return;
-      state.topicId = btn.getAttribute("data-insight-topic") || "ALL";
-      state.search = btn.getAttribute("data-insight-query") || "";
-      state.groupSlug = "ALL";
-      state.tagSlug = "ALL";
-      state.savedOnly = false;
-      state.visibleCount = PAGE_SIZE;
-      els.searchInput.value = state.search;
-      renderSidebarTopics();
-      renderSidebarTags();
-      renderQuickTagsBar();
-      renderSidebarGroups();
-      renderFeed();
-      window.scrollTo({ top: 0, behavior: "smooth" });
-    });
+    }
 
     els.postList.addEventListener("click", function (ev) {
+      const groupBtn = ev.target.closest("[data-group-slug]");
+      if (groupBtn) {
+        selectGroupFilter(groupBtn.getAttribute("data-group-slug") || "ALL");
+        return;
+      }
+
       const tagBtn = ev.target.closest("[data-tag-slug]");
       if (tagBtn) {
         selectTagFilter(tagBtn.getAttribute("data-tag-slug") || "ALL");
@@ -934,7 +706,7 @@
           if (navigator.clipboard && navigator.clipboard.writeText) {
             navigator.clipboard.writeText(quote).then(
               function () {
-                showToast("Đã sao chép trích dẫn bài viết sạch");
+                showToast("Đã sao chép trích dẫn bài viết");
               },
               function () {
                 showToast("Không truy cập được clipboard trình duyệt");
@@ -965,30 +737,12 @@
     els.closeSidebarBtn.addEventListener("click", closeMobileSidebar);
     els.drawerBackdrop.addEventListener("click", closeMobileSidebar);
 
-    [
-      els.openSeedingDrawerBtn,
-      els.railOpenSeedingBtn,
-      els.mobileOpenDrawerBtn,
-      els.inlineInspectSeedingBtn,
-    ].forEach(function (btn) {
-      if (btn) {
-        btn.addEventListener("click", function () {
-          openSeedingDrawer(btn);
-        });
-      }
-    });
-
-    els.closeSeedingDrawerBtn.addEventListener("click", closeSeedingDrawer);
-    els.seedingDrawer.addEventListener("click", function (ev) {
-      if (ev.target === els.seedingDrawer) closeSeedingDrawer();
-    });
-
     document.addEventListener("keydown", function (ev) {
       if ((ev.ctrlKey || ev.metaKey) && ev.key.toLowerCase() === "k") {
         ev.preventDefault();
-        els.searchInput.focus();
+        if (els.searchInput) els.searchInput.focus();
       } else if (ev.key === "Escape") {
-        if (els.leftSidebar.classList.contains("is-open")) {
+        if (els.leftSidebar && els.leftSidebar.classList.contains("is-open")) {
           closeMobileSidebar();
         }
       }
@@ -996,7 +750,6 @@
   }
 
   async function loadForumData() {
-    // 1. Only try live SQLite API when served by local preview_server.py (127.0.0.1 / localhost)
     const isLocalPreview =
       window.location.hostname === "127.0.0.1" || window.location.hostname === "localhost";
     if (isLocalPreview && window.location.protocol.startsWith("http")) {
@@ -1007,19 +760,17 @@
           if (payload && Array.isArray(payload.posts)) return payload;
         }
       } catch (_err) {
-        // Fallback cleanly to static JSON/JS
+        // Fallback to static JS/JSON
       }
     }
 
-    // 2. Fallback to pre-loaded JS bundle
     if (window.CDH_CLEAN_FORUM_DATA && Array.isArray(window.CDH_CLEAN_FORUM_DATA.posts)) {
       return window.CDH_CLEAN_FORUM_DATA;
     }
 
-    // 3. Fallback to static JSON
     const resJson = await fetch("assets/data/clean_forum_feed.json", { cache: "no-store" });
     if (!resJson.ok) {
-      throw new Error("Không tải được dữ liệu diễn đàn sạch");
+      throw new Error("Không tải được dữ liệu diễn đàn");
     }
     return resJson.json();
   }
@@ -1029,7 +780,7 @@
     bindEvents();
 
     els.postList.innerHTML =
-      '<div class="empty-state"><p>Đang nạp và làm sạch dữ liệu từ kho hội nhóm Cò Đi Học...</p></div>';
+      '<div class="empty-state"><p>Đang tải danh sách thảo luận...</p></div>';
 
     try {
       state.data = await loadForumData();
@@ -1037,8 +788,6 @@
       renderSidebarTopics();
       renderSidebarTags();
       renderQuickTagsBar();
-      renderSidebarGroups();
-      renderInsights();
       renderFeed();
     } catch (err) {
       els.postList.innerHTML =

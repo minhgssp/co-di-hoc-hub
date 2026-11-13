@@ -1,15 +1,15 @@
 // Auto-generated clean parent forum dataset from co_di_hoc_group_harvest.sqlite
 window.CDH_CLEAN_FORUM_DATA = {
-  "generated_at": "2026-11-13 14:28:15 +07:00",
+  "generated_at": "2026-11-13 16:34:00 +07:00",
   "mode": "READ_ONLY_CLEAN_FORUM",
   "summary": {
     "total_followed_groups": 162,
-    "active_groups_with_clean_posts": 121,
+    "active_groups_with_clean_posts": 113,
     "total_raw_posts": 2812,
-    "clean_posts_count": 1948,
+    "clean_posts_count": 1919,
     "blocked_seeding_posts_count": 862,
-    "filtered_short_noise_posts": 2,
-    "clean_ratio_pct": 69.3,
+    "filtered_short_noise_posts": 31,
+    "clean_ratio_pct": 68.2,
     "total_raw_comments": 6067,
     "clean_comments_count": 3626,
     "blocked_comments_count": 2441,
@@ -30,28 +30,28 @@ window.CDH_CLEAN_FORUM_DATA = {
       "label": "Tiền Tiểu Học & Vào Lớp 1",
       "short_label": "Tiền tiểu học / Lớp 1",
       "description": "Chuẩn bị tâm thế, tập đọc, luyện chữ, áp lực tối đồng hành cùng con 5–7 tuổi.",
-      "count": 376
+      "count": 377
     },
     {
       "id": "CHON_TRUONG_TUYEN_SINH",
       "label": "Chọn Trường & Tuyển Sinh",
       "short_label": "Chọn trường / Tuyển sinh",
       "description": "Review trường công lập, đúng tuyến/trái tuyến, bán trú, học phí trường tư & chuyển cấp.",
-      "count": 390
+      "count": 389
     },
     {
       "id": "NGOAI_NGU_HOMESCHOOL",
       "label": "Ngoại Ngữ, HSK & Homeschool",
       "short_label": "Ngoại ngữ & Homeschool",
       "description": "Kinh nghiệm tự học Tiếng Anh, Tiếng Trung (HSK/YCT), Acellus, IXL, Razkids tại nhà.",
-      "count": 346
+      "count": 332
     },
     {
       "id": "ON_THI_HOC_TAP",
       "label": "Phương Pháp Học & Ôn Thi",
       "short_label": "Phương pháp & Ôn thi",
       "description": "Cách học Toán, Tiếng Việt, ôn thi giữa/cuối học kỳ và phân tích lỗi sai.",
-      "count": 171
+      "count": 156
     },
     {
       "id": "TAM_LY_GIA_DINH",
@@ -72,52 +72,52 @@ window.CDH_CLEAN_FORUM_DATA = {
     {
       "slug": "tam-ly-cam-xuc",
       "label": "#TâmLý & CảmXúc",
-      "count": 597
+      "count": 595
     },
     {
       "slug": "tien-tieu-hoc-2020-2021",
       "label": "#HànhTrangLớp1",
-      "count": 586
+      "count": 583
     },
     {
       "slug": "goc-hoi-dap-thuc-chien",
       "label": "#HỏiĐápKinhNghiệm",
-      "count": 464
+      "count": 450
     },
     {
       "slug": "tieng-anh-tre-em",
       "label": "#TiếngAnhTrẻEm",
-      "count": 345
+      "count": 331
     },
     {
       "slug": "ren-tap-trung-ky-luat",
       "label": "#RènTậpTrung",
-      "count": 335
+      "count": 330
     },
     {
       "slug": "giao-vien-goc-nhin",
       "label": "#GócNhìnGiáoViên",
-      "count": 324
+      "count": 322
     },
     {
       "slug": "chuyen-cap-lop-6",
       "label": "#ChuyểnCấpLớp6",
-      "count": 310
+      "count": 309
     },
     {
       "slug": "review-truong-tu-clc",
       "label": "#TrườngTư & CLC",
-      "count": 288
-    },
-    {
-      "slug": "on-thi-kiem-tra",
-      "label": "#ÔnThiCuốiKỳ",
-      "count": 252
+      "count": 287
     },
     {
       "slug": "review-truong-cong",
       "label": "#TrườngCôngLập",
-      "count": 227
+      "count": 228
+    },
+    {
+      "slug": "on-thi-kiem-tra",
+      "label": "#ÔnThiCuốiKỳ",
+      "count": 228
     },
     {
       "slug": "sach-hay-hoc-lieu",
@@ -127,12 +127,12 @@ window.CDH_CLEAN_FORUM_DATA = {
     {
       "slug": "homeschool-tu-hoc",
       "label": "#HomeschoolTựHọc",
-      "count": 166
+      "count": 159
     },
     {
       "slug": "danh-van-tap-doc",
       "label": "#ĐánhVầnTậpĐọc",
-      "count": 156
+      "count": 153
     },
     {
       "slug": "hoc-phi-tai-chinh",
@@ -142,7 +142,7 @@ window.CDH_CLEAN_FORUM_DATA = {
     {
       "slug": "he-quoc-te-song-bang",
       "label": "#SongBằngCambridge",
-      "count": 100
+      "count": 97
     },
     {
       "slug": "chuyen-20-11-quy-lop",
@@ -197,7 +197,7 @@ window.CDH_CLEAN_FORUM_DATA = {
     },
     {
       "group_slug": "on_thi_vao_lop_6_chat_luong_cao_ams_cau_giay_ntt",
-      "group_name": "Ôn thi vào lớp 6 chất lượng cao Ams, Cầu Giấy, NTT, THCS Ngoại Ngữ, ...",
+      "group_name": "Ôn thi vào lớp 6 chất lượng cao Ams, Cầu Giấy, NTT, THCS Ngoại Ngữ,",
       "pain_cluster": "Pillar 1: Chuyển cấp Lớp 6 CLC & THCS",
       "clean_posts_count": 62
     },
@@ -205,7 +205,7 @@ window.CDH_CLEAN_FORUM_DATA = {
       "group_slug": "bang_tin_thao_luan_phu_huynh_tong_hop",
       "group_name": "Bảng Tin Thảo Luận Phụ Huynh Tổng Hợp",
       "pain_cluster": "NEWSFEED_HARVEST",
-      "clean_posts_count": 60
+      "clean_posts_count": 52
     },
     {
       "group_slug": "cung_con_hoc_lop_1_149149",
@@ -304,12 +304,6 @@ window.CDH_CLEAN_FORUM_DATA = {
       "clean_posts_count": 34
     },
     {
-      "group_slug": "cung_con_hoc_tieng_anh",
-      "group_name": "Cùng con học Tiếng Anh",
-      "pain_cluster": "FOLLOWED_SYNCED",
-      "clean_posts_count": 29
-    },
-    {
       "group_slug": "con_hoc_me_cung_hoc",
       "group_name": "CON HỌC MẸ CŨNG HỌC",
       "pain_cluster": "FOLLOWED_SYNCED",
@@ -317,9 +311,15 @@ window.CDH_CLEAN_FORUM_DATA = {
     },
     {
       "group_slug": "hoi_phu_huynh_tieu_hoc_nguyen_sieu",
-      "group_name": "Chưa đọcHội Phụ Huynh Tiểu Học Nguyễn Siêu: \"Sắp thi cuối kỳ I rồi, nhà các mẹ cho con ôn đều mỗi tối hay để gần ngày th",
+      "group_name": "Hội Phụ Huynh Tiểu Học Nguyễn Siêu",
       "pain_cluster": "FOLLOWED_SYNCED",
       "clean_posts_count": 28
+    },
+    {
+      "group_slug": "cung_con_hoc_tieng_anh",
+      "group_name": "Cùng con học Tiếng Anh",
+      "pain_cluster": "FOLLOWED_SYNCED",
+      "clean_posts_count": 26
     },
     {
       "group_slug": "hoi_phu_huynh_hoang_mai_nhom_chinh_thuc",
@@ -346,14 +346,14 @@ window.CDH_CLEAN_FORUM_DATA = {
       "clean_posts_count": 24
     },
     {
-      "group_slug": "hoc_cung_con_choi_cung_con",
-      "group_name": "Chưa đọcTừ giờ, bạn có thể đăng bài và bình luận trong Học Cùng Con - Chơi Cùng Con.14 giờ",
+      "group_slug": "cung_con_hoc_tieu_hoc_104118",
+      "group_name": "Cùng Con Học Tiểu Học ✅",
       "pain_cluster": "FOLLOWED_SYNCED",
       "clean_posts_count": 24
     },
     {
-      "group_slug": "cung_con_hoc_tieu_hoc_104118",
-      "group_name": "Cùng Con Học Tiểu Học ✅",
+      "group_slug": "hoc_cung_con_choi_cung_con",
+      "group_name": "Học Cùng Con - Chơi Cùng Con",
       "pain_cluster": "FOLLOWED_SYNCED",
       "clean_posts_count": 24
     },
@@ -370,16 +370,16 @@ window.CDH_CLEAN_FORUM_DATA = {
       "clean_posts_count": 23
     },
     {
-      "group_slug": "hoi_phu_huynh_thanh_pho_ha_noi_pawand",
-      "group_name": "Hội Phụ Huynh Thành Phố Hà Nội ✅",
-      "pain_cluster": "FOLLOWED_SYNCED",
-      "clean_posts_count": 22
-    },
-    {
       "group_slug": "hoi_phu_huynh_hoc_sinh_tieu_hoc",
       "group_name": "Hội phụ huynh học sinh Tiểu học",
       "pain_cluster": "HISTORICAL_APIFY",
       "clean_posts_count": 22
+    },
+    {
+      "group_slug": "hoi_phu_huynh_thanh_pho_ha_noi_pawand",
+      "group_name": "Hội Phụ Huynh Thành Phố Hà Nội ✅",
+      "pain_cluster": "FOLLOWED_SYNCED",
+      "clean_posts_count": 21
     },
     {
       "group_slug": "review_truong_hoc_ha_noi",
@@ -425,15 +425,9 @@ window.CDH_CLEAN_FORUM_DATA = {
     },
     {
       "group_slug": "review_cac_truong_mam_non_tieu_hoc_thcs_thpt_tro",
-      "group_name": "Review các trường Mầm Non - Tiểu Học - THCS - THPT trong địa bàn Hà Nội.",
+      "group_name": "Review các trường Mầm Non - Tiểu Học - THCS - THPT trong địa bàn Hà Nội",
       "pain_cluster": "HISTORICAL_APIFY",
       "clean_posts_count": 17
-    },
-    {
-      "group_slug": "dong_hanh_cung_con_homeschool_4_0",
-      "group_name": "Chưa đọcChào mừng bạn đến với ĐỒNG HÀNH CÙNG CON... Quản trị viên đã phê duyệt yêu cầu tham gia của bạn.21 giờ",
-      "pain_cluster": "FOLLOWED_SYNCED",
-      "clean_posts_count": 16
     },
     {
       "group_slug": "giao_duc_viet_nam",
@@ -448,18 +442,6 @@ window.CDH_CLEAN_FORUM_DATA = {
       "clean_posts_count": 16
     },
     {
-      "group_slug": "dong_hanh_cung_hoc_sinh_lop_1_391034",
-      "group_name": "Đồng Hành Cùng Học Sinh Lớp 1",
-      "pain_cluster": "HISTORICAL_APIFY",
-      "clean_posts_count": 16
-    },
-    {
-      "group_slug": "giao_vien_tieng_anh",
-      "group_name": "Giáo Viên Tiếng Anh",
-      "pain_cluster": "FOLLOWED_SYNCED",
-      "clean_posts_count": 15
-    },
-    {
       "group_slug": "hanh_trang_cho_be_vao_lop_1",
       "group_name": "Hành Trang Cho Bé Vào Lớp 1",
       "pain_cluster": "HISTORICAL_APIFY",
@@ -467,8 +449,20 @@ window.CDH_CLEAN_FORUM_DATA = {
     },
     {
       "group_slug": "hoi_phu_huynh_ha_noi_co_con_hoc_cap_2_thi_vao_lo",
-      "group_name": "HỘI PHỤ HUYNH HÀ NỘI - CÓ CON HỌC CẤP 2 , THI VÀO LỚP 10.",
+      "group_name": "HỘI PHỤ HUYNH HÀ NỘI - CÓ CON HỌC CẤP 2 , THI VÀO LỚP 10",
       "pain_cluster": "FOLLOWED_SYNCED",
+      "clean_posts_count": 15
+    },
+    {
+      "group_slug": "dong_hanh_cung_con_homeschool_4_0",
+      "group_name": "Đồng Hành Cùng Con",
+      "pain_cluster": "FOLLOWED_SYNCED",
+      "clean_posts_count": 15
+    },
+    {
+      "group_slug": "dong_hanh_cung_hoc_sinh_lop_1_391034",
+      "group_name": "Đồng Hành Cùng Học Sinh Lớp 1",
+      "pain_cluster": "HISTORICAL_APIFY",
       "clean_posts_count": 15
     },
     {
@@ -490,9 +484,9 @@ window.CDH_CLEAN_FORUM_DATA = {
       "clean_posts_count": 14
     },
     {
-      "group_slug": "hoi_cu_dan_vinhomes_smart_city_nhom_chinh_thuc",
-      "group_name": "Hội cư dân Vinhomes Smart City - Nhóm Chính Thức ✅",
-      "pain_cluster": "Pillar 6: Review & Chọn trường K-12 Hà Nội",
+      "group_slug": "giao_vien_tieng_anh",
+      "group_name": "Giáo Viên Tiếng Anh",
+      "pain_cluster": "FOLLOWED_SYNCED",
       "clean_posts_count": 13
     },
     {
@@ -502,14 +496,14 @@ window.CDH_CLEAN_FORUM_DATA = {
       "clean_posts_count": 12
     },
     {
-      "group_slug": "cung_con_hoc_lop_1_giaovi",
-      "group_name": "CÙNG CON HỌC LỚP 1",
-      "pain_cluster": "FOLLOWED_SYNCED",
-      "clean_posts_count": 11
+      "group_slug": "hoi_cu_dan_vinhomes_smart_city_nhom_chinh_thuc",
+      "group_name": "Hội cư dân Vinhomes Smart City - Nhóm Chính Thức ✅",
+      "pain_cluster": "Pillar 6: Review & Chọn trường K-12 Hà Nội",
+      "clean_posts_count": 12
     },
     {
-      "group_slug": "hoi_phu_huynh_co_con_hoc_thcs_thpt",
-      "group_name": "Hội Phụ huynh có con học THCS - THPT",
+      "group_slug": "cung_con_hoc_lop_1_giaovi",
+      "group_name": "CÙNG CON HỌC LỚP 1",
       "pain_cluster": "FOLLOWED_SYNCED",
       "clean_posts_count": 11
     },
@@ -520,14 +514,14 @@ window.CDH_CLEAN_FORUM_DATA = {
       "clean_posts_count": 10
     },
     {
-      "group_slug": "hoi_nhung_me_co_con_vao_lop_1",
-      "group_name": "HỘI NHỮNG MẸ CÓ CON VÀO LỚP 1 ✅",
+      "group_slug": "hoi_phu_huynh_ha_noi_125341",
+      "group_name": "Hội Phụ Huynh Hà Nội",
       "pain_cluster": "FOLLOWED_SYNCED",
       "clean_posts_count": 10
     },
     {
-      "group_slug": "hoi_phu_huynh_ha_noi_125341",
-      "group_name": "Hội Phụ Huynh Hà Nội",
+      "group_slug": "hoi_phu_huynh_co_con_hoc_thcs_thpt",
+      "group_name": "Hội Phụ huynh có con học THCS - THPT",
       "pain_cluster": "FOLLOWED_SYNCED",
       "clean_posts_count": 10
     },
@@ -539,7 +533,13 @@ window.CDH_CLEAN_FORUM_DATA = {
     },
     {
       "group_slug": "cong_dong_acellus_abeka_cac_chuong_trinh_homesch",
-      "group_name": "Cộng Đồng Acellus, Abeka, Các chương trình Homeschooling (Ms Minh Trang Chu",
+      "group_name": "Cộng Đồng Acellus, Abeka, Các chương trình Homeschooling",
+      "pain_cluster": "FOLLOWED_SYNCED",
+      "clean_posts_count": 9
+    },
+    {
+      "group_slug": "hoi_nhung_me_co_con_vao_lop_1",
+      "group_name": "HỘI NHỮNG MẸ CÓ CON VÀO LỚP 1 ✅",
       "pain_cluster": "FOLLOWED_SYNCED",
       "clean_posts_count": 9
     },
@@ -610,14 +610,14 @@ window.CDH_CLEAN_FORUM_DATA = {
       "clean_posts_count": 6
     },
     {
-      "group_slug": "dong_hanh_cung_con_vao_lop_1_161518",
-      "group_name": "Đồng Hành cùng con vào lớp 1",
-      "pain_cluster": "FOLLOWED_SYNCED",
-      "clean_posts_count": 6
-    },
-    {
       "group_slug": "hoc_tien_tieu_hoc_va_lop_1_cung_con",
       "group_name": "Học Tiền Tiểu Học và Lớp 1 cùng con ✅",
+      "pain_cluster": "FOLLOWED_SYNCED",
+      "clean_posts_count": 5
+    },
+    {
+      "group_slug": "dong_hanh_cung_con_vao_lop_1_161518",
+      "group_name": "Đồng Hành cùng con vào lớp 1",
       "pain_cluster": "FOLLOWED_SYNCED",
       "clean_posts_count": 5
     },
@@ -652,15 +652,33 @@ window.CDH_CLEAN_FORUM_DATA = {
       "clean_posts_count": 3
     },
     {
+      "group_slug": "cung_con_hoc_tieu_hoc_352475",
+      "group_name": "CÙNG CON HỌC TIỂU HỌC ❤️",
+      "pain_cluster": "FOLLOWED_SYNCED",
+      "clean_posts_count": 2
+    },
+    {
+      "group_slug": "kinh_nghiem_thi_vao_truong_ngoi_sao_ha_noi_lop_1",
+      "group_name": "Cộng đồng Phụ huynh K-12",
+      "pain_cluster": "Pillar 3: Tiếng Anh Phonics, Song ngữ & Homeschool/Bằng Mỹ",
+      "clean_posts_count": 2
+    },
+    {
       "group_slug": "cho_minh_hoi_lop_tien_tieu_hoc_cho_be_5_tuoi_o_k",
-      "group_name": "Cho mình hỏi lớp tiền tiểu học cho bé 5 tuổi ở khu vực nhà ...",
+      "group_name": "Cộng đồng Phụ huynh K-12",
       "pain_cluster": "Pillar 2: Tiền Tiểu học & Vào Lớp 1",
       "clean_posts_count": 2
     },
     {
-      "group_slug": "cung_con_hoc_tieu_hoc_352475",
-      "group_name": "CÙNG CON HỌC TIỂU HỌC ❤️",
-      "pain_cluster": "FOLLOWED_SYNCED",
+      "group_slug": "dap_an_de_thi_vao_lop_6_ngoi_sao_hoang_mai_nam_2",
+      "group_name": "Cộng đồng Phụ huynh K-12",
+      "pain_cluster": "Pillar 1: Chuyển cấp Lớp 6 CLC & THCS",
+      "clean_posts_count": 2
+    },
+    {
+      "group_slug": "razkids_la_gi_va_cach_tai_tai_lieu_pdf_mp3_mp4_m",
+      "group_name": "Cộng đồng Phụ huynh K-12",
+      "pain_cluster": "Pillar 3: Tiếng Anh Phonics, Song ngữ & Homeschool/Bằng Mỹ",
       "clean_posts_count": 2
     },
     {
@@ -688,63 +706,9 @@ window.CDH_CLEAN_FORUM_DATA = {
       "clean_posts_count": 2
     },
     {
-      "group_slug": "needing_help_deciding_between_k_12_and_acellus_m",
-      "group_name": "Needing help deciding between k-12 and Acellus. My ...",
-      "pain_cluster": "Pillar 3: Tiếng Anh Phonics, Song ngữ & Homeschool/Bằng Mỹ",
-      "clean_posts_count": 2
-    },
-    {
-      "group_slug": "razkids_la_gi_va_cach_tai_tai_lieu_pdf_mp3_mp4_m",
-      "group_name": "Razkids là gì và cách tải tài liệu PDF, MP3, MP4 miễn phí ...",
-      "pain_cluster": "Pillar 3: Tiếng Anh Phonics, Song ngữ & Homeschool/Bằng Mỹ",
-      "clean_posts_count": 2
-    },
-    {
-      "group_slug": "kinh_nghiem_thi_vao_truong_ngoi_sao_ha_noi_lop_1",
-      "group_name": "kinh nghiệm thi vào trường ngôi sao hà nội lớp 1 tiểu học",
-      "pain_cluster": "Pillar 3: Tiếng Anh Phonics, Song ngữ & Homeschool/Bằng Mỹ",
-      "clean_posts_count": 2
-    },
-    {
-      "group_slug": "dap_an_de_thi_vao_lop_6_ngoi_sao_hoang_mai_nam_2",
-      "group_name": "Đáp án đề thi vào lớp 6 Ngôi sao Hoàng Mai năm 2024",
-      "pain_cluster": "Pillar 1: Chuyển cấp Lớp 6 CLC & THCS",
-      "clean_posts_count": 2
-    },
-    {
-      "group_slug": "unlock_the_future_of_english_learning_with_our_f",
-      "group_name": "**Unlock the Future of English Learning with Our Free App! ...",
-      "pain_cluster": "Pillar 3: Tiếng Anh Phonics, Song ngữ & Homeschool/Bằng Mỹ",
-      "clean_posts_count": 1
-    },
-    {
-      "group_slug": "bang_hoc_phi_tieu_hoc_marie_curie_viet_hung_nam_",
-      "group_name": "Bảng học phí Tiểu học Marie Curie Việt Hưng năm học 2026-2027",
-      "pain_cluster": "Pillar 4: Học phí, Bán trú & Xe đưa đón",
-      "clean_posts_count": 1
-    },
-    {
       "group_slug": "chuan_bi_hanh_trang_vao_lop_1_tien_tieu_hoc",
       "group_name": "CHUẨN BỊ HÀNH TRANG VÀO LỚP 1 Tiền Tiểu Học",
       "pain_cluster": "Pillar 2: Tiền Tiểu học & Vào Lớp 1",
-      "clean_posts_count": 1
-    },
-    {
-      "group_slug": "chuyen_cap_lop_5_len_lop_6_co_ban_hom_nay_den",
-      "group_name": "Chuyển cấp lớp 5 lên lớp 6 Có bạn hôm nay đến ...",
-      "pain_cluster": "Pillar 1: Chuyển cấp Lớp 6 CLC & THCS",
-      "clean_posts_count": 1
-    },
-    {
-      "group_slug": "con_em_hoc_lop_6_ma_hoc_yeu_theo_sat_thi_con_bi_",
-      "group_name": "Con em học lớp 6 mà học yếu theo sát thì con bị áp lực ...",
-      "pain_cluster": "Pillar 1: Chuyển cấp Lớp 6 CLC & THCS",
-      "clean_posts_count": 1
-    },
-    {
-      "group_slug": "con_mat_tap_trung_va_giam_chu_y_co_cach_chua_kho",
-      "group_name": "Con mất tập trung và giảm chú ý có cách chữa không ...",
-      "pain_cluster": "Pillar 1: Chuyển cấp Lớp 6 CLC & THCS",
       "clean_posts_count": 1
     },
     {
@@ -754,33 +718,117 @@ window.CDH_CLEAN_FORUM_DATA = {
       "clean_posts_count": 1
     },
     {
-      "group_slug": "cac_mom_nao_co_con_hoc_o_vinschool_grand_park_ch",
-      "group_name": "Các mom nào có con học ở Vinschool grand park cho em ...",
-      "pain_cluster": "Pillar 6: Review & Chọn trường K-12 Hà Nội",
+      "group_slug": "de_thi_va_dap_an_tieng_han_vao_lop_10_ha_noi_202",
+      "group_name": "Cộng đồng Phụ huynh K-12",
+      "pain_cluster": "Pillar 2: Tiền Tiểu học & Vào Lớp 1",
       "clean_posts_count": 1
     },
     {
-      "group_slug": "does_any_homeschooling_parents_have_experience_w",
-      "group_name": "Does any homeschooling parents have experience with ...",
+      "group_slug": "lop_on_thi_mien_phi_vao_lop_1_truong_achimedes_n",
+      "group_name": "Cộng đồng Phụ huynh K-12",
+      "pain_cluster": "Pillar 2: Tiền Tiểu học & Vào Lớp 1",
+      "clean_posts_count": 1
+    },
+    {
+      "group_slug": "lop_tien_tieu_hoc_cho_be_2021_tai_vinh_hung_ha_n",
+      "group_name": "Cộng đồng Phụ huynh K-12",
+      "pain_cluster": "Pillar 2: Tiền Tiểu học & Vào Lớp 1",
+      "clean_posts_count": 1
+    },
+    {
+      "group_slug": "tam_quan_trong_cua_dau_thanh_trong_tap_doc_tien_",
+      "group_name": "Cộng đồng Phụ huynh K-12",
+      "pain_cluster": "Pillar 2: Tiền Tiểu học & Vào Lớp 1",
+      "clean_posts_count": 1
+    },
+    {
+      "group_slug": "tong_hop_diem_chuan_vao_lop_6_cac_truong_thcs_ha",
+      "group_name": "Cộng đồng Phụ huynh K-12",
+      "pain_cluster": "Pillar 1: Chuyển cấp Lớp 6 CLC & THCS",
+      "clean_posts_count": 1
+    },
+    {
+      "group_slug": "chuyen_cap_lop_5_len_lop_6_co_ban_hom_nay_den",
+      "group_name": "Cộng đồng Phụ huynh K-12",
+      "pain_cluster": "Pillar 1: Chuyển cấp Lớp 6 CLC & THCS",
+      "clean_posts_count": 1
+    },
+    {
+      "group_slug": "de_kiem_tra_danh_gia_nang_luc_hoc_sinh_lop_6_de_",
+      "group_name": "Cộng đồng Phụ huynh K-12",
+      "pain_cluster": "Pillar 1: Chuyển cấp Lớp 6 CLC & THCS",
+      "clean_posts_count": 1
+    },
+    {
+      "group_slug": "trai_he_ban_tru_giam_40_hoc_phi_tai_20_co_so_o_h",
+      "group_name": "Cộng đồng Phụ huynh K-12",
+      "pain_cluster": "Pillar 4: Học phí, Bán trú & Xe đưa đón",
+      "clean_posts_count": 1
+    },
+    {
+      "group_slug": "moi_nguoi_cho_minh_hoi_hoc_phi_cua_cac_truong_th",
+      "group_name": "Cộng đồng Phụ huynh K-12",
+      "pain_cluster": "Pillar 4: Học phí, Bán trú & Xe đưa đón",
+      "clean_posts_count": 1
+    },
+    {
+      "group_slug": "hoc_phi_lop_ban_tru_va_lop_khong_ban_tru_la_bao_",
+      "group_name": "Cộng đồng Phụ huynh K-12",
+      "pain_cluster": "Pillar 4: Học phí, Bán trú & Xe đưa đón",
+      "clean_posts_count": 1
+    },
+    {
+      "group_slug": "raz_kids_co_gi_hay_cho_be_4_va_7_tuoi_hoc_tieng_",
+      "group_name": "Cộng đồng Phụ huynh K-12",
+      "pain_cluster": "Pillar 3: Tiếng Anh Phonics, Song ngữ & Homeschool/Bằng Mỹ",
+      "clean_posts_count": 1
+    },
+    {
+      "group_slug": "z_razkid_kem_file_audio_phieu_bai_tap_ba_me_yes_",
+      "group_name": "Cộng đồng Phụ huynh K-12",
       "pain_cluster": "Pillar 3: Tiếng Anh Phonics, Song ngữ & Homeschool/Bằng Mỹ",
       "clean_posts_count": 1
     },
     {
       "group_slug": "da_em_chao_mng_a",
-      "group_name": "Dạ em chào mng ạ",
+      "group_name": "Cộng đồng Phụ huynh K-12",
       "pain_cluster": "Pillar 1: Chuyển cấp Lớp 6 CLC & THCS",
+      "clean_posts_count": 1
+    },
+    {
+      "group_slug": "con_mat_tap_trung_va_giam_chu_y_co_cach_chua_kho",
+      "group_name": "Cộng đồng Phụ huynh K-12",
+      "pain_cluster": "Pillar 1: Chuyển cấp Lớp 6 CLC & THCS",
+      "clean_posts_count": 1
+    },
+    {
+      "group_slug": "con_em_hoc_lop_6_ma_hoc_yeu_theo_sat_thi_con_bi_",
+      "group_name": "Cộng đồng Phụ huynh K-12",
+      "pain_cluster": "Pillar 1: Chuyển cấp Lớp 6 CLC & THCS",
+      "clean_posts_count": 1
+    },
+    {
+      "group_slug": "lam_sao_giup_con_lop_7_mat_tap_trung_luoi_hoc_va",
+      "group_name": "Cộng đồng Phụ huynh K-12",
+      "pain_cluster": "Pillar 5: Kỹ năng Tự học & Tâm lý Học đường",
+      "clean_posts_count": 1
+    },
+    {
+      "group_slug": "bang_hoc_phi_tieu_hoc_marie_curie_viet_hung_nam_",
+      "group_name": "Cộng đồng Phụ huynh K-12",
+      "pain_cluster": "Pillar 4: Học phí, Bán trú & Xe đưa đón",
+      "clean_posts_count": 1
+    },
+    {
+      "group_slug": "cac_mom_nao_co_con_hoc_o_vinschool_grand_park_ch",
+      "group_name": "Cộng đồng Phụ huynh K-12",
+      "pain_cluster": "Pillar 6: Review & Chọn trường K-12 Hà Nội",
       "clean_posts_count": 1
     },
     {
       "group_slug": "homeschooling_4_0_dong_hanh_cung_con",
       "group_name": "HOMESCHOOLING 4.0 (ĐỒNG HÀNH CÙNG CON)",
       "pain_cluster": "FOLLOWED_SYNCED",
-      "clean_posts_count": 1
-    },
-    {
-      "group_slug": "hoc_phi_lop_ban_tru_va_lop_khong_ban_tru_la_bao_",
-      "group_name": "Học phí lớp bán trú và lớp không bán trú là bao nhiêu?",
-      "pain_cluster": "Pillar 4: Học phí, Bán trú & Xe đưa đón",
       "clean_posts_count": 1
     },
     {
@@ -796,105 +844,9 @@ window.CDH_CLEAN_FORUM_DATA = {
       "clean_posts_count": 1
     },
     {
-      "group_slug": "is_acellus_academy_a_good_homeschooling_program_",
-      "group_name": "Is Acellus Academy a good homeschooling program and ...",
-      "pain_cluster": "Pillar 3: Tiếng Anh Phonics, Song ngữ & Homeschool/Bằng Mỹ",
-      "clean_posts_count": 1
-    },
-    {
-      "group_slug": "kullik_ilihakvik_parents_for_those_students_who_",
-      "group_name": "Kullik Ilihakvik Parents- For those students who have ...",
-      "pain_cluster": "Pillar 6: Review & Chọn trường K-12 Hà Nội",
-      "clean_posts_count": 1
-    },
-    {
-      "group_slug": "lam_sao_giup_con_lop_7_mat_tap_trung_luoi_hoc_va",
-      "group_name": "Làm sao giúp con lớp 7 mất tập trung, lười học và tự ti cải ...",
-      "pain_cluster": "Pillar 5: Kỹ năng Tự học & Tâm lý Học đường",
-      "clean_posts_count": 1
-    },
-    {
-      "group_slug": "lop_tien_tieu_hoc_cho_be_2021_tai_vinh_hung_ha_n",
-      "group_name": "Lớp tiền tiểu học cho bé 2021 tại Vĩnh Hưng, Hà Nội",
-      "pain_cluster": "Pillar 2: Tiền Tiểu học & Vào Lớp 1",
-      "clean_posts_count": 1
-    },
-    {
-      "group_slug": "lop_on_thi_mien_phi_vao_lop_1_truong_achimedes_n",
-      "group_name": "Lớp ôn thi miễn phí vào lớp 1 trường Achimedes, Nguyễn ...",
-      "pain_cluster": "Pillar 2: Tiền Tiểu học & Vào Lớp 1",
-      "clean_posts_count": 1
-    },
-    {
       "group_slug": "nuoi_day_con_tuoi_day_thi",
       "group_name": "NUÔI DẠY CON TUỔI DẬY THÌ",
       "pain_cluster": "FOLLOWED_SYNCED",
-      "clean_posts_count": 1
-    },
-    {
-      "group_slug": "one_time_payment_lifetime_access_downloadable_no",
-      "group_name": "One time payment 👉Lifetime Access 👉Downloadable 👉No ...",
-      "pain_cluster": "Pillar 3: Tiếng Anh Phonics, Song ngữ & Homeschool/Bằng Mỹ",
-      "clean_posts_count": 1
-    },
-    {
-      "group_slug": "raz_kids_co_gi_hay_cho_be_4_va_7_tuoi_hoc_tieng_",
-      "group_name": "Raz-Kids có gì hay cho bé 4 và 7 tuổi học tiếng Anh giọng ...",
-      "pain_cluster": "Pillar 3: Tiếng Anh Phonics, Song ngữ & Homeschool/Bằng Mỹ",
-      "clean_posts_count": 1
-    },
-    {
-      "group_slug": "trai_he_ban_tru_giam_40_hoc_phi_tai_20_co_so_o_h",
-      "group_name": "Trại hè bán trú giảm 40% học phí tại 20 cơ sở ở Hà Nội. ...",
-      "pain_cluster": "Pillar 4: Học phí, Bán trú & Xe đưa đón",
-      "clean_posts_count": 1
-    },
-    {
-      "group_slug": "tong_hop_diem_chuan_vao_lop_6_cac_truong_thcs_ha",
-      "group_name": "Tổng hợp điểm chuẩn vào lớp 6 các trường THCS Hà Nội ...",
-      "pain_cluster": "Pillar 1: Chuyển cấp Lớp 6 CLC & THCS",
-      "clean_posts_count": 1
-    },
-    {
-      "group_slug": "what_are_thoughts_on_acellus_for_online_homescho",
-      "group_name": "What are thoughts on Acellus for online homeschooling?",
-      "pain_cluster": "Pillar 3: Tiếng Anh Phonics, Song ngữ & Homeschool/Bằng Mỹ",
-      "clean_posts_count": 1
-    },
-    {
-      "group_slug": "z_razkid_kem_file_audio_phieu_bai_tap_ba_me_yes_",
-      "group_name": "Z (razkid) kèm file audio & phiếu bài tập . Ba mẹ \"yes\" Thầy ...",
-      "pain_cluster": "Pillar 3: Tiếng Anh Phonics, Song ngữ & Homeschool/Bằng Mỹ",
-      "clean_posts_count": 1
-    },
-    {
-      "group_slug": "moi_nguoi_cho_minh_hoi_hoc_phi_cua_cac_truong_th",
-      "group_name": "mọi người cho mình hỏi học phí của các trường THPT ...",
-      "pain_cluster": "Pillar 4: Học phí, Bán trú & Xe đưa đón",
-      "clean_posts_count": 1
-    },
-    {
-      "group_slug": "tam_quan_trong_cua_dau_thanh_trong_tap_doc_tien_",
-      "group_name": "tầm quan trọng của dấu thanh trong tập đọc tiền tiểu học",
-      "pain_cluster": "Pillar 2: Tiền Tiểu học & Vào Lớp 1",
-      "clean_posts_count": 1
-    },
-    {
-      "group_slug": "de_kiem_tra_danh_gia_nang_luc_hoc_sinh_lop_6_de_",
-      "group_name": "Đề kiểm tra đánh giá năng lực học sinh lớp 6 để ôn luyện",
-      "pain_cluster": "Pillar 1: Chuyển cấp Lớp 6 CLC & THCS",
-      "clean_posts_count": 1
-    },
-    {
-      "group_slug": "de_thi_va_dap_an_tieng_han_vao_lop_10_ha_noi_202",
-      "group_name": "Đề thi và đáp án tiếng Hàn vào lớp 10 Hà Nội 2026",
-      "pain_cluster": "Pillar 2: Tiền Tiểu học & Vào Lớp 1",
-      "clean_posts_count": 1
-    },
-    {
-      "group_slug": "group_612285726077622",
-      "group_name": "Ийм ном авна",
-      "pain_cluster": "Pillar 3: Tiếng Anh Phonics, Song ngữ & Homeschool/Bằng Mỹ",
       "clean_posts_count": 1
     }
   ],
@@ -6744,7 +6696,7 @@ window.CDH_CLEAN_FORUM_DATA = {
     {
       "post_sig": "55e2690e8063aa905b0519db",
       "group_slug": "on_thi_vao_lop_6_chat_luong_cao_ams_cau_giay_ntt",
-      "group_name": "Ôn thi vào lớp 6 chất lượng cao Ams, Cầu Giấy, NTT, THCS Ngoại Ngữ, ...",
+      "group_name": "Ôn thi vào lớp 6 chất lượng cao Ams, Cầu Giấy, NTT, THCS Ngoại Ngữ,",
       "group_url": "https://www.facebook.com/groups/onthivao6clc/?sorting_setting=CHRONOLOGICAL",
       "topic_id": "ON_THI_HOC_TAP",
       "topic_label": "Phương Pháp Học & Ôn Thi",
@@ -8854,7 +8806,7 @@ window.CDH_CLEAN_FORUM_DATA = {
     {
       "post_sig": "b51122ff157ebd94570a8ac5",
       "group_slug": "on_thi_vao_lop_6_chat_luong_cao_ams_cau_giay_ntt",
-      "group_name": "Ôn thi vào lớp 6 chất lượng cao Ams, Cầu Giấy, NTT, THCS Ngoại Ngữ, ...",
+      "group_name": "Ôn thi vào lớp 6 chất lượng cao Ams, Cầu Giấy, NTT, THCS Ngoại Ngữ,",
       "group_url": "https://www.facebook.com/groups/onthivao6clc/?sorting_setting=CHRONOLOGICAL",
       "topic_id": "ON_THI_HOC_TAP",
       "topic_label": "Phương Pháp Học & Ôn Thi",
@@ -12315,7 +12267,7 @@ window.CDH_CLEAN_FORUM_DATA = {
     {
       "post_sig": "51407cc46bb8d58aaaccf270",
       "group_slug": "on_thi_vao_lop_6_chat_luong_cao_ams_cau_giay_ntt",
-      "group_name": "Ôn thi vào lớp 6 chất lượng cao Ams, Cầu Giấy, NTT, THCS Ngoại Ngữ, ...",
+      "group_name": "Ôn thi vào lớp 6 chất lượng cao Ams, Cầu Giấy, NTT, THCS Ngoại Ngữ,",
       "group_url": "https://www.facebook.com/groups/onthivao6clc/?sorting_setting=CHRONOLOGICAL",
       "topic_id": "NGOAI_NGU_HOMESCHOOL",
       "topic_label": "Ngoại Ngữ, HSK & Homeschool",
@@ -13520,7 +13472,7 @@ window.CDH_CLEAN_FORUM_DATA = {
     {
       "post_sig": "f646a80751d1f61bb9362168",
       "group_slug": "on_thi_vao_lop_6_chat_luong_cao_ams_cau_giay_ntt",
-      "group_name": "Ôn thi vào lớp 6 chất lượng cao Ams, Cầu Giấy, NTT, THCS Ngoại Ngữ, ...",
+      "group_name": "Ôn thi vào lớp 6 chất lượng cao Ams, Cầu Giấy, NTT, THCS Ngoại Ngữ,",
       "group_url": "https://www.facebook.com/groups/onthivao6clc/?sorting_setting=CHRONOLOGICAL",
       "topic_id": "CHON_TRUONG_TUYEN_SINH",
       "topic_label": "Chọn Trường & Tuyển Sinh",
@@ -15399,7 +15351,7 @@ window.CDH_CLEAN_FORUM_DATA = {
     {
       "post_sig": "337738580edc19825b087f82",
       "group_slug": "on_thi_vao_lop_6_chat_luong_cao_ams_cau_giay_ntt",
-      "group_name": "Ôn thi vào lớp 6 chất lượng cao Ams, Cầu Giấy, NTT, THCS Ngoại Ngữ, ...",
+      "group_name": "Ôn thi vào lớp 6 chất lượng cao Ams, Cầu Giấy, NTT, THCS Ngoại Ngữ,",
       "group_url": "https://www.facebook.com/groups/onthivao6clc/?sorting_setting=CHRONOLOGICAL",
       "topic_id": "NGOAI_NGU_HOMESCHOOL",
       "topic_label": "Ngoại Ngữ, HSK & Homeschool",
@@ -17698,7 +17650,7 @@ window.CDH_CLEAN_FORUM_DATA = {
     {
       "post_sig": "243c96abedc7d235713d6f17",
       "group_slug": "on_thi_vao_lop_6_chat_luong_cao_ams_cau_giay_ntt",
-      "group_name": "Ôn thi vào lớp 6 chất lượng cao Ams, Cầu Giấy, NTT, THCS Ngoại Ngữ, ...",
+      "group_name": "Ôn thi vào lớp 6 chất lượng cao Ams, Cầu Giấy, NTT, THCS Ngoại Ngữ,",
       "group_url": "https://www.facebook.com/groups/onthivao6clc/?sorting_setting=CHRONOLOGICAL",
       "topic_id": "ON_THI_HOC_TAP",
       "topic_label": "Phương Pháp Học & Ôn Thi",
@@ -18430,7 +18382,7 @@ window.CDH_CLEAN_FORUM_DATA = {
     {
       "post_sig": "b2ebb8d9e9268305679a16ff",
       "group_slug": "on_thi_vao_lop_6_chat_luong_cao_ams_cau_giay_ntt",
-      "group_name": "Ôn thi vào lớp 6 chất lượng cao Ams, Cầu Giấy, NTT, THCS Ngoại Ngữ, ...",
+      "group_name": "Ôn thi vào lớp 6 chất lượng cao Ams, Cầu Giấy, NTT, THCS Ngoại Ngữ,",
       "group_url": "https://www.facebook.com/groups/onthivao6clc/?sorting_setting=CHRONOLOGICAL",
       "topic_id": "CHON_TRUONG_TUYEN_SINH",
       "topic_label": "Chọn Trường & Tuyển Sinh",
@@ -19506,7 +19458,7 @@ window.CDH_CLEAN_FORUM_DATA = {
     {
       "post_sig": "b8f6c5fc7270de8887d115ef",
       "group_slug": "on_thi_vao_lop_6_chat_luong_cao_ams_cau_giay_ntt",
-      "group_name": "Ôn thi vào lớp 6 chất lượng cao Ams, Cầu Giấy, NTT, THCS Ngoại Ngữ, ...",
+      "group_name": "Ôn thi vào lớp 6 chất lượng cao Ams, Cầu Giấy, NTT, THCS Ngoại Ngữ,",
       "group_url": "https://www.facebook.com/groups/onthivao6clc/?sorting_setting=CHRONOLOGICAL",
       "topic_id": "NGOAI_NGU_HOMESCHOOL",
       "topic_label": "Ngoại Ngữ, HSK & Homeschool",
@@ -21316,7 +21268,7 @@ window.CDH_CLEAN_FORUM_DATA = {
     {
       "post_sig": "456df9d7a20d5b751e78adec",
       "group_slug": "on_thi_vao_lop_6_chat_luong_cao_ams_cau_giay_ntt",
-      "group_name": "Ôn thi vào lớp 6 chất lượng cao Ams, Cầu Giấy, NTT, THCS Ngoại Ngữ, ...",
+      "group_name": "Ôn thi vào lớp 6 chất lượng cao Ams, Cầu Giấy, NTT, THCS Ngoại Ngữ,",
       "group_url": "https://www.facebook.com/groups/onthivao6clc/?sorting_setting=CHRONOLOGICAL",
       "topic_id": "ON_THI_HOC_TAP",
       "topic_label": "Phương Pháp Học & Ôn Thi",
@@ -21505,18 +21457,18 @@ window.CDH_CLEAN_FORUM_DATA = {
     {
       "post_sig": "4d2df6c9c968121ac9d79208",
       "group_slug": "hoi_phu_huynh_tieu_hoc_nguyen_sieu",
-      "group_name": "Chưa đọcHội Phụ Huynh Tiểu Học Nguyễn Siêu: \"Sắp thi cuối kỳ I rồi, nhà các mẹ cho con ôn đều mỗi tối hay để gần ngày th",
+      "group_name": "Hội Phụ Huynh Tiểu Học Nguyễn Siêu",
       "group_url": "https://www.facebook.com/groups/538862983130110/?sorting_setting=CHRONOLOGICAL",
-      "topic_id": "ON_THI_HOC_TAP",
-      "topic_label": "Phương Pháp Học & Ôn Thi",
+      "topic_id": "TAM_LY_GIA_DINH",
+      "topic_label": "Tâm Lý, Kỷ Luật & Góc Học Tập",
       "tags": [
-        {
-          "slug": "on-thi-kiem-tra",
-          "label": "#ÔnThiCuốiKỳ"
-        },
         {
           "slug": "goc-hoi-dap-thuc-chien",
           "label": "#HỏiĐápKinhNghiệm"
+        },
+        {
+          "slug": "tam-ly-cam-xuc",
+          "label": "#TâmLý & CảmXúc"
         }
       ],
       "author": "Thành viên nhóm",
@@ -21760,7 +21712,7 @@ window.CDH_CLEAN_FORUM_DATA = {
     {
       "post_sig": "25b5972b38acc1a4f86d876c",
       "group_slug": "hoi_phu_huynh_tieu_hoc_nguyen_sieu",
-      "group_name": "Chưa đọcHội Phụ Huynh Tiểu Học Nguyễn Siêu: \"Sắp thi cuối kỳ I rồi, nhà các mẹ cho con ôn đều mỗi tối hay để gần ngày th",
+      "group_name": "Hội Phụ Huynh Tiểu Học Nguyễn Siêu",
       "group_url": "https://www.facebook.com/groups/538862983130110/?sorting_setting=CHRONOLOGICAL",
       "topic_id": "ON_THI_HOC_TAP",
       "topic_label": "Phương Pháp Học & Ôn Thi",
@@ -21772,10 +21724,6 @@ window.CDH_CLEAN_FORUM_DATA = {
         {
           "slug": "toan-tu-duy-olympic",
           "label": "#ToánTưDuy & KỳThi"
-        },
-        {
-          "slug": "on-thi-kiem-tra",
-          "label": "#ÔnThiCuốiKỳ"
         },
         {
           "slug": "goc-hoi-dap-thuc-chien",
@@ -24608,7 +24556,7 @@ window.CDH_CLEAN_FORUM_DATA = {
     {
       "post_sig": "778963a083477a916d40ebfd",
       "group_slug": "on_thi_vao_lop_6_chat_luong_cao_ams_cau_giay_ntt",
-      "group_name": "Ôn thi vào lớp 6 chất lượng cao Ams, Cầu Giấy, NTT, THCS Ngoại Ngữ, ...",
+      "group_name": "Ôn thi vào lớp 6 chất lượng cao Ams, Cầu Giấy, NTT, THCS Ngoại Ngữ,",
       "group_url": "https://www.facebook.com/groups/onthivao6clc/?sorting_setting=CHRONOLOGICAL",
       "topic_id": "ON_THI_HOC_TAP",
       "topic_label": "Phương Pháp Học & Ôn Thi",
@@ -25176,15 +25124,11 @@ window.CDH_CLEAN_FORUM_DATA = {
     {
       "post_sig": "2a158508419bc326ce0cb5a3",
       "group_slug": "hoi_phu_huynh_tieu_hoc_nguyen_sieu",
-      "group_name": "Chưa đọcHội Phụ Huynh Tiểu Học Nguyễn Siêu: \"Sắp thi cuối kỳ I rồi, nhà các mẹ cho con ôn đều mỗi tối hay để gần ngày th",
+      "group_name": "Hội Phụ Huynh Tiểu Học Nguyễn Siêu",
       "group_url": "https://www.facebook.com/groups/538862983130110/?sorting_setting=CHRONOLOGICAL",
       "topic_id": "NGOAI_NGU_HOMESCHOOL",
       "topic_label": "Ngoại Ngữ, HSK & Homeschool",
       "tags": [
-        {
-          "slug": "goc-hoi-dap-thuc-chien",
-          "label": "#HỏiĐápKinhNghiệm"
-        },
         {
           "slug": "tien-tieu-hoc-2020-2021",
           "label": "#HànhTrangLớp1"
@@ -25194,8 +25138,8 @@ window.CDH_CLEAN_FORUM_DATA = {
           "label": "#TiếngAnhTrẻEm"
         },
         {
-          "slug": "on-thi-kiem-tra",
-          "label": "#ÔnThiCuốiKỳ"
+          "slug": "goc-hoi-dap-thuc-chien",
+          "label": "#HỏiĐápKinhNghiệm"
         }
       ],
       "author": "Thành viên nhóm",
@@ -26186,7 +26130,7 @@ window.CDH_CLEAN_FORUM_DATA = {
     {
       "post_sig": "6aeefb33fd9d0331ea044a91",
       "group_slug": "on_thi_vao_lop_6_chat_luong_cao_ams_cau_giay_ntt",
-      "group_name": "Ôn thi vào lớp 6 chất lượng cao Ams, Cầu Giấy, NTT, THCS Ngoại Ngữ, ...",
+      "group_name": "Ôn thi vào lớp 6 chất lượng cao Ams, Cầu Giấy, NTT, THCS Ngoại Ngữ,",
       "group_url": "https://www.facebook.com/groups/onthivao6clc/?sorting_setting=CHRONOLOGICAL",
       "topic_id": "NGOAI_NGU_HOMESCHOOL",
       "topic_label": "Ngoại Ngữ, HSK & Homeschool",
@@ -28960,10 +28904,10 @@ window.CDH_CLEAN_FORUM_DATA = {
     {
       "post_sig": "3059cebbc5a10ca10efa74e5",
       "group_slug": "hoi_phu_huynh_tieu_hoc_nguyen_sieu",
-      "group_name": "Chưa đọcHội Phụ Huynh Tiểu Học Nguyễn Siêu: \"Sắp thi cuối kỳ I rồi, nhà các mẹ cho con ôn đều mỗi tối hay để gần ngày th",
+      "group_name": "Hội Phụ Huynh Tiểu Học Nguyễn Siêu",
       "group_url": "https://www.facebook.com/groups/538862983130110/?sorting_setting=CHRONOLOGICAL",
-      "topic_id": "ON_THI_HOC_TAP",
-      "topic_label": "Phương Pháp Học & Ôn Thi",
+      "topic_id": "TIEN_TIEU_HOC_LOP_1",
+      "topic_label": "Tiền Tiểu Học & Vào Lớp 1",
       "tags": [
         {
           "slug": "tien-tieu-hoc-2020-2021",
@@ -28976,10 +28920,6 @@ window.CDH_CLEAN_FORUM_DATA = {
         {
           "slug": "goc-hoi-dap-thuc-chien",
           "label": "#HỏiĐápKinhNghiệm"
-        },
-        {
-          "slug": "on-thi-kiem-tra",
-          "label": "#ÔnThiCuốiKỳ"
         }
       ],
       "author": "Thành viên nhóm",
@@ -29242,7 +29182,7 @@ window.CDH_CLEAN_FORUM_DATA = {
     {
       "post_sig": "85b9567715ac4d451caacd90",
       "group_slug": "on_thi_vao_lop_6_chat_luong_cao_ams_cau_giay_ntt",
-      "group_name": "Ôn thi vào lớp 6 chất lượng cao Ams, Cầu Giấy, NTT, THCS Ngoại Ngữ, ...",
+      "group_name": "Ôn thi vào lớp 6 chất lượng cao Ams, Cầu Giấy, NTT, THCS Ngoại Ngữ,",
       "group_url": "https://www.facebook.com/groups/onthivao6clc/?sorting_setting=CHRONOLOGICAL",
       "topic_id": "CHON_TRUONG_TUYEN_SINH",
       "topic_label": "Chọn Trường & Tuyển Sinh",
@@ -29289,7 +29229,7 @@ window.CDH_CLEAN_FORUM_DATA = {
     {
       "post_sig": "f64bb98808cf40bf4d447dbe",
       "group_slug": "on_thi_vao_lop_6_chat_luong_cao_ams_cau_giay_ntt",
-      "group_name": "Ôn thi vào lớp 6 chất lượng cao Ams, Cầu Giấy, NTT, THCS Ngoại Ngữ, ...",
+      "group_name": "Ôn thi vào lớp 6 chất lượng cao Ams, Cầu Giấy, NTT, THCS Ngoại Ngữ,",
       "group_url": "https://www.facebook.com/groups/onthivao6clc/?sorting_setting=CHRONOLOGICAL",
       "topic_id": "ON_THI_HOC_TAP",
       "topic_label": "Phương Pháp Học & Ôn Thi",
@@ -29336,7 +29276,7 @@ window.CDH_CLEAN_FORUM_DATA = {
     {
       "post_sig": "468ba777bcf0737699706814",
       "group_slug": "on_thi_vao_lop_6_chat_luong_cao_ams_cau_giay_ntt",
-      "group_name": "Ôn thi vào lớp 6 chất lượng cao Ams, Cầu Giấy, NTT, THCS Ngoại Ngữ, ...",
+      "group_name": "Ôn thi vào lớp 6 chất lượng cao Ams, Cầu Giấy, NTT, THCS Ngoại Ngữ,",
       "group_url": "https://www.facebook.com/groups/onthivao6clc/?sorting_setting=CHRONOLOGICAL",
       "topic_id": "CHON_TRUONG_TUYEN_SINH",
       "topic_label": "Chọn Trường & Tuyển Sinh",
@@ -29610,7 +29550,7 @@ window.CDH_CLEAN_FORUM_DATA = {
     {
       "post_sig": "1b3aaf718498668a146cbb3e",
       "group_slug": "on_thi_vao_lop_6_chat_luong_cao_ams_cau_giay_ntt",
-      "group_name": "Ôn thi vào lớp 6 chất lượng cao Ams, Cầu Giấy, NTT, THCS Ngoại Ngữ, ...",
+      "group_name": "Ôn thi vào lớp 6 chất lượng cao Ams, Cầu Giấy, NTT, THCS Ngoại Ngữ,",
       "group_url": "https://www.facebook.com/groups/onthivao6clc/?sorting_setting=CHRONOLOGICAL",
       "topic_id": "ON_THI_HOC_TAP",
       "topic_label": "Phương Pháp Học & Ôn Thi",
@@ -30702,7 +30642,7 @@ window.CDH_CLEAN_FORUM_DATA = {
     {
       "post_sig": "308ecf91c36dde7dfe7873ac",
       "group_slug": "on_thi_vao_lop_6_chat_luong_cao_ams_cau_giay_ntt",
-      "group_name": "Ôn thi vào lớp 6 chất lượng cao Ams, Cầu Giấy, NTT, THCS Ngoại Ngữ, ...",
+      "group_name": "Ôn thi vào lớp 6 chất lượng cao Ams, Cầu Giấy, NTT, THCS Ngoại Ngữ,",
       "group_url": "https://www.facebook.com/groups/onthivao6clc/?sorting_setting=CHRONOLOGICAL",
       "topic_id": "ON_THI_HOC_TAP",
       "topic_label": "Phương Pháp Học & Ôn Thi",
@@ -30753,7 +30693,7 @@ window.CDH_CLEAN_FORUM_DATA = {
     {
       "post_sig": "b65ffb7a09dba167347b9680",
       "group_slug": "on_thi_vao_lop_6_chat_luong_cao_ams_cau_giay_ntt",
-      "group_name": "Ôn thi vào lớp 6 chất lượng cao Ams, Cầu Giấy, NTT, THCS Ngoại Ngữ, ...",
+      "group_name": "Ôn thi vào lớp 6 chất lượng cao Ams, Cầu Giấy, NTT, THCS Ngoại Ngữ,",
       "group_url": "https://www.facebook.com/groups/onthivao6clc/?sorting_setting=CHRONOLOGICAL",
       "topic_id": "ON_THI_HOC_TAP",
       "topic_label": "Phương Pháp Học & Ôn Thi",
@@ -30855,7 +30795,7 @@ window.CDH_CLEAN_FORUM_DATA = {
     {
       "post_sig": "99a6696b7970d4e057e2ce77",
       "group_slug": "on_thi_vao_lop_6_chat_luong_cao_ams_cau_giay_ntt",
-      "group_name": "Ôn thi vào lớp 6 chất lượng cao Ams, Cầu Giấy, NTT, THCS Ngoại Ngữ, ...",
+      "group_name": "Ôn thi vào lớp 6 chất lượng cao Ams, Cầu Giấy, NTT, THCS Ngoại Ngữ,",
       "group_url": "https://www.facebook.com/groups/onthivao6clc/?sorting_setting=CHRONOLOGICAL",
       "topic_id": "NGOAI_NGU_HOMESCHOOL",
       "topic_label": "Ngoại Ngữ, HSK & Homeschool",
@@ -30906,7 +30846,7 @@ window.CDH_CLEAN_FORUM_DATA = {
     {
       "post_sig": "11fe2f3899979def6d2b5ae3",
       "group_slug": "on_thi_vao_lop_6_chat_luong_cao_ams_cau_giay_ntt",
-      "group_name": "Ôn thi vào lớp 6 chất lượng cao Ams, Cầu Giấy, NTT, THCS Ngoại Ngữ, ...",
+      "group_name": "Ôn thi vào lớp 6 chất lượng cao Ams, Cầu Giấy, NTT, THCS Ngoại Ngữ,",
       "group_url": "https://www.facebook.com/groups/onthivao6clc/?sorting_setting=CHRONOLOGICAL",
       "topic_id": "ON_THI_HOC_TAP",
       "topic_label": "Phương Pháp Học & Ôn Thi",
@@ -30957,7 +30897,7 @@ window.CDH_CLEAN_FORUM_DATA = {
     {
       "post_sig": "0b20729d5e9c594ef9576d7c",
       "group_slug": "on_thi_vao_lop_6_chat_luong_cao_ams_cau_giay_ntt",
-      "group_name": "Ôn thi vào lớp 6 chất lượng cao Ams, Cầu Giấy, NTT, THCS Ngoại Ngữ, ...",
+      "group_name": "Ôn thi vào lớp 6 chất lượng cao Ams, Cầu Giấy, NTT, THCS Ngoại Ngữ,",
       "group_url": "https://www.facebook.com/groups/onthivao6clc/?sorting_setting=CHRONOLOGICAL",
       "topic_id": "ON_THI_HOC_TAP",
       "topic_label": "Phương Pháp Học & Ôn Thi",
@@ -31493,7 +31433,7 @@ window.CDH_CLEAN_FORUM_DATA = {
     {
       "post_sig": "de74c1d071fff533f1a15bd9",
       "group_slug": "on_thi_vao_lop_6_chat_luong_cao_ams_cau_giay_ntt",
-      "group_name": "Ôn thi vào lớp 6 chất lượng cao Ams, Cầu Giấy, NTT, THCS Ngoại Ngữ, ...",
+      "group_name": "Ôn thi vào lớp 6 chất lượng cao Ams, Cầu Giấy, NTT, THCS Ngoại Ngữ,",
       "group_url": "https://www.facebook.com/groups/onthivao6clc/?sorting_setting=CHRONOLOGICAL",
       "topic_id": "NGOAI_NGU_HOMESCHOOL",
       "topic_label": "Ngoại Ngữ, HSK & Homeschool",
@@ -32037,7 +31977,7 @@ window.CDH_CLEAN_FORUM_DATA = {
     {
       "post_sig": "b851afa4c73e376ef223b517",
       "group_slug": "on_thi_vao_lop_6_chat_luong_cao_ams_cau_giay_ntt",
-      "group_name": "Ôn thi vào lớp 6 chất lượng cao Ams, Cầu Giấy, NTT, THCS Ngoại Ngữ, ...",
+      "group_name": "Ôn thi vào lớp 6 chất lượng cao Ams, Cầu Giấy, NTT, THCS Ngoại Ngữ,",
       "group_url": "https://www.facebook.com/groups/onthivao6clc/?sorting_setting=CHRONOLOGICAL",
       "topic_id": "ON_THI_HOC_TAP",
       "topic_label": "Phương Pháp Học & Ôn Thi",
@@ -36339,22 +36279,18 @@ window.CDH_CLEAN_FORUM_DATA = {
     {
       "post_sig": "18cbdff13f680469563fa328",
       "group_slug": "hoi_phu_huynh_tieu_hoc_nguyen_sieu",
-      "group_name": "Chưa đọcHội Phụ Huynh Tiểu Học Nguyễn Siêu: \"Sắp thi cuối kỳ I rồi, nhà các mẹ cho con ôn đều mỗi tối hay để gần ngày th",
+      "group_name": "Hội Phụ Huynh Tiểu Học Nguyễn Siêu",
       "group_url": "https://www.facebook.com/groups/538862983130110/?sorting_setting=CHRONOLOGICAL",
       "topic_id": "CHON_TRUONG_TUYEN_SINH",
       "topic_label": "Chọn Trường & Tuyển Sinh",
       "tags": [
         {
-          "slug": "goc-hoi-dap-thuc-chien",
-          "label": "#HỏiĐápKinhNghiệm"
-        },
-        {
           "slug": "hoc-phi-tai-chinh",
           "label": "#HọcPhíChiPhí"
         },
         {
-          "slug": "on-thi-kiem-tra",
-          "label": "#ÔnThiCuốiKỳ"
+          "slug": "goc-hoi-dap-thuc-chien",
+          "label": "#HỏiĐápKinhNghiệm"
         }
       ],
       "author": "Thành viên nhóm",
@@ -36750,7 +36686,7 @@ window.CDH_CLEAN_FORUM_DATA = {
     {
       "post_sig": "a9467a2622ac7aff112de855",
       "group_slug": "on_thi_vao_lop_6_chat_luong_cao_ams_cau_giay_ntt",
-      "group_name": "Ôn thi vào lớp 6 chất lượng cao Ams, Cầu Giấy, NTT, THCS Ngoại Ngữ, ...",
+      "group_name": "Ôn thi vào lớp 6 chất lượng cao Ams, Cầu Giấy, NTT, THCS Ngoại Ngữ,",
       "group_url": "https://www.facebook.com/groups/onthivao6clc/?sorting_setting=CHRONOLOGICAL",
       "topic_id": "NGOAI_NGU_HOMESCHOOL",
       "topic_label": "Ngoại Ngữ, HSK & Homeschool",
@@ -36844,7 +36780,7 @@ window.CDH_CLEAN_FORUM_DATA = {
     {
       "post_sig": "08b32a5eb0396484bd8fe0b3",
       "group_slug": "on_thi_vao_lop_6_chat_luong_cao_ams_cau_giay_ntt",
-      "group_name": "Ôn thi vào lớp 6 chất lượng cao Ams, Cầu Giấy, NTT, THCS Ngoại Ngữ, ...",
+      "group_name": "Ôn thi vào lớp 6 chất lượng cao Ams, Cầu Giấy, NTT, THCS Ngoại Ngữ,",
       "group_url": "https://www.facebook.com/groups/onthivao6clc/?sorting_setting=CHRONOLOGICAL",
       "topic_id": "ON_THI_HOC_TAP",
       "topic_label": "Phương Pháp Học & Ôn Thi",
@@ -36981,7 +36917,7 @@ window.CDH_CLEAN_FORUM_DATA = {
     {
       "post_sig": "ef33c0587a66691227ce8f69",
       "group_slug": "on_thi_vao_lop_6_chat_luong_cao_ams_cau_giay_ntt",
-      "group_name": "Ôn thi vào lớp 6 chất lượng cao Ams, Cầu Giấy, NTT, THCS Ngoại Ngữ, ...",
+      "group_name": "Ôn thi vào lớp 6 chất lượng cao Ams, Cầu Giấy, NTT, THCS Ngoại Ngữ,",
       "group_url": "https://www.facebook.com/groups/onthivao6clc/?sorting_setting=CHRONOLOGICAL",
       "topic_id": "CHON_TRUONG_TUYEN_SINH",
       "topic_label": "Chọn Trường & Tuyển Sinh",
@@ -37028,7 +36964,7 @@ window.CDH_CLEAN_FORUM_DATA = {
     {
       "post_sig": "2fc94415974483cf944fb728",
       "group_slug": "on_thi_vao_lop_6_chat_luong_cao_ams_cau_giay_ntt",
-      "group_name": "Ôn thi vào lớp 6 chất lượng cao Ams, Cầu Giấy, NTT, THCS Ngoại Ngữ, ...",
+      "group_name": "Ôn thi vào lớp 6 chất lượng cao Ams, Cầu Giấy, NTT, THCS Ngoại Ngữ,",
       "group_url": "https://www.facebook.com/groups/onthivao6clc/?sorting_setting=CHRONOLOGICAL",
       "topic_id": "CHON_TRUONG_TUYEN_SINH",
       "topic_label": "Chọn Trường & Tuyển Sinh",
@@ -37251,7 +37187,7 @@ window.CDH_CLEAN_FORUM_DATA = {
     {
       "post_sig": "d9ad2ca70f5ecb806b63ec3b",
       "group_slug": "on_thi_vao_lop_6_chat_luong_cao_ams_cau_giay_ntt",
-      "group_name": "Ôn thi vào lớp 6 chất lượng cao Ams, Cầu Giấy, NTT, THCS Ngoại Ngữ, ...",
+      "group_name": "Ôn thi vào lớp 6 chất lượng cao Ams, Cầu Giấy, NTT, THCS Ngoại Ngữ,",
       "group_url": "https://www.facebook.com/groups/onthivao6clc/?sorting_setting=CHRONOLOGICAL",
       "topic_id": "ON_THI_HOC_TAP",
       "topic_label": "Phương Pháp Học & Ôn Thi",
@@ -37955,7 +37891,7 @@ window.CDH_CLEAN_FORUM_DATA = {
     {
       "post_sig": "cb2e54cac193d01adc5aa0a6",
       "group_slug": "on_thi_vao_lop_6_chat_luong_cao_ams_cau_giay_ntt",
-      "group_name": "Ôn thi vào lớp 6 chất lượng cao Ams, Cầu Giấy, NTT, THCS Ngoại Ngữ, ...",
+      "group_name": "Ôn thi vào lớp 6 chất lượng cao Ams, Cầu Giấy, NTT, THCS Ngoại Ngữ,",
       "group_url": "https://www.facebook.com/groups/onthivao6clc/?sorting_setting=CHRONOLOGICAL",
       "topic_id": "ON_THI_HOC_TAP",
       "topic_label": "Phương Pháp Học & Ôn Thi",
@@ -38143,7 +38079,7 @@ window.CDH_CLEAN_FORUM_DATA = {
     {
       "post_sig": "4f21aaaf2d0f2f5e3373e444",
       "group_slug": "on_thi_vao_lop_6_chat_luong_cao_ams_cau_giay_ntt",
-      "group_name": "Ôn thi vào lớp 6 chất lượng cao Ams, Cầu Giấy, NTT, THCS Ngoại Ngữ, ...",
+      "group_name": "Ôn thi vào lớp 6 chất lượng cao Ams, Cầu Giấy, NTT, THCS Ngoại Ngữ,",
       "group_url": "https://www.facebook.com/groups/onthivao6clc/?sorting_setting=CHRONOLOGICAL",
       "topic_id": "ON_THI_HOC_TAP",
       "topic_label": "Phương Pháp Học & Ôn Thi",
@@ -38366,7 +38302,7 @@ window.CDH_CLEAN_FORUM_DATA = {
     {
       "post_sig": "9d0192589f9f9fb44ad180b5",
       "group_slug": "on_thi_vao_lop_6_chat_luong_cao_ams_cau_giay_ntt",
-      "group_name": "Ôn thi vào lớp 6 chất lượng cao Ams, Cầu Giấy, NTT, THCS Ngoại Ngữ, ...",
+      "group_name": "Ôn thi vào lớp 6 chất lượng cao Ams, Cầu Giấy, NTT, THCS Ngoại Ngữ,",
       "group_url": "https://www.facebook.com/groups/onthivao6clc/?sorting_setting=CHRONOLOGICAL",
       "topic_id": "ON_THI_HOC_TAP",
       "topic_label": "Phương Pháp Học & Ôn Thi",
@@ -38413,7 +38349,7 @@ window.CDH_CLEAN_FORUM_DATA = {
     {
       "post_sig": "6509ae42fc980fbdb5954417",
       "group_slug": "on_thi_vao_lop_6_chat_luong_cao_ams_cau_giay_ntt",
-      "group_name": "Ôn thi vào lớp 6 chất lượng cao Ams, Cầu Giấy, NTT, THCS Ngoại Ngữ, ...",
+      "group_name": "Ôn thi vào lớp 6 chất lượng cao Ams, Cầu Giấy, NTT, THCS Ngoại Ngữ,",
       "group_url": "https://www.facebook.com/groups/onthivao6clc/?sorting_setting=CHRONOLOGICAL",
       "topic_id": "ON_THI_HOC_TAP",
       "topic_label": "Phương Pháp Học & Ôn Thi",
@@ -38460,7 +38396,7 @@ window.CDH_CLEAN_FORUM_DATA = {
     {
       "post_sig": "4c2b11ae66018d20a1e8c462",
       "group_slug": "on_thi_vao_lop_6_chat_luong_cao_ams_cau_giay_ntt",
-      "group_name": "Ôn thi vào lớp 6 chất lượng cao Ams, Cầu Giấy, NTT, THCS Ngoại Ngữ, ...",
+      "group_name": "Ôn thi vào lớp 6 chất lượng cao Ams, Cầu Giấy, NTT, THCS Ngoại Ngữ,",
       "group_url": "https://www.facebook.com/groups/onthivao6clc/?sorting_setting=CHRONOLOGICAL",
       "topic_id": "ON_THI_HOC_TAP",
       "topic_label": "Phương Pháp Học & Ôn Thi",
@@ -38644,7 +38580,7 @@ window.CDH_CLEAN_FORUM_DATA = {
     {
       "post_sig": "0f07916cfe6c40d9dc8306c6",
       "group_slug": "on_thi_vao_lop_6_chat_luong_cao_ams_cau_giay_ntt",
-      "group_name": "Ôn thi vào lớp 6 chất lượng cao Ams, Cầu Giấy, NTT, THCS Ngoại Ngữ, ...",
+      "group_name": "Ôn thi vào lớp 6 chất lượng cao Ams, Cầu Giấy, NTT, THCS Ngoại Ngữ,",
       "group_url": "https://www.facebook.com/groups/onthivao6clc/?sorting_setting=CHRONOLOGICAL",
       "topic_id": "ON_THI_HOC_TAP",
       "topic_label": "Phương Pháp Học & Ôn Thi",
@@ -38906,7 +38842,7 @@ window.CDH_CLEAN_FORUM_DATA = {
     {
       "post_sig": "a2e110f0f19131aa8f6103e3",
       "group_slug": "on_thi_vao_lop_6_chat_luong_cao_ams_cau_giay_ntt",
-      "group_name": "Ôn thi vào lớp 6 chất lượng cao Ams, Cầu Giấy, NTT, THCS Ngoại Ngữ, ...",
+      "group_name": "Ôn thi vào lớp 6 chất lượng cao Ams, Cầu Giấy, NTT, THCS Ngoại Ngữ,",
       "group_url": "https://www.facebook.com/groups/onthivao6clc/?sorting_setting=CHRONOLOGICAL",
       "topic_id": "ON_THI_HOC_TAP",
       "topic_label": "Phương Pháp Học & Ôn Thi",
@@ -39082,7 +39018,7 @@ window.CDH_CLEAN_FORUM_DATA = {
     {
       "post_sig": "0c16488df17c2493fb27c73d",
       "group_slug": "on_thi_vao_lop_6_chat_luong_cao_ams_cau_giay_ntt",
-      "group_name": "Ôn thi vào lớp 6 chất lượng cao Ams, Cầu Giấy, NTT, THCS Ngoại Ngữ, ...",
+      "group_name": "Ôn thi vào lớp 6 chất lượng cao Ams, Cầu Giấy, NTT, THCS Ngoại Ngữ,",
       "group_url": "https://www.facebook.com/groups/onthivao6clc/?sorting_setting=CHRONOLOGICAL",
       "topic_id": "ON_THI_HOC_TAP",
       "topic_label": "Phương Pháp Học & Ôn Thi",
@@ -40033,7 +39969,7 @@ window.CDH_CLEAN_FORUM_DATA = {
     {
       "post_sig": "3b63e06c3e380e5de4c746c8",
       "group_slug": "review_cac_truong_mam_non_tieu_hoc_thcs_thpt_tro",
-      "group_name": "Review các trường Mầm Non - Tiểu Học - THCS - THPT trong địa bàn Hà Nội.",
+      "group_name": "Review các trường Mầm Non - Tiểu Học - THCS - THPT trong địa bàn Hà Nội",
       "group_url": "https://www.facebook.com/groups/reviewmamnonvaliencap/?sorting_setting=CHRONOLOGICAL",
       "topic_id": "TAM_LY_GIA_DINH",
       "topic_label": "Tâm Lý, Kỷ Luật & Góc Học Tập",
@@ -40105,7 +40041,7 @@ window.CDH_CLEAN_FORUM_DATA = {
     {
       "post_sig": "73098bc6e9ed175eed3ec9e0",
       "group_slug": "on_thi_vao_lop_6_chat_luong_cao_ams_cau_giay_ntt",
-      "group_name": "Ôn thi vào lớp 6 chất lượng cao Ams, Cầu Giấy, NTT, THCS Ngoại Ngữ, ...",
+      "group_name": "Ôn thi vào lớp 6 chất lượng cao Ams, Cầu Giấy, NTT, THCS Ngoại Ngữ,",
       "group_url": "https://www.facebook.com/groups/onthivao6clc/?sorting_setting=CHRONOLOGICAL",
       "topic_id": "ON_THI_HOC_TAP",
       "topic_label": "Phương Pháp Học & Ôn Thi",
@@ -40521,22 +40457,18 @@ window.CDH_CLEAN_FORUM_DATA = {
     {
       "post_sig": "bb426ac337580863670c1b5a",
       "group_slug": "hoi_phu_huynh_tieu_hoc_nguyen_sieu",
-      "group_name": "Chưa đọcHội Phụ Huynh Tiểu Học Nguyễn Siêu: \"Sắp thi cuối kỳ I rồi, nhà các mẹ cho con ôn đều mỗi tối hay để gần ngày th",
+      "group_name": "Hội Phụ Huynh Tiểu Học Nguyễn Siêu",
       "group_url": "https://www.facebook.com/groups/538862983130110/?sorting_setting=CHRONOLOGICAL",
-      "topic_id": "ON_THI_HOC_TAP",
-      "topic_label": "Phương Pháp Học & Ôn Thi",
+      "topic_id": "TIEN_TIEU_HOC_LOP_1",
+      "topic_label": "Tiền Tiểu Học & Vào Lớp 1",
       "tags": [
-        {
-          "slug": "goc-hoi-dap-thuc-chien",
-          "label": "#HỏiĐápKinhNghiệm"
-        },
         {
           "slug": "tien-tieu-hoc-2020-2021",
           "label": "#HànhTrangLớp1"
         },
         {
-          "slug": "on-thi-kiem-tra",
-          "label": "#ÔnThiCuốiKỳ"
+          "slug": "goc-hoi-dap-thuc-chien",
+          "label": "#HỏiĐápKinhNghiệm"
         }
       ],
       "author": "Nga Tran",
@@ -41209,7 +41141,7 @@ window.CDH_CLEAN_FORUM_DATA = {
     {
       "post_sig": "8bdf720f3e09b23a9ffc5ee1",
       "group_slug": "on_thi_vao_lop_6_chat_luong_cao_ams_cau_giay_ntt",
-      "group_name": "Ôn thi vào lớp 6 chất lượng cao Ams, Cầu Giấy, NTT, THCS Ngoại Ngữ, ...",
+      "group_name": "Ôn thi vào lớp 6 chất lượng cao Ams, Cầu Giấy, NTT, THCS Ngoại Ngữ,",
       "group_url": "https://www.facebook.com/groups/onthivao6clc/?sorting_setting=CHRONOLOGICAL",
       "topic_id": "ON_THI_HOC_TAP",
       "topic_label": "Phương Pháp Học & Ôn Thi",
@@ -42557,7 +42489,7 @@ window.CDH_CLEAN_FORUM_DATA = {
     {
       "post_sig": "ad97d3b5dee582fa858f7513",
       "group_slug": "on_thi_vao_lop_6_chat_luong_cao_ams_cau_giay_ntt",
-      "group_name": "Ôn thi vào lớp 6 chất lượng cao Ams, Cầu Giấy, NTT, THCS Ngoại Ngữ, ...",
+      "group_name": "Ôn thi vào lớp 6 chất lượng cao Ams, Cầu Giấy, NTT, THCS Ngoại Ngữ,",
       "group_url": "https://www.facebook.com/groups/onthivao6clc/?sorting_setting=CHRONOLOGICAL",
       "topic_id": "ON_THI_HOC_TAP",
       "topic_label": "Phương Pháp Học & Ôn Thi",
@@ -44353,7 +44285,7 @@ window.CDH_CLEAN_FORUM_DATA = {
     {
       "post_sig": "8bbfa163ebea2aeed12436b4",
       "group_slug": "review_cac_truong_mam_non_tieu_hoc_thcs_thpt_tro",
-      "group_name": "Review các trường Mầm Non - Tiểu Học - THCS - THPT trong địa bàn Hà Nội.",
+      "group_name": "Review các trường Mầm Non - Tiểu Học - THCS - THPT trong địa bàn Hà Nội",
       "group_url": "https://www.facebook.com/groups/reviewmamnonvaliencap/?sorting_setting=CHRONOLOGICAL",
       "topic_id": "TAM_LY_GIA_DINH",
       "topic_label": "Tâm Lý, Kỷ Luật & Góc Học Tập",
@@ -44429,7 +44361,7 @@ window.CDH_CLEAN_FORUM_DATA = {
     {
       "post_sig": "8a93512935a97e1e28c23620",
       "group_slug": "review_cac_truong_mam_non_tieu_hoc_thcs_thpt_tro",
-      "group_name": "Review các trường Mầm Non - Tiểu Học - THCS - THPT trong địa bàn Hà Nội.",
+      "group_name": "Review các trường Mầm Non - Tiểu Học - THCS - THPT trong địa bàn Hà Nội",
       "group_url": "https://www.facebook.com/groups/reviewmamnonvaliencap/?sorting_setting=CHRONOLOGICAL",
       "topic_id": "CHON_TRUONG_TUYEN_SINH",
       "topic_label": "Chọn Trường & Tuyển Sinh",
@@ -44465,7 +44397,7 @@ window.CDH_CLEAN_FORUM_DATA = {
     {
       "post_sig": "e963909962f6db2cb20a1a11",
       "group_slug": "review_cac_truong_mam_non_tieu_hoc_thcs_thpt_tro",
-      "group_name": "Review các trường Mầm Non - Tiểu Học - THCS - THPT trong địa bàn Hà Nội.",
+      "group_name": "Review các trường Mầm Non - Tiểu Học - THCS - THPT trong địa bàn Hà Nội",
       "group_url": "https://www.facebook.com/groups/reviewmamnonvaliencap/?sorting_setting=CHRONOLOGICAL",
       "topic_id": "TAM_LY_GIA_DINH",
       "topic_label": "Tâm Lý, Kỷ Luật & Góc Học Tập",
@@ -44985,18 +44917,18 @@ window.CDH_CLEAN_FORUM_DATA = {
     {
       "post_sig": "99ab5a22a2f7d741f392b7d4",
       "group_slug": "hoi_phu_huynh_tieu_hoc_nguyen_sieu",
-      "group_name": "Chưa đọcHội Phụ Huynh Tiểu Học Nguyễn Siêu: \"Sắp thi cuối kỳ I rồi, nhà các mẹ cho con ôn đều mỗi tối hay để gần ngày th",
+      "group_name": "Hội Phụ Huynh Tiểu Học Nguyễn Siêu",
       "group_url": "https://www.facebook.com/groups/538862983130110/?sorting_setting=CHRONOLOGICAL",
-      "topic_id": "ON_THI_HOC_TAP",
-      "topic_label": "Phương Pháp Học & Ôn Thi",
+      "topic_id": "TAM_LY_GIA_DINH",
+      "topic_label": "Tâm Lý, Kỷ Luật & Góc Học Tập",
       "tags": [
         {
           "slug": "goc-hoi-dap-thuc-chien",
           "label": "#HỏiĐápKinhNghiệm"
         },
         {
-          "slug": "on-thi-kiem-tra",
-          "label": "#ÔnThiCuốiKỳ"
+          "slug": "tam-ly-cam-xuc",
+          "label": "#TâmLý & CảmXúc"
         }
       ],
       "author": "Anonymous participant",
@@ -45021,7 +44953,7 @@ window.CDH_CLEAN_FORUM_DATA = {
     {
       "post_sig": "aa06000cd113c674cc4c9d1e",
       "group_slug": "hoi_phu_huynh_tieu_hoc_nguyen_sieu",
-      "group_name": "Chưa đọcHội Phụ Huynh Tiểu Học Nguyễn Siêu: \"Sắp thi cuối kỳ I rồi, nhà các mẹ cho con ôn đều mỗi tối hay để gần ngày th",
+      "group_name": "Hội Phụ Huynh Tiểu Học Nguyễn Siêu",
       "group_url": "https://www.facebook.com/groups/538862983130110/?sorting_setting=CHRONOLOGICAL",
       "topic_id": "NGOAI_NGU_HOMESCHOOL",
       "topic_label": "Ngoại Ngữ, HSK & Homeschool",
@@ -45031,12 +44963,8 @@ window.CDH_CLEAN_FORUM_DATA = {
           "label": "#TiếngAnhTrẻEm"
         },
         {
-          "slug": "on-thi-kiem-tra",
-          "label": "#ÔnThiCuốiKỳ"
-        },
-        {
-          "slug": "goc-hoi-dap-thuc-chien",
-          "label": "#HỏiĐápKinhNghiệm"
+          "slug": "homeschool-tu-hoc",
+          "label": "#HomeschoolTựHọc"
         }
       ],
       "author": "Anonymous participant",
@@ -45061,22 +44989,18 @@ window.CDH_CLEAN_FORUM_DATA = {
     {
       "post_sig": "ee8bcecd13d3916a163ad578",
       "group_slug": "hoi_phu_huynh_tieu_hoc_nguyen_sieu",
-      "group_name": "Chưa đọcHội Phụ Huynh Tiểu Học Nguyễn Siêu: \"Sắp thi cuối kỳ I rồi, nhà các mẹ cho con ôn đều mỗi tối hay để gần ngày th",
+      "group_name": "Hội Phụ Huynh Tiểu Học Nguyễn Siêu",
       "group_url": "https://www.facebook.com/groups/538862983130110/?sorting_setting=CHRONOLOGICAL",
-      "topic_id": "ON_THI_HOC_TAP",
-      "topic_label": "Phương Pháp Học & Ôn Thi",
+      "topic_id": "TAM_LY_GIA_DINH",
+      "topic_label": "Tâm Lý, Kỷ Luật & Góc Học Tập",
       "tags": [
         {
           "slug": "chuyen-cap-lop-6",
           "label": "#ChuyểnCấpLớp6"
         },
         {
-          "slug": "on-thi-kiem-tra",
-          "label": "#ÔnThiCuốiKỳ"
-        },
-        {
-          "slug": "goc-hoi-dap-thuc-chien",
-          "label": "#HỏiĐápKinhNghiệm"
+          "slug": "tam-ly-cam-xuc",
+          "label": "#TâmLý & CảmXúc"
         }
       ],
       "author": "HonestParrot9076",
@@ -45101,22 +45025,18 @@ window.CDH_CLEAN_FORUM_DATA = {
     {
       "post_sig": "f60107d2447471701ddaa118",
       "group_slug": "hoi_phu_huynh_tieu_hoc_nguyen_sieu",
-      "group_name": "Chưa đọcHội Phụ Huynh Tiểu Học Nguyễn Siêu: \"Sắp thi cuối kỳ I rồi, nhà các mẹ cho con ôn đều mỗi tối hay để gần ngày th",
+      "group_name": "Hội Phụ Huynh Tiểu Học Nguyễn Siêu",
       "group_url": "https://www.facebook.com/groups/538862983130110/?sorting_setting=CHRONOLOGICAL",
-      "topic_id": "ON_THI_HOC_TAP",
-      "topic_label": "Phương Pháp Học & Ôn Thi",
+      "topic_id": "TIEN_TIEU_HOC_LOP_1",
+      "topic_label": "Tiền Tiểu Học & Vào Lớp 1",
       "tags": [
-        {
-          "slug": "goc-hoi-dap-thuc-chien",
-          "label": "#HỏiĐápKinhNghiệm"
-        },
         {
           "slug": "tien-tieu-hoc-2020-2021",
           "label": "#HànhTrangLớp1"
         },
         {
-          "slug": "on-thi-kiem-tra",
-          "label": "#ÔnThiCuốiKỳ"
+          "slug": "goc-hoi-dap-thuc-chien",
+          "label": "#HỏiĐápKinhNghiệm"
         }
       ],
       "author": "Hồng Hồi Hộp4522",
@@ -46129,7 +46049,7 @@ window.CDH_CLEAN_FORUM_DATA = {
     {
       "post_sig": "290b8f20895003892115dc56",
       "group_slug": "on_thi_vao_lop_6_chat_luong_cao_ams_cau_giay_ntt",
-      "group_name": "Ôn thi vào lớp 6 chất lượng cao Ams, Cầu Giấy, NTT, THCS Ngoại Ngữ, ...",
+      "group_name": "Ôn thi vào lớp 6 chất lượng cao Ams, Cầu Giấy, NTT, THCS Ngoại Ngữ,",
       "group_url": "https://www.facebook.com/groups/onthivao6clc/?sorting_setting=CHRONOLOGICAL",
       "topic_id": "ON_THI_HOC_TAP",
       "topic_label": "Phương Pháp Học & Ôn Thi",
@@ -46281,18 +46201,18 @@ window.CDH_CLEAN_FORUM_DATA = {
     {
       "post_sig": "a121cf583cdae31f3aaea25b",
       "group_slug": "hoi_phu_huynh_tieu_hoc_nguyen_sieu",
-      "group_name": "Chưa đọcHội Phụ Huynh Tiểu Học Nguyễn Siêu: \"Sắp thi cuối kỳ I rồi, nhà các mẹ cho con ôn đều mỗi tối hay để gần ngày th",
+      "group_name": "Hội Phụ Huynh Tiểu Học Nguyễn Siêu",
       "group_url": "https://www.facebook.com/groups/538862983130110/?sorting_setting=CHRONOLOGICAL",
-      "topic_id": "ON_THI_HOC_TAP",
-      "topic_label": "Phương Pháp Học & Ôn Thi",
+      "topic_id": "TAM_LY_GIA_DINH",
+      "topic_label": "Tâm Lý, Kỷ Luật & Góc Học Tập",
       "tags": [
         {
-          "slug": "on-thi-kiem-tra",
-          "label": "#ÔnThiCuốiKỳ"
+          "slug": "tam-ly-cam-xuc",
+          "label": "#TâmLý & CảmXúc"
         },
         {
-          "slug": "goc-hoi-dap-thuc-chien",
-          "label": "#HỏiĐápKinhNghiệm"
+          "slug": "ren-tap-trung-ky-luat",
+          "label": "#RènTậpTrung"
         }
       ],
       "author": "Thành viên nhóm",
@@ -49633,7 +49553,7 @@ window.CDH_CLEAN_FORUM_DATA = {
     {
       "post_sig": "0ce1e21b94aa91d591519815",
       "group_slug": "review_cac_truong_mam_non_tieu_hoc_thcs_thpt_tro",
-      "group_name": "Review các trường Mầm Non - Tiểu Học - THCS - THPT trong địa bàn Hà Nội.",
+      "group_name": "Review các trường Mầm Non - Tiểu Học - THCS - THPT trong địa bàn Hà Nội",
       "group_url": "https://www.facebook.com/groups/reviewmamnonvaliencap/?sorting_setting=CHRONOLOGICAL",
       "topic_id": "CHON_TRUONG_TUYEN_SINH",
       "topic_label": "Chọn Trường & Tuyển Sinh",
@@ -49665,7 +49585,7 @@ window.CDH_CLEAN_FORUM_DATA = {
     {
       "post_sig": "32b046a5d7c6c820f9f60da3",
       "group_slug": "review_cac_truong_mam_non_tieu_hoc_thcs_thpt_tro",
-      "group_name": "Review các trường Mầm Non - Tiểu Học - THCS - THPT trong địa bàn Hà Nội.",
+      "group_name": "Review các trường Mầm Non - Tiểu Học - THCS - THPT trong địa bàn Hà Nội",
       "group_url": "https://www.facebook.com/groups/reviewmamnonvaliencap/?sorting_setting=CHRONOLOGICAL",
       "topic_id": "CHON_TRUONG_TUYEN_SINH",
       "topic_label": "Chọn Trường & Tuyển Sinh",
@@ -49693,7 +49613,7 @@ window.CDH_CLEAN_FORUM_DATA = {
     {
       "post_sig": "a8712c6bfbe4b6a9cdf1a687",
       "group_slug": "review_cac_truong_mam_non_tieu_hoc_thcs_thpt_tro",
-      "group_name": "Review các trường Mầm Non - Tiểu Học - THCS - THPT trong địa bàn Hà Nội.",
+      "group_name": "Review các trường Mầm Non - Tiểu Học - THCS - THPT trong địa bàn Hà Nội",
       "group_url": "https://www.facebook.com/groups/reviewmamnonvaliencap/?sorting_setting=CHRONOLOGICAL",
       "topic_id": "TAM_LY_GIA_DINH",
       "topic_label": "Tâm Lý, Kỷ Luật & Góc Học Tập",
@@ -49721,7 +49641,7 @@ window.CDH_CLEAN_FORUM_DATA = {
     {
       "post_sig": "38a69c595e27c3cc2fc5e259",
       "group_slug": "review_cac_truong_mam_non_tieu_hoc_thcs_thpt_tro",
-      "group_name": "Review các trường Mầm Non - Tiểu Học - THCS - THPT trong địa bàn Hà Nội.",
+      "group_name": "Review các trường Mầm Non - Tiểu Học - THCS - THPT trong địa bàn Hà Nội",
       "group_url": "https://www.facebook.com/groups/reviewmamnonvaliencap/?sorting_setting=CHRONOLOGICAL",
       "topic_id": "TIEN_TIEU_HOC_LOP_1",
       "topic_label": "Tiền Tiểu Học & Vào Lớp 1",
@@ -49749,7 +49669,7 @@ window.CDH_CLEAN_FORUM_DATA = {
     {
       "post_sig": "4306ce2279e2bdebf76e0b00",
       "group_slug": "review_cac_truong_mam_non_tieu_hoc_thcs_thpt_tro",
-      "group_name": "Review các trường Mầm Non - Tiểu Học - THCS - THPT trong địa bàn Hà Nội.",
+      "group_name": "Review các trường Mầm Non - Tiểu Học - THCS - THPT trong địa bàn Hà Nội",
       "group_url": "https://www.facebook.com/groups/reviewmamnonvaliencap/?sorting_setting=CHRONOLOGICAL",
       "topic_id": "CHON_TRUONG_TUYEN_SINH",
       "topic_label": "Chọn Trường & Tuyển Sinh",
@@ -49785,7 +49705,7 @@ window.CDH_CLEAN_FORUM_DATA = {
     {
       "post_sig": "6f5ea2ff05e17b12af259f66",
       "group_slug": "review_cac_truong_mam_non_tieu_hoc_thcs_thpt_tro",
-      "group_name": "Review các trường Mầm Non - Tiểu Học - THCS - THPT trong địa bàn Hà Nội.",
+      "group_name": "Review các trường Mầm Non - Tiểu Học - THCS - THPT trong địa bàn Hà Nội",
       "group_url": "https://www.facebook.com/groups/reviewmamnonvaliencap/?sorting_setting=CHRONOLOGICAL",
       "topic_id": "TAM_LY_GIA_DINH",
       "topic_label": "Tâm Lý, Kỷ Luật & Góc Học Tập",
@@ -49845,7 +49765,7 @@ window.CDH_CLEAN_FORUM_DATA = {
     {
       "post_sig": "89a532d6621a65aedf12c8a8",
       "group_slug": "on_thi_vao_lop_6_chat_luong_cao_ams_cau_giay_ntt",
-      "group_name": "Ôn thi vào lớp 6 chất lượng cao Ams, Cầu Giấy, NTT, THCS Ngoại Ngữ, ...",
+      "group_name": "Ôn thi vào lớp 6 chất lượng cao Ams, Cầu Giấy, NTT, THCS Ngoại Ngữ,",
       "group_url": "https://www.facebook.com/groups/onthivao6clc/?sorting_setting=CHRONOLOGICAL",
       "topic_id": "ON_THI_HOC_TAP",
       "topic_label": "Phương Pháp Học & Ôn Thi",
@@ -49881,7 +49801,7 @@ window.CDH_CLEAN_FORUM_DATA = {
     {
       "post_sig": "1deda735b6753c0094bf00a2",
       "group_slug": "on_thi_vao_lop_6_chat_luong_cao_ams_cau_giay_ntt",
-      "group_name": "Ôn thi vào lớp 6 chất lượng cao Ams, Cầu Giấy, NTT, THCS Ngoại Ngữ, ...",
+      "group_name": "Ôn thi vào lớp 6 chất lượng cao Ams, Cầu Giấy, NTT, THCS Ngoại Ngữ,",
       "group_url": "https://www.facebook.com/groups/onthivao6clc/?sorting_setting=CHRONOLOGICAL",
       "topic_id": "ON_THI_HOC_TAP",
       "topic_label": "Phương Pháp Học & Ôn Thi",
@@ -49913,10 +49833,10 @@ window.CDH_CLEAN_FORUM_DATA = {
     {
       "post_sig": "2a7aeac977e35c36c0d69839",
       "group_slug": "dap_an_de_thi_vao_lop_6_ngoi_sao_hoang_mai_nam_2",
-      "group_name": "Đáp án đề thi vào lớp 6 Ngôi sao Hoàng Mai năm 2024",
+      "group_name": "Cộng đồng Phụ huynh K-12",
       "group_url": "https://www.facebook.com/groups/onthivaolop6/?sorting_setting=CHRONOLOGICAL",
-      "topic_id": "CHON_TRUONG_TUYEN_SINH",
-      "topic_label": "Chọn Trường & Tuyển Sinh",
+      "topic_id": "ON_THI_HOC_TAP",
+      "topic_label": "Phương Pháp Học & Ôn Thi",
       "tags": [
         {
           "slug": "chuyen-cap-lop-6",
@@ -49945,7 +49865,7 @@ window.CDH_CLEAN_FORUM_DATA = {
     {
       "post_sig": "a629af763190fb8ea9cae10c",
       "group_slug": "on_thi_vao_lop_6_chat_luong_cao_ams_cau_giay_ntt",
-      "group_name": "Ôn thi vào lớp 6 chất lượng cao Ams, Cầu Giấy, NTT, THCS Ngoại Ngữ, ...",
+      "group_name": "Ôn thi vào lớp 6 chất lượng cao Ams, Cầu Giấy, NTT, THCS Ngoại Ngữ,",
       "group_url": "https://www.facebook.com/groups/onthivao6clc/?sorting_setting=CHRONOLOGICAL",
       "topic_id": "CHON_TRUONG_TUYEN_SINH",
       "topic_label": "Chọn Trường & Tuyển Sinh",
@@ -49977,7 +49897,7 @@ window.CDH_CLEAN_FORUM_DATA = {
     {
       "post_sig": "ac5203b8ce6ed1b2617406d2",
       "group_slug": "on_thi_vao_lop_6_chat_luong_cao_ams_cau_giay_ntt",
-      "group_name": "Ôn thi vào lớp 6 chất lượng cao Ams, Cầu Giấy, NTT, THCS Ngoại Ngữ, ...",
+      "group_name": "Ôn thi vào lớp 6 chất lượng cao Ams, Cầu Giấy, NTT, THCS Ngoại Ngữ,",
       "group_url": "https://www.facebook.com/groups/onthivao6clc/?sorting_setting=CHRONOLOGICAL",
       "topic_id": "ON_THI_HOC_TAP",
       "topic_label": "Phương Pháp Học & Ôn Thi",
@@ -50009,7 +49929,7 @@ window.CDH_CLEAN_FORUM_DATA = {
     {
       "post_sig": "7ff607c53216dbe27cb753a5",
       "group_slug": "on_thi_vao_lop_6_chat_luong_cao_ams_cau_giay_ntt",
-      "group_name": "Ôn thi vào lớp 6 chất lượng cao Ams, Cầu Giấy, NTT, THCS Ngoại Ngữ, ...",
+      "group_name": "Ôn thi vào lớp 6 chất lượng cao Ams, Cầu Giấy, NTT, THCS Ngoại Ngữ,",
       "group_url": "https://www.facebook.com/groups/onthivao6clc/?sorting_setting=CHRONOLOGICAL",
       "topic_id": "ON_THI_HOC_TAP",
       "topic_label": "Phương Pháp Học & Ôn Thi",
@@ -50045,7 +49965,7 @@ window.CDH_CLEAN_FORUM_DATA = {
     {
       "post_sig": "ebc4eb60ea354cbc5697af27",
       "group_slug": "on_thi_vao_lop_6_chat_luong_cao_ams_cau_giay_ntt",
-      "group_name": "Ôn thi vào lớp 6 chất lượng cao Ams, Cầu Giấy, NTT, THCS Ngoại Ngữ, ...",
+      "group_name": "Ôn thi vào lớp 6 chất lượng cao Ams, Cầu Giấy, NTT, THCS Ngoại Ngữ,",
       "group_url": "https://www.facebook.com/groups/onthivao6clc/?sorting_setting=CHRONOLOGICAL",
       "topic_id": "ON_THI_HOC_TAP",
       "topic_label": "Phương Pháp Học & Ôn Thi",
@@ -50077,7 +49997,7 @@ window.CDH_CLEAN_FORUM_DATA = {
     {
       "post_sig": "842aa8c6659db00c438b5b8b",
       "group_slug": "on_thi_vao_lop_6_chat_luong_cao_ams_cau_giay_ntt",
-      "group_name": "Ôn thi vào lớp 6 chất lượng cao Ams, Cầu Giấy, NTT, THCS Ngoại Ngữ, ...",
+      "group_name": "Ôn thi vào lớp 6 chất lượng cao Ams, Cầu Giấy, NTT, THCS Ngoại Ngữ,",
       "group_url": "https://www.facebook.com/groups/onthivao6clc/?sorting_setting=CHRONOLOGICAL",
       "topic_id": "ON_THI_HOC_TAP",
       "topic_label": "Phương Pháp Học & Ôn Thi",
@@ -50109,7 +50029,7 @@ window.CDH_CLEAN_FORUM_DATA = {
     {
       "post_sig": "1a0420b78628151417f4aa3d",
       "group_slug": "cac_mom_nao_co_con_hoc_o_vinschool_grand_park_ch",
-      "group_name": "Các mom nào có con học ở Vinschool grand park cho em ...",
+      "group_name": "Cộng đồng Phụ huynh K-12",
       "group_url": "https://www.facebook.com/groups/337428867135889/?sorting_setting=CHRONOLOGICAL",
       "topic_id": "CHON_TRUONG_TUYEN_SINH",
       "topic_label": "Chọn Trường & Tuyển Sinh",
@@ -50201,7 +50121,7 @@ window.CDH_CLEAN_FORUM_DATA = {
     {
       "post_sig": "d1fa91ba0d10be42ad9c38e9",
       "group_slug": "bang_hoc_phi_tieu_hoc_marie_curie_viet_hung_nam_",
-      "group_name": "Bảng học phí Tiểu học Marie Curie Việt Hưng năm học 2026-2027",
+      "group_name": "Cộng đồng Phụ huynh K-12",
       "group_url": "https://www.facebook.com/groups/1243905022895930/?sorting_setting=CHRONOLOGICAL",
       "topic_id": "CHON_TRUONG_TUYEN_SINH",
       "topic_label": "Chọn Trường & Tuyển Sinh",
@@ -50261,7 +50181,7 @@ window.CDH_CLEAN_FORUM_DATA = {
     {
       "post_sig": "9d8c1f7cab558f8efc6b07ad",
       "group_slug": "on_thi_vao_lop_6_chat_luong_cao_ams_cau_giay_ntt",
-      "group_name": "Ôn thi vào lớp 6 chất lượng cao Ams, Cầu Giấy, NTT, THCS Ngoại Ngữ, ...",
+      "group_name": "Ôn thi vào lớp 6 chất lượng cao Ams, Cầu Giấy, NTT, THCS Ngoại Ngữ,",
       "group_url": "https://www.facebook.com/groups/onthivao6clc/?sorting_setting=CHRONOLOGICAL",
       "topic_id": "NGOAI_NGU_HOMESCHOOL",
       "topic_label": "Ngoại Ngữ, HSK & Homeschool",
@@ -50329,7 +50249,7 @@ window.CDH_CLEAN_FORUM_DATA = {
     {
       "post_sig": "04c5821776f80bb952a55edb",
       "group_slug": "on_thi_vao_lop_6_chat_luong_cao_ams_cau_giay_ntt",
-      "group_name": "Ôn thi vào lớp 6 chất lượng cao Ams, Cầu Giấy, NTT, THCS Ngoại Ngữ, ...",
+      "group_name": "Ôn thi vào lớp 6 chất lượng cao Ams, Cầu Giấy, NTT, THCS Ngoại Ngữ,",
       "group_url": "https://www.facebook.com/groups/onthivao6clc/?sorting_setting=CHRONOLOGICAL",
       "topic_id": "CHON_TRUONG_TUYEN_SINH",
       "topic_label": "Chọn Trường & Tuyển Sinh",
@@ -50517,7 +50437,7 @@ window.CDH_CLEAN_FORUM_DATA = {
     {
       "post_sig": "199433478058c339203be1e9",
       "group_slug": "on_thi_vao_lop_6_chat_luong_cao_ams_cau_giay_ntt",
-      "group_name": "Ôn thi vào lớp 6 chất lượng cao Ams, Cầu Giấy, NTT, THCS Ngoại Ngữ, ...",
+      "group_name": "Ôn thi vào lớp 6 chất lượng cao Ams, Cầu Giấy, NTT, THCS Ngoại Ngữ,",
       "group_url": "https://www.facebook.com/groups/onthivao6clc/?sorting_setting=CHRONOLOGICAL",
       "topic_id": "ON_THI_HOC_TAP",
       "topic_label": "Phương Pháp Học & Ôn Thi",
@@ -50553,7 +50473,7 @@ window.CDH_CLEAN_FORUM_DATA = {
     {
       "post_sig": "a19f782b1880cf0487930791",
       "group_slug": "on_thi_vao_lop_6_chat_luong_cao_ams_cau_giay_ntt",
-      "group_name": "Ôn thi vào lớp 6 chất lượng cao Ams, Cầu Giấy, NTT, THCS Ngoại Ngữ, ...",
+      "group_name": "Ôn thi vào lớp 6 chất lượng cao Ams, Cầu Giấy, NTT, THCS Ngoại Ngữ,",
       "group_url": "https://www.facebook.com/groups/onthivao6clc/?sorting_setting=CHRONOLOGICAL",
       "topic_id": "CHON_TRUONG_TUYEN_SINH",
       "topic_label": "Chọn Trường & Tuyển Sinh",
@@ -50841,7 +50761,7 @@ window.CDH_CLEAN_FORUM_DATA = {
     {
       "post_sig": "11ac48ea9f2616bad3a263cf",
       "group_slug": "lam_sao_giup_con_lop_7_mat_tap_trung_luoi_hoc_va",
-      "group_name": "Làm sao giúp con lớp 7 mất tập trung, lười học và tự ti cải ...",
+      "group_name": "Cộng đồng Phụ huynh K-12",
       "group_url": "https://www.facebook.com/groups/phuhuynhdongnai/?sorting_setting=CHRONOLOGICAL",
       "topic_id": "TAM_LY_GIA_DINH",
       "topic_label": "Tâm Lý, Kỷ Luật & Góc Học Tập",
@@ -50901,7 +50821,7 @@ window.CDH_CLEAN_FORUM_DATA = {
     {
       "post_sig": "57bf7c8272bc94fc1302f177",
       "group_slug": "con_em_hoc_lop_6_ma_hoc_yeu_theo_sat_thi_con_bi_",
-      "group_name": "Con em học lớp 6 mà học yếu theo sát thì con bị áp lực ...",
+      "group_name": "Cộng đồng Phụ huynh K-12",
       "group_url": "https://www.facebook.com/groups/chotrerangoaichoi.saigon.hcm/?sorting_setting=CHRONOLOGICAL",
       "topic_id": "TAM_LY_GIA_DINH",
       "topic_label": "Tâm Lý, Kỷ Luật & Góc Học Tập",
@@ -50929,7 +50849,7 @@ window.CDH_CLEAN_FORUM_DATA = {
     {
       "post_sig": "d42da640a239174543fb9f7f",
       "group_slug": "on_thi_vao_lop_6_chat_luong_cao_ams_cau_giay_ntt",
-      "group_name": "Ôn thi vào lớp 6 chất lượng cao Ams, Cầu Giấy, NTT, THCS Ngoại Ngữ, ...",
+      "group_name": "Ôn thi vào lớp 6 chất lượng cao Ams, Cầu Giấy, NTT, THCS Ngoại Ngữ,",
       "group_url": "https://www.facebook.com/groups/onthivao6clc/?sorting_setting=CHRONOLOGICAL",
       "topic_id": "ON_THI_HOC_TAP",
       "topic_label": "Phương Pháp Học & Ôn Thi",
@@ -50965,7 +50885,7 @@ window.CDH_CLEAN_FORUM_DATA = {
     {
       "post_sig": "99c3e9998b411019c1fa4ebf",
       "group_slug": "con_mat_tap_trung_va_giam_chu_y_co_cach_chua_kho",
-      "group_name": "Con mất tập trung và giảm chú ý có cách chữa không ...",
+      "group_name": "Cộng đồng Phụ huynh K-12",
       "group_url": "https://www.facebook.com/groups/e5686788tretuky/?sorting_setting=CHRONOLOGICAL",
       "topic_id": "TAM_LY_GIA_DINH",
       "topic_label": "Tâm Lý, Kỷ Luật & Góc Học Tập",
@@ -50985,90 +50905,6 @@ window.CDH_CLEAN_FORUM_DATA = {
       "harvested_at": "2026-01-15 15:00:00 +07:00",
       "permalink": "https://www.facebook.com/groups/e5686788tretuky/posts/4038700986382244",
       "text": "Con mất tập trung và giảm chú ý có cách chữa không ...\nCon mình năm nay học lớp 6. Con ngồi học không tập trung, không chịu viết bài. Khả năng ghi nhớ của con kém. Mình vô cùng khổ thân, kèm con học",
-      "clean_comments": [],
-      "clean_comments_count": 0,
-      "filtered_comments_count": 0,
-      "engagement_score": 8
-    },
-    {
-      "post_sig": "694b319e89fe9022e9a0878e",
-      "group_slug": "what_are_thoughts_on_acellus_for_online_homescho",
-      "group_name": "What are thoughts on Acellus for online homeschooling?",
-      "group_url": "https://www.facebook.com/groups/205484470892429/?sorting_setting=CHRONOLOGICAL",
-      "topic_id": "NGOAI_NGU_HOMESCHOOL",
-      "topic_label": "Ngoại Ngữ, HSK & Homeschool",
-      "tags": [
-        {
-          "slug": "homeschool-tu-hoc",
-          "label": "#HomeschoolTựHọc"
-        },
-        {
-          "slug": "tieng-anh-tre-em",
-          "label": "#TiếngAnhTrẻEm"
-        }
-      ],
-      "author": "Thành viên nhóm",
-      "is_anonymous": false,
-      "posted_display": "2026-01-15 15:00",
-      "harvested_at": "2026-01-15 15:00:00 +07:00",
-      "permalink": "https://www.facebook.com/groups/205484470892429/posts/1659938908780304",
-      "text": "What are thoughts on Acellus for online homeschooling?\nSwitching to homeschooling next school year and trying to find the best online learning course. thoughts on Acellus?",
-      "clean_comments": [],
-      "clean_comments_count": 0,
-      "filtered_comments_count": 0,
-      "engagement_score": 8
-    },
-    {
-      "post_sig": "a6b7104e3a6eba680bd748d2",
-      "group_slug": "needing_help_deciding_between_k_12_and_acellus_m",
-      "group_name": "Needing help deciding between k-12 and Acellus. My ...",
-      "group_url": "https://www.facebook.com/groups/TXHS101/?sorting_setting=CHRONOLOGICAL",
-      "topic_id": "NGOAI_NGU_HOMESCHOOL",
-      "topic_label": "Ngoại Ngữ, HSK & Homeschool",
-      "tags": [
-        {
-          "slug": "homeschool-tu-hoc",
-          "label": "#HomeschoolTựHọc"
-        },
-        {
-          "slug": "tieng-anh-tre-em",
-          "label": "#TiếngAnhTrẻEm"
-        }
-      ],
-      "author": "Thành viên nhóm",
-      "is_anonymous": false,
-      "posted_display": "2026-01-15 15:00",
-      "harvested_at": "2026-01-15 15:00:00 +07:00",
-      "permalink": "https://www.facebook.com/groups/TXHS101/posts/1631901700927241",
-      "text": "Acellus Academy Pros and Cons please 😭 My 7th and 9th ...\nAcellus Academy Pros and Cons please 😭\nMy 7th and 9th grader want to homeschool and idk what I’m doing",
-      "clean_comments": [],
-      "clean_comments_count": 0,
-      "filtered_comments_count": 0,
-      "engagement_score": 8
-    },
-    {
-      "post_sig": "b0b2b517e2d4542d755f4efc",
-      "group_slug": "is_acellus_academy_a_good_homeschooling_program_",
-      "group_name": "Is Acellus Academy a good homeschooling program and ...",
-      "group_url": "https://www.facebook.com/groups/gahsn/?sorting_setting=CHRONOLOGICAL",
-      "topic_id": "NGOAI_NGU_HOMESCHOOL",
-      "topic_label": "Ngoại Ngữ, HSK & Homeschool",
-      "tags": [
-        {
-          "slug": "homeschool-tu-hoc",
-          "label": "#HomeschoolTựHọc"
-        },
-        {
-          "slug": "tieng-anh-tre-em",
-          "label": "#TiếngAnhTrẻEm"
-        }
-      ],
-      "author": "Thành viên nhóm",
-      "is_anonymous": false,
-      "posted_display": "2026-01-15 15:00",
-      "harvested_at": "2026-01-15 15:00:00 +07:00",
-      "permalink": "https://www.facebook.com/groups/gahsn/posts/10161390934241413",
-      "text": "Is Acellus Academy a good homeschooling program and ...\nDoes any one use acellus academy I'm looking into it and I'm seeing mixed reviews can I can't get many answers on their website I'm wanting to know if",
       "clean_comments": [],
       "clean_comments_count": 0,
       "filtered_comments_count": 0,
@@ -51097,62 +50933,6 @@ window.CDH_CLEAN_FORUM_DATA = {
       "harvested_at": "2026-01-15 15:00:00 +07:00",
       "permalink": "https://www.facebook.com/groups/homeschoolingvanhungnguoiban2/posts/800219306006775",
       "text": "Có ai ở Đà Nẵng homeschool toàn phần ABK hoặc Acellus ...\nNhà mình ơi, nhà mình có ai ở Đà Nẵng home school toàn phần abk hay acellus ko. Cho mình gặp tham khảo kinh nghiệm với.",
-      "clean_comments": [],
-      "clean_comments_count": 0,
-      "filtered_comments_count": 0,
-      "engagement_score": 8
-    },
-    {
-      "post_sig": "8ac4c19b9bf2aaf06d5ba7dc",
-      "group_slug": "does_any_homeschooling_parents_have_experience_w",
-      "group_name": "Does any homeschooling parents have experience with ...",
-      "group_url": "https://www.facebook.com/groups/2248314252100341/?sorting_setting=CHRONOLOGICAL",
-      "topic_id": "NGOAI_NGU_HOMESCHOOL",
-      "topic_label": "Ngoại Ngữ, HSK & Homeschool",
-      "tags": [
-        {
-          "slug": "homeschool-tu-hoc",
-          "label": "#HomeschoolTựHọc"
-        },
-        {
-          "slug": "tieng-anh-tre-em",
-          "label": "#TiếngAnhTrẻEm"
-        }
-      ],
-      "author": "Thành viên nhóm",
-      "is_anonymous": false,
-      "posted_display": "2026-01-15 15:00",
-      "harvested_at": "2026-01-15 15:00:00 +07:00",
-      "permalink": "https://www.facebook.com/groups/2248314252100341/posts/4297329663865446",
-      "text": "Does any homeschooling parents have experience with ...\nIs Acellus Academy a good homeschool curriculum? Acellus Academy is accredited and also they will get their diploma through them. Acellus",
-      "clean_comments": [],
-      "clean_comments_count": 0,
-      "filtered_comments_count": 0,
-      "engagement_score": 8
-    },
-    {
-      "post_sig": "6234a785131c51e1c764096e",
-      "group_slug": "needing_help_deciding_between_k_12_and_acellus_m",
-      "group_name": "Needing help deciding between k-12 and Acellus. My ...",
-      "group_url": "https://www.facebook.com/groups/TXHS101/?sorting_setting=CHRONOLOGICAL",
-      "topic_id": "NGOAI_NGU_HOMESCHOOL",
-      "topic_label": "Ngoại Ngữ, HSK & Homeschool",
-      "tags": [
-        {
-          "slug": "homeschool-tu-hoc",
-          "label": "#HomeschoolTựHọc"
-        },
-        {
-          "slug": "tieng-anh-tre-em",
-          "label": "#TiếngAnhTrẻEm"
-        }
-      ],
-      "author": "Thành viên nhóm",
-      "is_anonymous": false,
-      "posted_display": "2026-01-15 15:00",
-      "harvested_at": "2026-01-15 15:00:00 +07:00",
-      "permalink": "https://www.facebook.com/groups/TXHS101/posts/1644075136376564",
-      "text": "Needing help deciding between k-12 and Acellus. My ...\nAcellus is preferred for its flexibility and pace, while K12 is seen as too structured and public school-like, with concerns about credits ...Read more",
       "clean_comments": [],
       "clean_comments_count": 0,
       "filtered_comments_count": 0,
@@ -51225,7 +51005,7 @@ window.CDH_CLEAN_FORUM_DATA = {
     {
       "post_sig": "aac46e853f3498909cca4f5d",
       "group_slug": "da_em_chao_mng_a",
-      "group_name": "Dạ em chào mng ạ",
+      "group_name": "Cộng đồng Phụ huynh K-12",
       "group_url": "https://www.facebook.com/groups/giaidapthacmachoso24hchinhxacuytin/?sorting_setting=CHRONOLOGICAL",
       "topic_id": "NGOAI_NGU_HOMESCHOOL",
       "topic_label": "Ngoại Ngữ, HSK & Homeschool",
@@ -51283,37 +51063,9 @@ window.CDH_CLEAN_FORUM_DATA = {
       "engagement_score": 8
     },
     {
-      "post_sig": "6e52b730c7bb8331acf5464b",
-      "group_slug": "kullik_ilihakvik_parents_for_those_students_who_",
-      "group_name": "Kullik Ilihakvik Parents- For those students who have ...",
-      "group_url": "https://www.facebook.com/groups/cambay1/?sorting_setting=CHRONOLOGICAL",
-      "topic_id": "TAM_LY_GIA_DINH",
-      "topic_label": "Tâm Lý, Kỷ Luật & Góc Học Tập",
-      "tags": [
-        {
-          "slug": "tam-ly-cam-xuc",
-          "label": "#TâmLý & CảmXúc"
-        },
-        {
-          "slug": "ren-tap-trung-ky-luat",
-          "label": "#RènTậpTrung"
-        }
-      ],
-      "author": "Thành viên nhóm",
-      "is_anonymous": false,
-      "posted_display": "2026-01-15 15:00",
-      "harvested_at": "2026-01-15 15:00:00 +07:00",
-      "permalink": "https://www.facebook.com/groups/cambay1/posts/2977625558971614",
-      "text": "Kullik Ilihakvik Parents- For those students who have ...\nRaz- Kids a reading site at www.kidsa-z.com. Students can pick stories to listen to and then read. Benchmark Reading, St Math, and Typing.",
-      "clean_comments": [],
-      "clean_comments_count": 0,
-      "filtered_comments_count": 0,
-      "engagement_score": 8
-    },
-    {
       "post_sig": "9cd4cf40064f7fe918ea92fa",
       "group_slug": "z_razkid_kem_file_audio_phieu_bai_tap_ba_me_yes_",
-      "group_name": "Z (razkid) kèm file audio & phiếu bài tập . Ba mẹ \"yes\" Thầy ...",
+      "group_name": "Cộng đồng Phụ huynh K-12",
       "group_url": "https://www.facebook.com/groups/hoctienganhcungbeyeu/?sorting_setting=CHRONOLOGICAL",
       "topic_id": "NGOAI_NGU_HOMESCHOOL",
       "topic_label": "Ngoại Ngữ, HSK & Homeschool",
@@ -51339,45 +51091,13 @@ window.CDH_CLEAN_FORUM_DATA = {
       "engagement_score": 8
     },
     {
-      "post_sig": "1ea1a6419f6d80c89c679da3",
-      "group_slug": "unlock_the_future_of_english_learning_with_our_f",
-      "group_name": "**Unlock the Future of English Learning with Our Free App! ...",
-      "group_url": "https://www.facebook.com/groups/3861490833900676/?sorting_setting=CHRONOLOGICAL",
-      "topic_id": "NGOAI_NGU_HOMESCHOOL",
-      "topic_label": "Ngoại Ngữ, HSK & Homeschool",
-      "tags": [
-        {
-          "slug": "tieng-anh-tre-em",
-          "label": "#TiếngAnhTrẻEm"
-        },
-        {
-          "slug": "homeschool-tu-hoc",
-          "label": "#HomeschoolTựHọc"
-        }
-      ],
-      "author": "Thành viên nhóm",
-      "is_anonymous": false,
-      "posted_display": "2026-01-15 15:00",
-      "harvested_at": "2026-01-15 15:00:00 +07:00",
-      "permalink": "https://www.facebook.com/groups/3861490833900676/posts/7460760240640366",
-      "text": "**Unlock the Future of English Learning with Our Free App! ...\nEnjoy series like RAZ, Oxford Reading Tree, I Can Read, Learn through fun and educational videos, including Big Fun songs, SSS Songs, and Yakka",
-      "clean_comments": [],
-      "clean_comments_count": 0,
-      "filtered_comments_count": 0,
-      "engagement_score": 8
-    },
-    {
       "post_sig": "7a3351d5d15d512cfa1fa005",
       "group_slug": "razkids_la_gi_va_cach_tai_tai_lieu_pdf_mp3_mp4_m",
-      "group_name": "Razkids là gì và cách tải tài liệu PDF, MP3, MP4 miễn phí ...",
+      "group_name": "Cộng đồng Phụ huynh K-12",
       "group_url": "https://www.facebook.com/groups/781225226577402/?sorting_setting=CHRONOLOGICAL",
       "topic_id": "NGOAI_NGU_HOMESCHOOL",
       "topic_label": "Ngoại Ngữ, HSK & Homeschool",
       "tags": [
-        {
-          "slug": "sach-hay-hoc-lieu",
-          "label": "#SáchHay & HọcLiệu"
-        },
         {
           "slug": "tieng-anh-tre-em",
           "label": "#TiếngAnhTrẻEm"
@@ -51385,6 +51105,10 @@ window.CDH_CLEAN_FORUM_DATA = {
         {
           "slug": "giao-vien-goc-nhin",
           "label": "#GócNhìnGiáoViên"
+        },
+        {
+          "slug": "sach-hay-hoc-lieu",
+          "label": "#SáchHay & HọcLiệu"
         }
       ],
       "author": "Thành viên nhóm",
@@ -51401,7 +51125,7 @@ window.CDH_CLEAN_FORUM_DATA = {
     {
       "post_sig": "842506b6984697b8715d4c2b",
       "group_slug": "raz_kids_co_gi_hay_cho_be_4_va_7_tuoi_hoc_tieng_",
-      "group_name": "Raz-Kids có gì hay cho bé 4 và 7 tuổi học tiếng Anh giọng ...",
+      "group_name": "Cộng đồng Phụ huynh K-12",
       "group_url": "https://www.facebook.com/groups/2405060282940648/?sorting_setting=CHRONOLOGICAL",
       "topic_id": "NGOAI_NGU_HOMESCHOOL",
       "topic_label": "Ngoại Ngữ, HSK & Homeschool",
@@ -51427,37 +51151,9 @@ window.CDH_CLEAN_FORUM_DATA = {
       "engagement_score": 8
     },
     {
-      "post_sig": "ddd7aaa73b836cb60264dd34",
-      "group_slug": "one_time_payment_lifetime_access_downloadable_no",
-      "group_name": "One time payment 👉Lifetime Access 👉Downloadable 👉No ...",
-      "group_url": "https://www.facebook.com/groups/1013583656496166/?sorting_setting=CHRONOLOGICAL",
-      "topic_id": "NGOAI_NGU_HOMESCHOOL",
-      "topic_label": "Ngoại Ngữ, HSK & Homeschool",
-      "tags": [
-        {
-          "slug": "tieng-anh-tre-em",
-          "label": "#TiếngAnhTrẻEm"
-        },
-        {
-          "slug": "he-quoc-te-song-bang",
-          "label": "#SongBằngCambridge"
-        }
-      ],
-      "author": "Thành viên nhóm",
-      "is_anonymous": false,
-      "posted_display": "2026-01-15 15:00",
-      "harvested_at": "2026-01-15 15:00:00 +07:00",
-      "permalink": "https://www.facebook.com/groups/1013583656496166/posts/1200177877836742",
-      "text": "One time payment 👉Lifetime Access 👉Downloadable 👉No ...\n-Cambridge Flyers Books -Phonics Books -Hang Outs -K5 Worksheets -Raz Kids Books with Phonics. MATERIALS AVAILABLE HERE AVAIL NOW!!! RAZ KIDS",
-      "clean_comments": [],
-      "clean_comments_count": 0,
-      "filtered_comments_count": 0,
-      "engagement_score": 8
-    },
-    {
       "post_sig": "e954b42e9998f9af50f1a6e7",
       "group_slug": "razkids_la_gi_va_cach_tai_tai_lieu_pdf_mp3_mp4_m",
-      "group_name": "Razkids là gì và cách tải tài liệu PDF, MP3, MP4 miễn phí ...",
+      "group_name": "Cộng đồng Phụ huynh K-12",
       "group_url": "https://www.facebook.com/groups/781225226577402/?sorting_setting=CHRONOLOGICAL",
       "topic_id": "NGOAI_NGU_HOMESCHOOL",
       "topic_label": "Ngoại Ngữ, HSK & Homeschool",
@@ -51553,7 +51249,7 @@ window.CDH_CLEAN_FORUM_DATA = {
     {
       "post_sig": "5ce4d93d1256b83a39292b4a",
       "group_slug": "hoc_phi_lop_ban_tru_va_lop_khong_ban_tru_la_bao_",
-      "group_name": "Học phí lớp bán trú và lớp không bán trú là bao nhiêu?",
+      "group_name": "Cộng đồng Phụ huynh K-12",
       "group_url": "https://www.facebook.com/groups/THPTTanBinh.HCM/?sorting_setting=CHRONOLOGICAL",
       "topic_id": "CHON_TRUONG_TUYEN_SINH",
       "topic_label": "Chọn Trường & Tuyển Sinh",
@@ -51581,7 +51277,7 @@ window.CDH_CLEAN_FORUM_DATA = {
     {
       "post_sig": "abaad95447f8b54c9a4cd7b0",
       "group_slug": "moi_nguoi_cho_minh_hoi_hoc_phi_cua_cac_truong_th",
-      "group_name": "mọi người cho mình hỏi học phí của các trường THPT ...",
+      "group_name": "Cộng đồng Phụ huynh K-12",
       "group_url": "https://www.facebook.com/groups/1067368765239513/?sorting_setting=CHRONOLOGICAL",
       "topic_id": "CHON_TRUONG_TUYEN_SINH",
       "topic_label": "Chọn Trường & Tuyển Sinh",
@@ -51813,7 +51509,7 @@ window.CDH_CLEAN_FORUM_DATA = {
     {
       "post_sig": "7d5b2a40460b524df813e5e9",
       "group_slug": "de_kiem_tra_danh_gia_nang_luc_hoc_sinh_lop_6_de_",
-      "group_name": "Đề kiểm tra đánh giá năng lực học sinh lớp 6 để ôn luyện",
+      "group_name": "Cộng đồng Phụ huynh K-12",
       "group_url": "https://www.facebook.com/groups/www.trangnguyen.gruop/?sorting_setting=CHRONOLOGICAL",
       "topic_id": "ON_THI_HOC_TAP",
       "topic_label": "Phương Pháp Học & Ôn Thi",
@@ -51841,7 +51537,7 @@ window.CDH_CLEAN_FORUM_DATA = {
     {
       "post_sig": "bfda2fad0a91ae842546b27d",
       "group_slug": "on_thi_vao_lop_6_chat_luong_cao_ams_cau_giay_ntt",
-      "group_name": "Ôn thi vào lớp 6 chất lượng cao Ams, Cầu Giấy, NTT, THCS Ngoại Ngữ, ...",
+      "group_name": "Ôn thi vào lớp 6 chất lượng cao Ams, Cầu Giấy, NTT, THCS Ngoại Ngữ,",
       "group_url": "https://www.facebook.com/groups/onthivao6clc/?sorting_setting=CHRONOLOGICAL",
       "topic_id": "ON_THI_HOC_TAP",
       "topic_label": "Phương Pháp Học & Ôn Thi",
@@ -51873,7 +51569,7 @@ window.CDH_CLEAN_FORUM_DATA = {
     {
       "post_sig": "d3d3fa6bfd3ecd435d53053f",
       "group_slug": "chuyen_cap_lop_5_len_lop_6_co_ban_hom_nay_den",
-      "group_name": "Chuyển cấp lớp 5 lên lớp 6 Có bạn hôm nay đến ...",
+      "group_name": "Cộng đồng Phụ huynh K-12",
       "group_url": "https://www.facebook.com/groups/842643612935362/?sorting_setting=CHRONOLOGICAL",
       "topic_id": "CHON_TRUONG_TUYEN_SINH",
       "topic_label": "Chọn Trường & Tuyển Sinh",
@@ -51901,7 +51597,7 @@ window.CDH_CLEAN_FORUM_DATA = {
     {
       "post_sig": "9ef3d50dc2f6494a8be93ec1",
       "group_slug": "kinh_nghiem_thi_vao_truong_ngoi_sao_ha_noi_lop_1",
-      "group_name": "kinh nghiệm thi vào trường ngôi sao hà nội lớp 1 tiểu học",
+      "group_name": "Cộng đồng Phụ huynh K-12",
       "group_url": "https://www.facebook.com/groups/onthicap2chatluongcao/?sorting_setting=CHRONOLOGICAL",
       "topic_id": "CHON_TRUONG_TUYEN_SINH",
       "topic_label": "Chọn Trường & Tuyển Sinh",
@@ -51911,12 +51607,8 @@ window.CDH_CLEAN_FORUM_DATA = {
           "label": "#ChuyểnCấpLớp6"
         },
         {
-          "slug": "tien-tieu-hoc-2020-2021",
-          "label": "#HànhTrangLớp1"
-        },
-        {
-          "slug": "review-truong-tu-clc",
-          "label": "#TrườngTư & CLC"
+          "slug": "review-truong-cong",
+          "label": "#TrườngCôngLập"
         }
       ],
       "author": "Thành viên nhóm",
@@ -51961,7 +51653,7 @@ window.CDH_CLEAN_FORUM_DATA = {
     {
       "post_sig": "51fe28145001ac506d43ddd5",
       "group_slug": "tong_hop_diem_chuan_vao_lop_6_cac_truong_thcs_ha",
-      "group_name": "Tổng hợp điểm chuẩn vào lớp 6 các trường THCS Hà Nội ...",
+      "group_name": "Cộng đồng Phụ huynh K-12",
       "group_url": "https://www.facebook.com/groups/1109554250242767/?sorting_setting=CHRONOLOGICAL",
       "topic_id": "NGOAI_NGU_HOMESCHOOL",
       "topic_label": "Ngoại Ngữ, HSK & Homeschool",
@@ -51993,7 +51685,7 @@ window.CDH_CLEAN_FORUM_DATA = {
     {
       "post_sig": "470343d36fe6e692c15c1380",
       "group_slug": "dap_an_de_thi_vao_lop_6_ngoi_sao_hoang_mai_nam_2",
-      "group_name": "Đáp án đề thi vào lớp 6 Ngôi sao Hoàng Mai năm 2024",
+      "group_name": "Cộng đồng Phụ huynh K-12",
       "group_url": "https://www.facebook.com/groups/onthivaolop6/?sorting_setting=CHRONOLOGICAL",
       "topic_id": "CHON_TRUONG_TUYEN_SINH",
       "topic_label": "Chọn Trường & Tuyển Sinh",
@@ -52025,7 +51717,7 @@ window.CDH_CLEAN_FORUM_DATA = {
     {
       "post_sig": "3aa53a3981f28eabb11ebdc1",
       "group_slug": "on_thi_vao_lop_6_chat_luong_cao_ams_cau_giay_ntt",
-      "group_name": "Ôn thi vào lớp 6 chất lượng cao Ams, Cầu Giấy, NTT, THCS Ngoại Ngữ, ...",
+      "group_name": "Ôn thi vào lớp 6 chất lượng cao Ams, Cầu Giấy, NTT, THCS Ngoại Ngữ,",
       "group_url": "https://www.facebook.com/groups/onthivao6clc/?sorting_setting=CHRONOLOGICAL",
       "topic_id": "CHON_TRUONG_TUYEN_SINH",
       "topic_label": "Chọn Trường & Tuyển Sinh",
@@ -52057,7 +51749,7 @@ window.CDH_CLEAN_FORUM_DATA = {
     {
       "post_sig": "307024b1f0913c41a2fad295",
       "group_slug": "on_thi_vao_lop_6_chat_luong_cao_ams_cau_giay_ntt",
-      "group_name": "Ôn thi vào lớp 6 chất lượng cao Ams, Cầu Giấy, NTT, THCS Ngoại Ngữ, ...",
+      "group_name": "Ôn thi vào lớp 6 chất lượng cao Ams, Cầu Giấy, NTT, THCS Ngoại Ngữ,",
       "group_url": "https://www.facebook.com/groups/onthivao6clc/?sorting_setting=CHRONOLOGICAL",
       "topic_id": "ON_THI_HOC_TAP",
       "topic_label": "Phương Pháp Học & Ôn Thi",
@@ -52089,7 +51781,7 @@ window.CDH_CLEAN_FORUM_DATA = {
     {
       "post_sig": "7b2aa3f4bf93b6389c7fc7e4",
       "group_slug": "on_thi_vao_lop_6_chat_luong_cao_ams_cau_giay_ntt",
-      "group_name": "Ôn thi vào lớp 6 chất lượng cao Ams, Cầu Giấy, NTT, THCS Ngoại Ngữ, ...",
+      "group_name": "Ôn thi vào lớp 6 chất lượng cao Ams, Cầu Giấy, NTT, THCS Ngoại Ngữ,",
       "group_url": "https://www.facebook.com/groups/onthivao6clc/?sorting_setting=CHRONOLOGICAL",
       "topic_id": "ON_THI_HOC_TAP",
       "topic_label": "Phương Pháp Học & Ôn Thi",
@@ -52121,7 +51813,7 @@ window.CDH_CLEAN_FORUM_DATA = {
     {
       "post_sig": "f2458a14084b179da1a0b892",
       "group_slug": "on_thi_vao_lop_6_chat_luong_cao_ams_cau_giay_ntt",
-      "group_name": "Ôn thi vào lớp 6 chất lượng cao Ams, Cầu Giấy, NTT, THCS Ngoại Ngữ, ...",
+      "group_name": "Ôn thi vào lớp 6 chất lượng cao Ams, Cầu Giấy, NTT, THCS Ngoại Ngữ,",
       "group_url": "https://www.facebook.com/groups/onthivao6clc/?sorting_setting=CHRONOLOGICAL",
       "topic_id": "NGOAI_NGU_HOMESCHOOL",
       "topic_label": "Ngoại Ngữ, HSK & Homeschool",
@@ -52157,7 +51849,7 @@ window.CDH_CLEAN_FORUM_DATA = {
     {
       "post_sig": "a5b9802ad2f47e6bbcc92429",
       "group_slug": "on_thi_vao_lop_6_chat_luong_cao_ams_cau_giay_ntt",
-      "group_name": "Ôn thi vào lớp 6 chất lượng cao Ams, Cầu Giấy, NTT, THCS Ngoại Ngữ, ...",
+      "group_name": "Ôn thi vào lớp 6 chất lượng cao Ams, Cầu Giấy, NTT, THCS Ngoại Ngữ,",
       "group_url": "https://www.facebook.com/groups/onthivao6clc/?sorting_setting=CHRONOLOGICAL",
       "topic_id": "ON_THI_HOC_TAP",
       "topic_label": "Phương Pháp Học & Ôn Thi",
@@ -52189,7 +51881,7 @@ window.CDH_CLEAN_FORUM_DATA = {
     {
       "post_sig": "527e8030020319ad4cca7e0f",
       "group_slug": "on_thi_vao_lop_6_chat_luong_cao_ams_cau_giay_ntt",
-      "group_name": "Ôn thi vào lớp 6 chất lượng cao Ams, Cầu Giấy, NTT, THCS Ngoại Ngữ, ...",
+      "group_name": "Ôn thi vào lớp 6 chất lượng cao Ams, Cầu Giấy, NTT, THCS Ngoại Ngữ,",
       "group_url": "https://www.facebook.com/groups/onthivao6clc/?sorting_setting=CHRONOLOGICAL",
       "topic_id": "CHON_TRUONG_TUYEN_SINH",
       "topic_label": "Chọn Trường & Tuyển Sinh",
@@ -52221,7 +51913,7 @@ window.CDH_CLEAN_FORUM_DATA = {
     {
       "post_sig": "64f09d4b9b2bf37d5e71a3dd",
       "group_slug": "on_thi_vao_lop_6_chat_luong_cao_ams_cau_giay_ntt",
-      "group_name": "Ôn thi vào lớp 6 chất lượng cao Ams, Cầu Giấy, NTT, THCS Ngoại Ngữ, ...",
+      "group_name": "Ôn thi vào lớp 6 chất lượng cao Ams, Cầu Giấy, NTT, THCS Ngoại Ngữ,",
       "group_url": "https://www.facebook.com/groups/onthivao6clc/?sorting_setting=CHRONOLOGICAL",
       "topic_id": "CHON_TRUONG_TUYEN_SINH",
       "topic_label": "Chọn Trường & Tuyển Sinh",
@@ -52401,7 +52093,7 @@ window.CDH_CLEAN_FORUM_DATA = {
     {
       "post_sig": "1963c5f9c69884459d0b3102",
       "group_slug": "tam_quan_trong_cua_dau_thanh_trong_tap_doc_tien_",
-      "group_name": "tầm quan trọng của dấu thanh trong tập đọc tiền tiểu học",
+      "group_name": "Cộng đồng Phụ huynh K-12",
       "group_url": "https://www.facebook.com/groups/1081405469317475/?sorting_setting=CHRONOLOGICAL",
       "topic_id": "TIEN_TIEU_HOC_LOP_1",
       "topic_label": "Tiền Tiểu Học & Vào Lớp 1",
@@ -52429,18 +52121,18 @@ window.CDH_CLEAN_FORUM_DATA = {
     {
       "post_sig": "7d00e9d94ad11a18603b8a8e",
       "group_slug": "cho_minh_hoi_lop_tien_tieu_hoc_cho_be_5_tuoi_o_k",
-      "group_name": "Cho mình hỏi lớp tiền tiểu học cho bé 5 tuổi ở khu vực nhà ...",
+      "group_name": "Cộng đồng Phụ huynh K-12",
       "group_url": "https://www.facebook.com/groups/331095833123041/?sorting_setting=CHRONOLOGICAL",
       "topic_id": "TIEN_TIEU_HOC_LOP_1",
       "topic_label": "Tiền Tiểu Học & Vào Lớp 1",
       "tags": [
         {
-          "slug": "tien-tieu-hoc-2020-2021",
-          "label": "#HànhTrangLớp1"
-        },
-        {
           "slug": "danh-van-tap-doc",
           "label": "#ĐánhVầnTậpĐọc"
+        },
+        {
+          "slug": "tien-tieu-hoc-2020-2021",
+          "label": "#HànhTrangLớp1"
         }
       ],
       "author": "Thành viên nhóm",
@@ -52457,7 +52149,7 @@ window.CDH_CLEAN_FORUM_DATA = {
     {
       "post_sig": "2efde17777d965031a1ff3b6",
       "group_slug": "lop_tien_tieu_hoc_cho_be_2021_tai_vinh_hung_ha_n",
-      "group_name": "Lớp tiền tiểu học cho bé 2021 tại Vĩnh Hưng, Hà Nội",
+      "group_name": "Cộng đồng Phụ huynh K-12",
       "group_url": "https://www.facebook.com/groups/1538425683651298/?sorting_setting=CHRONOLOGICAL",
       "topic_id": "TIEN_TIEU_HOC_LOP_1",
       "topic_label": "Tiền Tiểu Học & Vào Lớp 1",
@@ -52485,7 +52177,7 @@ window.CDH_CLEAN_FORUM_DATA = {
     {
       "post_sig": "478292963c5696413995cc68",
       "group_slug": "cho_minh_hoi_lop_tien_tieu_hoc_cho_be_5_tuoi_o_k",
-      "group_name": "Cho mình hỏi lớp tiền tiểu học cho bé 5 tuổi ở khu vực nhà ...",
+      "group_name": "Cộng đồng Phụ huynh K-12",
       "group_url": "https://www.facebook.com/groups/331095833123041/?sorting_setting=CHRONOLOGICAL",
       "topic_id": "TIEN_TIEU_HOC_LOP_1",
       "topic_label": "Tiền Tiểu Học & Vào Lớp 1",
@@ -52541,7 +52233,7 @@ window.CDH_CLEAN_FORUM_DATA = {
     {
       "post_sig": "c238ab853ef62993439d8df7",
       "group_slug": "lop_on_thi_mien_phi_vao_lop_1_truong_achimedes_n",
-      "group_name": "Lớp ôn thi miễn phí vào lớp 1 trường Achimedes, Nguyễn ...",
+      "group_name": "Cộng đồng Phụ huynh K-12",
       "group_url": "https://www.facebook.com/groups/chocudan.gamuda/?sorting_setting=CHRONOLOGICAL",
       "topic_id": "ON_THI_HOC_TAP",
       "topic_label": "Phương Pháp Học & Ôn Thi",
@@ -52569,7 +52261,7 @@ window.CDH_CLEAN_FORUM_DATA = {
     {
       "post_sig": "0dcbd73faed50e3224f65c49",
       "group_slug": "kinh_nghiem_thi_vao_truong_ngoi_sao_ha_noi_lop_1",
-      "group_name": "kinh nghiệm thi vào trường ngôi sao hà nội lớp 1 tiểu học",
+      "group_name": "Cộng đồng Phụ huynh K-12",
       "group_url": "https://www.facebook.com/groups/onthicap2chatluongcao/?sorting_setting=CHRONOLOGICAL",
       "topic_id": "CHON_TRUONG_TUYEN_SINH",
       "topic_label": "Chọn Trường & Tuyển Sinh",
@@ -52713,7 +52405,7 @@ window.CDH_CLEAN_FORUM_DATA = {
     {
       "post_sig": "f2520705f41db112d4c27fe5",
       "group_slug": "on_thi_vao_lop_6_chat_luong_cao_ams_cau_giay_ntt",
-      "group_name": "Ôn thi vào lớp 6 chất lượng cao Ams, Cầu Giấy, NTT, THCS Ngoại Ngữ, ...",
+      "group_name": "Ôn thi vào lớp 6 chất lượng cao Ams, Cầu Giấy, NTT, THCS Ngoại Ngữ,",
       "group_url": "https://www.facebook.com/groups/onthivao6clc/?sorting_setting=CHRONOLOGICAL",
       "topic_id": "CHON_TRUONG_TUYEN_SINH",
       "topic_label": "Chọn Trường & Tuyển Sinh",
@@ -52749,7 +52441,7 @@ window.CDH_CLEAN_FORUM_DATA = {
     {
       "post_sig": "62969fa9bae0bf9a872e99ab",
       "group_slug": "de_thi_va_dap_an_tieng_han_vao_lop_10_ha_noi_202",
-      "group_name": "Đề thi và đáp án tiếng Hàn vào lớp 10 Hà Nội 2026",
+      "group_name": "Cộng đồng Phụ huynh K-12",
       "group_url": "https://www.facebook.com/groups/1082144982608276/?sorting_setting=CHRONOLOGICAL",
       "topic_id": "ON_THI_HOC_TAP",
       "topic_label": "Phương Pháp Học & Ôn Thi",
@@ -53293,7 +52985,7 @@ window.CDH_CLEAN_FORUM_DATA = {
     {
       "post_sig": "005c752e1da7d269812e34bd",
       "group_slug": "review_cac_truong_mam_non_tieu_hoc_thcs_thpt_tro",
-      "group_name": "Review các trường Mầm Non - Tiểu Học - THCS - THPT trong địa bàn Hà Nội.",
+      "group_name": "Review các trường Mầm Non - Tiểu Học - THCS - THPT trong địa bàn Hà Nội",
       "group_url": "https://www.facebook.com/groups/reviewmamnonvaliencap/?sorting_setting=CHRONOLOGICAL",
       "topic_id": "TAM_LY_GIA_DINH",
       "topic_label": "Tâm Lý, Kỷ Luật & Góc Học Tập",
@@ -53829,7 +53521,7 @@ window.CDH_CLEAN_FORUM_DATA = {
     {
       "post_sig": "caa701dbc5afb473cd710fb8",
       "group_slug": "review_cac_truong_mam_non_tieu_hoc_thcs_thpt_tro",
-      "group_name": "Review các trường Mầm Non - Tiểu Học - THCS - THPT trong địa bàn Hà Nội.",
+      "group_name": "Review các trường Mầm Non - Tiểu Học - THCS - THPT trong địa bàn Hà Nội",
       "group_url": "https://www.facebook.com/groups/reviewmamnonvaliencap/?sorting_setting=CHRONOLOGICAL",
       "topic_id": "TIEN_TIEU_HOC_LOP_1",
       "topic_label": "Tiền Tiểu Học & Vào Lớp 1",
@@ -54021,7 +53713,7 @@ window.CDH_CLEAN_FORUM_DATA = {
     {
       "post_sig": "28a6913cb0ab434fc3b572c7",
       "group_slug": "hoi_phu_huynh_tieu_hoc_nguyen_sieu",
-      "group_name": "Chưa đọcHội Phụ Huynh Tiểu Học Nguyễn Siêu: \"Sắp thi cuối kỳ I rồi, nhà các mẹ cho con ôn đều mỗi tối hay để gần ngày th",
+      "group_name": "Hội Phụ Huynh Tiểu Học Nguyễn Siêu",
       "group_url": "https://www.facebook.com/groups/538862983130110/?sorting_setting=CHRONOLOGICAL",
       "topic_id": "NGOAI_NGU_HOMESCHOOL",
       "topic_label": "Ngoại Ngữ, HSK & Homeschool",
@@ -54037,10 +53729,6 @@ window.CDH_CLEAN_FORUM_DATA = {
         {
           "slug": "tam-ly-cam-xuc",
           "label": "#TâmLý & CảmXúc"
-        },
-        {
-          "slug": "on-thi-kiem-tra",
-          "label": "#ÔnThiCuốiKỳ"
         }
       ],
       "author": "Đỗ Trang",
@@ -54277,7 +53965,7 @@ window.CDH_CLEAN_FORUM_DATA = {
     {
       "post_sig": "ff68e6eb42865b8c2622455f",
       "group_slug": "hoi_phu_huynh_tieu_hoc_nguyen_sieu",
-      "group_name": "Chưa đọcHội Phụ Huynh Tiểu Học Nguyễn Siêu: \"Sắp thi cuối kỳ I rồi, nhà các mẹ cho con ôn đều mỗi tối hay để gần ngày th",
+      "group_name": "Hội Phụ Huynh Tiểu Học Nguyễn Siêu",
       "group_url": "https://www.facebook.com/groups/538862983130110/?sorting_setting=CHRONOLOGICAL",
       "topic_id": "NGOAI_NGU_HOMESCHOOL",
       "topic_label": "Ngoại Ngữ, HSK & Homeschool",
@@ -54633,22 +54321,18 @@ window.CDH_CLEAN_FORUM_DATA = {
     {
       "post_sig": "7bd1c97ba3972ba630397d58",
       "group_slug": "hoi_phu_huynh_tieu_hoc_nguyen_sieu",
-      "group_name": "Chưa đọcHội Phụ Huynh Tiểu Học Nguyễn Siêu: \"Sắp thi cuối kỳ I rồi, nhà các mẹ cho con ôn đều mỗi tối hay để gần ngày th",
+      "group_name": "Hội Phụ Huynh Tiểu Học Nguyễn Siêu",
       "group_url": "https://www.facebook.com/groups/538862983130110/?sorting_setting=CHRONOLOGICAL",
-      "topic_id": "ON_THI_HOC_TAP",
-      "topic_label": "Phương Pháp Học & Ôn Thi",
+      "topic_id": "TIEN_TIEU_HOC_LOP_1",
+      "topic_label": "Tiền Tiểu Học & Vào Lớp 1",
       "tags": [
         {
           "slug": "luyen-chu-cam-but",
           "label": "#LuyệnChữCầmBút"
         },
         {
-          "slug": "on-thi-kiem-tra",
-          "label": "#ÔnThiCuốiKỳ"
-        },
-        {
-          "slug": "goc-hoi-dap-thuc-chien",
-          "label": "#HỏiĐápKinhNghiệm"
+          "slug": "tien-tieu-hoc-2020-2021",
+          "label": "#HànhTrangLớp1"
         }
       ],
       "author": "Sao Thiên",
@@ -54953,7 +54637,7 @@ window.CDH_CLEAN_FORUM_DATA = {
     {
       "post_sig": "623bdc829e7a014137c6d7fe",
       "group_slug": "hoi_phu_huynh_tieu_hoc_nguyen_sieu",
-      "group_name": "Chưa đọcHội Phụ Huynh Tiểu Học Nguyễn Siêu: \"Sắp thi cuối kỳ I rồi, nhà các mẹ cho con ôn đều mỗi tối hay để gần ngày th",
+      "group_name": "Hội Phụ Huynh Tiểu Học Nguyễn Siêu",
       "group_url": "https://www.facebook.com/groups/538862983130110/?sorting_setting=CHRONOLOGICAL",
       "topic_id": "NGOAI_NGU_HOMESCHOOL",
       "topic_label": "Ngoại Ngữ, HSK & Homeschool",
@@ -54969,10 +54653,6 @@ window.CDH_CLEAN_FORUM_DATA = {
         {
           "slug": "tam-ly-cam-xuc",
           "label": "#TâmLý & CảmXúc"
-        },
-        {
-          "slug": "goc-hoi-dap-thuc-chien",
-          "label": "#HỏiĐápKinhNghiệm"
         }
       ],
       "author": "Phạm Linh",
@@ -55177,7 +54857,7 @@ window.CDH_CLEAN_FORUM_DATA = {
     {
       "post_sig": "674186e31ee4385f4d5bb2db",
       "group_slug": "hoi_phu_huynh_tieu_hoc_nguyen_sieu",
-      "group_name": "Chưa đọcHội Phụ Huynh Tiểu Học Nguyễn Siêu: \"Sắp thi cuối kỳ I rồi, nhà các mẹ cho con ôn đều mỗi tối hay để gần ngày th",
+      "group_name": "Hội Phụ Huynh Tiểu Học Nguyễn Siêu",
       "group_url": "https://www.facebook.com/groups/538862983130110/?sorting_setting=CHRONOLOGICAL",
       "topic_id": "NGOAI_NGU_HOMESCHOOL",
       "topic_label": "Ngoại Ngữ, HSK & Homeschool",
@@ -55187,12 +54867,8 @@ window.CDH_CLEAN_FORUM_DATA = {
           "label": "#TiếngAnhTrẻEm"
         },
         {
-          "slug": "on-thi-kiem-tra",
-          "label": "#ÔnThiCuốiKỳ"
-        },
-        {
-          "slug": "goc-hoi-dap-thuc-chien",
-          "label": "#HỏiĐápKinhNghiệm"
+          "slug": "homeschool-tu-hoc",
+          "label": "#HomeschoolTựHọc"
         }
       ],
       "author": "Phạm Linh",
@@ -57613,7 +57289,7 @@ window.CDH_CLEAN_FORUM_DATA = {
     {
       "post_sig": "3899607b68588ca5e0625402",
       "group_slug": "hoi_phu_huynh_tieu_hoc_nguyen_sieu",
-      "group_name": "Chưa đọcHội Phụ Huynh Tiểu Học Nguyễn Siêu: \"Sắp thi cuối kỳ I rồi, nhà các mẹ cho con ôn đều mỗi tối hay để gần ngày th",
+      "group_name": "Hội Phụ Huynh Tiểu Học Nguyễn Siêu",
       "group_url": "https://www.facebook.com/groups/538862983130110/?sorting_setting=CHRONOLOGICAL",
       "topic_id": "NGOAI_NGU_HOMESCHOOL",
       "topic_label": "Ngoại Ngữ, HSK & Homeschool",
@@ -57623,12 +57299,8 @@ window.CDH_CLEAN_FORUM_DATA = {
           "label": "#TiếngAnhTrẻEm"
         },
         {
-          "slug": "on-thi-kiem-tra",
-          "label": "#ÔnThiCuốiKỳ"
-        },
-        {
-          "slug": "goc-hoi-dap-thuc-chien",
-          "label": "#HỏiĐápKinhNghiệm"
+          "slug": "homeschool-tu-hoc",
+          "label": "#HomeschoolTựHọc"
         }
       ],
       "author": "Nguyen Tuan Dung",
@@ -57985,7 +57657,7 @@ window.CDH_CLEAN_FORUM_DATA = {
     {
       "post_sig": "bbcd702642a96376aed7ddec",
       "group_slug": "hoi_phu_huynh_tieu_hoc_nguyen_sieu",
-      "group_name": "Chưa đọcHội Phụ Huynh Tiểu Học Nguyễn Siêu: \"Sắp thi cuối kỳ I rồi, nhà các mẹ cho con ôn đều mỗi tối hay để gần ngày th",
+      "group_name": "Hội Phụ Huynh Tiểu Học Nguyễn Siêu",
       "group_url": "https://www.facebook.com/groups/538862983130110/?sorting_setting=CHRONOLOGICAL",
       "topic_id": "ON_THI_HOC_TAP",
       "topic_label": "Phương Pháp Học & Ôn Thi",
@@ -58001,10 +57673,6 @@ window.CDH_CLEAN_FORUM_DATA = {
         {
           "slug": "tam-ly-cam-xuc",
           "label": "#TâmLý & CảmXúc"
-        },
-        {
-          "slug": "goc-hoi-dap-thuc-chien",
-          "label": "#HỏiĐápKinhNghiệm"
         }
       ],
       "author": "Thành viên nhóm",
@@ -58081,10 +57749,10 @@ window.CDH_CLEAN_FORUM_DATA = {
     {
       "post_sig": "237830154ba938d322b9b60d",
       "group_slug": "hoi_phu_huynh_tieu_hoc_nguyen_sieu",
-      "group_name": "Chưa đọcHội Phụ Huynh Tiểu Học Nguyễn Siêu: \"Sắp thi cuối kỳ I rồi, nhà các mẹ cho con ôn đều mỗi tối hay để gần ngày th",
+      "group_name": "Hội Phụ Huynh Tiểu Học Nguyễn Siêu",
       "group_url": "https://www.facebook.com/groups/538862983130110/?sorting_setting=CHRONOLOGICAL",
-      "topic_id": "ON_THI_HOC_TAP",
-      "topic_label": "Phương Pháp Học & Ôn Thi",
+      "topic_id": "TAM_LY_GIA_DINH",
+      "topic_label": "Tâm Lý, Kỷ Luật & Góc Học Tập",
       "tags": [
         {
           "slug": "homeschool-tu-hoc",
@@ -58093,10 +57761,6 @@ window.CDH_CLEAN_FORUM_DATA = {
         {
           "slug": "goc-hoi-dap-thuc-chien",
           "label": "#HỏiĐápKinhNghiệm"
-        },
-        {
-          "slug": "on-thi-kiem-tra",
-          "label": "#ÔnThiCuốiKỳ"
         }
       ],
       "author": "Thành viên nhóm",
@@ -58285,7 +57949,7 @@ window.CDH_CLEAN_FORUM_DATA = {
     {
       "post_sig": "2a77fe57c5434d6809348d8f",
       "group_slug": "hoi_phu_huynh_tieu_hoc_nguyen_sieu",
-      "group_name": "Chưa đọcHội Phụ Huynh Tiểu Học Nguyễn Siêu: \"Sắp thi cuối kỳ I rồi, nhà các mẹ cho con ôn đều mỗi tối hay để gần ngày th",
+      "group_name": "Hội Phụ Huynh Tiểu Học Nguyễn Siêu",
       "group_url": "https://www.facebook.com/groups/538862983130110/?sorting_setting=CHRONOLOGICAL",
       "topic_id": "NGOAI_NGU_HOMESCHOOL",
       "topic_label": "Ngoại Ngữ, HSK & Homeschool",
@@ -58301,10 +57965,6 @@ window.CDH_CLEAN_FORUM_DATA = {
         {
           "slug": "tieng-anh-tre-em",
           "label": "#TiếngAnhTrẻEm"
-        },
-        {
-          "slug": "on-thi-kiem-tra",
-          "label": "#ÔnThiCuốiKỳ"
         }
       ],
       "author": "Thành viên nhóm",
@@ -58593,10 +58253,10 @@ window.CDH_CLEAN_FORUM_DATA = {
     {
       "post_sig": "09e331098c9cb1ca0810191d",
       "group_slug": "hoi_phu_huynh_tieu_hoc_nguyen_sieu",
-      "group_name": "Chưa đọcHội Phụ Huynh Tiểu Học Nguyễn Siêu: \"Sắp thi cuối kỳ I rồi, nhà các mẹ cho con ôn đều mỗi tối hay để gần ngày th",
+      "group_name": "Hội Phụ Huynh Tiểu Học Nguyễn Siêu",
       "group_url": "https://www.facebook.com/groups/538862983130110/?sorting_setting=CHRONOLOGICAL",
-      "topic_id": "ON_THI_HOC_TAP",
-      "topic_label": "Phương Pháp Học & Ôn Thi",
+      "topic_id": "TAM_LY_GIA_DINH",
+      "topic_label": "Tâm Lý, Kỷ Luật & Góc Học Tập",
       "tags": [
         {
           "slug": "tam-ly-cam-xuc",
@@ -58609,10 +58269,6 @@ window.CDH_CLEAN_FORUM_DATA = {
         {
           "slug": "ren-tap-trung-ky-luat",
           "label": "#RènTậpTrung"
-        },
-        {
-          "slug": "on-thi-kiem-tra",
-          "label": "#ÔnThiCuốiKỳ"
         }
       ],
       "author": "Thành viên nhóm",
@@ -58721,18 +58377,18 @@ window.CDH_CLEAN_FORUM_DATA = {
     {
       "post_sig": "9a701cc267caa60a2bc6cbd9",
       "group_slug": "hoi_phu_huynh_tieu_hoc_nguyen_sieu",
-      "group_name": "Chưa đọcHội Phụ Huynh Tiểu Học Nguyễn Siêu: \"Sắp thi cuối kỳ I rồi, nhà các mẹ cho con ôn đều mỗi tối hay để gần ngày th",
+      "group_name": "Hội Phụ Huynh Tiểu Học Nguyễn Siêu",
       "group_url": "https://www.facebook.com/groups/538862983130110/?sorting_setting=CHRONOLOGICAL",
-      "topic_id": "ON_THI_HOC_TAP",
-      "topic_label": "Phương Pháp Học & Ôn Thi",
+      "topic_id": "TAM_LY_GIA_DINH",
+      "topic_label": "Tâm Lý, Kỷ Luật & Góc Học Tập",
       "tags": [
         {
-          "slug": "on-thi-kiem-tra",
-          "label": "#ÔnThiCuốiKỳ"
+          "slug": "tam-ly-cam-xuc",
+          "label": "#TâmLý & CảmXúc"
         },
         {
-          "slug": "goc-hoi-dap-thuc-chien",
-          "label": "#HỏiĐápKinhNghiệm"
+          "slug": "ren-tap-trung-ky-luat",
+          "label": "#RènTậpTrung"
         }
       ],
       "author": "Thành viên nhóm",
@@ -59481,7 +59137,7 @@ window.CDH_CLEAN_FORUM_DATA = {
     {
       "post_sig": "10b4561f3052495d0178e7c2",
       "group_slug": "on_thi_vao_lop_6_chat_luong_cao_ams_cau_giay_ntt",
-      "group_name": "Ôn thi vào lớp 6 chất lượng cao Ams, Cầu Giấy, NTT, THCS Ngoại Ngữ, ...",
+      "group_name": "Ôn thi vào lớp 6 chất lượng cao Ams, Cầu Giấy, NTT, THCS Ngoại Ngữ,",
       "group_url": "https://www.facebook.com/groups/onthivao6clc/?sorting_setting=CHRONOLOGICAL",
       "topic_id": "ON_THI_HOC_TAP",
       "topic_label": "Phương Pháp Học & Ôn Thi",
@@ -60509,7 +60165,7 @@ window.CDH_CLEAN_FORUM_DATA = {
     {
       "post_sig": "106fcc6d9494bbfe02fb8ab1",
       "group_slug": "on_thi_vao_lop_6_chat_luong_cao_ams_cau_giay_ntt",
-      "group_name": "Ôn thi vào lớp 6 chất lượng cao Ams, Cầu Giấy, NTT, THCS Ngoại Ngữ, ...",
+      "group_name": "Ôn thi vào lớp 6 chất lượng cao Ams, Cầu Giấy, NTT, THCS Ngoại Ngữ,",
       "group_url": "https://www.facebook.com/groups/onthivao6clc/?sorting_setting=CHRONOLOGICAL",
       "topic_id": "NGOAI_NGU_HOMESCHOOL",
       "topic_label": "Ngoại Ngữ, HSK & Homeschool",
@@ -66937,7 +66593,7 @@ window.CDH_CLEAN_FORUM_DATA = {
     {
       "post_sig": "2b1dc96e843fdd040a862bd3",
       "group_slug": "hoi_phu_huynh_ha_noi_co_con_hoc_cap_2_thi_vao_lo",
-      "group_name": "HỘI PHỤ HUYNH HÀ NỘI - CÓ CON HỌC CẤP 2 , THI VÀO LỚP 10.",
+      "group_name": "HỘI PHỤ HUYNH HÀ NỘI - CÓ CON HỌC CẤP 2 , THI VÀO LỚP 10",
       "group_url": "https://www.facebook.com/groups/thaysoankpi/?sorting_setting=CHRONOLOGICAL",
       "topic_id": "TIEN_TIEU_HOC_LOP_1",
       "topic_label": "Tiền Tiểu Học & Vào Lớp 1",
@@ -66965,7 +66621,7 @@ window.CDH_CLEAN_FORUM_DATA = {
     {
       "post_sig": "dc61e73d998cd46433ed5f38",
       "group_slug": "hoi_phu_huynh_ha_noi_co_con_hoc_cap_2_thi_vao_lo",
-      "group_name": "HỘI PHỤ HUYNH HÀ NỘI - CÓ CON HỌC CẤP 2 , THI VÀO LỚP 10.",
+      "group_name": "HỘI PHỤ HUYNH HÀ NỘI - CÓ CON HỌC CẤP 2 , THI VÀO LỚP 10",
       "group_url": "https://www.facebook.com/groups/thaysoankpi/?sorting_setting=CHRONOLOGICAL",
       "topic_id": "TIEN_TIEU_HOC_LOP_1",
       "topic_label": "Tiền Tiểu Học & Vào Lớp 1",
@@ -67001,7 +66657,7 @@ window.CDH_CLEAN_FORUM_DATA = {
     {
       "post_sig": "d598659941b59965992bee53",
       "group_slug": "hoi_phu_huynh_ha_noi_co_con_hoc_cap_2_thi_vao_lo",
-      "group_name": "HỘI PHỤ HUYNH HÀ NỘI - CÓ CON HỌC CẤP 2 , THI VÀO LỚP 10.",
+      "group_name": "HỘI PHỤ HUYNH HÀ NỘI - CÓ CON HỌC CẤP 2 , THI VÀO LỚP 10",
       "group_url": "https://www.facebook.com/groups/thaysoankpi/?sorting_setting=CHRONOLOGICAL",
       "topic_id": "TIEN_TIEU_HOC_LOP_1",
       "topic_label": "Tiền Tiểu Học & Vào Lớp 1",
@@ -67037,7 +66693,7 @@ window.CDH_CLEAN_FORUM_DATA = {
     {
       "post_sig": "30afaed087ef3aac16438531",
       "group_slug": "hoi_phu_huynh_ha_noi_co_con_hoc_cap_2_thi_vao_lo",
-      "group_name": "HỘI PHỤ HUYNH HÀ NỘI - CÓ CON HỌC CẤP 2 , THI VÀO LỚP 10.",
+      "group_name": "HỘI PHỤ HUYNH HÀ NỘI - CÓ CON HỌC CẤP 2 , THI VÀO LỚP 10",
       "group_url": "https://www.facebook.com/groups/thaysoankpi/?sorting_setting=CHRONOLOGICAL",
       "topic_id": "CHON_TRUONG_TUYEN_SINH",
       "topic_label": "Chọn Trường & Tuyển Sinh",
@@ -67073,7 +66729,7 @@ window.CDH_CLEAN_FORUM_DATA = {
     {
       "post_sig": "ccfdfa1f4860b21fef5bdd7c",
       "group_slug": "hoi_phu_huynh_ha_noi_co_con_hoc_cap_2_thi_vao_lo",
-      "group_name": "HỘI PHỤ HUYNH HÀ NỘI - CÓ CON HỌC CẤP 2 , THI VÀO LỚP 10.",
+      "group_name": "HỘI PHỤ HUYNH HÀ NỘI - CÓ CON HỌC CẤP 2 , THI VÀO LỚP 10",
       "group_url": "https://www.facebook.com/groups/thaysoankpi/?sorting_setting=CHRONOLOGICAL",
       "topic_id": "TIEN_TIEU_HOC_LOP_1",
       "topic_label": "Tiền Tiểu Học & Vào Lớp 1",
@@ -67101,7 +66757,7 @@ window.CDH_CLEAN_FORUM_DATA = {
     {
       "post_sig": "9380cb618a78fd236366cfce",
       "group_slug": "hoi_phu_huynh_ha_noi_co_con_hoc_cap_2_thi_vao_lo",
-      "group_name": "HỘI PHỤ HUYNH HÀ NỘI - CÓ CON HỌC CẤP 2 , THI VÀO LỚP 10.",
+      "group_name": "HỘI PHỤ HUYNH HÀ NỘI - CÓ CON HỌC CẤP 2 , THI VÀO LỚP 10",
       "group_url": "https://www.facebook.com/groups/thaysoankpi/?sorting_setting=CHRONOLOGICAL",
       "topic_id": "TIEN_TIEU_HOC_LOP_1",
       "topic_label": "Tiền Tiểu Học & Vào Lớp 1",
@@ -67129,7 +66785,7 @@ window.CDH_CLEAN_FORUM_DATA = {
     {
       "post_sig": "e08fe7be70e9f868b7375a27",
       "group_slug": "hoi_phu_huynh_ha_noi_co_con_hoc_cap_2_thi_vao_lo",
-      "group_name": "HỘI PHỤ HUYNH HÀ NỘI - CÓ CON HỌC CẤP 2 , THI VÀO LỚP 10.",
+      "group_name": "HỘI PHỤ HUYNH HÀ NỘI - CÓ CON HỌC CẤP 2 , THI VÀO LỚP 10",
       "group_url": "https://www.facebook.com/groups/thaysoankpi/?sorting_setting=CHRONOLOGICAL",
       "topic_id": "TIEN_TIEU_HOC_LOP_1",
       "topic_label": "Tiền Tiểu Học & Vào Lớp 1",
@@ -67541,7 +67197,7 @@ window.CDH_CLEAN_FORUM_DATA = {
     {
       "post_sig": "c46f5f0ecd012dd68b0144b5",
       "group_slug": "cong_dong_acellus_abeka_cac_chuong_trinh_homesch",
-      "group_name": "Cộng Đồng Acellus, Abeka, Các chương trình Homeschooling (Ms Minh Trang Chu",
+      "group_name": "Cộng Đồng Acellus, Abeka, Các chương trình Homeschooling",
       "group_url": "https://www.facebook.com/groups/acellushomeschool/?sorting_setting=CHRONOLOGICAL",
       "topic_id": "NGOAI_NGU_HOMESCHOOL",
       "topic_label": "Ngoại Ngữ, HSK & Homeschool",
@@ -67569,7 +67225,7 @@ window.CDH_CLEAN_FORUM_DATA = {
     {
       "post_sig": "2f4729d7835b2129cbf7ad1f",
       "group_slug": "cong_dong_acellus_abeka_cac_chuong_trinh_homesch",
-      "group_name": "Cộng Đồng Acellus, Abeka, Các chương trình Homeschooling (Ms Minh Trang Chu",
+      "group_name": "Cộng Đồng Acellus, Abeka, Các chương trình Homeschooling",
       "group_url": "https://www.facebook.com/groups/acellushomeschool/?sorting_setting=CHRONOLOGICAL",
       "topic_id": "NGOAI_NGU_HOMESCHOOL",
       "topic_label": "Ngoại Ngữ, HSK & Homeschool",
@@ -67601,7 +67257,7 @@ window.CDH_CLEAN_FORUM_DATA = {
     {
       "post_sig": "fa64465812a45f6c7306afc6",
       "group_slug": "cong_dong_acellus_abeka_cac_chuong_trinh_homesch",
-      "group_name": "Cộng Đồng Acellus, Abeka, Các chương trình Homeschooling (Ms Minh Trang Chu",
+      "group_name": "Cộng Đồng Acellus, Abeka, Các chương trình Homeschooling",
       "group_url": "https://www.facebook.com/groups/acellushomeschool/?sorting_setting=CHRONOLOGICAL",
       "topic_id": "NGOAI_NGU_HOMESCHOOL",
       "topic_label": "Ngoại Ngữ, HSK & Homeschool",
@@ -67873,18 +67529,18 @@ window.CDH_CLEAN_FORUM_DATA = {
     {
       "post_sig": "3bcef48469b0ca5f62ebc336",
       "group_slug": "hoi_phu_huynh_tieu_hoc_nguyen_sieu",
-      "group_name": "Chưa đọcHội Phụ Huynh Tiểu Học Nguyễn Siêu: \"Sắp thi cuối kỳ I rồi, nhà các mẹ cho con ôn đều mỗi tối hay để gần ngày th",
+      "group_name": "Hội Phụ Huynh Tiểu Học Nguyễn Siêu",
       "group_url": "https://www.facebook.com/groups/538862983130110/?sorting_setting=CHRONOLOGICAL",
-      "topic_id": "ON_THI_HOC_TAP",
-      "topic_label": "Phương Pháp Học & Ôn Thi",
+      "topic_id": "TAM_LY_GIA_DINH",
+      "topic_label": "Tâm Lý, Kỷ Luật & Góc Học Tập",
       "tags": [
         {
-          "slug": "on-thi-kiem-tra",
-          "label": "#ÔnThiCuốiKỳ"
+          "slug": "tam-ly-cam-xuc",
+          "label": "#TâmLý & CảmXúc"
         },
         {
-          "slug": "goc-hoi-dap-thuc-chien",
-          "label": "#HỏiĐápKinhNghiệm"
+          "slug": "ren-tap-trung-ky-luat",
+          "label": "#RènTậpTrung"
         }
       ],
       "author": "Lê Nhài",
@@ -67901,7 +67557,7 @@ window.CDH_CLEAN_FORUM_DATA = {
     {
       "post_sig": "9b36d7122a5ca403c87d4172",
       "group_slug": "hoi_phu_huynh_tieu_hoc_nguyen_sieu",
-      "group_name": "Chưa đọcHội Phụ Huynh Tiểu Học Nguyễn Siêu: \"Sắp thi cuối kỳ I rồi, nhà các mẹ cho con ôn đều mỗi tối hay để gần ngày th",
+      "group_name": "Hội Phụ Huynh Tiểu Học Nguyễn Siêu",
       "group_url": "https://www.facebook.com/groups/538862983130110/?sorting_setting=CHRONOLOGICAL",
       "topic_id": "ON_THI_HOC_TAP",
       "topic_label": "Phương Pháp Học & Ôn Thi",
@@ -67929,22 +67585,18 @@ window.CDH_CLEAN_FORUM_DATA = {
     {
       "post_sig": "2d58a9109b4a538da9eb853c",
       "group_slug": "hoi_phu_huynh_tieu_hoc_nguyen_sieu",
-      "group_name": "Chưa đọcHội Phụ Huynh Tiểu Học Nguyễn Siêu: \"Sắp thi cuối kỳ I rồi, nhà các mẹ cho con ôn đều mỗi tối hay để gần ngày th",
+      "group_name": "Hội Phụ Huynh Tiểu Học Nguyễn Siêu",
       "group_url": "https://www.facebook.com/groups/538862983130110/?sorting_setting=CHRONOLOGICAL",
-      "topic_id": "ON_THI_HOC_TAP",
-      "topic_label": "Phương Pháp Học & Ôn Thi",
+      "topic_id": "TAM_LY_GIA_DINH",
+      "topic_label": "Tâm Lý, Kỷ Luật & Góc Học Tập",
       "tags": [
         {
           "slug": "bua-an-ban-tru-suc-khoe",
           "label": "#BánTrú & DinhDưỡng"
         },
         {
-          "slug": "on-thi-kiem-tra",
-          "label": "#ÔnThiCuốiKỳ"
-        },
-        {
-          "slug": "goc-hoi-dap-thuc-chien",
-          "label": "#HỏiĐápKinhNghiệm"
+          "slug": "tam-ly-cam-xuc",
+          "label": "#TâmLý & CảmXúc"
         }
       ],
       "author": "SoftAsparagus5951",
@@ -69069,7 +68721,7 @@ window.CDH_CLEAN_FORUM_DATA = {
     {
       "post_sig": "0626fc2c0db54e26c4e7cf51",
       "group_slug": "dong_hanh_cung_con_homeschool_4_0",
-      "group_name": "Chưa đọcChào mừng bạn đến với ĐỒNG HÀNH CÙNG CON... Quản trị viên đã phê duyệt yêu cầu tham gia của bạn.21 giờ",
+      "group_name": "Đồng Hành Cùng Con",
       "group_url": "https://www.facebook.com/groups/teamdonghanh4.0/?sorting_setting=CHRONOLOGICAL",
       "topic_id": "TAM_LY_GIA_DINH",
       "topic_label": "Tâm Lý, Kỷ Luật & Góc Học Tập",
@@ -69425,7 +69077,7 @@ window.CDH_CLEAN_FORUM_DATA = {
     {
       "post_sig": "16b3c04bfa03c57a5f05d960",
       "group_slug": "hoc_cung_con_choi_cung_con",
-      "group_name": "Chưa đọcTừ giờ, bạn có thể đăng bài và bình luận trong Học Cùng Con - Chơi Cùng Con.14 giờ",
+      "group_name": "Học Cùng Con - Chơi Cùng Con",
       "group_url": "https://www.facebook.com/groups/hoccungconchoicungcon/?sorting_setting=CHRONOLOGICAL",
       "topic_id": "NGOAI_NGU_HOMESCHOOL",
       "topic_label": "Ngoại Ngữ, HSK & Homeschool",
@@ -69453,7 +69105,7 @@ window.CDH_CLEAN_FORUM_DATA = {
     {
       "post_sig": "41de3bd06faf08092d87d52a",
       "group_slug": "hoc_cung_con_choi_cung_con",
-      "group_name": "Chưa đọcTừ giờ, bạn có thể đăng bài và bình luận trong Học Cùng Con - Chơi Cùng Con.14 giờ",
+      "group_name": "Học Cùng Con - Chơi Cùng Con",
       "group_url": "https://www.facebook.com/groups/hoccungconchoicungcon/?sorting_setting=CHRONOLOGICAL",
       "topic_id": "TAM_LY_GIA_DINH",
       "topic_label": "Tâm Lý, Kỷ Luật & Góc Học Tập",
@@ -69481,7 +69133,7 @@ window.CDH_CLEAN_FORUM_DATA = {
     {
       "post_sig": "653b78f3b6c7740d1ff77ec9",
       "group_slug": "hoc_cung_con_choi_cung_con",
-      "group_name": "Chưa đọcTừ giờ, bạn có thể đăng bài và bình luận trong Học Cùng Con - Chơi Cùng Con.14 giờ",
+      "group_name": "Học Cùng Con - Chơi Cùng Con",
       "group_url": "https://www.facebook.com/groups/hoccungconchoicungcon/?sorting_setting=CHRONOLOGICAL",
       "topic_id": "TAM_LY_GIA_DINH",
       "topic_label": "Tâm Lý, Kỷ Luật & Góc Học Tập",
@@ -69509,7 +69161,7 @@ window.CDH_CLEAN_FORUM_DATA = {
     {
       "post_sig": "bfb1c0818b3ec81106f7ddd2",
       "group_slug": "hoc_cung_con_choi_cung_con",
-      "group_name": "Chưa đọcTừ giờ, bạn có thể đăng bài và bình luận trong Học Cùng Con - Chơi Cùng Con.14 giờ",
+      "group_name": "Học Cùng Con - Chơi Cùng Con",
       "group_url": "https://www.facebook.com/groups/hoccungconchoicungcon/?sorting_setting=CHRONOLOGICAL",
       "topic_id": "TAM_LY_GIA_DINH",
       "topic_label": "Tâm Lý, Kỷ Luật & Góc Học Tập",
@@ -69537,7 +69189,7 @@ window.CDH_CLEAN_FORUM_DATA = {
     {
       "post_sig": "f4608220f267b7e2871a3194",
       "group_slug": "hoc_cung_con_choi_cung_con",
-      "group_name": "Chưa đọcTừ giờ, bạn có thể đăng bài và bình luận trong Học Cùng Con - Chơi Cùng Con.14 giờ",
+      "group_name": "Học Cùng Con - Chơi Cùng Con",
       "group_url": "https://www.facebook.com/groups/hoccungconchoicungcon/?sorting_setting=CHRONOLOGICAL",
       "topic_id": "TAM_LY_GIA_DINH",
       "topic_label": "Tâm Lý, Kỷ Luật & Góc Học Tập",
@@ -69565,7 +69217,7 @@ window.CDH_CLEAN_FORUM_DATA = {
     {
       "post_sig": "69f9b31ef788cffb3f5b3b78",
       "group_slug": "hoc_cung_con_choi_cung_con",
-      "group_name": "Chưa đọcTừ giờ, bạn có thể đăng bài và bình luận trong Học Cùng Con - Chơi Cùng Con.14 giờ",
+      "group_name": "Học Cùng Con - Chơi Cùng Con",
       "group_url": "https://www.facebook.com/groups/hoccungconchoicungcon/?sorting_setting=CHRONOLOGICAL",
       "topic_id": "TAM_LY_GIA_DINH",
       "topic_label": "Tâm Lý, Kỷ Luật & Góc Học Tập",
@@ -69593,7 +69245,7 @@ window.CDH_CLEAN_FORUM_DATA = {
     {
       "post_sig": "067d63de8c6057134758ecb5",
       "group_slug": "hoc_cung_con_choi_cung_con",
-      "group_name": "Chưa đọcTừ giờ, bạn có thể đăng bài và bình luận trong Học Cùng Con - Chơi Cùng Con.14 giờ",
+      "group_name": "Học Cùng Con - Chơi Cùng Con",
       "group_url": "https://www.facebook.com/groups/hoccungconchoicungcon/?sorting_setting=CHRONOLOGICAL",
       "topic_id": "TAM_LY_GIA_DINH",
       "topic_label": "Tâm Lý, Kỷ Luật & Góc Học Tập",
@@ -69621,7 +69273,7 @@ window.CDH_CLEAN_FORUM_DATA = {
     {
       "post_sig": "8d854230478e334a769a8bf9",
       "group_slug": "hoc_cung_con_choi_cung_con",
-      "group_name": "Chưa đọcTừ giờ, bạn có thể đăng bài và bình luận trong Học Cùng Con - Chơi Cùng Con.14 giờ",
+      "group_name": "Học Cùng Con - Chơi Cùng Con",
       "group_url": "https://www.facebook.com/groups/hoccungconchoicungcon/?sorting_setting=CHRONOLOGICAL",
       "topic_id": "TAM_LY_GIA_DINH",
       "topic_label": "Tâm Lý, Kỷ Luật & Góc Học Tập",
@@ -70225,7 +69877,7 @@ window.CDH_CLEAN_FORUM_DATA = {
     {
       "post_sig": "97b9ffb0f0a1645027df836c",
       "group_slug": "cong_dong_acellus_abeka_cac_chuong_trinh_homesch",
-      "group_name": "Cộng Đồng Acellus, Abeka, Các chương trình Homeschooling (Ms Minh Trang Chu",
+      "group_name": "Cộng Đồng Acellus, Abeka, Các chương trình Homeschooling",
       "group_url": "https://www.facebook.com/groups/acellushomeschool/?sorting_setting=CHRONOLOGICAL",
       "topic_id": "NGOAI_NGU_HOMESCHOOL",
       "topic_label": "Ngoại Ngữ, HSK & Homeschool",
@@ -70677,7 +70329,7 @@ window.CDH_CLEAN_FORUM_DATA = {
     {
       "post_sig": "1bf2cfb66533972f39aed91f",
       "group_slug": "review_cac_truong_mam_non_tieu_hoc_thcs_thpt_tro",
-      "group_name": "Review các trường Mầm Non - Tiểu Học - THCS - THPT trong địa bàn Hà Nội.",
+      "group_name": "Review các trường Mầm Non - Tiểu Học - THCS - THPT trong địa bàn Hà Nội",
       "group_url": "https://www.facebook.com/groups/reviewmamnonvaliencap/?sorting_setting=CHRONOLOGICAL",
       "topic_id": "TAM_LY_GIA_DINH",
       "topic_label": "Tâm Lý, Kỷ Luật & Góc Học Tập",
@@ -70705,7 +70357,7 @@ window.CDH_CLEAN_FORUM_DATA = {
     {
       "post_sig": "e7f64792b13eadf7a85a9730",
       "group_slug": "review_cac_truong_mam_non_tieu_hoc_thcs_thpt_tro",
-      "group_name": "Review các trường Mầm Non - Tiểu Học - THCS - THPT trong địa bàn Hà Nội.",
+      "group_name": "Review các trường Mầm Non - Tiểu Học - THCS - THPT trong địa bàn Hà Nội",
       "group_url": "https://www.facebook.com/groups/reviewmamnonvaliencap/?sorting_setting=CHRONOLOGICAL",
       "topic_id": "TAM_LY_GIA_DINH",
       "topic_label": "Tâm Lý, Kỷ Luật & Góc Học Tập",
@@ -70733,7 +70385,7 @@ window.CDH_CLEAN_FORUM_DATA = {
     {
       "post_sig": "805e91830b10fe01651099c3",
       "group_slug": "review_cac_truong_mam_non_tieu_hoc_thcs_thpt_tro",
-      "group_name": "Review các trường Mầm Non - Tiểu Học - THCS - THPT trong địa bàn Hà Nội.",
+      "group_name": "Review các trường Mầm Non - Tiểu Học - THCS - THPT trong địa bàn Hà Nội",
       "group_url": "https://www.facebook.com/groups/reviewmamnonvaliencap/?sorting_setting=CHRONOLOGICAL",
       "topic_id": "TAM_LY_GIA_DINH",
       "topic_label": "Tâm Lý, Kỷ Luật & Góc Học Tập",
@@ -70759,37 +70411,9 @@ window.CDH_CLEAN_FORUM_DATA = {
       "engagement_score": 0
     },
     {
-      "post_sig": "e97aaf2785071dceac80998a",
-      "group_slug": "group_612285726077622",
-      "group_name": "Ийм ном авна",
-      "group_url": "https://www.facebook.com/groups/612285726077622/?sorting_setting=CHRONOLOGICAL",
-      "topic_id": "NGOAI_NGU_HOMESCHOOL",
-      "topic_label": "Ngoại Ngữ, HSK & Homeschool",
-      "tags": [
-        {
-          "slug": "he-quoc-te-song-bang",
-          "label": "#SongBằngCambridge"
-        },
-        {
-          "slug": "tieng-anh-tre-em",
-          "label": "#TiếngAnhTrẻEm"
-        }
-      ],
-      "author": "Thành viên nhóm",
-      "is_anonymous": false,
-      "posted_display": "2026-01-15 15:00",
-      "harvested_at": "2026-01-15 15:00:00 +07:00",
-      "permalink": "https://www.facebook.com/groups/612285726077622/posts/1729337271039123",
-      "text": "Ийм ном авна\nOCR: CAMBRIDGE DGE UNIVERSITY PRESS CAMBRIDGE Primary English Phonics Workbook B Gill Budgell & Kate Ruttle ner อท HE 10 bird Secondedition",
-      "clean_comments": [],
-      "clean_comments_count": 0,
-      "filtered_comments_count": 0,
-      "engagement_score": 0
-    },
-    {
       "post_sig": "035f3aafa5389d45ee86cf96",
       "group_slug": "trai_he_ban_tru_giam_40_hoc_phi_tai_20_co_so_o_h",
-      "group_name": "Trại hè bán trú giảm 40% học phí tại 20 cơ sở ở Hà Nội. ...",
+      "group_name": "Cộng đồng Phụ huynh K-12",
       "group_url": "https://www.facebook.com/groups/traihe/?sorting_setting=CHRONOLOGICAL",
       "topic_id": "CHON_TRUONG_TUYEN_SINH",
       "topic_label": "Chọn Trường & Tuyển Sinh",
@@ -70845,7 +70469,7 @@ window.CDH_CLEAN_FORUM_DATA = {
     {
       "post_sig": "d7673d71119ac3b63410c9a1",
       "group_slug": "review_cac_truong_mam_non_tieu_hoc_thcs_thpt_tro",
-      "group_name": "Review các trường Mầm Non - Tiểu Học - THCS - THPT trong địa bàn Hà Nội.",
+      "group_name": "Review các trường Mầm Non - Tiểu Học - THCS - THPT trong địa bàn Hà Nội",
       "group_url": "https://www.facebook.com/groups/reviewmamnonvaliencap/?sorting_setting=CHRONOLOGICAL",
       "topic_id": "TAM_LY_GIA_DINH",
       "topic_label": "Tâm Lý, Kỷ Luật & Góc Học Tập",
@@ -71937,18 +71561,18 @@ window.CDH_CLEAN_FORUM_DATA = {
     {
       "post_sig": "0f32dde46406f3dfa6bfca36",
       "group_slug": "hoi_phu_huynh_tieu_hoc_nguyen_sieu",
-      "group_name": "Chưa đọcHội Phụ Huynh Tiểu Học Nguyễn Siêu: \"Sắp thi cuối kỳ I rồi, nhà các mẹ cho con ôn đều mỗi tối hay để gần ngày th",
+      "group_name": "Hội Phụ Huynh Tiểu Học Nguyễn Siêu",
       "group_url": "https://www.facebook.com/groups/538862983130110/?sorting_setting=CHRONOLOGICAL",
-      "topic_id": "ON_THI_HOC_TAP",
-      "topic_label": "Phương Pháp Học & Ôn Thi",
+      "topic_id": "TAM_LY_GIA_DINH",
+      "topic_label": "Tâm Lý, Kỷ Luật & Góc Học Tập",
       "tags": [
         {
-          "slug": "on-thi-kiem-tra",
-          "label": "#ÔnThiCuốiKỳ"
+          "slug": "tam-ly-cam-xuc",
+          "label": "#TâmLý & CảmXúc"
         },
         {
-          "slug": "goc-hoi-dap-thuc-chien",
-          "label": "#HỏiĐápKinhNghiệm"
+          "slug": "ren-tap-trung-ky-luat",
+          "label": "#RènTậpTrung"
         }
       ],
       "author": "Tưởng Tình",
@@ -74849,7 +74473,7 @@ window.CDH_CLEAN_FORUM_DATA = {
     {
       "post_sig": "ffd3e581f9b828db584b85ad",
       "group_slug": "review_cac_truong_mam_non_tieu_hoc_thcs_thpt_tro",
-      "group_name": "Review các trường Mầm Non - Tiểu Học - THCS - THPT trong địa bàn Hà Nội.",
+      "group_name": "Review các trường Mầm Non - Tiểu Học - THCS - THPT trong địa bàn Hà Nội",
       "group_url": "https://www.facebook.com/groups/reviewmamnonvaliencap/?sorting_setting=CHRONOLOGICAL",
       "topic_id": "TAM_LY_GIA_DINH",
       "topic_label": "Tâm Lý, Kỷ Luật & Góc Học Tập",
@@ -77087,34 +76711,6 @@ window.CDH_CLEAN_FORUM_DATA = {
       "engagement_score": 0
     },
     {
-      "post_sig": "1785d0fc4eaab83a99e731c8",
-      "group_slug": "dong_hanh_cung_hoc_sinh_lop_1_391034",
-      "group_name": "Đồng Hành Cùng Học Sinh Lớp 1",
-      "group_url": "https://www.facebook.com/groups/391034272072755/?sorting_setting=CHRONOLOGICAL",
-      "topic_id": "TIEN_TIEU_HOC_LOP_1",
-      "topic_label": "Tiền Tiểu Học & Vào Lớp 1",
-      "tags": [
-        {
-          "slug": "tien-tieu-hoc-2020-2021",
-          "label": "#HànhTrangLớp1"
-        },
-        {
-          "slug": "danh-van-tap-doc",
-          "label": "#ĐánhVầnTậpĐọc"
-        }
-      ],
-      "author": "Thành viên nhóm",
-      "is_anonymous": false,
-      "posted_display": "2026-11-10 20:55",
-      "harvested_at": "2026-11-10 20:55:57 +07:00",
-      "permalink": "https://www.facebook.com/groups/391034272072755/permalink/1883926876116813",
-      "text": "https://www.facebook.com/share/p/1UxTKQWxog/",
-      "clean_comments": [],
-      "clean_comments_count": 0,
-      "filtered_comments_count": 0,
-      "engagement_score": 0
-    },
-    {
       "post_sig": "b750042ac992e9feeb647bcc",
       "group_slug": "cung_con_hoc_lop_1_149149",
       "group_name": "CÙNG CON HỌC LỚP 1 ❤️",
@@ -77715,34 +77311,6 @@ window.CDH_CLEAN_FORUM_DATA = {
       "engagement_score": 0
     },
     {
-      "post_sig": "8720136ef2b245986f5c78d9",
-      "group_slug": "hoi_cu_dan_vinhomes_smart_city_nhom_chinh_thuc",
-      "group_name": "Hội cư dân Vinhomes Smart City - Nhóm Chính Thức ✅",
-      "group_url": "https://www.facebook.com/groups/vinsmartcity.chocudan/?sorting_setting=CHRONOLOGICAL",
-      "topic_id": "TAM_LY_GIA_DINH",
-      "topic_label": "Tâm Lý, Kỷ Luật & Góc Học Tập",
-      "tags": [
-        {
-          "slug": "tam-ly-cam-xuc",
-          "label": "#TâmLý & CảmXúc"
-        },
-        {
-          "slug": "ren-tap-trung-ky-luat",
-          "label": "#RènTậpTrung"
-        }
-      ],
-      "author": "Thành viên nhóm",
-      "is_anonymous": false,
-      "posted_display": "2026-11-10 23:24",
-      "harvested_at": "2026-11-10 23:24:01 +07:00",
-      "permalink": "https://www.facebook.com/groups/vinsmartcity.chocudan/permalink/2729713264114227",
-      "text": "#LumiHaNoi #ChoThueCanHoLumi #CanHoLumi #ChoThueChungCuLumi\n#1nguLumi. #LMH_22024🥳",
-      "clean_comments": [],
-      "clean_comments_count": 0,
-      "filtered_comments_count": 0,
-      "engagement_score": 0
-    },
-    {
       "post_sig": "405f3376dc16df3916cfadec",
       "group_slug": "cung_con_hoc_tieu_hoc_574496",
       "group_name": "CÙNG CON HỌC TIỂU HỌC",
@@ -77993,90 +77561,6 @@ window.CDH_CLEAN_FORUM_DATA = {
       "harvested_at": "2026-11-12 22:22:09 +07:00",
       "permalink": "https://www.facebook.com/photo/?fbid=122196474644890560&set=gm.1307373334850979&idorvanity=1253419576913022",
       "text": "\"Bắt giò\" phụ huynh - Kì 50.",
-      "clean_comments": [],
-      "clean_comments_count": 0,
-      "filtered_comments_count": 0,
-      "engagement_score": 0
-    },
-    {
-      "post_sig": "2b2af68e88027f554b148b5c",
-      "group_slug": "bang_tin_thao_luan_phu_huynh_tong_hop",
-      "group_name": "Bảng Tin Thảo Luận Phụ Huynh Tổng Hợp",
-      "group_url": "https://www.facebook.com/groups/bang_tin_giao_duc_tong_hop/?sorting_setting=CHRONOLOGICAL",
-      "topic_id": "NGOAI_NGU_HOMESCHOOL",
-      "topic_label": "Ngoại Ngữ, HSK & Homeschool",
-      "tags": [
-        {
-          "slug": "tieng-anh-tre-em",
-          "label": "#TiếngAnhTrẻEm"
-        },
-        {
-          "slug": "homeschool-tu-hoc",
-          "label": "#HomeschoolTựHọc"
-        }
-      ],
-      "author": "Hien Chu",
-      "is_anonymous": false,
-      "posted_display": "2026-11-12 22:22",
-      "harvested_at": "2026-11-12 22:22:09 +07:00",
-      "permalink": "https://www.facebook.com/1118150294329417",
-      "text": "#Starters3\n#NganKhanh2019\n\n#ngay 90/100",
-      "clean_comments": [],
-      "clean_comments_count": 0,
-      "filtered_comments_count": 0,
-      "engagement_score": 0
-    },
-    {
-      "post_sig": "b3e7dd9d8997843980ceb508",
-      "group_slug": "bang_tin_thao_luan_phu_huynh_tong_hop",
-      "group_name": "Bảng Tin Thảo Luận Phụ Huynh Tổng Hợp",
-      "group_url": "https://www.facebook.com/groups/bang_tin_giao_duc_tong_hop/?sorting_setting=CHRONOLOGICAL",
-      "topic_id": "TAM_LY_GIA_DINH",
-      "topic_label": "Tâm Lý, Kỷ Luật & Góc Học Tập",
-      "tags": [
-        {
-          "slug": "tam-ly-cam-xuc",
-          "label": "#TâmLý & CảmXúc"
-        },
-        {
-          "slug": "ren-tap-trung-ky-luat",
-          "label": "#RènTậpTrung"
-        }
-      ],
-      "author": "Bam Boo",
-      "is_anonymous": false,
-      "posted_display": "2026-11-12 22:22",
-      "harvested_at": "2026-11-12 22:22:09 +07:00",
-      "permalink": "https://www.facebook.com/1118151720995941",
-      "text": "#tembatdau\n#TBD26\n#congvinh2021\n#ngay99/100",
-      "clean_comments": [],
-      "clean_comments_count": 0,
-      "filtered_comments_count": 0,
-      "engagement_score": 0
-    },
-    {
-      "post_sig": "135c4f2b8df49dab79cc472b",
-      "group_slug": "bang_tin_thao_luan_phu_huynh_tong_hop",
-      "group_name": "Bảng Tin Thảo Luận Phụ Huynh Tổng Hợp",
-      "group_url": "https://www.facebook.com/groups/bang_tin_giao_duc_tong_hop/?sorting_setting=CHRONOLOGICAL",
-      "topic_id": "TAM_LY_GIA_DINH",
-      "topic_label": "Tâm Lý, Kỷ Luật & Góc Học Tập",
-      "tags": [
-        {
-          "slug": "tam-ly-cam-xuc",
-          "label": "#TâmLý & CảmXúc"
-        },
-        {
-          "slug": "ren-tap-trung-ky-luat",
-          "label": "#RènTậpTrung"
-        }
-      ],
-      "author": "ĐỒNG HÀNH CÙNG CON (HOMESCHOOL 4.0)",
-      "is_anonymous": false,
-      "posted_display": "2026-11-12 22:22",
-      "harvested_at": "2026-11-12 22:22:09 +07:00",
-      "permalink": "https://www.facebook.com/photo/?fbid=29054616970864736&set=pcb.1118151720995941",
-      "text": "#tembatdau\n#TBD26",
       "clean_comments": [],
       "clean_comments_count": 0,
       "filtered_comments_count": 0,
@@ -78431,34 +77915,6 @@ window.CDH_CLEAN_FORUM_DATA = {
       "engagement_score": 0
     },
     {
-      "post_sig": "23562b065ea26657332dc7d3",
-      "group_slug": "bang_tin_thao_luan_phu_huynh_tong_hop",
-      "group_name": "Bảng Tin Thảo Luận Phụ Huynh Tổng Hợp",
-      "group_url": "https://www.facebook.com/groups/bang_tin_giao_duc_tong_hop/?sorting_setting=CHRONOLOGICAL",
-      "topic_id": "TAM_LY_GIA_DINH",
-      "topic_label": "Tâm Lý, Kỷ Luật & Góc Học Tập",
-      "tags": [
-        {
-          "slug": "tam-ly-cam-xuc",
-          "label": "#TâmLý & CảmXúc"
-        },
-        {
-          "slug": "ren-tap-trung-ky-luat",
-          "label": "#RènTậpTrung"
-        }
-      ],
-      "author": "Nguyễn Khánh Ngân",
-      "is_anonymous": false,
-      "posted_display": "2026-11-12 23:18",
-      "harvested_at": "2026-11-12 23:18:47 +07:00",
-      "permalink": "https://www.facebook.com/1118191184325328",
-      "text": "#Teambatdau\n#TBD65\n\n#Khanhngan\n\n#100ngaydonghanhcungcon",
-      "clean_comments": [],
-      "clean_comments_count": 0,
-      "filtered_comments_count": 0,
-      "engagement_score": 0
-    },
-    {
       "post_sig": "a8f139b1c1ad8d11f2e609eb",
       "group_slug": "bang_tin_thao_luan_phu_huynh_tong_hop",
       "group_name": "Bảng Tin Thảo Luận Phụ Huynh Tổng Hợp",
@@ -78509,118 +77965,6 @@ window.CDH_CLEAN_FORUM_DATA = {
       "harvested_at": "2026-11-12 23:18:47 +07:00",
       "permalink": "https://www.facebook.com/1118196580991455",
       "text": "#Chặng_4\n#100days_Let's_go.\n\n#TeamTieuLinh\n\n#PhucDang2021\n\n#MTVTD02\n\n#Ngày_khởi_động_17/8/2026\n\n#day81/100\n\nCon gửi bài ạ.",
-      "clean_comments": [],
-      "clean_comments_count": 0,
-      "filtered_comments_count": 0,
-      "engagement_score": 0
-    },
-    {
-      "post_sig": "fc830745266951f9cb8b800f",
-      "group_slug": "bang_tin_thao_luan_phu_huynh_tong_hop",
-      "group_name": "Bảng Tin Thảo Luận Phụ Huynh Tổng Hợp",
-      "group_url": "https://www.facebook.com/groups/bang_tin_giao_duc_tong_hop/?sorting_setting=CHRONOLOGICAL",
-      "topic_id": "TAM_LY_GIA_DINH",
-      "topic_label": "Tâm Lý, Kỷ Luật & Góc Học Tập",
-      "tags": [
-        {
-          "slug": "tam-ly-cam-xuc",
-          "label": "#TâmLý & CảmXúc"
-        },
-        {
-          "slug": "ren-tap-trung-ky-luat",
-          "label": "#RènTậpTrung"
-        }
-      ],
-      "author": "ĐỒNG HÀNH CÙNG CON (HOMESCHOOL 4.0)",
-      "is_anonymous": false,
-      "posted_display": "2026-11-12 23:18",
-      "harvested_at": "2026-11-12 23:18:47 +07:00",
-      "permalink": "",
-      "text": "#Teamseed\n#Nguyenminhthao #2023 #TS24\n#100ngaydonghanhcungcon\n#ngay84/100",
-      "clean_comments": [],
-      "clean_comments_count": 0,
-      "filtered_comments_count": 0,
-      "engagement_score": 0
-    },
-    {
-      "post_sig": "04cbf28421ae3cb397036a2c",
-      "group_slug": "bang_tin_thao_luan_phu_huynh_tong_hop",
-      "group_name": "Bảng Tin Thảo Luận Phụ Huynh Tổng Hợp",
-      "group_url": "https://www.facebook.com/groups/bang_tin_giao_duc_tong_hop/?sorting_setting=CHRONOLOGICAL",
-      "topic_id": "TAM_LY_GIA_DINH",
-      "topic_label": "Tâm Lý, Kỷ Luật & Góc Học Tập",
-      "tags": [
-        {
-          "slug": "tam-ly-cam-xuc",
-          "label": "#TâmLý & CảmXúc"
-        },
-        {
-          "slug": "ren-tap-trung-ky-luat",
-          "label": "#RènTậpTrung"
-        }
-      ],
-      "author": "Quỳnh Hương",
-      "is_anonymous": false,
-      "posted_display": "2026-11-12 23:18",
-      "harvested_at": "2026-11-12 23:18:47 +07:00",
-      "permalink": "https://www.facebook.com/1118198574324589",
-      "text": "#Teamseed\n\n#Nguyenminhthao #2023 #TS24\n\n#100ngaydonghanhcungcon\n\n#ngay84/100",
-      "clean_comments": [],
-      "clean_comments_count": 0,
-      "filtered_comments_count": 0,
-      "engagement_score": 0
-    },
-    {
-      "post_sig": "0be5d78bbac1fd0210b14a2b",
-      "group_slug": "bang_tin_thao_luan_phu_huynh_tong_hop",
-      "group_name": "Bảng Tin Thảo Luận Phụ Huynh Tổng Hợp",
-      "group_url": "https://www.facebook.com/groups/bang_tin_giao_duc_tong_hop/?sorting_setting=CHRONOLOGICAL",
-      "topic_id": "TAM_LY_GIA_DINH",
-      "topic_label": "Tâm Lý, Kỷ Luật & Góc Học Tập",
-      "tags": [
-        {
-          "slug": "tam-ly-cam-xuc",
-          "label": "#TâmLý & CảmXúc"
-        },
-        {
-          "slug": "ren-tap-trung-ky-luat",
-          "label": "#RènTậpTrung"
-        }
-      ],
-      "author": "ĐỒNG HÀNH CÙNG CON (HOMESCHOOL 4.0)",
-      "is_anonymous": false,
-      "posted_display": "2026-11-12 23:18",
-      "harvested_at": "2026-11-12 23:18:47 +07:00",
-      "permalink": "",
-      "text": "#Teamseed\n#Nguyenminhthao #2023 #TS24\n#100ngaydonghanhcungcon",
-      "clean_comments": [],
-      "clean_comments_count": 0,
-      "filtered_comments_count": 0,
-      "engagement_score": 0
-    },
-    {
-      "post_sig": "a7dffaeb6cf450880ba13530",
-      "group_slug": "bang_tin_thao_luan_phu_huynh_tong_hop",
-      "group_name": "Bảng Tin Thảo Luận Phụ Huynh Tổng Hợp",
-      "group_url": "https://www.facebook.com/groups/bang_tin_giao_duc_tong_hop/?sorting_setting=CHRONOLOGICAL",
-      "topic_id": "TAM_LY_GIA_DINH",
-      "topic_label": "Tâm Lý, Kỷ Luật & Góc Học Tập",
-      "tags": [
-        {
-          "slug": "tam-ly-cam-xuc",
-          "label": "#TâmLý & CảmXúc"
-        },
-        {
-          "slug": "ren-tap-trung-ky-luat",
-          "label": "#RènTậpTrung"
-        }
-      ],
-      "author": "ĐỒNG HÀNH CÙNG CON (HOMESCHOOL 4.0)",
-      "is_anonymous": false,
-      "posted_display": "2026-11-12 23:18",
-      "harvested_at": "2026-11-12 23:18:47 +07:00",
-      "permalink": "https://www.facebook.com/photo/?fbid=3996131053856400&set=pcb.1118201890990924",
-      "text": "#teambatdau\n#TBD21",
       "clean_comments": [],
       "clean_comments_count": 0,
       "filtered_comments_count": 0,
@@ -80115,34 +79459,6 @@ window.CDH_CLEAN_FORUM_DATA = {
       "engagement_score": 0
     },
     {
-      "post_sig": "986635ba7abf5dccb72967d8",
-      "group_slug": "dong_hanh_cung_con_vao_lop_1_161518",
-      "group_name": "Đồng Hành cùng con vào lớp 1",
-      "group_url": "https://www.facebook.com/groups/1615186842018645/?sorting_setting=CHRONOLOGICAL",
-      "topic_id": "TIEN_TIEU_HOC_LOP_1",
-      "topic_label": "Tiền Tiểu Học & Vào Lớp 1",
-      "tags": [
-        {
-          "slug": "tien-tieu-hoc-2020-2021",
-          "label": "#HànhTrangLớp1"
-        },
-        {
-          "slug": "danh-van-tap-doc",
-          "label": "#ĐánhVầnTậpĐọc"
-        }
-      ],
-      "author": "Nguyen Phuong Linh cùng với Nguyễn Phương Lan và",
-      "is_anonymous": false,
-      "posted_display": "Nhạc Không Lời\n \n · DOMINIC",
-      "harvested_at": "2026-11-13 09:51:56 +07:00",
-      "permalink": "https://www.facebook.com/groups/1615186842018645/permalink/3438080936395884",
-      "text": "#tientieuhoc #hanhtrangvao1 #chuanbihanhtrangchoconvaolop1",
-      "clean_comments": [],
-      "clean_comments_count": 0,
-      "filtered_comments_count": 1,
-      "engagement_score": 0
-    },
-    {
       "post_sig": "164b296b27ec29c456042fce",
       "group_slug": "dong_hanh_cung_hoc_sinh_lop_1",
       "group_name": "Đồng Hành Cùng Học Sinh Lớp 1",
@@ -80529,34 +79845,6 @@ window.CDH_CLEAN_FORUM_DATA = {
       "harvested_at": "2026-11-13 11:11:34 +07:00",
       "permalink": "",
       "text": "Xin chào bài hát dành cho các em học sinh thân yêu của tôi\n🧡🧡🧡🧡🧡\n#reel\n#viral\n#xuhuong\n#song\n#English",
-      "clean_comments": [],
-      "clean_comments_count": 0,
-      "filtered_comments_count": 0,
-      "engagement_score": 0
-    },
-    {
-      "post_sig": "0e5bd5db4b4d80d163c7f64a",
-      "group_slug": "giao_vien_tieng_anh",
-      "group_name": "Giáo Viên Tiếng Anh",
-      "group_url": "https://www.facebook.com/groups/1947317768815047/?sorting_setting=CHRONOLOGICAL",
-      "topic_id": "NGOAI_NGU_HOMESCHOOL",
-      "topic_label": "Ngoại Ngữ, HSK & Homeschool",
-      "tags": [
-        {
-          "slug": "tieng-anh-tre-em",
-          "label": "#TiếngAnhTrẻEm"
-        },
-        {
-          "slug": "giao-vien-goc-nhin",
-          "label": "#GócNhìnGiáoViên"
-        }
-      ],
-      "author": "Hạnh Gada.",
-      "is_anonymous": false,
-      "posted_display": "Trong 24h qua (Relay)",
-      "harvested_at": "2026-11-13 11:11:34 +07:00",
-      "permalink": "https://www.facebook.com/4497311113815687",
-      "text": "Hello song for my dear students\n🧡🧡🧡🧡🧡\n#reel\n#viral\n#xuhuong\n#song\n#English",
       "clean_comments": [],
       "clean_comments_count": 0,
       "filtered_comments_count": 0,
@@ -81647,34 +80935,6 @@ window.CDH_CLEAN_FORUM_DATA = {
       "engagement_score": 0
     },
     {
-      "post_sig": "1b37b113e949af067b78ea06",
-      "group_slug": "hoi_nhung_me_co_con_vao_lop_1",
-      "group_name": "HỘI NHỮNG MẸ CÓ CON VÀO LỚP 1 ✅",
-      "group_url": "https://www.facebook.com/groups/1813385365651295/?sorting_setting=CHRONOLOGICAL",
-      "topic_id": "TIEN_TIEU_HOC_LOP_1",
-      "topic_label": "Tiền Tiểu Học & Vào Lớp 1",
-      "tags": [
-        {
-          "slug": "tien-tieu-hoc-2020-2021",
-          "label": "#HànhTrangLớp1"
-        },
-        {
-          "slug": "danh-van-tap-doc",
-          "label": "#ĐánhVầnTậpĐọc"
-        }
-      ],
-      "author": "Nguyễn Mai Linh",
-      "is_anonymous": false,
-      "posted_display": "Trong 24h qua (Relay)",
-      "harvested_at": "2026-11-13 13:29:45 +07:00",
-      "permalink": "https://www.facebook.com/4736022220054247",
-      "text": "#quatang20thang11",
-      "clean_comments": [],
-      "clean_comments_count": 0,
-      "filtered_comments_count": 0,
-      "engagement_score": 0
-    },
-    {
       "post_sig": "62a85dd176bd6be2807615a6",
       "group_slug": "hoi_nhung_me_co_con_vao_lop_1",
       "group_name": "HỘI NHỮNG MẸ CÓ CON VÀO LỚP 1 ✅",
@@ -82067,34 +81327,6 @@ window.CDH_CLEAN_FORUM_DATA = {
       "engagement_score": 0
     },
     {
-      "post_sig": "0471dd9bb196c34b9b9c34b0",
-      "group_slug": "hoi_phu_huynh_co_con_hoc_thcs_thpt",
-      "group_name": "Hội Phụ huynh có con học THCS - THPT",
-      "group_url": "https://www.facebook.com/groups/1530122331367361/?sorting_setting=CHRONOLOGICAL",
-      "topic_id": "TAM_LY_GIA_DINH",
-      "topic_label": "Tâm Lý, Kỷ Luật & Góc Học Tập",
-      "tags": [
-        {
-          "slug": "chuyen-cap-lop-6",
-          "label": "#ChuyểnCấpLớp6"
-        },
-        {
-          "slug": "tam-ly-cam-xuc",
-          "label": "#TâmLý & CảmXúc"
-        }
-      ],
-      "author": "Thành viên nhóm",
-      "is_anonymous": false,
-      "posted_display": "Trong 24h qua (Relay)",
-      "harvested_at": "2026-11-13 13:34:07 +07:00",
-      "permalink": "https://www.facebook.com/UzpfSTYxNTU5OTQ0OTE1OTgzOlZLOjE2NTMzOTY5ODkwMzk4OTQ=",
-      "text": "https://www.facebook.com/share/p/1CSzoLo4wE/?mibextid=wwXIfr",
-      "clean_comments": [],
-      "clean_comments_count": 0,
-      "filtered_comments_count": 0,
-      "engagement_score": 0
-    },
-    {
       "post_sig": "0e623606d1d44afbc324688b",
       "group_slug": "hoi_phu_huynh_con_hoc_lop_1",
       "group_name": "Hội phụ huynh con học lớp 1",
@@ -82325,7 +81557,7 @@ window.CDH_CLEAN_FORUM_DATA = {
     {
       "post_sig": "d102765b99d1d5d4a8288b58",
       "group_slug": "hoi_phu_huynh_ha_noi_co_con_hoc_cap_2_thi_vao_lo",
-      "group_name": "HỘI PHỤ HUYNH HÀ NỘI - CÓ CON HỌC CẤP 2 , THI VÀO LỚP 10.",
+      "group_name": "HỘI PHỤ HUYNH HÀ NỘI - CÓ CON HỌC CẤP 2 , THI VÀO LỚP 10",
       "group_url": "https://www.facebook.com/groups/thaysoankpi/?sorting_setting=CHRONOLOGICAL",
       "topic_id": "TIEN_TIEU_HOC_LOP_1",
       "topic_label": "Tiền Tiểu Học & Vào Lớp 1",
@@ -82357,7 +81589,7 @@ window.CDH_CLEAN_FORUM_DATA = {
     {
       "post_sig": "716e200a394c877597480c21",
       "group_slug": "hoi_phu_huynh_ha_noi_co_con_hoc_cap_2_thi_vao_lo",
-      "group_name": "HỘI PHỤ HUYNH HÀ NỘI - CÓ CON HỌC CẤP 2 , THI VÀO LỚP 10.",
+      "group_name": "HỘI PHỤ HUYNH HÀ NỘI - CÓ CON HỌC CẤP 2 , THI VÀO LỚP 10",
       "group_url": "https://www.facebook.com/groups/thaysoankpi/?sorting_setting=CHRONOLOGICAL",
       "topic_id": "TIEN_TIEU_HOC_LOP_1",
       "topic_label": "Tiền Tiểu Học & Vào Lớp 1",
@@ -82385,7 +81617,7 @@ window.CDH_CLEAN_FORUM_DATA = {
     {
       "post_sig": "0235447d77c787a9968487c5",
       "group_slug": "hoi_phu_huynh_ha_noi_co_con_hoc_cap_2_thi_vao_lo",
-      "group_name": "HỘI PHỤ HUYNH HÀ NỘI - CÓ CON HỌC CẤP 2 , THI VÀO LỚP 10.",
+      "group_name": "HỘI PHỤ HUYNH HÀ NỘI - CÓ CON HỌC CẤP 2 , THI VÀO LỚP 10",
       "group_url": "https://www.facebook.com/groups/thaysoankpi/?sorting_setting=CHRONOLOGICAL",
       "topic_id": "TIEN_TIEU_HOC_LOP_1",
       "topic_label": "Tiền Tiểu Học & Vào Lớp 1",
@@ -82413,7 +81645,7 @@ window.CDH_CLEAN_FORUM_DATA = {
     {
       "post_sig": "418831041380bcbb20416c07",
       "group_slug": "hoi_phu_huynh_ha_noi_co_con_hoc_cap_2_thi_vao_lo",
-      "group_name": "HỘI PHỤ HUYNH HÀ NỘI - CÓ CON HỌC CẤP 2 , THI VÀO LỚP 10.",
+      "group_name": "HỘI PHỤ HUYNH HÀ NỘI - CÓ CON HỌC CẤP 2 , THI VÀO LỚP 10",
       "group_url": "https://www.facebook.com/groups/thaysoankpi/?sorting_setting=CHRONOLOGICAL",
       "topic_id": "TIEN_TIEU_HOC_LOP_1",
       "topic_label": "Tiền Tiểu Học & Vào Lớp 1",
@@ -82441,7 +81673,7 @@ window.CDH_CLEAN_FORUM_DATA = {
     {
       "post_sig": "2fe1bb4409cb8c6e7d755f6f",
       "group_slug": "hoi_phu_huynh_ha_noi_co_con_hoc_cap_2_thi_vao_lo",
-      "group_name": "HỘI PHỤ HUYNH HÀ NỘI - CÓ CON HỌC CẤP 2 , THI VÀO LỚP 10.",
+      "group_name": "HỘI PHỤ HUYNH HÀ NỘI - CÓ CON HỌC CẤP 2 , THI VÀO LỚP 10",
       "group_url": "https://www.facebook.com/groups/thaysoankpi/?sorting_setting=CHRONOLOGICAL",
       "topic_id": "TIEN_TIEU_HOC_LOP_1",
       "topic_label": "Tiền Tiểu Học & Vào Lớp 1",
@@ -82469,7 +81701,7 @@ window.CDH_CLEAN_FORUM_DATA = {
     {
       "post_sig": "a18bca998ad80239d7de954f",
       "group_slug": "hoi_phu_huynh_ha_noi_co_con_hoc_cap_2_thi_vao_lo",
-      "group_name": "HỘI PHỤ HUYNH HÀ NỘI - CÓ CON HỌC CẤP 2 , THI VÀO LỚP 10.",
+      "group_name": "HỘI PHỤ HUYNH HÀ NỘI - CÓ CON HỌC CẤP 2 , THI VÀO LỚP 10",
       "group_url": "https://www.facebook.com/groups/thaysoankpi/?sorting_setting=CHRONOLOGICAL",
       "topic_id": "TIEN_TIEU_HOC_LOP_1",
       "topic_label": "Tiền Tiểu Học & Vào Lớp 1",
@@ -82497,7 +81729,7 @@ window.CDH_CLEAN_FORUM_DATA = {
     {
       "post_sig": "a42a660a21fe39fe7e728d53",
       "group_slug": "hoi_phu_huynh_ha_noi_co_con_hoc_cap_2_thi_vao_lo",
-      "group_name": "HỘI PHỤ HUYNH HÀ NỘI - CÓ CON HỌC CẤP 2 , THI VÀO LỚP 10.",
+      "group_name": "HỘI PHỤ HUYNH HÀ NỘI - CÓ CON HỌC CẤP 2 , THI VÀO LỚP 10",
       "group_url": "https://www.facebook.com/groups/thaysoankpi/?sorting_setting=CHRONOLOGICAL",
       "topic_id": "TIEN_TIEU_HOC_LOP_1",
       "topic_label": "Tiền Tiểu Học & Vào Lớp 1",
@@ -82525,7 +81757,7 @@ window.CDH_CLEAN_FORUM_DATA = {
     {
       "post_sig": "7e7940f41f4104e6418e2ede",
       "group_slug": "hoi_phu_huynh_ha_noi_co_con_hoc_cap_2_thi_vao_lo",
-      "group_name": "HỘI PHỤ HUYNH HÀ NỘI - CÓ CON HỌC CẤP 2 , THI VÀO LỚP 10.",
+      "group_name": "HỘI PHỤ HUYNH HÀ NỘI - CÓ CON HỌC CẤP 2 , THI VÀO LỚP 10",
       "group_url": "https://www.facebook.com/groups/thaysoankpi/?sorting_setting=CHRONOLOGICAL",
       "topic_id": "TIEN_TIEU_HOC_LOP_1",
       "topic_label": "Tiền Tiểu Học & Vào Lớp 1",
@@ -82665,7 +81897,7 @@ window.CDH_CLEAN_FORUM_DATA = {
     {
       "post_sig": "1f0ac58eda49a5c4de7b17a6",
       "group_slug": "cong_dong_acellus_abeka_cac_chuong_trinh_homesch",
-      "group_name": "Cộng Đồng Acellus, Abeka, Các chương trình Homeschooling (Ms Minh Trang Chu",
+      "group_name": "Cộng Đồng Acellus, Abeka, Các chương trình Homeschooling",
       "group_url": "https://www.facebook.com/groups/acellushomeschool/?sorting_setting=CHRONOLOGICAL",
       "topic_id": "NGOAI_NGU_HOMESCHOOL",
       "topic_label": "Ngoại Ngữ, HSK & Homeschool",
@@ -82693,7 +81925,7 @@ window.CDH_CLEAN_FORUM_DATA = {
     {
       "post_sig": "20e1bef1ed5d12c4b74a88d8",
       "group_slug": "cong_dong_acellus_abeka_cac_chuong_trinh_homesch",
-      "group_name": "Cộng Đồng Acellus, Abeka, Các chương trình Homeschooling (Ms Minh Trang Chu",
+      "group_name": "Cộng Đồng Acellus, Abeka, Các chương trình Homeschooling",
       "group_url": "https://www.facebook.com/groups/acellushomeschool/?sorting_setting=CHRONOLOGICAL",
       "topic_id": "NGOAI_NGU_HOMESCHOOL",
       "topic_label": "Ngoại Ngữ, HSK & Homeschool",
@@ -82721,7 +81953,7 @@ window.CDH_CLEAN_FORUM_DATA = {
     {
       "post_sig": "4ec6187c466c3060cd78a466",
       "group_slug": "cong_dong_acellus_abeka_cac_chuong_trinh_homesch",
-      "group_name": "Cộng Đồng Acellus, Abeka, Các chương trình Homeschooling (Ms Minh Trang Chu",
+      "group_name": "Cộng Đồng Acellus, Abeka, Các chương trình Homeschooling",
       "group_url": "https://www.facebook.com/groups/acellushomeschool/?sorting_setting=CHRONOLOGICAL",
       "topic_id": "NGOAI_NGU_HOMESCHOOL",
       "topic_label": "Ngoại Ngữ, HSK & Homeschool",
@@ -82749,7 +81981,7 @@ window.CDH_CLEAN_FORUM_DATA = {
     {
       "post_sig": "420dfaf7cdbf34455b558e50",
       "group_slug": "cong_dong_acellus_abeka_cac_chuong_trinh_homesch",
-      "group_name": "Cộng Đồng Acellus, Abeka, Các chương trình Homeschooling (Ms Minh Trang Chu",
+      "group_name": "Cộng Đồng Acellus, Abeka, Các chương trình Homeschooling",
       "group_url": "https://www.facebook.com/groups/acellushomeschool/?sorting_setting=CHRONOLOGICAL",
       "topic_id": "NGOAI_NGU_HOMESCHOOL",
       "topic_label": "Ngoại Ngữ, HSK & Homeschool",
@@ -82777,7 +82009,7 @@ window.CDH_CLEAN_FORUM_DATA = {
     {
       "post_sig": "b5fac5efc69e0b7f02d27a08",
       "group_slug": "cong_dong_acellus_abeka_cac_chuong_trinh_homesch",
-      "group_name": "Cộng Đồng Acellus, Abeka, Các chương trình Homeschooling (Ms Minh Trang Chu",
+      "group_name": "Cộng Đồng Acellus, Abeka, Các chương trình Homeschooling",
       "group_url": "https://www.facebook.com/groups/acellushomeschool/?sorting_setting=CHRONOLOGICAL",
       "topic_id": "NGOAI_NGU_HOMESCHOOL",
       "topic_label": "Ngoại Ngữ, HSK & Homeschool",
@@ -83151,10 +82383,10 @@ window.CDH_CLEAN_FORUM_DATA = {
       "engagement_score": 0
     },
     {
-      "post_sig": "dbe48919d912522195577af5",
-      "group_slug": "hoi_phu_huynh_thanh_pho_ha_noi_pawand",
-      "group_name": "Hội Phụ Huynh Thành Phố Hà Nội ✅",
-      "group_url": "https://www.facebook.com/groups/pawandeeprajann/?sorting_setting=CHRONOLOGICAL",
+      "post_sig": "1e0c6d61aeb77ff9bfa89d79",
+      "group_slug": "hoi_phu_huynh_tieu_hoc_nguyen_sieu",
+      "group_name": "Hội Phụ Huynh Tiểu Học Nguyễn Siêu",
+      "group_url": "https://www.facebook.com/groups/538862983130110/?sorting_setting=CHRONOLOGICAL",
       "topic_id": "TAM_LY_GIA_DINH",
       "topic_label": "Tâm Lý, Kỷ Luật & Góc Học Tập",
       "tags": [
@@ -83165,34 +82397,6 @@ window.CDH_CLEAN_FORUM_DATA = {
         {
           "slug": "ren-tap-trung-ky-luat",
           "label": "#RènTậpTrung"
-        }
-      ],
-      "author": "Hội Phụ Huynh Thành Phố Hà Nội ✅",
-      "is_anonymous": false,
-      "posted_display": "· Koushik Barman\n \n · 7 Tháng 11\n \n ·",
-      "harvested_at": "2026-11-13 13:55:57 +07:00",
-      "permalink": "",
-      "text": "নীল শাড়িতে একটু আনন্দ আর মিষ্টি হাসি! আপনাদের দিনটা কেমন কাটছে বন্ধুরা? কমেন্টে জানান। #BlueSaree #HappyMoments #DailyReels #PositiveVibes",
-      "clean_comments": [],
-      "clean_comments_count": 0,
-      "filtered_comments_count": 0,
-      "engagement_score": 0
-    },
-    {
-      "post_sig": "1e0c6d61aeb77ff9bfa89d79",
-      "group_slug": "hoi_phu_huynh_tieu_hoc_nguyen_sieu",
-      "group_name": "Chưa đọcHội Phụ Huynh Tiểu Học Nguyễn Siêu: \"Sắp thi cuối kỳ I rồi, nhà các mẹ cho con ôn đều mỗi tối hay để gần ngày th",
-      "group_url": "https://www.facebook.com/groups/538862983130110/?sorting_setting=CHRONOLOGICAL",
-      "topic_id": "ON_THI_HOC_TAP",
-      "topic_label": "Phương Pháp Học & Ôn Thi",
-      "tags": [
-        {
-          "slug": "on-thi-kiem-tra",
-          "label": "#ÔnThiCuốiKỳ"
-        },
-        {
-          "slug": "goc-hoi-dap-thuc-chien",
-          "label": "#HỏiĐápKinhNghiệm"
         }
       ],
       "author": "Thu Thao Le",
@@ -83209,18 +82413,18 @@ window.CDH_CLEAN_FORUM_DATA = {
     {
       "post_sig": "a059b9ebb09718b6b5496bd7",
       "group_slug": "hoi_phu_huynh_tieu_hoc_nguyen_sieu",
-      "group_name": "Chưa đọcHội Phụ Huynh Tiểu Học Nguyễn Siêu: \"Sắp thi cuối kỳ I rồi, nhà các mẹ cho con ôn đều mỗi tối hay để gần ngày th",
+      "group_name": "Hội Phụ Huynh Tiểu Học Nguyễn Siêu",
       "group_url": "https://www.facebook.com/groups/538862983130110/?sorting_setting=CHRONOLOGICAL",
-      "topic_id": "ON_THI_HOC_TAP",
-      "topic_label": "Phương Pháp Học & Ôn Thi",
+      "topic_id": "TAM_LY_GIA_DINH",
+      "topic_label": "Tâm Lý, Kỷ Luật & Góc Học Tập",
       "tags": [
         {
-          "slug": "on-thi-kiem-tra",
-          "label": "#ÔnThiCuốiKỳ"
+          "slug": "tam-ly-cam-xuc",
+          "label": "#TâmLý & CảmXúc"
         },
         {
-          "slug": "goc-hoi-dap-thuc-chien",
-          "label": "#HỏiĐápKinhNghiệm"
+          "slug": "ren-tap-trung-ky-luat",
+          "label": "#RènTậpTrung"
         }
       ],
       "author": "Nguyen Tuan Dung",
@@ -83651,34 +82855,6 @@ window.CDH_CLEAN_FORUM_DATA = {
       "engagement_score": 0
     },
     {
-      "post_sig": "ca709311892baeebfc8e5222",
-      "group_slug": "cung_con_hoc_tieng_anh",
-      "group_name": "Cùng con học Tiếng Anh",
-      "group_url": "https://www.facebook.com/groups/cungconhoctienganh.official/?sorting_setting=CHRONOLOGICAL",
-      "topic_id": "NGOAI_NGU_HOMESCHOOL",
-      "topic_label": "Ngoại Ngữ, HSK & Homeschool",
-      "tags": [
-        {
-          "slug": "tieng-anh-tre-em",
-          "label": "#TiếngAnhTrẻEm"
-        },
-        {
-          "slug": "homeschool-tu-hoc",
-          "label": "#HomeschoolTựHọc"
-        }
-      ],
-      "author": "Nguyễn Thị Hải",
-      "is_anonymous": false,
-      "posted_display": "Trong 24h qua (Relay)",
-      "harvested_at": "2026-11-13 14:07:26 +07:00",
-      "permalink": "https://www.facebook.com/2914776585561072",
-      "text": "https://www.facebook.com/share/r/1H4Kf4Goec/",
-      "clean_comments": [],
-      "clean_comments_count": 0,
-      "filtered_comments_count": 0,
-      "engagement_score": 0
-    },
-    {
       "post_sig": "ad1e0b4043c36aa8eceb01b2",
       "group_slug": "cung_con_hoc_tieng_anh",
       "group_name": "Cùng con học Tiếng Anh",
@@ -83767,34 +82943,6 @@ window.CDH_CLEAN_FORUM_DATA = {
       "engagement_score": 0
     },
     {
-      "post_sig": "1d82a468a465bcbaaa0a04e3",
-      "group_slug": "cung_con_hoc_tieng_anh",
-      "group_name": "Cùng con học Tiếng Anh",
-      "group_url": "https://www.facebook.com/groups/cungconhoctienganh.official/?sorting_setting=CHRONOLOGICAL",
-      "topic_id": "NGOAI_NGU_HOMESCHOOL",
-      "topic_label": "Ngoại Ngữ, HSK & Homeschool",
-      "tags": [
-        {
-          "slug": "tieng-anh-tre-em",
-          "label": "#TiếngAnhTrẻEm"
-        },
-        {
-          "slug": "homeschool-tu-hoc",
-          "label": "#HomeschoolTựHọc"
-        }
-      ],
-      "author": "The Generates",
-      "is_anonymous": false,
-      "posted_display": "Trong 24h qua (Relay)",
-      "harvested_at": "2026-11-13 14:07:26 +07:00",
-      "permalink": "https://www.facebook.com/2914857485552982",
-      "text": "I appreciate you . I wanna share my Ai video by my idea. I hope guys like this. Love guys",
-      "clean_comments": [],
-      "clean_comments_count": 0,
-      "filtered_comments_count": 0,
-      "engagement_score": 0
-    },
-    {
       "post_sig": "d4890cea6305a750a8900abe",
       "group_slug": "cung_con_hoc_tieng_anh",
       "group_name": "Cùng con học Tiếng Anh",
@@ -83817,34 +82965,6 @@ window.CDH_CLEAN_FORUM_DATA = {
       "harvested_at": "2026-11-13 14:07:26 +07:00",
       "permalink": "",
       "text": "Anh ấy mơ ước về nhảy dù! #viral #viralreel #xuhuong #trend #Ani #AI #viralvideo #trending #top #TopviewAi #cartoon #reels",
-      "clean_comments": [],
-      "clean_comments_count": 0,
-      "filtered_comments_count": 0,
-      "engagement_score": 0
-    },
-    {
-      "post_sig": "e080e9e8ed48479040ee426a",
-      "group_slug": "cung_con_hoc_tieng_anh",
-      "group_name": "Cùng con học Tiếng Anh",
-      "group_url": "https://www.facebook.com/groups/cungconhoctienganh.official/?sorting_setting=CHRONOLOGICAL",
-      "topic_id": "NGOAI_NGU_HOMESCHOOL",
-      "topic_label": "Ngoại Ngữ, HSK & Homeschool",
-      "tags": [
-        {
-          "slug": "tieng-anh-tre-em",
-          "label": "#TiếngAnhTrẻEm"
-        },
-        {
-          "slug": "homeschool-tu-hoc",
-          "label": "#HomeschoolTựHọc"
-        }
-      ],
-      "author": "Thành viên nhóm",
-      "is_anonymous": false,
-      "posted_display": "Trong 24h qua (Relay)",
-      "harvested_at": "2026-11-13 14:07:26 +07:00",
-      "permalink": "https://www.facebook.com/UzpfSTYxNTk0MjkxMjYxNDc0OlZLOjExNDYzNzIwMTQ5Njg5NjE=",
-      "text": "He Dreams of Skydiving! #viral #viralreel #xuhuong #trend #Ani #AI #viralvideo #trending #top #TopviewAi #cartoon #reels",
       "clean_comments": [],
       "clean_comments_count": 0,
       "filtered_comments_count": 0,
@@ -84189,7 +83309,7 @@ window.CDH_CLEAN_FORUM_DATA = {
     {
       "post_sig": "2511a648e18f0acf88dcf615",
       "group_slug": "dong_hanh_cung_con_homeschool_4_0",
-      "group_name": "Chưa đọcChào mừng bạn đến với ĐỒNG HÀNH CÙNG CON... Quản trị viên đã phê duyệt yêu cầu tham gia của bạn.21 giờ",
+      "group_name": "Đồng Hành Cùng Con",
       "group_url": "https://www.facebook.com/groups/teamdonghanh4.0/?sorting_setting=CHRONOLOGICAL",
       "topic_id": "TAM_LY_GIA_DINH",
       "topic_label": "Tâm Lý, Kỷ Luật & Góc Học Tập",
@@ -84217,7 +83337,7 @@ window.CDH_CLEAN_FORUM_DATA = {
     {
       "post_sig": "256300c8318b12b288e90d36",
       "group_slug": "dong_hanh_cung_con_homeschool_4_0",
-      "group_name": "Chưa đọcChào mừng bạn đến với ĐỒNG HÀNH CÙNG CON... Quản trị viên đã phê duyệt yêu cầu tham gia của bạn.21 giờ",
+      "group_name": "Đồng Hành Cùng Con",
       "group_url": "https://www.facebook.com/groups/teamdonghanh4.0/?sorting_setting=CHRONOLOGICAL",
       "topic_id": "TAM_LY_GIA_DINH",
       "topic_label": "Tâm Lý, Kỷ Luật & Góc Học Tập",
@@ -84243,37 +83363,9 @@ window.CDH_CLEAN_FORUM_DATA = {
       "engagement_score": 0
     },
     {
-      "post_sig": "d231faafb9140422f5c0170d",
-      "group_slug": "dong_hanh_cung_con_homeschool_4_0",
-      "group_name": "Chưa đọcChào mừng bạn đến với ĐỒNG HÀNH CÙNG CON... Quản trị viên đã phê duyệt yêu cầu tham gia của bạn.21 giờ",
-      "group_url": "https://www.facebook.com/groups/teamdonghanh4.0/?sorting_setting=CHRONOLOGICAL",
-      "topic_id": "TAM_LY_GIA_DINH",
-      "topic_label": "Tâm Lý, Kỷ Luật & Góc Học Tập",
-      "tags": [
-        {
-          "slug": "tam-ly-cam-xuc",
-          "label": "#TâmLý & CảmXúc"
-        },
-        {
-          "slug": "ren-tap-trung-ky-luat",
-          "label": "#RènTậpTrung"
-        }
-      ],
-      "author": "Lam Anh",
-      "is_anonymous": false,
-      "posted_display": "Trong 24h qua (Relay)",
-      "harvested_at": "2026-11-13 14:15:25 +07:00",
-      "permalink": "https://www.facebook.com/1118716250939488",
-      "text": "#14_weeks_speaking\n#tuan3\n\n#NhatAn",
-      "clean_comments": [],
-      "clean_comments_count": 0,
-      "filtered_comments_count": 0,
-      "engagement_score": 0
-    },
-    {
       "post_sig": "5928566debf7b192600154f5",
       "group_slug": "dong_hanh_cung_con_homeschool_4_0",
-      "group_name": "Chưa đọcChào mừng bạn đến với ĐỒNG HÀNH CÙNG CON... Quản trị viên đã phê duyệt yêu cầu tham gia của bạn.21 giờ",
+      "group_name": "Đồng Hành Cùng Con",
       "group_url": "https://www.facebook.com/groups/teamdonghanh4.0/?sorting_setting=CHRONOLOGICAL",
       "topic_id": "TAM_LY_GIA_DINH",
       "topic_label": "Tâm Lý, Kỷ Luật & Góc Học Tập",
@@ -84727,41 +83819,9 @@ window.CDH_CLEAN_FORUM_DATA = {
       "engagement_score": 0
     },
     {
-      "post_sig": "0891e761a1bb854a53a60b85",
-      "group_slug": "giao_vien_tieng_anh",
-      "group_name": "Giáo Viên Tiếng Anh",
-      "group_url": "https://www.facebook.com/groups/1947317768815047/?sorting_setting=CHRONOLOGICAL",
-      "topic_id": "NGOAI_NGU_HOMESCHOOL",
-      "topic_label": "Ngoại Ngữ, HSK & Homeschool",
-      "tags": [
-        {
-          "slug": "tieng-anh-tre-em",
-          "label": "#TiếngAnhTrẻEm"
-        },
-        {
-          "slug": "he-quoc-te-song-bang",
-          "label": "#SongBằngCambridge"
-        },
-        {
-          "slug": "giao-vien-goc-nhin",
-          "label": "#GócNhìnGiáoViên"
-        }
-      ],
-      "author": "Minh Phương",
-      "is_anonymous": false,
-      "posted_display": "Có thể là hình vẽ ngẫu hứng về văn bản",
-      "harvested_at": "2026-11-13 14:25:15 +07:00",
-      "permalink": "https://www.facebook.com/photo/?fbid=2513608579127685&set=pcb.4497494203797378",
-      "text": "Speaking Practice.\n#speakingpractice #starters #Cambridge",
-      "clean_comments": [],
-      "clean_comments_count": 0,
-      "filtered_comments_count": 0,
-      "engagement_score": 0
-    },
-    {
       "post_sig": "315cc9361725aabbaef07e33",
       "group_slug": "hoc_cung_con_choi_cung_con",
-      "group_name": "Chưa đọcTừ giờ, bạn có thể đăng bài và bình luận trong Học Cùng Con - Chơi Cùng Con.14 giờ",
+      "group_name": "Học Cùng Con - Chơi Cùng Con",
       "group_url": "https://www.facebook.com/groups/hoccungconchoicungcon/?sorting_setting=CHRONOLOGICAL",
       "topic_id": "TAM_LY_GIA_DINH",
       "topic_label": "Tâm Lý, Kỷ Luật & Góc Học Tập",
@@ -84789,7 +83849,7 @@ window.CDH_CLEAN_FORUM_DATA = {
     {
       "post_sig": "3b0fcc63c8eb4e78f77da662",
       "group_slug": "hoc_cung_con_choi_cung_con",
-      "group_name": "Chưa đọcTừ giờ, bạn có thể đăng bài và bình luận trong Học Cùng Con - Chơi Cùng Con.14 giờ",
+      "group_name": "Học Cùng Con - Chơi Cùng Con",
       "group_url": "https://www.facebook.com/groups/hoccungconchoicungcon/?sorting_setting=CHRONOLOGICAL",
       "topic_id": "TAM_LY_GIA_DINH",
       "topic_label": "Tâm Lý, Kỷ Luật & Góc Học Tập",
@@ -85184,7 +84244,7 @@ window.CDH_CLEAN_FORUM_DATA = {
     {
       "post_sig": "9069242773ecb411c0c327a5",
       "group_slug": "hoi_phu_huynh_tieu_hoc_nguyen_sieu",
-      "group_name": "Chưa đọcHội Phụ Huynh Tiểu Học Nguyễn Siêu: \"Sắp thi cuối kỳ I rồi, nhà các mẹ cho con ôn đều mỗi tối hay để gần ngày th",
+      "group_name": "Hội Phụ Huynh Tiểu Học Nguyễn Siêu",
       "author": "Thành viên nhóm",
       "seeding_intent": "SEEDING_CLONE_CAMPAIGN",
       "seeding_score": 100,
@@ -85203,7 +84263,7 @@ window.CDH_CLEAN_FORUM_DATA = {
     {
       "post_sig": "b9bb8c75a82ef45018739805",
       "group_slug": "hoi_phu_huynh_tieu_hoc_nguyen_sieu",
-      "group_name": "Chưa đọcHội Phụ Huynh Tiểu Học Nguyễn Siêu: \"Sắp thi cuối kỳ I rồi, nhà các mẹ cho con ôn đều mỗi tối hay để gần ngày th",
+      "group_name": "Hội Phụ Huynh Tiểu Học Nguyễn Siêu",
       "author": "Thành viên nhóm",
       "seeding_intent": "SEEDING_CLONE_CAMPAIGN",
       "seeding_score": 100,
@@ -85222,7 +84282,7 @@ window.CDH_CLEAN_FORUM_DATA = {
     {
       "post_sig": "4c3111e81d3fad42fabdc920",
       "group_slug": "hoi_phu_huynh_tieu_hoc_nguyen_sieu",
-      "group_name": "Chưa đọcHội Phụ Huynh Tiểu Học Nguyễn Siêu: \"Sắp thi cuối kỳ I rồi, nhà các mẹ cho con ôn đều mỗi tối hay để gần ngày th",
+      "group_name": "Hội Phụ Huynh Tiểu Học Nguyễn Siêu",
       "author": "Thanh Cao",
       "seeding_intent": "SEEDING_CLONE_CAMPAIGN",
       "seeding_score": 100,
@@ -85241,7 +84301,7 @@ window.CDH_CLEAN_FORUM_DATA = {
     {
       "post_sig": "837e1509d6dcc02314417c5c",
       "group_slug": "hoi_phu_huynh_tieu_hoc_nguyen_sieu",
-      "group_name": "Chưa đọcHội Phụ Huynh Tiểu Học Nguyễn Siêu: \"Sắp thi cuối kỳ I rồi, nhà các mẹ cho con ôn đều mỗi tối hay để gần ngày th",
+      "group_name": "Hội Phụ Huynh Tiểu Học Nguyễn Siêu",
       "author": "Thanh Cao",
       "seeding_intent": "SEEDING_CLONE_CAMPAIGN",
       "seeding_score": 100,
@@ -85260,7 +84320,7 @@ window.CDH_CLEAN_FORUM_DATA = {
     {
       "post_sig": "f3eb80c6c80b01a311dc970f",
       "group_slug": "hoi_phu_huynh_tieu_hoc_nguyen_sieu",
-      "group_name": "Chưa đọcHội Phụ Huynh Tiểu Học Nguyễn Siêu: \"Sắp thi cuối kỳ I rồi, nhà các mẹ cho con ôn đều mỗi tối hay để gần ngày th",
+      "group_name": "Hội Phụ Huynh Tiểu Học Nguyễn Siêu",
       "author": "Thanh Cao",
       "seeding_intent": "SEEDING_CLONE_CAMPAIGN",
       "seeding_score": 100,
@@ -85279,7 +84339,7 @@ window.CDH_CLEAN_FORUM_DATA = {
     {
       "post_sig": "14079e747c10b1317270ce00",
       "group_slug": "hoi_phu_huynh_tieu_hoc_nguyen_sieu",
-      "group_name": "Chưa đọcHội Phụ Huynh Tiểu Học Nguyễn Siêu: \"Sắp thi cuối kỳ I rồi, nhà các mẹ cho con ôn đều mỗi tối hay để gần ngày th",
+      "group_name": "Hội Phụ Huynh Tiểu Học Nguyễn Siêu",
       "author": "Thanh Cao",
       "seeding_intent": "SEEDING_CLONE_CAMPAIGN",
       "seeding_score": 100,
@@ -85298,7 +84358,7 @@ window.CDH_CLEAN_FORUM_DATA = {
     {
       "post_sig": "14fa3e16624f41a4eb8dd659",
       "group_slug": "hoi_phu_huynh_tieu_hoc_nguyen_sieu",
-      "group_name": "Chưa đọcHội Phụ Huynh Tiểu Học Nguyễn Siêu: \"Sắp thi cuối kỳ I rồi, nhà các mẹ cho con ôn đều mỗi tối hay để gần ngày th",
+      "group_name": "Hội Phụ Huynh Tiểu Học Nguyễn Siêu",
       "author": "Thanh Cao",
       "seeding_intent": "SEEDING_CLONE_CAMPAIGN",
       "seeding_score": 100,
