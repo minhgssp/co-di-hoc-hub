@@ -2,10 +2,21 @@
   "use strict";
 
   const PAGE_SIZE = 16;
-  const BODY_TRUNCATE_LIMIT = 380;
+  const BODY_TRUNCATE_LIMIT = 400;
   const INITIAL_VISIBLE_COMMENTS = 3;
   const SAVED_STORAGE_KEY = "cdh_clean_forum_saved_v1";
   const THEME_STORAGE_KEY = "cdh_clean_forum_theme_v1";
+
+  const GENERIC_AUTHORS = new Set([
+    "",
+    "thành viên nhóm",
+    "anonymous participant",
+    "người tham gia ẩn danh",
+    "ẩn danh",
+    "phụ huynh",
+    "phụ huynh trong nhóm",
+    "member",
+  ]);
 
   const state = {
     data: null,
@@ -111,23 +122,164 @@
       .replace(/'/g, "&#39;");
   }
 
-  function highlightText(text, query) {
-    const safe = escapeHtml(text);
-    const q = (query || "").trim();
-    if (!q || q.length < 2) return safe;
+  function highlightHtmlTextNodes(htmlStr, query) {
+    const q = escapeHtml((query || "").trim());
+    if (!q || q.length < 2) return htmlStr;
     const escapedRe = q.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+    let re;
     try {
-      const re = new RegExp("(" + escapedRe + ")", "gi");
-      return safe.replace(re, "<mark>$1</mark>");
+      re = new RegExp("(" + escapedRe + ")", "gi");
     } catch (_err) {
-      return safe;
+      return htmlStr;
     }
+    const parts = htmlStr.split(/(<[^>]+>)/g);
+    for (let i = 0; i < parts.length; i += 2) {
+      if (parts[i]) {
+        parts[i] = parts[i].replace(re, "<mark>$1</mark>");
+      }
+    }
+    return parts.join("");
+  }
+
+  function highlightText(text, query) {
+    return highlightHtmlTextNodes(escapeHtml(text), query);
+  }
+
+  function renderMarkdownInline(text, query) {
+    let html = escapeHtml(text);
+
+    // Markdown links [label](https://...)
+    html = html.replace(/\[([^\]\n]+)\]\((https?:\/\/[^\s)]+)\)/g, function (_m, label, url) {
+      return (
+        '<a href="' +
+        url +
+        '" target="_blank" rel="noopener noreferrer" class="post-md-link">' +
+        label +
+        "</a>"
+      );
+    });
+
+    // Bold **...** and __...__ (tolerates inner padding spaces from pasted FB/Word posts)
+    html = html.replace(/\*\*\s*([^*\n]+?)\s*\*\*/g, "<strong>$1</strong>");
+    html = html.replace(/__\s*([^_\n]+?)\s*__/g, "<strong>$1</strong>");
+
+    // Italic *...* (avoid breaking arithmetic or stray stars)
+    html = html.replace(/(^|[\s(>])\*([^*\n]+?)\*(?=[\s.,!?;:)<]|$)/g, "$1<em>$2</em>");
+
+    // Strip any dangling/unclosed "**" (common in truncated previews or malformed headings)
+    html = html.replace(/\*\*/g, "");
+
+    return highlightHtmlTextNodes(html, query);
+  }
+
+  function renderMarkdownBlock(text, query) {
+    const normalized = String(text || "").replace(/\r\n/g, "\n");
+    const lines = normalized.split("\n");
+    const out = [];
+    let paraBuffer = [];
+
+    function flushPara() {
+      if (paraBuffer.length === 0) return;
+      const joined = paraBuffer
+        .map(function (ln) {
+          return renderMarkdownInline(ln, query);
+        })
+        .join("<br>");
+      out.push('<p class="post-md-p">' + joined + "</p>");
+      paraBuffer = [];
+    }
+
+    for (let i = 0; i < lines.length; i++) {
+      const rawLine = lines[i];
+      const trimmed = rawLine.trim();
+
+      if (!trimmed) {
+        flushPara();
+        continue;
+      }
+
+      // Skip orphan heading markers like "##" alone on a line
+      if (/^#{1,6}\s*$/.test(trimmed)) {
+        flushPara();
+        continue;
+      }
+
+      // Horizontal dividers (--- or ----------------)
+      if (/^[-_*]{3,}\s*$/.test(trimmed)) {
+        flushPara();
+        out.push('<hr class="post-md-hr">');
+        continue;
+      }
+
+      // Headings: #, ##, ###, ####
+      const hMatch = trimmed.match(/^(#{1,6})\s+(.+)$/);
+      if (hMatch) {
+        flushPara();
+        const headingText = hMatch[2].replace(/^\*\*\s*|\s*\*\*$/g, "").trim();
+        out.push('<h3 class="post-md-heading">' + renderMarkdownInline(headingText, query) + "</h3>");
+        continue;
+      }
+
+      // Blockquote: > ...
+      const qMatch = trimmed.match(/^>\s*(.+)$/);
+      if (qMatch) {
+        flushPara();
+        out.push(
+          '<blockquote class="post-md-quote">' + renderMarkdownInline(qMatch[1], query) + "</blockquote>"
+        );
+        continue;
+      }
+
+      // Unordered list: - item / * item / • item
+      const ulMatch = trimmed.match(/^(?:[-*•])\s+(.+)$/);
+      if (ulMatch) {
+        flushPara();
+        out.push(
+          '<div class="post-md-li"><span class="post-md-bullet" aria-hidden="true">•</span><span>' +
+            renderMarkdownInline(ulMatch[1], query) +
+            "</span></div>"
+        );
+        continue;
+      }
+
+      // Ordered list: 1. item
+      const olMatch = trimmed.match(/^(\d+)\.\s+(.+)$/);
+      if (olMatch) {
+        flushPara();
+        out.push(
+          '<div class="post-md-li"><span class="post-md-num">' +
+            escapeHtml(olMatch[1]) +
+            ".</span><span>" +
+            renderMarkdownInline(olMatch[2], query) +
+            "</span></div>"
+        );
+        continue;
+      }
+
+      paraBuffer.push(trimmed);
+    }
+
+    flushPara();
+    return out.join("");
+  }
+
+  function isGenericAuthor(name) {
+    return GENERIC_AUTHORS.has(String(name || "").trim().toLowerCase());
+  }
+
+  function formatPostDate(raw) {
+    const s = String(raw || "").trim();
+    if (!s) return "";
+    const m = s.match(/^(\d{4})-(\d{2})-(\d{2})/);
+    if (m) {
+      return m[3] + "/" + m[2] + "/" + m[1];
+    }
+    return s;
   }
 
   function getInitials(name) {
     const clean = String(name || "PH").trim();
     if (!clean) return "PH";
-    if (clean.toLowerCase().includes("ẩn danh")) return "ẨD";
     const parts = clean.split(/\s+/);
     if (parts.length === 1) return parts[0].slice(0, 2).toUpperCase();
     return (parts[0][0] + parts[parts.length - 1][0]).toUpperCase();
@@ -183,7 +335,7 @@
             return t.label;
           }).join(" "),
           (post.clean_comments || []).map(function (c) {
-            return c.author + " " + c.text;
+            return c.text;
           }).join(" "),
         ]
           .join("\n")
@@ -372,29 +524,22 @@
 
   function renderCommentHtml(cmt, query) {
     const isReply = Number(cmt.level) >= 2 ? " is-reply" : "";
-    const avClass = getAvatarClass(cmt.author);
+    const formatted = String(cmt.text || "")
+      .replace(/\r\n/g, "\n")
+      .split("\n")
+      .map(function (ln) {
+        return renderMarkdownInline(ln, query);
+      })
+      .join("<br>");
     return (
       '<div class="comment-item' +
       isReply +
       '">' +
-      '<div class="cmt-avatar ' +
-      avClass +
-      '" aria-hidden="true">' +
-      escapeHtml(getInitials(cmt.author)) +
-      "</div>" +
-      '<div class="cmt-bubble-wrap">' +
       '<div class="cmt-bubble">' +
-      '<div><span class="cmt-author">' +
-      highlightText(cmt.author, query) +
-      "</span>" +
-      (cmt.timestamp_text
-        ? '<span class="cmt-time">' + escapeHtml(cmt.timestamp_text) + "</span>"
-        : "") +
+      '<div class="cmt-text">' +
+      formatted +
       "</div>" +
-      '<p class="cmt-text">' +
-      highlightText(cmt.text, query) +
-      "</p>" +
-      "</div></div></div>"
+      "</div></div>"
     );
   }
 
@@ -408,7 +553,9 @@
         : post.text;
 
     const isSaved = state.savedSigs.has(post.post_sig);
+    const hideAuthor = isGenericAuthor(post.author);
     const avClass = getAvatarClass(post.author + post.group_slug);
+    const dateLabel = formatPostDate(post.posted_display);
 
     const allComments = post.clean_comments || [];
     const showAllComments = state.expandedComments.has(post.post_sig);
@@ -436,33 +583,43 @@
         "</div>";
     }
 
+    const headerHtml = hideAuthor
+      ? '<div class="post-header is-compact">' +
+        '<div class="post-meta-inline">' +
+        '<button type="button" class="post-group-btn" data-group-slug="' +
+        escapeHtml(post.group_slug) +
+        '" title="Lọc bài viết cùng hội nhóm">' +
+        escapeHtml(post.group_name) +
+        "</button>" +
+        (dateLabel ? '<span class="post-time">• ' + escapeHtml(dateLabel) + "</span>" : "") +
+        "</div></div>"
+      : '<div class="post-header">' +
+        '<div class="post-author-block">' +
+        '<div class="avatar-circle ' +
+        avClass +
+        '" aria-hidden="true">' +
+        escapeHtml(getInitials(post.author)) +
+        "</div>" +
+        '<div class="post-meta-col">' +
+        '<div class="post-group-line">' +
+        '<button type="button" class="post-group-btn" data-group-slug="' +
+        escapeHtml(post.group_slug) +
+        '" title="Lọc bài viết cùng hội nhóm">' +
+        escapeHtml(post.group_name) +
+        "</button>" +
+        "</div>" +
+        '<div class="post-author-line">' +
+        '<span class="post-author-name">' +
+        highlightText(post.author, q) +
+        "</span>" +
+        (dateLabel ? '<span class="post-time">• ' + escapeHtml(dateLabel) + "</span>" : "") +
+        "</div></div></div></div>";
+
     return (
       '<article class="post-card" data-post-sig="' +
       escapeHtml(post.post_sig) +
       '">' +
-      '<div class="post-header">' +
-      '<div class="post-author-block">' +
-      '<div class="avatar-circle ' +
-      avClass +
-      '" aria-hidden="true">' +
-      escapeHtml(getInitials(post.author)) +
-      "</div>" +
-      '<div class="post-meta-col">' +
-      '<div class="post-group-line">' +
-      '<button type="button" class="post-group-btn" data-group-slug="' +
-      escapeHtml(post.group_slug) +
-      '" title="Lọc bài viết cùng hội nhóm">' +
-      escapeHtml(post.group_name) +
-      "</button>" +
-      "</div>" +
-      '<div class="post-author-line">' +
-      '<span class="post-author-name">' +
-      highlightText(post.author, q) +
-      "</span>" +
-      '<span class="post-time">• ' +
-      escapeHtml(post.posted_display) +
-      "</span>" +
-      "</div></div></div></div>" +
+      headerHtml +
       '<div class="topic-pill-row">' +
       '<span class="topic-tag">' +
       escapeHtml(post.topic_label) +
@@ -483,7 +640,7 @@
         .join("") +
       "</div>" +
       '<div class="post-body">' +
-      highlightText(displayBody, q) +
+      renderMarkdownBlock(displayBody, q) +
       "</div>" +
       (needsTruncate
         ? '<button type="button" class="expand-body-btn" data-expand-post="' +
@@ -695,11 +852,11 @@
           return p.post_sig === sig;
         });
         if (post) {
+          const authorPrefix = isGenericAuthor(post.author) ? "" : " — " + post.author;
           const quote =
             "[" +
             post.group_name +
-            " — " +
-            post.author +
+            authorPrefix +
             "]\n" +
             post.text +
             (post.permalink ? "\nNguồn: " + post.permalink : "");

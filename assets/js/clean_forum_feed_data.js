@@ -1,22 +1,22 @@
 // Auto-generated clean parent forum dataset from co_di_hoc_group_harvest.sqlite
 window.CDH_CLEAN_FORUM_DATA = {
-  "generated_at": "2026-11-13 16:34:00 +07:00",
+  "generated_at": "2026-11-13 16:42:41 +07:00",
   "mode": "READ_ONLY_CLEAN_FORUM",
   "summary": {
     "total_followed_groups": 162,
     "active_groups_with_clean_posts": 113,
     "total_raw_posts": 2812,
-    "clean_posts_count": 1919,
-    "blocked_seeding_posts_count": 862,
+    "clean_posts_count": 1848,
+    "blocked_seeding_posts_count": 933,
     "filtered_short_noise_posts": 31,
-    "clean_ratio_pct": 68.2,
+    "clean_ratio_pct": 65.7,
     "total_raw_comments": 6067,
-    "clean_comments_count": 3626,
-    "blocked_comments_count": 2441,
+    "clean_comments_count": 3607,
+    "blocked_comments_count": 2460,
     "total_unique_tags": 20
   },
   "seeding_breakdown": {
-    "COMMERCIAL_DIRECT_SALE": 438,
+    "COMMERCIAL_DIRECT_SALE": 439,
     "SEEDING_LEAD_MAGNET_ZALO_INBOX": 96,
     "SEEDING_AFFILIATE_SHOPEE_TROJAN": 48,
     "SEEDING_CLONE_CAMPAIGN": 134,
@@ -30,129 +30,129 @@ window.CDH_CLEAN_FORUM_DATA = {
       "label": "Tiền Tiểu Học & Vào Lớp 1",
       "short_label": "Tiền tiểu học / Lớp 1",
       "description": "Chuẩn bị tâm thế, tập đọc, luyện chữ, áp lực tối đồng hành cùng con 5–7 tuổi.",
-      "count": 377
+      "count": 366
     },
     {
       "id": "CHON_TRUONG_TUYEN_SINH",
       "label": "Chọn Trường & Tuyển Sinh",
       "short_label": "Chọn trường / Tuyển sinh",
       "description": "Review trường công lập, đúng tuyến/trái tuyến, bán trú, học phí trường tư & chuyển cấp.",
-      "count": 389
+      "count": 386
     },
     {
       "id": "NGOAI_NGU_HOMESCHOOL",
       "label": "Ngoại Ngữ, HSK & Homeschool",
       "short_label": "Ngoại ngữ & Homeschool",
       "description": "Kinh nghiệm tự học Tiếng Anh, Tiếng Trung (HSK/YCT), Acellus, IXL, Razkids tại nhà.",
-      "count": 332
+      "count": 302
     },
     {
       "id": "ON_THI_HOC_TAP",
       "label": "Phương Pháp Học & Ôn Thi",
       "short_label": "Phương pháp & Ôn thi",
       "description": "Cách học Toán, Tiếng Việt, ôn thi giữa/cuối học kỳ và phân tích lỗi sai.",
-      "count": 156
+      "count": 155
     },
     {
       "id": "TAM_LY_GIA_DINH",
       "label": "Tâm Lý, Kỷ Luật & Góc Học Tập",
       "short_label": "Tâm lý & Thói quen",
       "description": "Kỷ luật tích cực, cai màn hình, rèn tập trung và tổ chức không gian học tập.",
-      "count": 584
+      "count": 563
     },
     {
       "id": "CHUYEN_TRUONG_LOP_20_11",
       "label": "Chuyện Trường Lớp & 20/11",
       "short_label": "Chuyện lớp & 20/11",
       "description": "Quỹ lớp, ban phụ huynh, ứng xử cô – trò và hoạt động tập thể tại trường.",
-      "count": 81
+      "count": 76
     }
   ],
   "popular_tags": [
     {
       "slug": "tam-ly-cam-xuc",
       "label": "#TâmLý & CảmXúc",
-      "count": 595
+      "count": 573
     },
     {
       "slug": "tien-tieu-hoc-2020-2021",
       "label": "#HànhTrangLớp1",
-      "count": 583
+      "count": 571
     },
     {
       "slug": "goc-hoi-dap-thuc-chien",
       "label": "#HỏiĐápKinhNghiệm",
-      "count": 450
-    },
-    {
-      "slug": "tieng-anh-tre-em",
-      "label": "#TiếngAnhTrẻEm",
-      "count": 331
-    },
-    {
-      "slug": "ren-tap-trung-ky-luat",
-      "label": "#RènTậpTrung",
-      "count": 330
+      "count": 441
     },
     {
       "slug": "giao-vien-goc-nhin",
       "label": "#GócNhìnGiáoViên",
-      "count": 322
+      "count": 310
+    },
+    {
+      "slug": "tieng-anh-tre-em",
+      "label": "#TiếngAnhTrẻEm",
+      "count": 309
+    },
+    {
+      "slug": "ren-tap-trung-ky-luat",
+      "label": "#RènTậpTrung",
+      "count": 308
     },
     {
       "slug": "chuyen-cap-lop-6",
       "label": "#ChuyểnCấpLớp6",
-      "count": 309
+      "count": 303
     },
     {
       "slug": "review-truong-tu-clc",
       "label": "#TrườngTư & CLC",
-      "count": 287
+      "count": 285
     },
     {
       "slug": "review-truong-cong",
       "label": "#TrườngCôngLập",
-      "count": 228
+      "count": 225
     },
     {
       "slug": "on-thi-kiem-tra",
       "label": "#ÔnThiCuốiKỳ",
-      "count": 228
+      "count": 224
     },
     {
       "slug": "sach-hay-hoc-lieu",
       "label": "#SáchHay & HọcLiệu",
-      "count": 195
-    },
-    {
-      "slug": "homeschool-tu-hoc",
-      "label": "#HomeschoolTựHọc",
-      "count": 159
-    },
-    {
-      "slug": "danh-van-tap-doc",
-      "label": "#ĐánhVầnTậpĐọc",
-      "count": 153
+      "count": 182
     },
     {
       "slug": "hoc-phi-tai-chinh",
       "label": "#HọcPhíChiPhí",
-      "count": 151
+      "count": 149
+    },
+    {
+      "slug": "danh-van-tap-doc",
+      "label": "#ĐánhVầnTậpĐọc",
+      "count": 149
+    },
+    {
+      "slug": "homeschool-tu-hoc",
+      "label": "#HomeschoolTựHọc",
+      "count": 142
     },
     {
       "slug": "he-quoc-te-song-bang",
       "label": "#SongBằngCambridge",
-      "count": 97
+      "count": 93
     },
     {
       "slug": "chuyen-20-11-quy-lop",
       "label": "#QuỹLớp & 20/11",
-      "count": 87
+      "count": 81
     },
     {
       "slug": "bua-an-ban-tru-suc-khoe",
       "label": "#BánTrú & DinhDưỡng",
-      "count": 80
+      "count": 77
     },
     {
       "slug": "toan-tu-duy-olympic",
@@ -167,7 +167,7 @@ window.CDH_CLEAN_FORUM_DATA = {
     {
       "slug": "tieng-trung-ngoai-ngu-2",
       "label": "#TiếngTrungHSK",
-      "count": 13
+      "count": 12
     }
   ],
   "groups": [
@@ -193,7 +193,7 @@ window.CDH_CLEAN_FORUM_DATA = {
       "group_slug": "dong_hanh_cung_ph_hs_truong_ngoi_sao_ha_noi_hoan",
       "group_name": "Đồng hành cùng PH & HS trường Ngôi Sao Hà Nội - Hoàng Mai",
       "pain_cluster": "HISTORICAL_APIFY",
-      "clean_posts_count": 65
+      "clean_posts_count": 64
     },
     {
       "group_slug": "on_thi_vao_lop_6_chat_luong_cao_ams_cau_giay_ntt",
@@ -205,19 +205,13 @@ window.CDH_CLEAN_FORUM_DATA = {
       "group_slug": "bang_tin_thao_luan_phu_huynh_tong_hop",
       "group_name": "Bảng Tin Thảo Luận Phụ Huynh Tổng Hợp",
       "pain_cluster": "NEWSFEED_HARVEST",
-      "clean_posts_count": 52
+      "clean_posts_count": 51
     },
     {
       "group_slug": "cung_con_hoc_lop_1_149149",
       "group_name": "CÙNG CON HỌC LỚP 1 ❤️",
       "pain_cluster": "FOLLOWED_SYNCED",
       "clean_posts_count": 50
-    },
-    {
-      "group_slug": "cung_con_hoc_tieu_hoc_574496",
-      "group_name": "CÙNG CON HỌC TIỂU HỌC",
-      "pain_cluster": "FOLLOWED_SYNCED",
-      "clean_posts_count": 48
     },
     {
       "group_slug": "review_cac_truong_mam_non_va_tieu_hoc_tai_ha_noi",
@@ -232,6 +226,12 @@ window.CDH_CLEAN_FORUM_DATA = {
       "clean_posts_count": 48
     },
     {
+      "group_slug": "cung_con_hoc_tieu_hoc_574496",
+      "group_name": "CÙNG CON HỌC TIỂU HỌC",
+      "pain_cluster": "FOLLOWED_SYNCED",
+      "clean_posts_count": 47
+    },
+    {
       "group_slug": "hoi_phu_huynh_co_con_hoc_thcs",
       "group_name": "Hội phụ huynh có con học THCS",
       "pain_cluster": "FOLLOWED_SYNCED",
@@ -244,12 +244,6 @@ window.CDH_CLEAN_FORUM_DATA = {
       "clean_posts_count": 45
     },
     {
-      "group_slug": "lop_tien_tieu_hoc_465794",
-      "group_name": "Lớp Tiền Tiểu Học",
-      "pain_cluster": "FOLLOWED_SYNCED",
-      "clean_posts_count": 42
-    },
-    {
       "group_slug": "hoi_phu_huynh_cac_truong_tu_thuc",
       "group_name": "HỘI PHỤ HUYNH CÁC TRƯỜNG TƯ THỤC",
       "pain_cluster": "HISTORICAL_APIFY",
@@ -259,6 +253,12 @@ window.CDH_CLEAN_FORUM_DATA = {
       "group_slug": "hoi_nhung_me_co_con_vao_lop_1_553716",
       "group_name": "Hội những mẹ có con vào lớp 1",
       "pain_cluster": "HISTORICAL_APIFY",
+      "clean_posts_count": 39
+    },
+    {
+      "group_slug": "lop_tien_tieu_hoc_465794",
+      "group_name": "Lớp Tiền Tiểu Học",
+      "pain_cluster": "FOLLOWED_SYNCED",
       "clean_posts_count": 39
     },
     {
@@ -304,22 +304,10 @@ window.CDH_CLEAN_FORUM_DATA = {
       "clean_posts_count": 34
     },
     {
-      "group_slug": "con_hoc_me_cung_hoc",
-      "group_name": "CON HỌC MẸ CŨNG HỌC",
-      "pain_cluster": "FOLLOWED_SYNCED",
-      "clean_posts_count": 28
-    },
-    {
       "group_slug": "hoi_phu_huynh_tieu_hoc_nguyen_sieu",
       "group_name": "Hội Phụ Huynh Tiểu Học Nguyễn Siêu",
       "pain_cluster": "FOLLOWED_SYNCED",
       "clean_posts_count": 28
-    },
-    {
-      "group_slug": "cung_con_hoc_tieng_anh",
-      "group_name": "Cùng con học Tiếng Anh",
-      "pain_cluster": "FOLLOWED_SYNCED",
-      "clean_posts_count": 26
     },
     {
       "group_slug": "hoi_phu_huynh_hoang_mai_nhom_chinh_thuc",
@@ -334,40 +322,22 @@ window.CDH_CLEAN_FORUM_DATA = {
       "clean_posts_count": 26
     },
     {
-      "group_slug": "clb_homeschooling_cung_con_hoc_tai_nha",
-      "group_name": "CLB Homeschooling - Cùng con học tại nhà",
-      "pain_cluster": "FOLLOWED_SYNCED",
-      "clean_posts_count": 25
+      "group_slug": "phu_huynh_truong_tu_thuc_tai_ha_noi",
+      "group_name": "Phụ huynh trường tư thục tại Hà Nội",
+      "pain_cluster": "HISTORICAL_APIFY",
+      "clean_posts_count": 23
     },
     {
       "group_slug": "chuan_bi_hanh_trang_cung_con_hoc_tieu_hoc",
       "group_name": "Chuẩn Bị Hành Trang Cùng Con Học Tiểu Học ✅",
       "pain_cluster": "FOLLOWED_SYNCED",
-      "clean_posts_count": 24
-    },
-    {
-      "group_slug": "cung_con_hoc_tieu_hoc_104118",
-      "group_name": "Cùng Con Học Tiểu Học ✅",
-      "pain_cluster": "FOLLOWED_SYNCED",
-      "clean_posts_count": 24
+      "clean_posts_count": 22
     },
     {
       "group_slug": "hoc_cung_con_choi_cung_con",
       "group_name": "Học Cùng Con - Chơi Cùng Con",
       "pain_cluster": "FOLLOWED_SYNCED",
-      "clean_posts_count": 24
-    },
-    {
-      "group_slug": "hoi_me_homeschool_acellus_mobymax_ixl_epic",
-      "group_name": "HỘI MÊ HOMESCHOOL (Acellus, Mobymax, IXL, Epic..)",
-      "pain_cluster": "FOLLOWED_SYNCED",
-      "clean_posts_count": 24
-    },
-    {
-      "group_slug": "phu_huynh_truong_tu_thuc_tai_ha_noi",
-      "group_name": "Phụ huynh trường tư thục tại Hà Nội",
-      "pain_cluster": "HISTORICAL_APIFY",
-      "clean_posts_count": 23
+      "clean_posts_count": 22
     },
     {
       "group_slug": "hoi_phu_huynh_hoc_sinh_tieu_hoc",
@@ -376,8 +346,8 @@ window.CDH_CLEAN_FORUM_DATA = {
       "clean_posts_count": 22
     },
     {
-      "group_slug": "hoi_phu_huynh_thanh_pho_ha_noi_pawand",
-      "group_name": "Hội Phụ Huynh Thành Phố Hà Nội ✅",
+      "group_slug": "cung_con_hoc_tieng_anh",
+      "group_name": "Cùng con học Tiếng Anh",
       "pain_cluster": "FOLLOWED_SYNCED",
       "clean_posts_count": 21
     },
@@ -388,20 +358,32 @@ window.CDH_CLEAN_FORUM_DATA = {
       "clean_posts_count": 21
     },
     {
+      "group_slug": "clb_homeschooling_cung_con_hoc_tai_nha",
+      "group_name": "CLB Homeschooling - Cùng con học tại nhà",
+      "pain_cluster": "FOLLOWED_SYNCED",
+      "clean_posts_count": 20
+    },
+    {
       "group_slug": "chia_se_tai_lieu_lop_1",
       "group_name": "Chia Sẻ Tài Liệu Lớp 1",
       "pain_cluster": "HISTORICAL_APIFY",
       "clean_posts_count": 20
     },
     {
-      "group_slug": "cung_con_hoc_tieu_hoc",
-      "group_name": "CÙNG CON HỌC TIỂU HỌC",
+      "group_slug": "hoi_me_homeschool_acellus_mobymax_ixl_epic",
+      "group_name": "HỘI MÊ HOMESCHOOL (Acellus, Mobymax, IXL, Epic..)",
       "pain_cluster": "FOLLOWED_SYNCED",
       "clean_posts_count": 19
     },
     {
-      "group_slug": "hoi_cha_me_co_con_vao_lop_1",
-      "group_name": "Hội Cha Mẹ Có Con Vào Lớp 1",
+      "group_slug": "hoi_phu_huynh_thanh_pho_ha_noi_pawand",
+      "group_name": "Hội Phụ Huynh Thành Phố Hà Nội ✅",
+      "pain_cluster": "FOLLOWED_SYNCED",
+      "clean_posts_count": 19
+    },
+    {
+      "group_slug": "cung_con_hoc_tieu_hoc_104118",
+      "group_name": "Cùng Con Học Tiểu Học ✅",
       "pain_cluster": "FOLLOWED_SYNCED",
       "clean_posts_count": 18
     },
@@ -430,14 +412,14 @@ window.CDH_CLEAN_FORUM_DATA = {
       "clean_posts_count": 17
     },
     {
-      "group_slug": "giao_duc_viet_nam",
-      "group_name": "GIÁO DỤC VIỆT NAM",
+      "group_slug": "cung_con_hoc_tieu_hoc",
+      "group_name": "CÙNG CON HỌC TIỂU HỌC",
       "pain_cluster": "FOLLOWED_SYNCED",
       "clean_posts_count": 16
     },
     {
-      "group_slug": "dong_hanh_cung_con_tuoi_day_thi_va_day_thi_som",
-      "group_name": "ĐỒNG HÀNH CÙNG CON TUỔI DẬY THÌ VÀ DẬY THÌ SỚM",
+      "group_slug": "giao_duc_viet_nam",
+      "group_name": "GIÁO DỤC VIỆT NAM",
       "pain_cluster": "FOLLOWED_SYNCED",
       "clean_posts_count": 16
     },
@@ -448,8 +430,14 @@ window.CDH_CLEAN_FORUM_DATA = {
       "clean_posts_count": 15
     },
     {
-      "group_slug": "hoi_phu_huynh_ha_noi_co_con_hoc_cap_2_thi_vao_lo",
-      "group_name": "HỘI PHỤ HUYNH HÀ NỘI - CÓ CON HỌC CẤP 2 , THI VÀO LỚP 10",
+      "group_slug": "hoi_cha_me_co_con_vao_lop_1",
+      "group_name": "Hội Cha Mẹ Có Con Vào Lớp 1",
+      "pain_cluster": "FOLLOWED_SYNCED",
+      "clean_posts_count": 15
+    },
+    {
+      "group_slug": "dong_hanh_cung_con_tuoi_day_thi_va_day_thi_som",
+      "group_name": "ĐỒNG HÀNH CÙNG CON TUỔI DẬY THÌ VÀ DẬY THÌ SỚM",
       "pain_cluster": "FOLLOWED_SYNCED",
       "clean_posts_count": 15
     },
@@ -466,8 +454,14 @@ window.CDH_CLEAN_FORUM_DATA = {
       "clean_posts_count": 15
     },
     {
-      "group_slug": "hoi_chu_truong_hieu_truong_mam_non",
-      "group_name": "Hội Chủ Trường - Hiệu Trưởng Mầm Non",
+      "group_slug": "con_hoc_me_cung_hoc",
+      "group_name": "CON HỌC MẸ CŨNG HỌC",
+      "pain_cluster": "FOLLOWED_SYNCED",
+      "clean_posts_count": 14
+    },
+    {
+      "group_slug": "hoi_phu_huynh_ha_noi_co_con_hoc_cap_2_thi_vao_lo",
+      "group_name": "HỘI PHỤ HUYNH HÀ NỘI - CÓ CON HỌC CẤP 2 , THI VÀO LỚP 10",
       "pain_cluster": "FOLLOWED_SYNCED",
       "clean_posts_count": 14
     },
@@ -490,10 +484,10 @@ window.CDH_CLEAN_FORUM_DATA = {
       "clean_posts_count": 13
     },
     {
-      "group_slug": "hoi_phu_huynh_quan_thanh_xuan_ha_noi",
-      "group_name": "Hội Phụ Huynh Quận Thanh Xuân - Hà Nội",
+      "group_slug": "hoi_chu_truong_hieu_truong_mam_non",
+      "group_name": "Hội Chủ Trường - Hiệu Trưởng Mầm Non",
       "pain_cluster": "FOLLOWED_SYNCED",
-      "clean_posts_count": 12
+      "clean_posts_count": 13
     },
     {
       "group_slug": "hoi_cu_dan_vinhomes_smart_city_nhom_chinh_thuc",
@@ -502,8 +496,8 @@ window.CDH_CLEAN_FORUM_DATA = {
       "clean_posts_count": 12
     },
     {
-      "group_slug": "cung_con_hoc_lop_1_giaovi",
-      "group_name": "CÙNG CON HỌC LỚP 1",
+      "group_slug": "hoi_phu_huynh_quan_thanh_xuan_ha_noi",
+      "group_name": "Hội Phụ Huynh Quận Thanh Xuân - Hà Nội",
       "pain_cluster": "FOLLOWED_SYNCED",
       "clean_posts_count": 11
     },
@@ -514,14 +508,14 @@ window.CDH_CLEAN_FORUM_DATA = {
       "clean_posts_count": 10
     },
     {
-      "group_slug": "hoi_phu_huynh_ha_noi_125341",
-      "group_name": "Hội Phụ Huynh Hà Nội",
+      "group_slug": "cung_con_hoc_lop_1_giaovi",
+      "group_name": "CÙNG CON HỌC LỚP 1",
       "pain_cluster": "FOLLOWED_SYNCED",
       "clean_posts_count": 10
     },
     {
-      "group_slug": "hoi_phu_huynh_co_con_hoc_thcs_thpt",
-      "group_name": "Hội Phụ huynh có con học THCS - THPT",
+      "group_slug": "hoi_phu_huynh_ha_noi_125341",
+      "group_name": "Hội Phụ Huynh Hà Nội",
       "pain_cluster": "FOLLOWED_SYNCED",
       "clean_posts_count": 10
     },
@@ -541,30 +535,6 @@ window.CDH_CLEAN_FORUM_DATA = {
       "group_slug": "hoi_nhung_me_co_con_vao_lop_1",
       "group_name": "HỘI NHỮNG MẸ CÓ CON VÀO LỚP 1 ✅",
       "pain_cluster": "FOLLOWED_SYNCED",
-      "clean_posts_count": 9
-    },
-    {
-      "group_slug": "hoi_giao_vien_tieng_anh_tieu_hoc",
-      "group_name": "Hội Giáo viên Tiếng Anh Tiểu học",
-      "pain_cluster": "FOLLOWED_SYNCED",
-      "clean_posts_count": 9
-    },
-    {
-      "group_slug": "dong_hanh_cung_hs_cap_1",
-      "group_name": "Đồng Hành Cùng HS Cấp 1✅",
-      "pain_cluster": "FOLLOWED_SYNCED",
-      "clean_posts_count": 9
-    },
-    {
-      "group_slug": "chung_toi_la_giao_vien_tieu_hoc_hoinhu",
-      "group_name": "Chúng Tôi Là Giáo Viên Tiểu Học 📖",
-      "pain_cluster": "FOLLOWED_SYNCED",
-      "clean_posts_count": 8
-    },
-    {
-      "group_slug": "hoi_phu_huynh_ha_noi_829363",
-      "group_name": "Hội Phụ Huynh Hà Nội",
-      "pain_cluster": "FOLLOWED_SYNCED",
       "clean_posts_count": 8
     },
     {
@@ -574,22 +544,46 @@ window.CDH_CLEAN_FORUM_DATA = {
       "clean_posts_count": 8
     },
     {
+      "group_slug": "hoi_phu_huynh_co_con_hoc_thcs_thpt",
+      "group_name": "Hội Phụ huynh có con học THCS - THPT",
+      "pain_cluster": "FOLLOWED_SYNCED",
+      "clean_posts_count": 8
+    },
+    {
+      "group_slug": "dong_hanh_cung_hs_cap_1",
+      "group_name": "Đồng Hành Cùng HS Cấp 1✅",
+      "pain_cluster": "FOLLOWED_SYNCED",
+      "clean_posts_count": 8
+    },
+    {
+      "group_slug": "chung_toi_la_giao_vien_tieu_hoc_hoinhu",
+      "group_name": "Chúng Tôi Là Giáo Viên Tiểu Học 📖",
+      "pain_cluster": "FOLLOWED_SYNCED",
+      "clean_posts_count": 7
+    },
+    {
+      "group_slug": "hoi_giao_vien_tieng_anh_tieu_hoc",
+      "group_name": "Hội Giáo viên Tiếng Anh Tiểu học",
+      "pain_cluster": "FOLLOWED_SYNCED",
+      "clean_posts_count": 7
+    },
+    {
+      "group_slug": "hoi_phu_huynh_ha_noi_829363",
+      "group_name": "Hội Phụ Huynh Hà Nội",
+      "pain_cluster": "FOLLOWED_SYNCED",
+      "clean_posts_count": 7
+    },
+    {
       "group_slug": "dong_hanh_cung_hoc_sinh_lop_2",
       "group_name": "Đồng Hành Cùng Học Sinh Lớp 2",
       "pain_cluster": "FOLLOWED_SYNCED",
-      "clean_posts_count": 8
+      "clean_posts_count": 7
     },
     {
       "group_slug": "day_con_tu_hoc_va_tu_duy",
       "group_name": "DẠY CON TỰ HỌC VÀ TƯ DUY",
       "pain_cluster": "FOLLOWED_SYNCED",
-      "clean_posts_count": 7
-    },
-    {
-      "group_slug": "hoi_phu_huynh_hoc_sinh_tieu_hoc_binh_duong",
-      "group_name": "Hội Phụ Huynh Học Sinh Tiểu Học - BÌNH DƯƠNG",
-      "pain_cluster": "FOLLOWED_SYNCED",
-      "clean_posts_count": 7
+      "clean_posts_count": 6
     },
     {
       "group_slug": "day_con_trong_hanh_phuc",
@@ -598,8 +592,8 @@ window.CDH_CLEAN_FORUM_DATA = {
       "clean_posts_count": 6
     },
     {
-      "group_slug": "hoi_phu_huynh_hoc_sinh",
-      "group_name": "Hội Phụ Huynh Học Sinh",
+      "group_slug": "hoi_phu_huynh_hoc_sinh_tieu_hoc_binh_duong",
+      "group_name": "Hội Phụ Huynh Học Sinh Tiểu Học - BÌNH DƯƠNG",
       "pain_cluster": "FOLLOWED_SYNCED",
       "clean_posts_count": 6
     },
@@ -610,8 +604,8 @@ window.CDH_CLEAN_FORUM_DATA = {
       "clean_posts_count": 6
     },
     {
-      "group_slug": "hoc_tien_tieu_hoc_va_lop_1_cung_con",
-      "group_name": "Học Tiền Tiểu Học và Lớp 1 cùng con ✅",
+      "group_slug": "hoi_phu_huynh_hoc_sinh",
+      "group_name": "Hội Phụ Huynh Học Sinh",
       "pain_cluster": "FOLLOWED_SYNCED",
       "clean_posts_count": 5
     },
@@ -624,6 +618,12 @@ window.CDH_CLEAN_FORUM_DATA = {
     {
       "group_slug": "giao_duc_con_tu_som",
       "group_name": "Giáo Dục Con Từ Sớm",
+      "pain_cluster": "FOLLOWED_SYNCED",
+      "clean_posts_count": 4
+    },
+    {
+      "group_slug": "hoc_tien_tieu_hoc_va_lop_1_cung_con",
+      "group_name": "Học Tiền Tiểu Học và Lớp 1 cùng con ✅",
       "pain_cluster": "FOLLOWED_SYNCED",
       "clean_posts_count": 4
     },
@@ -19070,137 +19070,6 @@ window.CDH_CLEAN_FORUM_DATA = {
       "engagement_score": 176
     },
     {
-      "post_sig": "6fc24309451669dacadc226c",
-      "group_slug": "chung_toi_la_giao_vien_tieu_hoc_hoinhu",
-      "group_name": "Chúng Tôi Là Giáo Viên Tiểu Học 📖",
-      "group_url": "https://www.facebook.com/groups/hoinhunggiaovientieuhoc/?sorting_setting=CHRONOLOGICAL",
-      "topic_id": "NGOAI_NGU_HOMESCHOOL",
-      "topic_label": "Ngoại Ngữ, HSK & Homeschool",
-      "tags": [
-        {
-          "slug": "sach-hay-hoc-lieu",
-          "label": "#SáchHay & HọcLiệu"
-        },
-        {
-          "slug": "giao-vien-goc-nhin",
-          "label": "#GócNhìnGiáoViên"
-        },
-        {
-          "slug": "goc-hoi-dap-thuc-chien",
-          "label": "#HỏiĐápKinhNghiệm"
-        }
-      ],
-      "author": "Cô Nhung Phạm - Dịch Vụ Soạn Bài & Tài Liệu Giáo Viên",
-      "is_anonymous": false,
-      "posted_display": "Trong 24h qua (Relay)",
-      "harvested_at": "2026-11-13 14:27:40 +07:00",
-      "permalink": "https://www.facebook.com/1900481258056834",
-      "text": "🌻 **THẦY CÔ CẦN SOẠN TÀI LIỆU? BẢNG GIÁ ĐÃ CÓ – CHẤT LƯỢNG KHỎI LO!**\n📚 Từ giáo án, PowerPoint, SKKN, biện pháp thi GVG đến STEM/STEAM… Nhận soạn riêng theo yêu cầu hoặc chọn ngay kho tài liệu có sẵn, đa dạng môn học và khối lớp!\n\n💌 **GIÁ CẢ RÕ RÀNG – XEM DEMO MIỄN PHÍ!** Thầy cô nhắn ngay để được tư vấn và chọn tài liệu phù hợp nhé! 💚",
-      "clean_comments": [
-        {
-          "comment_sig": "6e88cdeb69b073a685c17ff4",
-          "level": 1,
-          "author": "Van Nguyen",
-          "timestamp_text": "2026-11-13 09:38:27 +07:00",
-          "text": "Một cánh én nhỏ chẳng làm nên mùa xuân"
-        },
-        {
-          "comment_sig": "6ffe872e63aa847a18e39be8",
-          "level": 1,
-          "author": "Tóc Mì Tôm",
-          "timestamp_text": "2026-11-12 23:39:22 +07:00",
-          "text": "Con nhà t thấy kiểu tự nghĩ trong đầu là 83=80+3. Lấy 80:4=20 luôn. Rồi nhân lại viết thành 83-80 dư 3. Còn k cũng kb con hc kiểu gì nhưg hc nhanh lắm"
-        },
-        {
-          "comment_sig": "675677b2f0ac7c34dd50a8dc",
-          "level": 1,
-          "author": "Meo Con",
-          "timestamp_text": "2026-11-13 00:26:42 +07:00",
-          "text": "Số bị chia nhỏ hơn số chia thì thương = 0 mom ạ.\n3 : 4 = 0 ta đc kq 20"
-        },
-        {
-          "comment_sig": "70a9272a75dc0eceaa3b1d83",
-          "level": 1,
-          "author": "Ngọc Ánh",
-          "timestamp_text": "2026-11-12 16:00:32 +07:00",
-          "text": "cảm ơn ad ạ"
-        },
-        {
-          "comment_sig": "ce153d498d7b22470e333d01",
-          "level": 1,
-          "author": "Ngoc Le Minh",
-          "timestamp_text": "2026-11-13 06:54:40 +07:00",
-          "text": "Uhm nhỉ, bài này e cũg ko biết cách giảng luôn"
-        },
-        {
-          "comment_sig": "17f593fc7c4a2f67ae57e5e5",
-          "level": 1,
-          "author": "Người tham gia ẩn danh 124",
-          "timestamp_text": "2026-11-13 09:51:13 +07:00",
-          "text": "Bé mới hạ 3 chứ chưa chia, lượt chia nào cũng phải có thương, hạ xg mà k chia đc phải viết 0 vào thương, r làm tiếp các bc sau"
-        },
-        {
-          "comment_sig": "f8fa5d3b25d1fd24b368adbe",
-          "level": 1,
-          "author": "TU AI Nhan",
-          "timestamp_text": "2026-11-13 00:43:49 +07:00",
-          "text": "Bé mới đem số 3 xuống, chưa chia, 3:4 được 0 lần, viết 0, 0×3=0 3-0=3, đây mới gọi là số dư.\nCho bé kiểm lại bằng chua hàng ngang:\n83=80+3, 80:4=20, số 3 không chia được là số dư."
-        },
-        {
-          "comment_sig": "a3ff0724d2ee6381a1658d88",
-          "level": 1,
-          "author": "Thị Ngà",
-          "timestamp_text": "2026-11-13 07:21:35 +07:00",
-          "text": "Nhỏ hon ko chia dc thì bằng 0 dư 3"
-        },
-        {
-          "comment_sig": "9961b815b7c78e920ebb5092",
-          "level": 1,
-          "author": "HaHaHabc1993",
-          "timestamp_text": "2026-11-13 09:18:01 +07:00",
-          "text": "3<4 nên thương =0, dư 3. Bé đặt tính mới hạ 3 xuống chưa chia cho 4"
-        },
-        {
-          "comment_sig": "debe0ba6d833e39f7f247a29",
-          "level": 1,
-          "author": "Người tham gia ẩn danh 265",
-          "timestamp_text": "2026-11-13 07:51:56 +07:00",
-          "text": "Con m cũng đang tới những bài như vậy\nĐau đầu thật k biết giảng sao cho con dễ hiểu😢"
-        },
-        {
-          "comment_sig": "35c87519ac40092b2dc3ffe5",
-          "level": 1,
-          "author": "Mỹ Lệ",
-          "timestamp_text": "2026-11-13 11:04:15 +07:00",
-          "text": "Kq 20 dư 3 chớ"
-        },
-        {
-          "comment_sig": "43f5dd7db8ceb979ae7ad431",
-          "level": 1,
-          "author": "Bùi Diệu",
-          "timestamp_text": "2026-11-13 08:41:04 +07:00",
-          "text": "Lên youtube thầy giảng rất dễ hiểu, cho làm lại vài lần là đc."
-        },
-        {
-          "comment_sig": "a4f52b7e3bed6c6fe97f047d",
-          "level": 2,
-          "author": "Nguyễn Huề",
-          "timestamp_text": "2026-11-13 11:28:34 +07:00",
-          "text": "Meo Con đúng luôn dư 3"
-        },
-        {
-          "comment_sig": "0e74e80a3068e3028c13cdc1",
-          "level": 2,
-          "author": "HA Nghuen",
-          "timestamp_text": "2026-11-13 08:12:07 +07:00",
-          "text": "Ngoc Le Minh cháu giảng cho con như này dễ hiểu hơn,đây là phép chia số có 2 chữ số chia cho số có một chữ sói có dư là con hiểu ngay"
-        }
-      ],
-      "clean_comments_count": 14,
-      "filtered_comments_count": 1,
-      "engagement_score": 176
-    },
-    {
       "post_sig": "6bbbdf51a89cde466a85f529",
       "group_slug": "review_cac_lop_tien_tieu_hoc_cac_co_giao_day_tie",
       "group_name": "REVIEW Các Lớp Tiền Tiểu Học, Các Cô Giáo Dạy Tiền Tiểu Học Tại Hà Nội",
@@ -28144,49 +28013,6 @@ window.CDH_CLEAN_FORUM_DATA = {
           "author": "Hoàng Trang",
           "timestamp_text": "2026-10-27 13:03",
           "text": "hay quá mình cũng đang định cho con luyện!"
-        }
-      ],
-      "clean_comments_count": 2,
-      "filtered_comments_count": 0,
-      "engagement_score": 32
-    },
-    {
-      "post_sig": "84aad6631b1a34a33b8d1354",
-      "group_slug": "lop_tien_tieu_hoc_465794",
-      "group_name": "Lớp Tiền Tiểu Học",
-      "group_url": "https://www.facebook.com/groups/465794174530791/?sorting_setting=CHRONOLOGICAL",
-      "topic_id": "TIEN_TIEU_HOC_LOP_1",
-      "topic_label": "Tiền Tiểu Học & Vào Lớp 1",
-      "tags": [
-        {
-          "slug": "goc-hoi-dap-thuc-chien",
-          "label": "#HỏiĐápKinhNghiệm"
-        },
-        {
-          "slug": "tien-tieu-hoc-2020-2021",
-          "label": "#HànhTrangLớp1"
-        }
-      ],
-      "author": "Nguyễn Tuyết Mai",
-      "is_anonymous": false,
-      "posted_display": "2026-10-27 14:01",
-      "harvested_at": "2026-10-27 14:01:22 +07:00",
-      "permalink": "https://www.facebook.com/groups/465794174530791/permalink/1792762855167243",
-      "text": "# **Các mom cho con tập gõ 10 ngón đi hay lắm free đó **😍\n\nThành thạo máy tính thì sau thi trên máy tính sẽ lợi hơn. Em hay cho tập gõ 10 ngón và gõ văn bản, thấy cái này rèn tốt hơn mà ko bị nhàm chán đâu nhé. Free nhé các mom!!! 👇👇👇",
-      "clean_comments": [
-        {
-          "comment_sig": "f48957c58dc14082da926160",
-          "level": 1,
-          "author": "Phạm Huyền Khánh Giang",
-          "timestamp_text": "2026-10-27 14:04",
-          "text": "hay quá mình cũng đang định cho con luyện"
-        },
-        {
-          "comment_sig": "6f9f8a19e1324178642095b2",
-          "level": 1,
-          "author": "Hồ Dung",
-          "timestamp_text": "2026-10-27 14:04",
-          "text": "Xin link mua bàn phím và web dạy con gõ 10 ngón mom ơi!"
         }
       ],
       "clean_comments_count": 2,
@@ -37987,49 +37813,6 @@ window.CDH_CLEAN_FORUM_DATA = {
       "engagement_score": 24
     },
     {
-      "post_sig": "4eefcd265698593492ab732b",
-      "group_slug": "dong_hanh_cung_ph_hs_truong_ngoi_sao_ha_noi_hoan",
-      "group_name": "Đồng hành cùng PH & HS trường Ngôi Sao Hà Nội - Hoàng Mai",
-      "group_url": "https://www.facebook.com/groups/5115645281839389/?sorting_setting=CHRONOLOGICAL",
-      "topic_id": "CHON_TRUONG_TUYEN_SINH",
-      "topic_label": "Chọn Trường & Tuyển Sinh",
-      "tags": [
-        {
-          "slug": "review-truong-tu-clc",
-          "label": "#TrườngTư & CLC"
-        },
-        {
-          "slug": "review-truong-cong",
-          "label": "#TrườngCôngLập"
-        }
-      ],
-      "author": "Thành viên nhóm",
-      "is_anonymous": false,
-      "posted_display": "2026-11-10 08:58",
-      "harvested_at": "2026-11-10 08:58:56 +07:00",
-      "permalink": "https://www.facebook.com/groups/5115645281839389/permalink/39801552676155207",
-      "text": "Các bác cho e hỏi, nếu chọn giữa NSHM và Trưng Vương thì trường nào ok hơn ạ?",
-      "clean_comments": [
-        {
-          "comment_sig": "402ea231b563a8819e86f38c",
-          "level": 1,
-          "author": "Phụ huynh trong nhóm",
-          "timestamp_text": "2026-11-10 09:27",
-          "text": "Trưng vương nó đầy đủ như một trường tư luôn nhé, thầy cô toàn xuất từ các trường top vs du học. Có giao lưu đại sứ quán, trao đổi học sinh v.v… học phí lại công, môi trường công mà như trường tư."
-        },
-        {
-          "comment_sig": "43a62e9668a7de4bd7bcf70d",
-          "level": 1,
-          "author": "Phụ huynh trong nhóm",
-          "timestamp_text": "2026-11-10 09:00",
-          "text": "Vào NSHM trường mới thành lập 3-4 năm. Trưng Vương lịch sử 100 năm. Tuỳ bác cân nhắc."
-        }
-      ],
-      "clean_comments_count": 2,
-      "filtered_comments_count": 0,
-      "engagement_score": 24
-    },
-    {
       "post_sig": "cef74cbebbe296d97716bec7",
       "group_slug": "lop_tien_tieu_hoc_465794",
       "group_name": "Lớp Tiền Tiểu Học",
@@ -43695,42 +43478,6 @@ window.CDH_CLEAN_FORUM_DATA = {
       "engagement_score": 20
     },
     {
-      "post_sig": "20c55f04c0249ca9bd5b8f35",
-      "group_slug": "lop_tien_tieu_hoc_465794",
-      "group_name": "Lớp Tiền Tiểu Học",
-      "group_url": "https://www.facebook.com/groups/465794174530791/?sorting_setting=CHRONOLOGICAL",
-      "topic_id": "TIEN_TIEU_HOC_LOP_1",
-      "topic_label": "Tiền Tiểu Học & Vào Lớp 1",
-      "tags": [
-        {
-          "slug": "goc-hoi-dap-thuc-chien",
-          "label": "#HỏiĐápKinhNghiệm"
-        },
-        {
-          "slug": "tien-tieu-hoc-2020-2021",
-          "label": "#HànhTrangLớp1"
-        }
-      ],
-      "author": "Thành viên nhóm",
-      "is_anonymous": false,
-      "posted_display": "2026-11-10 19:08",
-      "harvested_at": "2026-11-10 19:08:47 +07:00",
-      "permalink": "https://www.facebook.com/groups/465794174530791/permalink/1807162673727261",
-      "text": "# **Lợi ích khi cho bé học toán cùng Numberblocks **😍\n* **Hiểu bản chất con số:** Trẻ không chỉ học vẹt mặt số mà hiểu rằng số 5 là gồm 5 khối gộp lại, chứ không phải chỉ là ký hiệu số \"5\"\n* **Trực quan hóa phép tính:**\n* *Cộng và trừ* là việc ghép thêm hoặc tách rời các khối lập phương.\n* *Nhân và chia* thể hiện rõ qua việc xếp các khối thành hình chữ nhật hoặc chia nhóm.\n* **Phát triển tư duy:** Giúp trẻ nắm bắt các khái niệm tách - gộp, số chẵn - số lẻ, so sánh lớn - bé và hình học cơ bản.\nMình để link tổng hợp ở đây để các mom áp dụng thử cho con nha, chúc các con học vui, học tốt nè 👇👇\n\n𝗞𝗵𝗮́𝗶 𝗻𝗶𝗲̣̂𝗺 𝘃𝗲̂̀ 𝘀𝗼̂́ 𝟭-𝟭𝟬\n\n[[[https://youtu.be/Fb4N1dFWEHY?si=K5XCRaETXdRnwSVz](https://youtu.be/Fb4N1dFWEHY?si=K5XCRaETXdRnwSVz)](https://youtu.be/Fb4N1dFWEHY?si=K5XCRaETXdRnwSVz&fbclid=IwZXh0bgNhZW0CMTAAcGRvZgFicmlkETF2SURQVzRZVUVBUE9jWlNUc3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHxFWXbBrfFF-obno455zXJK_vxGaCSFUyFKehjVeqdW7gcFz2pLbsnarOvlj_aem_siE9zvkqMs3OJV-AUyC_tA)](https://l.facebook.com/l.php?u=https%3A%2F%2Fyoutu.be%2FFb4N1dFWEHY%3Fsi%3DK5XCRaETXdRnwSVz%26fbclid%3DIwZXh0bgNhZW0CMTAAcGRvZgFicmlkETF2SURQVzRZVUVBUE9jWlNUc3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHwPS6ghIRFU1LLbRjFV6Ye5XjIfqkiHT9OUIMUli5dvfoSYCdQfmI3EIawgT_aem_LNkpEuiuGRxA4clq3EnuHg&h=AUBja3NoB5jTdrmJYDCCfPyI-24KD3_htwwPeR-mjjUfY3cHlwMsH7RTw0zBfpFOqPNpj2VMG67exm2rb5tSJx-eTSyunpvUZKMJ0xP8oOyLl6gUFKHyufb6_K718APvxixH&__tn__=-UK-R&c[0]=AUCY1N7ADR7oPx2DMvtO6AWhjmexF0T91xpucTEJgn_tqrZ-K_VSqqvI3rU8p5BB6_xJgg-7ZI5-PHc5A4MRmWQpFK2f4gxPdJlNof2aDyE7pgms5lEeCe7uFsHVfYwXXXGY0cdiSnEj0irqlMuTIsRfkureOIm_UC4tNnf2oAs-Yeg1c6o&c[1]=AUCkQUOB5RlnlG03QQrAJLrzTPQerUUHEh0h8HqPTHQ3kBnRqc0UFpU9SxPHZ1UI9U06KC2SFuSyJBo2Dqg89l7VniF5zWE09RTpbVFjUctt0OGrlhM1d8KDSyP4wJ_wuZNtymh9cP-bKJ568fFFmW5jlMNyzyzP6yaOxnTKhWwM6STdLfg)\n\n[[[https://youtu.be/xOiXRxHprpQ?si=2GakxWbLlQGoNp0Z](https://youtu.be/xOiXRxHprpQ?si=2GakxWbLlQGoNp0Z)](https://youtu.be/xOiXRxHprpQ?si=2GakxWbLlQGoNp0Z&fbclid=IwZXh0bgNhZW0CMTAAcGRvZgFicmlkETF2SURQVzRZVUVBUE9jWlNUc3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHxFWXbBrfFF-obno455zXJK_vxGaCSFUyFKehjVeqdW7gcFz2pLbsnarOvlj_aem_siE9zvkqMs3OJV-AUyC_tA)](https://l.facebook.com/l.php?u=https%3A%2F%2Fyoutu.be%2FxOiXRxHprpQ%3Fsi%3D2GakxWbLlQGoNp0Z%26fbclid%3DIwZXh0bgNhZW0CMTAAcGRvZgFicmlkETF2SURQVzRZVUVBUE9jWlNUc3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABH2of5QtD-03WWk59StAwvDm8p49TbyN8ILNauo3xmTSBbmdbSmhCGhsH_Sdj_aem_1VLmUGhphWltbodQVzLiCw&h=AUDkj-tFMsui6cKV0DNjf33SzSYNrXmWUkhNzXdV1LJXgvQQcR2AsE8Iz1GA6Qbr2GDDuTRQhpzhhPedmKsPTKYIC0S_vjEsysLuPHECBRdod-w5IeKLpn9x2EZ8QsKELmm2&__tn__=-UK-R&c[0]=AUCY1N7ADR7oPx2DMvtO6AWhjmexF0T91xpucTEJgn_tqrZ-K_VSqqvI3rU8p5BB6_xJgg-7ZI5-PHc5A4MRmWQpFK2f4gxPdJlNof2aDyE7pgms5lEeCe7uFsHVfYwXXXGY0cdiSnEj0irqlMuTIsRfkureOIm_UC4tNnf2oAs-Yeg1c6o&c[1]=AUCkQUOB5RlnlG03QQrAJLrzTPQerUUHEh0h8HqPTHQ3kBnRqc0UFpU9SxPHZ1UI9U06KC2SFuSyJBo2Dqg89l7VniF5zWE09RTpbVFjUctt0OGrlhM1d8KDSyP4wJ_wuZNtymh9cP-bKJ568fFFmW5jlMNyzyzP6yaOxnTKhWwM6STdLfg)\n\n[[[https://youtu.be/g92uG8hUFpI?si=yrzvVhVeoevQKla0](https://youtu.be/g92uG8hUFpI?si=yrzvVhVeoevQKla0)](https://youtu.be/g92uG8hUFpI?si=yrzvVhVeoevQKla0&fbclid=IwZXh0bgNhZW0CMTAAcGRvZgFicmlkETF2SURQVzRZVUVBUE9jWlNUc3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABH0icjNoiqgsI33wKf0_G3nzRocW_OhMWAc-Ce6f1MI7fqXr2wDDAlu3BYFfy_aem_KHXDRp7g3aZV9MXOepVG6w)](https://l.facebook.com/l.php?u=https%3A%2F%2Fyoutu.be%2Fg92uG8hUFpI%3Fsi%3DyrzvVhVeoevQKla0%26fbclid%3DIwZXh0bgNhZW0CMTAAcGRvZgFicmlkETF2SURQVzRZVUVBUE9jWlNUc3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHzfBzJ2T8oqtiz0RjN_iUIsC3UHkefQ3Gb2gdwZwLemiBODCyE7_tdzTCQpf_aem_DQidQTgRFqJaYD-nybgMgg&h=AUDZxqtIf_VoXxLJ9DSRXmHRi9GuUuQAUNyAi2G4qcC1XcnOQ3VPyTe8LyH30s01H2Wu7_zlrD7uk2mBqMnBAS2F51uDhysWRfXMEmd8k9HHlCeJ7XFQ9Em_yy2BEQNZ5V-G&__tn__=-UK-R&c[0]=AUCY1N7ADR7oPx2DMvtO6AWhjmexF0T91xpucTEJgn_tqrZ-K_VSqqvI3rU8p5BB6_xJgg-7ZI5-PHc5A4MRmWQpFK2f4gxPdJlNof2aDyE7pgms5lEeCe7uFsHVfYwXXXGY0cdiSnEj0irqlMuTIsRfkureOIm_UC4tNnf2oAs-Yeg1c6o&c[1]=AUCkQUOB5RlnlG03QQrAJLrzTPQerUUHEh0h8HqPTHQ3kBnRqc0UFpU9SxPHZ1UI9U06KC2SFuSyJBo2Dqg89l7VniF5zWE09RTpbVFjUctt0OGrlhM1d8KDSyP4wJ_wuZNtymh9cP-bKJ568fFFmW5jlMNyzyzP6yaOxnTKhWwM6STdLfg)\n\n[[[https://youtu.be/vJQwZrteZjs?si=2fHptx066jUxNGpp](https://youtu.be/vJQwZrteZjs?si=2fHptx066jUxNGpp)](https://youtu.be/vJQwZrteZjs?si=2fHptx066jUxNGpp&fbclid=IwZXh0bgNhZW0CMTAAcGRvZgFicmlkETF2SURQVzRZVUVBUE9jWlNUc3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABH2of5QtD-03WWk59StAwvDm8p49TbyN8ILNauo3xmTSBbmdbSmhCGhsH_Sdj_aem_1VLmUGhphWltbodQVzLiCw)](https://l.facebook.com/l.php?u=https%3A%2F%2Fyoutu.be%2FvJQwZrteZjs%3Fsi%3D2fHptx066jUxNGpp%26fbclid%3DIwZXh0bgNhZW0CMTAAcGRvZgFicmlkETF2SURQVzRZVUVBUE9jWlNUc3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABH-jZCPhbcqOxsl4z-k9r_RYv4bYi5VjG4lUgJC3i5J5ru8sQ_xukKFJAKRVK_aem_dH0c80uUw-rL__oXdKzvFg&h=AUBqkjbA2p6j1W-jolVWtSkboZvQcn0spae43cAuRdbfux3FZWXYUDNxqeJEUKLUlpdEI0uGDkE0HmhKn_WvryPsBFQ7ieIkVvD5BdII5p3k34VaXphq76MOrUU88u9cRxjR&__tn__=-UK-R&c[0]=AUCY1N7ADR7oPx2DMvtO6AWhjmexF0T91xpucTEJgn_tqrZ-K_VSqqvI3rU8p5BB6_xJgg-7ZI5-PHc5A4MRmWQpFK2f4gxPdJlNof2aDyE7pgms5lEeCe7uFsHVfYwXXXGY0cdiSnEj0irqlMuTIsRfkureOIm_UC4tNnf2oAs-Yeg1c6o&c[1]=AUCkQUOB5RlnlG03QQrAJLrzTPQerUUHEh0h8HqPTHQ3kBnRqc0UFpU9SxPHZ1UI9U06KC2SFuSyJBo2Dqg89l7VniF5zWE09RTpbVFjUctt0OGrlhM1d8KDSyP4wJ_wuZNtymh9cP-bKJ568fFFmW5jlMNyzyzP6yaOxnTKhWwM6STdLfg)\n\n[[[https://www.youtube.com/watch?v=t-ZjzeXMrp0](https://www.youtube.com/watch?v=t-ZjzeXMrp0)](https://www.youtube.com/watch?v=t-ZjzeXMrp0&fbclid=IwZXh0bgNhZW0CMTAAcGRvZgFicmlkETF2SURQVzRZVUVBUE9jWlNUc3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABH3v1OFssQl2nA0oZRmPjwYg79btIJvNfYmdPgnYzd4QgIpU4Ix6QnCfzUy7Z_aem_cNjP3QnjjneMyNm37CsjTg)](https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3Dt-ZjzeXMrp0%26fbclid%3DIwZXh0bgNhZW0CMTAAcGRvZgFicmlkETF2SURQVzRZVUVBUE9jWlNUc3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHwPS6ghIRFU1LLbRjFV6Ye5XjIfqkiHT9OUIMUli5dvfoSYCdQfmI3EIawgT_aem_LNkpEuiuGRxA4clq3EnuHg&h=AUCed6ONWuqstZNh89iSwwT8uUl8MZK71UTmZkxfdERZsyLcHewpHpfsTVBpaMa6BFgQeZAotEItKnFZ8M94NLHFWCMrhbHIAX68A_1vg4iB6sb2mqENf0z-ZJM6ATjIhSQX&__tn__=-UK-R&c[0]=AUCY1N7ADR7oPx2DMvtO6AWhjmexF0T91xpucTEJgn_tqrZ-K_VSqqvI3rU8p5BB6_xJgg-7ZI5-PHc5A4MRmWQpFK2f4gxPdJlNof2aDyE7pgms5lEeCe7uFsHVfYwXXXGY0cdiSnEj0irqlMuTIsRfkureOIm_UC4tNnf2oAs-Yeg1c6o&c[1]=AUCkQUOB5RlnlG03QQrAJLrzTPQerUUHEh0h8HqPTHQ3kBnRqc0UFpU9SxPHZ1UI9U06KC2SFuSyJBo2Dqg89l7VniF5zWE09RTpbVFjUctt0OGrlhM1d8KDSyP4wJ_wuZNtymh9cP-bKJ568fFFmW5jlMNyzyzP6yaOxnTKhWwM6STdLfg)\n\n[[[https://youtu.be/XxHzDNfysTM?si=h2gzI6MSQjbUWRqZ](https://youtu.be/XxHzDNfysTM?si=h2gzI6MSQjbUWRqZ)](https://youtu.be/XxHzDNfysTM?si=h2gzI6MSQjbUWRqZ&fbclid=IwZXh0bgNhZW0CMTAAcGRvZgFicmlkETF2SURQVzRZVUVBUE9jWlNUc3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABH3v1OFssQl2nA0oZRmPjwYg79btIJvNfYmdPgnYzd4QgIpU4Ix6QnCfzUy7Z_aem_cNjP3QnjjneMyNm37CsjTg)](https://l.facebook.com/l.php?u=https%3A%2F%2Fyoutu.be%2FXxHzDNfysTM%3Fsi%3Dh2gzI6MSQjbUWRqZ%26fbclid%3DIwZXh0bgNhZW0CMTAAcGRvZgFicmlkETF2SURQVzRZVUVBUE9jWlNUc3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABH4oDLpn8qj6qug9sGaN64nqb706lVCwcPdsNtqA8iM6uZQ72dcxUeDcNKOzI_aem_H9CSGIxnpdp0doIyviOBtg&h=AUAeVhJB45W_GHn5_YZWopyScWwQMJi7PlapGW0-BX1fzs_ZWWhBYLddsBGhX-k1LwWFXVDXirBHsxl1ZDjhiRYRIwu8-FyBsaSVaSKQimALbm6Ct7V8muBnnu2nchoZzHyd&__tn__=-UK-R&c[0]=AUCY1N7ADR7oPx2DMvtO6AWhjmexF0T91xpucTEJgn_tqrZ-K_VSqqvI3rU8p5BB6_xJgg-7ZI5-PHc5A4MRmWQpFK2f4gxPdJlNof2aDyE7pgms5lEeCe7uFsHVfYwXXXGY0cdiSnEj0irqlMuTIsRfkureOIm_UC4tNnf2oAs-Yeg1c6o&c[1]=AUCkQUOB5RlnlG03QQrAJLrzTPQerUUHEh0h8HqPTHQ3kBnRqc0UFpU9SxPHZ1UI9U06KC2SFuSyJBo2Dqg89l7VniF5zWE09RTpbVFjUctt0OGrlhM1d8KDSyP4wJ_wuZNtymh9cP-bKJ568fFFmW5jlMNyzyzP6yaOxnTKhWwM6STdLfg)\n\n[[[https://youtu.be/V2flQQFLBRU?si=NRvXQKT-GN9jzO6ycs](https://youtu.be/V2flQQFLBRU?si=NRvXQKT-GN9jzO6ycs)](https://youtu.be/V2flQQFLBRU?si=NRvXQKT-GN9jzO6ycs&fbclid=IwZXh0bgNhZW0CMTAAcGRvZgFicmlkETF2SURQVzRZVUVBUE9jWlNUc3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHxFWXbBrfFF-obno455zXJK_vxGaCSFUyFKehjVeqdW7gcFz2pLbsnarOvlj_aem_siE9zvkqMs3OJV-AUyC_tA)](https://l.facebook.com/l.php?u=https%3A%2F%2Fyoutu.be%2FV2flQQFLBRU%3Fsi%3DNRvXQKT-GN9jzO6ycs%26fbclid%3DIwZXh0bgNhZW0CMTAAcGRvZgFicmlkETF2SURQVzRZVUVBUE9jWlNUc3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABH-jZCPhbcqOxsl4z-k9r_RYv4bYi5VjG4lUgJC3i5J5ru8sQ_xukKFJAKRVK_aem_dH0c80uUw-rL__oXdKzvFg&h=AUDcoybAn1Ov9LZdLvjwBIBLcBVfvb14f9DaK-rb0zEUYx3e7uIUa1dShRJMm-h19h5TiAHdXV9tk2Cg-LY6pq4eA7DCzCdrJ-rO5c1ApF2dwv3aUQq8K6sHH26uIXS4e7j7&__tn__=-UK-R&c[0]=AUCY1N7ADR7oPx2DMvtO6AWhjmexF0T91xpucTEJgn_tqrZ-K_VSqqvI3rU8p5BB6_xJgg-7ZI5-PHc5A4MRmWQpFK2f4gxPdJlNof2aDyE7pgms5lEeCe7uFsHVfYwXXXGY0cdiSnEj0irqlMuTIsRfkureOIm_UC4tNnf2oAs-Yeg1c6o&c[1]=AUCkQUOB5RlnlG03QQrAJLrzTPQerUUHEh0h8HqPTHQ3kBnRqc0UFpU9SxPHZ1UI9U06KC2SFuSyJBo2Dqg89l7VniF5zWE09RTpbVFjUctt0OGrlhM1d8KDSyP4wJ_wuZNtymh9cP-bKJ568fFFmW5jlMNyzyzP6yaOxnTKhWwM6STdLfg)",
-      "clean_comments": [
-        {
-          "comment_sig": "f85e41ded46be295bf82ee91",
-          "level": 1,
-          "author": "Phụ huynh trong nhóm",
-          "timestamp_text": "2026-11-10 19:10",
-          "text": "Bạn nhà e cũng k thích xem, đã bỏ qua video đến thẳng bộ đồ chơi."
-        }
-      ],
-      "clean_comments_count": 1,
-      "filtered_comments_count": 1,
-      "engagement_score": 20
-    },
-    {
       "post_sig": "f988f97f4184b98b756e164b",
       "group_slug": "dong_hanh_cung_hoc_sinh_lop_1_391034",
       "group_name": "Đồng Hành Cùng Học Sinh Lớp 1",
@@ -49249,34 +48996,6 @@ window.CDH_CLEAN_FORUM_DATA = {
       "harvested_at": "2026-11-13 13:55:57 +07:00",
       "permalink": "https://www.facebook.com/2567976480373886",
       "text": "Tôi là phụ huynh của bé lớp 3, đầu cấp đã nộp hồ sơ đầy đủ để con tôi nhập học, và mỗi đầu năm học tôi đều được trường phát giấy yêu cầu tôi điền đầy đủ thông tin cá nhân của tôi và bé nộp cho trường. Tuy nhiên, tôi k hiểu lý do vì sao nhà trường k tự tổng hợp rà soát đối chiếu thông tin, mà lại yêu cầu phụ huynh kiểm tra thông tin và còn ghi câu \" PH vui lòng hoàn toàn chịu trách nhiệm giúp cô\". Nếu PH xác nhận thông tin là đúng. Xong vì lý do nào đó trường làm lại cập nhật sai thông tin của PH và học sinh thì bắt PH chịu trách nhiệm à???!",
-      "clean_comments": [],
-      "clean_comments_count": 0,
-      "filtered_comments_count": 0,
-      "engagement_score": 12
-    },
-    {
-      "post_sig": "f3bef4d7afe38ad9612f844f",
-      "group_slug": "hoi_phu_huynh_thanh_pho_ha_noi_pawand",
-      "group_name": "Hội Phụ Huynh Thành Phố Hà Nội ✅",
-      "group_url": "https://www.facebook.com/groups/pawandeeprajann/?sorting_setting=CHRONOLOGICAL",
-      "topic_id": "TAM_LY_GIA_DINH",
-      "topic_label": "Tâm Lý, Kỷ Luật & Góc Học Tập",
-      "tags": [
-        {
-          "slug": "chuyen-20-11-quy-lop",
-          "label": "#QuỹLớp & 20/11"
-        },
-        {
-          "slug": "giao-vien-goc-nhin",
-          "label": "#GócNhìnGiáoViên"
-        }
-      ],
-      "author": "Người tham gia ẩn danh",
-      "is_anonymous": true,
-      "posted_display": "Trong 24h qua (Relay)",
-      "harvested_at": "2026-11-13 13:55:57 +07:00",
-      "permalink": "https://www.facebook.com/2569249110246623",
-      "text": "Tôi xin đề xuất sau ngày 15/11:\n• Lớp tổ chức chương trình gì, cô giáo chỉ cần nhắn vào nhóm, phụ huynh lớp nào nhiệt tình thì ủng hộ và tổ chức cho các con, phụ huynh lớp nào thờ ơ thì các con không được tổ chức. ----> công bằng.\n\n• Ngày lễ PH nào muốn tri ân thì cứ chủ động, không ai đại diện cho ai, không lấy quỹ chung ----> khỏi ý kiến Ban PH lợi dụng quỹ.\n\n• Phụ huynh nào thấy phong trào lớp yếu quá thì đứng ra tổ chức, hoặc tìm và xin chuyển con sang lớp có phong trào mạnh.",
       "clean_comments": [],
       "clean_comments_count": 0,
       "filtered_comments_count": 0,
@@ -61135,34 +60854,6 @@ window.CDH_CLEAN_FORUM_DATA = {
       "engagement_score": 8
     },
     {
-      "post_sig": "f22f8687d268e8c8fa9c439c",
-      "group_slug": "cung_con_hoc_tieu_hoc",
-      "group_name": "CÙNG CON HỌC TIỂU HỌC",
-      "group_url": "https://www.facebook.com/groups/794046182208692/?sorting_setting=CHRONOLOGICAL",
-      "topic_id": "TAM_LY_GIA_DINH",
-      "topic_label": "Tâm Lý, Kỷ Luật & Góc Học Tập",
-      "tags": [
-        {
-          "slug": "tam-ly-cam-xuc",
-          "label": "#TâmLý & CảmXúc"
-        },
-        {
-          "slug": "ren-tap-trung-ky-luat",
-          "label": "#RènTậpTrung"
-        }
-      ],
-      "author": "Thành viên nhóm",
-      "is_anonymous": false,
-      "posted_display": "Trong 24h qua (Relay)",
-      "harvested_at": "2026-11-13 00:29:40 +07:00",
-      "permalink": "https://www.facebook.com/UzpfSTEwMDA2MzY0ODAzNzkxNzoxNzQ4MjU3NzQzOTcyNDc3OjE3NDgyNTc3NDM5NzI0Nzc=",
-      "text": "Bài dự thi số 13: Cô Đỗ Thị Hải\n\n🔬 BÉ KHÁM PHÁ KHOA HỌC – THÍ NGHIỆM “NGHỆ ĐỔI MÀU” 🧪✨\n\nHôm nay, các nhà khoa học nhí của chúng mình đã cùng nhau tham gia một thí nghiệm vô cùng thú vị mang tên “Nghệ đổi màu”. 💛\n\nTừ những nguyên liệu quen thuộc như bột nghệ và bột giặt (xà phòng), các bé đã hào hứng quan sát, khuấy trộn và bất ngờ khám phá sự thay đổi màu sắc kỳ diệu. 😍\n\n👀 Qua hoạt động, các con được:\n🌱 Trải nghiệm khám phá khoa học từ những nguyên liệu gần gũi.\n🌱 Quan sát sự thay đổi màu sắc khi nghệ kết hợp với bột giặt (xà phòng).\n🌱 Rèn luyện sự khéo léo, khả năng quan sát và tư duy khám phá.\n🌱 Nuôi dưỡng niềm yêu thích tìm tòi, học hỏi qua trải nghiệm thực tế.\n\n🥰 Những ánh mắt chăm chú, những đôi tay nhỏ xinh và nụ cười thích thú chính là thành quả tuyệt vời nhất của buổi học hôm nay!\n\n💖 Mỗi ngày đến trường là một ngày vui, mỗi trải nghiệm là một hành trình khám phá thế giới diệu kỳ!\n\n#BeKhamPhaKhoaHoc #ThiNghiemMamNon #NgheDoiMau #HocMaChoiChoiMaHoc #BeYeuKhoaHoc",
-      "clean_comments": [],
-      "clean_comments_count": 0,
-      "filtered_comments_count": 0,
-      "engagement_score": 8
-    },
-    {
       "post_sig": "efb055ea56d4a9e265e2f2d8",
       "group_slug": "cung_con_hoc_tieu_hoc_khoi_phu_huynh",
       "group_name": "Cùng Con Học Tiểu Học | Khối Phụ Huynh",
@@ -61735,34 +61426,6 @@ window.CDH_CLEAN_FORUM_DATA = {
       "engagement_score": 8
     },
     {
-      "post_sig": "42ecdbd3c0b2746458702608",
-      "group_slug": "cung_con_hoc_tieng_anh",
-      "group_name": "Cùng con học Tiếng Anh",
-      "group_url": "https://www.facebook.com/groups/cungconhoctienganh.official/?sorting_setting=CHRONOLOGICAL",
-      "topic_id": "NGOAI_NGU_HOMESCHOOL",
-      "topic_label": "Ngoại Ngữ, HSK & Homeschool",
-      "tags": [
-        {
-          "slug": "tien-tieu-hoc-2020-2021",
-          "label": "#HànhTrangLớp1"
-        },
-        {
-          "slug": "tieng-anh-tre-em",
-          "label": "#TiếngAnhTrẻEm"
-        }
-      ],
-      "author": "Tiệm Sách Bibo",
-      "is_anonymous": false,
-      "posted_display": "Trong 24h qua (Relay)",
-      "harvested_at": "2026-11-13 08:21:35 +07:00",
-      "permalink": "https://www.facebook.com/2914610078911056",
-      "text": "📒My Dad is Fantastic\n\nCâu chuyện kể về chú cún con (Little Puppy) và người bố tuyệt vời của mình qua hàng loạt hoạt động đời thường đáng yêu. Hai bố con cùng nhau bày bừa khi làm bữa sáng, xây nhà trên cây, hóa trang thành cướp biển tìm kho báu, cùng ăn kem và ôm nhau ấm áp trước giờ đi ngủ.\n\nThích hợp cho trẻ từ 3 đến 6 tuổi. Câu từ tiếng Anh ngắn gọn, giàu tình cảm giúp bé học từ vựng về gia đình và là món quà ý nghĩa để bố đọc cùng con hoặc dành tặng vào Ngày của Cha\n\n- Định dạng: bìa mềm\n- Số trang: 24\n- Tình trạng: 90-95%\n- Giá bìa:£5.99\n🏷️35.000 VND",
-      "clean_comments": [],
-      "clean_comments_count": 0,
-      "filtered_comments_count": 0,
-      "engagement_score": 8
-    },
-    {
       "post_sig": "a9989916e500ad37b17bca77",
       "group_slug": "cung_con_hoc_tieng_anh",
       "group_name": "Cùng con học Tiếng Anh",
@@ -61841,34 +61504,6 @@ window.CDH_CLEAN_FORUM_DATA = {
       "harvested_at": "2026-11-13 08:21:35 +07:00",
       "permalink": "https://www.facebook.com/UzpfSTYxNTg3MTUxODExNTQwOlZLOjI2NTM4MzMzMzgzMjIwNjY=",
       "text": "Học Tiếng Anh Qua “Hái Quả Sau Vườn Nhà Ông Bà” cùng 2 mẹ con\n\n#hoctienganhcungcon\n#tienganhchobe\n#kidslearning\n#hocvui\n#treemvietnam\n#englishforkids\n#hoctienganh\n#dayconhoc",
-      "clean_comments": [],
-      "clean_comments_count": 0,
-      "filtered_comments_count": 0,
-      "engagement_score": 8
-    },
-    {
-      "post_sig": "8ff6d5a3b417156d79200d39",
-      "group_slug": "cung_con_hoc_tieng_anh",
-      "group_name": "Cùng con học Tiếng Anh",
-      "group_url": "https://www.facebook.com/groups/cungconhoctienganh.official/?sorting_setting=CHRONOLOGICAL",
-      "topic_id": "NGOAI_NGU_HOMESCHOOL",
-      "topic_label": "Ngoại Ngữ, HSK & Homeschool",
-      "tags": [
-        {
-          "slug": "sach-hay-hoc-lieu",
-          "label": "#SáchHay & HọcLiệu"
-        },
-        {
-          "slug": "tieng-anh-tre-em",
-          "label": "#TiếngAnhTrẻEm"
-        }
-      ],
-      "author": "Tiệm Sách Bibo",
-      "is_anonymous": false,
-      "posted_display": "Trong 24h qua (Relay)",
-      "harvested_at": "2026-11-13 08:21:35 +07:00",
-      "permalink": "https://www.facebook.com/2914616285577102",
-      "text": "📒Sunny Day by Anna Milbourne & Elena Temporin\n\nCuốn sách tranh nhẹ nhàng theo chân hai bạn nhỏ và chú cún khám phá vẻ đẹp thiên nhiên trong một ngày nắng ấm từ cánh đồng hoa hướng dương, tổ ong đến buổi dã ngoại dưới tán cây anh đào.\n\n- Định dạng: bìa xốp\n- Số trang: 32\n- Tình trạng: 90-95%\n- Giá bìa: £6.99\n🏷️80.000 VND",
       "clean_comments": [],
       "clean_comments_count": 0,
       "filtered_comments_count": 0,
@@ -61981,34 +61616,6 @@ window.CDH_CLEAN_FORUM_DATA = {
       "harvested_at": "2026-11-13 08:31:56 +07:00",
       "permalink": "",
       "text": "STEAMe LOVE – CÔ GIÁO, NGƯỜI MẸ THỨ HAI CỦA CON [\n]\nSTEAMe GARTEN ECO LAKE VIEW – NƠI CON LỚN LÊN TRONG YÊU THƯƠNG!\nNhân dịp ngày Nhà giáo Việt Nam 20/11, gia đình bé Linh Chi – Lớp Neptune 1 xin gửi lời tri ân sâu sắc đến Ban Giám hiệu cùng toàn thể thầy cô giáo nhà trường.\nVới gia đình, mỗi ngày con vui vẻ đến trường, được học tập, vui chơi và trưởng thành trong vòng tay yêu thương của các cô là niềm hạnh phúc vô cùng lớn lao.\nBởi với con, cô giáo không chỉ là người dạy con những bài học đầu đời, mà còn giống như người mẹ thứ hai – luôn dịu dàng chăm sóc, kiên nhẫn dạy bảo, vỗ về khi con buồn và dành cho con những yêu thương ấm áp mỗi ngày. Từng cái ôm, lời động viên hay ánh mắt ân cần của cô đều góp phần tạo nên một tuổi thơ thật đẹp trong hành trình khôn lớn của con.\nCó lẽ, điều quý giá nhất mà con nhận được ở trường không chỉ là những kiến thức mới, mà còn là cảm giác được yêu thương, được lắng nghe và được chở che như chính trong vòng tay gia đình.\nNhân dịp 20/11, Linh Chi cũng háo hức gửi đến các cô món quà nhỏ do chính con thể hiện. Món quà tuy giản dị nhưng chứa đựng tình cảm hồn nhiên, trong trẻo và lời cảm ơn đáng yêu mà con muốn dành tặng những người mẹ thứ hai của mình!\nCảm ơn các cô đã luôn tận tâm, yêu thương và đồng hành cùng Linh Chi trên từng chặng đường trưởng thành. Kính chúc các cô luôn mạnh khỏe, hạnh phúc và giữ mãi ngọn lửa nhiệt huyết với nghề!\nCảm ơn STEAMe Garten Eco Lake View đã trở thành ngôi nhà thứ hai, nơi Linh Chi được lớn lên trong tình yêu thương, sự chăm sóc và những điều tốt đẹp!\nMời mọi người cùng ngắm nhìn món quà đáng yêu của bé Linh Chi – Neptune 1 và dành một lượt yêu thích, bình luận, chia sẻ để cổ vũ cho con nhé!\n\nTrường Mầm non STEAMe Eco Lake View\n\nTầng 1,2 tòa HH02A, Chung cư Eco Lake View, số 32 phố Đại Từ, Phường Định Công, TP Hà Nội\nHotline: 0878.558.899\nEmail: steame.ecolakeview@gmail.com",
-      "clean_comments": [],
-      "clean_comments_count": 0,
-      "filtered_comments_count": 0,
-      "engagement_score": 8
-    },
-    {
-      "post_sig": "5a5262e9efeb9256746ccc1a",
-      "group_slug": "cung_con_hoc_tieu_hoc_104118",
-      "group_name": "Cùng Con Học Tiểu Học ✅",
-      "group_url": "https://www.facebook.com/groups/1041187421358178/?sorting_setting=CHRONOLOGICAL",
-      "topic_id": "CHUYEN_TRUONG_LOP_20_11",
-      "topic_label": "Chuyện Trường Lớp & 20/11",
-      "tags": [
-        {
-          "slug": "chuyen-20-11-quy-lop",
-          "label": "#QuỹLớp & 20/11"
-        },
-        {
-          "slug": "giao-vien-goc-nhin",
-          "label": "#GócNhìnGiáoViên"
-        }
-      ],
-      "author": "Thành viên nhóm",
-      "is_anonymous": false,
-      "posted_display": "Trong 24h qua (Relay)",
-      "harvested_at": "2026-11-13 08:31:56 +07:00",
-      "permalink": "https://www.facebook.com/UzpfSTYxNTkxODE0MDA3NjIxOlZLOjE4MDgwOTE0NjM3NzE5MDY=",
-      "text": "STEAMe LOVE – CÔ GIÁO, NGƯỜI MẸ THỨ HAI CỦA CON [❤️🌷]\n\n🏡 STEAMe GARTEN ECO LAKE VIEW – NƠI CON LỚN LÊN TRONG YÊU THƯƠNG! 💕\n\n💌 Nhân dịp ngày Nhà giáo Việt Nam 20/11, gia đình bé Linh Chi – Lớp Neptune 1 xin gửi lời tri ân sâu sắc đến Ban Giám hiệu cùng toàn thể thầy cô giáo nhà trường.\n\n🌱 Với gia đình, mỗi ngày con vui vẻ đến trường, được học tập, vui chơi và trưởng thành trong vòng tay yêu thương của các cô là niềm hạnh phúc vô cùng lớn lao.\n\n❤️ Bởi với con, cô giáo không chỉ là người dạy con những bài học đầu đời, mà còn giống như người mẹ thứ hai – luôn dịu dàng chăm sóc, kiên nhẫn dạy bảo, vỗ về khi con buồn và dành cho con những yêu thương ấm áp mỗi ngày. Từng cái ôm, lời động viên hay ánh mắt ân cần của cô đều góp phần tạo nên một tuổi thơ thật đẹp trong hành trình khôn lớn của con.\n\n💖 Có lẽ, điều quý giá nhất mà con nhận được ở trường không chỉ là những kiến thức mới, mà còn là cảm giác được yêu thương, được lắng nghe và được chở che như chính trong vòng tay gia đình.\n\n🎨 Nhân dịp 20/11, Linh Chi cũng háo hức gửi đến các cô món quà nhỏ do chính con thể hiện. Món quà tuy giản dị nhưng chứa đựng tình cảm hồn nhiên, trong trẻo và lời cảm ơn đáng yêu mà con muốn dành tặng những người mẹ thứ hai của mình! 🥰\n\n💐 Cảm ơn các cô đã luôn tận tâm, yêu thương và đồng hành cùng Linh Chi trên từng chặng đường trưởng thành. Kính chúc các cô luôn mạnh khỏe, hạnh phúc và giữ mãi ngọn lửa nhiệt huyết với nghề!\n\n🌈 Cảm ơn STEAMe Garten Eco Lake View đã trở thành ngôi nhà thứ hai, nơi Linh Chi được lớn lên trong tình yêu thương, sự chăm sóc và những điều tốt đẹp! ❤️\n\n🎥 Mời mọi người cùng ngắm nhìn món quà đáng yêu của bé Linh Chi – Neptune 1 và dành một lượt yêu thích, bình luận, chia sẻ để cổ vũ cho con nhé! 💕\n🏫 Trường Mầm non STEAMe Eco Lake View\n📍 Tầng 1,2 tòa HH02A, Chung cư Eco Lake View, số 32 phố Đại Từ, Phường Định Công, TP Hà Nội\n☎️ Hotline: 0878.558.899\n📧 Email: steame.ecolakeview@gmail.com",
       "clean_comments": [],
       "clean_comments_count": 0,
       "filtered_comments_count": 0,
@@ -62129,38 +61736,6 @@ window.CDH_CLEAN_FORUM_DATA = {
       "harvested_at": "2026-11-13 09:01:36 +07:00",
       "permalink": "https://www.facebook.com/1090039874012804",
       "text": "TƯỞNG DỄ MÀ ĐỌC XONG LẠI PHẢI NGHĨ! 😂🌊\n\nBa bạn ra sông tắm, câu hỏi chỉ có vài dòng mà dễ khiến mình đọc đi đọc lại! 🤔\n\nTheo bạn, còn ai trên bờ? Bình luận đáp án kèm lời giải nhé! 👇\n\n#DoVui #DoMeo #ThuTaiTriTue #CauDoVui #VuiMoiNgay",
-      "clean_comments": [],
-      "clean_comments_count": 0,
-      "filtered_comments_count": 0,
-      "engagement_score": 8
-    },
-    {
-      "post_sig": "9b0448b570f8b83417e7d616",
-      "group_slug": "chuan_bi_hanh_trang_cung_con_hoc_tieu_hoc",
-      "group_name": "Chuẩn Bị Hành Trang Cùng Con Học Tiểu Học ✅",
-      "group_url": "https://www.facebook.com/groups/cungconhoctieuhocnha/?sorting_setting=CHRONOLOGICAL",
-      "topic_id": "TAM_LY_GIA_DINH",
-      "topic_label": "Tâm Lý, Kỷ Luật & Góc Học Tập",
-      "tags": [
-        {
-          "slug": "ren-tap-trung-ky-luat",
-          "label": "#RènTậpTrung"
-        },
-        {
-          "slug": "sach-hay-hoc-lieu",
-          "label": "#SáchHay & HọcLiệu"
-        },
-        {
-          "slug": "goc-hoi-dap-thuc-chien",
-          "label": "#HỏiĐápKinhNghiệm"
-        }
-      ],
-      "author": "Teddy Nguyen",
-      "is_anonymous": false,
-      "posted_display": "Trong 24h qua (Relay)",
-      "harvested_at": "2026-11-13 09:01:36 +07:00",
-      "permalink": "https://www.facebook.com/1090160854000706",
-      "text": "Các mẹ cho con thử app này chưa cho em xin ít review với 🙏🙏🙏 thấy cũng ok định mua gói năm con cũng thấy thích bớt nghịch xem linh tinh trên ipad hơn mà quản lý được thời gian con học nữa 😅😅😅",
       "clean_comments": [],
       "clean_comments_count": 0,
       "filtered_comments_count": 0,
@@ -63455,34 +63030,6 @@ window.CDH_CLEAN_FORUM_DATA = {
       "engagement_score": 8
     },
     {
-      "post_sig": "036122b1e66f91abaaace509",
-      "group_slug": "hoi_cha_me_co_con_vao_lop_1",
-      "group_name": "Hội Cha Mẹ Có Con Vào Lớp 1",
-      "group_url": "https://www.facebook.com/groups/152616010149780/?sorting_setting=CHRONOLOGICAL",
-      "topic_id": "TIEN_TIEU_HOC_LOP_1",
-      "topic_label": "Tiền Tiểu Học & Vào Lớp 1",
-      "tags": [
-        {
-          "slug": "tien-tieu-hoc-2020-2021",
-          "label": "#HànhTrangLớp1"
-        },
-        {
-          "slug": "danh-van-tap-doc",
-          "label": "#ĐánhVầnTậpĐọc"
-        }
-      ],
-      "author": "Thành viên nhóm",
-      "is_anonymous": false,
-      "posted_display": "Trong 24h qua (Relay)",
-      "harvested_at": "2026-11-13 11:51:43 +07:00",
-      "permalink": "https://www.facebook.com/UzpfSTEwMDA2MzY1NzM2NDU1OTpWSzoyOTk0Njc2MzA5MTU5MjUzMQ==",
-      "text": "🌈 Bộ 7 phiếu BÉ KHÁM PHÁ KHÔNG GIAN giúp bé nhận biết và phân biệt các vị trí: gần – xa, cao – thấp, trái – phải, trên – dưới, trước – sau, trong – ngoài. 🧩 Bài tập sinh động, đa dạng giúp bé phát triển tư duy không gian, khả năng quan sát và định hướng ngay từ nhỏ!\nLink tải file : https://zalo.me/g/0xhawjxmymm6eclubnjy",
-      "clean_comments": [],
-      "clean_comments_count": 0,
-      "filtered_comments_count": 0,
-      "engagement_score": 8
-    },
-    {
       "post_sig": "b1c86db17749a67ecbe510e6",
       "group_slug": "hoi_cha_me_co_con_vao_lop_1",
       "group_name": "Hội Cha Mẹ Có Con Vào Lớp 1",
@@ -63837,70 +63384,6 @@ window.CDH_CLEAN_FORUM_DATA = {
       "harvested_at": "2026-11-13 12:10:42 +07:00",
       "permalink": "https://www.facebook.com/4372357526241883",
       "text": "LITTLE FOX SINGLE (READERS) LV 1 👉👉BỘ SÁCH DÀNH CHO BA MẸ KHÔNG GIỎI TIẾNG ANH VẪN CÓ THỂ DẠY KÈM CON ❣📚\n\n🌷- Sách in màu chất lượng đẹp khổ A5\n\n✔ Bộ bao gồm 3 cuốn kèm file nghe và đầy đủ video\n\nLittle fox readers, level 1: Dành cho bé 3 tuổi trở lên hoặc các bé bắt đầu tiếp xúc với TA. Với câu từ khá đơn giản, màu sắc nét bé sẽ rất thích thú .\n\n🎊🎊\nTrọn bộ gồm 68 quyển với 68 câu chuyện khác nhau in gộp thành 3 quyển rất gọn .\n\nLittle Fox cũng là một chương trình khá phổ biến thiết kế dành riêng cho bé học tiếng anh như một ngôn ngữ thứ 2.",
-      "clean_comments": [],
-      "clean_comments_count": 0,
-      "filtered_comments_count": 0,
-      "engagement_score": 8
-    },
-    {
-      "post_sig": "ca805fe834f88c27d1047d4d",
-      "group_slug": "hoi_giao_vien_tieng_anh_tieu_hoc",
-      "group_name": "Hội Giáo viên Tiếng Anh Tiểu học",
-      "group_url": "https://www.facebook.com/groups/congdongchiasetailieutienganh/?sorting_setting=CHRONOLOGICAL",
-      "topic_id": "NGOAI_NGU_HOMESCHOOL",
-      "topic_label": "Ngoại Ngữ, HSK & Homeschool",
-      "tags": [
-        {
-          "slug": "tieng-anh-tre-em",
-          "label": "#TiếngAnhTrẻEm"
-        },
-        {
-          "slug": "sach-hay-hoc-lieu",
-          "label": "#SáchHay & HọcLiệu"
-        },
-        {
-          "slug": "giao-vien-goc-nhin",
-          "label": "#GócNhìnGiáoViên"
-        }
-      ],
-      "author": "Hanoi Sách Giáo Trình",
-      "is_anonymous": false,
-      "posted_display": "Có thể là hình ảnh về văn bản",
-      "harvested_at": "2026-11-13 12:10:42 +07:00",
-      "permalink": "https://www.facebook.com/photo/?fbid=1846324099832901&set=pcb.4372357526241883",
-      "text": "LITTLE FOX SINGLE (READERS) LV 1\nBỘ SÁCH DÀNH CHO BA MẸ KHÔNG GIỎI TIẾNG ANH VẪN CÓ THỂ DẠY KÈM CON\n- Sách in màu chất lượng đẹp khổ A5\nBộ bao gồm 3 cuốn kèm file nghe và đầy đủ video\nLittle fox readers, level 1: Dành cho bé 3 tuổi trở lên hoặc các bé bắt đầu tiếp xúc với TA. Với câu từ khá đơn giản, màu sắc nét bé sẽ rất thích thú .\nTrọn bộ gồm 68 quyển với 68 câu chuyện khác nhau in gộp thành 3 quyển rất gọn .\nLittle Fox cũng là một chương trình khá phổ biến thiết kế dành riêng cho bé học tiếng anh như một ngôn ngữ thứ 2.",
-      "clean_comments": [],
-      "clean_comments_count": 0,
-      "filtered_comments_count": 0,
-      "engagement_score": 8
-    },
-    {
-      "post_sig": "1e2960d77ae0d8623456b1a7",
-      "group_slug": "hoi_giao_vien_tieng_anh_tieu_hoc",
-      "group_name": "Hội Giáo viên Tiếng Anh Tiểu học",
-      "group_url": "https://www.facebook.com/groups/congdongchiasetailieutienganh/?sorting_setting=CHRONOLOGICAL",
-      "topic_id": "NGOAI_NGU_HOMESCHOOL",
-      "topic_label": "Ngoại Ngữ, HSK & Homeschool",
-      "tags": [
-        {
-          "slug": "sach-hay-hoc-lieu",
-          "label": "#SáchHay & HọcLiệu"
-        },
-        {
-          "slug": "tieng-anh-tre-em",
-          "label": "#TiếngAnhTrẻEm"
-        },
-        {
-          "slug": "giao-vien-goc-nhin",
-          "label": "#GócNhìnGiáoViên"
-        }
-      ],
-      "author": "Windy Bui",
-      "is_anonymous": false,
-      "posted_display": "Trong 24h qua (Relay)",
-      "harvested_at": "2026-11-13 12:10:42 +07:00",
-      "permalink": "https://www.facebook.com/4372516416225994",
-      "text": "❤️ TIN VUI CHO THẦY CÔ DẠY GLOBAL SUCCESS 4 – BỘ LUYỆN VIẾT ĐÃ HOÀN THÀNH!\n\nTeam Windy đã hoàn thiện bộ tài liệu LUYỆN KỸ NĂNG WRITING – GLOBAL SUCCESS 4 và upload vào tài khoản của thành viên Thư Viện rồi ạ! 😍\n\nThầy cô có thể truy cập, tải về và sử dụng ngay để bổ trợ, rèn luyện kỹ năng viết cho học sinh theo từng Unit nhé!\n\n📌 P/s: Như vậy, Thư Viện hiện đã có bộ Luyện Viết cho lớp 4 và lớp 5. Team Windy đang tiếp tục biên soạn bộ dành cho lớp 3 để bổ sung thêm nguồn học liệu thiết thực cho thầy cô ạ.\n\nCảm ơn thầy cô đã luôn tin tưởng và đồng hành cùng Team Windy! ❤️",
       "clean_comments": [],
       "clean_comments_count": 0,
       "filtered_comments_count": 0,
@@ -64263,34 +63746,6 @@ window.CDH_CLEAN_FORUM_DATA = {
       "engagement_score": 8
     },
     {
-      "post_sig": "b782c3eb04a28464c3dc43ee",
-      "group_slug": "hoi_me_homeschool_acellus_mobymax_ixl_epic",
-      "group_name": "HỘI MÊ HOMESCHOOL (Acellus, Mobymax, IXL, Epic..)",
-      "group_url": "https://www.facebook.com/groups/3618994294827191/?sorting_setting=CHRONOLOGICAL",
-      "topic_id": "NGOAI_NGU_HOMESCHOOL",
-      "topic_label": "Ngoại Ngữ, HSK & Homeschool",
-      "tags": [
-        {
-          "slug": "sach-hay-hoc-lieu",
-          "label": "#SáchHay & HọcLiệu"
-        },
-        {
-          "slug": "homeschool-tu-hoc",
-          "label": "#HomeschoolTựHọc"
-        }
-      ],
-      "author": "Sách Cũ Vũng Tàu",
-      "is_anonymous": false,
-      "posted_display": "Trong 24h qua (Relay)",
-      "harvested_at": "2026-11-13 12:11:48 +07:00",
-      "permalink": "https://www.facebook.com/29132525063047430",
-      "text": "🛞 Disney Pixar Storybook Collection là một cuốn sách truyện hấp dẫn dành cho các bạn nhỏ. Bìa sách nổi bật với hình ảnh những nhân vật hoạt hình quen thuộc như Woody, Buzz Lightyear, Lotso, Lightning McQueen, Sulley, Nemo, Mike Wazowski và Merida. Những hình ảnh đầy màu sắc khiến cuốn sách trở nên sinh động và thu hút ngay từ cái nhìn đầu tiên.\n🤡 Sách tập hợp nhiều câu chuyện thú vị từ thế giới Disney Pixar, đưa các bạn nhỏ bước vào những cuộc phiêu lưu kỳ diệu, đồng thời truyền tải những bài học ý nghĩa về tình bạn, lòng dũng cảm và tình yêu thương.\nTiệm : 1️⃣6️⃣5️⃣k sách bìa cứng, độ mới cao",
-      "clean_comments": [],
-      "clean_comments_count": 0,
-      "filtered_comments_count": 0,
-      "engagement_score": 8
-    },
-    {
       "post_sig": "9de8f004c80726b49aa0b6ca",
       "group_slug": "hoi_me_homeschool_acellus_mobymax_ixl_epic",
       "group_name": "HỘI MÊ HOMESCHOOL (Acellus, Mobymax, IXL, Epic..)",
@@ -64419,42 +63874,6 @@ window.CDH_CLEAN_FORUM_DATA = {
       "engagement_score": 8
     },
     {
-      "post_sig": "1c29cf26f980b02a1743b59a",
-      "group_slug": "hoi_me_homeschool_acellus_mobymax_ixl_epic",
-      "group_name": "HỘI MÊ HOMESCHOOL (Acellus, Mobymax, IXL, Epic..)",
-      "group_url": "https://www.facebook.com/groups/3618994294827191/?sorting_setting=CHRONOLOGICAL",
-      "topic_id": "NGOAI_NGU_HOMESCHOOL",
-      "topic_label": "Ngoại Ngữ, HSK & Homeschool",
-      "tags": [
-        {
-          "slug": "tieng-anh-tre-em",
-          "label": "#TiếngAnhTrẻEm"
-        },
-        {
-          "slug": "homeschool-tu-hoc",
-          "label": "#HomeschoolTựHọc"
-        },
-        {
-          "slug": "danh-van-tap-doc",
-          "label": "#ĐánhVầnTậpĐọc"
-        },
-        {
-          "slug": "review-truong-cong",
-          "label": "#TrườngCôngLập"
-        }
-      ],
-      "author": "Chloe Huynh",
-      "is_anonymous": false,
-      "posted_display": "Trong 24h qua (Relay)",
-      "harvested_at": "2026-11-13 12:11:48 +07:00",
-      "permalink": "https://www.facebook.com/29135522786080991",
-      "text": "🎯 CON HỌC TIẾNG ANH ĐÃ LÂU, NHƯNG ĐỌC VÀ VIẾT VẪN CHƯA THỰC SỰ VỮNG?\n\nVới nhiều trẻ, việc biết thêm nhiều từ vựng chưa đồng nghĩa với việc con có thể đọc, viết và đánh vần tiếng Anh một cách chắc chắn.\n\nĐó là lý do Chương trình Tổng Hợp tại Zen City Studio được xây dựng theo hướng củng cố từng bước nền tảng ngôn ngữ, thay vì chỉ tập trung vào việc học thêm từ mới. 📚\n\nChương trình tập trung vào 4 trụ cột: Phonics – Spelling – Reading – Writing, giúp trẻ từng bước hiểu mối liên hệ giữa âm thanh, chữ cái, cách đọc và cách viết.\n\n🔤 Với Phonics, con học cách nhận diện và kết nối âm với chữ; từ đó có cơ sở để tiếp cận những từ mới thay vì phải ghi nhớ cách đọc của từng từ riêng lẻ.\n\n✍️ Spelling và Writing giúp con luyện cách viết và diễn đạt, trong khi Reading tạo thêm cơ hội để con áp dụng những kiến thức đã học vào việc đọc hiểu.\n\n📖 Nội dung chương trình sử dụng giáo trình từ Carson Dellosa Education và Evan-Moor, kết hợp IXL để học sinh có thêm cơ hội luyện tập theo năng lực hiện tại.\n\n👩‍🏫 Lớp học có sĩ số tối đa 13 học viên, tạo điều kiện để giáo viên theo dõi quá trình học, lắng nghe phần đọc của từng bé và hỗ trợ những điểm cần cải thiện.\n\n🌱 Mục tiêu của chương trình không chỉ là giúp con “biết thêm tiếng Anh”, mà xây dựng một nền tảng đọc – viết – đánh vần có hệ thống, để con có thể tiếp tục phát triển khả năng ngôn ngữ một cách vững vàng hơn.\n\n📩 Ba mẹ muốn tìm hiểu Chương trình Tổng Hợp có phù hợp với độ tuổi và nền tảng hiện tại của con không? Hãy để lại độ tuổi của bé, Zen City Studio sẽ tư vấn thêm thông tin phù hợp.",
-      "clean_comments": [],
-      "clean_comments_count": 0,
-      "filtered_comments_count": 0,
-      "engagement_score": 8
-    },
-    {
       "post_sig": "b95015f6a9a7721fb4c975b5",
       "group_slug": "hoi_me_homeschool_acellus_mobymax_ixl_epic",
       "group_name": "HỘI MÊ HOMESCHOOL (Acellus, Mobymax, IXL, Epic..)",
@@ -64513,74 +63932,6 @@ window.CDH_CLEAN_FORUM_DATA = {
       "harvested_at": "2026-11-13 12:11:48 +07:00",
       "permalink": "https://www.facebook.com/29249992744633994",
       "text": "📥 Link tải tài liệu CHUYÊN ĐỀ PHÁT ÂM: https://drive.google.com/file/d/1Sz_-4F3h5EDyQnLEJ5lIJRp9N_P-TxKa/view?usp=sharing\n\nBố mẹ và thầy cô tải về, in ra cho các con luyện tập nhé! ❤️",
-      "clean_comments": [],
-      "clean_comments_count": 0,
-      "filtered_comments_count": 0,
-      "engagement_score": 8
-    },
-    {
-      "post_sig": "b0143fc5d945516352b3c96a",
-      "group_slug": "hoi_me_homeschool_acellus_mobymax_ixl_epic",
-      "group_name": "HỘI MÊ HOMESCHOOL (Acellus, Mobymax, IXL, Epic..)",
-      "group_url": "https://www.facebook.com/groups/3618994294827191/?sorting_setting=CHRONOLOGICAL",
-      "topic_id": "NGOAI_NGU_HOMESCHOOL",
-      "topic_label": "Ngoại Ngữ, HSK & Homeschool",
-      "tags": [
-        {
-          "slug": "on-thi-kiem-tra",
-          "label": "#ÔnThiCuốiKỳ"
-        },
-        {
-          "slug": "homeschool-tu-hoc",
-          "label": "#HomeschoolTựHọc"
-        },
-        {
-          "slug": "chuyen-cap-lop-6",
-          "label": "#ChuyểnCấpLớp6"
-        },
-        {
-          "slug": "tam-ly-cam-xuc",
-          "label": "#TâmLý & CảmXúc"
-        }
-      ],
-      "author": "Thái Vân Anh",
-      "is_anonymous": false,
-      "posted_display": "Trong 24h qua",
-      "harvested_at": "2026-11-13 12:11:48 +07:00",
-      "permalink": "https://www.facebook.com/photo/?fbid=2797664270630420&set=a.417065068690364",
-      "text": "CHUYÊN ĐỀ HÔM NAY: PHÁT ÂM (ÔN THI VÀO LỚP 6)\nCô Thái Vân Anh (NCS Tiến sĩ Ngôn ngữ Anh) gửi tặng bố mẹ và thầy cô bộ tài liệu ôn thi vào lớp 6 theo từng chuyên đề.\nTài liệu được thiết kế với hai mức độ:\n- Cơ bản: Giúp các con củng cố kiến thức, nhận diện và phân biệt cách phát âm các âm thường gặp.\n- Nâng cao: Rèn luyện khả năng nhận biết những trường hợp phát âm dễ nhầm lẫn, nâng cao kỹ năng xử lý các dạng bài trong đề thi vào lớp 6.\nCô gửi tặng tài liệu miễn phí để bố mẹ và thầy cô tải về, in ra và hướng dẫn các con luyện tập.\nBố mẹ và thầy cô hãy theo dõi các chuyên đề tiếp theo, lưu bài viết và tải tài liệu để các con có thêm nguồn bài tập ôn luyện nhé!\nChúc các con học tập hiệu quả và tự tin chinh phục kỳ thi vào lớp 6!\n#TVAEducation #OnThiVaoLop6 #TiengAnhTieuHoc #Pronunciation #TaiLieuOnThi #ThaiVanAnh",
-      "clean_comments": [],
-      "clean_comments_count": 0,
-      "filtered_comments_count": 0,
-      "engagement_score": 8
-    },
-    {
-      "post_sig": "d2294f0d1b4739b095cf4c06",
-      "group_slug": "hoi_me_homeschool_acellus_mobymax_ixl_epic",
-      "group_name": "HỘI MÊ HOMESCHOOL (Acellus, Mobymax, IXL, Epic..)",
-      "group_url": "https://www.facebook.com/groups/3618994294827191/?sorting_setting=CHRONOLOGICAL",
-      "topic_id": "CHON_TRUONG_TUYEN_SINH",
-      "topic_label": "Chọn Trường & Tuyển Sinh",
-      "tags": [
-        {
-          "slug": "tieng-anh-tre-em",
-          "label": "#TiếngAnhTrẻEm"
-        },
-        {
-          "slug": "homeschool-tu-hoc",
-          "label": "#HomeschoolTựHọc"
-        },
-        {
-          "slug": "hoc-phi-tai-chinh",
-          "label": "#HọcPhíChiPhí"
-        }
-      ],
-      "author": "Đỗ Lý",
-      "is_anonymous": false,
-      "posted_display": "d͏\nn͏\np͏\ne͏\nr͏\no͏\nt͏\ns͏\nS͏\no͏\n2͏\nt͏\n5͏\n9͏\nt͏\n3͏\ni͏\n7͏\ng͏\ng͏\n ͏\n0͏\n:͏\n4͏\n ͏\n1͏\n9͏\n3͏\nu͏\n1͏\n7͏\n3͏\n2͏\n4͏\n ͏\na͏\ng͏\n1͏\n2͏\nl͏\nú͏\nm͏\n ͏\n6͏\nc͏\n1͏\nh͏\n5͏\n0͏\n7͏\ng͏\nc͏\n1͏\nn͏\n1͏\n1͏\ná͏\nl͏\n0͏\nu͏",
-      "harvested_at": "2026-11-13 12:11:48 +07:00",
-      "permalink": "https://www.facebook.com/groups/3618994294827191/permalink/28719941574305783",
-      "text": "MINI SCIENTISTS – NHỮNG NHÀ KHOA HỌC NHÍ\n*Học tiếng Anh tự nhiên qua những hoạt động khám phá Khoa học thú vị, tại sao không?!*\nCác em bé hay hỏi “Vì sao?” và tò mò về thế giới xung quanh thì hãy cùng Mini Scientists biến sự tò mò ấy thành những giờ học vừa vui, vừa bổ ích nhé!\nMini Scientists là dự án mình ấp ủ từ lâu. Sau hơn 10 năm gắn bó với Khoa học và dạy tiếng Anh cho các bạn nhỏ, mình mong muốn giúp các con tiếp xúc với Khoa học từ sớm, đồng thời sử dụng tiếng Anh một cách tự nhiên thông qua thí nghiệm và các hoạt động thực hành.\nĐến với lớp, con sẽ được:\n-\nThực hành tiếng Anh xuyên suốt các hoạt động, học từ vựng và cách diễn đạt tự nhiên trong ngữ cảnh thực tế.\n-\nTự tay làm thí nghiệm, quan sát, đặt câu hỏi và khám phá những hiện tượng khoa học thú vị.\n-\nRèn kỹ năng thực hành khoa học: đọc hiểu hướng dẫn bằng tiếng Anh, làm thí nghiệm theo từng bước, quan sát và ghi lại kết quả, phối hợp cùng các bạn để hoàn thành nhiệm vụ chung.\n-\nKhám phá nhiều chủ đề hấp dẫn: Nước, Lửa, Năng lượng, Môi trường, Trái Đất, Đại dương và Vũ trụ; đồng thời tự tay tạo ra những sản phẩm khoa học thú vị của riêng mình.\nLịch học: Online/offline/ cả onl+off\n-\nOnline: Chiều thứ 4: 4h45-5h45PM\nOnline sáng thứ 7: 7h30-8h30 AM\n-\nOffline: Sáng Thứ Bảy (9h30-11h) tại CV Thiên Văn Học-Hà Đông-Hà Nội (địa điểm có thể thay đổi tùy thời tiết)\nĐối tượng: Các bạn nhỏ 5–12 tuổi, có khả năng giao tiếp tiếng Anh cơ bản và yêu thích khám phá Khoa học.\nBa mẹ nhắn mình để được test đầu vào miễn phí và nhận thêm thông tin về lịch học, địa điểm và học phí nhé!\nHẹn gặp những nhà khoa học nhí đáng yêu tại Mini Scientists!\n#viral #kids #learning #bilingual\n#MiniScientists #STEMTiengAnh #HocMaChoi #KhoaHocChoTre #HaNoi #science #tienganhchotreem— với Đức Anh Nguyễn và Bac Kudo tại Công viên Thiên văn học.",
       "clean_comments": [],
       "clean_comments_count": 0,
       "filtered_comments_count": 0,
@@ -64839,34 +64190,6 @@ window.CDH_CLEAN_FORUM_DATA = {
       "engagement_score": 8
     },
     {
-      "post_sig": "03ccb8314eaf86c375342251",
-      "group_slug": "clb_homeschooling_cung_con_hoc_tai_nha",
-      "group_name": "CLB Homeschooling - Cùng con học tại nhà",
-      "group_url": "https://www.facebook.com/groups/homeschoolingcungconhoctainha/?sorting_setting=CHRONOLOGICAL",
-      "topic_id": "NGOAI_NGU_HOMESCHOOL",
-      "topic_label": "Ngoại Ngữ, HSK & Homeschool",
-      "tags": [
-        {
-          "slug": "homeschool-tu-hoc",
-          "label": "#HomeschoolTựHọc"
-        },
-        {
-          "slug": "sach-hay-hoc-lieu",
-          "label": "#SáchHay & HọcLiệu"
-        }
-      ],
-      "author": "Victoria Preschool System HCMC",
-      "is_anonymous": false,
-      "posted_display": "Trong 24h qua (Relay)",
-      "harvested_at": "2026-11-13 13:32:25 +07:00",
-      "permalink": "https://www.facebook.com/2949641612068765",
-      "text": "🌿 Gửi ba mẹ đang tìm một ngôi trường cho con\n\nLoris Malaguzzi, người khai sinh cách tiếp cận Reggio Emilia, gọi đó là \"một trăm ngôn ngữ của trẻ\": đôi tay nhào đất, ánh mắt dõi theo ánh sáng, tiếng cười giữa khu vườn, giai điệu ngân nga không ai dạy.\n\n🎨 Ở Victoria Preschool System, cô không vội dạy thật nhiều. Cô quan sát, lắng nghe và đặt câu hỏi cùng con, vì một câu hỏi hay mở ra nhiều hơn một câu trả lời đúng.\n\n📖 Mỗi khoảnh khắc của con được ghi lại thành tài liệu hóa sư phạm, để ba mẹ không chỉ biết \"hôm nay con học gì\" mà còn hiểu con đang nghĩ gì và lớn lên ra sao.\n\n🌳 Chúng tôi lấy cảm hứng từ Reggio Emilia và là thành viên của VIC Education.\n\n💌 Có những điều chỉ nhìn ra khi ngồi xuống cùng con trong lớp học một buổi sáng. Nếu ba mẹ muốn, chúng tôi rất sẵn lòng chuẩn bị một chỗ cho gia đình mình.\n\nNơi trẻ trở thành chính mình – Where children become who they are 🌱",
-      "clean_comments": [],
-      "clean_comments_count": 0,
-      "filtered_comments_count": 0,
-      "engagement_score": 8
-    },
-    {
       "post_sig": "cb93a64b526f3b444aa50f9a",
       "group_slug": "clb_homeschooling_cung_con_hoc_tai_nha",
       "group_name": "CLB Homeschooling - Cùng con học tại nhà",
@@ -65011,42 +64334,6 @@ window.CDH_CLEAN_FORUM_DATA = {
       "engagement_score": 8
     },
     {
-      "post_sig": "63b030887f0373cc66275fec",
-      "group_slug": "clb_homeschooling_cung_con_hoc_tai_nha",
-      "group_name": "CLB Homeschooling - Cùng con học tại nhà",
-      "group_url": "https://www.facebook.com/groups/homeschoolingcungconhoctainha/?sorting_setting=CHRONOLOGICAL",
-      "topic_id": "NGOAI_NGU_HOMESCHOOL",
-      "topic_label": "Ngoại Ngữ, HSK & Homeschool",
-      "tags": [
-        {
-          "slug": "tieng-trung-ngoai-ngu-2",
-          "label": "#TiếngTrungHSK"
-        },
-        {
-          "slug": "homeschool-tu-hoc",
-          "label": "#HomeschoolTựHọc"
-        },
-        {
-          "slug": "ren-tap-trung-ky-luat",
-          "label": "#RènTậpTrung"
-        },
-        {
-          "slug": "sach-hay-hoc-lieu",
-          "label": "#SáchHay & HọcLiệu"
-        }
-      ],
-      "author": "Nguyen Thi Hoa",
-      "is_anonymous": false,
-      "posted_display": "Trong 24h qua (Relay)",
-      "harvested_at": "2026-11-13 13:32:25 +07:00",
-      "permalink": "https://www.facebook.com/2950341088665484",
-      "text": "🌿 MẸ CON EM VẪN DUY TRÌ THÓI QUEN ĐỌC SÁCH MỖI NGÀY! 📚\n\n📖 MUỐN CON HỌC TỐT 국어 (NGỮ VĂN TIẾNG HÀN), CHA MẸ NÊN BẮT ĐẦU TỪ ĐÂU?\n\nSống ở Hàn Quốc, em nhận thấy môn 국어 rất quan trọng. Đây không chỉ là môn học tiếng Hàn mà còn là nền tảng giúp con hiểu bài, đọc đề, suy luận và học tốt các môn khác ở trường.\n\nVì vậy, mẹ con em vẫn cố gắng duy trì những thói quen nhỏ mỗi ngày:\n\n🌱 Đọc sách cùng con 20–30 phút.\n🌱 Học thêm 3–5 từ vựng mới.\n🌱 Khuyến khích con kể lại nội dung vừa đọc.\n🌱 Đặt câu hỏi để con suy nghĩ và tự tìm câu trả lời.\n🌱 Viết vài dòng cảm nghĩ sau mỗi lần đọc sách.\n\nEm không đặt nặng việc con phải đọc thật nhanh hay viết thật nhiều. Điều em mong muốn là con hiểu những gì mình đọc, biết suy nghĩ, biết đặt câu hỏi và diễn đạt suy nghĩ bằng chính lời nói của mình.\n\n❤️ Giáo dục con không phải là chuyện một ngày hay hai ngày. Quan trọng là sự đồng hành và kiên trì của cha mẹ.\n\nMỗi ngày dành một chút thời gian cho con, sau một năm nhìn lại, mẹ sẽ thấy những thay đổi rất đáng quý.\n\nCác mẹ có đang duy trì thói quen đọc sách cùng con mỗi ngày không ạ?\n\n#국어 #독서습관 #자녀교육 #초등교육 #다문화가정",
-      "clean_comments": [],
-      "clean_comments_count": 0,
-      "filtered_comments_count": 0,
-      "engagement_score": 8
-    },
-    {
       "post_sig": "7f03f385a470a3876c0d2b53",
       "group_slug": "clb_homeschooling_cung_con_hoc_tai_nha",
       "group_name": "CLB Homeschooling - Cùng con học tại nhà",
@@ -65183,38 +64470,6 @@ window.CDH_CLEAN_FORUM_DATA = {
       "engagement_score": 8
     },
     {
-      "post_sig": "e6746cb022369247f0f40be3",
-      "group_slug": "clb_homeschooling_cung_con_hoc_tai_nha",
-      "group_name": "CLB Homeschooling - Cùng con học tại nhà",
-      "group_url": "https://www.facebook.com/groups/homeschoolingcungconhoctainha/?sorting_setting=CHRONOLOGICAL",
-      "topic_id": "NGOAI_NGU_HOMESCHOOL",
-      "topic_label": "Ngoại Ngữ, HSK & Homeschool",
-      "tags": [
-        {
-          "slug": "homeschool-tu-hoc",
-          "label": "#HomeschoolTựHọc"
-        },
-        {
-          "slug": "ren-tap-trung-ky-luat",
-          "label": "#RènTậpTrung"
-        },
-        {
-          "slug": "sach-hay-hoc-lieu",
-          "label": "#SáchHay & HọcLiệu"
-        }
-      ],
-      "author": "Sơn Taiga Thanh Hóa",
-      "is_anonymous": false,
-      "posted_display": "Trong 24h qua (Relay)",
-      "harvested_at": "2026-11-13 13:32:25 +07:00",
-      "permalink": "https://www.facebook.com/2950445021988424",
-      "text": "CHUẨN👉LÀM NGAY.\nCác bác thấy ý kiến này sao?\n👉Trẻ giờ phụ thuộc điện thoại quá nhiều, ít để ý đến sách vở.\n👉Làm bài tập không chịu suy nghĩ, phụ thuộc quá nhiều vào AI 👉 đầu óc kém nhạy bén.\n👉Xem quá nhiều video ngắn👉trí não không phát triển và sẽ không tập trung, thiếu kiên nhẫn.\n👉 Nhiều nội dung bẩn sẽ làm lối suy nghĩ của trẻ bị ảnh hưởng, lệch lạc...\nNói chung là quá nhiều cái không tốt👉CẤM là CHUẨN.",
-      "clean_comments": [],
-      "clean_comments_count": 0,
-      "filtered_comments_count": 0,
-      "engagement_score": 8
-    },
-    {
       "post_sig": "b7e533553465143da905b098",
       "group_slug": "clb_homeschooling_cung_con_hoc_tai_nha",
       "group_name": "CLB Homeschooling - Cùng con học tại nhà",
@@ -65237,34 +64492,6 @@ window.CDH_CLEAN_FORUM_DATA = {
       "harvested_at": "2026-11-13 13:32:25 +07:00",
       "permalink": "https://www.facebook.com/2950483378651255",
       "text": "📚 TIẾNG VIỆT LỚP 5: TỔNG ÔN 4 MẢNG KIẾN THỨC TRỌNG TÂM!\n\nTiếng Việt lớp 5 không chỉ yêu cầu con hiểu nghĩa của từ, nhận biết các kiểu câu mà còn cần biết liên kết câu, sử dụng dấu câu và diễn đạt ý tưởng rõ ràng khi viết văn.\n\nBa mẹ cùng con hệ thống lại 4 mảng kiến thức quan trọng nhé!\n\n✏️ 1. NGHĨA TỪ – ĐẠI TỪ – KẾT TỪ\n\n✔️ Từ đồng nghĩa: Những từ có nghĩa giống hoặc gần giống nhau.\n\nVí dụ: dũng cảm – can đảm.\n\n✔️ Từ đa nghĩa: Một từ có nhiều nghĩa và các nghĩa có mối liên hệ với nhau.\n\nVí dụ: mũi người – mũi thuyền.\n\n✔️ Đại từ: Dùng để xưng hô, hỏi hoặc thay thế từ ngữ trong câu.\n\n✔️ Kết từ: Dùng để nối các từ ngữ hoặc câu, thể hiện mối quan hệ giữa chúng.\n\nVí dụ: và, nhưng, vì… nên…\n\n✏️ 2. CÂU ĐƠN – CÂU GHÉP – LIÊN KẾT CÂU\n\n✔️ Câu đơn: Có một cụm chủ ngữ – vị ngữ làm nòng cốt.\n\n✔️ Câu ghép: Có từ hai cụm chủ ngữ – vị ngữ trở lên, mỗi cụm tạo thành một vế câu.\n\nVí dụ: Gió thổi, lá rung.\n\n✔️ Liên kết câu giúp các câu trong đoạn văn gắn bó với nhau.\n\nBa cách thường gặp:\n• Lặp từ ngữ.\n• Thay thế từ ngữ.\n• Dùng từ ngữ nối.\n\nVí dụ: Mai đến lớp sớm. Bạn ấy mở cửa.\n\n→ “Bạn ấy” thay thế cho “Mai”.\n\n✏️ 3. ĐIỆP TỪ – ĐIỆP NGỮ – DẤU CÂU\n\n✔️ Điệp từ, điệp ngữ: Lặp lại từ ngữ có chủ ý để nhấn mạnh nội dung hoặc gợi cảm xúc.\n\nVí dụ: Em nhớ mái trường, em nhớ bạn bè.\n\n→ “Em nhớ” được lặp lại để nhấn mạnh tình cảm.\n\n✔️ Dấu gạch ngang có thể dùng để đánh dấu bộ phận chú thích trong câu.\n\nVí dụ: Lan – lớp trưởng lớp em – rất chăm chỉ.\n\n✏️ 4. ĐỌC HIỂU VÀ TẠO LẬP VĂN BẢN\n\n✔️ Nêu ý kiến: Trình bày quan điểm, kèm lí lẽ và dẫn chứng phù hợp.\n\n✔️ Cảm nhận thơ: Nhận biết hình ảnh, từ ngữ gợi cảm xúc và nêu cảm nhận của bản thân.\n\n✔️ Văn tả người, tả cảnh: Lựa chọn những chi tiết tiêu biểu.\n\n✔️ Kể chuyện sáng tạo: Thêm chi tiết hợp lí, bảo đảm mạch truyện.\n\n💡 4 ĐIỀU CON CẦN NHỚ:\n\n✅ Hiểu nghĩa từ trong ngữ cảnh.\n\n✅ Phân biệt câu đơn và câu ghép.\n\n✅ Biết sử dụng từ ngữ liên kết và dấu câu.\n\n✅ Khi viết văn, diễn đạt rõ ý, có lí lẽ và dẫn chứng phù hợp.\n\n🧠 BÉ THỬ SỨC:\n\nCâu nào dưới đây là câu ghép?\n\nA. Những bông hoa trong vườn đang nở rộ.\n\nB. Trời vừa sáng, đàn chim đã cất tiếng hót.\n\nC. Em và Lan cùng đến trường.\n\n💬 Ba mẹ cho con thử chọn đáp án và giải thích vì sao nhé!\n\n📌 Lưu ngay bảng tổng ôn để con xem lại kiến thức Tiếng Việt lớp 5 khi cần.\n\n💗 Homeschooling cùng Quýt Iu – Đồng hành cùng con học tốt mỗi ngày!\n\n#TiengVietLop5 #TongOnTiengViet5 #KienThucTrongTam #OnTapTiengViet #HocCungCon #HomeschoolingCungQuytIu",
-      "clean_comments": [],
-      "clean_comments_count": 0,
-      "filtered_comments_count": 0,
-      "engagement_score": 8
-    },
-    {
-      "post_sig": "789fdd8e101a3c5b870e84cd",
-      "group_slug": "clb_homeschooling_cung_con_hoc_tai_nha",
-      "group_name": "CLB Homeschooling - Cùng con học tại nhà",
-      "group_url": "https://www.facebook.com/groups/homeschoolingcungconhoctainha/?sorting_setting=CHRONOLOGICAL",
-      "topic_id": "NGOAI_NGU_HOMESCHOOL",
-      "topic_label": "Ngoại Ngữ, HSK & Homeschool",
-      "tags": [
-        {
-          "slug": "homeschool-tu-hoc",
-          "label": "#HomeschoolTựHọc"
-        },
-        {
-          "slug": "sach-hay-hoc-lieu",
-          "label": "#SáchHay & HọcLiệu"
-        }
-      ],
-      "author": "Homeschooling cùng Quýt iu",
-      "is_anonymous": false,
-      "posted_display": "Trong 24h qua",
-      "harvested_at": "2026-11-13 13:32:25 +07:00",
-      "permalink": "https://www.facebook.com/photo/?fbid=122152994091089601&set=gm.2950483378651255&idorvanity=1397872433912365",
-      "text": "TIẾNG VIỆT LỚP 5: TỔNG ÔN 4 MẢNG KIẾN THỨC TRỌNG TÂM!\nTiếng Việt lớp 5 không chỉ yêu cầu con hiểu nghĩa của từ, nhận biết các kiểu câu mà còn cần biết liên kết câu, sử dụng dấu câu và diễn đạt ý tưởng rõ ràng khi viết văn.\nBa mẹ cùng con hệ thống lại 4 mảng kiến thức quan trọng nhé!\n1. NGHĨA TỪ – ĐẠI TỪ – KẾT TỪ\nTừ đồng nghĩa: Những từ có nghĩa giống hoặc gần giống nhau.\nVí dụ: dũng cảm – can đảm.\nTừ đa nghĩa: Một từ có nhiều nghĩa và các nghĩa có mối liên hệ với nhau.\nVí dụ: mũi người – mũi thuyền.\nĐại từ: Dùng để xưng hô, hỏi hoặc thay thế từ ngữ trong câu.\nKết từ: Dùng để nối các từ ngữ hoặc câu, thể hiện mối quan hệ giữa chúng.\nVí dụ: và, nhưng, vì… nên…\n2. CÂU ĐƠN – CÂU GHÉP – LIÊN KẾT CÂU\nCâu đơn: Có một cụm chủ ngữ – vị ngữ làm nòng cốt.\nCâu ghép: Có từ hai cụm chủ ngữ – vị ngữ trở lên, mỗi cụm tạo thành một vế câu.\nVí dụ: Gió thổi, lá rung.\nLiên kết câu giúp các câu trong đoạn văn gắn bó với nhau.\nBa cách thường gặp:\n• Lặp từ ngữ.\n• Thay thế từ ngữ.\n• Dùng từ ngữ nối.\nVí dụ: Mai đến lớp sớm. Bạn ấy mở cửa.\n→ “Bạn ấy” thay thế cho “Mai”.\n3. ĐIỆP TỪ – ĐIỆP NGỮ – DẤU CÂU\nĐiệp từ, điệp ngữ: Lặp lại từ ngữ có chủ ý để nhấn mạnh nội dung hoặc gợi cảm xúc.\nVí dụ: Em nhớ mái trường, em nhớ bạn bè.\n→ “Em nhớ” được lặp lại để nhấn mạnh tình cảm.\nDấu gạch ngang có thể dùng để đánh dấu bộ phận chú thích trong câu.\nVí dụ: Lan – lớp trưởng lớp em – rất chăm chỉ.\n4. ĐỌC HIỂU VÀ TẠO LẬP VĂN BẢN\nNêu ý kiến: Trình bày quan điểm, kèm lí lẽ và dẫn chứng phù hợp.\nCảm nhận thơ: Nhận biết hình ảnh, từ ngữ gợi cảm xúc và nêu cảm nhận của bản thân.\nVăn tả người, tả cảnh: Lựa chọn những chi tiết tiêu biểu.\nKể chuyện sáng tạo: Thêm chi tiết hợp lí, bảo đảm mạch truyện.\n4 ĐIỀU CON CẦN NHỚ:\nHiểu nghĩa từ trong ngữ cảnh.\nPhân biệt câu đơn và câu ghép.\nBiết sử dụng từ ngữ liên kết và dấu câu.\nKhi viết văn, diễn đạt rõ ý, có lí lẽ và dẫn chứng phù hợp.\nBÉ THỬ SỨC:\nCâu nào dưới đây là câu ghép?\nA. Những bông hoa trong vườn đang nở rộ.\nB. Trời vừa sáng, đàn chim đã cất tiếng hót.\nC. Em và Lan cùng đến trường.\nBa mẹ cho con thử chọn đáp án và giải thích vì sao nhé!\nLưu ngay bảng tổng ôn để con xem lại kiến thức Tiếng Việt lớp 5 khi cần.\nHomeschooling cùng Quýt Iu – Đồng hành cùng con học tốt mỗi ngày!\n#TiengVietLop5 #TongOnTiengViet5 #KienThucTrongTam #OnTapTiengViet #HocCungCon #HomeschoolingCungQuytIu",
       "clean_comments": [],
       "clean_comments_count": 0,
       "filtered_comments_count": 0,
@@ -65361,34 +64588,6 @@ window.CDH_CLEAN_FORUM_DATA = {
       "harvested_at": "2026-11-13 13:34:07 +07:00",
       "permalink": "https://www.facebook.com/1818810659165192",
       "text": "17H CỞI ÁO BLOUSE, 22H MỚI TẮT APP XE ÔM ĐỂ TRANG TRẢI KỲ THỰC HÀNH NGHỀ Y\nKhoảng 17h, Hoàng Đức Hùng kết thúc buổi thực hành ở bệnh viện, thay áo blouse bằng đồng phục tài xế rồi mở ứng dụng đón khách. Đến khoảng 22h, anh mới về phòng trọ. Những cuốc xe buổi tối và ngày nghỉ đem lại trung bình 8–10 triệu đồng mỗi tháng, giúp anh tự lo chi phí sinh hoạt.\nHùng tốt nghiệp ngành Bác sĩ Y học cổ truyền tại Đại học Y Hà Nội năm 2025. Anh đang thực hành tại Bệnh viện Châm cứu Trung ương để đủ điều kiện xin giấy phép hành nghề. Trong giai đoạn này, anh chưa có lương và phải đóng phí thực hành. Gia đình hỗ trợ một phần khoản phí, còn tiền sinh hoạt do anh tự lo.\nDự kiến hoàn thành kỳ thực hành vào tháng 12, Hùng muốn tìm việc ở phòng khám, chuẩn bị thi cao học và tạm dừng chạy xe để tập trung cho nghề y.\nNếu từng vừa đi thực tập vừa làm thêm, công việc nào đã giúp bạn vượt qua giai đoạn đó?\n#DiemTin24H #NgheY #ViecLamThem #ChuyenNguoiTre",
-      "clean_comments": [],
-      "clean_comments_count": 0,
-      "filtered_comments_count": 0,
-      "engagement_score": 8
-    },
-    {
-      "post_sig": "66e36864021de326244b271f",
-      "group_slug": "hoi_phu_huynh_co_con_hoc_thcs_thpt",
-      "group_name": "Hội Phụ huynh có con học THCS - THPT",
-      "group_url": "https://www.facebook.com/groups/1530122331367361/?sorting_setting=CHRONOLOGICAL",
-      "topic_id": "TAM_LY_GIA_DINH",
-      "topic_label": "Tâm Lý, Kỷ Luật & Góc Học Tập",
-      "tags": [
-        {
-          "slug": "bua-an-ban-tru-suc-khoe",
-          "label": "#BánTrú & DinhDưỡng"
-        },
-        {
-          "slug": "chuyen-cap-lop-6",
-          "label": "#ChuyểnCấpLớp6"
-        }
-      ],
-      "author": "May Đồng Phục MXP",
-      "is_anonymous": false,
-      "posted_display": "Trong 24h qua (Relay)",
-      "harvested_at": "2026-11-13 13:34:07 +07:00",
-      "permalink": "https://www.facebook.com/1818815449164713",
-      "text": "💥💥💥Những Điều Cần Biết Khi May Đồng Phục Mầm Non Cho Bé💥💥💥\nChọn chất liệu gì để bé không bị nóng?\nThiết kế như thế nào để dễ vận động?\nĐây đều là những vấn đề quan trọng cần cân nhắc trước khi đặt may.\n1. Chất Liệu Vải Là Yếu Tố Quan Trọng Hàng Đầu\n2. Thiết Kế Đơn Giản Nhưng Phải Thoải Mái\n3. Đồng Phục Mầm Non Cần Đảm Bảo An Toàn\n4. Nên In Hay Thêu Logo Trường?\n\n💥Đoc tiếp tại website: dongphucmxp\n💯Hotline tư vấn miến phí: 096.31.31.123",
       "clean_comments": [],
       "clean_comments_count": 0,
       "filtered_comments_count": 0,
@@ -65611,42 +64810,6 @@ window.CDH_CLEAN_FORUM_DATA = {
       "engagement_score": 8
     },
     {
-      "post_sig": "82bc844691864dc7e8f9e5fe",
-      "group_slug": "clb_homeschooling_cung_con_hoc_tai_nha",
-      "group_name": "CLB Homeschooling - Cùng con học tại nhà",
-      "group_url": "https://www.facebook.com/groups/homeschoolingcungconhoctainha/?sorting_setting=CHRONOLOGICAL",
-      "topic_id": "NGOAI_NGU_HOMESCHOOL",
-      "topic_label": "Ngoại Ngữ, HSK & Homeschool",
-      "tags": [
-        {
-          "slug": "giao-vien-goc-nhin",
-          "label": "#GócNhìnGiáoViên"
-        },
-        {
-          "slug": "goc-hoi-dap-thuc-chien",
-          "label": "#HỏiĐápKinhNghiệm"
-        },
-        {
-          "slug": "homeschool-tu-hoc",
-          "label": "#HomeschoolTựHọc"
-        },
-        {
-          "slug": "ren-tap-trung-ky-luat",
-          "label": "#RènTậpTrung"
-        }
-      ],
-      "author": "Thaki Thanh Bình Hải Dương",
-      "is_anonymous": false,
-      "posted_display": "Trong 24h qua (Relay)",
-      "harvested_at": "2026-11-13 13:36:23 +07:00",
-      "permalink": "https://www.facebook.com/2948706855495574",
-      "text": "🎯 LÀM SAO ĐỂ TRẺ CHỜ ĐẾN LƯỢT MÀ KHÔNG MẤT TẬP TRUNG?\n\nMột tình huống khá quen thuộc trong lớp học: Khi cô tổ chức trò chơi theo lượt, bạn đang chơi thì rất hào hứng, nhưng những bạn ngồi chờ lại bắt đầu mất tập trung.\n\nCó bạn đứng lên đi lại, chạy quanh lớp, thậm chí tò mò khám phá những đồ vật xung quanh thay vì ngồi chờ đến lượt mình.\n\nVì sao trẻ lại như vậy?\n\nBởi các bạn nhỏ năng động thường có rất nhiều năng lượng, luôn mong muốn được tham gia và khám phá. Trong khi đó, việc phải ngồi chờ quá lâu mà không có nhiệm vụ gì dễ khiến con cảm thấy nhàm chán và chuyển sự chú ý sang hoạt động khác.\n\nCô giáo THAKI đã xử lý như thế nào?\n\nThay vì liên tục nhắc trẻ ngồi yên, cô chủ động điều chỉnh cách tổ chức trò chơi:\n\n✨ Rút ngắn thời gian chờ: Đẩy nhanh các lượt chơi, chuyển tiếp nhanh giữa các bạn để hạn chế khoảng thời gian trống.\n\n✨ Sử dụng khẩu lệnh thu hút: “3 – 2 – 1! Teacher, teacher, me!” giúp các bạn nhanh chóng hướng sự chú ý trở lại cô và hoạt động.\n\n✨ Thiết lập quy tắc rõ ràng: Bạn nào chưa sẵn sàng, chưa ngồi đúng vị trí có thể nhường lượt cho bạn tiếp theo. Các bạn bên dưới cũng được khuyến khích cổ vũ để duy trì không khí hào hứng.\n\n🌱 MỘT KINH NGHIỆM NHỎ DÀNH CHO CÁC CÔ GIÁO:\n\nMuốn trẻ tập trung tốt hơn, đôi khi không phải là yêu cầu trẻ ngồi yên lâu hơn, mà là cần tổ chức hoạt động linh hoạt hơn.\n\nHãy hạn chế thời gian chờ, tạo nhiệm vụ phù hợp và duy trì nhịp độ lớp học để trẻ luôn có cơ hội tham gia.\n\n❤️ Tại THAKI, mỗi tình huống trong lớp học đều là cơ hội để giáo viên quan sát, thấu hiểu trẻ và tìm ra cách tổ chức hoạt động phù hợp hơn.\n\nBố mẹ và các cô giáo có thường gặp tình huống này không? Hãy chia sẻ kinh nghiệm của mình dưới phần bình luận nhé!\n\n#THAKIEnglish #GocChiaSeGiaoVien #TinhHuongLopHoc #PhuongPhapGiangDay #GiaoDucTreNho",
-      "clean_comments": [],
-      "clean_comments_count": 0,
-      "filtered_comments_count": 0,
-      "engagement_score": 8
-    },
-    {
       "post_sig": "9e499c061fdb6690a5da12c4",
       "group_slug": "hoi_phu_huynh_gia_lam_vinschool_edison_brighton_",
       "group_name": "Hội Phụ Huynh Gia Lâm (Vinschool, Edison, Brighton, Dewey, Greenfield)",
@@ -65799,34 +64962,6 @@ window.CDH_CLEAN_FORUM_DATA = {
       "engagement_score": 8
     },
     {
-      "post_sig": "b0e91c91a0061b15aa046a2c",
-      "group_slug": "hoi_phu_huynh_ha_noi_829363",
-      "group_name": "Hội Phụ Huynh Hà Nội",
-      "group_url": "https://www.facebook.com/groups/829363328763392/?sorting_setting=CHRONOLOGICAL",
-      "topic_id": "TAM_LY_GIA_DINH",
-      "topic_label": "Tâm Lý, Kỷ Luật & Góc Học Tập",
-      "tags": [
-        {
-          "slug": "he-quoc-te-song-bang",
-          "label": "#SongBằngCambridge"
-        },
-        {
-          "slug": "giao-vien-goc-nhin",
-          "label": "#GócNhìnGiáoViên"
-        }
-      ],
-      "author": "Thầy Nguyễn Đức Sinh",
-      "is_anonymous": false,
-      "posted_display": "Trong 24h qua (Relay)",
-      "harvested_at": "2026-11-13 13:39:48 +07:00",
-      "permalink": "https://www.facebook.com/1694837658882617",
-      "text": "📢 ĐÀO TẠO NGHỀ Ở VIỆT NAM: ĐÃ ĐẾN LÚC PHẢI THAY ĐỔI TƯ DUY – HỌC PHẢI ĐI ĐÔI VỚI THỰC HÀNH!\n\nMột vấn đề đáng suy ngẫm từ ý kiến của Thứ trưởng Bộ GD&ĐT: Việt Nam cần đẩy mạnh mô hình đào tạo liên kết quốc tế, kết hợp đào tạo cơ bản trong nước với thực hành nghề tại các quốc gia phát triển.\n\n🔹 Thực trạng: Giáo dục nghề nghiệp Việt Nam vẫn còn khoảng cách về trình độ kỹ năng thực hành so với yêu cầu và tiêu chuẩn quốc tế. Không ít chương trình đào tạo còn gặp thách thức trong việc gắn kết kiến thức với năng lực làm việc thực tế.\n\n🔹 Hướng đi mới: Học sinh, sinh viên được đào tạo kiến thức nền tảng trong nước, sau đó có cơ hội thực hành, học hỏi công nghệ và quy trình làm việc tại doanh nghiệp nước ngoài.\n\n🔹 Giá trị cốt lõi: Doanh nghiệp không chỉ cần người có bằng cấp mà cần người làm được việc, có kỹ năng chuyên môn, khả năng thích ứng và tác phong công nghiệp.\n\n🎯 Góc nhìn hướng nghiệp của Thầy Sinh:\n\nĐại học không phải con đường duy nhất để xây dựng tương lai. Giáo dục nghề nghiệp, nếu được đầu tư đúng hướng và gắn với nhu cầu thực tế của thị trường lao động, hoàn toàn có thể trở thành lựa chọn có giá trị.\n\nPhụ huynh và học sinh cần thay đổi cách nhìn: Đừng chỉ hỏi học trường nào, lấy bằng gì, mà hãy quan tâm học xong có năng lực gì, được thực hành ở đâu và cơ hội nghề nghiệp như thế nào.\n\nChọn đúng con đường quan trọng hơn chạy theo bằng cấp. Học phải có kiến thức, làm phải có kỹ năng và phát triển nghề nghiệp phải có năng lực thực chất!\n\nHướng nghiệp không phải là chọn giúp con một nghề để đi suốt cuộc đời. Hướng nghiệp là giúp con biết mình là ai, có thể làm tốt điều gì và cần chuẩn bị những gì để chủ động trước tương lai.\n\n𝐓𝐡𝐚̂̀𝐲 𝐒𝐢𝐧𝐡 – 𝐆𝐢𝐚́𝐨 𝐝𝐮̣𝐜 𝐭𝐮̛̀ 𝐠𝐨̂́𝐜:\n𝐇𝐮̛𝐨̛́𝐧𝐠 đ𝐢 đ𝐮́𝐧𝐠 – 𝐒𝐚́𝐧𝐠 𝐭𝐮̛𝐨̛𝐧𝐠 𝐥𝐚𝐢.\n𝐔𝐲 𝐭𝐢́𝐧 𝐥𝐚̀ 𝐝𝐚𝐧𝐡 𝐝𝐮̛̣- 𝐆𝐢𝐚́𝐨 𝐃𝐮̣𝐜 𝐥𝐚̀ 𝐩𝐡𝐮̣𝐧𝐠 𝐬𝐮̛̣\n𝐓𝐮̛ 𝐯𝐚̂́𝐧 𝟏-𝟏 𝐏𝐇𝐇𝐒 𝐥𝐢𝐞̂𝐧 𝐡𝐞̣̂ :\n𝐒𝐨̂́ 𝐙𝐚𝐥𝐨: 𝟎𝟖𝟔𝟖-𝟔𝟏𝟔-𝟐𝟖𝟖\n\n#ThaySinh #HuongNghiep #TuyenSinhDaiHoc #CongNgheThucPham #CongNgheSinhHoc #ChonNganhChonNghe #HocMap#PhuHuynhHocSinh",
-      "clean_comments": [],
-      "clean_comments_count": 0,
-      "filtered_comments_count": 0,
-      "engagement_score": 8
-    },
-    {
       "post_sig": "dae6f401c62182cdc240145c",
       "group_slug": "hoi_phu_huynh_ha_noi_829363",
       "group_name": "Hội Phụ Huynh Hà Nội",
@@ -65939,34 +65074,6 @@ window.CDH_CLEAN_FORUM_DATA = {
       "engagement_score": 8
     },
     {
-      "post_sig": "c6cf87d188d91d35cfdb332d",
-      "group_slug": "con_hoc_me_cung_hoc",
-      "group_name": "CON HỌC MẸ CŨNG HỌC",
-      "group_url": "https://www.facebook.com/groups/351468770715853/?sorting_setting=CHRONOLOGICAL",
-      "topic_id": "NGOAI_NGU_HOMESCHOOL",
-      "topic_label": "Ngoại Ngữ, HSK & Homeschool",
-      "tags": [
-        {
-          "slug": "tieng-anh-tre-em",
-          "label": "#TiếngAnhTrẻEm"
-        },
-        {
-          "slug": "homeschool-tu-hoc",
-          "label": "#HomeschoolTựHọc"
-        }
-      ],
-      "author": "CON HỌC MẸ CŨNG HỌC",
-      "is_anonymous": false,
-      "posted_display": "#HocTiengAnhMoiNgay",
-      "harvested_at": "2026-11-13 13:43:55 +07:00",
-      "permalink": "",
-      "text": "𝗡𝗴𝗮̀𝘆 𝟳𝟲 – 𝗟𝘂𝘆𝗲̣̂𝗻 𝗗𝗶𝗰𝘁𝗮𝘁𝗶𝗼𝗻\nHôm nay, mình tiếp tục luyện nghe, chép chính tả (dictation) và đọc tiếng Anh qua chủ đề School (Trường học).\n𝗧𝘂̛̀ 𝘃𝘂̛̣𝗻𝗴 𝗺𝗶̀𝗻𝗵 𝗵𝗼̣𝗰 đ𝘂̛𝗼̛̣𝗰 𝗵𝗼̂𝗺 𝗻𝗮𝘆:\n1. Elementary /ˌelɪˈmentri/ – Tiểu học\n2. Airy /ˈeəri/ – Thoáng đãng\n3. Parking /ˈpɑːkɪŋ/ – Bãi đậu xe\n4. Cafeteria /ˌkæfəˈtɪəriə/ – Căng tin\n5. Principal /ˈprɪnsəpəl/ – Hiệu trưởng\n6. High school /ˈhaɪ skuːl/ – Trường trung học phổ thông\n7. Teenager /ˈtiːneɪdʒə(r)/ – Thanh thiếu niên\n8. Football field /ˈfʊtbɔːl fiːld/ – Sân bóng đá\n9. Gymnasium /dʒɪmˈneɪziəm/ – Nhà thi đấu, phòng thể dục\n10. Senior citizen /ˌsiːniə ˈsɪtɪzən/ – Người cao tuổi\n11. Campus /ˈkæmpəs/ – Khuôn viên trường\n12. Residence /ˈrezɪdəns/ – Nơi cư trú; khu nhà ở, ký túc xá (tùy ngữ cảnh)\nHôm nay mình học thêm những từ vựng về trường học, khuôn viên và các địa điểm quen thuộc. Mỗi ngày một chút, mình vừa mở rộng vốn từ vừa rèn luyện khả năng nghe, chép và đọc tiếng Anh.\nKiên trì học tập mỗi ngày, rồi mình sẽ tiến bộ từng bước!\n#Ngay76 #DailyDictation #HocTiengAnhMoiNgay #LuyenNgheTiengAnh #TuVungTiengAnh",
-      "clean_comments": [],
-      "clean_comments_count": 0,
-      "filtered_comments_count": 0,
-      "engagement_score": 8
-    },
-    {
       "post_sig": "ab37d64563a224c8a79e157e",
       "group_slug": "con_hoc_me_cung_hoc",
       "group_name": "CON HỌC MẸ CŨNG HỌC",
@@ -66023,62 +65130,6 @@ window.CDH_CLEAN_FORUM_DATA = {
       "engagement_score": 8
     },
     {
-      "post_sig": "abcf5aee4923183d8e5a45a6",
-      "group_slug": "con_hoc_me_cung_hoc",
-      "group_name": "CON HỌC MẸ CŨNG HỌC",
-      "group_url": "https://www.facebook.com/groups/351468770715853/?sorting_setting=CHRONOLOGICAL",
-      "topic_id": "NGOAI_NGU_HOMESCHOOL",
-      "topic_label": "Ngoại Ngữ, HSK & Homeschool",
-      "tags": [
-        {
-          "slug": "ren-tap-trung-ky-luat",
-          "label": "#RènTậpTrung"
-        },
-        {
-          "slug": "tieng-anh-tre-em",
-          "label": "#TiếngAnhTrẻEm"
-        }
-      ],
-      "author": "Kiều Ngọc Ánh",
-      "is_anonymous": false,
-      "posted_display": "DNc8aAneor2rgnF256hh7ziLqbXbgh3qwfKHoeX9u",
-      "harvested_at": "2026-11-13 13:43:55 +07:00",
-      "permalink": "",
-      "text": "𝗡𝗴𝗮̀𝘆 𝟲𝟮 – 𝗧𝗶𝗲̂́𝗻𝗴 𝗔𝗻𝗵 𝗴𝗶𝗮 đ𝗶̀𝗻𝗵 đ𝗼̂̀𝗻𝗴 𝗵𝗮̀𝗻𝗵 𝗰𝘂̀𝗻𝗴 𝗰𝗼𝗻\nHôm nay mình học một câu tiếng Anh thường dùng khi nhắc con thu dọn đồ chơi:\n𝗣𝗶𝗰𝗸 𝘂𝗽 𝘁𝗵𝗲 𝗯𝗹𝗼𝗰𝗸𝘀.\n/pɪk ʌp ðə blɑːks/\n→ Nhặt những khối đồ chơi lên nhé!\nSau khi chơi xếp hình xong, mẹ có thể nhắc con nhặt các khối xếp hình lên và cất gọn vào hộp. Mẹ vừa làm cùng con, vừa nói câu tiếng Anh này để con hiểu và ghi nhớ qua hành động thực tế.\nTừ những việc nhỏ hằng ngày, con không chỉ học thêm tiếng Anh mà còn dần hình thành thói quen tự giác, biết giữ gìn và sắp xếp đồ đạc.\nHãy học cùng mình nhé!\n#Ngay62 #TiengAnhCungCon #DongHanhCungCon",
-      "clean_comments": [],
-      "clean_comments_count": 0,
-      "filtered_comments_count": 0,
-      "engagement_score": 8
-    },
-    {
-      "post_sig": "5920499085cf38d59340e001",
-      "group_slug": "con_hoc_me_cung_hoc",
-      "group_name": "CON HỌC MẸ CŨNG HỌC",
-      "group_url": "https://www.facebook.com/groups/351468770715853/?sorting_setting=CHRONOLOGICAL",
-      "topic_id": "NGOAI_NGU_HOMESCHOOL",
-      "topic_label": "Ngoại Ngữ, HSK & Homeschool",
-      "tags": [
-        {
-          "slug": "tieng-anh-tre-em",
-          "label": "#TiếngAnhTrẻEm"
-        },
-        {
-          "slug": "homeschool-tu-hoc",
-          "label": "#HomeschoolTựHọc"
-        }
-      ],
-      "author": "Kiều Ngọc Ánh",
-      "is_anonymous": false,
-      "posted_display": "#HocTiengAnhMoiNgay",
-      "harvested_at": "2026-11-13 13:43:55 +07:00",
-      "permalink": "",
-      "text": "𝗡𝗴𝗮̀𝘆 𝟳𝟳 – 𝗟𝘂𝘆𝗲̣̂𝗻 𝗻𝗴𝗵𝗲, 𝗰𝗵𝗲́𝗽 𝗰𝗵𝗶́𝗻𝗵 𝘁𝗮̉ 𝘃𝗮̀ đ𝗼̣𝗰 𝘁𝗶𝗲̂́𝗻𝗴 𝗔𝗻𝗵\nHôm nay, mình tiếp tục luyện nghe, chép chính tả (dictation) và đọc tiếng Anh với chủ đề The Farm (Trang trại).\nTừ vựng học được:\n1. Swish the fly – Khua để đuổi ruồi.\n2. Saddle – Yên ngựa.\n3. For a ride – Đi dạo, đi cưỡi ngựa.\n4. Pig pen – Chuồng lợn.\n5. Eat just about anything – Ăn gần như mọi thứ.\n6. Chicken coop – Chuồng gà.\n7. Collect the eggs – Thu nhặt trứng.\n8. Crows – Gáy (như tiếng gà trống gáy).\n9. Nip – Cắn nhẹ, ngoạm nhẹ.\n10. Stray cat – Mèo hoang.\n11. Wool – Len, lông cừu.\nMỗi ngày học thêm một chút, nghe thêm một chút và đọc thêm một chút. Mình tin rằng sự kiên trì sẽ giúp bản thân tiến bộ từng ngày.\n#Ngay77 #DailyDictation #HocTiengAnhMoiNgay #LuyenNgheTiengAnh #TuVungTiengAnh",
-      "clean_comments": [],
-      "clean_comments_count": 0,
-      "filtered_comments_count": 0,
-      "engagement_score": 8
-    },
-    {
       "post_sig": "89a57b624c814e582dddad79",
       "group_slug": "con_hoc_me_cung_hoc",
       "group_name": "CON HỌC MẸ CŨNG HỌC",
@@ -66101,34 +65152,6 @@ window.CDH_CLEAN_FORUM_DATA = {
       "harvested_at": "2026-11-13 13:43:55 +07:00",
       "permalink": "https://www.facebook.com/992250186637705",
       "text": "🌱 𝗡𝗴𝗮̀𝘆 𝟲𝟯 – 𝗧𝗶𝗲̂́𝗻𝗴 𝗔𝗻𝗵 𝗴𝗶𝗮 đ𝗶̀𝗻𝗵 đ𝗼̂̀𝗻𝗴 𝗵𝗮̀𝗻𝗵 𝗰𝘂̀𝗻𝗴 𝗰𝗼𝗻\n\nHôm nay mình học một câu tiếng Anh thường dùng khi cùng con dọn dẹp và sắp xếp đồ chơi:\n\n𝗪𝗵𝗲𝗿𝗲 𝗱𝗼𝗲𝘀 𝘁𝗵𝗶𝘀 𝗼𝗻𝗲 𝗴𝗼?\n/wer dʌz ðɪs wʌn ɡoʊ/\n→ Cái này để ở đâu nhỉ?\n\nKhi cùng con thu dọn đồ chơi, mẹ có thể cầm một món đồ lên và hỏi: “Where does this one go?” để khuyến khích con suy nghĩ, tìm đúng vị trí và tự tay cất đồ.\n\nVừa học tiếng Anh, vừa rèn cho con thói quen ngăn nắp và tự lập từ những việc nhỏ mỗi ngày. ❤️\n\n🌷 Hãy học cùng mình nhé!\n\n#Ngay63 #TiengAnhCungCon #DongHanhCungCon",
-      "clean_comments": [],
-      "clean_comments_count": 0,
-      "filtered_comments_count": 0,
-      "engagement_score": 8
-    },
-    {
-      "post_sig": "96c17058e2f813db70710008",
-      "group_slug": "con_hoc_me_cung_hoc",
-      "group_name": "CON HỌC MẸ CŨNG HỌC",
-      "group_url": "https://www.facebook.com/groups/351468770715853/?sorting_setting=CHRONOLOGICAL",
-      "topic_id": "NGOAI_NGU_HOMESCHOOL",
-      "topic_label": "Ngoại Ngữ, HSK & Homeschool",
-      "tags": [
-        {
-          "slug": "tieng-anh-tre-em",
-          "label": "#TiếngAnhTrẻEm"
-        },
-        {
-          "slug": "ren-tap-trung-ky-luat",
-          "label": "#RènTậpTrung"
-        }
-      ],
-      "author": "Kiều Ngọc Ánh",
-      "is_anonymous": false,
-      "posted_display": "Trong 24h qua",
-      "harvested_at": "2026-11-13 13:43:55 +07:00",
-      "permalink": "",
-      "text": "𝗡𝗴𝗮̀𝘆 𝟲𝟯 – 𝗧𝗶𝗲̂́𝗻𝗴 𝗔𝗻𝗵 𝗴𝗶𝗮 đ𝗶̀𝗻𝗵 đ𝗼̂̀𝗻𝗴 𝗵𝗮̀𝗻𝗵 𝗰𝘂̀𝗻𝗴 𝗰𝗼𝗻\nHôm nay mình học một câu tiếng Anh thường dùng khi cùng con dọn dẹp và sắp xếp đồ chơi:\n𝗪𝗵𝗲𝗿𝗲 𝗱𝗼𝗲𝘀 𝘁𝗵𝗶𝘀 𝗼𝗻𝗲 𝗴𝗼?\n/wer dʌz ðɪs wʌn ɡoʊ/\n→ Cái này để ở đâu nhỉ?\nKhi cùng con thu dọn đồ chơi, mẹ có thể cầm một món đồ lên và hỏi: “Where does this one go?” để khuyến khích con suy nghĩ, tìm đúng vị trí và tự tay cất đồ.\nVừa học tiếng Anh, vừa rèn cho con thói quen ngăn nắp và tự lập từ những việc nhỏ mỗi ngày.\nHãy học cùng mình nhé!\n#Ngay63 #TiengAnhCungCon #DongHanhCungCon",
       "clean_comments": [],
       "clean_comments_count": 0,
       "filtered_comments_count": 0,
@@ -66219,90 +65242,6 @@ window.CDH_CLEAN_FORUM_DATA = {
       "engagement_score": 8
     },
     {
-      "post_sig": "59505616a6f431077bd2a5f3",
-      "group_slug": "con_hoc_me_cung_hoc",
-      "group_name": "CON HỌC MẸ CŨNG HỌC",
-      "group_url": "https://www.facebook.com/groups/351468770715853/?sorting_setting=CHRONOLOGICAL",
-      "topic_id": "NGOAI_NGU_HOMESCHOOL",
-      "topic_label": "Ngoại Ngữ, HSK & Homeschool",
-      "tags": [
-        {
-          "slug": "tieng-anh-tre-em",
-          "label": "#TiếngAnhTrẻEm"
-        },
-        {
-          "slug": "bua-an-ban-tru-suc-khoe",
-          "label": "#BánTrú & DinhDưỡng"
-        }
-      ],
-      "author": "Kiều Ngọc Ánh",
-      "is_anonymous": false,
-      "posted_display": "otYVTD82EUaZWp0dqF0lQZUhXTtWwg0cmMmmF0RgiJ",
-      "harvested_at": "2026-11-13 13:43:55 +07:00",
-      "permalink": "",
-      "text": "𝗡𝗴𝗮̀𝘆 𝟲𝟰 – 𝗧𝗶𝗲̂́𝗻𝗴 𝗔𝗻𝗵 𝗴𝗶𝗮 đ𝗶̀𝗻𝗵 đ𝗼̂̀𝗻𝗴 𝗵𝗮̀𝗻𝗵 𝗰𝘂̀𝗻𝗴 𝗰𝗼𝗻\nHôm nay mình học một câu tiếng Anh thường dùng khi muốn nhờ con giúp mẹ một việc nhỏ:\n𝗖𝗮𝗻 𝘆𝗼𝘂 𝗵𝗲𝗹𝗽 𝗺𝗼𝗺𝗺𝘆?\n/kæn juː help ˈmɑːmi/\n→ Con có thể giúp mẹ được không?\nKhi mẹ đang dọn dẹp nhà cửa, sắp xếp đồ đạc hay chuẩn bị bữa ăn, mẹ có thể hỏi con câu này để khuyến khích con cùng tham gia những công việc vừa sức.\nĐôi khi, chỉ là nhờ con lấy giúp một món đồ hay cất đồ chơi đúng chỗ. Qua những việc nhỏ ấy, con học được cách chia sẻ, biết giúp đỡ mẹ và cảm nhận mình là một thành viên có trách nhiệm trong gia đình.\nHãy học cùng mình nhé!\n#Ngay64 #TiengAnhCungCon #DongHanhCungCon",
-      "clean_comments": [],
-      "clean_comments_count": 0,
-      "filtered_comments_count": 0,
-      "engagement_score": 8
-    },
-    {
-      "post_sig": "7851636e06c78e00037a5de2",
-      "group_slug": "con_hoc_me_cung_hoc",
-      "group_name": "CON HỌC MẸ CŨNG HỌC",
-      "group_url": "https://www.facebook.com/groups/351468770715853/?sorting_setting=CHRONOLOGICAL",
-      "topic_id": "NGOAI_NGU_HOMESCHOOL",
-      "topic_label": "Ngoại Ngữ, HSK & Homeschool",
-      "tags": [
-        {
-          "slug": "tieng-anh-tre-em",
-          "label": "#TiếngAnhTrẻEm"
-        },
-        {
-          "slug": "homeschool-tu-hoc",
-          "label": "#HomeschoolTựHọc"
-        }
-      ],
-      "author": "Kiều Ngọc Ánh",
-      "is_anonymous": false,
-      "posted_display": "#HocTiengAnhMoiNgay",
-      "harvested_at": "2026-11-13 13:43:55 +07:00",
-      "permalink": "",
-      "text": "𝗡𝗴𝗮̀𝘆 𝟳𝟴 – 𝗟𝘂𝘆𝗲̣̂𝗻 𝗻𝗴𝗵𝗲, 𝗰𝗵𝗲́𝗽 𝗰𝗵𝗶́𝗻𝗵 𝘁𝗮̉ 𝘃𝗮̀ đ𝗼̣𝗰 𝘁𝗶𝗲̂́𝗻𝗴 𝗔𝗻𝗵\nHôm nay, mình tiếp tục luyện nghe, chép chính tả (dictation) và đọc tiếng Anh với chủ đề My Body (Cơ thể của tôi).\nNhững từ và cụm từ học được:\n1. On the top of my head /ɒn ðə tɒp əv maɪ hed/ – Trên đỉnh đầu.\n2. Eyelashes /ˈaɪlæʃɪz/ – Lông mi.\n3. On the side of my head /ɒn ðə saɪd əv maɪ hed/ – Ở hai bên đầu.\n4. Attached /əˈtætʃt/ – Được gắn, nối liền.\n5. Hang down from /hæŋ daʊn frəm/ – Buông thõng xuống từ.\n6. Wrist /rɪst/ – Cổ tay.\n7. Fingernails /ˈfɪŋɡəneɪlz/ – Móng tay.\n8. Waist /weɪst/ – Eo, vòng eo.\n9. Further down /ˈfɜːðə daʊn/ – Xuống thấp hơn nữa.\n10. Hip /hɪp/ – Hông.\n11. Thigh /θaɪ/ – Đùi.\n12. Calves /kɑːvz/ – Hai bắp chân.\n13. Bend /bend/ – Gập, uốn cong.\n14. Ankle /ˈæŋkəl/ – Mắt cá chân.\nMỗi ngày một chủ đề, thêm một chút từ vựng mới. Cứ kiên trì nghe, chép và đọc, mình tin vốn tiếng Anh của bản thân sẽ ngày càng được cải thiện.\n#Ngay78 #DailyDictation #HocTiengAnhMoiNgay #LuyenNgheTiengAnh #TuVungTiengAnh",
-      "clean_comments": [],
-      "clean_comments_count": 0,
-      "filtered_comments_count": 0,
-      "engagement_score": 8
-    },
-    {
-      "post_sig": "f4e050642666c8b846196256",
-      "group_slug": "con_hoc_me_cung_hoc",
-      "group_name": "CON HỌC MẸ CŨNG HỌC",
-      "group_url": "https://www.facebook.com/groups/351468770715853/?sorting_setting=CHRONOLOGICAL",
-      "topic_id": "CHUYEN_TRUONG_LOP_20_11",
-      "topic_label": "Chuyện Trường Lớp & 20/11",
-      "tags": [
-        {
-          "slug": "chuyen-20-11-quy-lop",
-          "label": "#QuỹLớp & 20/11"
-        },
-        {
-          "slug": "goc-hoi-dap-thuc-chien",
-          "label": "#HỏiĐápKinhNghiệm"
-        }
-      ],
-      "author": "Đinh Thị Thanh Bình",
-      "is_anonymous": false,
-      "posted_display": "Trong 24h qua (Relay)",
-      "harvested_at": "2026-11-13 13:43:55 +07:00",
-      "permalink": "https://www.facebook.com/994175559778501",
-      "text": "🔥🔥🔥Quà 20/11:\nTắc gừng mật ong, saffron mật ong, khăn lụa, trà cúc, hồng nhài, táo đỏ, Yến ....\nNhà e sẵn 100 mẫu từ Vài chục xx - 1xx. 2xx- 1xxx .\nTuỳ kinh tế . Các mom nhắn e tv nha. Quà thiết thực, nhỏ gọn nhưng ý nghĩa và k lãng phí ạ",
-      "clean_comments": [],
-      "clean_comments_count": 0,
-      "filtered_comments_count": 0,
-      "engagement_score": 8
-    },
-    {
       "post_sig": "3c4248c5ccd7d82738c791ce",
       "group_slug": "con_hoc_me_cung_hoc",
       "group_name": "CON HỌC MẸ CŨNG HỌC",
@@ -66325,34 +65264,6 @@ window.CDH_CLEAN_FORUM_DATA = {
       "harvested_at": "2026-11-13 13:43:55 +07:00",
       "permalink": "",
       "text": "𝗡𝗴𝗮̀𝘆 𝟲𝟱 – 𝗧𝗶𝗲̂́𝗻𝗴 𝗔𝗻𝗵 𝗴𝗶𝗮 đ𝗶̀𝗻𝗵 đ𝗼̂̀𝗻𝗴 𝗵𝗮̀𝗻𝗵 𝗰𝘂̀𝗻𝗴 𝗰𝗼𝗻\nHôm nay mình học một câu tiếng Anh thường dùng khi hướng dẫn con cất đồ chơi:\n𝗣𝘂𝘁 𝗶𝘁 𝗶𝗻 𝘁𝗵𝗲 𝗯𝗼𝘅.\n/pʊt ɪt ɪn ðə bɑːks/\n→ Đặt nó vào trong hộp nhé!\nKhi cùng con thu dọn đồ chơi, mẹ có thể cầm một món đồ và hướng dẫn con bỏ vào hộp bằng câu nói này.\nNhững câu tiếng Anh ngắn gọn, gắn với hành động cụ thể sẽ giúp con dễ hiểu, dễ nhớ và từng bước hình thành thói quen tự giác dọn dẹp sau khi chơi.\nVừa học tiếng Anh, vừa rèn cho con tính ngăn nắp từ những việc nhỏ mỗi ngày.\nHãy học cùng mình nhé!\n#Ngay65 #TiengAnhCungCon #DongHanhCungCon",
-      "clean_comments": [],
-      "clean_comments_count": 0,
-      "filtered_comments_count": 0,
-      "engagement_score": 8
-    },
-    {
-      "post_sig": "5cc87a314b00703836262541",
-      "group_slug": "con_hoc_me_cung_hoc",
-      "group_name": "CON HỌC MẸ CŨNG HỌC",
-      "group_url": "https://www.facebook.com/groups/351468770715853/?sorting_setting=CHRONOLOGICAL",
-      "topic_id": "NGOAI_NGU_HOMESCHOOL",
-      "topic_label": "Ngoại Ngữ, HSK & Homeschool",
-      "tags": [
-        {
-          "slug": "ren-tap-trung-ky-luat",
-          "label": "#RènTậpTrung"
-        },
-        {
-          "slug": "tieng-anh-tre-em",
-          "label": "#TiếngAnhTrẻEm"
-        }
-      ],
-      "author": "Thành viên nhóm",
-      "is_anonymous": false,
-      "posted_display": "Trong 24h qua (Relay)",
-      "harvested_at": "2026-11-13 13:43:55 +07:00",
-      "permalink": "https://www.facebook.com/UzpfSTEwMDAwNDA2NzA1NTM2NTo0NTU2MDc3MDUxMjA0NDg1OjQ1NTYwNzcwNTEyMDQ0ODU=",
-      "text": "🌱 𝗡𝗴𝗮̀𝘆 𝟲𝟱 – 𝗧𝗶𝗲̂́𝗻𝗴 𝗔𝗻𝗵 𝗴𝗶𝗮 đ𝗶̀𝗻𝗵 đ𝗼̂̀𝗻𝗴 𝗵𝗮̀𝗻𝗵 𝗰𝘂̀𝗻𝗴 𝗰𝗼𝗻\n\nHôm nay mình học một câu tiếng Anh thường dùng khi hướng dẫn con cất đồ chơi:\n\n𝗣𝘂𝘁 𝗶𝘁 𝗶𝗻 𝘁𝗵𝗲 𝗯𝗼𝘅.\n/pʊt ɪt ɪn ðə bɑːks/\n→ Đặt nó vào trong hộp nhé!\n\nKhi cùng con thu dọn đồ chơi, mẹ có thể cầm một món đồ và hướng dẫn con bỏ vào hộp bằng câu nói này.\n\nNhững câu tiếng Anh ngắn gọn, gắn với hành động cụ thể sẽ giúp con dễ hiểu, dễ nhớ và từng bước hình thành thói quen tự giác dọn dẹp sau khi chơi.\n\nVừa học tiếng Anh, vừa rèn cho con tính ngăn nắp từ những việc nhỏ mỗi ngày. ❤️\n\n🌷 Hãy học cùng mình nhé!\n\n#Ngay65 #TiengAnhCungCon #DongHanhCungCon",
       "clean_comments": [],
       "clean_comments_count": 0,
       "filtered_comments_count": 0,
@@ -66391,38 +65302,6 @@ window.CDH_CLEAN_FORUM_DATA = {
       "engagement_score": 8
     },
     {
-      "post_sig": "5d1bc51fdfb7a996b9f773ee",
-      "group_slug": "con_hoc_me_cung_hoc",
-      "group_name": "CON HỌC MẸ CŨNG HỌC",
-      "group_url": "https://www.facebook.com/groups/351468770715853/?sorting_setting=CHRONOLOGICAL",
-      "topic_id": "NGOAI_NGU_HOMESCHOOL",
-      "topic_label": "Ngoại Ngữ, HSK & Homeschool",
-      "tags": [
-        {
-          "slug": "tieng-anh-tre-em",
-          "label": "#TiếngAnhTrẻEm"
-        },
-        {
-          "slug": "ren-tap-trung-ky-luat",
-          "label": "#RènTậpTrung"
-        },
-        {
-          "slug": "sach-hay-hoc-lieu",
-          "label": "#SáchHay & HọcLiệu"
-        }
-      ],
-      "author": "Kiều Ngọc Ánh",
-      "is_anonymous": false,
-      "posted_display": "2026-11-13 13:43",
-      "harvested_at": "2026-11-13 13:43:55 +07:00",
-      "permalink": "",
-      "text": "𝗡𝗴𝗮̀𝘆 𝟲𝟲 – 𝗧𝗶𝗲̂́𝗻𝗴 𝗔𝗻𝗵 𝗴𝗶𝗮 đ𝗶̀𝗻𝗵 đ𝗼̂̀𝗻𝗴 𝗵𝗮̀𝗻𝗵 𝗰𝘂̀𝗻𝗴 𝗰𝗼𝗻\nHôm nay mình học một câu tiếng Anh thường dùng khi hướng dẫn con sắp xếp sách vở:\n𝗣𝘂𝘁 𝘁𝗵𝗲 𝗯𝗼𝗼𝗸 𝗼𝗻 𝘁𝗵𝗲 𝘀𝗵𝗲𝗹𝗳.\n/pʊt ðə bʊk ɒn ðə ʃelf/\n→ Đặt quyển sách lên giá sách nhé!\nKhi cùng con dọn dẹp góc học tập, mẹ có thể hướng dẫn con đặt sách lên giá sau khi đọc xong bằng câu nói này.\nNhững câu tiếng Anh ngắn gọn, gắn với hành động cụ thể sẽ giúp con dễ hiểu, dễ nhớ và từng bước hình thành thói quen tự sắp xếp đồ dùng của mình.\nVừa học tiếng Anh, vừa rèn cho con tính ngăn nắp từ những việc nhỏ mỗi ngày.\nHãy học cùng mình nhé!\n#Ngay66 #TiengAnhCungCon #DongHanhCungCon",
-      "clean_comments": [],
-      "clean_comments_count": 0,
-      "filtered_comments_count": 0,
-      "engagement_score": 8
-    },
-    {
       "post_sig": "2f47768ba2d7b331ce8deff5",
       "group_slug": "con_hoc_me_cung_hoc",
       "group_name": "CON HỌC MẸ CŨNG HỌC",
@@ -66445,34 +65324,6 @@ window.CDH_CLEAN_FORUM_DATA = {
       "harvested_at": "2026-11-13 13:43:55 +07:00",
       "permalink": "https://www.facebook.com/UzpfSTEwMDAwNDA2NzA1NTM2NTo0NTU4NDMxMTg0MzAyNDA1OjQ1NTg0MzExODQzMDI0MDU=",
       "text": "🌱 𝗡𝗴𝗮̀𝘆 𝟲𝟳 – 𝗧𝗶𝗲̂́𝗻𝗴 𝗔𝗻𝗵 𝗴𝗶𝗮 đ𝗶̀𝗻𝗵 đ𝗼̂̀𝗻𝗴 𝗵𝗮̀𝗻𝗵 𝗰𝘂̀𝗻𝗴 𝗰𝗼𝗻\nHôm nay mình học một câu tiếng Anh thường dùng khi hướng dẫn con làm việc gì đó gần xong:\n𝗔𝗹𝗺𝗼𝘀𝘁 𝗱𝗼𝗻𝗲!\n/ˈɔːlmoʊst dʌn/\n→ Sắp xong rồi! / Gần xong rồi!\nKhi con đang hoàn thành một việc gì đó, mẹ có thể dùng câu này để động viên con cố gắng thêm một chút nữa.\nNhững câu nói ngắn gọn, gần gũi giúp mẹ và con vừa học tiếng Anh, vừa tăng sự kết nối trong những hoạt động hằng ngày. ❤️\n🌷 Hãy học cùng mình nhé!\n#Ngay67 #TiengAnhCungCon #DongHanhCungCon",
-      "clean_comments": [],
-      "clean_comments_count": 0,
-      "filtered_comments_count": 0,
-      "engagement_score": 8
-    },
-    {
-      "post_sig": "2016b678a69ab2ec95cd7899",
-      "group_slug": "con_hoc_me_cung_hoc",
-      "group_name": "CON HỌC MẸ CŨNG HỌC",
-      "group_url": "https://www.facebook.com/groups/351468770715853/?sorting_setting=CHRONOLOGICAL",
-      "topic_id": "NGOAI_NGU_HOMESCHOOL",
-      "topic_label": "Ngoại Ngữ, HSK & Homeschool",
-      "tags": [
-        {
-          "slug": "tieng-anh-tre-em",
-          "label": "#TiếngAnhTrẻEm"
-        },
-        {
-          "slug": "homeschool-tu-hoc",
-          "label": "#HomeschoolTựHọc"
-        }
-      ],
-      "author": "Kiều Ngọc Ánh",
-      "is_anonymous": false,
-      "posted_display": "2026-11-13 13:43",
-      "harvested_at": "2026-11-13 13:43:55 +07:00",
-      "permalink": "",
-      "text": "𝗡𝗴𝗮̀𝘆 𝟲𝟳 – 𝗧𝗶𝗲̂́𝗻𝗴 𝗔𝗻𝗵 𝗴𝗶𝗮 đ𝗶̀𝗻𝗵 đ𝗼̂̀𝗻𝗴 𝗵𝗮̀𝗻𝗵 𝗰𝘂̀𝗻𝗴 𝗰𝗼𝗻\nHôm nay mình học một câu tiếng Anh thường dùng khi hướng dẫn con làm việc gì đó gần xong:\n𝗔𝗹𝗺𝗼𝘀𝘁 𝗱𝗼𝗻𝗲!\n/ˈɔːlmoʊst dʌn/\n→ Sắp xong rồi! / Gần xong rồi!\nKhi con đang hoàn thành một việc gì đó, mẹ có thể dùng câu này để động viên con cố gắng thêm một chút nữa.\nNhững câu nói ngắn gọn, gần gũi giúp mẹ và con vừa học tiếng Anh, vừa tăng sự kết nối trong những hoạt động hằng ngày.\nHãy học cùng mình nhé!\n#Ngay67 #TiengAnhCungCon #DongHanhCungCon",
       "clean_comments": [],
       "clean_comments_count": 0,
       "filtered_comments_count": 0,
@@ -66507,34 +65358,6 @@ window.CDH_CLEAN_FORUM_DATA = {
       "engagement_score": 8
     },
     {
-      "post_sig": "675bc23d43410fb3b360e319",
-      "group_slug": "con_hoc_me_cung_hoc",
-      "group_name": "CON HỌC MẸ CŨNG HỌC",
-      "group_url": "https://www.facebook.com/groups/351468770715853/?sorting_setting=CHRONOLOGICAL",
-      "topic_id": "NGOAI_NGU_HOMESCHOOL",
-      "topic_label": "Ngoại Ngữ, HSK & Homeschool",
-      "tags": [
-        {
-          "slug": "tieng-anh-tre-em",
-          "label": "#TiếngAnhTrẻEm"
-        },
-        {
-          "slug": "homeschool-tu-hoc",
-          "label": "#HomeschoolTựHọc"
-        }
-      ],
-      "author": "Kiều Ngọc Ánh",
-      "is_anonymous": false,
-      "posted_display": "Trong 24h qua",
-      "harvested_at": "2026-11-13 13:43:55 +07:00",
-      "permalink": "",
-      "text": "𝗡𝗴𝗮̀𝘆 𝟲𝟴 – 𝗧𝗶𝗲̂́𝗻𝗴 𝗔𝗻𝗵 𝗴𝗶𝗮 đ𝗶̀𝗻𝗵 đ𝗼̂̀𝗻𝗴 𝗵𝗮̀𝗻𝗵 𝗰𝘂̀𝗻𝗴 𝗰𝗼𝗻\nHôm nay mình học một câu tiếng Anh dùng để khen căn phòng trông thật đẹp và gọn gàng:\n𝗧𝗵𝗲 𝗿𝗼𝗼𝗺 𝗹𝗼𝗼𝗸𝘀 𝘀𝗼 𝗻𝗶𝗰𝗲!\n/ðə ruːm lʊks soʊ naɪs/\n→ Căn phòng trông thật đẹp!\nMẹ có thể sử dụng câu này khi cùng con dọn dẹp, trang trí hoặc sắp xếp lại phòng.\nVừa học tiếng Anh, vừa giúp con biết quan sát và yêu thích việc giữ gìn không gian sống sạch đẹp.\nHãy học cùng mình nhé!\n#Ngay68 #TiengAnhCungCon #DongHanhCungCon",
-      "clean_comments": [],
-      "clean_comments_count": 0,
-      "filtered_comments_count": 0,
-      "engagement_score": 8
-    },
-    {
       "post_sig": "b5ab8ba23ede95edd96adb42",
       "group_slug": "con_hoc_me_cung_hoc",
       "group_name": "CON HỌC MẸ CŨNG HỌC",
@@ -66557,34 +65380,6 @@ window.CDH_CLEAN_FORUM_DATA = {
       "harvested_at": "2026-11-13 13:43:55 +07:00",
       "permalink": "https://www.facebook.com/997636412765749",
       "text": "🌱 𝗡𝗴𝗮̀𝘆 𝟲𝟵 – 𝗧𝗶𝗲̂́𝗻𝗴 𝗔𝗻𝗵 𝗴𝗶𝗮 đ𝗶̀𝗻𝗵 đ𝗼̂̀𝗻𝗴 𝗵𝗮̀𝗻𝗵 𝗰𝘂̀𝗻𝗴 𝗰𝗼𝗻\nHôm nay mình học một câu tiếng Anh dùng để khen ngợi khi con giúp mẹ làm việc nhà:\n𝗬𝗼𝘂'𝗿𝗲 𝘀𝘂𝗰𝗵 𝗮 𝗴𝗼𝗼𝗱 𝗵𝗲𝗹𝗽𝗲𝗿!\n/jʊr sʌtʃ ə ɡʊd ˈhelpər/\n→ Con đúng là một trợ thủ giỏi\nMẹ có thể nói câu này khi con phụ mẹ dọn dẹp, cất đồ chơi hoặc làm những công việc nhỏ trong gia đình.\nMột lời khen chân thành sẽ giúp con cảm thấy vui vẻ, tự tin và hào hứng hơn khi giúp đỡ mọi người. ❤️\n🌷 Hãy học cùng mình nhé!\n#Ngay69 #TiengAnhCungCon #DongHanhCungCon",
-      "clean_comments": [],
-      "clean_comments_count": 0,
-      "filtered_comments_count": 0,
-      "engagement_score": 8
-    },
-    {
-      "post_sig": "e05e2b5b859b80cab48f674e",
-      "group_slug": "con_hoc_me_cung_hoc",
-      "group_name": "CON HỌC MẸ CŨNG HỌC",
-      "group_url": "https://www.facebook.com/groups/351468770715853/?sorting_setting=CHRONOLOGICAL",
-      "topic_id": "NGOAI_NGU_HOMESCHOOL",
-      "topic_label": "Ngoại Ngữ, HSK & Homeschool",
-      "tags": [
-        {
-          "slug": "tieng-anh-tre-em",
-          "label": "#TiếngAnhTrẻEm"
-        },
-        {
-          "slug": "tam-ly-cam-xuc",
-          "label": "#TâmLý & CảmXúc"
-        }
-      ],
-      "author": "Kiều Ngọc Ánh",
-      "is_anonymous": false,
-      "posted_display": "7WoxDJzTlK6elKUGlQHHJGWxvNcNoNm7IqJ7lWZaj9",
-      "harvested_at": "2026-11-13 13:43:55 +07:00",
-      "permalink": "",
-      "text": "𝗡𝗴𝗮̀𝘆 𝟲𝟵 – 𝗧𝗶𝗲̂́𝗻𝗴 𝗔𝗻𝗵 𝗴𝗶𝗮 đ𝗶̀𝗻𝗵 đ𝗼̂̀𝗻𝗴 𝗵𝗮̀𝗻𝗵 𝗰𝘂̀𝗻𝗴 𝗰𝗼𝗻\nHôm nay mình học một câu tiếng Anh dùng để khen ngợi khi con giúp mẹ làm việc nhà:\n𝗬𝗼𝘂'𝗿𝗲 𝘀𝘂𝗰𝗵 𝗮 𝗴𝗼𝗼𝗱 𝗵𝗲𝗹𝗽𝗲𝗿!\n/jʊr sʌtʃ ə ɡʊd ˈhelpər/\n→ Con đúng là một trợ thủ giỏi\nMẹ có thể nói câu này khi con phụ mẹ dọn dẹp, cất đồ chơi hoặc làm những công việc nhỏ trong gia đình.\nMột lời khen chân thành sẽ giúp con cảm thấy vui vẻ, tự tin và hào hứng hơn khi giúp đỡ mọi người.\nHãy học cùng mình nhé!\n#Ngay69 #TiengAnhCungCon #DongHanhCungCon",
       "clean_comments": [],
       "clean_comments_count": 0,
       "filtered_comments_count": 0,
@@ -66649,42 +65444,6 @@ window.CDH_CLEAN_FORUM_DATA = {
       "harvested_at": "2026-11-13 13:45:23 +07:00",
       "permalink": "https://www.facebook.com/UzpfSTYxNTc4Nzc1MjY0NzU5OlZLOjE3NjQ4MzA1NjQ2MDQyMDY=",
       "text": "🔥BỨT PHÁ ĐIỂM SỐ CHẶNG NƯỚC RÚT HỌC KÌ 1 CÙNG TRÍ DƯƠNG! 🔥\nBạn đang tìm kiếm một môi trường học tập chất lượng, sĩ số lớp học ít để các em được quan tâm sát sao? Hãy đến ngay với Trung tâm Trí Dương\n👉 Cơ sở vật chất hiện đại, phòng học rộng rãi, thoáng mát.\n👉 Đội ngũ giáo viên tận tâm, giàu kinh nghiệm, phương pháp giảng dạy dễ hiểu.\n👉 Lộ trình học tập cá nhân hóa, bám sát chương trình chuẩn của Bộ GD&ĐT.\n🏠 Ghé thăm chúng mình tại: Trí Dương Education – LK01-02 Green Pearl, 378 Minh Khai, phường Vĩnh Tuy, Hà Nội\n☎️ Hotline: 091 883 35 95\n#TriDuongEducation #TrungTamTriDuong #OnThiHocKi1 #ButPhaDiemSo #LopHocChatLuongCao #HocThemHaiBaTrung #GreenPearl378MinhKhai",
-      "clean_comments": [],
-      "clean_comments_count": 0,
-      "filtered_comments_count": 0,
-      "engagement_score": 8
-    },
-    {
-      "post_sig": "d598659941b59965992bee53",
-      "group_slug": "hoi_phu_huynh_ha_noi_co_con_hoc_cap_2_thi_vao_lo",
-      "group_name": "HỘI PHỤ HUYNH HÀ NỘI - CÓ CON HỌC CẤP 2 , THI VÀO LỚP 10",
-      "group_url": "https://www.facebook.com/groups/thaysoankpi/?sorting_setting=CHRONOLOGICAL",
-      "topic_id": "TIEN_TIEU_HOC_LOP_1",
-      "topic_label": "Tiền Tiểu Học & Vào Lớp 1",
-      "tags": [
-        {
-          "slug": "tien-tieu-hoc-2020-2021",
-          "label": "#HànhTrangLớp1"
-        },
-        {
-          "slug": "review-truong-cong",
-          "label": "#TrườngCôngLập"
-        },
-        {
-          "slug": "on-thi-kiem-tra",
-          "label": "#ÔnThiCuốiKỳ"
-        },
-        {
-          "slug": "giao-vien-goc-nhin",
-          "label": "#GócNhìnGiáoViên"
-        }
-      ],
-      "author": "Trung tâm bồi dưỡng kiến thức Trí Dương",
-      "is_anonymous": false,
-      "posted_display": "Minh Anh",
-      "harvested_at": "2026-11-13 13:45:23 +07:00",
-      "permalink": "",
-      "text": "BỨT PHÁ ĐIỂM SỐ CHẶNG NƯỚC RÚT HỌC KÌ 1 CÙNG TRÍ DƯƠNG!\nBạn đang tìm kiếm một môi trường học tập chất lượng, sĩ số lớp học ít để các em được quan tâm sát sao? Hãy đến ngay với Trung tâm Trí Dương\nCơ sở vật chất hiện đại, phòng học rộng rãi, thoáng mát.\nĐội ngũ giáo viên tận tâm, giàu kinh nghiệm, phương pháp giảng dạy dễ hiểu.\nLộ trình học tập cá nhân hóa, bám sát chương trình chuẩn của Bộ GD&ĐT.\nGhé thăm chúng mình tại: Trí Dương Education – LK01-02 Green Pearl, 378 Minh Khai, phường Vĩnh Tuy, Hà Nội\nHotline: 091 883 35 95\n#TriDuongEducation #TrungTamTriDuong #OnThiHocKi1 #ButPhaDiemSo #LopHocChatLuongCao #HocThemHaiBaTrung #GreenPearl378MinhKhai",
       "clean_comments": [],
       "clean_comments_count": 0,
       "filtered_comments_count": 0,
@@ -66939,34 +65698,6 @@ window.CDH_CLEAN_FORUM_DATA = {
       "engagement_score": 8
     },
     {
-      "post_sig": "44f33aa1a4df0070ba638dc7",
-      "group_slug": "hoi_phu_huynh_hoc_sinh",
-      "group_name": "Hội Phụ Huynh Học Sinh",
-      "group_url": "https://www.facebook.com/groups/1166343157525645/?sorting_setting=CHRONOLOGICAL",
-      "topic_id": "NGOAI_NGU_HOMESCHOOL",
-      "topic_label": "Ngoại Ngữ, HSK & Homeschool",
-      "tags": [
-        {
-          "slug": "tieng-anh-tre-em",
-          "label": "#TiếngAnhTrẻEm"
-        },
-        {
-          "slug": "tam-ly-cam-xuc",
-          "label": "#TâmLý & CảmXúc"
-        }
-      ],
-      "author": "Anh Tú HR",
-      "is_anonymous": false,
-      "posted_display": "Trong 24h qua (Relay)",
-      "harvested_at": "2026-11-13 13:47:14 +07:00",
-      "permalink": "https://www.facebook.com/2388134568679825",
-      "text": "🚌 TOUR HỌC TIẾNG ANH TRẢI NGHIỆM – KHÁM PHÁ SÀI GÒN CÙNG 123ENGLISH! 🇬🇧\n\n🌟 Vừa học tiếng Anh, vừa khám phá những địa danh nổi tiếng ngay giữa lòng TP.HCM!\n\n✨ Hoạt động nổi bật:\n\n* 🚌 Trải nghiệm xe buýt 2 tầng Hop On Hop Off, ngắm nhìn trung tâm Quận 1.\n\n* 🗣️ Thực hành giao tiếp tiếng Anh, trò chuyện cùng du khách nước ngoài.\n\n* 📍 Tham quan Tượng đài Chủ tịch Hồ Chí Minh.\n\n* 🏛️ Tìm hiểu kiến trúc và lịch sử Trụ sở UBND TP.HCM – công trình hơn 100 năm tuổi.\n\n* 🚶 Khám phá Phố đi bộ Nguyễn Huệ, tham gia các trò chơi và thử thách giao tiếp bằng tiếng Anh.\n\n* 📸 Chụp ảnh lưu niệm, rèn luyện sự tự tin và kỹ năng giao tiếp thực tế.\n\n🎯 123English – Đưa tiếng Anh ra khỏi lớp học, biến cả thành phố thành môi trường học tập!",
-      "clean_comments": [],
-      "clean_comments_count": 0,
-      "filtered_comments_count": 0,
-      "engagement_score": 8
-    },
-    {
       "post_sig": "affd843e3bb6d05a7e0f54ed",
       "group_slug": "hoi_phu_huynh_hoc_sinh",
       "group_name": "Hội Phụ Huynh Học Sinh",
@@ -67101,34 +65832,6 @@ window.CDH_CLEAN_FORUM_DATA = {
       "harvested_at": "2026-11-13 13:47:55 +07:00",
       "permalink": "https://www.facebook.com/UzpfSTEwMDAyMDM0MzkwMzc4MTpWSzozOTcxNDQ0MDM5NzcxODYx",
       "text": "Lưu lại cho bé nhà mình\nBộ 1001 toán tư duy từ lớp 1-5\n@mọi người\n🔅1001 Bài Toán tư duy Lớp 1:\nhttps://drive.google.com/file/d/1dwDQuU1cYqT4bjVg7zgDipZKMoUS0SHu/view?usp=drivesdk\n🔅1001 Bài Toán tư duy Lớp 2:\nhttps://drive.google.com/file/d/1Gn3DEvBZ7vSCP8fC2msSBkHmw5GqsCX5/view?usp=drivesdk\n🔅1001 Bài Toán tư duy Lớp 3:\nhttps://drive.google.com/file/d/16KkNyy6KSMXH_vEN_x-wih4RHEEcUteW/view?usp=drivesdk\n🔅1001 Bài Toán tư duy Lớp 4:\nhttps://drive.google.com/file/d/1WDYqVzK0-HfkogvnXba4lZHi4RccZCSR/view?usp=drivesdk\n🔅1001 Bài Toán tư duy Lớp 5:\nhttps://drive.google.com/file/d/1EKAu2yqhCZllg_9Lu_EuVyaA4Zhq4MNP/view?usp=drivesdk",
-      "clean_comments": [],
-      "clean_comments_count": 0,
-      "filtered_comments_count": 0,
-      "engagement_score": 8
-    },
-    {
-      "post_sig": "fe8e7952b10e742472ed8c11",
-      "group_slug": "hoi_phu_huynh_hoc_sinh_tieu_hoc_binh_duong",
-      "group_name": "Hội Phụ Huynh Học Sinh Tiểu Học - BÌNH DƯƠNG",
-      "group_url": "https://www.facebook.com/groups/2834190980163845/?sorting_setting=CHRONOLOGICAL",
-      "topic_id": "CHUYEN_TRUONG_LOP_20_11",
-      "topic_label": "Chuyện Trường Lớp & 20/11",
-      "tags": [
-        {
-          "slug": "chuyen-20-11-quy-lop",
-          "label": "#QuỹLớp & 20/11"
-        },
-        {
-          "slug": "giao-vien-goc-nhin",
-          "label": "#GócNhìnGiáoViên"
-        }
-      ],
-      "author": "Trường Tiểu học Phú Lợi 2 - phường Phú Lợi - Tp. HCM",
-      "is_anonymous": false,
-      "posted_display": "Trong 24h qua",
-      "harvested_at": "2026-11-13 13:47:55 +07:00",
-      "permalink": "https://www.facebook.com/photo/?fbid=1175856931670756&set=a.179591787963947",
-      "text": "TRƯỜNG TIỂU HỌC PHÚ LỢI 2\nCUỘC THI ẢNH ĐẸP VỚI CHỦ ĐỀ\n“HOA NẮNG SÂN TRƯỜNG”\nCHÀO MỪNG KỶ NIỆM 44 NĂM\nNGÀY NHÀ GIÁO VIỆT NAM\n(20/11/1982 – 20/11/2026)\n\nGIÁO VIÊN: GIANG THỊ LIÊN VÀ TẬP THỂ LỚP 2/2\nBức ảnh ghi lại khoảnh khắc thật đẹp giữa cô giáo và các em học sinh trong một hoạt động học tập đầy niềm vui và yêu thương. Hình ảnh cô tận tình hướng dẫn, các em chăm chú lắng nghe, hào hứng tham gia đã thể hiện tình cảm gắn bó, gần gũi giữa cô và trò. Nhân ngày Nhà giáo Việt Nam 20/11, đây cũng là dịp để chúng ta bày tỏ lòng biết ơn sâu sắc đến những người thầy, người cô đã luôn tận tụy, yêu thương và dìu dắt học trò trên hành trình trưởng thành. Kính chúc quý thầy cô luôn mạnh khỏe, hạnh phúc và mãi giữ ngọn lửa yêu nghề, tiếp tục gieo những hạt mầm tri thức cho các thế hệ học sinh thân yêu.\nHÃY CÙNG THAM GIA BÌNH CHỌN ONLINE – TÌM RA BỨC ẢNH ĐƯỢC YÊU THÍCH NHẤT!\nTHỂ LỆ BÌNH CHỌN\n* Bình chọn trực tiếp tại bài đăng chính thức trên Fanpage Facebook: “Trường Tiểu học Phú Lợi 2 – phường Phú Lợi – TP. HCM” do Ban Tổ chức đăng tải.\nCÁCH TÍNH ĐIỂM\n*\n01 lượt Like/Reaction (các cảm xúc\n,\n,\n…) = 01 điểm.\n*\n01 lượt chia sẻ bài viết ở chế độ công khai = 02 điểm.\nTHỜI GIAN BÌNH CHỌN\nĐến 08 giờ 00 phút, ngày 12/11/2026.\nMỗi lượt yêu thích, mỗi lượt chia sẻ của quý thầy cô, quý phụ huynh và các em học sinh chính là sự cổ vũ, động viên quý báu dành cho các tác phẩm dự thi.\nHãy cùng lan tỏa những khoảnh khắc đẹp, những tình cảm yêu thương và niềm tự hào về mái trường thân yêu!\n“HOA NẮNG SÂN TRƯỜNG – LƯU GIỮ KHOẢNH KHẮC ĐẸP, LAN TỎA YÊU THƯƠNG!”\n#TruongTieuHocPhuLoi2\n#HoaNangSanTruong\n#ChaoMungNgayNhaGiaoVietNam2011\n#44NamNgayNhaGiaoVietNam",
       "clean_comments": [],
       "clean_comments_count": 0,
       "filtered_comments_count": 0,
@@ -67771,70 +66474,6 @@ window.CDH_CLEAN_FORUM_DATA = {
       "engagement_score": 8
     },
     {
-      "post_sig": "6e6ceddf7c7d6680d5cead65",
-      "group_slug": "cung_con_hoc_tieu_hoc",
-      "group_name": "CÙNG CON HỌC TIỂU HỌC",
-      "group_url": "https://www.facebook.com/groups/794046182208692/?sorting_setting=CHRONOLOGICAL",
-      "topic_id": "NGOAI_NGU_HOMESCHOOL",
-      "topic_label": "Ngoại Ngữ, HSK & Homeschool",
-      "tags": [
-        {
-          "slug": "chuyen-cap-lop-6",
-          "label": "#ChuyểnCấpLớp6"
-        },
-        {
-          "slug": "on-thi-kiem-tra",
-          "label": "#ÔnThiCuốiKỳ"
-        },
-        {
-          "slug": "tam-ly-cam-xuc",
-          "label": "#TâmLý & CảmXúc"
-        }
-      ],
-      "author": "Tổ Hợp Công Nghệ Giáo Dục Edukids",
-      "is_anonymous": false,
-      "posted_display": "Trong 24h qua",
-      "harvested_at": "2026-11-13 13:57:25 +07:00",
-      "permalink": "https://www.facebook.com/groups/794046182208692/permalink/1657874615825840",
-      "text": "BÌNH CHỌN VIDEO – ĐẤU TRƯỜNG ROBOTICS THIÊN LỘC NĂM 2026\nVIDEO MÃ SỐ: RBT-THIENLOC-04\nĐƠN VỊ DỰ THI: TRƯỜNG MẦM NON THĂNG LONG\nĐằng sau mỗi sản phẩm Robotics là những ý tưởng sáng tạo, những giờ học say mê, những lần thử nghiệm và cả sự kiên trì không ngừng của các em học sinh.\nĐến với Đấu trường Robotics Thiên Lộc năm 2026, Trường mầm non Thăng Long mang đến một video dự thi đầy nhiệt huyết, thể hiện tinh thần sáng tạo, niềm đam mê công nghệ và khát vọng chinh phục những thử thách mới.\nMỗi lượt tương tác của thầy cô, phụ huynh, bạn bè và cộng đồng chính là một lời động viên ý nghĩa, tiếp thêm động lực để các em tự tin khám phá, sáng tạo và tỏa sáng trên hành trình chinh phục công nghệ tương lai!\nHÃY CÙNG BÌNH CHỌN VÀ LAN TỎA VIDEO RBT-THIENLOC-04!\nCÁCH THỨC BÌNH CHỌN HỢP LỆ\nĐể lượt bình chọn được ghi nhận, vui lòng thực hiện đầy đủ các bước theo đúng thứ tự:\nBƯỚC 1. FOLLOW FANPAGE EDUKIDS (BẮT BUỘC)\nTruy cập và nhấn THEO DÕI Fanpage chính thức:\nTổ hợp Công nghệ Giáo dục EDUKIDS\nhttps://www.facebook.com/ToHopCongNgheGiaoDucEDUKIDS\nBƯỚC 2. TƯƠNG TÁC VỚI VIDEO\nLIKE – Thể hiện sự yêu thích.\nSHARE – Chia sẻ công khai để lan tỏa.\nCOMMENT – Gửi lời động viên, cổ vũ tới các em học sinh.\nLƯU Ý QUAN TRỌNG:\n- Bắt buộc Follow Fanpage EDUKIDS trước khi thực hiện các thao tác tương tác.\n- Like, Share ở chế độ công khai và Comment trên video dự thi.\n- Nghiêm cấm mua Like, Share, Comment; sử dụng tài khoản ảo, công cụ tăng tương tác hoặc các hình thức gian lận.\n- Ban Tổ chức có quyền kiểm tra, xác minh và loại bỏ các tương tác không hợp lệ hoặc hủy bỏ kết quả dự thi.\nQuyết định của Ban Tổ chức là quyết định cuối cùng.\nTHỜI GIAN BÌNH CHỌN\nĐến hết 11h00, thứ Bảy, ngày 14/11/2026.\nCƠ HỘI CHINH PHỤC 03 GIẢI CHUYÊN ĐỀ\nBan Tổ chức sẽ đánh giá và lựa chọn 03 video xuất sắc nhất để trao 03 GIẢI CHUYÊN ĐỀ.\nMỗi giải thưởng gồm:\n- 01 Chứng nhận của Ban Tổ chức.\n- 500.000 đồng tiền mặt do Tổ hợp Công nghệ Giáo dục EDUKIDS trao tặng.\nROBOTICS KHÔNG CHỈ LÀ NHỮNG CHÚ ROBOT – ĐÓ LÀ HÀNH TRÌNH KHƠI MỞ TƯ DUY, NUÔI DƯỠNG SÁNG TẠO VÀ KIẾN TẠO TƯƠNG LAI!\n...........................................................................................................................................\nBTC CUỘC THI ĐẤU TRƯỜNG ROBOTICS THIÊN LỘC NĂM 2026\n- Tổ hợp Công nghệ Giáo dục EDUKIDS phối hợp cùng:\n- Đoàn Thanh niên xã Thiên Lộc Cổng thông tin Tuổi trẻ xã Thiên Lộc\n- Phòng Văn hóa – Xã hội xã Thiên Lộc.\n- Phòng Kinh tế xã Thiên Lộc.\nHotline: 08386 03787\n#DauTruongRoboticsThienLoc2026#EDUKIDS #Robotics #STEM #AIvaRobotics #GiaoDucCongNghe\n............................................................................................................\nTỔ HỢP CÔNG NGHỆ GIÁO DỤC EDUKIDS\n- Trụ sở: Tầng 2, Trung tâm VHTT Đông Hội, xã Đông Anh, TP. Hà Nội.\n- CS 2: Số 189 Tổ 4 Đông Anh (gần cấp 2 Nguyễn Huy Tưởng), xã Đông Anh\n- CS 3: Tổ 2 Chi Đông, xã Quang Minh, TP. Hà Nội\n- CS 4: xã Phù Đổng, TP. Hà Nội (Sắp khai trương)\n- HOTLINE: 08386 03787",
-      "clean_comments": [],
-      "clean_comments_count": 0,
-      "filtered_comments_count": 0,
-      "engagement_score": 8
-    },
-    {
-      "post_sig": "74a8f95a9595c53388689402",
-      "group_slug": "cung_con_hoc_tieu_hoc",
-      "group_name": "CÙNG CON HỌC TIỂU HỌC",
-      "group_url": "https://www.facebook.com/groups/794046182208692/?sorting_setting=CHRONOLOGICAL",
-      "topic_id": "TIEN_TIEU_HOC_LOP_1",
-      "topic_label": "Tiền Tiểu Học & Vào Lớp 1",
-      "tags": [
-        {
-          "slug": "hoc-phi-tai-chinh",
-          "label": "#HọcPhíChiPhí"
-        },
-        {
-          "slug": "tien-tieu-hoc-2020-2021",
-          "label": "#HànhTrangLớp1"
-        },
-        {
-          "slug": "chuyen-cap-lop-6",
-          "label": "#ChuyểnCấpLớp6"
-        }
-      ],
-      "author": "HTDkids",
-      "is_anonymous": false,
-      "posted_display": "Trong 24h qua (Relay)",
-      "harvested_at": "2026-11-13 13:57:25 +07:00",
-      "permalink": "https://www.facebook.com/1657939002486068",
-      "text": "🎒 ĐẦU TƯ BÀN GHẾ XỊN SÒ DÙNG TỪ LỚP 1 ĐẾN HẾT CẤP 3 HAY MUA LOẠI VỪA TẦM RỒI ĐỔI DẦN?\n\nĐây chắc hẳn là câu hỏi khiến nhiều ba mẹ đau đầu khi chuẩn bị góc học tập cho con. Dưới góc độ thực tế, mỗi phương án đều có ưu nhược điểm riêng:\n\n👉 Phương án 1: Đầu tư bàn ghế công thái học cao cấp (Dùng 1 lần cho 12 năm)\n\n• Ưu điểm: Tích hợp tính năng nâng hạ chiều cao linh hoạt theo từng giai đoạn phát triển của trẻ, chuẩn chống gù - chống cận, bảo vệ cột sống và thị lực tối ưu. Tiết kiệm thời gian và bền bỉ suốt các cấp học.\n\n• Nhược điểm: Chi phí đầu tư ban đầu cao hơn.\n\n👉 Phương án 2: Mua loại vừa tầm rồi đổi theo cấp học\n\n• Ưu điểm: Chi phí ban đầu nhẹ nhàng, dễ thay đổi kiểu dáng theo sở thích từng độ tuổi của con.\n\n• Nhược điểm: Bàn ghế cố định thường không điều chỉnh được tư thế chuẩn, dễ khiến con ngồi sai lệch; tính ra tổng chi phí thay mới nhiều lần còn tốn kém hơn và mất công dọn dẹp.\n\n💡 Lời khuyên cho ba mẹ: Nếu tài chính cho phép, chọn một bộ bàn ghế công thái học cao cấp ngay từ lớp 1 vẫn là khoản đầu tư kinh tế và bảo vệ sức khỏe vàng cho tương lai của con!\n\n💬 Còn quan điểm của các bác thế nào? Hãy để lại ý kiến dưới phần bình luận để cùng thảo luận nhé!\n\n📩 Inbox ngay cho HTDkids để được tư vấn các mẫu bàn ghế chống gù chính hãng, bảo hành dài lâu cho bé yêu!\n-----------------------------------------\n\nBàn ghế chống gù HTDkids – điều chỉnh theo chiều cao của con\nhttps://banghechonggu.vn/\nHotline/Zalo: 096.040.987\n#HTDkids #GocKienThuc #gocchiase #htdkids",
-      "clean_comments": [],
-      "clean_comments_count": 0,
-      "filtered_comments_count": 0,
-      "engagement_score": 8
-    },
-    {
       "post_sig": "2b3d7e191733e8c25ce780ea",
       "group_slug": "cung_con_hoc_tieu_hoc_khoi_phu_huynh",
       "group_name": "Cùng Con Học Tiểu Học | Khối Phụ Huynh",
@@ -68235,62 +66874,6 @@ window.CDH_CLEAN_FORUM_DATA = {
       "engagement_score": 8
     },
     {
-      "post_sig": "3a2c9a65ad3a499345afdac5",
-      "group_slug": "cung_con_hoc_tieng_anh",
-      "group_name": "Cùng con học Tiếng Anh",
-      "group_url": "https://www.facebook.com/groups/cungconhoctienganh.official/?sorting_setting=CHRONOLOGICAL",
-      "topic_id": "NGOAI_NGU_HOMESCHOOL",
-      "topic_label": "Ngoại Ngữ, HSK & Homeschool",
-      "tags": [
-        {
-          "slug": "tieng-anh-tre-em",
-          "label": "#TiếngAnhTrẻEm"
-        },
-        {
-          "slug": "sach-hay-hoc-lieu",
-          "label": "#SáchHay & HọcLiệu"
-        }
-      ],
-      "author": "Nguyễn Mai",
-      "is_anonymous": false,
-      "posted_display": "Trong 24h qua (Relay)",
-      "harvested_at": "2026-11-13 14:07:26 +07:00",
-      "permalink": "https://www.facebook.com/2914801502225247",
-      "text": "❤️‍🔥 Reading Future Discover ❤️‍🔥 tương ứng trình A1, A1+\n\n👉 Bộ sách tiếp nối trong seri Reading Future, phù hợp cho các bạn nhỏ học kèm cùng basic 1200 keyword để nâng cao khả năng đọc hiểu và từ vựng hiệu quả hơn. Bộ sách này sẽ giúp bé tiếp cận với kiến thức phong phú và đa dạng trong nhiều lĩnh vực.\n📚 Nội dung sách bao gồm:\nKhoa học: Khám phá thế giới tự nhiên, giúp bé phát triển tư duy khoa học.\nXã hội: Cung cấp kiến thức về cộng đồng và các vấn đề xã hội, giúp bé hiểu thêm về thế giới xung quanh.\nToán học ứng dụng đời sống: Vận dụng kiến thức toán học vào các tình huống thực tế trong đời sống.\nNghệ thuật: Khơi gợi sự sáng tạo và giúp bé làm quen với các chủ đề nghệ thuật đa dạng.\n🎧 Sách kèm MP3 và video minh họa, giúp bé học dễ dàng và hiệu quả hơn, nâng cao khả năng nghe và hiểu tiếng Anh.\n👉 Reading Future Discover sẽ là người bạn đồng hành lý tưởng, giúp bé phát triển toàn diện về kỹ năng đọc hiểu và khám phá thế giới xung quanh một cách sinh động và thú vị!\n\nOnly #1xx xu /3c",
-      "clean_comments": [],
-      "clean_comments_count": 0,
-      "filtered_comments_count": 0,
-      "engagement_score": 8
-    },
-    {
-      "post_sig": "ebc0bddd0edf780d2989030e",
-      "group_slug": "cung_con_hoc_tieng_anh",
-      "group_name": "Cùng con học Tiếng Anh",
-      "group_url": "https://www.facebook.com/groups/cungconhoctienganh.official/?sorting_setting=CHRONOLOGICAL",
-      "topic_id": "NGOAI_NGU_HOMESCHOOL",
-      "topic_label": "Ngoại Ngữ, HSK & Homeschool",
-      "tags": [
-        {
-          "slug": "tieng-anh-tre-em",
-          "label": "#TiếngAnhTrẻEm"
-        },
-        {
-          "slug": "tam-ly-cam-xuc",
-          "label": "#TâmLý & CảmXúc"
-        }
-      ],
-      "author": "Thành viên nhóm",
-      "is_anonymous": false,
-      "posted_display": "Trong 24h qua (Relay)",
-      "harvested_at": "2026-11-13 14:07:26 +07:00",
-      "permalink": "https://www.facebook.com/UzpfSTYxNTgzNTY3MjgzMjg4OjEyMjEyODgyMzI3MTExODkwOToxMjIxMjg4MjMyNzExMTg5MDk=",
-      "text": "🌟 NINA – NỖ LỰC HÔM NAY, THÀNH QUẢ NGÀY MAI! 💙\nMột kết quả đáng vui mừng trong bài thi BA (Bi-Annual Examination) của Nina là minh chứng cho sự cố gắng và tiến bộ từng ngày của con.\nMỗi câu trả lời tốt hơn, mỗi kỹ năng được cải thiện đều là thành quả của quá trình học tập chăm chỉ và sự đồng hành tận tâm của thầy cô. Thành quả ấy không chỉ mang đến niềm hạnh phúc, tự hào cho gia đình mà còn là động lực lớn lao đối với các thầy cô Ocean Edu Kiến Thụy. 🥰\nChúc Nina tiếp tục tự tin, phát huy thế mạnh và chinh phục thêm nhiều cột mốc mới trên hành trình học tiếng Anh nhé!\n💙 Ocean Edu Kiến Thụy – Tự hào ghi nhận từng bước tiến của con!\n--------------------------------------\nOCEAN EDU KIẾN THỤY\n📍 Địa chỉ: Tầng 4, tòa nhà Núi Đối Plaza, Vũ Thị Ngọc Toàn, Kiến Thụy, Hải Phòng\n☎ Hotline: 02207 300 600\n🌐 Website: www.ocean.edu.vn\n📧 Email: info@ocean.edu.vn\n#OceanEduKienThuy #Nina #StudentProgress #ProudOfYou #EnglishLearning #BA",
-      "clean_comments": [],
-      "clean_comments_count": 0,
-      "filtered_comments_count": 0,
-      "engagement_score": 8
-    },
-    {
       "post_sig": "83b377a175dd05b6c197a843",
       "group_slug": "cung_con_hoc_tieu_hoc_104118",
       "group_name": "Cùng Con Học Tiểu Học ✅",
@@ -68313,34 +66896,6 @@ window.CDH_CLEAN_FORUM_DATA = {
       "harvested_at": "2026-11-13 14:08:32 +07:00",
       "permalink": "https://www.facebook.com/photo/?fbid=1770902681705493",
       "text": "AI SẼ LÀ THÍ SINH ĐƯỢC YÊU THÍCH NHẤT TẠI “THANH ÂM TUỔI HỒNG”?\nHãy bình chọn cho thí sinh bạn yêu mến để tiếp thêm động lực cho những tài năng trẻ!\nLIKE và THEO DÕI Fanpage Truyền hình Sơn La và Báo Sơn La để cập nhật thông tin chương trình và tin tức nổi bật của tỉnh.\nTải ứng dụng STVgo và Báo Sơn La để xem truyền hình, đọc tin tức, khám phá văn hóa, giải trí mọi lúc, mọi nơi.\nMột lượt bình chọn – Một lời cổ vũ. Cùng lan tỏa Thanh Âm Tuổi Hồng, kết nối đam mê cùng SNEWS!",
-      "clean_comments": [],
-      "clean_comments_count": 0,
-      "filtered_comments_count": 0,
-      "engagement_score": 8
-    },
-    {
-      "post_sig": "ba7ae4acb3be224401ea9de9",
-      "group_slug": "cung_con_hoc_tieu_hoc_104118",
-      "group_name": "Cùng Con Học Tiểu Học ✅",
-      "group_url": "https://www.facebook.com/groups/1041187421358178/?sorting_setting=CHRONOLOGICAL",
-      "topic_id": "TAM_LY_GIA_DINH",
-      "topic_label": "Tâm Lý, Kỷ Luật & Góc Học Tập",
-      "tags": [
-        {
-          "slug": "tam-ly-cam-xuc",
-          "label": "#TâmLý & CảmXúc"
-        },
-        {
-          "slug": "ren-tap-trung-ky-luat",
-          "label": "#RènTậpTrung"
-        }
-      ],
-      "author": "Thành viên nhóm",
-      "is_anonymous": false,
-      "posted_display": "Trong 24h qua (Relay)",
-      "harvested_at": "2026-11-13 14:08:32 +07:00",
-      "permalink": "https://www.facebook.com/UzpfSTEwMDA2MzU3MzM0Mjg1MzoxNzcwOTEzNTA1MDM3NzQ0OjE3NzA5MTM1MDUwMzc3NDQ=",
-      "text": "🌟 AI SẼ LÀ THÍ SINH ĐƯỢC YÊU THÍCH NHẤT TẠI “THANH ÂM TUỔI HỒNG”?\n\n❤️ Hãy bình chọn cho thí sinh bạn yêu mến để tiếp thêm động lực cho những tài năng trẻ!\n\n📣 LIKE và THEO DÕI Fanpage Truyền hình Sơn La và Báo Sơn La để cập nhật thông tin chương trình và tin tức nổi bật của tỉnh.\n\n📱 Tải ứng dụng STVgo và Báo Sơn La để xem truyền hình, đọc tin tức, khám phá văn hóa, giải trí mọi lúc, mọi nơi.\n\n💖 Một lượt bình chọn – Một lời cổ vũ. Cùng lan tỏa Thanh Âm Tuổi Hồng, kết nối đam mê cùng SNEWS!",
       "clean_comments": [],
       "clean_comments_count": 0,
       "filtered_comments_count": 0,
@@ -68687,38 +67242,6 @@ window.CDH_CLEAN_FORUM_DATA = {
       "engagement_score": 8
     },
     {
-      "post_sig": "f2804a0656bd195de34017e1",
-      "group_slug": "day_con_tu_hoc_va_tu_duy",
-      "group_name": "DẠY CON TỰ HỌC VÀ TƯ DUY",
-      "group_url": "https://www.facebook.com/groups/daycontuhoctuduy/?sorting_setting=CHRONOLOGICAL",
-      "topic_id": "TIEN_TIEU_HOC_LOP_1",
-      "topic_label": "Tiền Tiểu Học & Vào Lớp 1",
-      "tags": [
-        {
-          "slug": "ren-tap-trung-ky-luat",
-          "label": "#RènTậpTrung"
-        },
-        {
-          "slug": "bua-an-ban-tru-suc-khoe",
-          "label": "#BánTrú & DinhDưỡng"
-        },
-        {
-          "slug": "homeschool-tu-hoc",
-          "label": "#HomeschoolTựHọc"
-        }
-      ],
-      "author": "Vu Hai Yen",
-      "is_anonymous": false,
-      "posted_display": "Trong 24h qua (Relay)",
-      "harvested_at": "2026-11-13 14:14:43 +07:00",
-      "permalink": "https://www.facebook.com/1163236873054419",
-      "text": "🌿 HÀNH TRÌNH ĐỒNG HÀNH CÙNG CON: KHI BÉ ADHD \"GÕ CỬA\" LỨA TUỔI 2–5 TUỔI 🌿\n\nCác ba mẹ có con mắc chứng rối loạn tăng động giảm chú ý (ADHD) trong lứa tuổi này là một \"thử thách\" với việc con có một vài hoặc nhiều hành vi như chạy lăng xăng, đi nhón chân, quay tròn, ra đường lao đầu chạy, không giao tiếp mắt, gọi không nghe v.v. khiến chúng ta hoang mang, lo lắng đến kiệt sức.\n\nNếu ba mẹ trong hoàn cảnh thì chúng ta không cô đơn đâu ạ!\n\nTrải qua những năm tháng khi con ở độ tuổi từ 2 đến 5, thì chúng mình có trải nghiệm và nhận ra rằng não bộ của con đang phát triển với tốc độ chóng mặt. Thay vì cố gắng \"gò\" con vào những khuôn mẫu cứng nhắc, việc thấu hiểu và thiết kế lại một môi trường phù hợp sẽ giúp con bình yên hơn rất nhiều.\n\nDưới đây mình xin chia sẻ lại vài \"bí kíp\" nhỏ mà vô cùng thực tế để nhà mình cùng áp dụng mỗi ngày nhé:\n\n1️⃣ Biến thời gian chơi thành \"vùng an toàn\" gắn kết\n\nTrẻ nhỏ, đặc biệt là các con ADHD, rất cần cảm giác an toàn từ người chăm sóc. Hãy thử lên lịch chơi cùng con mỗi ngày, và bí quyết là: cất điện thoại sang phòng khác và dùng đồng hồ bấm giờ. Khoảng 15-20 phút con hoàn toàn có giá trị hơn hàng giờ mẹ ngồi cạnh mà tâm trí bận rộn nhiều thứ khác đấy ạ.\n\n2️⃣ Tổ chức không gian để giảm \"quá tải\" cho con\n\nCác con rất dễ bị phân tâm bởi môi trường xung quanh. Hãy thử chia rõ từng khu vực: góc đồ ăn riêng, góc đồ chơi riêng, và luôn chuẩn bị sẵn một \"túi cứu sinh\" trong xe (gồm quần áo dự phòng, đồ ăn nhẹ, vài món đồ chơi quen thuộc). Khi mọi thứ ngăn nắp và có đánh dấu (tên gọi), con sẽ đỡ bối rối và bớt mè nheo hơn hẳn.\n\n3️⃣ Lịch trình trực quan - \"Bản đồ\" cho ngày mới\n\nVì các con tư duy bằng hình ảnh rất tốt, mẹ hãy làm một chiếc bảng nhỏ dùng hình vẽ, nhãn dán hoặc nam châm để minh họa cho các hoạt động: thức dậy, đánh răng, ăn uống, đi chơi... Khi nhìn thấy trước việc gì sắp diễn ra, con sẽ dễ hợp tác và chuyển giao hoạt động mượt mà hơn.\n\n4️⃣ Tạo ra không gian \"CÓ\" thay vì luôn miệng nói \"KHÔNG\"\n\nThay vì suốt ngày phải thốt lên \"Con đừng sờ cái này!\", \"Nguy hiểm lắm!\", ba mẹ hãy dọn dẹp lại phòng chơi thành một không gian an toàn tuyệt đối (không góc sắc nhọn, không đồ dễ vỡ, không hóa chất). Ở đây, con được tự do khám phá thỏa thích mà ba mẹ cũng nhàn hơn, không phải canh chừng từng giây.\n\n5️⃣ \"Kể chuyện\" hành vi thay vì mắng mỏ\n\nĐôi khi chúng ta hay quên khen ngợi khi con ngoan. Thay vì chỉ nói chung chung \"Con giỏi quá\", hãy thử thông báo tường thuật: \"Mẹ thấy con đang xếp chiếc xe cứu hỏa rất ngay ngắn trên thảm. Thật tuyệt vời khi con biết tự chơi một mình!\". Sự công nhận chi tiết này chính là nguồn động lực to lớn giúp con lặp lại hành vi tích cực.\n\n6️⃣ Nhất quán và rõ ràng trong kỷ luật\n\nỞ tuổi mẫu giáo, hậu quả cho hành vi chưa ngoan cần phải đến nhanh và ngắn gọn (như tạm dừng chơi vài phút, hoặc bớt một chút thời gian xem màn hình). Và quan trọng nhất là ba mẹ luôn báo trước cho con hiểu để con không cảm thấy bị bất ngờ hay hoảng sợ nhé.\n\nNuôi dạy một em bé năng động, nhạy cảm đôi khi khiến ba mẹ kiệt sức. Nhưng đằng sau sự hiếu động ấy là những em bé vô cùng tình cảm, thông minh và đầy sáng tạo. Ba mẹ hãy cứ kiên nhẫn, đi chậm lại cùng con mỗi ngày, ba mẹ nhé! ❤️\n\nCó ba mẹ nào đang ở giai đoạn này không? Bình luận chia sẻ câu chuyện của nhà mình để chúng ta cùng tiếp thêm năng lượng cho nhau nha!\n\n#nuoidayconADHD\n\nMình là Yến Vũ, học viên TD42, Membership, là mẹ của 2 chàng trai rắn rỏi, đáng yêu, là vợ của một ông chồng chăm chỉ nhất VBB. Mình đang đi làm full-time và đang phấn đấu để có thể tự do về nơi chốn trong 3 - 5 năm tới.",
-      "clean_comments": [],
-      "clean_comments_count": 0,
-      "filtered_comments_count": 0,
-      "engagement_score": 8
-    },
-    {
       "post_sig": "0626fc2c0db54e26c4e7cf51",
       "group_slug": "dong_hanh_cung_con_homeschool_4_0",
       "group_name": "Đồng Hành Cùng Con",
@@ -68951,34 +67474,6 @@ window.CDH_CLEAN_FORUM_DATA = {
       "engagement_score": 8
     },
     {
-      "post_sig": "643d530ee8eaacaa3261be9d",
-      "group_slug": "dong_hanh_cung_hoc_sinh_lop_2",
-      "group_name": "Đồng Hành Cùng Học Sinh Lớp 2",
-      "group_url": "https://www.facebook.com/groups/182760547839192/?sorting_setting=CHRONOLOGICAL",
-      "topic_id": "TAM_LY_GIA_DINH",
-      "topic_label": "Tâm Lý, Kỷ Luật & Góc Học Tập",
-      "tags": [
-        {
-          "slug": "tam-ly-cam-xuc",
-          "label": "#TâmLý & CảmXúc"
-        },
-        {
-          "slug": "ren-tap-trung-ky-luat",
-          "label": "#RènTậpTrung"
-        }
-      ],
-      "author": "Thành viên nhóm",
-      "is_anonymous": false,
-      "posted_display": "Trong 24h qua (Relay)",
-      "harvested_at": "2026-11-13 14:19:58 +07:00",
-      "permalink": "https://www.facebook.com/UzpfSTEwMDA3MTY3NjgxNjkyMToxMTM2MjM2MjA1NDQyMjYzOjExMzYyMzYyMDU0NDIyNjM=",
-      "text": "MÁY QUAY ĐÃ BẬT – NHỮNG NỤ CƯỜI ĐÁNG YÊU ĐÃ SẴN SÀNG LÊN SÓNG! ❤️\n\nMột ngày thật đặc biệt tại Tiếp Nối Art!\n\nCó chút hồi hộp, chút bối rối trước ống kính, nhưng nhiều hơn cả là những ánh mắt háo hức, những nụ cười hồn nhiên và khoảnh khắc cô trò cùng say mê trong thế giới hội họa.",
-      "clean_comments": [],
-      "clean_comments_count": 0,
-      "filtered_comments_count": 0,
-      "engagement_score": 8
-    },
-    {
       "post_sig": "721fd5e0d134312ec781420a",
       "group_slug": "dong_hanh_cung_hs_cap_1",
       "group_name": "Đồng Hành Cùng HS Cấp 1✅",
@@ -69131,34 +67626,6 @@ window.CDH_CLEAN_FORUM_DATA = {
       "engagement_score": 8
     },
     {
-      "post_sig": "653b78f3b6c7740d1ff77ec9",
-      "group_slug": "hoc_cung_con_choi_cung_con",
-      "group_name": "Học Cùng Con - Chơi Cùng Con",
-      "group_url": "https://www.facebook.com/groups/hoccungconchoicungcon/?sorting_setting=CHRONOLOGICAL",
-      "topic_id": "TAM_LY_GIA_DINH",
-      "topic_label": "Tâm Lý, Kỷ Luật & Góc Học Tập",
-      "tags": [
-        {
-          "slug": "goc-hoi-dap-thuc-chien",
-          "label": "#HỏiĐápKinhNghiệm"
-        },
-        {
-          "slug": "tam-ly-cam-xuc",
-          "label": "#TâmLý & CảmXúc"
-        }
-      ],
-      "author": "Thành viên nhóm",
-      "is_anonymous": false,
-      "posted_display": "Trong 24h qua (Relay)",
-      "harvested_at": "2026-11-13 14:26:39 +07:00",
-      "permalink": "https://www.facebook.com/UzpfSTEwMDA5NDU1MjAyNDI0MDoxMDAwMTY5NDU2NDc4MTEzOjEwMDAxNjk0NTY0NzgxMTM=",
-      "text": "🐷 Một chú heo con… lọt vào vòng vây của MỘT TRĂM chú sói! Làm sao thoát đây? 🐺\nSói thì tranh nhau: \"Ăn tai trước!\", \"Không, ăn bụng cơ!\", \"Mình muốn cái đuôi!\" — rồi chợt nhận ra: một trăm đứa mà chỉ một chú heo thì mỗi đứa được có một miếng bé tí! Thế là bầy sói nghĩ ra \"ý hay\": thả heo con đi dẫn một trăm chú heo khác về…\nHeo Con gật đầu cái rụp rồi chạy biến — và đêm hôm đó, bầy sói vẫn ngồi đợi! Bé nhà mình đoán xem Heo Con có quay lại không? Kể mẹ nghe nào!\n#HocCungCon #TruyenThieuNhi #ThongMinh #HocTiengAnh #xuhuong #trending",
-      "clean_comments": [],
-      "clean_comments_count": 0,
-      "filtered_comments_count": 0,
-      "engagement_score": 8
-    },
-    {
       "post_sig": "bfb1c0818b3ec81106f7ddd2",
       "group_slug": "hoc_cung_con_choi_cung_con",
       "group_name": "Học Cùng Con - Chơi Cùng Con",
@@ -69209,34 +67676,6 @@ window.CDH_CLEAN_FORUM_DATA = {
       "harvested_at": "2026-11-13 14:26:39 +07:00",
       "permalink": "",
       "text": "Đồ chơi Halloween năm nay, nhà mình chi hết đúng… 0 đồng ạ\nMẹ lôi một tờ giấy cam ra gấp bí ngô há miệng, định bụng làm mẫu cho \"chuẩn chỉnh\". Ai ngờ chưa gấp xong, hai giám khảo đã xếp hàng chờ thử tính năng: cho bí ngô đớp tay mẹ.\nCon còn phán một câu làm mẹ đứng hình: \"Bí ngô của mẹ há miệng to thế này là để ăn kẹo cho nhanh à mẹ?\"\nỜ thì… đúng chuyên môn Halloween đấy con\nNhưng điều mình thích nhất là đây: con tự gấp con bí ngô của riêng mình — nếp lệch, mắt vẽ một bên to một bên nhỏ — rồi tuyên bố đầy tự hào: \"Bí ngô của con là độc bản, không con nào giống hết!\"\nChuẩn bài của mẹ luôn: đẹp không nằm ở chỗ giống mẫu, đẹp nằm ở chỗ con dám tự tay làm.\nTối mai hai anh em sẽ mang \"đội quân bí ngô\" này đi dọa… bố trước, xin kẹo hàng xóm sau. Cô chú nào chưa chuẩn bị kịp thì yên tâm: một tờ giấy là xong ạ.\nNhà các mẹ tối nay làm đồ chơi hay hoá trang gì cho con? Khoe mình xem với nhé!\nBiết ơn cả nhà mình đã xem tới cuối\n#LeNhatNhatHa #MeSinhDoi #MyThuatTuDuy #Origami #HalloweenCungCon #GapBiNgo\n---",
-      "clean_comments": [],
-      "clean_comments_count": 0,
-      "filtered_comments_count": 0,
-      "engagement_score": 8
-    },
-    {
-      "post_sig": "69f9b31ef788cffb3f5b3b78",
-      "group_slug": "hoc_cung_con_choi_cung_con",
-      "group_name": "Học Cùng Con - Chơi Cùng Con",
-      "group_url": "https://www.facebook.com/groups/hoccungconchoicungcon/?sorting_setting=CHRONOLOGICAL",
-      "topic_id": "TAM_LY_GIA_DINH",
-      "topic_label": "Tâm Lý, Kỷ Luật & Góc Học Tập",
-      "tags": [
-        {
-          "slug": "giao-vien-goc-nhin",
-          "label": "#GócNhìnGiáoViên"
-        },
-        {
-          "slug": "goc-hoi-dap-thuc-chien",
-          "label": "#HỏiĐápKinhNghiệm"
-        }
-      ],
-      "author": "Lê Nhất Nhật Hà",
-      "is_anonymous": false,
-      "posted_display": "Trong 24h qua (Relay)",
-      "harvested_at": "2026-11-13 14:26:39 +07:00",
-      "permalink": "https://www.facebook.com/1758415578587658",
-      "text": "Đồ chơi Halloween năm nay, nhà mình chi hết đúng… 0 đồng ạ 😂\n\nMẹ lôi một tờ giấy cam ra gấp bí ngô há miệng, định bụng làm mẫu cho \"chuẩn chỉnh\". Ai ngờ chưa gấp xong, hai giám khảo đã xếp hàng chờ thử tính năng: cho bí ngô đớp tay mẹ.\n\nCon còn phán một câu làm mẹ đứng hình: \"Bí ngô của mẹ há miệng to thế này là để ăn kẹo cho nhanh à mẹ?\"\nỜ thì… đúng chuyên môn Halloween đấy con 😂\n\nNhưng điều mình thích nhất là đây: con tự gấp con bí ngô của riêng mình — nếp lệch, mắt vẽ một bên to một bên nhỏ — rồi tuyên bố đầy tự hào: \"Bí ngô của con là độc bản, không con nào giống hết!\"\nChuẩn bài của mẹ luôn: đẹp không nằm ở chỗ giống mẫu, đẹp nằm ở chỗ con dám tự tay làm.\n\nTối mai hai anh em sẽ mang \"đội quân bí ngô\" này đi dọa… bố trước, xin kẹo hàng xóm sau. Cô chú nào chưa chuẩn bị kịp thì yên tâm: một tờ giấy là xong ạ.\n\nNhà các mẹ tối nay làm đồ chơi hay hoá trang gì cho con? Khoe mình xem với nhé!\nBiết ơn cả nhà mình đã xem tới cuối 🎃\n\n#LeNhatNhatHa #MeSinhDoi #MyThuatTuDuy #Origami #HalloweenCungCon #GapBiNgo\n\n---",
       "clean_comments": [],
       "clean_comments_count": 0,
       "filtered_comments_count": 0,
@@ -69391,34 +67830,6 @@ window.CDH_CLEAN_FORUM_DATA = {
       "engagement_score": 8
     },
     {
-      "post_sig": "57f7d87bb49f925cc12fa840",
-      "group_slug": "hoi_cha_me_co_con_vao_lop_1",
-      "group_name": "Hội Cha Mẹ Có Con Vào Lớp 1",
-      "group_url": "https://www.facebook.com/groups/152616010149780/?sorting_setting=CHRONOLOGICAL",
-      "topic_id": "TIEN_TIEU_HOC_LOP_1",
-      "topic_label": "Tiền Tiểu Học & Vào Lớp 1",
-      "tags": [
-        {
-          "slug": "tien-tieu-hoc-2020-2021",
-          "label": "#HànhTrangLớp1"
-        },
-        {
-          "slug": "danh-van-tap-doc",
-          "label": "#ĐánhVầnTậpĐọc"
-        }
-      ],
-      "author": "Nhi Hy",
-      "is_anonymous": false,
-      "posted_display": "Trong 24h qua (Relay)",
-      "harvested_at": "2026-11-13 14:29:42 +07:00",
-      "permalink": "https://www.facebook.com/1460680292676672",
-      "text": "Một thế giới trò chơi dành riêng cho các bạn nhỏ 3–6 tuổi 🧸 Từ học chữ, học số đến nhận biết màu sắc, âm nhạc và thử thách tư duy, tất cả đều có tại YouUseAI. Không cần biết chữ trước, bé vẫn có thể bắt đầu chơi và học theo cách thật tự nhiên!",
-      "clean_comments": [],
-      "clean_comments_count": 0,
-      "filtered_comments_count": 0,
-      "engagement_score": 8
-    },
-    {
       "post_sig": "ec1c8f5cc5e8b4ba2b96bf36",
       "group_slug": "hoi_chu_truong_hieu_truong_mam_non",
       "group_name": "Hội Chủ Trường - Hiệu Trưởng Mầm Non",
@@ -69444,34 +67855,6 @@ window.CDH_CLEAN_FORUM_DATA = {
       "clean_comments": [],
       "clean_comments_count": 0,
       "filtered_comments_count": 0,
-      "engagement_score": 8
-    },
-    {
-      "post_sig": "83c5408170a01e7e37442067",
-      "group_slug": "hoi_chu_truong_hieu_truong_mam_non",
-      "group_name": "Hội Chủ Trường - Hiệu Trưởng Mầm Non",
-      "group_url": "https://www.facebook.com/groups/quanlyhieutruong/?sorting_setting=CHRONOLOGICAL",
-      "topic_id": "CHUYEN_TRUONG_LOP_20_11",
-      "topic_label": "Chuyện Trường Lớp & 20/11",
-      "tags": [
-        {
-          "slug": "chuyen-20-11-quy-lop",
-          "label": "#QuỹLớp & 20/11"
-        },
-        {
-          "slug": "tam-ly-cam-xuc",
-          "label": "#TâmLý & CảmXúc"
-        }
-      ],
-      "author": "Bộ Giáo dục và Đào tạo",
-      "is_anonymous": false,
-      "posted_display": "Trong 24h qua",
-      "harvested_at": "2026-11-13 14:32:35 +07:00",
-      "permalink": "https://www.facebook.com/photo/?fbid=1579283477578312&set=a.250783537094986",
-      "text": "TỔ CHỨC CÁC HOẠT ĐỘNG KỈ NIỆM NGÀY NHÀ GIÁO VIỆT NAM 20/11 THIẾT THỰC, PHÙ HỢP, Ý NGHĨA:\nKHÔNG phô trương, hình thức, gây tốn kém, lãng phí\nKHÔNG tạo thêm áp lực hoặc phát sinh công việc không cần thiết cho nhà giáo\nTUYỆT ĐỐI KHÔNG huy động đóng góp từ người học, cha mẹ người học để tổ chức các hoạt động kỉ niệm",
-      "clean_comments": [],
-      "clean_comments_count": 0,
-      "filtered_comments_count": 7,
       "engagement_score": 8
     },
     {
@@ -70037,34 +68420,6 @@ window.CDH_CLEAN_FORUM_DATA = {
       "harvested_at": "2026-11-13 13:55:57 +07:00",
       "permalink": "https://www.facebook.com/2566486787189522",
       "text": "Vận động phụ huynh đóng hàng chục triệu tổ chức 20/11, xã yêu cầu hoàn trả",
-      "clean_comments": [],
-      "clean_comments_count": 0,
-      "filtered_comments_count": 0,
-      "engagement_score": 4
-    },
-    {
-      "post_sig": "f2e2013c29dbdeed5061d889",
-      "group_slug": "hoi_phu_huynh_thanh_pho_ha_noi_pawand",
-      "group_name": "Hội Phụ Huynh Thành Phố Hà Nội ✅",
-      "group_url": "https://www.facebook.com/groups/pawandeeprajann/?sorting_setting=CHRONOLOGICAL",
-      "topic_id": "TAM_LY_GIA_DINH",
-      "topic_label": "Tâm Lý, Kỷ Luật & Góc Học Tập",
-      "tags": [
-        {
-          "slug": "tam-ly-cam-xuc",
-          "label": "#TâmLý & CảmXúc"
-        },
-        {
-          "slug": "ren-tap-trung-ky-luat",
-          "label": "#RènTậpTrung"
-        }
-      ],
-      "author": "Người tham gia ẩn danh",
-      "is_anonymous": true,
-      "posted_display": "Trong 24h qua (Relay)",
-      "harvested_at": "2026-11-13 13:55:57 +07:00",
-      "permalink": "https://www.facebook.com/2569203313584536",
-      "text": "Cái này tớ không biết đâu chị Nga nhé",
       "clean_comments": [],
       "clean_comments_count": 0,
       "filtered_comments_count": 0,
@@ -78223,34 +76578,6 @@ window.CDH_CLEAN_FORUM_DATA = {
       "engagement_score": 0
     },
     {
-      "post_sig": "09c2743c3bd8947039189385",
-      "group_slug": "cung_con_hoc_tieu_hoc_574496",
-      "group_name": "CÙNG CON HỌC TIỂU HỌC",
-      "group_url": "https://www.facebook.com/groups/574496647195306/?sorting_setting=CHRONOLOGICAL",
-      "topic_id": "TAM_LY_GIA_DINH",
-      "topic_label": "Tâm Lý, Kỷ Luật & Góc Học Tập",
-      "tags": [
-        {
-          "slug": "goc-hoi-dap-thuc-chien",
-          "label": "#HỏiĐápKinhNghiệm"
-        },
-        {
-          "slug": "tam-ly-cam-xuc",
-          "label": "#TâmLý & CảmXúc"
-        }
-      ],
-      "author": "Thành viên nhóm",
-      "is_anonymous": false,
-      "posted_display": "Trong 24h qua (Relay)",
-      "harvested_at": "2026-11-13 05:01:13 +07:00",
-      "permalink": "https://www.facebook.com/UzpfSTEwMDA3OTQ5Mjc0MTU3MzpWSzoxODI3OTI3NzY4NTE4ODQ4",
-      "text": "**Hình này là hình gì vậy các mẹ ơi**",
-      "clean_comments": [],
-      "clean_comments_count": 0,
-      "filtered_comments_count": 0,
-      "engagement_score": 0
-    },
-    {
       "post_sig": "1846b89474cad7ee9999d9a2",
       "group_slug": "cung_con_hoc_tieu_hoc_574496",
       "group_name": "CÙNG CON HỌC TIỂU HỌC",
@@ -78357,34 +76684,6 @@ window.CDH_CLEAN_FORUM_DATA = {
       "harvested_at": "2026-11-13 07:31:35 +07:00",
       "permalink": "https://www.facebook.com/photo/?fbid=1133404362890962&set=gm.1448850723420653&idorvanity=1172801357692259",
       "text": "Sáng nay bà đố cả nhà nhận mặt rau quen!\nĐâu là rau muống: A, B, C hay D?",
-      "clean_comments": [],
-      "clean_comments_count": 0,
-      "filtered_comments_count": 0,
-      "engagement_score": 0
-    },
-    {
-      "post_sig": "24ce1365b307d565110ba6bb",
-      "group_slug": "bang_tin_thao_luan_phu_huynh_tong_hop",
-      "group_name": "Bảng Tin Thảo Luận Phụ Huynh Tổng Hợp",
-      "group_url": "https://www.facebook.com/groups/bang_tin_giao_duc_tong_hop/?sorting_setting=CHRONOLOGICAL",
-      "topic_id": "TAM_LY_GIA_DINH",
-      "topic_label": "Tâm Lý, Kỷ Luật & Góc Học Tập",
-      "tags": [
-        {
-          "slug": "tam-ly-cam-xuc",
-          "label": "#TâmLý & CảmXúc"
-        },
-        {
-          "slug": "ren-tap-trung-ky-luat",
-          "label": "#RènTậpTrung"
-        }
-      ],
-      "author": "Bếp Bà Nghiền",
-      "is_anonymous": false,
-      "posted_display": "2026-11-13 07:31",
-      "harvested_at": "2026-11-13 07:31:35 +07:00",
-      "permalink": "https://www.facebook.com/1448850723420653",
-      "text": "Sáng nay bà đố cả nhà nhận mặt rau quen! 🌿 Đâu là rau muống: A, B, C hay D?",
       "clean_comments": [],
       "clean_comments_count": 0,
       "filtered_comments_count": 0,
@@ -78619,34 +76918,6 @@ window.CDH_CLEAN_FORUM_DATA = {
       "engagement_score": 0
     },
     {
-      "post_sig": "d81534c9398686daf8018060",
-      "group_slug": "cung_con_hoc_tieng_anh",
-      "group_name": "Cùng con học Tiếng Anh",
-      "group_url": "https://www.facebook.com/groups/cungconhoctienganh.official/?sorting_setting=CHRONOLOGICAL",
-      "topic_id": "NGOAI_NGU_HOMESCHOOL",
-      "topic_label": "Ngoại Ngữ, HSK & Homeschool",
-      "tags": [
-        {
-          "slug": "tieng-anh-tre-em",
-          "label": "#TiếngAnhTrẻEm"
-        },
-        {
-          "slug": "homeschool-tu-hoc",
-          "label": "#HomeschoolTựHọc"
-        }
-      ],
-      "author": "Tiệm Sách Bibo",
-      "is_anonymous": false,
-      "posted_display": "Có thể là hình ảnh về bánh quy gừng và văn bản",
-      "harvested_at": "2026-11-13 08:21:35 +07:00",
-      "permalink": "https://www.facebook.com/photo/?fbid=122172643677016554&set=pcb.2914617688910295",
-      "text": "Set 5 cuốn picturebook Christmas\n- Định dạng: bìa mềm\n- Số trang: 32\n- Tình trạng: 90-95%\n150.000 VND",
-      "clean_comments": [],
-      "clean_comments_count": 0,
-      "filtered_comments_count": 0,
-      "engagement_score": 0
-    },
-    {
       "post_sig": "fa4347f349fe778747c70bac",
       "group_slug": "cung_con_hoc_tieu_hoc_104118",
       "group_name": "Cùng Con Học Tiểu Học ✅",
@@ -78725,34 +76996,6 @@ window.CDH_CLEAN_FORUM_DATA = {
       "harvested_at": "2026-11-13 08:31:56 +07:00",
       "permalink": "https://www.facebook.com/1596239049186343",
       "text": "Bé nhà e viết cũng đẹp lắm mỗi cái tội làm biếng k chịu viết mn ạ.. có cách nào cho bé chăm học hok mn chỉ e với.. hii chúc mn buổi tối vv..",
-      "clean_comments": [],
-      "clean_comments_count": 0,
-      "filtered_comments_count": 0,
-      "engagement_score": 0
-    },
-    {
-      "post_sig": "79cb87af1f2c77528e4977d7",
-      "group_slug": "cung_con_hoc_tieu_hoc_104118",
-      "group_name": "Cùng Con Học Tiểu Học ✅",
-      "group_url": "https://www.facebook.com/groups/1041187421358178/?sorting_setting=CHRONOLOGICAL",
-      "topic_id": "TAM_LY_GIA_DINH",
-      "topic_label": "Tâm Lý, Kỷ Luật & Góc Học Tập",
-      "tags": [
-        {
-          "slug": "giao-vien-goc-nhin",
-          "label": "#GócNhìnGiáoViên"
-        },
-        {
-          "slug": "tam-ly-cam-xuc",
-          "label": "#TâmLý & CảmXúc"
-        }
-      ],
-      "author": "Nguyen Ngan",
-      "is_anonymous": false,
-      "posted_display": "Trong 24h qua (Relay)",
-      "harvested_at": "2026-11-13 08:31:56 +07:00",
-      "permalink": "https://www.facebook.com/1596279272515654",
-      "text": "🤣Lời nói của cô giáo trọng lượng đến nhường nào .con về làm đến bài con mèo 🤭\nNhất quyết con k chịu làm bài con ong 🤣",
       "clean_comments": [],
       "clean_comments_count": 0,
       "filtered_comments_count": 0,
@@ -78865,34 +77108,6 @@ window.CDH_CLEAN_FORUM_DATA = {
       "harvested_at": "2026-11-13 08:31:56 +07:00",
       "permalink": "https://www.facebook.com/1596889492454632",
       "text": "Chựi khó, quả lịu 😅",
-      "clean_comments": [],
-      "clean_comments_count": 0,
-      "filtered_comments_count": 0,
-      "engagement_score": 0
-    },
-    {
-      "post_sig": "bba7d4cc6c0d85793badf364",
-      "group_slug": "cung_con_hoc_tieu_hoc_104118",
-      "group_name": "Cùng Con Học Tiểu Học ✅",
-      "group_url": "https://www.facebook.com/groups/1041187421358178/?sorting_setting=CHRONOLOGICAL",
-      "topic_id": "TAM_LY_GIA_DINH",
-      "topic_label": "Tâm Lý, Kỷ Luật & Góc Học Tập",
-      "tags": [
-        {
-          "slug": "tam-ly-cam-xuc",
-          "label": "#TâmLý & CảmXúc"
-        },
-        {
-          "slug": "ren-tap-trung-ky-luat",
-          "label": "#RènTậpTrung"
-        }
-      ],
-      "author": "Chúc Sâu",
-      "is_anonymous": false,
-      "posted_display": "Trong 24h qua",
-      "harvested_at": "2026-11-13 08:31:56 +07:00",
-      "permalink": "https://www.facebook.com/photo/?fbid=3003702753311771&set=gm.1596889492454632&idorvanity=1041187421358178",
-      "text": "Chựi khó, quả lịu",
       "clean_comments": [],
       "clean_comments_count": 0,
       "filtered_comments_count": 0,
@@ -79117,34 +77332,6 @@ window.CDH_CLEAN_FORUM_DATA = {
       "harvested_at": "2026-11-13 09:01:36 +07:00",
       "permalink": "https://www.facebook.com/photo/?fbid=122134087233472604&set=gm.1090039874012804&idorvanity=492085980474866",
       "text": "TƯỞNG DỄ MÀ ĐỌC XONG LẠI PHẢI NGHĨ!\nB",
-      "clean_comments": [],
-      "clean_comments_count": 0,
-      "filtered_comments_count": 0,
-      "engagement_score": 0
-    },
-    {
-      "post_sig": "3052cda044ce416bee53d798",
-      "group_slug": "chuan_bi_hanh_trang_cung_con_hoc_tieu_hoc",
-      "group_name": "Chuẩn Bị Hành Trang Cùng Con Học Tiểu Học ✅",
-      "group_url": "https://www.facebook.com/groups/cungconhoctieuhocnha/?sorting_setting=CHRONOLOGICAL",
-      "topic_id": "TAM_LY_GIA_DINH",
-      "topic_label": "Tâm Lý, Kỷ Luật & Góc Học Tập",
-      "tags": [
-        {
-          "slug": "tam-ly-cam-xuc",
-          "label": "#TâmLý & CảmXúc"
-        },
-        {
-          "slug": "ren-tap-trung-ky-luat",
-          "label": "#RènTậpTrung"
-        }
-      ],
-      "author": "Phương Linh Mai",
-      "is_anonymous": false,
-      "posted_display": "Trong 24h qua (Relay)",
-      "harvested_at": "2026-11-13 09:01:36 +07:00",
-      "permalink": "https://www.facebook.com/1089871577362967",
-      "text": "Góc học tập nhỏ của con gái 🥰",
       "clean_comments": [],
       "clean_comments_count": 0,
       "filtered_comments_count": 0,
@@ -80047,34 +78234,6 @@ window.CDH_CLEAN_FORUM_DATA = {
       "engagement_score": 0
     },
     {
-      "post_sig": "379dee6f15295f0ca084641d",
-      "group_slug": "hoc_tien_tieu_hoc_va_lop_1_cung_con",
-      "group_name": "Học Tiền Tiểu Học và Lớp 1 cùng con ✅",
-      "group_url": "https://www.facebook.com/groups/cunghoctientieuhoc/?sorting_setting=CHRONOLOGICAL",
-      "topic_id": "TIEN_TIEU_HOC_LOP_1",
-      "topic_label": "Tiền Tiểu Học & Vào Lớp 1",
-      "tags": [
-        {
-          "slug": "tien-tieu-hoc-2020-2021",
-          "label": "#HànhTrangLớp1"
-        },
-        {
-          "slug": "ren-tap-trung-ky-luat",
-          "label": "#RènTậpTrung"
-        }
-      ],
-      "author": "Thi Duyen Le",
-      "is_anonymous": false,
-      "posted_display": "Trong 24h qua",
-      "harvested_at": "2026-11-13 11:41:10 +07:00",
-      "permalink": "https://www.facebook.com/photo/?fbid=2998406913877824&set=gm.1491283629513585&idorvanity=923253696316584",
-      "text": "Em thật sự bất lực với bàn học của anh học sinh lớp 2 nhà e.",
-      "clean_comments": [],
-      "clean_comments_count": 0,
-      "filtered_comments_count": 0,
-      "engagement_score": 0
-    },
-    {
       "post_sig": "098fe93c8db062007ef05f9f",
       "group_slug": "hoi_cha_me_co_con_vao_lop_1",
       "group_name": "Hội Cha Mẹ Có Con Vào Lớp 1",
@@ -80471,34 +78630,6 @@ window.CDH_CLEAN_FORUM_DATA = {
       "engagement_score": 0
     },
     {
-      "post_sig": "0b41ec628c03441224160eba",
-      "group_slug": "lop_tien_tieu_hoc_465794",
-      "group_name": "Lớp Tiền Tiểu Học",
-      "group_url": "https://www.facebook.com/groups/465794174530791/?sorting_setting=CHRONOLOGICAL",
-      "topic_id": "TIEN_TIEU_HOC_LOP_1",
-      "topic_label": "Tiền Tiểu Học & Vào Lớp 1",
-      "tags": [
-        {
-          "slug": "he-quoc-te-song-bang",
-          "label": "#SongBằngCambridge"
-        },
-        {
-          "slug": "tien-tieu-hoc-2020-2021",
-          "label": "#HànhTrangLớp1"
-        }
-      ],
-      "author": "Phùng Hưng",
-      "is_anonymous": false,
-      "posted_display": "Trong 24h qua (Relay)",
-      "harvested_at": "2026-11-13 12:09:48 +07:00",
-      "permalink": "https://www.facebook.com/1809988790111316",
-      "text": "Bút chì GP-01 Thiên Long.\n✅E xả 110k/100 cái, không bán lẻ\nThầy cô, phụ huynh quan tâm ib e ạ",
-      "clean_comments": [],
-      "clean_comments_count": 0,
-      "filtered_comments_count": 0,
-      "engagement_score": 0
-    },
-    {
       "post_sig": "fa4ee223410bcaf2d18e6012",
       "group_slug": "lop_tien_tieu_hoc_465794",
       "group_name": "Lớp Tiền Tiểu Học",
@@ -80763,34 +78894,6 @@ window.CDH_CLEAN_FORUM_DATA = {
       "engagement_score": 0
     },
     {
-      "post_sig": "16cead48c8ddd9bd377c19be",
-      "group_slug": "hoi_me_homeschool_acellus_mobymax_ixl_epic",
-      "group_name": "HỘI MÊ HOMESCHOOL (Acellus, Mobymax, IXL, Epic..)",
-      "group_url": "https://www.facebook.com/groups/3618994294827191/?sorting_setting=CHRONOLOGICAL",
-      "topic_id": "NGOAI_NGU_HOMESCHOOL",
-      "topic_label": "Ngoại Ngữ, HSK & Homeschool",
-      "tags": [
-        {
-          "slug": "homeschool-tu-hoc",
-          "label": "#HomeschoolTựHọc"
-        },
-        {
-          "slug": "tieng-anh-tre-em",
-          "label": "#TiếngAnhTrẻEm"
-        }
-      ],
-      "author": "Ngô Tư Huyền",
-      "is_anonymous": false,
-      "posted_display": "Trong 24h qua (Relay)",
-      "harvested_at": "2026-11-13 12:11:48 +07:00",
-      "permalink": "https://www.facebook.com/28776739041959369",
-      "text": "Mọi người lan toả giúp con gái bằng 1 like + share + comment nhé ạ. 🥰🥰🥰",
-      "clean_comments": [],
-      "clean_comments_count": 0,
-      "filtered_comments_count": 0,
-      "engagement_score": 0
-    },
-    {
       "post_sig": "7638fa2c583607634255c9a3",
       "group_slug": "hoi_me_homeschool_acellus_mobymax_ixl_epic",
       "group_name": "HỘI MÊ HOMESCHOOL (Acellus, Mobymax, IXL, Epic..)",
@@ -80869,34 +78972,6 @@ window.CDH_CLEAN_FORUM_DATA = {
       "harvested_at": "2026-11-13 13:29:45 +07:00",
       "permalink": "https://www.facebook.com/4735918503397952",
       "text": "💁‍♀️Ap Úc mua 6 lon ( Số 1 or Số 2)\n\n🎁Tặng bé ngay ly giữ nhiệt cao cấp - nhanh tay mẹ ơi !!!",
-      "clean_comments": [],
-      "clean_comments_count": 0,
-      "filtered_comments_count": 0,
-      "engagement_score": 0
-    },
-    {
-      "post_sig": "144017486be8fa5d22581c6c",
-      "group_slug": "hoi_nhung_me_co_con_vao_lop_1",
-      "group_name": "HỘI NHỮNG MẸ CÓ CON VÀO LỚP 1 ✅",
-      "group_url": "https://www.facebook.com/groups/1813385365651295/?sorting_setting=CHRONOLOGICAL",
-      "topic_id": "TIEN_TIEU_HOC_LOP_1",
-      "topic_label": "Tiền Tiểu Học & Vào Lớp 1",
-      "tags": [
-        {
-          "slug": "tien-tieu-hoc-2020-2021",
-          "label": "#HànhTrangLớp1"
-        },
-        {
-          "slug": "he-quoc-te-song-bang",
-          "label": "#SongBằngCambridge"
-        }
-      ],
-      "author": "Vương Quốc Sữa",
-      "is_anonymous": false,
-      "posted_display": "Trong 24h qua",
-      "harvested_at": "2026-11-13 13:29:45 +07:00",
-      "permalink": "https://www.facebook.com/photo/?fbid=3136202799916353&set=gm.4735918503397952&idorvanity=1813385365651295",
-      "text": "Ap Úc mua 6 lon ( Số 1 or Số 2)\nTặng bé ngay ly giữ nhiệt cao cấp - nhanh tay mẹ ơi !!!",
       "clean_comments": [],
       "clean_comments_count": 0,
       "filtered_comments_count": 0,
@@ -81299,34 +79374,6 @@ window.CDH_CLEAN_FORUM_DATA = {
       "engagement_score": 0
     },
     {
-      "post_sig": "9303bc375469385a9dc20e1d",
-      "group_slug": "hoi_phu_huynh_co_con_hoc_thcs_thpt",
-      "group_name": "Hội Phụ huynh có con học THCS - THPT",
-      "group_url": "https://www.facebook.com/groups/1530122331367361/?sorting_setting=CHRONOLOGICAL",
-      "topic_id": "TAM_LY_GIA_DINH",
-      "topic_label": "Tâm Lý, Kỷ Luật & Góc Học Tập",
-      "tags": [
-        {
-          "slug": "chuyen-cap-lop-6",
-          "label": "#ChuyểnCấpLớp6"
-        },
-        {
-          "slug": "tam-ly-cam-xuc",
-          "label": "#TâmLý & CảmXúc"
-        }
-      ],
-      "author": "Làm bạn cùng tuổi teen",
-      "is_anonymous": false,
-      "posted_display": "Trong 24h qua (Relay)",
-      "harvested_at": "2026-11-13 13:34:07 +07:00",
-      "permalink": "https://www.facebook.com/1818869212492670",
-      "text": "Phụ âm nào mới đúng?🤔",
-      "clean_comments": [],
-      "clean_comments_count": 0,
-      "filtered_comments_count": 0,
-      "engagement_score": 0
-    },
-    {
       "post_sig": "0e623606d1d44afbc324688b",
       "group_slug": "hoi_phu_huynh_con_hoc_lop_1",
       "group_name": "Hội phụ huynh con học lớp 1",
@@ -81471,34 +79518,6 @@ window.CDH_CLEAN_FORUM_DATA = {
       "engagement_score": 0
     },
     {
-      "post_sig": "a023ddd257b9d6f62a6c7a10",
-      "group_slug": "con_hoc_me_cung_hoc",
-      "group_name": "CON HỌC MẸ CŨNG HỌC",
-      "group_url": "https://www.facebook.com/groups/351468770715853/?sorting_setting=CHRONOLOGICAL",
-      "topic_id": "TAM_LY_GIA_DINH",
-      "topic_label": "Tâm Lý, Kỷ Luật & Góc Học Tập",
-      "tags": [
-        {
-          "slug": "tam-ly-cam-xuc",
-          "label": "#TâmLý & CảmXúc"
-        },
-        {
-          "slug": "ren-tap-trung-ky-luat",
-          "label": "#RènTậpTrung"
-        }
-      ],
-      "author": "Kiều Ngọc Ánh",
-      "is_anonymous": false,
-      "posted_display": "Trong 24h qua",
-      "harvested_at": "2026-11-13 13:43:55 +07:00",
-      "permalink": "",
-      "text": "Gia đình đối với bạn quan trọng thế nào?\n#duet\n#family\n#viral",
-      "clean_comments": [],
-      "clean_comments_count": 0,
-      "filtered_comments_count": 0,
-      "engagement_score": 0
-    },
-    {
       "post_sig": "025d38aac06757b70eced2c2",
       "group_slug": "con_hoc_me_cung_hoc",
       "group_name": "CON HỌC MẸ CŨNG HỌC",
@@ -81521,34 +79540,6 @@ window.CDH_CLEAN_FORUM_DATA = {
       "harvested_at": "2026-11-13 13:43:55 +07:00",
       "permalink": "",
       "text": "Kể về cuộc sống xung quanh bạn nhé\n#duet\n#mylife\n#viral",
-      "clean_comments": [],
-      "clean_comments_count": 0,
-      "filtered_comments_count": 0,
-      "engagement_score": 0
-    },
-    {
-      "post_sig": "0abb2b5af19fd35805c3f8bb",
-      "group_slug": "con_hoc_me_cung_hoc",
-      "group_name": "CON HỌC MẸ CŨNG HỌC",
-      "group_url": "https://www.facebook.com/groups/351468770715853/?sorting_setting=CHRONOLOGICAL",
-      "topic_id": "TAM_LY_GIA_DINH",
-      "topic_label": "Tâm Lý, Kỷ Luật & Góc Học Tập",
-      "tags": [
-        {
-          "slug": "tam-ly-cam-xuc",
-          "label": "#TâmLý & CảmXúc"
-        },
-        {
-          "slug": "ren-tap-trung-ky-luat",
-          "label": "#RènTậpTrung"
-        }
-      ],
-      "author": "Thành viên nhóm",
-      "is_anonymous": false,
-      "posted_display": "Trong 24h qua (Relay)",
-      "harvested_at": "2026-11-13 13:43:55 +07:00",
-      "permalink": "https://www.facebook.com/UzpfSTEwMDAwNDA2NzA1NTM2NTo0NTYwOTc1ODA0MDQ3OTQzOjQ1NjA5NzU4MDQwNDc5NDM=",
-      "text": "Kể về cuộc sống xung quanh bạn nhé😍💖\n#duet\n#mylife\n#viral",
       "clean_comments": [],
       "clean_comments_count": 0,
       "filtered_comments_count": 0,
@@ -82179,34 +80170,6 @@ window.CDH_CLEAN_FORUM_DATA = {
       "engagement_score": 0
     },
     {
-      "post_sig": "c3a1a55c48222146e31c969c",
-      "group_slug": "hoi_phu_huynh_quan_thanh_xuan_ha_noi",
-      "group_name": "Hội Phụ Huynh Quận Thanh Xuân - Hà Nội",
-      "group_url": "https://www.facebook.com/groups/851043931328940/?sorting_setting=CHRONOLOGICAL",
-      "topic_id": "ON_THI_HOC_TAP",
-      "topic_label": "Phương Pháp Học & Ôn Thi",
-      "tags": [
-        {
-          "slug": "on-thi-kiem-tra",
-          "label": "#ÔnThiCuốiKỳ"
-        },
-        {
-          "slug": "chuyen-cap-lop-6",
-          "label": "#ChuyểnCấpLớp6"
-        }
-      ],
-      "author": "Thành viên nhóm",
-      "is_anonymous": false,
-      "posted_display": "Trong 24h qua (Relay)",
-      "harvested_at": "2026-11-13 13:51:09 +07:00",
-      "permalink": "https://www.facebook.com/UzpfSTYxNTU0NTY4NDQzNjc3OjEyMjI2ODkxODM2MjE1MjI4MToxMjIyNjg5MTgzNjIxNTIyODE=",
-      "text": "Đề thi Toán 9 Giữa kì 1\nTrường THCS Nguyễn Trường Tộ\nNăm học 2026-2027",
-      "clean_comments": [],
-      "clean_comments_count": 0,
-      "filtered_comments_count": 0,
-      "engagement_score": 0
-    },
-    {
       "post_sig": "c2b000fcbdea83c929946643",
       "group_slug": "hoi_phu_huynh_quan_thanh_xuan_ha_noi",
       "group_name": "Hội Phụ Huynh Quận Thanh Xuân - Hà Nội",
@@ -82819,42 +80782,6 @@ window.CDH_CLEAN_FORUM_DATA = {
       "engagement_score": 0
     },
     {
-      "post_sig": "ce6ef90d7eae4518f95e20b4",
-      "group_slug": "cung_con_hoc_lop_1_giaovi",
-      "group_name": "CÙNG CON HỌC LỚP 1",
-      "group_url": "https://www.facebook.com/groups/giaovienvietnameej/?sorting_setting=CHRONOLOGICAL",
-      "topic_id": "CHON_TRUONG_TUYEN_SINH",
-      "topic_label": "Chọn Trường & Tuyển Sinh",
-      "tags": [
-        {
-          "slug": "tien-tieu-hoc-2020-2021",
-          "label": "#HànhTrangLớp1"
-        },
-        {
-          "slug": "review-truong-tu-clc",
-          "label": "#TrườngTư & CLC"
-        },
-        {
-          "slug": "he-quoc-te-song-bang",
-          "label": "#SongBằngCambridge"
-        },
-        {
-          "slug": "sach-hay-hoc-lieu",
-          "label": "#SáchHay & HọcLiệu"
-        }
-      ],
-      "author": "Hoàng Điểm",
-      "is_anonymous": false,
-      "posted_display": "Trong 24h qua (Relay)",
-      "harvested_at": "2026-11-13 14:06:16 +07:00",
-      "permalink": "https://www.facebook.com/2074788713202916",
-      "text": "🔥🎊 50 Đề tự luyện Toán #Archimedes mới nhất lớp 1-5 đã về đủ, ba mẹ ib em đặt sách nhé.\nMỗi ngày 1 đề cho các con tự luyện các mẹ ơi",
-      "clean_comments": [],
-      "clean_comments_count": 0,
-      "filtered_comments_count": 0,
-      "engagement_score": 0
-    },
-    {
       "post_sig": "ad1e0b4043c36aa8eceb01b2",
       "group_slug": "cung_con_hoc_tieng_anh",
       "group_name": "Cùng con học Tiếng Anh",
@@ -83083,34 +81010,6 @@ window.CDH_CLEAN_FORUM_DATA = {
       "engagement_score": 0
     },
     {
-      "post_sig": "897151e42a9ff50b099f1a5d",
-      "group_slug": "cung_con_hoc_tieu_hoc_104118",
-      "group_name": "Cùng Con Học Tiểu Học ✅",
-      "group_url": "https://www.facebook.com/groups/1041187421358178/?sorting_setting=CHRONOLOGICAL",
-      "topic_id": "TAM_LY_GIA_DINH",
-      "topic_label": "Tâm Lý, Kỷ Luật & Góc Học Tập",
-      "tags": [
-        {
-          "slug": "tam-ly-cam-xuc",
-          "label": "#TâmLý & CảmXúc"
-        },
-        {
-          "slug": "ren-tap-trung-ky-luat",
-          "label": "#RènTậpTrung"
-        }
-      ],
-      "author": "Thu Ngọc Lâm",
-      "is_anonymous": false,
-      "posted_display": "Trong 24h qua (Relay)",
-      "harvested_at": "2026-11-13 14:08:32 +07:00",
-      "permalink": "https://www.facebook.com/1597011095775805",
-      "text": "￼ 🌸kêu làm bài là mẹ ơi con đau này đau kia, đau răng đau tay đau đầu , được cái gì cũng biết mà không cẩn thận. Có ai mách mình giúp bé tính cẩn thận không?",
-      "clean_comments": [],
-      "clean_comments_count": 0,
-      "filtered_comments_count": 0,
-      "engagement_score": 0
-    },
-    {
       "post_sig": "c2f001d26a9434af7c47a27c",
       "group_slug": "cung_con_hoc_tieu_hoc_104118",
       "group_name": "Cùng Con Học Tiểu Học ✅",
@@ -83161,34 +81060,6 @@ window.CDH_CLEAN_FORUM_DATA = {
       "harvested_at": "2026-11-13 14:08:32 +07:00",
       "permalink": "https://www.facebook.com/1597084662435115",
       "text": "Ai cứu e pha này ko chứ e là sắp tàu hoả nhập ma rồi ấy ạ 🥹\nPhát điên phát ngộ là có thật 😡",
-      "clean_comments": [],
-      "clean_comments_count": 0,
-      "filtered_comments_count": 0,
-      "engagement_score": 0
-    },
-    {
-      "post_sig": "9129739b6b8830962082a7e6",
-      "group_slug": "cung_con_hoc_tieu_hoc_104118",
-      "group_name": "Cùng Con Học Tiểu Học ✅",
-      "group_url": "https://www.facebook.com/groups/1041187421358178/?sorting_setting=CHRONOLOGICAL",
-      "topic_id": "TAM_LY_GIA_DINH",
-      "topic_label": "Tâm Lý, Kỷ Luật & Góc Học Tập",
-      "tags": [
-        {
-          "slug": "tam-ly-cam-xuc",
-          "label": "#TâmLý & CảmXúc"
-        },
-        {
-          "slug": "ren-tap-trung-ky-luat",
-          "label": "#RènTậpTrung"
-        }
-      ],
-      "author": "Thơm Đỗ",
-      "is_anonymous": false,
-      "posted_display": "Trong 24h qua",
-      "harvested_at": "2026-11-13 14:08:32 +07:00",
-      "permalink": "",
-      "text": "Ai cứu e pha này ko chứ e là sắp tàu hoả nhập ma rồi ấy ạ\nPhát điên phát ngộ là có thật",
       "clean_comments": [],
       "clean_comments_count": 0,
       "filtered_comments_count": 0,
@@ -83475,34 +81346,6 @@ window.CDH_CLEAN_FORUM_DATA = {
       "engagement_score": 0
     },
     {
-      "post_sig": "ed043f2d5ffc741e443ef898",
-      "group_slug": "dong_hanh_cung_con_tuoi_day_thi_va_day_thi_som",
-      "group_name": "ĐỒNG HÀNH CÙNG CON TUỔI DẬY THÌ VÀ DẬY THÌ SỚM",
-      "group_url": "https://www.facebook.com/groups/thulinh.hanhtrinhlamme/?sorting_setting=CHRONOLOGICAL",
-      "topic_id": "TAM_LY_GIA_DINH",
-      "topic_label": "Tâm Lý, Kỷ Luật & Góc Học Tập",
-      "tags": [
-        {
-          "slug": "tam-ly-cam-xuc",
-          "label": "#TâmLý & CảmXúc"
-        },
-        {
-          "slug": "ren-tap-trung-ky-luat",
-          "label": "#RènTậpTrung"
-        }
-      ],
-      "author": "Thành viên nhóm",
-      "is_anonymous": false,
-      "posted_display": "Trong 24h qua (Relay)",
-      "harvested_at": "2026-11-13 14:16:17 +07:00",
-      "permalink": "https://www.facebook.com/UzpfSTEwMDA0NDI4NjEzNjkzNzoxODM4NjQxODE0Mjg4NjcyOjE4Mzg2NDE4MTQyODg2NzI=",
-      "text": "Mẹ rút wifi sau 10h đêm nhưng mẹ đâu có nghĩ tới cảnh này 🥲\n\nCredit: imquanhh\n#Beatvn",
-      "clean_comments": [],
-      "clean_comments_count": 0,
-      "filtered_comments_count": 0,
-      "engagement_score": 0
-    },
-    {
       "post_sig": "b81cd0cd564405d3b3d57c23",
       "group_slug": "dong_hanh_cung_con_tuoi_day_thi_va_day_thi_som",
       "group_name": "ĐỒNG HÀNH CÙNG CON TUỔI DẬY THÌ VÀ DẬY THÌ SỚM",
@@ -83665,34 +81508,6 @@ window.CDH_CLEAN_FORUM_DATA = {
       "harvested_at": "2026-11-13 14:23:10 +07:00",
       "permalink": "https://www.facebook.com/photo/?fbid=1218898307501450&set=pcb.1908830750481284",
       "text": "X.Ả KHO TRANG TRÍ LỚP 20/11\nNhiều mẫu xinh, có sẵn cho thầy cô lựa chọn ạ\nZalllllo: 0943..444..273",
-      "clean_comments": [],
-      "clean_comments_count": 0,
-      "filtered_comments_count": 0,
-      "engagement_score": 0
-    },
-    {
-      "post_sig": "f9105fb1b8655ef241535676",
-      "group_slug": "dong_hanh_cung_hs_cap_1",
-      "group_name": "Đồng Hành Cùng HS Cấp 1✅",
-      "group_url": "https://www.facebook.com/groups/391603278870713/?sorting_setting=CHRONOLOGICAL",
-      "topic_id": "CHUYEN_TRUONG_LOP_20_11",
-      "topic_label": "Chuyện Trường Lớp & 20/11",
-      "tags": [
-        {
-          "slug": "chuyen-20-11-quy-lop",
-          "label": "#QuỹLớp & 20/11"
-        },
-        {
-          "slug": "giao-vien-goc-nhin",
-          "label": "#GócNhìnGiáoViên"
-        }
-      ],
-      "author": "Tue Anh",
-      "is_anonymous": false,
-      "posted_display": "Trong 24h qua (Relay)",
-      "harvested_at": "2026-11-13 14:23:10 +07:00",
-      "permalink": "https://www.facebook.com/1908830750481284",
-      "text": "🌸 X.Ả KHO TRANG TRÍ LỚP 20/11 🌸\n\nNhiều mẫu xinh, có sẵn cho thầy cô lựa chọn ạ ❤️\n\n📲 Zalllllo: 0943..444..273",
       "clean_comments": [],
       "clean_comments_count": 0,
       "filtered_comments_count": 0,
@@ -83953,34 +81768,6 @@ window.CDH_CLEAN_FORUM_DATA = {
       "harvested_at": "2026-11-13 14:29:42 +07:00",
       "permalink": "https://www.facebook.com/1460684606009574",
       "text": "☺️Ngày nào cũng tăng ca đến 10g 30 thế này mà ko đc trả lương các bác ạ.\n💚Tiện thể mẹ nào đang cần tư vấn bút mực cho con thì ib ngay cho em nhé!",
-      "clean_comments": [],
-      "clean_comments_count": 0,
-      "filtered_comments_count": 0,
-      "engagement_score": 0
-    },
-    {
-      "post_sig": "bcd08ee8395dae76f465c7e0",
-      "group_slug": "hoi_cha_me_co_con_vao_lop_1",
-      "group_name": "Hội Cha Mẹ Có Con Vào Lớp 1",
-      "group_url": "https://www.facebook.com/groups/152616010149780/?sorting_setting=CHRONOLOGICAL",
-      "topic_id": "TIEN_TIEU_HOC_LOP_1",
-      "topic_label": "Tiền Tiểu Học & Vào Lớp 1",
-      "tags": [
-        {
-          "slug": "tien-tieu-hoc-2020-2021",
-          "label": "#HànhTrangLớp1"
-        },
-        {
-          "slug": "danh-van-tap-doc",
-          "label": "#ĐánhVầnTậpĐọc"
-        }
-      ],
-      "author": "Maria Anh",
-      "is_anonymous": false,
-      "posted_display": "Trong 24h qua (Relay)",
-      "harvested_at": "2026-11-13 14:29:42 +07:00",
-      "permalink": "https://www.facebook.com/1460722519339116",
-      "text": "Các em bé 2021 chuẩn bị hành trang đến đâu rồi🥳\n#Hanhtrangnho\n#Kĩnăngchuẩnbịvàolớp1cô Anh\n#dayconhoc",
       "clean_comments": [],
       "clean_comments_count": 0,
       "filtered_comments_count": 0,
