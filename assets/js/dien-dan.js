@@ -5,7 +5,6 @@
   const BODY_TRUNCATE_LIMIT = 400;
   const INITIAL_VISIBLE_COMMENTS = 3;
   const VISIBLE_TAG_LIMIT = 4;
-  const SAVED_STORAGE_KEY = "cdh_clean_forum_saved_v1";
   const THEME_STORAGE_KEY = "cdh_clean_forum_theme_v1";
 
   const SHORT_TOPIC_LABELS = {
@@ -67,6 +66,81 @@
     "member",
   ]);
 
+  // Danh mục từ khóa K-12 (sắp xếp ưu tiên cụm dài trước để tránh khớp lồng)
+  const INLINE_FILTER_KEYWORDS = [
+    "Nguyễn Tất Thành",
+    "Lương Thế Vinh",
+    "tiền tiểu học",
+    "Trần Đại Nghĩa",
+    "Khương Thượng",
+    "Đoàn Thị Điểm",
+    "Nam Từ Liêm",
+    "Bắc Từ Liêm",
+    "Hai Bà Trưng",
+    "Marie Curie",
+    "Lômônôxốp",
+    "Nguyễn Siêu",
+    "Nguyễn Tuân",
+    "Archimedes",
+    "homeschool",
+    "vào lớp 1",
+    "đúng tuyến",
+    "trái tuyến",
+    "chuyển cấp",
+    "trường công",
+    "Wellspring",
+    "trường tư",
+    "Vinschool",
+    "Hoàn Kiếm",
+    "Thanh Xuân",
+    "Hoàng Mai",
+    "Long Biên",
+    "Nghĩa Tân",
+    "luyện chữ",
+    "Cambridge",
+    "đánh vần",
+    "Ngôi Sao",
+    "Cầu Giấy",
+    "Phenikaa",
+    "Acellus",
+    "Razkids",
+    "học phí",
+    "quỹ lớp",
+    "bán trú",
+    "Olympia",
+    "Gia Lâm",
+    "Đống Đa",
+    "Hà Đông",
+    "Ba Đình",
+    "Hà Nội",
+    "Tây Hồ",
+    "Newton",
+    "Sentia",
+    "IELTS",
+    "20/11",
+    "Alpha",
+    "lớp 1",
+    "lớp 2",
+    "lớp 3",
+    "lớp 4",
+    "lớp 5",
+    "lớp 6",
+    "TIMO",
+    "IKMC",
+    "ASMO",
+    "HSK",
+    "FPT",
+  ];
+
+  const INLINE_KW_REGEX = new RegExp(
+    "(?<![\\p{L}\\p{N}])(" +
+      INLINE_FILTER_KEYWORDS.map(function (kw) {
+        return kw.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+      }).join("|") +
+      ")(?![\\p{L}\\p{N}])",
+    "giu"
+  );
+
   const state = {
     data: null,
     topicId: "ALL",
@@ -74,12 +148,11 @@
     tagSlug: "ALL",
     sortBy: "hot",
     search: "",
-    savedOnly: false,
     showAllTags: false,
     visibleCount: PAGE_SIZE,
-    savedSigs: loadSavedSet(),
     expandedPosts: new Set(),
     expandedComments: new Set(),
+    filterHistory: [],
   };
 
   const els = {
@@ -92,8 +165,6 @@
     loadMoreBtn: document.getElementById("loadMoreBtn"),
     activeFilterChips: document.getElementById("activeFilterChips"),
     clearFiltersBtn: document.getElementById("clearFiltersBtn"),
-    savedCountBadge: document.getElementById("savedCountBadge"),
-    savedFilterBtn: document.getElementById("savedFilterBtn"),
     themeToggleBtn: document.getElementById("themeToggleBtn"),
     sidebarTotalClean: document.getElementById("sidebarTotalClean"),
     mobileFilterBtn: document.getElementById("mobileFilterBtn"),
@@ -102,24 +173,6 @@
     drawerBackdrop: document.getElementById("drawerBackdrop"),
     toastMsg: document.getElementById("toastMsg"),
   };
-
-  function loadSavedSet() {
-    try {
-      const raw = localStorage.getItem(SAVED_STORAGE_KEY);
-      const arr = raw ? JSON.parse(raw) : [];
-      return new Set(Array.isArray(arr) ? arr : []);
-    } catch (_err) {
-      return new Set();
-    }
-  }
-
-  function persistSavedSet() {
-    try {
-      localStorage.setItem(SAVED_STORAGE_KEY, JSON.stringify(Array.from(state.savedSigs)));
-    } catch (_err) {
-      // Ignore storage quota errors
-    }
-  }
 
   function applyStoredTheme() {
     let saved = "light";
@@ -194,19 +247,92 @@
     return highlightHtmlTextNodes(escapeHtml(text), query);
   }
 
-  function renderMarkdownInline(text, query) {
-    let html = escapeHtml(text);
+  function decorateInlineKeywords(htmlStr, kwCtx) {
+    if (!kwCtx || !kwCtx.matchedSet || kwCtx.matchedSet.size >= kwCtx.maxCount) {
+      return htmlStr;
+    }
+    const parts = htmlStr.split(/(<[^>]+>|\u0000MDLINK_\d+\u0000)/g);
+    let insideTagDepth = 0;
+    for (let i = 0; i < parts.length; i++) {
+      const seg = parts[i];
+      if (!seg) continue;
+      if (i % 2 === 1) {
+        if (/^<(a|button)\b/i.test(seg)) insideTagDepth += 1;
+        else if (/^<\/(a|button)>/i.test(seg) && insideTagDepth > 0) insideTagDepth -= 1;
+        continue;
+      }
+      if (insideTagDepth > 0 || kwCtx.matchedSet.size >= kwCtx.maxCount) continue;
 
-    // Markdown links [label](https://...)
-    html = html.replace(/\[([^\]\n]+)\]\((https?:\/\/[^\s)]+)\)/g, function (_m, label, url) {
-      return (
-        '<a href="' +
-        url +
-        '" target="_blank" rel="noopener noreferrer" class="post-md-link">' +
-        label +
-        "</a>"
-      );
+      parts[i] = seg.replace(INLINE_KW_REGEX, function (matchedText) {
+        const canonical = matchedText.trim();
+        const key = canonical.toLowerCase();
+        if (kwCtx.matchedSet.has(key) || kwCtx.matchedSet.size >= kwCtx.maxCount) {
+          return matchedText;
+        }
+        kwCtx.matchedSet.add(key);
+        const safeVal = escapeHtml(canonical);
+        return (
+          '<button type="button" class="inline-kw-btn" data-kw-filter="' +
+          safeVal +
+          '" title="Bấm để lọc các bài viết về ' +
+          safeVal +
+          '">' +
+          matchedText +
+          "</button>"
+        );
+      });
+    }
+    return parts.join("");
+  }
+
+  function buildLinkAnchor(rawUrl, rawLabel) {
+    let cleanUrl = String(rawUrl || "").trim();
+    if (!cleanUrl) return escapeHtml(rawLabel || rawUrl || "");
+    if (/^www\./i.test(cleanUrl)) {
+      cleanUrl = "https://" + cleanUrl;
+    }
+    if (!/^https?:\/\//i.test(cleanUrl)) {
+      return escapeHtml(rawLabel || rawUrl || "");
+    }
+    const labelText = rawLabel || rawUrl;
+    return (
+      '<a href="' +
+      escapeHtml(cleanUrl) +
+      '" target="_blank" rel="noopener noreferrer" class="post-md-link">' +
+      escapeHtml(labelText) +
+      "</a>"
+    );
+  }
+
+  function renderMarkdownInline(text, query, kwCtx) {
+    const placeholders = [];
+    function stashLink(anchorHtml) {
+      const token = "\u0000MDLINK_" + placeholders.length + "\u0000";
+      placeholders.push(anchorHtml);
+      return token;
+    }
+
+    let src = String(text || "");
+    // 1. Bảo vệ & tách Markdown links [label](url) (hỗ trợ cả https://, www. và link bị lặp ](url) do scraper cũ)
+    src = src.replace(/\[([^\]\n]+)\]\(((?:https?:\/\/|www\.)[^\s)\]]+)\)(?:\]\((?:https?:\/\/|www\.)[^\s)\]]+\))*/gi, function (_m, label, url) {
+      const cleanLabel = /^(?:https?:\/\/|www\.)/i.test(label.trim()) ? url : label.trim();
+      return stashLink(buildLinkAnchor(url, cleanLabel));
     });
+
+    // 2. Tự động bắt link website trần (https://..., http://..., www....)
+    src = src.replace(/(^|[\s(])((?:https?:\/\/|www\.)[^\s<>"'\u0000\])]+)/gi, function (_m, lead, rawUrl) {
+      let url = rawUrl;
+      let trailing = "";
+      const trailMatch = url.match(/([.,;!?]+)$/);
+      if (trailMatch) {
+        trailing = trailMatch[1];
+        url = url.slice(0, -trailing.length);
+      }
+      if (!url || url.length < 7) return _m;
+      return lead + stashLink(buildLinkAnchor(url, url)) + trailing;
+    });
+
+    let html = escapeHtml(src);
 
     // Bold **...** and __...__ (tolerates inner padding spaces from pasted FB/Word posts)
     html = html.replace(/\*\*\s*([^*\n]+?)\s*\*\*/g, "<strong>$1</strong>");
@@ -218,20 +344,33 @@
     // Strip any dangling/unclosed "**" (common in truncated previews or malformed headings)
     html = html.replace(/\*\*/g, "");
 
+    // Gắn từ khóa lọc nhanh trực tiếp trong văn bản bài viết (trước khi khôi phục thẻ <a>)
+    if (kwCtx) {
+      html = decorateInlineKeywords(html, kwCtx);
+    }
+
+    // Khôi phục toàn bộ link đã tách
+    html = html.replace(/\u0000MDLINK_(\d+)\u0000/g, function (_m, idxStr) {
+      return placeholders[Number(idxStr)] || "";
+    });
+
     return highlightHtmlTextNodes(html, query);
   }
 
-  function renderMarkdownBlock(text, query) {
+  function renderMarkdownBlock(text, query, enableInlineKeywords) {
     const normalized = String(text || "").replace(/\r\n/g, "\n");
     const lines = normalized.split("\n");
     const out = [];
     let paraBuffer = [];
+    const kwCtx = enableInlineKeywords
+      ? { matchedSet: new Set(), maxCount: 5 }
+      : null;
 
     function flushPara() {
       if (paraBuffer.length === 0) return;
       const joined = paraBuffer
         .map(function (ln) {
-          return renderMarkdownInline(ln, query);
+          return renderMarkdownInline(ln, query, kwCtx);
         })
         .join("<br>");
       out.push('<p class="post-md-p">' + joined + "</p>");
@@ -265,7 +404,7 @@
       if (hMatch) {
         flushPara();
         const headingText = hMatch[2].replace(/^\*\*\s*|\s*\*\*$/g, "").trim();
-        out.push('<h3 class="post-md-heading">' + renderMarkdownInline(headingText, query) + "</h3>");
+        out.push('<h3 class="post-md-heading">' + renderMarkdownInline(headingText, query, null) + "</h3>");
         continue;
       }
 
@@ -274,7 +413,7 @@
       if (qMatch) {
         flushPara();
         out.push(
-          '<blockquote class="post-md-quote">' + renderMarkdownInline(qMatch[1], query) + "</blockquote>"
+          '<blockquote class="post-md-quote">' + renderMarkdownInline(qMatch[1], query, kwCtx) + "</blockquote>"
         );
         continue;
       }
@@ -285,7 +424,7 @@
         flushPara();
         out.push(
           '<div class="post-md-li"><span class="post-md-bullet" aria-hidden="true">•</span><span>' +
-            renderMarkdownInline(ulMatch[1], query) +
+            renderMarkdownInline(ulMatch[1], query, kwCtx) +
             "</span></div>"
         );
         continue;
@@ -299,7 +438,7 @@
           '<div class="post-md-li"><span class="post-md-num">' +
             escapeHtml(olMatch[1]) +
             ".</span><span>" +
-            renderMarkdownInline(olMatch[2], query) +
+            renderMarkdownInline(olMatch[2], query, kwCtx) +
             "</span></div>"
         );
         continue;
@@ -319,11 +458,24 @@
   function formatPostDate(raw) {
     const s = String(raw || "").trim();
     if (!s) return "";
-    const m = s.match(/^(\d{4})-(\d{2})-(\d{2})/);
-    if (m) {
-      return m[3] + "/" + m[2] + "/" + m[1];
+    const low = s.toLowerCase();
+    if (
+      low.includes("có thể là hình ảnh") ||
+      low.includes("may be an image") ||
+      low.includes("trong 24h") ||
+      low.includes("(relay)")
+    ) {
+      return "";
     }
-    return s;
+    const mIso = s.match(/^(\d{4})-(\d{2})-(\d{2})/);
+    if (mIso) {
+      return mIso[3] + "/" + mIso[2] + "/" + mIso[1];
+    }
+    const mVn = s.match(/^(\d{1,2})\/(\d{1,2})\/(\d{4})$/);
+    if (mVn) {
+      return mVn[1].padStart(2, "0") + "/" + mVn[2].padStart(2, "0") + "/" + mVn[3];
+    }
+    return "";
   }
 
   function getInitials(name) {
@@ -396,8 +548,6 @@
     return state.data.posts.filter(function (post) {
       if (state.topicId !== "ALL" && post.topic_id !== state.topicId) return false;
       if (state.groupSlug !== "ALL" && post.group_slug !== state.groupSlug) return false;
-      if (state.savedOnly && !state.savedSigs.has(post.post_sig)) return false;
-      if (state.sortBy === "with_comments" && post.clean_comments_count === 0) return false;
       if (q) {
         const hay = [
           post.text,
@@ -456,7 +606,7 @@
           });
 
     const sorted = list.slice();
-    if (state.sortBy === "comments" || state.sortBy === "with_comments") {
+    if (state.sortBy === "comments") {
       sorted.sort(function (a, b) {
         return (
           b.clean_comments_count - a.clean_comments_count ||
@@ -480,9 +630,6 @@
 
   function renderTelemetry() {
     const s = state.data.summary || {};
-    if (els.savedCountBadge) {
-      els.savedCountBadge.textContent = String(state.savedSigs.size);
-    }
     if (els.sidebarTotalClean) {
       els.sidebarTotalClean.textContent = String(s.clean_posts_count || 0);
     }
@@ -579,6 +726,11 @@
 
   function renderFilterStatus(totalMatched) {
     const chips = [];
+    if (state.filterHistory.length > 0) {
+      chips.push(
+        '<button type="button" class="back-filter-btn" id="backFilterBtn" data-back-filter="1" title="Quay lại bộ lọc trước">← Quay lại</button>'
+      );
+    }
     const topicTitle = getTopicLabel(
       state.topicId,
       ((state.data.topics || []).find(function (t) {
@@ -621,29 +773,18 @@
           '"<button type="button" class="filter-chip-close" data-remove-filter="search" aria-label="Xóa từ khóa">×</button></span>'
       );
     }
-    if (state.savedOnly) {
-      chips.push(
-        '<span class="filter-chip">🔖 Đã lưu' +
-          '<button type="button" class="filter-chip-close" data-remove-filter="saved" aria-label="Bỏ lọc đã lưu">×</button></span>'
-      );
-    }
 
     els.activeFilterChips.innerHTML = chips.join("");
     const hasSecondaryFilter =
       state.topicId !== "ALL" ||
       state.groupSlug !== "ALL" ||
       state.tagSlug !== "ALL" ||
-      Boolean(state.search.trim()) ||
-      state.savedOnly;
+      Boolean(state.search.trim());
     els.clearFiltersBtn.hidden = !hasSecondaryFilter;
 
     if (els.sortSelect && els.sortSelect.value !== state.sortBy) {
       els.sortSelect.value = state.sortBy;
     }
-
-    els.savedFilterBtn.classList.toggle("btn-active", state.savedOnly);
-    els.savedFilterBtn.setAttribute("aria-pressed", String(state.savedOnly));
-    els.savedCountBadge.textContent = String(state.savedSigs.size);
   }
 
   function renderCommentHtml(cmt, query, idx) {
@@ -682,7 +823,6 @@
         ? post.text.slice(0, BODY_TRUNCATE_LIMIT).trimEnd() + "…"
         : post.text;
 
-    const isSaved = state.savedSigs.has(post.post_sig);
     const hideAuthor = isGenericAuthor(post.author);
     const avClass = getAvatarClass(post.author + post.group_slug);
     const postAnimal = getAnimalAvatar(post.post_sig || post.text, 0);
@@ -753,16 +893,10 @@
         (dateLabel ? '<span class="post-time">• ' + escapeHtml(dateLabel) + "</span>" : "") +
         "</div></div></div></div>";
 
-    const bookmarkSvg =
-      '<svg width="15" height="15" viewBox="0 0 24 24" fill="' +
-      (isSaved ? "currentColor" : "none") +
-      '" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z"></path></svg>';
-    const copySvg =
-      '<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg>';
     const extSvg =
-      '<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" x2="21" y1="14" y2="3"></line></svg>';
+      '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" x2="21" y1="14" y2="3"></line></svg>';
     const cmtSvg =
-      '<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"></path></svg>';
+      '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"></path></svg>';
 
     return (
       '<article class="post-card" data-post-sig="' +
@@ -770,15 +904,8 @@
       '">' +
       headerHtml +
       '<div class="post-body">' +
-      renderMarkdownBlock(displayBody, q) +
+      renderMarkdownBlock(displayBody, q, true) +
       "</div>" +
-      (needsTruncate
-        ? '<button type="button" class="expand-body-btn" data-expand-post="' +
-          escapeHtml(post.post_sig) +
-          '">' +
-          (isBodyExpanded ? "Thu gọn" : "Xem toàn văn") +
-          "</button>"
-        : "") +
       '<div class="topic-pill-row">' +
       '<span class="topic-tag">' +
       escapeHtml(topicLabel) +
@@ -801,26 +928,19 @@
       "</div>" +
       '<div class="post-actions-bar">' +
       '<div class="post-action-btns">' +
-      '<button type="button" class="card-action-btn' +
-      (isSaved ? " is-saved" : "") +
-      '" data-save-post="' +
-      escapeHtml(post.post_sig) +
-      '">' +
-      bookmarkSvg +
-      "<span>" +
-      (isSaved ? "Đã lưu" : "Lưu bài") +
-      "</span></button>" +
-      '<button type="button" class="card-action-btn" data-copy-post="' +
-      escapeHtml(post.post_sig) +
-      '">' +
-      copySvg +
-      "<span>Chép trích dẫn</span></button>" +
+      (needsTruncate
+        ? '<button type="button" class="card-action-btn is-expand-btn" data-expand-post="' +
+          escapeHtml(post.post_sig) +
+          '"><span>' +
+          (isBodyExpanded ? "Thu gọn" : "Xem thêm") +
+          "</span></button>"
+        : "") +
       (post.permalink
         ? '<a class="card-action-btn" href="' +
           escapeHtml(post.permalink) +
           '" target="_blank" rel="noopener noreferrer">' +
           extSvg +
-          "<span>Nguồn FB</span></a>"
+          "<span>Nguồn bài gốc</span></a>"
         : "") +
       "</div>" +
       '<span class="post-cmt-summary num">' +
@@ -863,7 +983,81 @@
     }
   }
 
+  function pushFilterState() {
+    const snapshot = {
+      topicId: state.topicId,
+      groupSlug: state.groupSlug,
+      tagSlug: state.tagSlug,
+      sortBy: state.sortBy,
+      search: state.search,
+      scrollY: window.scrollY || 0,
+    };
+    const last = state.filterHistory[state.filterHistory.length - 1];
+    if (
+      last &&
+      last.topicId === snapshot.topicId &&
+      last.groupSlug === snapshot.groupSlug &&
+      last.tagSlug === snapshot.tagSlug &&
+      last.sortBy === snapshot.sortBy &&
+      last.search === snapshot.search
+    ) {
+      return;
+    }
+    state.filterHistory.push(snapshot);
+    if (state.filterHistory.length > 20) {
+      state.filterHistory.shift();
+    }
+    try {
+      window.history.pushState({ cdhFilter: true }, "");
+    } catch (_err) {
+      // Ignore history errors on file://
+    }
+  }
+
+  function popFilterState(fromPopState) {
+    if (state.filterHistory.length === 0) return;
+    if (!fromPopState && window.history.state && window.history.state.cdhFilter) {
+      try {
+        window.history.back();
+        return;
+      } catch (_err) {
+        // Fallback to direct pop
+      }
+    }
+    const prev = state.filterHistory.pop();
+    state.topicId = prev.topicId || "ALL";
+    state.groupSlug = prev.groupSlug || "ALL";
+    state.tagSlug = prev.tagSlug || "ALL";
+    state.sortBy = prev.sortBy || "hot";
+    state.search = prev.search || "";
+    state.visibleCount = PAGE_SIZE;
+    if (els.searchInput) els.searchInput.value = state.search;
+    if (els.sortSelect) els.sortSelect.value = state.sortBy;
+    renderSidebarTopics();
+    renderQuickTagsBar();
+    renderFeed();
+    if (typeof prev.scrollY === "number") {
+      window.scrollTo({ top: prev.scrollY, behavior: "auto" });
+    }
+  }
+
+  function selectKeywordFilter(kw) {
+    const cleanKw = String(kw || "").trim();
+    if (!cleanKw) return;
+    if (state.search.trim().toLowerCase() === cleanKw.toLowerCase()) {
+      return;
+    }
+    pushFilterState();
+    state.search = cleanKw;
+    state.visibleCount = PAGE_SIZE;
+    if (els.searchInput) els.searchInput.value = cleanKw;
+    renderQuickTagsBar();
+    renderFeed();
+    window.scrollTo({ top: 0, behavior: "auto" });
+  }
+
   function selectTagFilter(slug) {
+    pushFilterState();
     if (!slug || slug === "ALL" || state.tagSlug === slug) {
       state.tagSlug = "ALL";
     } else {
@@ -875,6 +1069,7 @@
   }
 
   function selectGroupFilter(slug) {
+    pushFilterState();
     if (!slug || slug === "ALL" || state.groupSlug === slug) {
       state.groupSlug = "ALL";
     } else {
@@ -886,11 +1081,18 @@
   }
 
   function clearAllFilters() {
+    if (
+      state.topicId !== "ALL" ||
+      state.groupSlug !== "ALL" ||
+      state.tagSlug !== "ALL" ||
+      state.search.trim()
+    ) {
+      pushFilterState();
+    }
     state.topicId = "ALL";
     state.groupSlug = "ALL";
     state.tagSlug = "ALL";
     state.search = "";
-    state.savedOnly = false;
     state.showAllTags = false;
     state.visibleCount = PAGE_SIZE;
     if (els.searchInput) els.searchInput.value = "";
@@ -905,7 +1107,11 @@
       els.searchInput.addEventListener("input", function () {
         if (searchTimer) clearTimeout(searchTimer);
         searchTimer = setTimeout(function () {
-          state.search = els.searchInput.value;
+          const nextVal = els.searchInput.value;
+          if (nextVal !== state.search && state.filterHistory.length === 0 && (state.search.trim() || nextVal.trim())) {
+            pushFilterState();
+          }
+          state.search = nextVal;
           state.visibleCount = PAGE_SIZE;
           renderQuickTagsBar();
           renderFeed();
@@ -917,7 +1123,11 @@
       els.topicNavList.addEventListener("click", function (ev) {
         const btn = ev.target.closest("[data-topic-id]");
         if (!btn) return;
-        state.topicId = btn.getAttribute("data-topic-id") || "ALL";
+        const nextTopic = btn.getAttribute("data-topic-id") || "ALL";
+        if (nextTopic !== state.topicId) {
+          pushFilterState();
+        }
+        state.topicId = nextTopic;
         state.showAllTags = false;
         state.visibleCount = PAGE_SIZE;
         if (state.tagSlug !== "ALL") {
@@ -949,12 +1159,17 @@
 
     if (els.activeFilterChips) {
       els.activeFilterChips.addEventListener("click", function (ev) {
+        const backBtn = ev.target.closest("[data-back-filter]");
+        if (backBtn) {
+          popFilterState(false);
+          return;
+        }
         const rmBtn = ev.target.closest("[data-remove-filter]");
         if (!rmBtn) return;
+        pushFilterState();
         const kind = rmBtn.getAttribute("data-remove-filter");
         if (kind === "group") state.groupSlug = "ALL";
         else if (kind === "tag") state.tagSlug = "ALL";
-        else if (kind === "saved") state.savedOnly = false;
         else if (kind === "search") {
           state.search = "";
           if (els.searchInput) els.searchInput.value = "";
@@ -967,6 +1182,7 @@
 
     if (els.sortSelect) {
       els.sortSelect.addEventListener("change", function () {
+        pushFilterState();
         state.sortBy = els.sortSelect.value || "hot";
         state.visibleCount = PAGE_SIZE;
         renderFeed();
@@ -974,6 +1190,12 @@
     }
 
     els.postList.addEventListener("click", function (ev) {
+      const kwBtn = ev.target.closest("[data-kw-filter]");
+      if (kwBtn) {
+        selectKeywordFilter(kwBtn.getAttribute("data-kw-filter") || "");
+        return;
+      }
+
       const groupBtn = ev.target.closest("[data-group-slug]");
       if (groupBtn) {
         selectGroupFilter(groupBtn.getAttribute("data-group-slug") || "ALL");
@@ -1003,52 +1225,12 @@
         const sig = expandCmtBtn.getAttribute("data-expand-comments");
         state.expandedComments.add(sig);
         renderFeed();
-        return;
       }
+    });
 
-      const saveBtn = ev.target.closest("[data-save-post]");
-      if (saveBtn) {
-        const sig = saveBtn.getAttribute("data-save-post");
-        if (state.savedSigs.has(sig)) {
-          state.savedSigs.delete(sig);
-          showToast("Đã bỏ lưu bài viết");
-        } else {
-          state.savedSigs.add(sig);
-          showToast("Đã lưu bài viết vào danh sách đọc");
-        }
-        persistSavedSet();
-        renderFeed();
-        return;
-      }
-
-      const copyBtn = ev.target.closest("[data-copy-post]");
-      if (copyBtn) {
-        const sig = copyBtn.getAttribute("data-copy-post");
-        const post = (state.data.posts || []).find(function (p) {
-          return p.post_sig === sig;
-        });
-        if (post) {
-          const authorPrefix = isGenericAuthor(post.author) ? "" : " — " + post.author;
-          const quote =
-            "[" +
-            post.group_name +
-            authorPrefix +
-            "]\n" +
-            post.text +
-            (post.permalink ? "\nNguồn: " + post.permalink : "");
-          if (navigator.clipboard && navigator.clipboard.writeText) {
-            navigator.clipboard.writeText(quote).then(
-              function () {
-                showToast("Đã sao chép trích dẫn bài viết");
-              },
-              function () {
-                showToast("Không truy cập được clipboard trình duyệt");
-              }
-            );
-          } else {
-            showToast("Trình duyệt không hỗ trợ sao chép nhanh");
-          }
-        }
+    window.addEventListener("popstate", function () {
+      if (state.filterHistory.length > 0) {
+        popFilterState(true);
       }
     });
 
@@ -1058,12 +1240,6 @@
     });
 
     els.clearFiltersBtn.addEventListener("click", clearAllFilters);
-
-    els.savedFilterBtn.addEventListener("click", function () {
-      state.savedOnly = !state.savedOnly;
-      state.visibleCount = PAGE_SIZE;
-      renderFeed();
-    });
 
     els.themeToggleBtn.addEventListener("click", toggleTheme);
     els.mobileFilterBtn.addEventListener("click", openMobileSidebar);
