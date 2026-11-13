@@ -82,9 +82,9 @@
 
   <div class="app-shell">
     <!-- Left Navigation Sidebar -->
-    <aside class="sidebar-left" id="leftSidebar" aria-label="Danh mục chủ đề và thẻ">
+    <aside class="sidebar-left" id="leftSidebar" aria-label="Danh mục chủ đề">
       <div class="sidebar-mobile-head">
-        <strong>Danh mục lọc bài</strong>
+        <strong>Chủ Đề Thảo Luận</strong>
         <button type="button" class="btn btn-icon" id="closeSidebarBtn" aria-label="Đóng danh mục">✕</button>
       </div>
 
@@ -97,14 +97,6 @@
           <ul class="nav-list" id="topicNavList"></ul>
         </nav>
       </section>
-
-      <section class="sidebar-card" aria-labelledby="tagsHeading">
-        <h2 class="sidebar-heading" id="tagsHeading">
-          <span>Thẻ Chuyên Môn (#Tag)</span>
-          <span class="num" id="sidebarTagTotal">0</span>
-        </h2>
-        <div class="sidebar-tag-cloud" id="sidebarTagList" role="group" aria-label="Lọc theo thẻ chuyên môn"></div>
-      </section>
     </aside>
 
     <!-- Center Feed -->
@@ -113,21 +105,26 @@
 
       <!-- Filter & Sort Bar -->
       <section class="filter-toolbar" aria-label="Sắp xếp và lọc bài viết">
-        <div class="sort-pills" role="group" aria-label="Sắp xếp danh sách bài viết">
-          <button type="button" class="sort-pill is-active" data-sort="hot">Đáng chú ý nhất</button>
-          <button type="button" class="sort-pill" data-sort="comments">Nhiều bình luận nhất</button>
-          <button type="button" class="sort-pill" data-sort="recent">Mới nhất</button>
-          <button type="button" class="sort-pill" data-sort="with_comments">Có bình luận</button>
-        </div>
-
-        <div class="quick-tags-bar" id="quickTagsBar" role="group" aria-label="Thẻ nổi bật"></div>
-
-        <div class="active-filters-row">
-          <div class="active-chips" id="activeFilterChips">
-            <span class="num" id="resultCountLabel">Đang hiển thị 0 bài viết</span>
+        <div class="toolbar-top-row">
+          <div class="toolbar-context">
+            <div class="active-chips" id="activeFilterChips">
+              <span class="context-title" id="resultCountLabel">Đang tải...</span>
+            </div>
+            <button type="button" class="clear-filters-btn" id="clearFiltersBtn" hidden>Xóa bộ lọc</button>
           </div>
-          <button type="button" class="clear-filters-btn" id="clearFiltersBtn" hidden>Xóa bộ lọc</button>
+
+          <div class="sort-control-wrap">
+            <label for="sortSelect" class="sort-label">Sắp xếp:</label>
+            <select id="sortSelect" class="sort-select" aria-label="Sắp xếp danh sách bài viết">
+              <option value="hot">Đáng chú ý nhất</option>
+              <option value="comments">Nhiều bình luận nhất</option>
+              <option value="recent">Mới nhất</option>
+              <option value="with_comments">Có bình luận</option>
+            </select>
+          </div>
         </div>
+
+        <div class="quick-tags-bar" id="quickTagsBar" role="group" aria-label="Thẻ lọc nhanh theo chủ đề"></div>
       </section>
 
       <!-- Feed Posts Container -->

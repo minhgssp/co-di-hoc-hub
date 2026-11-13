@@ -4,8 +4,47 @@
   const PAGE_SIZE = 16;
   const BODY_TRUNCATE_LIMIT = 400;
   const INITIAL_VISIBLE_COMMENTS = 3;
+  const VISIBLE_TAG_LIMIT = 4;
   const SAVED_STORAGE_KEY = "cdh_clean_forum_saved_v1";
   const THEME_STORAGE_KEY = "cdh_clean_forum_theme_v1";
+
+  const SHORT_TOPIC_LABELS = {
+    ALL: "Tất cả bài viết",
+    TIEN_TIEU_HOC_LOP_1: "Vào Lớp 1 & Tiền tiểu học",
+    CHON_TRUONG_TUYEN_SINH: "Chọn trường & Tuyển sinh",
+    NGOAI_NGU_HOMESCHOOL: "Ngoại ngữ & Homeschool",
+    ON_THI_HOC_TAP: "Phương pháp & Ôn thi",
+    TAM_LY_GIA_DINH: "Tâm lý & Dạy con",
+    CHUYEN_TRUONG_LOP_20_11: "Chuyện lớp & 20/11",
+  };
+
+  const NATURAL_TAG_LABELS = {
+    "tam-ly-cam-xuc": "Tâm lý & Cảm xúc",
+    "tien-tieu-hoc-2020-2021": "Hành trang Lớp 1",
+    "goc-hoi-dap-thuc-chien": "Hỏi đáp kinh nghiệm",
+    "giao-vien-goc-nhin": "Góc nhìn Giáo viên",
+    "tieng-anh-tre-em": "Tiếng Anh trẻ em",
+    "ren-tap-trung-ky-luat": "Rèn tập trung",
+    "chuyen-cap-lop-6": "Chuyển cấp Lớp 6",
+    "review-truong-tu-clc": "Trường tư & CLC",
+    "review-truong-cong": "Trường công lập",
+    "on-thi-kiem-tra": "Ôn thi cuối kỳ",
+    "sach-hay-hoc-lieu": "Sách hay & Học liệu",
+    "hoc-phi-tai-chinh": "Học phí & Chi phí",
+    "danh-van-tap-doc": "Đánh vần & Tập đọc",
+    "homeschool-tu-hoc": "Homeschool & Tự học",
+    "he-quoc-te-song-bang": "Song bằng & Quốc tế",
+    "chuyen-20-11-quy-lop": "Quỹ lớp & 20/11",
+    "bua-an-ban-tru-suc-khoe": "Bán trú & Dinh dưỡng",
+    "toan-tu-duy-olympic": "Toán tư duy & Kỳ thi",
+    "luyen-chu-cam-but": "Luyện chữ & Cầm bút",
+    "tieng-trung-ngoai-ngu-2": "Tiếng Trung & HSK",
+  };
+
+  const ANIMAL_AVATARS = [
+    "🦉", "🦩", "🐼", "🦊", "🐨", "🐰", "🐬", "🐿️", "🦌", "🐧",
+    "🦦", "🐝", "🐢", "🦔", "🦢", "🐱", "🐶", "🐻", "🦁", "🐘",
+  ];
 
   const GENERIC_AUTHORS = new Set([
     "",
@@ -26,6 +65,7 @@
     sortBy: "hot",
     search: "",
     savedOnly: false,
+    showAllTags: false,
     visibleCount: PAGE_SIZE,
     savedSigs: loadSavedSet(),
     expandedPosts: new Set(),
@@ -35,8 +75,7 @@
   const els = {
     searchInput: document.getElementById("searchInput"),
     topicNavList: document.getElementById("topicNavList"),
-    sidebarTagTotal: document.getElementById("sidebarTagTotal"),
-    sidebarTagList: document.getElementById("sidebarTagList"),
+    sortSelect: document.getElementById("sortSelect"),
     quickTagsBar: document.getElementById("quickTagsBar"),
     postList: document.getElementById("postList"),
     loadMoreWrap: document.getElementById("loadMoreWrap"),
@@ -286,12 +325,42 @@
   }
 
   function getAvatarClass(seed) {
+    return "avatar-" + ((Math.abs(hashSeed(seed)) % 5) + 1);
+  }
+
+  function hashSeed(str) {
     let hash = 0;
-    const str = String(seed || "");
-    for (let i = 0; i < str.length; i++) {
-      hash = (hash * 31 + str.charCodeAt(i)) | 0;
+    const s = String(str || "");
+    for (let i = 0; i < s.length; i++) {
+      hash = (hash * 31 + s.charCodeAt(i)) | 0;
     }
-    return "avatar-" + ((Math.abs(hash) % 5) + 1);
+    return hash;
+  }
+
+  function getAnimalAvatar(seed, offset) {
+    const h = Math.abs(hashSeed(seed));
+    const step = Number(offset) || 0;
+    const animalIdx = (h + step * 7) % ANIMAL_AVATARS.length;
+    const bgIdx = (((h >> 3) + step * 3) % 8) + 1;
+    return {
+      icon: ANIMAL_AVATARS[animalIdx],
+      bgClass: "animal-bg-" + bgIdx,
+    };
+  }
+
+  function getTopicLabel(topicId, fallback) {
+    if (SHORT_TOPIC_LABELS[topicId]) return SHORT_TOPIC_LABELS[topicId];
+    return String(fallback || "Chủ đề").trim();
+  }
+
+  function formatTagLabel(slug, rawLabel) {
+    if (slug && NATURAL_TAG_LABELS[slug]) {
+      return NATURAL_TAG_LABELS[slug];
+    }
+    return String(rawLabel || slug || "")
+      .replace(/^#/, "")
+      .replace(/([\p{Ll}\d])([\p{Lu}])/gu, "$1 $2")
+      .trim();
   }
 
   function openMobileSidebar() {
@@ -311,18 +380,12 @@
     document.body.style.overflow = "";
   }
 
-  function getFilteredPosts() {
+  function getBaseFilteredPosts() {
     if (!state.data || !Array.isArray(state.data.posts)) return [];
     const q = state.search.trim().toLowerCase();
-    const list = state.data.posts.filter(function (post) {
+    return state.data.posts.filter(function (post) {
       if (state.topicId !== "ALL" && post.topic_id !== state.topicId) return false;
       if (state.groupSlug !== "ALL" && post.group_slug !== state.groupSlug) return false;
-      if (state.tagSlug !== "ALL") {
-        const hasTag = (post.tags || []).some(function (t) {
-          return t.slug === state.tagSlug;
-        });
-        if (!hasTag) return false;
-      }
       if (state.savedOnly && !state.savedSigs.has(post.post_sig)) return false;
       if (state.sortBy === "with_comments" && post.clean_comments_count === 0) return false;
       if (q) {
@@ -332,7 +395,7 @@
           post.author,
           post.topic_label,
           (post.tags || []).map(function (t) {
-            return t.label;
+            return formatTagLabel(t.slug, t.label) + " " + t.label;
           }).join(" "),
           (post.clean_comments || []).map(function (c) {
             return c.text;
@@ -344,6 +407,43 @@
       }
       return true;
     });
+  }
+
+  function getContextualTags() {
+    const basePosts = getBaseFilteredPosts();
+    const counts = Object.create(null);
+    basePosts.forEach(function (post) {
+      (post.tags || []).forEach(function (t) {
+        if (!t || !t.slug) return;
+        if (!counts[t.slug]) {
+          counts[t.slug] = {
+            slug: t.slug,
+            label: formatTagLabel(t.slug, t.label),
+            count: 0,
+          };
+        }
+        counts[t.slug].count += 1;
+      });
+    });
+    return Object.keys(counts)
+      .map(function (slug) {
+        return counts[slug];
+      })
+      .sort(function (a, b) {
+        return b.count - a.count || a.label.localeCompare(b.label, "vi");
+      });
+  }
+
+  function getFilteredPosts() {
+    const basePosts = getBaseFilteredPosts();
+    const list =
+      state.tagSlug === "ALL"
+        ? basePosts
+        : basePosts.filter(function (post) {
+            return (post.tags || []).some(function (t) {
+              return t.slug === state.tagSlug;
+            });
+          });
 
     const sorted = list.slice();
     if (state.sortBy === "comments" || state.sortBy === "with_comments") {
@@ -388,6 +488,7 @@
     els.topicNavList.innerHTML = items
       .map(function (topic) {
         const activeClass = state.topicId === topic.id ? " is-active" : "";
+        const label = getTopicLabel(topic.id, topic.short_label || topic.label);
         return (
           '<li><button type="button" class="nav-item-btn' +
           activeClass +
@@ -395,7 +496,7 @@
           escapeHtml(topic.id) +
           '">' +
           '<span class="nav-item-label">' +
-          escapeHtml(topic.label) +
+          escapeHtml(label) +
           "</span>" +
           '<span class="badge-count num">' +
           topic.count +
@@ -405,48 +506,35 @@
       .join("");
   }
 
-  function renderSidebarTags() {
-    if (!els.sidebarTagList) return;
-    const tags = state.data.popular_tags || [];
-    if (els.sidebarTagTotal) {
-      els.sidebarTagTotal.textContent = String(tags.length);
-    }
-    const allChip =
-      '<button type="button" class="tag-cloud-btn' +
-      (state.tagSlug === "ALL" ? " is-active" : "") +
-      '" data-tag-slug="ALL">Tất cả thẻ <span class="num">' +
-      (state.data.summary ? state.data.summary.clean_posts_count : 0) +
-      "</span></button>";
-
-    const tagButtons = tags
-      .map(function (t) {
-        const activeClass = state.tagSlug === t.slug ? " is-active" : "";
-        return (
-          '<button type="button" class="tag-cloud-btn' +
-          activeClass +
-          '" data-tag-slug="' +
-          escapeHtml(t.slug) +
-          '">' +
-          escapeHtml(t.label) +
-          ' <span class="num">' +
-          t.count +
-          "</span></button>"
-        );
-      })
-      .join("");
-    els.sidebarTagList.innerHTML = allChip + tagButtons;
-  }
-
   function renderQuickTagsBar() {
     if (!els.quickTagsBar) return;
-    const tags = (state.data.popular_tags || []).slice(0, 10);
-    if (tags.length === 0) {
+    const allTags = getContextualTags();
+    if (allTags.length === 0) {
       els.quickTagsBar.hidden = true;
+      els.quickTagsBar.classList.remove("is-expanded");
       return;
     }
+
+    let visibleTags = state.showAllTags ? allTags : allTags.slice(0, VISIBLE_TAG_LIMIT);
+    if (
+      !state.showAllTags &&
+      state.tagSlug !== "ALL" &&
+      !visibleTags.some(function (t) {
+        return t.slug === state.tagSlug;
+      })
+    ) {
+      const activeObj = allTags.find(function (t) {
+        return t.slug === state.tagSlug;
+      });
+      if (activeObj) {
+        visibleTags = visibleTags.slice(0, VISIBLE_TAG_LIMIT - 1).concat([activeObj]);
+      }
+    }
+
     els.quickTagsBar.hidden = false;
-    const prefix = '<span class="quick-tags-label">Thẻ nổi bật:</span>';
-    const pills = tags
+    els.quickTagsBar.classList.toggle("is-expanded", state.showAllTags);
+
+    const pills = visibleTags
       .map(function (t) {
         const activeClass = state.tagSlug === t.slug ? " is-active" : "";
         return (
@@ -454,33 +542,46 @@
           activeClass +
           '" data-tag-slug="' +
           escapeHtml(t.slug) +
-          '">' +
-          escapeHtml(t.label) +
-          ' <span class="num">' +
+          '" title="' +
           t.count +
-          "</span></button>"
+          ' bài viết trong mục này">' +
+          escapeHtml(t.label) +
+          "</button>"
         );
       })
       .join("");
-    els.quickTagsBar.innerHTML = prefix + pills;
+
+    const remaining = Math.max(0, allTags.length - VISIBLE_TAG_LIMIT);
+    const toggleBtn =
+      remaining > 0
+        ? '<button type="button" class="quick-tag-more-btn" data-toggle-more-tags="1">' +
+          (state.showAllTags ? "Thu gọn ▴" : "+ Xem thêm (" + remaining + ")") +
+          "</button>"
+        : "";
+
+    els.quickTagsBar.innerHTML = pills + toggleBtn;
   }
 
   function renderFilterStatus(totalMatched) {
     const chips = [];
-    chips.push(
-      '<span class="num"><strong>' +
-        totalMatched +
-        "</strong> bài viết</span>"
+    const topicTitle = getTopicLabel(
+      state.topicId,
+      ((state.data.topics || []).find(function (t) {
+        return t.id === state.topicId;
+      }) || {}).label || "Tất cả bài viết"
     );
 
-    if (state.topicId !== "ALL") {
-      const tObj = (state.data.topics || []).find(function (t) {
-        return t.id === state.topicId;
-      });
-      if (tObj) {
-        chips.push('<span class="filter-chip">Chủ đề: ' + escapeHtml(tObj.short_label) + "</span>");
-      }
-    }
+    chips.push(
+      '<span class="context-title">' +
+        '<strong class="context-topic-name">' +
+        escapeHtml(topicTitle) +
+        "</strong>" +
+        '<span class="context-dot" aria-hidden="true">·</span>' +
+        '<span class="context-count num">' +
+        totalMatched +
+        " bài viết</span></span>"
+    );
+
     if (state.groupSlug !== "ALL") {
       const gObj = (state.data.groups || []).find(function (g) {
         return g.group_slug === state.groupSlug;
@@ -488,42 +589,51 @@
       chips.push(
         '<span class="filter-chip">Nhóm: ' +
           escapeHtml(gObj ? gObj.group_name : state.groupSlug) +
-          "</span>"
+          '<button type="button" class="filter-chip-close" data-remove-filter="group" aria-label="Bỏ lọc nhóm">×</button></span>'
       );
     }
     if (state.tagSlug !== "ALL") {
-      const tagObj = (state.data.popular_tags || []).find(function (t) {
-        return t.slug === state.tagSlug;
-      });
       chips.push(
-        '<span class="filter-chip">Thẻ: ' +
-          escapeHtml(tagObj ? tagObj.label : "#" + state.tagSlug) +
-          "</span>"
+        '<span class="filter-chip">' +
+          escapeHtml(formatTagLabel(state.tagSlug)) +
+          '<button type="button" class="filter-chip-close" data-remove-filter="tag" aria-label="Bỏ lọc thẻ">×</button></span>'
       );
     }
     if (state.search.trim()) {
-      chips.push('<span class="filter-chip">Từ khóa: "' + escapeHtml(state.search.trim()) + '"</span>');
+      chips.push(
+        '<span class="filter-chip">"' +
+          escapeHtml(state.search.trim()) +
+          '"<button type="button" class="filter-chip-close" data-remove-filter="search" aria-label="Xóa từ khóa">×</button></span>'
+      );
     }
     if (state.savedOnly) {
-      chips.push('<span class="filter-chip">🔖 Bài đã lưu</span>');
+      chips.push(
+        '<span class="filter-chip">🔖 Đã lưu' +
+          '<button type="button" class="filter-chip-close" data-remove-filter="saved" aria-label="Bỏ lọc đã lưu">×</button></span>'
+      );
     }
 
     els.activeFilterChips.innerHTML = chips.join("");
-    const hasFilter =
+    const hasSecondaryFilter =
       state.topicId !== "ALL" ||
       state.groupSlug !== "ALL" ||
       state.tagSlug !== "ALL" ||
       Boolean(state.search.trim()) ||
       state.savedOnly;
-    els.clearFiltersBtn.hidden = !hasFilter;
+    els.clearFiltersBtn.hidden = !hasSecondaryFilter;
+
+    if (els.sortSelect && els.sortSelect.value !== state.sortBy) {
+      els.sortSelect.value = state.sortBy;
+    }
 
     els.savedFilterBtn.classList.toggle("btn-active", state.savedOnly);
     els.savedFilterBtn.setAttribute("aria-pressed", String(state.savedOnly));
     els.savedCountBadge.textContent = String(state.savedSigs.size);
   }
 
-  function renderCommentHtml(cmt, query) {
+  function renderCommentHtml(cmt, query, idx) {
     const isReply = Number(cmt.level) >= 2 ? " is-reply" : "";
+    const av = getAnimalAvatar((cmt.id || "") + "|" + (cmt.text || ""), idx);
     const formatted = String(cmt.text || "")
       .replace(/\r\n/g, "\n")
       .split("\n")
@@ -535,6 +645,11 @@
       '<div class="comment-item' +
       isReply +
       '">' +
+      '<div class="cmt-animal-avatar ' +
+      av.bgClass +
+      '" aria-hidden="true">' +
+      av.icon +
+      "</div>" +
       '<div class="cmt-bubble">' +
       '<div class="cmt-text">' +
       formatted +
@@ -555,7 +670,9 @@
     const isSaved = state.savedSigs.has(post.post_sig);
     const hideAuthor = isGenericAuthor(post.author);
     const avClass = getAvatarClass(post.author + post.group_slug);
+    const postAnimal = getAnimalAvatar(post.post_sig || post.text, 0);
     const dateLabel = formatPostDate(post.posted_display);
+    const topicLabel = getTopicLabel(post.topic_id, post.topic_label);
 
     const allComments = post.clean_comments || [];
     const showAllComments = state.expandedComments.has(post.post_sig);
@@ -569,8 +686,8 @@
       commentsBlockHtml =
         '<div class="comments-section">' +
         visibleComments
-          .map(function (c) {
-            return renderCommentHtml(c, q);
+          .map(function (c, idx) {
+            return renderCommentHtml(c, q, idx);
           })
           .join("") +
         (hiddenCommentsCount > 0
@@ -585,6 +702,12 @@
 
     const headerHtml = hideAuthor
       ? '<div class="post-header is-compact">' +
+        '<div class="post-author-block is-anonymous">' +
+        '<div class="avatar-circle is-animal ' +
+        postAnimal.bgClass +
+        '" aria-hidden="true">' +
+        postAnimal.icon +
+        "</div>" +
         '<div class="post-meta-inline">' +
         '<button type="button" class="post-group-btn" data-group-slug="' +
         escapeHtml(post.group_slug) +
@@ -592,7 +715,7 @@
         escapeHtml(post.group_name) +
         "</button>" +
         (dateLabel ? '<span class="post-time">• ' + escapeHtml(dateLabel) + "</span>" : "") +
-        "</div></div>"
+        "</div></div></div>"
       : '<div class="post-header">' +
         '<div class="post-author-block">' +
         '<div class="avatar-circle ' +
@@ -622,9 +745,10 @@
       headerHtml +
       '<div class="topic-pill-row">' +
       '<span class="topic-tag">' +
-      escapeHtml(post.topic_label) +
+      escapeHtml(topicLabel) +
       "</span>" +
       (post.tags || [])
+        .slice(0, 2)
         .map(function (t) {
           const isAct = state.tagSlug === t.slug ? " is-active" : "";
           return (
@@ -633,7 +757,7 @@
             '" data-tag-slug="' +
             escapeHtml(t.slug) +
             '">' +
-            escapeHtml(t.label) +
+            escapeHtml(formatTagLabel(t.slug, t.label)) +
             "</button>"
           );
         })
@@ -712,7 +836,6 @@
       state.tagSlug = slug;
     }
     state.visibleCount = PAGE_SIZE;
-    renderSidebarTags();
     renderQuickTagsBar();
     renderFeed();
   }
@@ -724,6 +847,7 @@
       state.groupSlug = slug;
     }
     state.visibleCount = PAGE_SIZE;
+    renderQuickTagsBar();
     renderFeed();
   }
 
@@ -733,10 +857,10 @@
     state.tagSlug = "ALL";
     state.search = "";
     state.savedOnly = false;
+    state.showAllTags = false;
     state.visibleCount = PAGE_SIZE;
     if (els.searchInput) els.searchInput.value = "";
     renderSidebarTopics();
-    renderSidebarTags();
     renderQuickTagsBar();
     renderFeed();
   }
@@ -749,6 +873,7 @@
         searchTimer = setTimeout(function () {
           state.search = els.searchInput.value;
           state.visibleCount = PAGE_SIZE;
+          renderQuickTagsBar();
           renderFeed();
         }, 180);
       });
@@ -759,39 +884,56 @@
         const btn = ev.target.closest("[data-topic-id]");
         if (!btn) return;
         state.topicId = btn.getAttribute("data-topic-id") || "ALL";
+        state.showAllTags = false;
         state.visibleCount = PAGE_SIZE;
+        if (state.tagSlug !== "ALL") {
+          const validInTopic = getContextualTags().some(function (t) {
+            return t.slug === state.tagSlug;
+          });
+          if (!validInTopic) state.tagSlug = "ALL";
+        }
         renderSidebarTopics();
+        renderQuickTagsBar();
         renderFeed();
-        closeMobileSidebar();
-      });
-    }
-
-    if (els.sidebarTagList) {
-      els.sidebarTagList.addEventListener("click", function (ev) {
-        const btn = ev.target.closest("[data-tag-slug]");
-        if (!btn) return;
-        selectTagFilter(btn.getAttribute("data-tag-slug") || "ALL");
         closeMobileSidebar();
       });
     }
 
     if (els.quickTagsBar) {
       els.quickTagsBar.addEventListener("click", function (ev) {
+        const moreBtn = ev.target.closest("[data-toggle-more-tags]");
+        if (moreBtn) {
+          state.showAllTags = !state.showAllTags;
+          renderQuickTagsBar();
+          return;
+        }
         const btn = ev.target.closest("[data-tag-slug]");
         if (!btn) return;
         selectTagFilter(btn.getAttribute("data-tag-slug") || "ALL");
       });
     }
 
-    const sortPills = document.querySelector(".sort-pills");
-    if (sortPills) {
-      sortPills.addEventListener("click", function (ev) {
-        const btn = ev.target.closest("[data-sort]");
-        if (!btn) return;
-        state.sortBy = btn.getAttribute("data-sort") || "hot";
-        document.querySelectorAll(".sort-pill").forEach(function (p) {
-          p.classList.toggle("is-active", p === btn);
-        });
+    if (els.activeFilterChips) {
+      els.activeFilterChips.addEventListener("click", function (ev) {
+        const rmBtn = ev.target.closest("[data-remove-filter]");
+        if (!rmBtn) return;
+        const kind = rmBtn.getAttribute("data-remove-filter");
+        if (kind === "group") state.groupSlug = "ALL";
+        else if (kind === "tag") state.tagSlug = "ALL";
+        else if (kind === "saved") state.savedOnly = false;
+        else if (kind === "search") {
+          state.search = "";
+          if (els.searchInput) els.searchInput.value = "";
+        }
+        state.visibleCount = PAGE_SIZE;
+        renderQuickTagsBar();
+        renderFeed();
+      });
+    }
+
+    if (els.sortSelect) {
+      els.sortSelect.addEventListener("change", function () {
+        state.sortBy = els.sortSelect.value || "hot";
         state.visibleCount = PAGE_SIZE;
         renderFeed();
       });
@@ -943,7 +1085,6 @@
       state.data = await loadForumData();
       renderTelemetry();
       renderSidebarTopics();
-      renderSidebarTags();
       renderQuickTagsBar();
       renderFeed();
     } catch (err) {
