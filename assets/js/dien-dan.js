@@ -18,6 +18,16 @@
     CHUYEN_TRUONG_LOP_20_11: "Chuyện lớp & 20/11",
   };
 
+  const TOPIC_ICONS = {
+    ALL: "🏠",
+    TIEN_TIEU_HOC_LOP_1: "🎒",
+    CHON_TRUONG_TUYEN_SINH: "🏫",
+    NGOAI_NGU_HOMESCHOOL: "🌍",
+    ON_THI_HOC_TAP: "✏️",
+    TAM_LY_GIA_DINH: "💛",
+    CHUYEN_TRUONG_LOP_20_11: "💐",
+  };
+
   const NATURAL_TAG_LABELS = {
     "tam-ly-cam-xuc": "Tâm lý & Cảm xúc",
     "tien-tieu-hoc-2020-2021": "Hành trang Lớp 1",
@@ -489,15 +499,20 @@
       .map(function (topic) {
         const activeClass = state.topicId === topic.id ? " is-active" : "";
         const label = getTopicLabel(topic.id, topic.short_label || topic.label);
+        const icon = TOPIC_ICONS[topic.id] || "📌";
         return (
           '<li><button type="button" class="nav-item-btn' +
           activeClass +
           '" data-topic-id="' +
           escapeHtml(topic.id) +
           '">' +
+          '<span class="nav-item-left">' +
+          '<span class="nav-item-icon" aria-hidden="true">' +
+          icon +
+          "</span>" +
           '<span class="nav-item-label">' +
           escapeHtml(label) +
-          "</span>" +
+          "</span></span>" +
           '<span class="badge-count num">' +
           topic.count +
           "</span></button></li>"
@@ -738,11 +753,32 @@
         (dateLabel ? '<span class="post-time">• ' + escapeHtml(dateLabel) + "</span>" : "") +
         "</div></div></div></div>";
 
+    const bookmarkSvg =
+      '<svg width="15" height="15" viewBox="0 0 24 24" fill="' +
+      (isSaved ? "currentColor" : "none") +
+      '" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z"></path></svg>';
+    const copySvg =
+      '<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg>';
+    const extSvg =
+      '<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" x2="21" y1="14" y2="3"></line></svg>';
+    const cmtSvg =
+      '<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"></path></svg>';
+
     return (
       '<article class="post-card" data-post-sig="' +
       escapeHtml(post.post_sig) +
       '">' +
       headerHtml +
+      '<div class="post-body">' +
+      renderMarkdownBlock(displayBody, q) +
+      "</div>" +
+      (needsTruncate
+        ? '<button type="button" class="expand-body-btn" data-expand-post="' +
+          escapeHtml(post.post_sig) +
+          '">' +
+          (isBodyExpanded ? "Thu gọn" : "Xem toàn văn") +
+          "</button>"
+        : "") +
       '<div class="topic-pill-row">' +
       '<span class="topic-tag">' +
       escapeHtml(topicLabel) +
@@ -763,16 +799,6 @@
         })
         .join("") +
       "</div>" +
-      '<div class="post-body">' +
-      renderMarkdownBlock(displayBody, q) +
-      "</div>" +
-      (needsTruncate
-        ? '<button type="button" class="expand-body-btn" data-expand-post="' +
-          escapeHtml(post.post_sig) +
-          '">' +
-          (isBodyExpanded ? "Thu gọn" : "Xem toàn văn") +
-          "</button>"
-        : "") +
       '<div class="post-actions-bar">' +
       '<div class="post-action-btns">' +
       '<button type="button" class="card-action-btn' +
@@ -780,20 +806,28 @@
       '" data-save-post="' +
       escapeHtml(post.post_sig) +
       '">' +
-      (isSaved ? "🔖 Đã lưu" : "🔖 Lưu bài") +
-      "</button>" +
+      bookmarkSvg +
+      "<span>" +
+      (isSaved ? "Đã lưu" : "Lưu bài") +
+      "</span></button>" +
       '<button type="button" class="card-action-btn" data-copy-post="' +
       escapeHtml(post.post_sig) +
-      '">🔗 Chép trích dẫn</button>' +
+      '">' +
+      copySvg +
+      "<span>Chép trích dẫn</span></button>" +
       (post.permalink
         ? '<a class="card-action-btn" href="' +
           escapeHtml(post.permalink) +
-          '" target="_blank" rel="noopener noreferrer">↗ Nguồn FB</a>'
+          '" target="_blank" rel="noopener noreferrer">' +
+          extSvg +
+          "<span>Nguồn FB</span></a>"
         : "") +
       "</div>" +
       '<span class="post-cmt-summary num">' +
+      cmtSvg +
+      "<span>" +
       post.clean_comments_count +
-      " bình luận</span>" +
+      " bình luận</span></span>" +
       "</div>" +
       commentsBlockHtml +
       "</article>"
