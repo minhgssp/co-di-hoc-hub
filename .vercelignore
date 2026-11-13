@@ -1,0 +1,12 @@
+.git/
+.gitignore
+__pycache__/
+*.py[cod]
+temp/
+scratch/
+specs/
+preview_server.py
+*.tmp
+*.log
+assets/videos/*.wav
+assets/videos/*_backup_*.mp4
