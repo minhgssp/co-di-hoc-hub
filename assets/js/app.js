@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // ==========================================
-    // 1. BLOG HUB RENDER & FILTER (16 BÀI CHUYÊN SÂU - PROGRESSIVE DISCLOSURE)
+    // 1. BLOG HUB RENDER & FILTER (THUMBNAIL + TIÊU ĐỀ TỐI ƯU - PROGRESSIVE DISCLOSURE)
     // ==========================================
     const blogGrid = document.getElementById('blogGrid');
     const blogFilterTabs = document.getElementById('blogFilterTabs');
@@ -23,14 +23,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const toggleAllBlogsBtn = document.getElementById('toggleAllBlogsBtn');
     let currentBlogFilter = 'all';
     let isBlogExpanded = false;
-
-    function getLevelIcon(levelStr = '') {
-        const lv = levelStr.toLowerCase();
-        if (lv.includes('tiền tiểu học')) return '🎒';
-        if (lv.includes('lớp 6')) return '🏫';
-        if (lv.includes('song bằng')) return '🌏';
-        return '📚';
-    }
 
     function renderBlogs(filter = 'all') {
         if (!blogGrid) return;
@@ -51,23 +43,12 @@ document.addEventListener('DOMContentLoaded', () => {
             card.className = `blog-card${shouldCollapse ? ' blog-card-collapsed' : ''}`;
             card.setAttribute('data-id', blog.id);
 
-            const icon = getLevelIcon(blog.level);
-
             card.innerHTML = `
-                <div class="blog-card-header">
-                    <span class="badge badge-orange">${icon} ${blog.level}</span>
-                    <span class="badge badge-navy">⚡ Có hướng xử lý • ${blog.readTime} phút đọc</span>
+                <div class="blog-card-thumb-wrap">
+                    <img src="${blog.thumbnail}" alt="${blog.title}" class="blog-card-thumb">
                 </div>
                 <div class="blog-card-body">
                     <h3 class="blog-card-title">${blog.title}</h3>
-                    <div class="blog-card-quote">
-                        <strong>Tiếng lòng phụ huynh:</strong> "${blog.quote}"
-                    </div>
-                    <p class="blog-card-summary">${blog.summary}</p>
-                </div>
-                <div class="blog-card-footer">
-                    <span>Chuyên mục: <strong>${blog.category}</strong></span>
-                    <span class="read-more-link">Đọc toàn văn ➔</span>
                 </div>
             `;
 
@@ -80,8 +61,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 blogExpandWrap.style.display = 'block';
                 const hiddenCount = filteredBlogs.length - 6;
                 toggleAllBlogsBtn.innerHTML = isBlogExpanded
-                    ? `<span>🔼 Thu gọn danh sách bài viết (Chỉ hiện 6 bài tiêu biểu)</span>`
-                    : `<span>📖 Xem đầy đủ cả ${filteredBlogs.length} bài nghiên cứu chuyên sâu (Còn ${hiddenCount} bài nữa ▾)</span>`;
+                    ? `<span>🔼 Thu gọn bớt (chỉ hiện 6 bài tiêu biểu)</span>`
+                    : `<span>📖 Xem thêm ${hiddenCount} bài viết khác ▾</span>`;
             } else {
                 blogExpandWrap.style.display = 'none';
             }
@@ -248,36 +229,9 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // ==========================================
-    // 3. HOMEPAGE INTRO VIDEO & 5 CHAPTER SEEKER
+    // 3. HOMEPAGE INTRO VIDEO (STANDALONE PLAYER)
     // ==========================================
-    const mainVideoPlayer = document.getElementById('mainVideoPlayer');
-    const chapterItems = document.querySelectorAll('#introChapterList .video-item');
-
-    if (mainVideoPlayer && chapterItems.length > 0) {
-        chapterItems.forEach(item => {
-            item.addEventListener('click', () => {
-                chapterItems.forEach(i => i.classList.remove('active'));
-                item.classList.add('active');
-                const seekSec = parseFloat(item.getAttribute('data-seek') || '0');
-                if (!isNaN(seekSec)) {
-                    mainVideoPlayer.currentTime = seekSec;
-                    mainVideoPlayer.play().catch(() => {});
-                }
-            });
-        });
-
-        mainVideoPlayer.addEventListener('timeupdate', () => {
-            const ct = mainVideoPlayer.currentTime;
-            let activeItem = chapterItems[0];
-            chapterItems.forEach(item => {
-                const s = parseFloat(item.getAttribute('data-seek') || '0');
-                if (ct >= s - 0.2) {
-                    activeItem = item;
-                }
-            });
-            chapterItems.forEach(i => i.classList.toggle('active', i === activeItem));
-        });
-    }
+    // Video player runs standalone without chapter sidebar per design update.
 
     // ==========================================
     // 4. KHO TÀI NGUYÊN TƯƠNG TÁC (RESOURCES HUB & QUICK CHIPS)

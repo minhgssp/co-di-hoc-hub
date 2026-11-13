@@ -429,52 +429,37 @@ html, body {
 .blog-card:hover {
   transform: translateY(-5px);
   box-shadow: var(--shadow-lg);
-  border-color: rgba(238, 160, 63, 0.4);
+  border-color: rgba(238, 160, 63, 0.45);
 }
-.blog-card-header {
-  padding: 24px 24px 16px;
-  border-bottom: 1px solid #f1f5f9;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+.blog-card-thumb-wrap {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  background-color: var(--cdh-navy-dark);
+}
+.blog-card-thumb {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.35s ease;
+}
+.blog-card:hover .blog-card-thumb {
+  transform: scale(1.03);
 }
 .blog-card-body {
-  padding: 20px 24px;
+  padding: 16px 20px 20px;
   flex: 1;
+  display: flex;
+  align-items: flex-start;
 }
 .blog-card-title {
-  font-size: 19px;
+  font-size: 17px;
   font-weight: 700;
   color: var(--cdh-navy-dark);
-  line-height: 1.4;
-  margin-bottom: 12px;
-}
-.blog-card-quote {
-  background-color: var(--cdh-orange-light);
-  border-left: 3px solid var(--cdh-orange);
-  padding: 10px 14px;
-  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
-  font-size: 13px;
-  font-style: italic;
-  color: #78350f;
-  margin-bottom: 14px;
-  line-height: 1.5;
-}
-.blog-card-summary {
-  font-size: 14px;
-  color: var(--text-muted);
-  line-height: 1.6;
-  margin-bottom: 16px;
-}
-.blog-card-footer {
-  padding: 16px 24px;
-  background-color: #fafbfc;
-  border-top: 1px solid var(--border-color);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  font-size: 13px;
-  color: var(--text-muted);
+  line-height: 1.45;
+  margin: 0;
 }
 .read-more-link {
   font-weight: 700;
@@ -670,19 +655,18 @@ html, body {
   margin-right: auto;
 }
 
-/* --- PHÂN KHU 2: VIDEO HUB --- */
+/* --- PHÂN KHU 2: VIDEO HUB (STANDALONE CENTERED PLAYER) --- */
 .video-showcase-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 36px;
-  align-items: start;
+  grid-template-columns: minmax(0, 860px);
+  justify-content: center;
   max-width: 100%;
-}
-.main-player-wrap, .video-info-box {
-  max-width: 100%;
-  min-width: 0;
+  margin: 0 auto;
 }
 .main-player-wrap {
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
   background-color: var(--cdh-navy-dark);
   border-radius: var(--radius-lg);
   overflow: hidden;
@@ -704,92 +688,6 @@ html, body {
   display: block;
   object-fit: cover;
   background-color: #000;
-}
-.video-info-box {
-  background-color: var(--bg-card);
-  border-radius: var(--radius-lg);
-  padding: 30px;
-  border: 1px solid var(--border-color);
-  box-shadow: var(--shadow-md);
-}
-.video-playlist-title {
-  font-size: 18px;
-  font-weight: 800;
-  color: var(--cdh-navy-dark);
-  margin-bottom: 18px;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-.video-playlist {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  margin-bottom: 24px;
-}
-.video-item {
-  display: flex;
-  align-items: center;
-  gap: 14px;
-  padding: 12px 16px;
-  border-radius: var(--radius-md);
-  border: 1px solid var(--border-color);
-  cursor: pointer;
-  transition: all 0.2s;
-}
-.video-item:hover, .video-item.active {
-  background-color: var(--cdh-orange-light);
-  border-color: var(--cdh-orange);
-}
-.video-item-thumb {
-  width: 54px;
-  height: 54px;
-  border-radius: var(--radius-sm);
-  background-color: var(--cdh-navy);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 24px;
-  flex-shrink: 0;
-  color: var(--cdh-orange);
-}
-.video-item-info h4 {
-  font-size: 14px;
-  font-weight: 700;
-  color: var(--cdh-navy-dark);
-  margin-bottom: 4px;
-}
-.video-item-info p {
-  font-size: 12px;
-  color: var(--text-muted);
-}
-.script-accordion, .video-script-card {
-  border: 1px solid var(--border-color);
-  border-radius: var(--radius-md);
-  overflow: hidden;
-}
-.script-header {
-  background-color: #f8fafc;
-  padding: 14px 18px;
-  font-size: 14px;
-  font-weight: 700;
-  color: var(--cdh-navy);
-  cursor: pointer;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.script-body {
-  padding: 16px 20px;
-  font-size: 13.5px;
-  color: var(--text-main);
-  line-height: 1.65;
-}
-.script-body pre {
-  white-space: pre-wrap;
-  word-break: break-word;
-  max-width: 100%;
-  overflow-x: hidden;
 }
 
 /* --- PHÂN KHU 3: KHO TÀI NGUYÊN MIỄN PHÍ --- */
@@ -2216,10 +2114,10 @@ html, body {
   margin-top: 2px;
 }
 
-/* 4. Homepage 16:9 Intro Video Showcase & Collapsible Script */
+/* 4. Homepage 16:9 Intro Video Showcase (Standalone Centered Player) */
 .video-showcase-grid {
-  grid-template-columns: 1.25fr 0.95fr !important;
-  align-items: start !important;
+  grid-template-columns: minmax(0, 860px) !important;
+  justify-content: center !important;
 }
 @media (max-width: 992px) {
   .video-showcase-grid {
@@ -2247,22 +2145,10 @@ html, body {
   gap: 12px;
   flex-wrap: wrap;
 }
-details.video-script-card summary {
-  list-style: none;
-}
-details.video-script-card summary::-webkit-details-marker {
-  display: none;
-}
 
-/* 5. Progressive Disclosure Blog Grid (6 Cards Initial + Expand All 16) */
+/* 5. Progressive Disclosure Blog Grid (6 Cards Initial + Expand All 22) */
 .blog-card-collapsed {
   display: none !important;
-}
-.blog-card-summary {
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
 }
 .blog-expand-btn {
   padding: 12px 28px !important;

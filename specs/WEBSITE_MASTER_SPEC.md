@@ -57,26 +57,25 @@ Trang chủ `index.html` được tổ chức thành 10 phân khu tuần tự th
   - Mỗi `.step-card` bắt buộc có nền trắng (`rgb(255, 255, 255)`), viền bo góc (`borderRadius >= 12px`), và 3 thẻ `01`, `02`, `03` phải nằm trên cùng một hàng ngang (`top` bằng nhau).
   - Mỗi huy hiệu số `.step-number` phải là hình tròn (`width == height == 48px`, `borderRadius == '50%'` hoặc `'24px'`).
 
-### 2.6. Thư viện 16 Bài Phân tích Chuyên sâu (`#blog-section` & `#readerModal`)
+### 2.6. Thư viện 22 Bài Phân tích Chuyên sâu & Nghiên cứu Quốc tế (`#blog-section` & `#readerModal`)
 - **Lưới thẻ bài viết (`#blogGrid.blog-grid`):**
-  - Hiển thị đủ 16 thẻ `.blog-card` theo lưới 3 cột trên Desktop.
-  - Mỗi thẻ hiển thị: Nhãn cấp học (`.blog-level-badge`), thời lượng đọc, tiêu đề bài viết (`.blog-title` — Sentence case, không chứa tiền tố `BÀI 05:` hay mã `Mẫu chuẩn 01/10`), hộp trích dẫn tiếng lòng phụ huynh (`.blog-pain-quote` — câu nói cụ thể của phụ huynh, không dùng câu mẫu chung chung), đoạn tóm tắt (`.blog-excerpt` — khác hoàn toàn tiêu đề), chuyên mục và nút *Đọc toàn văn →*.
+  - Hiển thị đủ 22 thẻ `.blog-card` theo lưới 3 cột trên Desktop (16 bài gỡ rối học đường Việt Nam + 6 bài tổng hợp nghiên cứu quốc tế), áp dụng mở rộng tiệm tiến (hiện 6 thẻ đầu tiên và mở rộng 22 thẻ khi bấm `#toggleAllBlogsBtn`).
+  - Mỗi thẻ ngoài website hiển thị tối giản gồm: Ảnh bìa 16:9 thiết kế theo chuẩn `/fac-thumbnail` (`.blog-card-thumb-wrap > img.blog-card-thumb`) và Tiêu đề bài viết đã tối ưu ngắn gọn, tự nhiên (`.blog-card-title`). Toàn bộ nội dung tóm tắt, tiếng lòng phụ huynh và căn cứ chi tiết chỉ mở ra bên trong `#readerModal` khi người dùng bấm vào thẻ.
 - **Cửa sổ Đọc bài Chuyên sâu (`#readerModal`):**
   - Khi mở một bài viết bất kỳ (`openBlogReader(id)`):
     - Cột trái (`.reader-sidebar`): Hiển thị mục lục bài viết (`#readerTocList`), có ít nhất 3 mục neo khớp 100% với các thẻ `<h2>`, `<h3>` trong bài.
     - Cột phải (`.reader-main`): Hiển thị tiêu đề bài viết duy nhất tại `#readerArticleTitle` (không có thẻ `<h1>` lặp lại bên trong `#readerArticleBody`), hộp tiếng lòng phụ huynh (`#readerPainBox`), nội dung chi tiết (`#readerArticleBody` có độ dài văn bản thuần $\ge 3.000$ ký tự), và khung gợi ý câu hỏi Zalo cuối bài.
 
-### 2.7. Thư viện Video Hoạt hình 2D (`#video-section`)
-- **Bố cục:** Lưới 2 cột `.video-showcase-grid` (`1.4fr 1fr` trên Desktop):
-  - Cột trái (`.main-player-wrap`): Trình phát video HTML5 `#mainVideoPlayer` phát trực tiếp 2 tệp video thực tế đã qua kiểm định `ffprobe` (`codihoc_c01_kudo_9x16.mp4` thời lượng `1:20` và `codihoc_v2_faccontent_9x16.mp4` thời lượng `1:56`).
-  - Cột phải (`.video-info-box`): Danh sách 2 tập video thực tế (`.video-item`) có trạng thái `.active` khi chọn và khung lời thoại kịch bản thực tế (`.video-script-card`) khớp 100% với lời thuyết minh trong video.
+### 2.7. Video Giới thiệu Cò Đi Học (`#video-section`)
+- **Bố cục:** Trình phát video 16:9 độc lập căn giữa (`.video-showcase-grid` gồm 1 cột tối đa `860px`):
+  - Khung `.main-player-wrap`: Trình phát video HTML5 `#mainVideoPlayer` phát trực tiếp tệp video giới thiệu chính thức (`codihoc_intro_homepage.mp4`), kèm dòng chú thích gọn và liên kết Zalo; không hiển thị danh sách chia chương hoặc hộp lời thoại bên cạnh video.
 
 ### 2.8. Cẩm nang Gỡ rối Học đường & Đối sánh 4 Lộ trình Học tập (`#resources-section`)
 - **Thanh tìm kiếm & Bộ lọc 2 Tab Thực chứng:**
   - Chỉ hiển thị đúng **2 Tab dữ liệu thật** (`💡 Hỏi đáp nhanh 16 tình huống thực tế` và `⚖️ Đối sánh 4 lộ trình học tập phổ thông`). Tuyệt đối không hiển thị bảng "10 cộng đồng phụ huynh tiêu biểu / 57 hội nhóm" giả lập từ danh sách thu thập dữ liệu nội bộ.
   - Ô tìm kiếm `.search-bar-wrap > input#guideSearchInput.search-input` có viền, biểu tượng kính lúp `.search-icon` căn giữa theo chiều dọc, tự động lọc câu hỏi theo từ khóa gõ vào.
-- **Danh sách 16 Tình huống Gỡ rối Thực tế (`#guidesContainer`):**
-  - Chia làm 4 nhóm chủ đề ánh xạ **1-đối-1** với **16 bài nghiên cứu chuyên sâu thật** trong `data.blogs`.
+- **Danh sách 22 Chủ đề Gỡ rối Thực tế & Quốc tế (`#guidesContainer`):**
+  - Chia làm 5 nhóm chủ đề ánh xạ **1-đối-1** với **22 bài nghiên cứu chuyên sâu thật** trong `data.blogs`.
   - Mỗi mục có trường `blogId` hợp lệ và nút **`📖 Đọc bài phân tích chuyên sâu đầy đủ ➔`** mở trực tiếp bài nghiên cứu tương ứng trong `#readerModal`.
 - **Khu vực Đối sánh 4 Lộ trình Học tập Phổ thông (`#curriculaContainer`):**
   - Gồm 4 thẻ phân tích khách quan 4 lộ trình (Chương trình công lập chuẩn Bộ GD&ĐT 2018, Chương trình tư thục tự chủ và tăng cường, Chương trình song bằng quốc tế Cambridge/Oxford, Chương trình quốc tế toàn phần IB/AP).
